@@ -60,10 +60,10 @@ const genreSections = [
     notes: [
       { slug: 'luxx-club', note: 'The LED light show pairs well with the open format approach. DJs move fluidly between genres, with a lean towards hip-hop. The visual spectacle means the music is part of a larger experience.' },
       { slug: 'the-london-reign', note: 'The showclub format means the music shifts throughout the evening — from sophisticated dinner accompaniment to full party energy. Expect mainstream hits, pop, RnB, and crowd-pleasers.' },
-      { slug: 'lio-london', note: 'Mediterranean glamour with music that matches — upbeat, accessible, and celebratory. The Ibiza influence means house-leaning open format, sophisticated enough for the dining crowd.' },
+      { slug: 'selene-london', note: 'Elegant cocktail-bar-to-club concept with a sophisticated house soundtrack. The refined setting means the music enhances the atmosphere rather than dominating it — perfect for the grown-up crowd.' },
       { slug: 'beat-london', note: 'Open format delivered through one of London\'s best sound systems. The DJs vary by night but the consistent thread is energy and quality audio.' },
     ],
-    bestFor: 'Luxx for visuals plus music, Reign for the theatrical dinner-to-club experience, Lio for Mediterranean-influenced party music, BEAT for pure audio quality.',
+    bestFor: 'Luna Club for energy and visuals, Reign for the theatrical dinner-to-club experience, Selene for sophisticated house-leaning nights, BEAT for pure audio quality.',
   },
 ];
 
@@ -172,7 +172,7 @@ export default function MusicGenrePage() {
                 If house music is what you want, Maddox is your best Mayfair option, but Ministry of Sound is where the serious house heads go. The gap in sound quality and DJ calibre between Ministry and everywhere else is significant.
               </p>
               <p>
-                If you are a group with mixed music tastes, open format venues like Luxx, Reign, and BEAT will keep everyone happy. Cuckoo Club also works because the two floors cover both house and hip-hop.
+                If you are a group with mixed music tastes, open format venues like Luna Club, Reign, and BEAT will keep everyone happy. Cuckoo Club also works because the two floors cover both house and hip-hop.
               </p>
               <p>
                 If electronic and techno is your genre, Ministry of Sound is the only serious option on this list. London has other techno venues beyond our coverage, but within this selection, Ministry is unmatched.

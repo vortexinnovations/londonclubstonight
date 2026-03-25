@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     question: 'Do I need to book a table to get into a London club?',
-    answer: 'Not always, but it is the only way to guarantee entry at every venue. At moderate-difficulty clubs like Libertine, Cuckoo, or Luxx, guestlist works well. At the hardest clubs like Tape London and Cirque Le Soir, a table booking is practically essential. Tables start from £1,000 at most venues.',
+    answer: 'Not always, but it is the only way to guarantee entry at every venue. At moderate-difficulty clubs like Funky Buddha, Cuckoo, or Luna Club, guestlist works well. At the hardest clubs like Tape London and Cirque Le Soir, a table booking is practically essential. Tables start from £1,000 at most venues.',
   },
   {
     question: 'What is the dress code for London clubs?',
@@ -193,7 +193,7 @@ export default function HowToGetInPage() {
                     <span className="text-white">Hard clubs (Cirque, TABU, Scotch):</span> Walk-ins happen but are rare. You need to look exceptional, have a well-balanced group, and arrive at the right time.
                   </li>
                   <li>
-                    <span className="text-white">Moderate clubs (Libertine, Luxx, Cuckoo, etc.):</span> Walk-ins are genuinely possible for well-dressed mixed groups, especially before midnight on less busy nights.
+                    <span className="text-white">Moderate clubs (Funky Buddha, Luna Club, Cuckoo, etc.):</span> Walk-ins are genuinely possible for well-dressed mixed groups, especially before midnight on less busy nights.
                   </li>
                   <li>
                     <span className="text-white">Easy clubs (Ministry of Sound):</span> Buy a ticket online. Walk-up on the night is possible but expect a queue.

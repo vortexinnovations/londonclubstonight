@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     question: 'Can you walk into exclusive London clubs without a booking?',
-    answer: 'It depends on the club. At venues like Tape London and Cirque Le Soir, walk-ins are extremely unlikely to succeed. At moderate-difficulty clubs like Libertine, Luxx, or Cuckoo Club, walk-ins are possible for well-dressed mixed groups, especially earlier in the evening. Ministry of Sound is the easiest — buy a ticket in advance and you are in.',
+    answer: 'It depends on the club. At venues like Tape London and Cirque Le Soir, walk-ins are extremely unlikely to succeed. At moderate-difficulty clubs like Funky Buddha, Luna Club, or Cuckoo Club, walk-ins are possible for well-dressed mixed groups, especially earlier in the evening. Ministry of Sound is the easiest — buy a ticket in advance and you are in.',
   },
   {
     question: 'Do you need a table to get into Mayfair clubs?',

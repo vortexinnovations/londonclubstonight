@@ -27,7 +27,7 @@ export const blogPosts: BlogPost[] = [
     faqs: [
       { question: 'Can you wear trainers to London clubs?', answer: 'At most upscale London clubs — particularly in Mayfair — trainers will get you turned away. The exception is some venues like TABU where clean, designer trainers can work if the rest of your outfit is sharp. For guaranteed entry, wear smart shoes.' },
       { question: 'What should women wear to London nightclubs?', answer: 'Dresses, jumpsuits, or smart separates with heels are the safest bet. The dress code at most London clubs expects women to dress up — think cocktail bar, not casual bar. Avoid flip-flops, sportswear, and overly casual outfits.' },
-      { question: 'Do London clubs have strict dress codes?', answer: 'Mayfair clubs have the strictest dress codes in London. Venues like Tape London, Cirque Le Soir, and Libertine enforce smart dress codes firmly. Ministry of Sound is more relaxed — comfortable clubwear is fine. Always check the specific club before you go.' },
+      { question: 'Do London clubs have strict dress codes?', answer: 'Mayfair clubs have the strictest dress codes in London. Venues like Tape London, Cirque Le Soir, and The Box enforce smart dress codes firmly. Ministry of Sound is more relaxed — comfortable clubwear is fine. Always check the specific club before you go.' },
       { question: 'Can men wear jeans to London clubs?', answer: 'Dark, well-fitted jeans are acceptable at many London clubs when paired with smart shoes, a good shirt, and a blazer or jacket. Ripped jeans, baggy jeans, or light-wash denim will get you refused at most upscale venues.' },
     ],
   },
@@ -46,7 +46,7 @@ export const blogPosts: BlogPost[] = [
       { question: 'How old do you have to be to get into London clubs?', answer: 'All London nightclubs are strictly 18+. You will need valid photo ID — a passport, driving licence, or PASS card. Some clubs operate a 21+ policy on certain nights, particularly in Mayfair.' },
       { question: 'What ID do London clubs accept?', answer: 'Passport, UK driving licence, and PASS-accredited ID cards are universally accepted. Some clubs accept EU/EEA national ID cards. Student cards, bank cards, and expired documents are never accepted.' },
       { question: 'Are there over-30s clubs in London?', answer: 'Scotch of St James, Maddox, and The London Reign naturally attract an older crowd (late 20s to 40s) without formally being "over 30s" venues. Ministry of Sound also draws a wide age range thanks to its music-first approach.' },
-      { question: 'Will I feel too old at London clubs?', answer: 'It depends entirely on the venue. Clubs like TABU and Luxx skew younger (22-30), while Scotch of St James, Maddox, and The London Reign comfortably cater to guests in their 30s and 40s. Choose the right club and age is never an issue.' },
+      { question: 'Will I feel too old at London clubs?', answer: 'It depends entirely on the venue. Clubs like TABU and Luna Club skew younger (22-30), while Scotch of St James, Maddox, and The London Reign comfortably cater to guests in their 30s and 40s. Choose the right club and age is never an issue.' },
     ],
   },
   {

@@ -50,7 +50,7 @@ function getPostContent(slug: string): React.ReactNode {
             London&apos;s club scene is not one-size-fits-all when it comes to dress codes. A look that gets you into <Link href="/clubs/ministry-of-sound" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Ministry of Sound</Link> without a second glance will get you turned away at <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link> before you reach the door. The trick is knowing the tier of venue you are heading to and dressing accordingly.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
-            <Link href="/areas/mayfair" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair clubs</Link> sit at the top of the dress code ladder. We are talking about venues like <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape</Link>, <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link>, and <Link href="/clubs/libertine" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Libertine</Link> where the door team will assess your outfit before anything else. If you look the part, the conversation starts. If you do not, it ends before it begins.
+            <Link href="/areas/mayfair" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair clubs</Link> sit at the top of the dress code ladder. We are talking about venues like <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape</Link>, <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link>, and <Link href="/clubs/the-box-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Box</Link> where the door team will assess your outfit before anything else. If you look the part, the conversation starts. If you do not, it ends before it begins.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
             Mid-tier venues in <Link href="/areas/soho" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Soho</Link> and around <Link href="/areas/central-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Central London</Link> are more forgiving but still expect effort. Clubs like <Link href="/clubs/cuckoo-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Cuckoo Club</Link> and <Link href="/clubs/maddox" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Maddox</Link> want smart-casual at a minimum. You can push the boundaries a bit, but rocking up in sportswear is still going to be a problem.
@@ -64,10 +64,10 @@ function getPostContent(slug: string): React.ReactNode {
             <strong className="text-white">The safe bet for Mayfair:</strong> Smart shoes (leather, suede, or polished boots), well-fitted dark trousers or dark jeans, a quality shirt or roll-neck, and a blazer or tailored jacket. This look works at every club in London, no exceptions. You do not need to be wearing Gucci, but the fit needs to be clean and the overall impression needs to say you made an effort.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
-            <strong className="text-white">What gets you turned away:</strong> Trainers at Mayfair clubs are the number one reason men get refused. Even expensive trainers. Even designer trainers. The door team at <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape</Link> and <Link href="/clubs/libertine" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Libertine</Link> will not care that your shoes cost more than their rent. Sportswear, shorts, flip-flops, and ripped jeans are also automatic refusals.
+            <strong className="text-white">What gets you turned away:</strong> Trainers at Mayfair clubs are the number one reason men get refused. Even expensive trainers. Even designer trainers. The door team at <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape</Link> and <Link href="/clubs/the-box-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Box</Link> will not care that your shoes cost more than their rent. Sportswear, shorts, flip-flops, and ripped jeans are also automatic refusals.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
-            <strong className="text-white">The exception:</strong> <Link href="/clubs/tabu-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">TABU</Link> and <Link href="/clubs/luxx-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Luxx</Link> are slightly more relaxed. Clean designer trainers can work if the rest of the outfit is sharp. But &quot;smart trainers&quot; is not an excuse to wear running shoes.
+            <strong className="text-white">The exception:</strong> <Link href="/clubs/tabu-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">TABU</Link> and <Link href="/clubs/beat-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">BEAT</Link> are slightly more relaxed. Clean designer trainers can work if the rest of the outfit is sharp. But &quot;smart trainers&quot; is not an excuse to wear running shoes.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
             For a full breakdown of what each club expects, check our <Link href="/guides/how-to-get-into-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">guide to getting into London clubs</Link>.
@@ -93,7 +93,7 @@ function getPostContent(slug: string): React.ReactNode {
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">Dress Code by Area: Mayfair vs Soho vs South London</h2>
           <p className="text-[#999] leading-relaxed mb-4">
-            <strong className="text-white"><Link href="/areas/mayfair" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair</Link>:</strong> The strictest dress codes in London. Smart is not a suggestion, it is a requirement. Every club in this area &mdash; <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape</Link>, <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque</Link>, <Link href="/clubs/libertine" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Libertine</Link>, <Link href="/clubs/maddox" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Maddox</Link> &mdash; enforces a smart dress code. Men need smart shoes and a put-together outfit. Women need to be dressed up.
+            <strong className="text-white"><Link href="/areas/mayfair" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair</Link>:</strong> The strictest dress codes in London. Smart is not a suggestion, it is a requirement. Every club in this area &mdash; <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape</Link>, <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque</Link>, <Link href="/clubs/funky-buddha" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Funky Buddha</Link>, <Link href="/clubs/maddox" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Maddox</Link> &mdash; enforces a smart dress code. Men need smart shoes and a put-together outfit. Women need to be dressed up.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
             <strong className="text-white"><Link href="/areas/soho" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Soho</Link>:</strong> A step down from Mayfair but still smarter than most cities. Venues like <Link href="/clubs/cuckoo-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Cuckoo Club</Link> and <Link href="/clubs/scotch-of-st-james" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Scotch of St James</Link> want smart-casual. Clean, well-fitted clothing with effort showing. Trainers can sometimes slide if the rest of the outfit is strong.
@@ -137,7 +137,7 @@ function getPostContent(slug: string): React.ReactNode {
             If you have just turned 18 or are in the university-age bracket, you want clubs where the crowd matches your energy and age. Walking into a venue full of 35-year-olds when you are 19 is awkward for everyone. Here is where you will feel at home.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
-            <Link href="/clubs/luxx-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Luxx</Link> is one of the best options for the younger crowd. The energy is high, the music is commercial, and the typical age range is 20&ndash;28. It is accessible without being basic, and the door policy is friendly to younger groups as long as you are well-dressed. <Link href="/clubs/tabu-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">TABU</Link> also attracts a younger demographic, typically 22&ndash;30, with a hip-hop and RnB focus and a lively atmosphere.
+            <Link href="/clubs/luna-club-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Luna Club</Link> is one of the best options for the younger crowd. The energy is high, the music spans hip-hop, RnB, and Afrobeats, and the typical age range is 20&ndash;28. It is accessible without being basic, and the door policy is friendly to younger groups as long as you are well-dressed. <Link href="/clubs/tabu-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">TABU</Link> also attracts a younger demographic, typically 22&ndash;30, with a hip-hop and RnB focus and a lively atmosphere.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
             <Link href="/clubs/ministry-of-sound" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Ministry of Sound</Link> deserves a mention here because it draws a genuinely wide age range. The music is the focus, and whether you are 18 or 45, if you are there for the DJs, you belong. The Friday sessions tend to skew slightly younger, while Saturday events attract a broader mix.
@@ -155,7 +155,7 @@ function getPostContent(slug: string): React.ReactNode {
             This is the sweet spot for London nightlife. You are old enough to afford decent nights out, young enough to stay out past 2am, and most clubs cater heavily to this demographic. The 25&ndash;32 range has the most options in London.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
-            <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link> hits the sweet spot with a core crowd of 25&ndash;35. The theatrical performances, the hip-hop soundtrack, and the celebrity sightings all attract this age group. <Link href="/clubs/libertine" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Libertine</Link> is similar &mdash; late 20s to early 30s is the primary demographic, with a slightly more fashion-conscious crowd.
+            <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link> hits the sweet spot with a core crowd of 25&ndash;35. The theatrical performances, the hip-hop soundtrack, and the celebrity sightings all attract this age group. <Link href="/clubs/funky-buddha" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Funky Buddha</Link> is similar &mdash; late 20s to early 30s is the primary demographic, with a crowd that knows how to dress and party in equal measure.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
             <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link> skews slightly older, 27&ndash;40, but if you are in your late 20s and can get in, you will fit right in. The exclusivity factor means the crowd is generally successful professionals and industry types who take their nights out seriously.
@@ -175,7 +175,7 @@ function getPostContent(slug: string): React.ReactNode {
             <Link href="/clubs/maddox" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Maddox</Link> also caters well to an older crowd. The cocktail lounge atmosphere transitions into a proper club later in the night, and the clientele tend to be 28&ndash;45. <Link href="/clubs/the-london-reign" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The London Reign</Link> is another strong choice &mdash; the cabaret and entertainment format attracts a more mature audience who want more than just a DJ and a dance floor.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
-            <Link href="/clubs/lio-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">LIO London</Link> is newer to the scene but already attracting an affluent, slightly older crowd. The dinner-to-party concept works perfectly for the 30+ demographic who want to start the evening with a meal and transition into clubbing without switching venues.
+            <Link href="/clubs/selene-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Selene</Link> is one of the newer arrivals already attracting an affluent, slightly older crowd. The cocktail-focused lounge concept transitions into a proper late-night venue and works perfectly for the 30+ demographic who want sophistication alongside their night out.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">The Honest Truth About Age and London Clubs</h2>
@@ -224,13 +224,13 @@ function getPostContent(slug: string): React.ReactNode {
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">More Top Birthday Venues</h2>
           <p className="text-[#999] leading-relaxed mb-4">
-            <strong className="text-white"><Link href="/clubs/luxx-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Luxx</Link>:</strong> Great for birthdays where the group is mostly in their early-to-mid 20s. The energy is high, the music is commercial hip-hop, and the table service team know how to make a birthday group feel special. Lower minimum spend than Mayfair venues makes this a strong choice for younger groups.
+            <strong className="text-white"><Link href="/clubs/luna-club-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Luna Club</Link>:</strong> Great for birthdays where the group is mostly in their early-to-mid 20s. The energy is high, the music spans hip-hop, RnB, and Afrobeats, and the table service team know how to make a birthday group feel special. The production and lighting make every table feel like the main event.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
             <strong className="text-white"><Link href="/clubs/cuckoo-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Cuckoo Club</Link>:</strong> Intimate enough that your birthday group feels like they own the room, but lively enough that the atmosphere carries through the night. The cocktail menu is excellent, and their birthday packages include nice touches like personalised setups.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
-            <strong className="text-white"><Link href="/clubs/lio-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">LIO London</Link>:</strong> The premium option. Dinner transitions into a spectacular show and then into a full club night. If budget is not the primary concern and you want the most impressive birthday experience in London, LIO delivers on every level. Check <a href="https://londonluxurynightlife.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London Luxury Nightlife</a> for details on their premium packages.
+            <strong className="text-white"><Link href="/clubs/the-london-reign" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The London Reign</Link>:</strong> The premium option. Aerial performances, a full production show, and then a proper club night. If budget is not the primary concern and you want the most impressive birthday experience in London, Reign delivers on every level. Check <a href="https://londonluxurynightlife.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London Luxury Nightlife</a> for details on their premium packages.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">How to Book a Birthday at a London Club</h2>
@@ -284,10 +284,10 @@ function getPostContent(slug: string): React.ReactNode {
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">Drinks Prices: What to Expect at the Bar</h2>
           <p className="text-[#999] leading-relaxed mb-4">
-            <strong className="text-white">Mayfair clubs:</strong> Cocktails run &pound;16 to &pound;22. A vodka and mixer is &pound;14 to &pound;18. A beer is &pound;10 to &pound;14. These prices apply at <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link>, <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link>, <Link href="/clubs/libertine" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Libertine</Link>, and other top-tier venues. Yes, it is expensive. No, there is no way around it if you want to drink at these clubs.
+            <strong className="text-white">Mayfair clubs:</strong> Cocktails run &pound;16 to &pound;22. A vodka and mixer is &pound;14 to &pound;18. A beer is &pound;10 to &pound;14. These prices apply at <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link>, <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link>, <Link href="/clubs/the-box-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Box</Link>, and other top-tier venues. Yes, it is expensive. No, there is no way around it if you want to drink at these clubs.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
-            <strong className="text-white">Mid-tier clubs:</strong> Venues like <Link href="/clubs/cuckoo-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Cuckoo Club</Link>, <Link href="/clubs/luxx-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Luxx</Link>, and <Link href="/clubs/maddox" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Maddox</Link> charge &pound;12 to &pound;18 for cocktails and &pound;10 to &pound;14 for spirits. Still not cheap but more manageable.
+            <strong className="text-white">Mid-tier clubs:</strong> Venues like <Link href="/clubs/cuckoo-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Cuckoo Club</Link>, <Link href="/clubs/luna-club-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Luna Club</Link>, and <Link href="/clubs/maddox" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Maddox</Link> charge &pound;12 to &pound;18 for cocktails and &pound;10 to &pound;14 for spirits. Still not cheap but more manageable.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
             <strong className="text-white">Ministry of Sound and similar:</strong> The most affordable of the major clubs. Expect &pound;8 to &pound;12 for most drinks. <Link href="/clubs/ministry-of-sound" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Ministry</Link> is where you go if you want to dance all night without watching your wallet with every round.
@@ -321,7 +321,7 @@ function getPostContent(slug: string): React.ReactNode {
             <strong className="text-white">Budget night (&pound;50 to &pound;80 per person):</strong> Guestlist entry (free), pre-drinks at a nearby bar (see our <Link href="/blog/pre-drinks-bars-near-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">pre-drinks guide</Link>), three to four drinks at the club, Night Tube home. This works best at <Link href="/clubs/ministry-of-sound" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Ministry of Sound</Link> or mid-tier venues.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
-            <strong className="text-white">Standard Mayfair night (&pound;100 to &pound;180 per person):</strong> Guestlist or reduced entry, cocktails at a pre-drinks bar, five to six drinks at the club, Uber home. This is the realistic cost of a proper night at <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link> or <Link href="/clubs/libertine" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Libertine</Link> without a table.
+            <strong className="text-white">Standard Mayfair night (&pound;100 to &pound;180 per person):</strong> Guestlist or reduced entry, cocktails at a pre-drinks bar, five to six drinks at the club, Uber home. This is the realistic cost of a proper night at <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link> or <Link href="/clubs/funky-buddha" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Funky Buddha</Link> without a table.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
             <strong className="text-white">VIP table night (&pound;150 to &pound;300 per person):</strong> Table booking split between six to ten people at a top club. Includes entry, bottles, mixers, and a reserved area. Read our <Link href="/blog/vip-nightlife-london-guide" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">VIP nightlife guide</Link> for a full breakdown of what you get.
@@ -354,7 +354,7 @@ function getPostContent(slug: string): React.ReactNode {
             <strong className="text-white"><Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link>:</strong> The performances are just as spectacular on Fridays, but the room often has a slightly different mix of people. More international visitors, more birthday groups, and a bit more spontaneity. The guestlist is more accessible on Fridays, making this the best night to experience Cirque without a table booking.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
-            <strong className="text-white"><Link href="/clubs/libertine" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Libertine</Link>:</strong> Consistently delivers on Fridays with strong DJs and a well-dressed crowd. The <Link href="/areas/mayfair" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair</Link> location means the dress code is still firmly smart, but the door is slightly more forgiving than Saturday.
+            <strong className="text-white"><Link href="/clubs/funky-buddha" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Funky Buddha</Link>:</strong> Consistently delivers on Fridays with strong DJs and a crowd that knows how to have fun. The <Link href="/areas/mayfair" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair</Link> location means the dress code is still firmly smart, but the atmosphere is more welcoming than some of the stricter venues.
           </p>
 
           <div className="my-8">
@@ -366,7 +366,7 @@ function getPostContent(slug: string): React.ReactNode {
             <strong className="text-white"><Link href="/clubs/tabu-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">TABU</Link>:</strong> One of the liveliest Friday spots for a younger crowd. The hip-hop soundtrack, the energy on the dance floor, and the more relaxed vibe compared to Mayfair make this a solid choice for groups who want a big night without the Mayfair price tag.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
-            <strong className="text-white"><Link href="/clubs/luxx-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Luxx</Link>:</strong> Great energy on Fridays, with a younger, social crowd. The commercial music and lively atmosphere make it an easy recommendation for groups who want a fun, uncomplicated night out. Tables here are more affordable than Mayfair, making it a strong birthday or celebration option.
+            <strong className="text-white"><Link href="/clubs/luna-club-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Luna Club</Link>:</strong> Great energy on Fridays, with a younger, social crowd. The hip-hop and Afrobeats programme and lively atmosphere make it an easy recommendation for groups who want a fun, high-energy night out. The production setup makes every Friday feel like an event.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
             <strong className="text-white"><Link href="/clubs/maddox" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Maddox</Link>:</strong> The cocktail lounge atmosphere early in the evening transitions into a proper club by midnight. Friday nights here attract a slightly older, more sophisticated crowd who appreciate good drinks and good music without the intensity of a Mayfair megaclub.
@@ -425,7 +425,7 @@ function getPostContent(slug: string): React.ReactNode {
             <strong className="text-white"><Link href="/clubs/the-london-reign" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The London Reign</Link>:</strong> Saturday is the Reign&apos;s biggest night. The dinner-and-show format means the evening builds from a seated meal through a cabaret production and into a full club. For groups who want structure to their Saturday, this is the venue. The show quality on Saturdays is consistently excellent.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
-            <strong className="text-white"><Link href="/clubs/luxx-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Luxx</Link>:</strong> High energy, young crowd, commercial music. Luxx on a Saturday is a party in the truest sense. Less pretension, more dancing, and a room full of people who are just there to have fun. Tables sell out fast here on Saturdays, especially for birthday groups.
+            <strong className="text-white"><Link href="/clubs/luna-club-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Luna Club</Link>:</strong> High energy, young crowd, dynamic music. Luna on a Saturday is a party in the truest sense. Less pretension, more dancing, and a room full of people who are just there to have fun. Tables sell out fast here on Saturdays, especially for birthday groups.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
             <strong className="text-white"><Link href="/clubs/ministry-of-sound" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Ministry of Sound</Link>:</strong> Saturday at Ministry is legendary. The programming on Saturdays features the biggest DJs, the most anticipated events, and a crowd that comes for the music above everything else. If you are into house, techno, or electronic music, Saturday at Ministry is non-negotiable. The multiple rooms mean you can switch between genres throughout the night. Check our <Link href="/guides/london-clubs-by-music-genre" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">music genre guide</Link> for more on what different venues play.
@@ -486,10 +486,10 @@ function getPostContent(slug: string): React.ReactNode {
             <strong className="text-white"><Link href="/clubs/maddox" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Maddox</Link>:</strong> The lounge-to-club transition at Maddox makes it ideal for couples. Start with cocktails in the lounge area, then move to the dance floor when the energy picks up. The crowd is mature and the atmosphere is relaxed enough that you can actually enjoy each other&apos;s company. The music is a crowd-pleasing mix that works for date night.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
-            <strong className="text-white"><Link href="/clubs/lio-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">LIO London</Link>:</strong> If you want to impress, LIO is the premium date night. Dinner, a spectacular show, and then a club night &mdash; all in one venue. It is an experience rather than just a night out, and the production quality is genuinely impressive. This is the option when you want to create a memorable evening. For luxury date nights, <a href="https://londonluxurynightlife.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London Luxury Nightlife</a> covers the best high-end options.
+            <strong className="text-white"><Link href="/clubs/selene-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Selene</Link>:</strong> If you want to impress, Selene is the premium date night. Exceptional cocktails, a refined atmosphere, and house music that lets you actually have a conversation before the night picks up. It is an experience rather than just a night out, and the interiors feel genuinely special. This is the option when you want to create a memorable evening. For luxury date nights, <a href="https://londonluxurynightlife.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London Luxury Nightlife</a> covers the best high-end options.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
-            <strong className="text-white"><Link href="/clubs/the-london-reign" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The London Reign</Link>:</strong> Similar to LIO in concept but with a different flavour. The cabaret show gives you something to experience together before the club takes over. For an anniversary or special date, the dinner-and-show format is hard to beat.
+            <strong className="text-white"><Link href="/clubs/the-london-reign" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The London Reign</Link>:</strong> A different take on the dinner-and-entertainment date night. The cabaret show gives you something to experience together before the club takes over. For an anniversary or special date, the dinner-and-show format is hard to beat.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">Couples at the Door: Entry Tips</h2>
@@ -550,10 +550,10 @@ function getPostContent(slug: string): React.ReactNode {
             <strong className="text-white"><Link href="/clubs/the-london-reign" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The London Reign</Link>:</strong> The dinner-show-club format means your VIP evening starts at 7pm and runs until 3am. The premium tables include a multi-course dinner, front-row seats for the cabaret, and then a prime position for the club. It is the best &quot;full evening&quot; VIP option.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
-            <strong className="text-white"><Link href="/clubs/lio-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">LIO London</Link>:</strong> The newest premium VIP option and already one of the most sought-after. The production quality of the show is exceptional, and the transition from dinner to club is seamless. For the luxury VIP experience, <a href="https://londonluxurynightlife.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London Luxury Nightlife</a> covers LIO and similar high-end options in detail.
+            <strong className="text-white"><Link href="/clubs/selene-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Selene</Link>:</strong> The sophisticated VIP option for guests who value quality over spectacle. Exceptional cocktails, refined interiors, and a house music soundtrack that lets you enjoy conversation without shouting. For the luxury VIP experience, <a href="https://londonluxurynightlife.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London Luxury Nightlife</a> covers Selene and similar high-end options in detail.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
-            <strong className="text-white"><Link href="/clubs/libertine" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Libertine</Link>:</strong> Consistently solid VIP experience with a fashion-forward crowd. The <Link href="/areas/mayfair" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair</Link> location and strong music programming make it a reliable choice for a quality night. Tables here are popular with the fashion and creative industries.
+            <strong className="text-white"><Link href="/clubs/funky-buddha" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Funky Buddha</Link>:</strong> The legendary name carries weight and the VIP experience delivers. The <Link href="/areas/mayfair" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair</Link> heritage and fun, energetic music programming make it a reliable choice for groups who want a VIP night with genuine atmosphere rather than just a roped-off table.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">Is VIP Worth It? The Honest Answer</h2>
@@ -591,7 +591,7 @@ function getPostContent(slug: string): React.ReactNode {
             London&apos;s nightlife is spread across several distinct areas, each with its own character. Knowing which area suits what you are looking for is half the battle.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
-            <strong className="text-white"><Link href="/areas/mayfair" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair</Link>:</strong> The most exclusive and expensive area. Home to <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link>, <Link href="/clubs/libertine" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Libertine</Link>, and <Link href="/clubs/maddox" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Maddox</Link>. Smart dress code is non-negotiable. Expect to spend more but experience the highest level of London clubbing. This is where you go for the glamour and the celebrity sightings. For the latest Mayfair events, check <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair Tonight</a>.
+            <strong className="text-white"><Link href="/areas/mayfair" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair</Link>:</strong> The most exclusive and expensive area. Home to <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link>, <Link href="/clubs/funky-buddha" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Funky Buddha</Link>, and <Link href="/clubs/maddox" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Maddox</Link>. Smart dress code is non-negotiable. Expect to spend more but experience the highest level of London clubbing. This is where you go for the glamour and the celebrity sightings. For the latest Mayfair events, check <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair Tonight</a>.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
             <strong className="text-white"><Link href="/areas/soho" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Soho</Link>:</strong> More diverse and slightly more accessible. Venues like <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link>, <Link href="/clubs/cuckoo-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Cuckoo Club</Link>, and <Link href="/clubs/scotch-of-st-james" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Scotch of St James</Link> are here. The area is also packed with bars and restaurants, making it the easiest place to build a full evening out.
@@ -658,7 +658,7 @@ function getPostContent(slug: string): React.ReactNode {
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">Pre-Drinks Near Mayfair Clubs</h2>
           <p className="text-[#999] leading-relaxed mb-4">
-            If you are heading to <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link>, <Link href="/clubs/libertine" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Libertine</Link>, or <Link href="/clubs/maddox" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Maddox</Link>, you want bars in or around <Link href="/areas/mayfair" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair</Link>. The area is packed with upscale cocktail bars, and the trick is finding ones where you can actually get in without a reservation and where the drinks are excellent without being absurdly priced.
+            If you are heading to <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link>, <Link href="/clubs/funky-buddha" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Funky Buddha</Link>, or <Link href="/clubs/maddox" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Maddox</Link>, you want bars in or around <Link href="/areas/mayfair" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair</Link>. The area is packed with upscale cocktail bars, and the trick is finding ones where you can actually get in without a reservation and where the drinks are excellent without being absurdly priced.
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
             The bars along Heddon Street and around Regent Street are perfectly positioned for Mayfair clubs. Start your evening between 9pm and 10pm, have two or three drinks, and you are within a ten-minute walk of most major Mayfair venues. Cocktail bars in this area serve well-crafted drinks in atmospheric settings that get you in the right mindset for the club.
@@ -710,6 +710,244 @@ function getPostContent(slug: string): React.ReactNode {
           </p>
           <p className="text-[#999] leading-relaxed mb-4">
             For a full guide to how much to budget for your evening including pre-drinks, read our <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">night out cost breakdown</Link>.
+          </p>
+        </>
+      );
+
+    // ─────────────────────────────────────────────
+    // POST 11: New Clubs in London 2026
+    // ─────────────────────────────────────────────
+    case 'new-clubs-in-london':
+      return (
+        <>
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">London&apos;s Club Scene Never Stops Moving</h2>
+          <p className="text-[#999] leading-relaxed mb-4">
+            Venues close, new ones open, and the landscape shifts every season. If you have not been out in a while, the London you remember might have changed. Several major openings over the past year have reshaped where the smart money goes on a Friday or Saturday night, while a few familiar names have closed their doors for good.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            This guide covers the newest clubs that have genuinely earned a place on the circuit &mdash; not flash-in-the-pan pop-ups, but proper venues that are pulling consistent crowds and attracting the right bookings.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Luna Club London</h2>
+          <p className="text-[#999] leading-relaxed mb-4">
+            <Link href="/clubs/luna-club-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Luna Club</Link> has landed in <Link href="/areas/mayfair" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair</Link> with serious ambition. The design is striking &mdash; celestial-themed interiors with a production setup that rivals any venue on the strip. The sound system hits hard, the lighting is theatrical, and the layout creates distinct energy zones throughout the night.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            What sets Luna apart is the balance between spectacle and substance. The music programme leans into hip-hop and RnB with a global edge &mdash; Afrobeats and amapiano make regular appearances on the playlist. The crowd skews younger than some of the established Mayfair venues but brings genuine energy. Tables start from &pound;1,000 and the door policy is firm but fair. Mixed groups on guestlist have a realistic chance of walking in, which is more than you can say for some of its neighbours.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            <strong className="text-white">Our take:</strong> Luna fills the gap left by some of the Mayfair closures. It is modern, well-run, and delivers consistently. One to watch as it establishes itself over the coming months.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Selene London</h2>
+          <p className="text-[#999] leading-relaxed mb-4">
+            <Link href="/clubs/selene-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Selene</Link> is the sophisticated counterpart to Luna &mdash; think elegant cocktail lounge that transitions into a proper late-night venue as the hours progress. Located in <Link href="/areas/mayfair" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair</Link>, it has positioned itself as the grown-up option for people who want quality drinks, a refined atmosphere, and music that does not require earplugs.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            The house and deep house soundtrack gives Selene a different personality from the hip-hop-heavy venues nearby. The crowd is typically late 20s to early 40s &mdash; couples, after-dinner groups, and people who have done the loud-club thing enough times to appreciate something more considered. The cocktail programme is genuinely impressive and the interiors feel expensive without being try-hard.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            <strong className="text-white">Our take:</strong> Selene is perfect for people who want the Mayfair experience without the Mayfair chaos. If <Link href="/clubs/dear-darling" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Dear Darling</Link> appeals to you, Selene should be on your list too.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The Box London</h2>
+          <p className="text-[#999] leading-relaxed mb-4">
+            <Link href="/clubs/the-box-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Box</Link> is not technically brand new &mdash; it has been part of <Link href="/areas/soho" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Soho</Link>&apos;s late-night fabric for years &mdash; but its recent reinvention deserves attention. Known for provocative cabaret-style performances and a notoriously strict door policy, The Box has always traded on exclusivity and shock value. The latest iteration has refined the formula without diluting what makes it special.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            The performances remain boundary-pushing and the atmosphere is unlike anything else in London. This is a venue for people who want a genuine experience, not just a table and some bottles. The door is one of the hardest in London &mdash; even with a booking, the team reserves the right to turn people away. That selectivity creates an inside-the-velvet-rope energy that you can feel the moment you walk in.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Funky Buddha &mdash; The Return</h2>
+          <p className="text-[#999] leading-relaxed mb-4">
+            <Link href="/clubs/funky-buddha" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Funky Buddha</Link> is a name that carries serious weight in London nightlife. The original Berkeley Street venue was legendary &mdash; the kind of place where you might find yourself dancing next to a Premiership footballer at 3am on a Tuesday. The return captures that same energy in a fresh setting, and the early signs are very promising.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            The music policy is fun and accessible &mdash; open format with a lean towards hip-hop, RnB, and crowd-pleasers. The crowd is mixed in the best sense: industry people, regulars, birthday groups, and people who remember the original. Tables start from &pound;1,000 and the atmosphere on a good Saturday night is electric.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            <strong className="text-white">Our take:</strong> Funky Buddha&apos;s return gives London a venue with genuine heritage and a loyal following. It fills a niche that was missing &mdash; a club with history that does not take itself too seriously.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">What About the Closures?</h2>
+          <p className="text-[#999] leading-relaxed mb-4">
+            London nightlife is cyclical. Venues that defined an era eventually make way for what comes next. Recent closures including Libertine, Luxx Club, and Lio London have freed up space &mdash; both physically and in the market &mdash; for the new generation. Some of these new venues occupy the same postcodes and target the same crowd. That is how the scene works.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            If you are looking for our full ranked guide, read the <Link href="/best-clubs-in-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">best clubs in London</Link> page. For help getting into any of these new venues, <Link href="/guides/how-to-get-into-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">read our entry guide</Link> or message us directly on WhatsApp.
+          </p>
+        </>
+      );
+
+    // ─────────────────────────────────────────────
+    // POST 12: Most Unique Clubs in London
+    // ─────────────────────────────────────────────
+    case 'most-unique-clubs-in-london':
+      return (
+        <>
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Beyond the Standard Mayfair Formula</h2>
+          <p className="text-[#999] leading-relaxed mb-4">
+            Most <Link href="/areas/mayfair" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair</Link> clubs follow a familiar template &mdash; dark room, booth seating, bottle service, DJ. Nothing wrong with that formula when it is done well, but London has venues that genuinely break the mould. If you have done the standard night out enough times and want something that will actually surprise you, these are the clubs worth knowing about.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The Box &mdash; Provocative Theatre Meets Nightclub</h2>
+          <p className="text-[#999] leading-relaxed mb-4">
+            <Link href="/clubs/the-box-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Box</Link> is in a category of one. The Soho venue puts on cabaret and performance art that ranges from jaw-dropping to genuinely shocking &mdash; think burlesque, acrobatics, and theatrical acts that you will not see anywhere else in London. The crowd knows what they are signing up for and the atmosphere is charged with a sense that anything could happen.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            The door policy is notoriously strict &mdash; even with a booking you need to meet the standard. But that selectivity creates an experience that feels genuinely exclusive. This is not a club you go to because you could not get in anywhere else. It is a club you choose specifically because of what it offers. If your group has a decent ratio and you are dressed well, book a table and prepare for one of the most memorable nights London has to offer.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Cirque Le Soir &mdash; Organised Chaos</h2>
+          <p className="text-[#999] leading-relaxed mb-4">
+            <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link> turns the nightclub concept inside out. Fire breathers weaving between tables, contortionists performing on the bar, stilt walkers moving through the crowd &mdash; the entertainment is not a side attraction, it IS the experience. Pair that with a celebrity-magnet reputation and a hip-hop soundtrack, and you have something genuinely different from any other club in the city.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            The controlled chaos is what makes Cirque special. Every night feels like an event because it genuinely is one. If you are the kind of person who gets bored sitting at a table watching people, Cirque will keep your attention all night. For birthdays especially, it is hard to beat &mdash; check our <Link href="/blog/best-clubs-for-a-birthday-in-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">birthday clubs guide</Link> for booking advice.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The London Reign &mdash; A Showclub That Delivers</h2>
+          <p className="text-[#999] leading-relaxed mb-4">
+            <Link href="/clubs/the-london-reign" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The London Reign</Link> sits on Piccadilly and operates on a scale that most London clubs cannot match. Aerial performers, choreographed shows, a production setup that rivals a West End theatre &mdash; this is the venue for people who want to be entertained while they party. The St James&apos;s location gives it a slightly different energy from the Mayfair strip.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            What Reign does particularly well is cater to groups and celebrations. The table packages are built around the performance schedule, so you get a proper show as part of the experience rather than just background filler. If you are organising something special and want guaranteed entertainment, Reign is a strong choice. Visit <a href="https://londonbirthdayclub.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London Birthday Club</a> for celebration packages.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Scotch of St James &mdash; History You Can Feel</h2>
+          <p className="text-[#999] leading-relaxed mb-4">
+            <Link href="/clubs/scotch-of-st-james" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Scotch of St James</Link> is unique because of what it represents rather than what it does differently on any given night. This venue has been part of London&apos;s cultural fabric since the 1960s &mdash; Jimi Hendrix played here, the Rolling Stones were regulars, and the history seeps from every wall. The current incarnation respects that legacy while functioning as a modern club.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            Walking into Scotch feels different from walking into a venue that opened last year. There is a weight to the room, a sense of tradition that you do not find at newer clubs. The music is varied, the crowd tends to skew slightly older and more sophisticated, and the atmosphere on a good night is genuinely special. If you appreciate context and history alongside your night out, Scotch is worth experiencing at least once.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Ministry of Sound &mdash; The Sound System Is the Experience</h2>
+          <p className="text-[#999] leading-relaxed mb-4">
+            <Link href="/clubs/ministry-of-sound" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Ministry of Sound</Link> is unique because it genuinely prioritises music above everything. While Mayfair clubs compete on exclusivity and table minimum spends, Ministry competes on sound. The legendary sound system in the main room &mdash; The Box &mdash; is purpose-built for dance music and delivers an experience that makes every other club speaker feel like a laptop playing through a Bluetooth receiver.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            It is also the only club on this site in <Link href="/areas/central-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">South London</Link>, and the only one that stays open until 6am on a regular basis. If you are a music-first person who cares more about the DJ and the dancefloor than the champagne and the photos, Ministry is irreplaceable.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Not Sure Which Suits You?</h2>
+          <p className="text-[#999] leading-relaxed mb-4">
+            The best approach is to tell us what kind of experience you are after and let us match you to the right venue. Message us on WhatsApp and describe what you want from the night &mdash; we will give you an honest recommendation. For the full ranked list, check our <Link href="/best-clubs-in-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">best clubs in London</Link> guide.
+          </p>
+        </>
+      );
+
+    // ─────────────────────────────────────────────
+    // POST 13: Best Clubs for Groups in London
+    // ─────────────────────────────────────────────
+    case 'best-clubs-for-groups-in-london':
+      return (
+        <>
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Why Group Nights Out Are Harder Than They Should Be</h2>
+          <p className="text-[#999] leading-relaxed mb-4">
+            Organising ten or more people for a night out in London is a logistical headache. Agreeing on a venue is the easy part &mdash; actually getting everyone in is where it falls apart. Most London clubs have strict policies on group composition, and a group of twelve guys with no table booking is not walking into any reputable venue in <Link href="/areas/mayfair" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair</Link>.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            The honest answer for large groups is almost always: book a table. It guarantees entry, gives you a base for the night, and lets you split the cost across the group &mdash; which often works out surprisingly reasonable per head. Here are the venues that handle groups best.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Cuckoo Club &mdash; Best for Mid-Size Groups</h2>
+          <p className="text-[#999] leading-relaxed mb-4">
+            <Link href="/clubs/cuckoo-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cuckoo Club</Link> on Swallow Street is one of the best Mayfair venues for groups of 8-15. The two-floor layout means your group can spread between the house music upstairs and the hip-hop downstairs, and the table positioning lets you have your own space without feeling isolated from the main room.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            Tables start from &pound;1,000 &mdash; split ten ways that is &pound;100 per person for guaranteed entry, a dedicated area, and a couple of bottles to start the night. The door team are experienced at handling group arrivals and will not make your friends queue separately. Arrive together, show the booking, and you are in.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Funky Buddha &mdash; Best for Birthday and Celebration Groups</h2>
+          <p className="text-[#999] leading-relaxed mb-4">
+            <Link href="/clubs/funky-buddha" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Funky Buddha</Link> has always been a go-to for birthday groups and big nights out. The atmosphere is celebratory by default &mdash; the music is accessible, the crowd is friendly, and the venue knows how to make a table feel like the centre of attention. If your group includes people who do not normally go clubbing, Funky Buddha is the safe choice because the energy is inclusive rather than intimidating.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            For dedicated birthday packages, check <a href="https://londonbirthdayclub.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London Birthday Club</a> &mdash; they can organise cakes, sparklers, and preferential table positioning that makes the birthday person feel genuinely special.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Luna Club &mdash; Best for Younger Groups</h2>
+          <p className="text-[#999] leading-relaxed mb-4">
+            <Link href="/clubs/luna-club-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Luna Club</Link> naturally attracts a younger crowd (early to mid-20s) and the energy suits groups who want a big, loud, high-energy night. The music programme &mdash; hip-hop, RnB, Afrobeats &mdash; means the dancefloor stays packed, and the venue layout works well for groups who want to split between their table and the floor.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">BEAT London &mdash; Best for Music-Focused Groups</h2>
+          <p className="text-[#999] leading-relaxed mb-4">
+            <Link href="/clubs/beat-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">BEAT London</Link> on Margaret Street is the call for groups who actually care about the music. The sound system is excellent, the crowd is there to dance rather than be seen, and the entry difficulty is lower than the Mayfair venues &mdash; making it far easier to get a large group through the door. If your group includes people who would rather be on the dancefloor than posing at a table, BEAT delivers.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The London Reign &mdash; Best for Mixed-Interest Groups</h2>
+          <p className="text-[#999] leading-relaxed mb-4">
+            When your group includes people with different expectations &mdash; some want entertainment, some want to dance, some just want to sit and drink &mdash; <Link href="/clubs/the-london-reign" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The London Reign</Link> covers all bases. The performances give everyone something to watch, the dancefloor satisfies the dancers, and the table setup keeps the drinkers happy. It is the diplomatic choice when you cannot agree.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Tips for Getting Your Group In</h2>
+          <p className="text-[#999] leading-relaxed mb-4">
+            <strong className="text-white">Book a table.</strong> We say this constantly because it is the single most important piece of advice for groups. A &pound;1,000 minimum split 10 ways is &pound;100 each &mdash; less than many people spend on a night out anyway. It eliminates the entry stress completely.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            <strong className="text-white">Arrive together.</strong> Door teams do not like processing groups in dribs and drabs. Get everyone to a <Link href="/blog/pre-drinks-bars-near-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">nearby bar</Link> first and walk over as one unit. Check our <Link href="/guides/how-to-get-into-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">entry guide</Link> for more on group composition and door policies.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            <strong className="text-white">Use a promoter.</strong> This is genuinely the easiest move. Tell us the group size, the date, and the vibe you want &mdash; we will match you to the right venue and handle the booking. Read our <Link href="/blog/london-club-promoter-guide" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">promoter guide</Link> to understand how it works.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            For table service pricing and bottle packages, visit <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London Bottle Service</a>.
+          </p>
+        </>
+      );
+
+    // ─────────────────────────────────────────────
+    // POST 14: How London Club Promoters Work
+    // ─────────────────────────────────────────────
+    case 'london-club-promoter-guide':
+      return (
+        <>
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">What Is a Club Promoter?</h2>
+          <p className="text-[#999] leading-relaxed mb-4">
+            A club promoter is your bridge between wanting a night out and actually having one. We work with London&apos;s best clubs to fill their rooms with the right people &mdash; and in return, we can offer you free guestlist, table bookings, and the kind of insider access that turns a decent night into a great one.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            The key thing to understand is that our service is free to you. Promoters are paid by the clubs, not by the customers. When you book a table through us, you pay the same minimum spend as you would booking directly &mdash; the difference is that we can often negotiate better positioning, prioritise your entry, and advise on which night and which venue will suit your specific group.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">What Can a Promoter Do for You?</h2>
+          <p className="text-[#999] leading-relaxed mb-4">
+            <strong className="text-white">Guestlist access:</strong> Getting on a club&apos;s guestlist typically means free or reduced entry, and in many cases it is the only way to guarantee walk-in entry. Without guestlist, you are relying on the door team&apos;s discretion &mdash; which at venues like <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link> or <Link href="/clubs/the-box-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Box</Link> is extremely selective.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            <strong className="text-white">Table bookings:</strong> We handle the reservation process and can advise on which table positions are best, which nights are busiest, and what the realistic minimum spend is for your group size. For details on pricing, visit <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London Bottle Service</a>.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            <strong className="text-white">Venue matching:</strong> This is where a good promoter adds real value. Tell us what you want &mdash; the music, the vibe, the budget, the group composition &mdash; and we will tell you exactly where to go. We know these venues inside out because we work with them every week. Read our <Link href="/best-clubs-in-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">best clubs guide</Link> for an overview.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            <strong className="text-white">Event planning:</strong> For birthdays, hen and stag parties, corporate events, and special occasions, a promoter can coordinate the entire evening. For birthday-specific packages, <a href="https://londonbirthdayclub.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London Birthday Club</a> has dedicated offerings.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">How the Guestlist Actually Works</h2>
+          <p className="text-[#999] leading-relaxed mb-4">
+            When you request guestlist through a promoter, we submit your name and group details to the club before the night. When you arrive, you give your name at the door and &mdash; assuming you meet the <Link href="/guides/how-to-get-into-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">dress code and group composition requirements</Link> &mdash; you are waved through. It is that simple.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            The caveat: guestlist does not guarantee entry at every venue. At the most exclusive clubs, guestlist gets you to the front of the queue and past the first filter, but the door team still has final say. Venues like <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape</Link> and <Link href="/clubs/the-box-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Box</Link> are examples where guestlist helps but does not guarantee. At most other venues &mdash; <Link href="/clubs/cuckoo-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cuckoo Club</Link>, <Link href="/clubs/funky-buddha" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Funky Buddha</Link>, <Link href="/clubs/beat-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">BEAT</Link> &mdash; guestlist is as good as a guaranteed entry for well-presented groups.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">How to Spot a Bad Promoter</h2>
+          <p className="text-[#999] leading-relaxed mb-4">
+            Not every promoter operates the same way. Avoid anyone who charges you for guestlist &mdash; it is always free. Be wary of promoters who promise entry to clubs where they clearly do not have a relationship. And be cautious of anyone who overpromises &mdash; if someone guarantees you a table at Tape London on a Saturday with no deposit, they are probably not being honest.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            A good promoter is transparent about what they can and cannot deliver. We will tell you honestly if a venue is realistic for your group or if you would be better served elsewhere. That honesty is what keeps people coming back.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">How to Book Through Us</h2>
+          <p className="text-[#999] leading-relaxed mb-4">
+            Simple &mdash; message us on WhatsApp. Tell us what night you are going out, how many people, the rough gender split, and what kind of night you want. We will come back with specific recommendations and handle the booking from there. No forms, no sign-ups, no fees. Just a WhatsApp message.
+          </p>
+          <p className="text-[#999] leading-relaxed mb-4">
+            For tonight&apos;s options, check the <Link href="/" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">homepage</Link>. For Mayfair-specific events, head to <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair Tonight</a>.
           </p>
         </>
       );

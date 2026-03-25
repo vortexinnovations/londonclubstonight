@@ -8,7 +8,7 @@ import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 export const metadata: Metadata = {
   title: 'Best Clubs in Mayfair 2026 — The Heart of London\'s Luxury Nightlife',
   description:
-    'The definitive guide to Mayfair nightclubs. Tape, Cirque, TABU, Libertine, Maddox, Scotch, and more — table bookings, guestlist, and insider tips for every Mayfair club.',
+    'The definitive guide to Mayfair nightclubs. Tape, Cirque, TABU, Funky Buddha, Maddox, Scotch, and more — table bookings, guestlist, and insider tips for every Mayfair club.',
   keywords: [
     'clubs in Mayfair',
     'Mayfair clubs',
@@ -46,7 +46,7 @@ export default function MayfairPage() {
       <SchemaMarkup
         schema={getArticleSchema(
           'Best Clubs in Mayfair 2026 — The Heart of London\'s Luxury Nightlife',
-          'The definitive guide to Mayfair nightclubs including Tape, Cirque, TABU, Libertine, Maddox, Scotch, and more.',
+          'The definitive guide to Mayfair nightclubs including Tape, Cirque, TABU, Funky Buddha, Maddox, Scotch, and more.',
           '/areas/mayfair',
           '2025-01-01'
         )}
@@ -126,7 +126,7 @@ export default function MayfairPage() {
               <p>
                 Almost every top-tier London club operates within a few minutes&apos; walk of
                 each other in Mayfair. Tape London on Hanover Square, TABU hidden below street
-                level, Libertine on Winsley Street, Maddox on Maddox Street, Scotch of St James
+                level, Funky Buddha on Winsley Street, Maddox on Maddox Street, Scotch of St James
                 tucked away on Mason&apos;s Yard, and Cuckoo Club on Swallow Street. This
                 density means that if your first choice doesn&apos;t work out, you&apos;re
                 never far from an alternative.

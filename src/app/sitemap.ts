@@ -8,8 +8,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const clubPages = clubs.map(club => ({
     url: `${baseUrl}/clubs/${club.slug}`,
     lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: 0.8,
+    changeFrequency: club.status === 'open' ? 'weekly' as const : 'monthly' as const,
+    priority: club.status === 'open' ? 0.8 : 0.4,
   }));
 
   const blogPages = blogPosts.map(post => ({

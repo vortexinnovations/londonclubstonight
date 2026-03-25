@@ -6,8 +6,10 @@ const clubLinks = [
   { href: '/clubs/the-london-reign', label: 'The London Reign' },
   { href: '/clubs/ministry-of-sound', label: 'Ministry of Sound' },
   { href: '/clubs/tabu-london', label: 'TABU London' },
-  { href: '/clubs/libertine', label: 'Libertine' },
-  { href: '/clubs/lio-london', label: 'Lio Club London' },
+  { href: '/clubs/funky-buddha', label: 'Funky Buddha' },
+  { href: '/clubs/the-box-london', label: 'The Box' },
+  { href: '/clubs/luna-club-london', label: 'Luna Club' },
+  { href: '/clubs/selene-london', label: 'Selene' },
 ];
 
 const guideLinks = [
