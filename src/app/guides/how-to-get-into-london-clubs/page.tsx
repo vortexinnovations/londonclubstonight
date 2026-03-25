@@ -69,11 +69,11 @@ export default function HowToGetInPage() {
       <div className="bg-[#0A0A0A] min-h-screen">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 py-20 md:py-28">
           <div className="mb-4 flex gap-4 text-sm">
-            <Link href="/" className="text-[#999] hover:text-white transition-colors">
+            <Link href="/" className="text-[#BBB] hover:text-white transition-colors">
               Home
             </Link>
-            <span className="text-[#666]">/</span>
-            <Link href="/guides" className="text-[#999] hover:text-white transition-colors">
+            <span className="text-[#888]">/</span>
+            <Link href="/guides" className="text-[#BBB] hover:text-white transition-colors">
               Guides
             </Link>
           </div>
@@ -81,7 +81,7 @@ export default function HowToGetInPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
             Guestlists &amp; Table Bookings
           </h1>
-          <p className="text-center text-[#999] max-w-2xl mx-auto mb-12">
+          <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-12">
             The practical guide to planning your night at London clubs. We are promoters — this is what we do every night.
           </p>
 
@@ -89,19 +89,19 @@ export default function HowToGetInPage() {
           <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 mb-12">
             <h2 className="text-sm font-semibold text-[#C0C0C0] mb-3">In this guide</h2>
             <div className="grid sm:grid-cols-2 gap-2 text-sm">
-              <a href="#guestlist" className="text-[#999] hover:text-white transition-colors">1. Guestlist</a>
-              <a href="#table-bookings" className="text-[#999] hover:text-white transition-colors">2. Table Bookings</a>
-              <a href="#dress-code" className="text-[#999] hover:text-white transition-colors">3. Dress Code</a>
-              <a href="#group-composition" className="text-[#999] hover:text-white transition-colors">4. Group Composition</a>
-              <a href="#age-and-id" className="text-[#999] hover:text-white transition-colors">5. Age &amp; ID</a>
+              <a href="#guestlist" className="text-[#BBB] hover:text-white transition-colors">1. Guestlist</a>
+              <a href="#table-bookings" className="text-[#BBB] hover:text-white transition-colors">2. Table Bookings</a>
+              <a href="#dress-code" className="text-[#BBB] hover:text-white transition-colors">3. Dress Code</a>
+              <a href="#group-composition" className="text-[#BBB] hover:text-white transition-colors">4. Group Composition</a>
+              <a href="#age-and-id" className="text-[#BBB] hover:text-white transition-colors">5. Age &amp; ID</a>
             </div>
           </div>
 
           {/* Section 1: Guestlist */}
           <section id="guestlist" className="mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">1. Guestlist</h2>
-            <p className="text-center text-[#999] max-w-2xl mx-auto mb-12">The free way to arrange your night at any London club.</p>
-            <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 space-y-4 text-[#999] text-sm leading-relaxed">
+            <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-12">The free way to arrange your night at any London club.</p>
+            <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 space-y-4 text-[#BBB] text-sm leading-relaxed">
               <p>
                 A guestlist is a list of names submitted to the venue by a promoter before the night. When you arrive, you give your name at the door and they check you against the list. If you are on it, you get priority consideration for entry.
               </p>
@@ -134,8 +134,8 @@ export default function HowToGetInPage() {
           {/* Section 2: Table Bookings */}
           <section id="table-bookings" className="mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">2. Table Bookings</h2>
-            <p className="text-center text-[#999] max-w-2xl mx-auto mb-12">The premium option for a guaranteed, hassle-free night.</p>
-            <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 space-y-4 text-[#999] text-sm leading-relaxed">
+            <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-12">The premium option for a guaranteed, hassle-free night.</p>
+            <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 space-y-4 text-[#BBB] text-sm leading-relaxed">
               <p>
                 A table booking is the premium way to enjoy any London club. When you book a table, you commit to a minimum spend on drinks for the evening. In return, you get a reserved table, dedicated service, and guaranteed entry for your group.
               </p>
@@ -158,7 +158,7 @@ export default function HowToGetInPage() {
             </div>
 
             <div className="mt-6 bg-[#141414] border border-[#222] rounded-2xl p-7 text-center">
-              <p className="text-[#999] text-sm mb-4">
+              <p className="text-[#BBB] text-sm mb-4">
                 We handle table bookings at every club listed on this site. Message us with your preferred venue, date, and group size.
               </p>
               <WhatsAppCTA />
@@ -168,8 +168,8 @@ export default function HowToGetInPage() {
           {/* Section 3: Dress Code */}
           <section id="dress-code" className="mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">3. Dress Code</h2>
-            <p className="text-center text-[#999] max-w-2xl mx-auto mb-12">What to wear for a night out at London&apos;s clubs.</p>
-            <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 space-y-4 text-[#999] text-sm leading-relaxed">
+            <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-12">What to wear for a night out at London&apos;s clubs.</p>
+            <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 space-y-4 text-[#BBB] text-sm leading-relaxed">
               <p>
                 Every club says &ldquo;smart&rdquo; — here is what that actually means in practice.
               </p>
@@ -218,8 +218,8 @@ export default function HowToGetInPage() {
           {/* Section 4: Group Composition */}
           <section id="group-composition" className="mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">4. Group Composition</h2>
-            <p className="text-center text-[#999] max-w-2xl mx-auto mb-12">How your group makeup affects your night.</p>
-            <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 space-y-4 text-[#999] text-sm leading-relaxed">
+            <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-12">How your group makeup affects your night.</p>
+            <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 space-y-4 text-[#BBB] text-sm leading-relaxed">
               <p>
                 The gender ratio of your group is a factor at Mayfair clubs. Here is how it works in practice.
               </p>
@@ -255,8 +255,8 @@ export default function HowToGetInPage() {
           {/* Section 5: Age & ID */}
           <section id="age-and-id" className="mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">5. Age &amp; ID</h2>
-            <p className="text-center text-[#999] max-w-2xl mx-auto mb-12">What you need to know about age requirements.</p>
-            <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 space-y-4 text-[#999] text-sm leading-relaxed">
+            <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-12">What you need to know about age requirements.</p>
+            <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 space-y-4 text-[#BBB] text-sm leading-relaxed">
               <p>
                 The legal minimum age for entry to any London nightclub is 18. However, the practical minimum at Mayfair clubs is often higher.
               </p>
@@ -279,7 +279,7 @@ export default function HowToGetInPage() {
             <h2 className="text-xl font-bold text-white mb-3">
               Let us handle it for you
             </h2>
-            <p className="text-[#999] mb-6 max-w-lg mx-auto">
+            <p className="text-[#BBB] mb-6 max-w-lg mx-auto">
               Guestlists and table bookings at every club on this site. Message us with where you want to go, when, and who is in your group. We will sort it.
             </p>
             <WhatsAppCTA />
@@ -288,12 +288,12 @@ export default function HowToGetInPage() {
           {/* FAQ Section */}
           <div className="mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">Frequently Asked Questions</h2>
-            <p className="text-center text-[#999] max-w-2xl mx-auto mb-12">Common questions about guestlists, table bookings, and planning your night.</p>
+            <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-12">Common questions about guestlists, table bookings, and planning your night.</p>
             <div className="grid gap-6">
               {faqs.map((faq, index) => (
                 <div key={index} className="bg-[#141414] border border-[#222] rounded-2xl p-7">
                   <h3 className="text-white font-semibold mb-3">{faq.question}</h3>
-                  <p className="text-[#999] text-sm leading-relaxed">{faq.answer}</p>
+                  <p className="text-[#BBB] text-sm leading-relaxed">{faq.answer}</p>
                 </div>
               ))}
             </div>

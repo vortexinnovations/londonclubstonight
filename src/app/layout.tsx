@@ -51,7 +51,7 @@ export default function RootLayout({
       <body>
         <SchemaMarkup schema={getLocalBusinessSchema()} />
         <Header />
-        <main className="pt-16 pb-20 lg:pb-0">
+        <main className="pt-20 pb-24 lg:pb-0">
           {children}
         </main>
         <Footer />

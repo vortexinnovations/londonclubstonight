@@ -57,16 +57,16 @@ export default function SohoPage() {
         <section className="border-b border-[#222] py-20 md:py-28">
           <div className="max-w-5xl mx-auto px-6 sm:px-8 text-center">
             <div className="mb-4">
-              <Link href="/areas" className="text-[#666] hover:text-[#999] text-sm transition-colors">
+              <Link href="/areas" className="text-[#888] hover:text-[#BBB] text-sm transition-colors">
                 Areas
               </Link>
               <span className="text-[#444] mx-2">/</span>
-              <span className="text-[#999] text-sm">Soho</span>
+              <span className="text-[#BBB] text-sm">Soho</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight">
               Best Clubs in Soho
             </h1>
-            <p className="text-[#999] text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+            <p className="text-[#BBB] text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
               Soho is London&apos;s most vibrant entertainment district, renowned for
               its bars, restaurants, theatres, and late-night energy. While the majority
               of London&apos;s luxury nightclubs sit technically within Mayfair&apos;s
@@ -83,7 +83,7 @@ export default function SohoPage() {
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
                 Looking for a Soho night out?
               </h2>
-              <p className="text-[#999] max-w-2xl mx-auto text-center mb-8">
+              <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-8">
                 We know the Soho and Mayfair scene inside out. Message us for table bookings,
                 guestlist, or help picking the right venue for your group.
               </p>
@@ -100,7 +100,7 @@ export default function SohoPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
               Clubs in &amp; Around Soho
             </h2>
-            <p className="text-[#999] max-w-2xl mx-auto text-center mb-12">
+            <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-12">
               The clubs that sit within Soho or on its immediate borders with Mayfair
               and the Carnaby area.
             </p>
@@ -118,10 +118,10 @@ export default function SohoPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
               The Soho &amp; Mayfair Overlap
             </h2>
-            <p className="text-[#999] max-w-2xl mx-auto text-center mb-12">
+            <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-12">
               How the two areas blend together for a seamless night out.
             </p>
-            <div className="space-y-4 text-[#999] leading-relaxed">
+            <div className="space-y-4 text-[#BBB] leading-relaxed">
               <p>
                 The boundary between Soho and Mayfair runs roughly along Regent Street,
                 but in practice the two areas blend into each other. Venues on streets
@@ -149,7 +149,7 @@ export default function SohoPage() {
               >
                 <span className="text-white font-semibold">Mayfair Clubs Guide</span>
                 <span className="text-[#C0C0C0] text-sm ml-2">&rarr;</span>
-                <p className="text-[#666] text-sm mt-1">
+                <p className="text-[#888] text-sm mt-1">
                   The full guide to Mayfair&apos;s {getClubsByArea('Mayfair').length} clubs,
                   table bookings, and guestlist.
                 </p>
@@ -164,10 +164,10 @@ export default function SohoPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
               The Broader Soho Scene
             </h2>
-            <p className="text-[#999] max-w-2xl mx-auto text-center mb-12">
+            <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-12">
               Beyond the clubs, Soho is the ideal starting point for any London night.
             </p>
-            <div className="space-y-4 text-[#999] leading-relaxed">
+            <div className="space-y-4 text-[#BBB] leading-relaxed">
               <p>
                 Beyond the high-end clubs, Soho is packed with late-night bars, cocktail
                 spots, and smaller music venues that make it the ideal starting point for
@@ -191,7 +191,7 @@ export default function SohoPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
               More London Club Guides
             </h2>
-            <p className="text-[#999] max-w-2xl mx-auto text-center mb-12">
+            <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-12">
               Explore more of London&apos;s nightlife scene.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -200,28 +200,28 @@ export default function SohoPage() {
                 className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
               >
                 <h3 className="text-white font-semibold mb-1">Mayfair Clubs</h3>
-                <p className="text-[#666] text-sm">The luxury nightlife epicentre with {getClubsByArea('Mayfair').length} clubs.</p>
+                <p className="text-[#888] text-sm">The luxury nightlife epicentre with {getClubsByArea('Mayfair').length} clubs.</p>
               </Link>
               <Link
                 href="/areas/central-london"
                 className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
               >
                 <h3 className="text-white font-semibold mb-1">Central London Clubs</h3>
-                <p className="text-[#666] text-sm">The complete West End nightlife guide.</p>
+                <p className="text-[#888] text-sm">The complete West End nightlife guide.</p>
               </Link>
               <Link
                 href="/best-clubs-in-london"
                 className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
               >
                 <h3 className="text-white font-semibold mb-1">Best Clubs in London</h3>
-                <p className="text-[#666] text-sm">Our ranked guide to the top clubs across the city.</p>
+                <p className="text-[#888] text-sm">Our ranked guide to the top clubs across the city.</p>
               </Link>
               <Link
                 href="/guides/how-to-get-into-london-clubs"
                 className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
               >
                 <h3 className="text-white font-semibold mb-1">Entry Guide</h3>
-                <p className="text-[#666] text-sm">How to get into London&apos;s most exclusive clubs.</p>
+                <p className="text-[#888] text-sm">How to get into London&apos;s most exclusive clubs.</p>
               </Link>
             </div>
 
@@ -230,7 +230,7 @@ export default function SohoPage() {
               <h3 className="text-xl font-bold text-white mb-2">
                 Planning a night around Soho?
               </h3>
-              <p className="text-[#999] text-sm mb-5 max-w-md mx-auto">
+              <p className="text-[#BBB] text-sm mb-5 max-w-md mx-auto">
                 Message us on WhatsApp and we&apos;ll help you plan the perfect evening,
                 from pre-drinks to the main event.
               </p>

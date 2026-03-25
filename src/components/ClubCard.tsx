@@ -30,7 +30,7 @@ export default function ClubCard({ club, featured = false, showArea = true }: Cl
 
         {/* Tagline */}
         <p
-          className={`text-[#999] text-center leading-relaxed ${
+          className={`text-[#BBB] text-center leading-relaxed ${
             featured ? 'text-sm md:text-base mt-4' : 'text-sm mt-3'
           }`}
         >
@@ -50,7 +50,7 @@ export default function ClubCard({ club, featured = false, showArea = true }: Cl
         </div>
 
         {/* Bottom info: area + table minimum */}
-        <div className="flex items-center justify-center gap-3 mt-6 text-xs text-[#666]">
+        <div className="flex items-center justify-center gap-3 mt-6 text-xs text-[#888]">
           {showArea && (
             <>
               <span>{club.area}</span>

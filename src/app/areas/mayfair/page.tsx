@@ -57,16 +57,16 @@ export default function MayfairPage() {
         <section className="border-b border-[#222] py-20 md:py-28">
           <div className="max-w-5xl mx-auto px-6 sm:px-8 text-center">
             <div className="mb-4">
-              <Link href="/areas" className="text-[#666] hover:text-[#999] text-sm transition-colors">
+              <Link href="/areas" className="text-[#888] hover:text-[#BBB] text-sm transition-colors">
                 Areas
               </Link>
               <span className="text-[#444] mx-2">/</span>
-              <span className="text-[#999] text-sm">Mayfair</span>
+              <span className="text-[#BBB] text-sm">Mayfair</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight">
               Best Clubs in Mayfair
             </h1>
-            <p className="text-[#999] text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+            <p className="text-[#BBB] text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
               Mayfair is the undisputed centre of London&apos;s luxury nightlife. Within a few
               streets of each other, you&apos;ll find the highest concentration of exclusive
               members clubs, celebrity haunts, and high-end venues anywhere in the city. If
@@ -82,7 +82,7 @@ export default function MayfairPage() {
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
                 Need help choosing a Mayfair club?
               </h2>
-              <p className="text-[#999] max-w-2xl mx-auto text-center mb-8">
+              <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-8">
                 We know every door in W1. Message us for table bookings, guestlist access,
                 or personalised recommendations.
               </p>
@@ -99,7 +99,7 @@ export default function MayfairPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
               Mayfair Clubs
             </h2>
-            <p className="text-[#999] max-w-2xl mx-auto text-center mb-12">
+            <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-12">
               {mayfairClubs.length} clubs in Mayfair — from exclusive members clubs to
               high-energy party venues.
             </p>
@@ -117,10 +117,10 @@ export default function MayfairPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
               Why Mayfair?
             </h2>
-            <p className="text-[#999] max-w-2xl mx-auto text-center mb-12">
+            <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-12">
               What makes Mayfair the centre of London&apos;s nightlife.
             </p>
-            <div className="space-y-4 text-[#999] leading-relaxed">
+            <div className="space-y-4 text-[#BBB] leading-relaxed">
               <p>
                 The W1 postcode dominates London nightlife for a reason. Mayfair sits between
                 Oxford Street and Piccadilly, bordered by Park Lane and Regent Street, placing
@@ -152,7 +152,7 @@ export default function MayfairPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
               Plan Your Mayfair Night
             </h2>
-            <p className="text-[#999] max-w-2xl mx-auto text-center mb-12">
+            <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-12">
               Essential resources for your Mayfair night out.
             </p>
             <div className="grid sm:grid-cols-2 gap-6">
@@ -165,7 +165,7 @@ export default function MayfairPage() {
                 <h3 className="text-lg font-bold text-white mb-2">
                   Mayfair Tonight
                 </h3>
-                <p className="text-[#999] text-sm">
+                <p className="text-[#BBB] text-sm">
                   For tonight&apos;s specific Mayfair events and guestlist, head to
                   mayfairtonight.com for up-to-the-minute listings.
                 </p>
@@ -182,7 +182,7 @@ export default function MayfairPage() {
                 <h3 className="text-lg font-bold text-white mb-2">
                   Table &amp; Bottle Pricing
                 </h3>
-                <p className="text-[#999] text-sm">
+                <p className="text-[#BBB] text-sm">
                   Compare table minimums and bottle prices across all Mayfair clubs on
                   londonbottleservice.com.
                 </p>
@@ -200,7 +200,7 @@ export default function MayfairPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
               More London Club Guides
             </h2>
-            <p className="text-[#999] max-w-2xl mx-auto text-center mb-12">
+            <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-12">
               Explore more of London&apos;s nightlife scene.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -209,21 +209,21 @@ export default function MayfairPage() {
                 className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
               >
                 <h3 className="text-white font-semibold mb-1">Best Clubs in London</h3>
-                <p className="text-[#666] text-sm">Our ranked guide to the top clubs across the city.</p>
+                <p className="text-[#888] text-sm">Our ranked guide to the top clubs across the city.</p>
               </Link>
               <Link
                 href="/guides/how-to-get-into-london-clubs"
                 className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
               >
                 <h3 className="text-white font-semibold mb-1">Entry Guide</h3>
-                <p className="text-[#666] text-sm">How to get into London&apos;s most exclusive clubs.</p>
+                <p className="text-[#888] text-sm">How to get into London&apos;s most exclusive clubs.</p>
               </Link>
               <Link
                 href="/areas/central-london"
                 className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
               >
                 <h3 className="text-white font-semibold mb-1">Central London Clubs</h3>
-                <p className="text-[#666] text-sm">The wider West End scene including Soho and St James&apos;s.</p>
+                <p className="text-[#888] text-sm">The wider West End scene including Soho and St James&apos;s.</p>
               </Link>
             </div>
 
@@ -232,7 +232,7 @@ export default function MayfairPage() {
               <h3 className="text-xl font-bold text-white mb-2">
                 Ready for a Mayfair night out?
               </h3>
-              <p className="text-[#999] text-sm mb-5 max-w-md mx-auto">
+              <p className="text-[#BBB] text-sm mb-5 max-w-md mx-auto">
                 Message us on WhatsApp and we&apos;ll sort your table, guestlist, or give
                 you our honest recommendation.
               </p>

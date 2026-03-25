@@ -30,12 +30,12 @@ export default function ClubsPage() {
     <main className="min-h-screen bg-[#0A0A0A]">
       {/* Breadcrumb */}
       <div className="max-w-6xl mx-auto px-6 sm:px-8 pt-6 pb-2">
-        <nav className="flex items-center gap-2 text-sm text-[#666]">
-          <Link href="/" className="hover:text-[#999] transition-colors">
+        <nav className="flex items-center gap-2 text-sm text-[#888]">
+          <Link href="/" className="hover:text-[#BBB] transition-colors">
             Home
           </Link>
           <span>/</span>
-          <span className="text-[#999]">Clubs</span>
+          <span className="text-[#BBB]">Clubs</span>
         </nav>
       </div>
 
@@ -45,7 +45,7 @@ export default function ClubsPage() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
             London Nightclubs
           </h1>
-          <p className="text-lg text-[#999] leading-relaxed max-w-2xl mx-auto">
+          <p className="text-lg text-[#BBB] leading-relaxed max-w-2xl mx-auto">
             The complete list of London&apos;s best nightclubs, ranked by our team.
             Every club includes insider tips on entry, dress code, table prices,
             and what to expect on the night.
@@ -74,7 +74,7 @@ export default function ClubsPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
               Not Sure Which Club?
             </h2>
-            <p className="text-[#999] max-w-2xl mx-auto text-center mb-8">
+            <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-8">
               Message us on WhatsApp and we&apos;ll recommend the best club for
               your group, budget, and music taste.
             </p>
@@ -91,7 +91,7 @@ export default function ClubsPage() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
             Explore More
           </h2>
-          <p className="text-[#999] max-w-2xl mx-auto text-center mb-12">
+          <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-12">
             Guides, pricing, and event listings to help you plan the perfect night.
           </p>
           <div className="grid sm:grid-cols-3 gap-6">
@@ -100,7 +100,7 @@ export default function ClubsPage() {
               className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-6 text-center transition-colors"
             >
               <span className="text-[#C0C0C0] font-semibold">Entry Guide</span>
-              <p className="text-[#666] text-sm mt-2">
+              <p className="text-[#888] text-sm mt-2">
                 How to get past the door at London&apos;s best clubs
               </p>
             </Link>
@@ -113,7 +113,7 @@ export default function ClubsPage() {
               <span className="text-[#C0C0C0] font-semibold">
                 Table &amp; Bottle Pricing
               </span>
-              <p className="text-[#666] text-sm mt-2">
+              <p className="text-[#888] text-sm mt-2">
                 Full menus at londonbottleservice.com
               </p>
             </a>
@@ -126,7 +126,7 @@ export default function ClubsPage() {
               <span className="text-[#C0C0C0] font-semibold">
                 Tonight&apos;s Events
               </span>
-              <p className="text-[#666] text-sm mt-2">
+              <p className="text-[#888] text-sm mt-2">
                 What&apos;s on tonight at mayfairtonight.com
               </p>
             </a>

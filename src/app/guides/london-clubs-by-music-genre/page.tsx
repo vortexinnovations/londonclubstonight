@@ -82,11 +82,11 @@ export default function MusicGenrePage() {
       <div className="bg-[#0A0A0A] min-h-screen">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 py-20 md:py-28">
           <div className="mb-4 flex gap-4 text-sm">
-            <Link href="/" className="text-[#999] hover:text-white transition-colors">
+            <Link href="/" className="text-[#BBB] hover:text-white transition-colors">
               Home
             </Link>
-            <span className="text-[#666]">/</span>
-            <Link href="/guides" className="text-[#999] hover:text-white transition-colors">
+            <span className="text-[#888]">/</span>
+            <Link href="/guides" className="text-[#BBB] hover:text-white transition-colors">
               Guides
             </Link>
           </div>
@@ -94,7 +94,7 @@ export default function MusicGenrePage() {
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
             London Clubs by Music Genre
           </h1>
-          <p className="text-center text-[#999] max-w-2xl mx-auto mb-12">
+          <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-12">
             Finding the right club is as much about the music as the venue. Here is every club categorised by what they actually play, with honest assessments of which is best for each genre.
           </p>
 
@@ -106,7 +106,7 @@ export default function MusicGenrePage() {
                 <a
                   key={section.id}
                   href={`#${section.id}`}
-                  className="text-[#999] hover:text-white text-sm px-3 py-1 border border-[#222] rounded-full hover:border-[#C0C0C0]/30 transition-colors"
+                  className="text-[#BBB] hover:text-white text-sm px-3 py-1 border border-[#222] rounded-full hover:border-[#C0C0C0]/30 transition-colors"
                 >
                   {section.title}
                 </a>
@@ -117,7 +117,7 @@ export default function MusicGenrePage() {
           {genreSections.map((section) => (
             <section key={section.id} id={section.id} className="mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">{section.title}</h2>
-              <p className="text-center text-[#999] max-w-2xl mx-auto mb-12">{section.description}</p>
+              <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-12">{section.description}</p>
 
               <div className="grid gap-6 mb-6">
                 {section.notes.map(({ slug, note }) => {
@@ -130,12 +130,12 @@ export default function MusicGenrePage() {
                           <Link href={`/clubs/${club.slug}`} className="text-lg font-bold text-white hover:text-[#C0C0C0] transition-colors">
                             {club.name}
                           </Link>
-                          <p className="text-[#666] text-sm mt-1">
+                          <p className="text-[#888] text-sm mt-1">
                             {club.area} &middot; {club.musicGenres.join(', ')} &middot; Closes {club.closingTime}
                           </p>
                         </div>
                       </div>
-                      <p className="text-[#999] text-sm leading-relaxed">{note}</p>
+                      <p className="text-[#BBB] text-sm leading-relaxed">{note}</p>
                       <div className="mt-3">
                         <Link href={`/clubs/${club.slug}`} className="text-[#C0C0C0] text-sm hover:text-white transition-colors">
                           Full club profile &rarr;
@@ -149,7 +149,7 @@ export default function MusicGenrePage() {
               <div className="bg-[#0A0A0A] border border-[#222] rounded-2xl p-7">
                 <p className="text-sm">
                   <span className="text-[#C0C0C0] font-semibold">Best for {section.title.toLowerCase()}: </span>
-                  <span className="text-[#999]">{section.bestFor}</span>
+                  <span className="text-[#BBB]">{section.bestFor}</span>
                 </p>
               </div>
             </section>
@@ -158,8 +158,8 @@ export default function MusicGenrePage() {
           {/* Summary */}
           <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">The Bottom Line</h2>
-            <p className="text-center text-[#999] max-w-2xl mx-auto mb-8">A quick summary to help you choose.</p>
-            <div className="space-y-4 text-[#999] text-sm leading-relaxed">
+            <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-8">A quick summary to help you choose.</p>
+            <div className="space-y-4 text-[#BBB] text-sm leading-relaxed">
               <p>
                 If hip-hop is your thing, you have the most choice — nearly every Mayfair club leans that direction. The differences come down to exclusivity (Tape), atmosphere (TABU, Cirque), and sound quality (BEAT).
               </p>
@@ -180,7 +180,7 @@ export default function MusicGenrePage() {
             <h2 className="text-xl font-bold text-white mb-3">
               Not sure which club suits your taste?
             </h2>
-            <p className="text-[#999] mb-6 max-w-lg mx-auto">
+            <p className="text-[#BBB] mb-6 max-w-lg mx-auto">
               Message us on WhatsApp. Tell us what music you like and we will recommend the right venue and sort your guestlist or table booking.
             </p>
             <WhatsAppCTA />

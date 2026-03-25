@@ -54,7 +54,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {clubLinks.map(link => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-[#666] hover:text-[#C0C0C0] text-sm transition-colors">
+                  <Link href={link.href} className="text-[#888] hover:text-[#C0C0C0] text-sm transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -72,7 +72,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {guideLinks.map(link => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-[#666] hover:text-[#C0C0C0] text-sm transition-colors">
+                  <Link href={link.href} className="text-[#888] hover:text-[#C0C0C0] text-sm transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -85,7 +85,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {areaLinks.map(link => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-[#666] hover:text-[#C0C0C0] text-sm transition-colors">
+                  <Link href={link.href} className="text-[#888] hover:text-[#C0C0C0] text-sm transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -98,7 +98,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {blogLinks.map(link => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-[#666] hover:text-[#C0C0C0] text-sm transition-colors">
+                  <Link href={link.href} className="text-[#888] hover:text-[#C0C0C0] text-sm transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -120,7 +120,7 @@ export default function Footer() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#666] hover:text-[#C0C0C0] text-sm transition-colors"
+                    className="text-[#888] hover:text-[#C0C0C0] text-sm transition-colors"
                   >
                     {link.label}
                   </a>
@@ -131,14 +131,14 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-[#222] pt-10 flex flex-col md:flex-row justify-between items-center gap-4 text-center">
-          <div className="text-[#666] text-sm">
+          <div className="text-[#888] text-sm">
             © {new Date().getFullYear()} London Clubs Tonight. The definitive guide to London&apos;s best nightclubs.
           </div>
           <div className="flex items-center gap-6">
-            <Link href="/contact" className="text-[#666] hover:text-[#C0C0C0] text-sm transition-colors">
+            <Link href="/contact" className="text-[#888] hover:text-[#C0C0C0] text-sm transition-colors">
               Contact
             </Link>
-            <Link href="/best-clubs-in-london" className="text-[#666] hover:text-[#C0C0C0] text-sm transition-colors">
+            <Link href="/best-clubs-in-london" className="text-[#888] hover:text-[#C0C0C0] text-sm transition-colors">
               Best Clubs
             </Link>
           </div>

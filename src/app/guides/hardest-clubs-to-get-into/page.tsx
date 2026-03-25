@@ -75,11 +75,11 @@ export default function ExclusiveClubsPage() {
       <div className="bg-[#0A0A0A] min-h-screen">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 py-20 md:py-28">
           <div className="mb-4 flex gap-4 text-sm">
-            <Link href="/" className="text-[#999] hover:text-white transition-colors">
+            <Link href="/" className="text-[#BBB] hover:text-white transition-colors">
               Home
             </Link>
-            <span className="text-[#666]">/</span>
-            <Link href="/guides" className="text-[#999] hover:text-white transition-colors">
+            <span className="text-[#888]">/</span>
+            <Link href="/guides" className="text-[#BBB] hover:text-white transition-colors">
               Guides
             </Link>
           </div>
@@ -87,7 +87,7 @@ export default function ExclusiveClubsPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
             London&apos;s Most Exclusive Clubs
           </h1>
-          <p className="text-center text-[#999] max-w-2xl mx-auto mb-12">
+          <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-12">
             A guide to London&apos;s most premium nightlife experiences. What makes each venue special, what to expect, and how to arrange your night.
           </p>
 
@@ -102,20 +102,20 @@ export default function ExclusiveClubsPage() {
                       <Link href={`/clubs/${club.slug}`} className="text-xl font-bold text-white hover:text-[#C0C0C0] transition-colors">
                         {club.name}
                       </Link>
-                      <p className="text-[#666] text-sm mt-1">{club.area} &middot; Closes {club.closingTime}</p>
+                      <p className="text-[#888] text-sm mt-1">{club.area} &middot; Closes {club.closingTime}</p>
                     </div>
                   </div>
 
                   <div className="mb-4">
-                    <p className="text-[#999] text-sm leading-relaxed">{club.description}</p>
+                    <p className="text-[#BBB] text-sm leading-relaxed">{club.description}</p>
                   </div>
 
                   <div className="mb-4">
                     <h3 className="text-sm font-semibold text-[#C0C0C0] mb-2">Insider tip</h3>
-                    <p className="text-[#999] text-sm leading-relaxed">{club.insiderTip}</p>
+                    <p className="text-[#BBB] text-sm leading-relaxed">{club.insiderTip}</p>
                   </div>
 
-                  <div className="flex flex-wrap gap-4 text-xs text-[#666]">
+                  <div className="flex flex-wrap gap-4 text-xs text-[#888]">
                     <span>Tables from {club.tableMinimum}</span>
                     <span>&middot;</span>
                     <span>{club.openingNights}</span>
@@ -136,8 +136,8 @@ export default function ExclusiveClubsPage() {
           {/* The Experience Section */}
           <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 mt-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">Making the Most of Your Night</h2>
-            <p className="text-center text-[#999] max-w-2xl mx-auto mb-8">Practical advice from promoters who know the scene.</p>
-            <div className="space-y-4 text-[#999] leading-relaxed">
+            <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-8">Practical advice from promoters who know the scene.</p>
+            <div className="space-y-4 text-[#BBB] leading-relaxed">
               <p>
                 The best way to experience any of these clubs is with a table booking. Every venue will welcome you with a table reservation, giving you a reserved space, dedicated service, and bottles for your group. For most clubs, tables start from £1,000.
               </p>
@@ -158,7 +158,7 @@ export default function ExclusiveClubsPage() {
             <h2 className="text-xl font-bold text-white mb-3">
               Ready to experience London&apos;s best clubs?
             </h2>
-            <p className="text-[#999] mb-6 max-w-lg mx-auto">
+            <p className="text-[#BBB] mb-6 max-w-lg mx-auto">
               Message us on WhatsApp. We handle table bookings and guestlists at every club on this page. Tell us where you want to go and we will make it happen.
             </p>
             <WhatsAppCTA />
@@ -167,12 +167,12 @@ export default function ExclusiveClubsPage() {
           {/* FAQ Section */}
           <div className="mt-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">Frequently Asked Questions</h2>
-            <p className="text-center text-[#999] max-w-2xl mx-auto mb-12">Common questions about London&apos;s exclusive club scene.</p>
+            <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-12">Common questions about London&apos;s exclusive club scene.</p>
             <div className="grid gap-6">
               {faqs.map((faq, index) => (
                 <div key={index} className="bg-[#141414] border border-[#222] rounded-2xl p-7">
                   <h3 className="text-white font-semibold mb-3">{faq.question}</h3>
-                  <p className="text-[#999] text-sm leading-relaxed">{faq.answer}</p>
+                  <p className="text-[#BBB] text-sm leading-relaxed">{faq.answer}</p>
                 </div>
               ))}
             </div>

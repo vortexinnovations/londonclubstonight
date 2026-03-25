@@ -118,7 +118,7 @@ export default function BestClubsInLondonPage() {
           of client bookings, and honest conversations with the people who run
           them.
         </p>
-        <div className="mt-10 flex flex-wrap justify-center gap-4 text-sm text-[#666]">
+        <div className="mt-10 flex flex-wrap justify-center gap-4 text-sm text-[#888]">
           <span>{rankedClubs.length} clubs ranked</span>
           <span className="text-[#333]">|</span>
           <span>Honest reviews from promoters</span>
@@ -158,7 +158,7 @@ export default function BestClubsInLondonPage() {
                   <h3 className="text-xs font-semibold text-[#C0C0C0] uppercase tracking-widest mb-3">
                     Why It Made the List
                   </h3>
-                  <p className="text-[#999] leading-relaxed">
+                  <p className="text-[#BBB] leading-relaxed">
                     {clubOpinions[club.slug]}
                   </p>
                 </div>
@@ -169,14 +169,14 @@ export default function BestClubsInLondonPage() {
                     <h4 className="text-xs font-semibold text-green-400 uppercase tracking-widest mb-2">
                       Best For
                     </h4>
-                    <p className="text-[#999] text-sm leading-relaxed">
+                    <p className="text-[#BBB] text-sm leading-relaxed">
                       {club.bestFor}
                     </p>
                   </div>
                 </div>
 
                 {/* Details Row */}
-                <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-sm text-[#999] mb-6">
+                <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-sm text-[#BBB] mb-6">
                   <span>{club.musicGenres.join(', ')}</span>
                   <span className="text-[#333]">/</span>
                   <Link
@@ -210,7 +210,7 @@ export default function BestClubsInLondonPage() {
           <h2 className="text-2xl md:text-3xl font-bold mb-5">
             Ready to Book?
           </h2>
-          <p className="text-[#999] mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-[#BBB] mb-10 max-w-2xl mx-auto leading-relaxed">
             Skip the research. Tell us what kind of night you want — the music,
             the vibe, the budget — and we will put you in the right club with a
             table or guestlist spot sorted. One WhatsApp message is all it takes.
@@ -225,7 +225,7 @@ export default function BestClubsInLondonPage() {
           <h2 className="text-2xl md:text-3xl font-bold mb-5">
             How We Ranked These Clubs
           </h2>
-          <p className="text-[#999] leading-relaxed max-w-3xl mx-auto">
+          <p className="text-[#BBB] leading-relaxed max-w-3xl mx-auto">
             Every ranking is subjective, and we are not pretending otherwise. But
             ours is informed by years of working inside London nightlife, not a
             single visit on a press night. Here are the criteria we used:
@@ -265,7 +265,7 @@ export default function BestClubsInLondonPage() {
               <h3 className="font-semibold text-white mb-2">
                 {criterion.title}
               </h3>
-              <p className="text-[#999] text-sm leading-relaxed">
+              <p className="text-[#BBB] text-sm leading-relaxed">
                 {criterion.desc}
               </p>
             </div>
@@ -279,7 +279,7 @@ export default function BestClubsInLondonPage() {
           <h2 className="text-2xl md:text-3xl font-bold mb-5">
             How to Book Any Club on This List
           </h2>
-          <p className="text-[#999] leading-relaxed max-w-3xl mx-auto">
+          <p className="text-[#BBB] leading-relaxed max-w-3xl mx-auto">
             We handle bookings for every club ranked above. Whether you want a VIP
             table, a guestlist spot, or just advice on which club suits your group,
             we are one message away. No fees, no mark-ups — we are paid by the
@@ -289,21 +289,21 @@ export default function BestClubsInLondonPage() {
         <div className="max-w-2xl mx-auto space-y-6 mb-12">
           <div className="text-center">
             <span className="inline-block text-[#C0C0C0] font-bold text-lg mb-1">1.</span>
-            <p className="text-[#999]">
+            <p className="text-[#BBB]">
               <strong className="text-white">Message us on WhatsApp</strong> with
               your preferred club, date, group size, and any preferences.
             </p>
           </div>
           <div className="text-center">
             <span className="inline-block text-[#C0C0C0] font-bold text-lg mb-1">2.</span>
-            <p className="text-[#999]">
+            <p className="text-[#BBB]">
               <strong className="text-white">We confirm your booking</strong>{' '}
               directly with the club and send you all the details.
             </p>
           </div>
           <div className="text-center">
             <span className="inline-block text-[#C0C0C0] font-bold text-lg mb-1">3.</span>
-            <p className="text-[#999]">
+            <p className="text-[#BBB]">
               <strong className="text-white">Turn up and enjoy</strong> — your
               name is on the list, your table is ready, and we are available all
               night if you need anything.
@@ -327,7 +327,7 @@ export default function BestClubsInLondonPage() {
               <li>
                 <Link
                   href="/areas/mayfair"
-                  className="text-[#999] hover:text-white transition-colors text-sm"
+                  className="text-[#BBB] hover:text-white transition-colors text-sm"
                 >
                   Best clubs in Mayfair &rarr;
                 </Link>
@@ -335,7 +335,7 @@ export default function BestClubsInLondonPage() {
               <li>
                 <Link
                   href="/areas/soho"
-                  className="text-[#999] hover:text-white transition-colors text-sm"
+                  className="text-[#BBB] hover:text-white transition-colors text-sm"
                 >
                   Best clubs in Soho &rarr;
                 </Link>
@@ -343,7 +343,7 @@ export default function BestClubsInLondonPage() {
               <li>
                 <Link
                   href="/areas/fitzrovia"
-                  className="text-[#999] hover:text-white transition-colors text-sm"
+                  className="text-[#BBB] hover:text-white transition-colors text-sm"
                 >
                   Best clubs in Fitzrovia &rarr;
                 </Link>
@@ -356,7 +356,7 @@ export default function BestClubsInLondonPage() {
               <li>
                 <Link
                   href="/guides/music-genres"
-                  className="text-[#999] hover:text-white transition-colors text-sm"
+                  className="text-[#BBB] hover:text-white transition-colors text-sm"
                 >
                   London clubs by music genre &rarr;
                 </Link>
@@ -364,7 +364,7 @@ export default function BestClubsInLondonPage() {
               <li>
                 <Link
                   href="/guides/how-to-get-into-london-clubs"
-                  className="text-[#999] hover:text-white transition-colors text-sm"
+                  className="text-[#BBB] hover:text-white transition-colors text-sm"
                 >
                   How to get into London clubs &rarr;
                 </Link>
@@ -372,7 +372,7 @@ export default function BestClubsInLondonPage() {
               <li>
                 <Link
                   href="/contact"
-                  className="text-[#999] hover:text-white transition-colors text-sm"
+                  className="text-[#BBB] hover:text-white transition-colors text-sm"
                 >
                   Contact us for bookings &rarr;
                 </Link>
@@ -396,7 +396,7 @@ export default function BestClubsInLondonPage() {
               <p className="font-semibold text-white text-sm mb-1">
                 Mayfair Tonight
               </p>
-              <p className="text-[#666] text-xs">
+              <p className="text-[#888] text-xs">
                 Mayfair-specific club events and bookings
               </p>
             </a>
@@ -409,7 +409,7 @@ export default function BestClubsInLondonPage() {
               <p className="font-semibold text-white text-sm mb-1">
                 London Bottle Service
               </p>
-              <p className="text-[#666] text-xs">
+              <p className="text-[#888] text-xs">
                 Detailed VIP table pricing and packages
               </p>
             </a>
@@ -422,7 +422,7 @@ export default function BestClubsInLondonPage() {
               <p className="font-semibold text-white text-sm mb-1">
                 London Birthday Club
               </p>
-              <p className="text-[#666] text-xs">
+              <p className="text-[#888] text-xs">
                 Birthday party planning and club bookings
               </p>
             </a>
@@ -433,7 +433,7 @@ export default function BestClubsInLondonPage() {
       {/* Bottom CTA */}
       <section className="max-w-5xl mx-auto px-6 sm:px-8 py-20 md:py-28">
         <div className="text-center">
-          <p className="text-[#666] text-sm mb-5">
+          <p className="text-[#888] text-sm mb-5">
             Still not sure which club is right for you?
           </p>
           <WhatsAppCTA variant="inline" />

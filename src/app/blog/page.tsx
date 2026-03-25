@@ -62,18 +62,18 @@ export default function BlogPage() {
       <section className="pt-24 pb-12 px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
           {/* Breadcrumbs */}
-          <nav className="flex items-center gap-2 text-sm text-[#666] mb-8">
-            <Link href="/" className="hover:text-[#999] transition-colors">
+          <nav className="flex items-center gap-2 text-sm text-[#888] mb-8">
+            <Link href="/" className="hover:text-[#BBB] transition-colors">
               Home
             </Link>
             <span>/</span>
-            <span className="text-[#999]">Blog</span>
+            <span className="text-[#BBB]">Blog</span>
           </nav>
 
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight">
             London Nightlife Blog
           </h1>
-          <p className="text-[#999] text-lg md:text-xl max-w-2xl leading-relaxed">
+          <p className="text-[#BBB] text-lg md:text-xl max-w-2xl leading-relaxed">
             Insider knowledge from people who work the scene. Weekly guides,
             honest reviews, and everything you need to plan a proper night out
             in London.
@@ -96,7 +96,7 @@ export default function BlogPage() {
       {/* Featured Post */}
       <section className="px-4 sm:px-6 pb-8">
         <div className="max-w-5xl mx-auto">
-          <p className="text-xs uppercase tracking-widest text-[#666] mb-4 font-medium">
+          <p className="text-xs uppercase tracking-widest text-[#888] mb-4 font-medium">
             Featured
           </p>
           <BlogCard post={featuredPost} featured={true} />
@@ -121,7 +121,7 @@ export default function BlogPage() {
             <h2 className="text-2xl font-bold text-white mb-3">
               Need Help Planning Your Night?
             </h2>
-            <p className="text-[#999] mb-6 max-w-lg mx-auto">
+            <p className="text-[#BBB] mb-6 max-w-lg mx-auto">
               Message us on WhatsApp for free, personalised recommendations.
               Table bookings, guestlist access, or just honest advice on where
               to go tonight.
@@ -145,7 +145,7 @@ export default function BlogPage() {
               className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-all duration-300"
             >
               <h3 className="text-white font-semibold mb-1">Club Guides</h3>
-              <p className="text-[#666] text-sm">
+              <p className="text-[#888] text-sm">
                 How to get into London&apos;s best clubs, from dress codes to
                 door policies.
               </p>
@@ -155,7 +155,7 @@ export default function BlogPage() {
               className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-all duration-300"
             >
               <h3 className="text-white font-semibold mb-1">Best Clubs</h3>
-              <p className="text-[#666] text-sm">
+              <p className="text-[#888] text-sm">
                 The top-ranked nightclubs in London right now, reviewed and
                 rated.
               </p>
@@ -167,7 +167,7 @@ export default function BlogPage() {
               <h3 className="text-white font-semibold mb-1">
                 Clubs by Area
               </h3>
-              <p className="text-[#666] text-sm">
+              <p className="text-[#888] text-sm">
                 Mayfair, Soho, Central London — find the best clubs near you.
               </p>
             </Link>

@@ -50,7 +50,7 @@ export default function GuidesPage() {
       <div className="bg-[#0A0A0A] min-h-screen">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 py-20 md:py-28">
           <div className="mb-4">
-            <Link href="/" className="text-[#999] hover:text-white text-sm transition-colors">
+            <Link href="/" className="text-[#BBB] hover:text-white text-sm transition-colors">
               &larr; Back to all clubs
             </Link>
           </div>
@@ -58,7 +58,7 @@ export default function GuidesPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
             London Nightclub Guides
           </h1>
-          <p className="text-center text-[#999] max-w-2xl mx-auto mb-12">
+          <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-12">
             Everything you need to know about London nightlife. Written by promoters who work the scene, book the tables, and know how it all works.
           </p>
 
@@ -72,7 +72,7 @@ export default function GuidesPage() {
                 <h2 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-[#C0C0C0] transition-colors">
                   {guide.title}
                 </h2>
-                <p className="text-[#999] leading-relaxed max-w-xl mx-auto">
+                <p className="text-[#BBB] leading-relaxed max-w-xl mx-auto">
                   {guide.description}
                 </p>
                 <span className="inline-block mt-4 text-[#C0C0C0] text-sm font-medium">
@@ -86,7 +86,7 @@ export default function GuidesPage() {
             <h2 className="text-xl font-bold text-white mb-3">
               Need help planning your night?
             </h2>
-            <p className="text-[#999] mb-6 max-w-lg mx-auto">
+            <p className="text-[#BBB] mb-6 max-w-lg mx-auto">
               Message us on WhatsApp. We handle guestlists and table bookings at every club listed on this site. Tell us what you want and we will sort it.
             </p>
             <WhatsAppCTA />

@@ -69,16 +69,16 @@ export default function CentralLondonPage() {
         <section className="border-b border-[#222] py-20 md:py-28">
           <div className="max-w-5xl mx-auto px-6 sm:px-8 text-center">
             <div className="mb-4">
-              <Link href="/areas" className="text-[#666] hover:text-[#999] text-sm transition-colors">
+              <Link href="/areas" className="text-[#888] hover:text-[#BBB] text-sm transition-colors">
                 Areas
               </Link>
               <span className="text-[#444] mx-2">/</span>
-              <span className="text-[#999] text-sm">Central London</span>
+              <span className="text-[#BBB] text-sm">Central London</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight">
               Best Clubs in Central London
             </h1>
-            <p className="text-[#999] text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+            <p className="text-[#BBB] text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
               Central London is home to virtually every major nightclub worth visiting.
               From the exclusive members clubs of Mayfair to the energy of Soho and
               the theatrical venues around St James&apos;s and Piccadilly, the West End
@@ -95,7 +95,7 @@ export default function CentralLondonPage() {
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
                 Not sure which area suits you?
               </h2>
-              <p className="text-[#999] max-w-2xl mx-auto text-center mb-8">
+              <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-8">
                 Tell us what kind of night you&apos;re after and we&apos;ll recommend the
                 right club and area. Table bookings and guestlist for every central London venue.
               </p>
@@ -121,7 +121,7 @@ export default function CentralLondonPage() {
                   Full Mayfair guide &rarr;
                 </Link>
               </div>
-              <p className="text-[#999] max-w-2xl mx-auto text-center mb-12">
+              <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-12">
                 The epicentre of London&apos;s luxury nightlife. Mayfair&apos;s W1 postcode
                 houses the highest concentration of exclusive clubs anywhere in the city, with
                 celebrity crowds and table minimums that reflect the premium positioning.
@@ -150,7 +150,7 @@ export default function CentralLondonPage() {
                   Full Soho guide &rarr;
                 </Link>
               </div>
-              <p className="text-[#999] max-w-2xl mx-auto text-center mb-12">
+              <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-12">
                 London&apos;s most vibrant entertainment district. Soho&apos;s borders overlap
                 with Mayfair around Carnaby and Ganton Street, placing some of London&apos;s
                 most iconic venues right on the boundary between the two areas.
@@ -171,7 +171,7 @@ export default function CentralLondonPage() {
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
                 St James&apos;s &amp; Piccadilly
               </h2>
-              <p className="text-[#999] max-w-2xl mx-auto text-center mb-12">
+              <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-12">
                 The stretch around Piccadilly and St James&apos;s offers a different flavour
                 of nightlife. Grand showclubs and theatrical venues sit alongside more
                 traditional clubs, drawing a crowd that skews slightly older and more
@@ -193,7 +193,7 @@ export default function CentralLondonPage() {
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
                 More Central London Clubs
               </h2>
-              <p className="text-[#999] max-w-2xl mx-auto text-center mb-12">
+              <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-12">
                 Other notable clubs within the central London zone that don&apos;t fall
                 neatly into the Mayfair or Soho categories but are still very much part
                 of the West End scene.
@@ -213,17 +213,17 @@ export default function CentralLondonPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
               Central London at a Glance
             </h2>
-            <p className="text-[#999] max-w-2xl mx-auto text-center mb-12">
+            <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-12">
               Key numbers for the central London nightlife scene.
             </p>
             <div className="grid sm:grid-cols-2 gap-6">
               <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 text-center">
                 <p className="text-3xl font-bold text-white mb-1">{centralLondonClubs.length}</p>
-                <p className="text-[#999] text-sm">Clubs in central London</p>
+                <p className="text-[#BBB] text-sm">Clubs in central London</p>
               </div>
               <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 text-center">
                 <p className="text-3xl font-bold text-white mb-1">{mayfairClubs.length}</p>
-                <p className="text-[#999] text-sm">Located in Mayfair alone</p>
+                <p className="text-[#BBB] text-sm">Located in Mayfair alone</p>
               </div>
             </div>
           </div>
@@ -235,7 +235,7 @@ export default function CentralLondonPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
               More London Club Guides
             </h2>
-            <p className="text-[#999] max-w-2xl mx-auto text-center mb-12">
+            <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-12">
               Explore more of London&apos;s nightlife scene.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -244,28 +244,28 @@ export default function CentralLondonPage() {
                 className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
               >
                 <h3 className="text-white font-semibold mb-1">Mayfair Clubs</h3>
-                <p className="text-[#666] text-sm">The luxury nightlife epicentre in detail.</p>
+                <p className="text-[#888] text-sm">The luxury nightlife epicentre in detail.</p>
               </Link>
               <Link
                 href="/areas/soho"
                 className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
               >
                 <h3 className="text-white font-semibold mb-1">Soho Clubs</h3>
-                <p className="text-[#666] text-sm">London&apos;s most vibrant entertainment district.</p>
+                <p className="text-[#888] text-sm">London&apos;s most vibrant entertainment district.</p>
               </Link>
               <Link
                 href="/best-clubs-in-london"
                 className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
               >
                 <h3 className="text-white font-semibold mb-1">Best Clubs in London</h3>
-                <p className="text-[#666] text-sm">Our ranked guide to the top clubs across the city.</p>
+                <p className="text-[#888] text-sm">Our ranked guide to the top clubs across the city.</p>
               </Link>
               <Link
                 href="/guides/how-to-get-into-london-clubs"
                 className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
               >
                 <h3 className="text-white font-semibold mb-1">Entry Guide</h3>
-                <p className="text-[#666] text-sm">How to get into London&apos;s most exclusive clubs.</p>
+                <p className="text-[#888] text-sm">How to get into London&apos;s most exclusive clubs.</p>
               </Link>
             </div>
 
@@ -274,7 +274,7 @@ export default function CentralLondonPage() {
               <h3 className="text-xl font-bold text-white mb-2">
                 Book your central London night out
               </h3>
-              <p className="text-[#999] text-sm mb-5 max-w-md mx-auto">
+              <p className="text-[#BBB] text-sm mb-5 max-w-md mx-auto">
                 Message us on WhatsApp for table bookings, guestlist, or a personalised
                 recommendation for any central London club.
               </p>

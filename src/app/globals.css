@@ -8,16 +8,16 @@
   --bg-card-hover: #1A1A1A;
   --border: #222222;
   --text-primary: #F5F5F5;
-  --text-secondary: #999999;
-  --text-muted: #666666;
+  --text-secondary: #BBBBBB;
+  --text-muted: #888888;
   --whatsapp: #25D366;
   --whatsapp-hover: #20BD5A;
   --gold: #D4AF37;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 

@@ -55,11 +55,11 @@ export default function ClubsOpenLatePage() {
       <div className="bg-[#0A0A0A] min-h-screen">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 py-20 md:py-28">
           <div className="mb-4 flex gap-4 text-sm">
-            <Link href="/" className="text-[#999] hover:text-white transition-colors">
+            <Link href="/" className="text-[#BBB] hover:text-white transition-colors">
               Home
             </Link>
-            <span className="text-[#666]">/</span>
-            <Link href="/guides" className="text-[#999] hover:text-white transition-colors">
+            <span className="text-[#888]">/</span>
+            <Link href="/guides" className="text-[#BBB] hover:text-white transition-colors">
               Guides
             </Link>
           </div>
@@ -67,10 +67,10 @@ export default function ClubsOpenLatePage() {
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
             Clubs Open Late in London
           </h1>
-          <p className="text-center text-[#999] max-w-2xl mx-auto mb-6">
+          <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-6">
             It is 1am, the bar has kicked you out, and the night is still young. Here is where you can go and how late you can stay.
           </p>
-          <p className="text-center text-[#999] text-sm max-w-2xl mx-auto mb-12">
+          <p className="text-center text-[#BBB] text-sm max-w-2xl mx-auto mb-12">
             All closing times listed are standard. Special events and bank holiday weekends may extend hours. Check with us on WhatsApp for the latest on any specific night.
           </p>
 
@@ -81,7 +81,7 @@ export default function ClubsOpenLatePage() {
               {closingGroups.map((group) => (
                 <div key={group.time} className="text-center">
                   <div className="text-2xl font-bold text-[#C0C0C0]">{group.time.replace(':00', '')}</div>
-                  <div className="text-[#666] text-xs mt-1">{group.slugs.length} {group.slugs.length === 1 ? 'venue' : 'venues'}</div>
+                  <div className="text-[#888] text-xs mt-1">{group.slugs.length} {group.slugs.length === 1 ? 'venue' : 'venues'}</div>
                 </div>
               ))}
             </div>
@@ -90,7 +90,7 @@ export default function ClubsOpenLatePage() {
           {closingGroups.map((group) => (
             <div key={group.time} className="mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">{group.label}</h2>
-              <p className="text-center text-[#999] max-w-2xl mx-auto mb-12">{group.description}</p>
+              <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-12">{group.description}</p>
 
               <div className="grid gap-6">
                 {group.slugs.map((slug) => {
@@ -109,7 +109,7 @@ export default function ClubsOpenLatePage() {
                           <Link href={`/clubs/${club.slug}`} className="text-xl font-bold text-white hover:text-[#C0C0C0] transition-colors">
                             {club.name}
                           </Link>
-                          <p className="text-[#666] text-sm mt-1">{club.area} &middot; {club.musicGenres.join(', ')}</p>
+                          <p className="text-[#888] text-sm mt-1">{club.area} &middot; {club.musicGenres.join(', ')}</p>
                         </div>
                         <span className="text-[#C0C0C0] font-mono font-bold text-lg whitespace-nowrap">
                           {club.closingTime}
@@ -119,15 +119,15 @@ export default function ClubsOpenLatePage() {
                       {isMinistry && (
                         <div className="bg-[#C0C0C0]/5 border border-[#C0C0C0]/20 rounded-lg p-4 mb-4">
                           <p className="text-[#C0C0C0] text-sm font-semibold mb-1">London&apos;s latest club</p>
-                          <p className="text-[#999] text-sm">
+                          <p className="text-[#BBB] text-sm">
                             Ministry of Sound is the only venue on this list open until 6am. On special event nights, it can run even later. If your sole priority is staying out as late as possible, this is where you go. Buy tickets in advance online.
                           </p>
                         </div>
                       )}
 
-                      <p className="text-[#999] text-sm leading-relaxed mb-3">{club.description}</p>
+                      <p className="text-[#BBB] text-sm leading-relaxed mb-3">{club.description}</p>
 
-                      <div className="flex flex-wrap gap-4 text-xs text-[#666]">
+                      <div className="flex flex-wrap gap-4 text-xs text-[#888]">
                         <span>{club.openingNights}</span>
                         <span>&middot;</span>
                         <span>Tables from {club.tableMinimum}</span>
@@ -148,8 +148,8 @@ export default function ClubsOpenLatePage() {
           {/* Practical Advice */}
           <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">Practical Advice for Late-Night London</h2>
-            <p className="text-center text-[#999] max-w-2xl mx-auto mb-8">Tips for making the most of your late night out.</p>
-            <div className="space-y-4 text-[#999] leading-relaxed text-sm">
+            <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-8">Tips for making the most of your late night out.</p>
+            <div className="space-y-4 text-[#BBB] leading-relaxed text-sm">
               <div>
                 <h3 className="text-white font-semibold mb-2">If you are already out and need somewhere</h3>
                 <p>
@@ -176,7 +176,7 @@ export default function ClubsOpenLatePage() {
             <h2 className="text-xl font-bold text-white mb-3">
               Need somewhere tonight?
             </h2>
-            <p className="text-[#999] mb-6 max-w-lg mx-auto">
+            <p className="text-[#BBB] mb-6 max-w-lg mx-auto">
               Message us on WhatsApp. Tell us what time you want to go out and we will find you the best option that is still open.
             </p>
             <WhatsAppCTA />

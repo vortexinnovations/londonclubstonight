@@ -80,7 +80,7 @@ export default function AreasPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight">
               London Clubs by Area
             </h1>
-            <p className="text-[#999] text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+            <p className="text-[#BBB] text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
               London&apos;s nightlife is concentrated in a handful of key areas, each
               with its own character and crowd. Whether you&apos;re looking for Mayfair&apos;s
               exclusivity, Soho&apos;s energy, or the broader West End scene, find the
@@ -103,11 +103,11 @@ export default function AreasPage() {
                     <h2 className="text-xl md:text-2xl font-bold text-white">
                       {area.name}
                     </h2>
-                    <span className="shrink-0 text-xs font-medium px-2.5 py-1 rounded-full bg-white/5 text-[#999]">
+                    <span className="shrink-0 text-xs font-medium px-2.5 py-1 rounded-full bg-white/5 text-[#BBB]">
                       {area.clubCount} {area.clubCount === 1 ? 'club' : 'clubs'}
                     </span>
                   </div>
-                  <p className="text-[#999] text-sm leading-relaxed mb-4 max-w-2xl mx-auto">
+                  <p className="text-[#BBB] text-sm leading-relaxed mb-4 max-w-2xl mx-auto">
                     {area.description}
                   </p>
                   <span className="text-[#C0C0C0] text-sm">
@@ -126,7 +126,7 @@ export default function AreasPage() {
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
                 Not sure which area?
               </h2>
-              <p className="text-[#999] max-w-2xl mx-auto text-center mb-8">
+              <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-8">
                 Tell us what kind of night you&apos;re after — the vibe, the music, your
                 group size — and we&apos;ll recommend the right area and club.
               </p>
@@ -143,7 +143,7 @@ export default function AreasPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
               More Guides
             </h2>
-            <p className="text-[#999] max-w-2xl mx-auto text-center mb-12">
+            <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-12">
               Explore our other guides to London&apos;s nightlife scene.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -152,21 +152,21 @@ export default function AreasPage() {
                 className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
               >
                 <h3 className="text-white font-semibold mb-1">Best Clubs in London</h3>
-                <p className="text-[#666] text-sm">Our ranked guide to the top clubs across the city.</p>
+                <p className="text-[#888] text-sm">Our ranked guide to the top clubs across the city.</p>
               </Link>
               <Link
                 href="/guides/how-to-get-into-london-clubs"
                 className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
               >
                 <h3 className="text-white font-semibold mb-1">Entry Guide</h3>
-                <p className="text-[#666] text-sm">How to get into London&apos;s most exclusive clubs.</p>
+                <p className="text-[#888] text-sm">How to get into London&apos;s most exclusive clubs.</p>
               </Link>
               <Link
                 href="/"
                 className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
               >
                 <h3 className="text-white font-semibold mb-1">Tonight&apos;s Picks</h3>
-                <p className="text-[#666] text-sm">See which clubs are open tonight.</p>
+                <p className="text-[#888] text-sm">See which clubs are open tonight.</p>
               </Link>
             </div>
           </div>

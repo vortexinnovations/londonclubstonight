@@ -76,16 +76,16 @@ export default async function ClubPage({
 
       {/* Breadcrumb */}
       <div className="max-w-5xl mx-auto px-6 sm:px-8 pt-6 pb-2">
-        <nav className="flex items-center justify-center gap-2 text-sm text-[#666]">
-          <Link href="/" className="hover:text-[#999] transition-colors">
+        <nav className="flex items-center justify-center gap-2 text-sm text-[#888]">
+          <Link href="/" className="hover:text-[#BBB] transition-colors">
             Home
           </Link>
           <span>/</span>
-          <Link href="/clubs" className="hover:text-[#999] transition-colors">
+          <Link href="/clubs" className="hover:text-[#BBB] transition-colors">
             Clubs
           </Link>
           <span>/</span>
-          <span className="text-[#999]">{club.name}</span>
+          <span className="text-[#BBB]">{club.name}</span>
         </nav>
       </div>
 
@@ -109,7 +109,7 @@ export default async function ClubPage({
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-5">
           {club.name}
         </h1>
-        <p className="text-lg md:text-xl text-[#999] leading-relaxed max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl text-[#BBB] leading-relaxed max-w-2xl mx-auto">
           {club.tagline}
         </p>
 
@@ -139,7 +139,7 @@ export default async function ClubPage({
           </h2>
           <div className="space-y-5">
             {paragraphs.map((para, i) => (
-              <p key={i} className="text-[#999] leading-relaxed text-base md:text-lg">
+              <p key={i} className="text-[#BBB] leading-relaxed text-base md:text-lg">
                 {para}
               </p>
             ))}
@@ -154,7 +154,7 @@ export default async function ClubPage({
             Dress Code
           </h2>
           <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 md:p-8">
-            <p className="text-[#999] leading-relaxed text-base md:text-lg">
+            <p className="text-[#BBB] leading-relaxed text-base md:text-lg">
               {club.dressCode}
             </p>
           </div>
@@ -168,7 +168,7 @@ export default async function ClubPage({
             The Crowd
           </h2>
           <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 md:p-8">
-            <p className="text-[#999] leading-relaxed text-base md:text-lg">
+            <p className="text-[#BBB] leading-relaxed text-base md:text-lg">
               {club.crowd}
             </p>
           </div>
@@ -184,7 +184,7 @@ export default async function ClubPage({
           <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 md:p-8">
             <div className="flex items-start gap-3">
               <span className="text-green-400 text-xl mt-0.5">&#10003;</span>
-              <p className="text-[#999] leading-relaxed text-base md:text-lg">
+              <p className="text-[#BBB] leading-relaxed text-base md:text-lg">
                 {club.bestFor}
               </p>
             </div>
@@ -214,7 +214,7 @@ export default async function ClubPage({
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
                 Looking for a Club Tonight?
               </h2>
-              <p className="text-[#999] mb-8 max-w-lg mx-auto leading-relaxed">
+              <p className="text-[#BBB] mb-8 max-w-lg mx-auto leading-relaxed">
                 {club.name} is permanently closed, but there are plenty of great clubs open tonight. Browse our full list or get in touch for a personal recommendation.
               </p>
               <div className="flex justify-center gap-4 flex-wrap">
@@ -237,7 +237,7 @@ export default async function ClubPage({
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
                 Ready to Experience {club.name}?
               </h2>
-              <p className="text-[#999] mb-8 max-w-lg mx-auto leading-relaxed">
+              <p className="text-[#BBB] mb-8 max-w-lg mx-auto leading-relaxed">
                 Get a table booking or guestlist spot at {club.name}. Message us on
                 WhatsApp and we&apos;ll sort everything for you.
               </p>
@@ -263,7 +263,7 @@ export default async function ClubPage({
               <span className="text-[#C0C0C0] font-semibold text-lg">
                 {club.area} Clubs
               </span>
-              <p className="text-[#666] text-sm mt-2">
+              <p className="text-[#888] text-sm mt-2">
                 Explore all nightclubs in the {club.area} area
               </p>
             </Link>
@@ -274,7 +274,7 @@ export default async function ClubPage({
               <span className="text-[#C0C0C0] font-semibold text-lg">
                 Best Clubs in London
               </span>
-              <p className="text-[#666] text-sm mt-2">
+              <p className="text-[#888] text-sm mt-2">
                 See the full ranked list of London&apos;s top nightclubs
               </p>
             </Link>
@@ -285,7 +285,7 @@ export default async function ClubPage({
               <span className="text-[#C0C0C0] font-semibold text-lg">
                 Entry Guide
               </span>
-              <p className="text-[#666] text-sm mt-2">
+              <p className="text-[#888] text-sm mt-2">
                 How to get past the door at London&apos;s best clubs
               </p>
             </Link>
@@ -298,7 +298,7 @@ export default async function ClubPage({
               <span className="text-[#C0C0C0] font-semibold text-lg">
                 Table &amp; Bottle Pricing
               </span>
-              <p className="text-[#666] text-sm mt-2">
+              <p className="text-[#888] text-sm mt-2">
                 See full table and bottle menus at londonbottleservice.com
               </p>
             </a>
@@ -311,7 +311,7 @@ export default async function ClubPage({
               <span className="text-[#C0C0C0] font-semibold text-lg">
                 Birthday Bookings
               </span>
-              <p className="text-[#666] text-sm mt-2">
+              <p className="text-[#888] text-sm mt-2">
                 Plan your birthday at London&apos;s best clubs via londonbirthdayclub.com
               </p>
             </a>
@@ -324,7 +324,7 @@ export default async function ClubPage({
               <span className="text-[#C0C0C0] font-semibold text-lg">
                 Tonight&apos;s Events
               </span>
-              <p className="text-[#666] text-sm mt-2">
+              <p className="text-[#888] text-sm mt-2">
                 See what&apos;s on tonight at mayfairtonight.com
               </p>
             </a>
@@ -341,7 +341,7 @@ export default async function ClubPage({
 function QuickInfoCard({ label, value }: { label: string; value: string }) {
   return (
     <div className="bg-[#141414] border border-[#222] rounded-2xl p-5 text-center">
-      <p className="text-[#666] text-xs uppercase tracking-wider mb-1.5">
+      <p className="text-[#888] text-xs uppercase tracking-wider mb-1.5">
         {label}
       </p>
       <p className="text-white font-semibold text-sm">{value}</p>

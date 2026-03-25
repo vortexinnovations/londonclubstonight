@@ -141,12 +141,12 @@ export default function HomePage() {
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight">
             London Clubs Tonight
           </h1>
-          <p className="text-lg md:text-xl text-[#999] max-w-2xl mx-auto mb-4 leading-relaxed">
+          <p className="text-lg md:text-xl text-[#BBB] max-w-2xl mx-auto mb-4 leading-relaxed">
             Not sure where to go tonight? We know every door, every DJ, and every
             table worth booking across Mayfair, Soho, and beyond. This is the
             insider guide that actually tells you what to expect.
           </p>
-          <p className="text-[#666] text-sm mb-10 max-w-xl mx-auto">
+          <p className="text-[#888] text-sm mb-10 max-w-xl mx-auto">
             Updated daily by promoters on the ground. Real recommendations, not
             paid placements.
           </p>
@@ -163,7 +163,7 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Tonight&apos;s Best Options
             </h2>
-            <p className="text-[#999] text-base max-w-xl mx-auto">
+            <p className="text-[#BBB] text-base max-w-xl mx-auto">
               These are the clubs we&apos;d actually send our friends to tonight.
               Every recommendation is based on what&apos;s genuinely good — the
               music, the crowd, and whether the night is worth the entry price.
@@ -191,7 +191,7 @@ export default function HomePage() {
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
             Not Sure Where to Go?
           </h2>
-          <p className="text-[#999] text-sm mb-8 max-w-lg mx-auto">
+          <p className="text-[#BBB] text-sm mb-8 max-w-lg mx-auto">
             Message us on WhatsApp and we&apos;ll recommend the right club for
             your group, sort your table or guestlist, and make sure you get in.
             No fees, no catches.
@@ -209,7 +209,7 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Quick Guides
             </h2>
-            <p className="text-[#999] text-base max-w-xl mx-auto">
+            <p className="text-[#BBB] text-base max-w-xl mx-auto">
               Everything you need to know before going out in London tonight.
               Written by people who actually work in the clubs, not travel
               bloggers who visited once.
@@ -225,7 +225,7 @@ export default function HomePage() {
                 <h3 className="font-bold text-white text-base mb-2 text-center group-hover:text-[#C0C0C0] transition-colors">
                   {guide.title}
                 </h3>
-                <p className="text-[#999] text-sm leading-relaxed">
+                <p className="text-[#BBB] text-sm leading-relaxed">
                   {guide.description}
                 </p>
                 <span className="inline-block mt-4 text-xs text-[#C0C0C0]">
@@ -244,7 +244,7 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Clubs by Area
             </h2>
-            <p className="text-[#999] text-base max-w-xl mx-auto">
+            <p className="text-[#BBB] text-base max-w-xl mx-auto">
               London&apos;s nightlife is spread across distinct pockets, each
               with its own character. Where you go matters as much as which club
               you pick.
@@ -260,10 +260,10 @@ export default function HomePage() {
                 <h3 className="font-bold text-white text-lg mb-2 group-hover:text-[#C0C0C0] transition-colors">
                   {area.name}
                 </h3>
-                <span className="inline-block text-xs text-[#666] bg-white/5 px-2.5 py-1 rounded-full mb-3">
+                <span className="inline-block text-xs text-[#888] bg-white/5 px-2.5 py-1 rounded-full mb-3">
                   {area.clubCount} {area.clubCount === 1 ? 'club' : 'clubs'}
                 </span>
-                <p className="text-[#999] text-sm leading-relaxed">
+                <p className="text-[#BBB] text-sm leading-relaxed">
                   {area.description}
                 </p>
                 <span className="inline-block mt-4 text-xs text-[#C0C0C0]">
@@ -282,7 +282,7 @@ export default function HomePage() {
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
               Our Network
             </h2>
-            <p className="text-[#999] text-sm max-w-xl mx-auto">
+            <p className="text-[#BBB] text-sm max-w-xl mx-auto">
               Specialist guides from our London nightlife network
             </p>
           </div>
@@ -298,7 +298,7 @@ export default function HomePage() {
                 <h3 className="font-semibold text-white text-sm mb-2 group-hover:text-[#C0C0C0] transition-colors">
                   {site.name}
                 </h3>
-                <p className="text-[#666] text-xs">{site.description}</p>
+                <p className="text-[#888] text-xs">{site.description}</p>
               </a>
             ))}
           </div>
@@ -311,7 +311,7 @@ export default function HomePage() {
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
             Going Out in London Tonight
           </h2>
-          <div className="space-y-4 text-[#999] text-sm leading-relaxed">
+          <div className="space-y-4 text-[#BBB] text-sm leading-relaxed">
             <p>
               London&apos;s club scene moves fast. What&apos;s packed on a
               Saturday might be dead on a Thursday, and the club everyone was

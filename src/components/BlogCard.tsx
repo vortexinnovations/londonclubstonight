@@ -23,7 +23,7 @@ export default function BlogCard({ post, featured = false }: BlogCardProps) {
           <span className="text-xs font-medium text-[#C0C0C0] bg-white/5 px-3 py-1 rounded-full border border-white/[0.04]">
             {post.category}
           </span>
-          <span className="text-xs text-[#666]">
+          <span className="text-xs text-[#888]">
             {new Date(post.publishedDate).toLocaleDateString('en-GB', {
               day: 'numeric',
               month: 'short',
@@ -43,7 +43,7 @@ export default function BlogCard({ post, featured = false }: BlogCardProps) {
 
         {/* Excerpt */}
         <p
-          className={`text-[#999] text-center leading-relaxed ${
+          className={`text-[#BBB] text-center leading-relaxed ${
             featured ? 'text-sm md:text-base mt-4' : 'text-sm mt-3'
           }`}
         >
@@ -55,7 +55,7 @@ export default function BlogCard({ post, featured = false }: BlogCardProps) {
           {post.tags.slice(0, 3).map((tag) => (
             <span
               key={tag}
-              className="text-xs bg-white/5 text-[#666] px-3 py-1 rounded-full border border-white/[0.04]"
+              className="text-xs bg-white/5 text-[#888] px-3 py-1 rounded-full border border-white/[0.04]"
             >
               {tag}
             </span>

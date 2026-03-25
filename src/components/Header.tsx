@@ -31,7 +31,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm text-[#999] hover:text-white transition-colors duration-200 hover:underline underline-offset-4 decoration-[#C0C0C0]/40"
+                className="text-sm text-[#BBB] hover:text-white transition-colors duration-200 hover:underline underline-offset-4 decoration-[#C0C0C0]/40"
               >
                 {link.label}
               </Link>
@@ -71,7 +71,7 @@ export default function Header() {
               key={link.href}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="block text-[#999] hover:text-white transition-colors py-2"
+              className="block text-[#BBB] hover:text-white transition-colors py-2"
             >
               {link.label}
             </Link>

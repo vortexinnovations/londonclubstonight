@@ -24,7 +24,7 @@ export default function ContactPage() {
       <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
         Book a Table or Join Guestlist
       </h1>
-      <p className="text-lg text-[#999] mb-12 max-w-2xl">
+      <p className="text-lg text-[#BBB] mb-12 max-w-2xl">
         Skip the forms. We use WhatsApp because it&apos;s faster, more personal, and means you get a real reply
         from a real promoter — not an automated confirmation email. Tell us what you&apos;re looking for
         and we&apos;ll sort the rest.
@@ -39,12 +39,12 @@ export default function ContactPage() {
             </svg>
           </div>
           <h2 className="text-2xl font-bold text-white mb-3">Book a VIP Table</h2>
-          <p className="text-[#999] mb-6 leading-relaxed">
+          <p className="text-[#BBB] mb-6 leading-relaxed">
             Guaranteed entry, your own space, and bottle service at any of London&apos;s best clubs.
             Tables start from £1,000 depending on the venue and night. We&apos;ll match you with
             the right club for your group.
           </p>
-          <ul className="text-[#666] text-sm space-y-2 mb-8">
+          <ul className="text-[#888] text-sm space-y-2 mb-8">
             <li className="flex items-start gap-2">
               <span className="text-[#25D366] mt-0.5">✓</span>
               Guaranteed entry — no queue, no rejection
@@ -82,12 +82,12 @@ export default function ContactPage() {
             </svg>
           </div>
           <h2 className="text-2xl font-bold text-white mb-3">Join the Guestlist</h2>
-          <p className="text-[#999] mb-6 leading-relaxed">
+          <p className="text-[#BBB] mb-6 leading-relaxed">
             Guestlist gets you priority consideration at the door — and at many clubs, free or
             reduced entry for women. We&apos;ll put you on the list and give you all the details
             you need for the night.
           </p>
-          <ul className="text-[#666] text-sm space-y-2 mb-8">
+          <ul className="text-[#888] text-sm space-y-2 mb-8">
             <li className="flex items-start gap-2">
               <span className="text-[#C0C0C0] mt-0.5">✓</span>
               Priority entry consideration
@@ -122,7 +122,7 @@ export default function ContactPage() {
         <div className="space-y-6">
           <div className="bg-[#141414] border border-[#222] rounded-xl p-6">
             <h3 className="text-white font-semibold mb-2">Why WhatsApp instead of a booking form?</h3>
-            <p className="text-[#999] text-sm leading-relaxed">
+            <p className="text-[#BBB] text-sm leading-relaxed">
               Because nightclub bookings aren&apos;t like restaurant reservations. Every group is different,
               every night is different, and the best table for you depends on details that a form can&apos;t capture.
               WhatsApp lets us have a real conversation, understand what you want, and make it happen properly.
@@ -130,21 +130,21 @@ export default function ContactPage() {
           </div>
           <div className="bg-[#141414] border border-[#222] rounded-xl p-6">
             <h3 className="text-white font-semibold mb-2">How quickly will I get a response?</h3>
-            <p className="text-[#999] text-sm leading-relaxed">
+            <p className="text-[#BBB] text-sm leading-relaxed">
               Usually within minutes during the evening, and within a few hours during the day.
               We&apos;re most responsive from 4pm onwards when the night&apos;s plans are coming together.
             </p>
           </div>
           <div className="bg-[#141414] border border-[#222] rounded-xl p-6">
             <h3 className="text-white font-semibold mb-2">Can I book for tonight?</h3>
-            <p className="text-[#999] text-sm leading-relaxed">
+            <p className="text-[#BBB] text-sm leading-relaxed">
               Yes — same-night bookings are our speciality. The sooner you message, the better the table
               options, but we regularly arrange bookings with just a few hours&apos; notice.
             </p>
           </div>
           <div className="bg-[#141414] border border-[#222] rounded-xl p-6">
             <h3 className="text-white font-semibold mb-2">Not sure which club to choose?</h3>
-            <p className="text-[#999] text-sm leading-relaxed">
+            <p className="text-[#BBB] text-sm leading-relaxed">
               Tell us about your group, what music you like, and what kind of night you&apos;re after.
               We&apos;ll recommend the right club — it&apos;s literally what we do every day. Check out our{' '}
               <Link href="/best-clubs-in-london" className="text-[#C0C0C0] hover:text-white">
@@ -167,7 +167,7 @@ export default function ContactPage() {
             className="bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-colors"
           >
             <h3 className="text-white font-semibold mb-1">Bottle Service & Pricing</h3>
-            <p className="text-[#666] text-sm">Detailed pricing, packages, and bottle menus at londonbottleservice.com</p>
+            <p className="text-[#888] text-sm">Detailed pricing, packages, and bottle menus at londonbottleservice.com</p>
           </a>
           <a
             href="https://londonbirthdayclub.com"
@@ -176,7 +176,7 @@ export default function ContactPage() {
             className="bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-colors"
           >
             <h3 className="text-white font-semibold mb-1">Birthday Celebrations</h3>
-            <p className="text-[#666] text-sm">Birthday packages and planning at londonbirthdayclub.com</p>
+            <p className="text-[#888] text-sm">Birthday packages and planning at londonbirthdayclub.com</p>
           </a>
           <a
             href="https://mayfairtonight.com"
@@ -185,7 +185,7 @@ export default function ContactPage() {
             className="bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-colors"
           >
             <h3 className="text-white font-semibold mb-1">Tonight in Mayfair</h3>
-            <p className="text-[#666] text-sm">Tonight&apos;s Mayfair events and guestlists at mayfairtonight.com</p>
+            <p className="text-[#888] text-sm">Tonight&apos;s Mayfair events and guestlists at mayfairtonight.com</p>
           </a>
           <a
             href="https://londonluxurynightlife.com"
@@ -194,7 +194,7 @@ export default function ContactPage() {
             className="bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-colors"
           >
             <h3 className="text-white font-semibold mb-1">Luxury Nightlife Guide</h3>
-            <p className="text-[#666] text-sm">Premium London nightlife experiences at londonluxurynightlife.com</p>
+            <p className="text-[#888] text-sm">Premium London nightlife experiences at londonluxurynightlife.com</p>
           </a>
         </div>
       </section>
