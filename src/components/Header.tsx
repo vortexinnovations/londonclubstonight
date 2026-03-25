@@ -10,6 +10,7 @@ const navLinks = [
   { href: '/guides/how-to-get-into-london-clubs', label: 'Entry Guide' },
   { href: '/guides/london-clubs-by-music-genre', label: 'By Genre' },
   { href: '/areas', label: 'By Area' },
+  { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Book Now' },
 ];
 

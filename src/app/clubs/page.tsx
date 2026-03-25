@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { clubs } from '@/lib/clubs';
+import { getOpenClubs } from '@/lib/clubs';
 import ClubCard from '@/components/ClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import type { Metadata } from 'next';
@@ -54,7 +54,7 @@ export default function ClubsPage() {
       {/* Club Grid */}
       <section className="max-w-5xl mx-auto px-4 pb-12">
         <div className="grid md:grid-cols-2 gap-5">
-          {clubs.map((club, index) => (
+          {getOpenClubs().map((club, index) => (
             <ClubCard
               key={club.slug}
               club={club}

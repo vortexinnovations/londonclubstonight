@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { clubs } from '@/lib/clubs';
+import { getOpenClubs } from '@/lib/clubs';
 import ClubCard from '@/components/ClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
@@ -8,7 +8,7 @@ import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 export const metadata: Metadata = {
   title: 'Best Clubs in London 2026 — The Definitive Ranked Guide',
   description:
-    'The 13 best nightclubs in London for 2026, ranked by promoters who actually work the doors. From Tape London to Ministry of Sound — honest reviews, table prices, and how to get in.',
+    'The 14 best nightclubs in London for 2026, ranked by promoters who actually work the doors. From Tape London to Ministry of Sound — honest reviews, table prices, and how to get in.',
   keywords: [
     'best clubs in London',
     'best nightclubs London',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Best Clubs in London 2026 — The Definitive Ranked Guide',
     description:
-      'The 13 best nightclubs in London for 2026, ranked by promoters who work the doors every weekend. Honest, opinionated reviews you won\'t find anywhere else.',
+      'The 14 best nightclubs in London for 2026, ranked by promoters who work the doors every weekend. Honest, opinionated reviews you won\'t find anywhere else.',
     url: 'https://londonclubstonight.com/best-clubs-in-london',
     type: 'article',
     locale: 'en_GB',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Best Clubs in London 2026 — The Definitive Ranked Guide',
     description:
-      'The 13 best nightclubs in London for 2026, ranked by promoters who actually work the doors.',
+      'The 14 best nightclubs in London for 2026, ranked by promoters who actually work the doors.',
   },
   alternates: {
     canonical: 'https://londonclubstonight.com/best-clubs-in-london',
@@ -44,13 +44,14 @@ const rankedSlugs = [
   'cirque-le-soir',
   'ministry-of-sound',
   'the-london-reign',
-  'lio-london',
+  'the-box-london',
   'tabu-london',
-  'libertine',
+  'funky-buddha',
   'scotch-of-st-james',
   'cuckoo-club',
   'maddox',
-  'luxx-club',
+  'luna-club-london',
+  'selene-london',
   'dear-darling',
   'beat-london',
 ];
@@ -85,8 +86,9 @@ const clubOpinions: Record<string, string> = {
 };
 
 export default function BestClubsInLondonPage() {
+  const openClubs = getOpenClubs();
   const rankedClubs = rankedSlugs
-    .map((slug) => clubs.find((c) => c.slug === slug))
+    .map((slug) => openClubs.find((c) => c.slug === slug))
     .filter((c): c is NonNullable<typeof c> => c !== undefined);
 
   const articleSchema = getArticleSchema(

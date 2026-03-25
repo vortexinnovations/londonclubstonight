@@ -2,6 +2,7 @@ export interface Club {
   slug: string;
   name: string;
   shortName: string;
+  status: 'open' | 'permanently-closed';
   tagline: string;
   description: string;
   longDescription: string;
@@ -46,6 +47,7 @@ export const clubs: Club[] = [
     slug: 'tape-london',
     name: 'Tape London',
     shortName: 'Tape',
+    status: 'open',
     tagline: 'The celebrity members club where London\'s elite party behind closed doors',
     description: 'Exclusive members club on Hanover Square. Celebrity favourite with a hip-hop focused soundtrack and tables starting from £1,500.',
     longDescription: `Tape London is the club you hear about but can't easily get into — and that's exactly the point. Tucked away on Hanover Square in the heart of Mayfair, this members club has earned its reputation as one of London's most exclusive nightlife destinations. The crowd is a genuine mix of celebrities, athletes, music industry figures, and high-net-worth individuals who want to party without the usual hassle.
@@ -76,6 +78,7 @@ The music leans heavily into hip-hop, trap, and RnB with the occasional pop cros
     slug: 'cirque-le-soir',
     name: 'Cirque Le Soir',
     shortName: 'Cirque',
+    status: 'open',
     tagline: 'London\'s wildest circus-themed nightclub where entertainment meets mayhem',
     description: 'Circus-themed celebrity hotspot on Ganton Street. Known for outrageous entertainment, fire-breathers, and performers. Hip-hop & RnB. Tables from £1,000.',
     longDescription: `Cirque Le Soir is unlike anything else in London. Located on Ganton Street in the Carnaby area between Soho and Mayfair, this circus-themed nightclub has been a celebrity magnet since it opened — and one visit will tell you why. This isn't a club that happens to have entertainment on the side. The entertainment IS the experience.
@@ -108,6 +111,7 @@ What makes Cirque Le Soir special is the commitment to spectacle. Every night fe
     slug: 'the-london-reign',
     name: 'The London Reign',
     shortName: 'Reign',
+    status: 'open',
     tagline: 'Piccadilly\'s theatrical showclub where dinner meets performance meets late-night revelry',
     description: 'Extravagant showclub on Piccadilly in St James\'s. Aerial acts, performances, and a full dining experience. Tables from £1,000.',
     longDescription: `The London Reign sits on Piccadilly and brings something genuinely different to London's nightlife. This is a showclub in the truest sense — a venue where world-class entertainment, fine dining, and late-night clubbing converge into a single spectacular evening.
@@ -140,6 +144,7 @@ Reign appeals to a broad crowd — from couples celebrating special occasions to
     slug: 'tabu-london',
     name: 'TABU London',
     shortName: 'TABU',
+    status: 'open',
     tagline: 'Mayfair\'s Japanese underground hideaway with the best hip-hop in W1',
     description: 'Japanese underground-themed club in Mayfair. Unique décor, hip-hop & RnB focused. Tables from £1,000.',
     longDescription: `TABU brings something genuinely original to Mayfair's club scene. The Japanese underground theme isn't just a surface-level aesthetic — it runs through the entire experience, from the entrance that feels like stepping into a hidden Tokyo bar to the décor that blends traditional Japanese elements with modern nightclub design.
@@ -172,6 +177,7 @@ TABU works best when you embrace the unique atmosphere. It's not trying to be th
     slug: 'libertine',
     name: 'Libertine',
     shortName: 'Libertine',
+    status: 'permanently-closed',
     tagline: 'Mayfair\'s futuristic playground for the fashion-forward crowd',
     description: 'Sophisticated and futuristic Mayfair venue with cutting-edge design. Hip-hop & RnB. Tables from £1,000.',
     longDescription: `Libertine occupies a unique space in Mayfair's club landscape — a venue that feels genuinely futuristic without crossing into gimmick territory. The design is sleek, modern, and deliberately different from the traditional Mayfair club aesthetic. Think clean lines, innovative lighting, and a spatial design that makes the venue feel larger and more dynamic than its physical footprint.
@@ -204,6 +210,7 @@ Libertine works particularly well for groups who are tired of the same Mayfair f
     slug: 'luxx-club',
     name: 'Luxx Club London',
     shortName: 'Luxx',
+    status: 'permanently-closed',
     tagline: 'Mayfair\'s electric light show venue where visuals meet VIP nightlife',
     description: 'Premium Mayfair venue with spectacular LED light shows and electric atmosphere. Open format and hip-hop. Tables from £1,000.',
     longDescription: `Luxx Club London has established itself as one of Mayfair's most visually spectacular nightclubs. The venue's signature feature is its LED light show — a custom-designed visual experience that transforms the space throughout the night. Walls, ceilings, and surfaces come alive with synchronised imagery that responds to the music, creating an immersive environment that genuinely enhances the clubbing experience.
@@ -236,6 +243,7 @@ Tables start from £1,000 and are well-positioned to enjoy both the light show a
     slug: 'maddox',
     name: 'Maddox',
     shortName: 'Maddox',
+    status: 'open',
     tagline: 'Where Mayfair\'s finest Italian dining transitions seamlessly into house music until late',
     description: 'Restaurant and nightclub hybrid in Mayfair. Italian cuisine followed by house music clubbing. Tables from £1,000.',
     longDescription: `Maddox is one of those Mayfair venues that genuinely does two things well — and that's rare. By early evening, it's a refined Italian restaurant serving dishes that would stand up in any serious dining review. By midnight, it's a house music club with one of the best sound systems in W1. The transition between the two happens seamlessly, and it's this dual identity that makes Maddox special.
@@ -268,6 +276,7 @@ Tables start from £1,000 for the club portion of the evening. Dinner reservatio
     slug: 'scotch-of-st-james',
     name: 'Scotch of St James',
     shortName: 'Scotch',
+    status: 'open',
     tagline: 'The historic Mayfair club where Jimi Hendrix played and London\'s elite still parties',
     description: 'Exclusive historic club in Mayfair with a legendary past dating back to the 1960s. Elegant parties in an intimate setting. Tables from £1,000.',
     longDescription: `Scotch of St James carries more history than any other nightclub in London. This is the venue where Jimi Hendrix played impromptu sets in the 1960s, where The Beatles hung out, and where London's cultural elite have gathered for over half a century. That history isn't just a marketing angle — you feel it the moment you walk through the door.
@@ -300,6 +309,7 @@ Tables start from £1,000 and the intimate scale means every table feels premium
     slug: 'cuckoo-club',
     name: 'Cuckoo Club',
     shortName: 'Cuckoo',
+    status: 'open',
     tagline: 'The two-floor Mayfair stalwart that balances house music refinement with hip-hop energy',
     description: 'Stylish two-floor Mayfair club on Swallow Street. House and hip-hop across two distinct rooms. Tables from £1,000.',
     longDescription: `Cuckoo Club has been a fixture on Mayfair's Swallow Street for years, and its longevity tells you something about what it gets right. The two-floor format is the key — it gives you two genuinely different experiences under one roof, which is surprisingly rare in London's club scene.
@@ -332,6 +342,7 @@ Tables start from £1,000 and are available on both floors. The guestlist is rel
     slug: 'dear-darling',
     name: 'Dear Darling',
     shortName: 'Dear Darling',
+    status: 'open',
     tagline: 'Mayfair\'s most opulent cocktail bar with a late-night secret',
     description: 'Opulent Mayfair cocktail bar with chandeliers and velvet booths. Premium cocktails with late-night clubbing. Tables from £1,000.',
     longDescription: `Dear Darling is Mayfair at its most decadent. Walking in feels like stepping into a gilded private salon — chandeliers hang from ornate ceilings, velvet booths line the walls, and every surface seems designed to catch the warm, amber lighting. It's unapologetically opulent, and it works.
@@ -364,6 +375,7 @@ Tables start from £1,000 for the late-night experience. Earlier evening booking
     slug: 'beat-london',
     name: 'BEAT London',
     shortName: 'BEAT',
+    status: 'open',
     tagline: 'High-energy clubbing with one of London\'s most powerful sound systems',
     description: 'Margaret Street nightclub with a powerful sound system and high-energy atmosphere. Tables from £1,000.',
     longDescription: `BEAT London is built around one thing above all else: the sound system. Located on Margaret Street, this club has invested in audio equipment that rivals dedicated music venues, and you hear the difference the moment you walk in. The bass is physical, the highs are crisp, and the overall sound quality makes a genuine difference to the clubbing experience.
@@ -396,6 +408,7 @@ Tables start from £1,000 and offer good views of the dancefloor and DJ booth. T
     slug: 'ministry-of-sound',
     name: 'Ministry of Sound',
     shortName: 'Ministry',
+    status: 'open',
     tagline: 'London\'s legendary superclub — the cathedral of electronic music since 1991',
     description: 'Iconic South London superclub in Elephant & Castle. Multiple rooms, world-class sound, house and techno. Tables from £1,000.',
     longDescription: `Ministry of Sound needs no introduction — but it deserves one anyway. Since 1991, this Elephant & Castle institution has been the benchmark against which every other dance music venue in London is measured. The building might not look like much from the outside, but step through the doors and you're entering hallowed ground for anyone who cares about electronic music.
@@ -428,6 +441,7 @@ Unlike the Mayfair clubs, Ministry operates on a larger scale. Capacity runs int
     slug: 'lio-london',
     name: 'Lio Club London',
     shortName: 'Lio',
+    status: 'permanently-closed',
     tagline: 'Ibiza\'s iconic dinner-club concept brings Mediterranean glamour to Mayfair',
     description: 'Elegant Mayfair venue combining gourmet dining with live entertainment and nightlife. Tables from £1,000.',
     longDescription: `Lio Club London brings the spirit of its legendary Ibiza original to Mayfair, and the translation works beautifully. This is a venue that understands how to merge gourmet dining, live entertainment, and late-night clubbing into a single evening — and does each element with enough quality that none feels like an afterthought.
@@ -456,16 +470,156 @@ Tables start from £1,000 for the club portion, with dinner packages offering th
     whyRanked: 'Lio brings genuine international glamour to London\'s club scene. The dinner-show-club format is polished, and the Mediterranean influence distinguishes it from everything else in Mayfair.',
     mapUrl: 'https://maps.google.com/?q=Lio+Club+London+Mayfair',
   },
+  {
+    slug: 'funky-buddha',
+    name: 'Funky Buddha London',
+    shortName: 'Funky Buddha',
+    status: 'open',
+    tagline: 'The legendary Mayfair institution that has outlasted every trend since 1999',
+    description: 'One of Mayfair\'s longest-running nightclubs with a loyal celebrity following. RnB, hip-hop, and funky house. Tables from £1,000.',
+    longDescription: `Funky Buddha is London nightlife royalty. Operating in Mayfair since 1999, this club has outlasted countless venues that opened with bigger budgets and louder fanfare. That longevity tells you everything — the fundamentals here are right, and the loyal crowd keeps coming back because nobody else delivers quite the same atmosphere.
+
+The venue occupies a sweet spot between intimate and spacious. It's large enough to generate real energy on the dancefloor but small enough that the atmosphere stays concentrated. The interiors have been refreshed over the years but retain a warmth and character that newer clubs struggle to manufacture. There's a lived-in quality that comes from decades of legendary nights.
+
+Musically, Funky Buddha lives up to its name. The playlist moves between RnB, hip-hop, and funky house — a combination that's become the club's signature sound. The DJs who play here understand the room's history and programme accordingly. You'll hear classics alongside current hits, and the transitions between genres feel natural rather than jarring.
+
+The celebrity connection is genuine and long-standing. Funky Buddha has been a favourite of footballers, musicians, and actors for over two decades. The door team know the regulars, the staff remember your drink, and the whole operation runs with the confidence of a venue that has nothing to prove.
+
+Tables start from £1,000 and the table service experience benefits from years of refinement. The staff are experienced and professional without being stuffy. Guestlist is available and more accessible than at some of the newer, more aggressively exclusive Mayfair clubs.`,
+    address: 'Berkeley Street, London W1J 8DY',
+    area: 'Mayfair',
+    areas: ['Mayfair', 'Central London'],
+    musicGenres: ['RnB', 'Hip-Hop', 'Funky House'],
+    openingNights: 'Thursday, Friday, Saturday',
+    closingTime: '3:00am',
+    dressCode: 'Smart and stylish. The usual Mayfair rules apply — smart shoes for men, no sportswear, dress to impress. The crowd here tends toward classic rather than cutting-edge fashion.',
+    doorPolicy: 'Table bookings and guestlist prioritised. Walk-ins possible for well-presented mixed groups. The door team are experienced and firm but fair.',
+    entryDifficulty: 'Moderate',
+    tableMinimum: '£1,000',
+    crowd: 'Loyal regulars, celebrities, professionals who\'ve been coming for years. Average age 25-40.',
+    bestFor: 'Anyone who appreciates a venue with genuine history and atmosphere. RnB and funky house lovers. Groups who want a reliable Mayfair night without pretension.',
+    notIdealFor: 'Trend-chasers who only want the newest venue. Those seeking avant-garde or experimental club nights.',
+    insiderTip: 'Thursday nights have the most relaxed atmosphere and the best chance of walk-in entry. The regular DJs on Saturdays know the room inside out — the music is consistently excellent.',
+    whyRanked: 'Longevity in London\'s nightlife is the ultimate quality signal. Funky Buddha has been delivering great nights for over 25 years — that track record is unmatched.',
+    mapUrl: 'https://maps.google.com/?q=Funky+Buddha+London+Berkeley+Street',
+  },
+  {
+    slug: 'the-box-london',
+    name: 'The Box London',
+    shortName: 'The Box',
+    status: 'open',
+    tagline: 'London\'s most provocative theatrical nightclub — not for the faint-hearted',
+    description: 'Theatrical nightclub in Soho known for boundary-pushing performances and an anything-goes atmosphere. Tables from £1,000.',
+    longDescription: `The Box is London's most deliberately provocative nightclub. Originally a New York concept, the London venue on Walker's Court in Soho has built a reputation for performances that push boundaries further than anywhere else in the city. If Cirque Le Soir is circus entertainment, The Box is the uncensored, adults-only version that nobody warns you about.
+
+The venue is designed like a theatre — tiered seating surrounds a central stage, and the performances are the undeniable centrepiece of the experience. The acts range from burlesque to acrobatics to shows that defy easy categorisation. Nothing is accidental — every performance is choreographed, rehearsed, and designed to provoke a reaction. Some guests love it. Some are shocked. Nobody is bored.
+
+Beyond the performances, The Box functions as a genuinely good nightclub. The music shifts between hip-hop, RnB, and house depending on the night, and the DJs maintain energy between shows. The intimate theatre layout means every seat feels close to the action, and the VIP tables bordering the stage offer an experience you genuinely cannot get anywhere else.
+
+The door policy is one of London's most selective. The Box curates its crowd deliberately — the team are looking for people who will contribute to the energy rather than just observe. Attitude matters as much as appearance. Table bookings are the most reliable route in, starting from £1,000, and the competition for tables on weekends is fierce.
+
+This is not a club for everyone, and it doesn't pretend to be. The content can be explicit, the atmosphere is intentionally intense, and the whole experience demands an open mind. But for those who embrace it, The Box delivers nights that no other venue in London can match.`,
+    address: 'Walker\'s Court, London W1F 0BZ',
+    area: 'Soho',
+    areas: ['Soho', 'Central London'],
+    musicGenres: ['Hip-Hop', 'RnB', 'House'],
+    openingNights: 'Wednesday, Thursday, Friday, Saturday',
+    closingTime: '3:30am',
+    dressCode: 'Creative and stylish. The Box rewards individuality — dress to express rather than to conform. Smart is expected but personality is valued above formality.',
+    doorPolicy: 'Extremely selective. Table bookings strongly recommended. The door team curate the crowd actively — attitude and energy matter as much as appearance. Mixed groups with positive energy have the best chance.',
+    entryDifficulty: 'Very Hard',
+    tableMinimum: '£1,000',
+    crowd: 'Creative industry, performers, fashion-forward, open-minded. Average age 25-40.',
+    bestFor: 'Anyone who wants a genuinely unique and provocative night out. Creative types who appreciate theatrical performance. Groups looking for an experience they can\'t get anywhere else.',
+    notIdealFor: 'Conservative groups. Anyone easily offended or uncomfortable with explicit content. People looking for a standard club night.',
+    insiderTip: 'Book a table bordering the stage for the full experience — the proximity to the performances makes all the difference. Wednesday and Thursday nights are slightly easier to get into and often have the most experimental shows.',
+    whyRanked: 'Nothing else in London comes close to this level of theatrical provocation combined with genuine nightclub energy. It\'s divisive by design, but those who love it are obsessed.',
+    mapUrl: 'https://maps.google.com/?q=The+Box+Soho+London',
+  },
+  {
+    slug: 'luna-club-london',
+    name: 'Luna Club London',
+    shortName: 'Luna',
+    status: 'open',
+    tagline: 'Mayfair\'s newest late-night destination with a celestial edge',
+    description: 'New Mayfair nightclub with a modern celestial theme, strong DJ lineup, and polished table service. Tables from £1,000.',
+    longDescription: `Luna Club London represents the newer generation of Mayfair nightclubs — venues that have learned from their predecessors and arrive fully formed with polished production, strong DJ bookings, and a clear identity from night one.
+
+The celestial theme runs through the venue's design without overwhelming it. Subtle lunar references in the lighting, décor, and spatial design create an atmosphere that feels distinctive without being gimmicky. The overall effect is modern and sophisticated — a club that knows exactly what it wants to be.
+
+The music programming is well-curated, leaning into contemporary hip-hop and RnB with occasional house music crossovers. Luna has invested in its sound system and the audio quality reflects that — the bass hits clean, the mids are present, and conversation is possible in the right spots without competing with the music.
+
+The crowd skews young and fashionable. Luna has attracted a loyal following quickly by offering what the Mayfair market wants — good music, strong aesthetics, and table service that delivers without the pretension that can plague this postcode. The staff are attentive and the bottle service operation runs smoothly.
+
+Tables start from £1,000 and book up quickly, particularly on Saturdays. Guestlist is available and the door policy is selective but not prohibitively exclusive. Well-presented mixed groups have a reasonable chance without a booking, though reservations remain the safest route.`,
+    address: 'Mayfair, London W1',
+    area: 'Mayfair',
+    areas: ['Mayfair', 'Central London'],
+    musicGenres: ['Hip-Hop', 'RnB', 'House'],
+    openingNights: 'Friday, Saturday',
+    closingTime: '3:30am',
+    dressCode: 'Smart Mayfair standard. Well-dressed and fashion-conscious — smart shoes, no sportswear, contemporary style encouraged.',
+    doorPolicy: 'Table bookings prioritised. Guestlist available. Walk-ins considered for well-dressed mixed groups.',
+    entryDifficulty: 'Moderate',
+    tableMinimum: '£1,000',
+    crowd: 'Young professionals, fashion-forward, influencer-adjacent. Average age 22-32.',
+    bestFor: 'Groups looking for a fresh Mayfair experience without the legacy venue stuffiness. Instagram-friendly aesthetics with genuine substance.',
+    notIdealFor: 'Those who prefer heritage venues with established history. Anyone looking for underground or alternative vibes.',
+    insiderTip: 'Saturday nights are the flagship — the DJ lineup is strongest and the atmosphere peaks between 1am and 3am. Book early in the week as tables sell out fast.',
+    whyRanked: 'Luna has established itself quickly by getting the fundamentals right — great sound, smart design, and genuine energy. A strong addition to Mayfair\'s roster.',
+    mapUrl: 'https://maps.google.com/?q=Luna+Club+London+Mayfair',
+  },
+  {
+    slug: 'selene-london',
+    name: 'Selene London',
+    shortName: 'Selene',
+    status: 'open',
+    tagline: 'Elegant Mayfair newcomer blending refined cocktails with late-night sophistication',
+    description: 'Sophisticated Mayfair venue offering premium cocktails and late-night clubbing in an elegant setting. Tables from £1,000.',
+    longDescription: `Selene London brings a refined elegance to Mayfair's late-night scene. The venue positions itself at the intersection of cocktail bar sophistication and nightclub energy — a space where the evening builds gradually from intimate drinks to a full dancefloor experience.
+
+The design is understated luxury. Clean lines, warm materials, and lighting that shifts seamlessly as the venue transitions from its early-evening cocktail bar mode to its late-night club format. The aesthetic is feminine without being exclusive to women — it's a venue that appeals to anyone who appreciates design and atmosphere over volume and spectacle.
+
+The cocktail programme is a genuine draw. Unlike clubs where drinks are an afterthought between bottle service and shots, Selene takes its cocktails seriously. The bartenders are skilled, the ingredients are premium, and the menu changes seasonally. This attracts a crowd that appreciates quality and is willing to pay for it.
+
+As the night progresses, the music builds. The genre leans into sophisticated house and RnB — tracks chosen for taste rather than chart position. The DJs programme the evening as a journey rather than an assault, and the result is a late-night atmosphere that feels grown-up without being boring.
+
+Tables start from £1,000 and the service is polished. The crowd is well-dressed, predominantly in their late twenties to late thirties, and appreciates the venue's more refined approach. Guestlist is available and the door policy is selective but welcoming to the right crowd.`,
+    address: 'Mayfair, London W1',
+    area: 'Mayfair',
+    areas: ['Mayfair', 'Central London'],
+    musicGenres: ['House', 'RnB', 'Deep House'],
+    openingNights: 'Thursday, Friday, Saturday',
+    closingTime: '3:00am',
+    dressCode: 'Smart elegant. Selene\'s refined atmosphere demands equally refined attire. Think polished and sophisticated.',
+    doorPolicy: 'Table bookings and guestlist recommended. Walk-ins possible for well-presented couples and mixed groups.',
+    entryDifficulty: 'Moderate',
+    tableMinimum: '£1,000',
+    crowd: 'Sophisticated, cocktail-appreciating, design-conscious. Average age 27-38.',
+    bestFor: 'Couples seeking a sophisticated night out. Groups who appreciate cocktails as much as clubbing. Anyone who wants elegance without stuffiness.',
+    notIdealFor: 'Those seeking high-energy, loud club nights. Hip-hop purists. Groups looking for the party atmosphere of bigger venues.',
+    insiderTip: 'Arrive early enough to experience the cocktail bar phase — the drinks are excellent and the atmosphere during the transition to club mode is Selene at its best. Thursday is the most intimate night.',
+    whyRanked: 'Selene fills a gap in Mayfair for people who want sophistication and quality across every element of their evening. The cocktail-to-club concept is executed with real finesse.',
+    mapUrl: 'https://maps.google.com/?q=Selene+London+Mayfair',
+  },
 ];
 
 export function getClubBySlug(slug: string): Club | undefined {
   return clubs.find(c => c.slug === slug);
 }
 
+export function getOpenClubs(): Club[] {
+  return clubs.filter(c => c.status === 'open');
+}
+
+export function getClosedClubs(): Club[] {
+  return clubs.filter(c => c.status === 'permanently-closed');
+}
+
 export function getClubsByArea(area: string): Club[] {
-  return clubs.filter(c => c.areas.includes(area));
+  return clubs.filter(c => c.status === 'open' && c.areas.includes(area));
 }
 
 export function getClubsByGenre(genre: string): Club[] {
-  return clubs.filter(c => c.musicGenres.some(g => g.toLowerCase() === genre.toLowerCase()));
+  return clubs.filter(c => c.status === 'open' && c.musicGenres.some(g => g.toLowerCase() === genre.toLowerCase()));
 }

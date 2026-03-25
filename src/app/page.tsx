@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { clubs } from '@/lib/clubs';
+import { clubs, getOpenClubs } from '@/lib/clubs';
 import ClubCard from '@/components/ClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
 };
 
-const tonightPicks = clubs.slice(0, 6);
+const tonightPicks = getOpenClubs().slice(0, 6);
 
 const areas = [
   {

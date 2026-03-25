@@ -61,6 +61,7 @@ export default async function ClubPage({
     notFound();
   }
 
+  const isClosed = club.status === 'permanently-closed';
   const areaSlug = club.area.toLowerCase().replace(/\s+/g, '-');
   const paragraphs = club.longDescription.split('\n\n').filter(Boolean);
 
@@ -90,6 +91,21 @@ export default async function ClubPage({
         </nav>
       </div>
 
+      {/* Permanently Closed Banner */}
+      {isClosed && (
+        <div className="max-w-4xl mx-auto px-4 pt-6">
+          <div className="bg-red-500/10 border border-red-500/30 text-red-400 rounded-xl p-6">
+            <p className="font-semibold text-lg mb-2">Permanently Closed</p>
+            <p className="text-sm leading-relaxed">
+              {club.name} is permanently closed. This page is maintained for reference. Looking for clubs open tonight? Check our{' '}
+              <Link href="/clubs" className="underline hover:text-red-300 transition-colors">
+                best clubs guide
+              </Link>.
+            </p>
+          </div>
+        </div>
+      )}
+
       {/* Hero */}
       <header className="max-w-4xl mx-auto px-4 pt-8 pb-10">
         <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
@@ -99,9 +115,11 @@ export default async function ClubPage({
           {club.tagline}
         </p>
 
-        <div className="mt-8">
-          <WhatsAppCTA clubName={club.name} variant="hero" />
-        </div>
+        {!isClosed && (
+          <div className="mt-8">
+            <WhatsAppCTA clubName={club.name} variant="hero" />
+          </div>
+        )}
       </header>
 
       {/* Quick Info Grid */}
@@ -227,18 +245,43 @@ export default async function ClubPage({
 
       {/* CTA Section */}
       <section className="max-w-4xl mx-auto px-4 pb-12">
-        <div className="bg-[#141414] border border-[#222] rounded-xl p-8 text-center">
-          <h2 className="text-2xl font-bold text-white mb-3">
-            Ready to Experience {club.name}?
-          </h2>
-          <p className="text-[#999] mb-6 max-w-lg mx-auto">
-            Get a table booking or guestlist spot at {club.name}. Message us on
-            WhatsApp and we&apos;ll sort everything for you.
-          </p>
-          <div className="flex justify-center">
-            <WhatsAppCTA clubName={club.name} />
+        {isClosed ? (
+          <div className="bg-[#141414] border border-[#222] rounded-xl p-8 text-center">
+            <h2 className="text-2xl font-bold text-white mb-3">
+              Looking for a Club Tonight?
+            </h2>
+            <p className="text-[#999] mb-6 max-w-lg mx-auto">
+              {club.name} is permanently closed, but there are plenty of great clubs open tonight. Browse our full list or get in touch for a personal recommendation.
+            </p>
+            <div className="flex justify-center gap-4 flex-wrap">
+              <Link
+                href="/clubs"
+                className="inline-block bg-[#141414] hover:bg-[#1A1A1A] border border-[#333] hover:border-[#444] text-[#C0C0C0] px-6 py-3 rounded-lg text-sm font-medium transition-all"
+              >
+                Browse Open Clubs
+              </Link>
+              <Link
+                href="/contact"
+                className="inline-block bg-[#141414] hover:bg-[#1A1A1A] border border-[#333] hover:border-[#444] text-[#C0C0C0] px-6 py-3 rounded-lg text-sm font-medium transition-all"
+              >
+                Contact Us
+              </Link>
+            </div>
           </div>
-        </div>
+        ) : (
+          <div className="bg-[#141414] border border-[#222] rounded-xl p-8 text-center">
+            <h2 className="text-2xl font-bold text-white mb-3">
+              Ready to Experience {club.name}?
+            </h2>
+            <p className="text-[#999] mb-6 max-w-lg mx-auto">
+              Get a table booking or guestlist spot at {club.name}. Message us on
+              WhatsApp and we&apos;ll sort everything for you.
+            </p>
+            <div className="flex justify-center">
+              <WhatsAppCTA clubName={club.name} />
+            </div>
+          </div>
+        )}
       </section>
 
       {/* Cross Links & Internal Links */}
@@ -323,7 +366,7 @@ export default async function ClubPage({
       </section>
 
       {/* Sticky mobile CTA */}
-      <WhatsAppCTA clubName={club.name} variant="sticky" />
+      {!isClosed && <WhatsAppCTA clubName={club.name} variant="sticky" />}
     </main>
   );
 }
