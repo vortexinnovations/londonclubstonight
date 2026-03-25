@@ -1,13 +1,55 @@
-import { getWhatsAppTableUrl, getWhatsAppGuestlistUrl } from '@/lib/clubs';
+import {
+  getWhatsAppTableUrl,
+  getWhatsAppGuestlistUrl,
+  getWhatsAppTonightUrl,
+  getWhatsAppGuestlistTonightUrl,
+} from '@/lib/clubs';
 
 interface WhatsAppCTAProps {
   clubName?: string;
-  variant?: 'inline' | 'sticky' | 'hero';
+  variant?: 'inline' | 'sticky' | 'hero' | 'tonight';
+  heading?: string;
 }
 
-export default function WhatsAppCTA({ clubName, variant = 'inline' }: WhatsAppCTAProps) {
+export default function WhatsAppCTA({ clubName, variant = 'inline', heading }: WhatsAppCTAProps) {
   const tableUrl = getWhatsAppTableUrl(clubName);
   const guestlistUrl = getWhatsAppGuestlistUrl(clubName);
+
+  if (variant === 'tonight') {
+    const tonightTableUrl = getWhatsAppTonightUrl(clubName);
+    const tonightGuestlistUrl = getWhatsAppGuestlistTonightUrl(clubName);
+
+    return (
+      <div className="bg-[#141414] border border-[#222] rounded-2xl p-8 md:p-10 text-center">
+        <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
+          {heading || 'Need a Table Tonight?'}
+        </h2>
+        <p className="text-[#BBB] mb-6">
+          Message us on WhatsApp — we respond in minutes.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
+          <a
+            href={tonightTableUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#25D366] hover:bg-[#20BD5A] text-white text-center py-4 px-8 rounded-lg font-semibold text-base transition-colors flex items-center justify-center gap-2"
+          >
+            <WhatsAppIcon />
+            Book Table Tonight
+          </a>
+          <a
+            href={tonightGuestlistUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white/10 hover:bg-white/15 text-white text-center py-4 px-8 rounded-lg font-semibold text-base transition-colors border border-white/20 flex items-center justify-center gap-2"
+          >
+            <WhatsAppIcon />
+            Guestlist Tonight
+          </a>
+        </div>
+      </div>
+    );
+  }
 
   if (variant === 'sticky') {
     return (

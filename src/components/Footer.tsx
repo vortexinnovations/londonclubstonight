@@ -34,6 +34,14 @@ const blogLinks = [
   { href: '/blog/london-nightlife-guide-for-tourists', label: 'Tourist Guide' },
 ];
 
+const tonightLinks = [
+  { href: '/clubs-tonight-london', label: 'Clubs Tonight' },
+  { href: '/mayfair-clubs-tonight', label: 'Mayfair Tonight' },
+  { href: '/best-clubs-this-weekend-london', label: 'Weekend Planner' },
+  { href: '/guestlist-tonight-london', label: 'Guestlist Tonight' },
+  { href: '/last-minute-table-booking-london', label: 'Last Minute Tables' },
+];
+
 const networkLinks = [
   { href: 'https://mayfairtonight.com', label: 'Mayfair Tonight' },
   { href: 'https://londonbottleservice.com', label: 'London Bottle Service' },
@@ -48,7 +56,20 @@ export default function Footer() {
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C0C0C0]/30 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-10 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 mb-16">
+          <div>
+            <h3 className="text-white font-semibold text-sm mb-5 uppercase tracking-widest">Tonight</h3>
+            <ul className="space-y-3">
+              {tonightLinks.map(link => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-[#888] hover:text-[#C0C0C0] text-sm transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           <div>
             <h3 className="text-white font-semibold text-sm mb-5 uppercase tracking-widest">Clubs</h3>
             <ul className="space-y-3">

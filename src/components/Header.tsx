@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 const navLinks = [
-  { href: '/', label: 'Tonight' },
+  { href: '/clubs-tonight-london', label: 'Tonight' },
   { href: '/best-clubs-in-london', label: 'Best Clubs' },
   { href: '/clubs', label: 'All Clubs' },
   { href: '/guides/london-clubs-by-music-genre', label: 'By Genre' },

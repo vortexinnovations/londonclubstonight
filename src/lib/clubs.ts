@@ -19,6 +19,12 @@ export interface Club {
   insiderTip: string;
   whyRanked: string;
   mapUrl: string;
+  tonightSuitability: string;
+  guestlistRealistic: boolean;
+  guestlistNote: string;
+  bestForGroups: 'ladies' | 'mixed' | 'high-spenders' | 'all';
+  lastMinuteTableFriendly: boolean;
+  lastMinuteNote: string;
 }
 
 export const WHATSAPP_NUMBER = '447880662708';
@@ -67,6 +73,12 @@ The music leans heavily into hip-hop, trap, and RnB with the occasional pop cros
     insiderTip: 'Book a table — it\'s the only reliable way in. Thursday nights tend to have the most celebrity sightings. Arrive before midnight to settle in before the main crowd arrives around 12:30.',
     whyRanked: 'No other club in London delivers this level of exclusivity with this quality of music. If you can get in, it\'s an unforgettable night.',
     mapUrl: 'https://maps.google.com/?q=Tape+London+Hanover+Square',
+    tonightSuitability: 'The ultimate spontaneous VIP night — intimate, exclusive, A-list energy. Best with a table booking.',
+    guestlistRealistic: false,
+    guestlistNote: 'Tape operates as a members club. Table booking is the most reliable route for tonight.',
+    bestForGroups: 'high-spenders',
+    lastMinuteTableFriendly: false,
+    lastMinuteNote: 'Same-day tables are rare on Fridays and Saturdays. Thursdays have better last-minute availability.',
   },
   {
     slug: 'cirque-le-soir',
@@ -97,6 +109,12 @@ What makes Cirque Le Soir special is the commitment to spectacle. Every night fe
     insiderTip: 'Saturday nights have the most performers and the biggest production. If it\'s your birthday, the performers will come to your table — just let the team know when you book.',
     whyRanked: 'Nothing else in London — or arguably the world — delivers this combination of nightclub energy and circus entertainment. It\'s a London institution for a reason.',
     mapUrl: 'https://maps.google.com/?q=Cirque+Le+Soir+London',
+    tonightSuitability: 'Perfect for a spontaneous night of spectacle — fire-breathers, performers, and hip-hop. Always an event.',
+    guestlistRealistic: true,
+    guestlistNote: 'Guestlist works well for mixed groups. Message us early in the day for tonight.',
+    bestForGroups: 'mixed',
+    lastMinuteTableFriendly: true,
+    lastMinuteNote: 'Same-day tables often available, especially on Wednesdays and Fridays. Saturdays book out faster.',
   },
   {
     slug: 'the-london-reign',
@@ -127,6 +145,12 @@ Reign appeals to a broad crowd — from couples celebrating special occasions to
     insiderTip: 'Book the dinner-and-club package for the full experience. Arrive early enough for the show — the aerial acts during dinner are the highlight, and you\'ll miss them if you arrive at midnight.',
     whyRanked: 'The combination of fine dining, West End-quality entertainment, and genuine late-night clubbing is unique in London. No other venue pulls off this triple-threat format so well.',
     mapUrl: 'https://maps.google.com/?q=The+London+Reign+Piccadilly',
+    tonightSuitability: 'Dinner, show, and club in one venue — ideal for a complete spontaneous evening with built-in entertainment.',
+    guestlistRealistic: true,
+    guestlistNote: 'Guestlist available for the club portion. Dinner-show packages need advance booking.',
+    bestForGroups: 'mixed',
+    lastMinuteTableFriendly: true,
+    lastMinuteNote: 'Club-only tables often available same-day. Dinner-show packages usually need 24 hours notice.',
   },
   {
     slug: 'tabu-london',
@@ -157,6 +181,12 @@ TABU works best when you embrace the unique atmosphere. It's not trying to be th
     insiderTip: 'Saturdays are the flagship night. The intimate size means the atmosphere builds fast — arrive by midnight to get the best table positions.',
     whyRanked: 'The Japanese underground concept is executed brilliantly and the hip-hop programming is some of the best in Mayfair. A genuine hidden gem.',
     mapUrl: 'https://maps.google.com/?q=TABU+London+Mayfair',
+    tonightSuitability: 'The best last-minute hip-hop night in Mayfair. Underground vibe, focused music, lively crowd.',
+    guestlistRealistic: true,
+    guestlistNote: 'Guestlist works well here. Mixed groups get priority but all groups are considered.',
+    bestForGroups: 'all',
+    lastMinuteTableFriendly: true,
+    lastMinuteNote: 'One of the more flexible Mayfair venues for same-day bookings. Message us and we will check availability.',
   },
   {
     slug: 'libertine',
@@ -187,6 +217,12 @@ Libertine works particularly well for groups who are tired of the same Mayfair f
     insiderTip: 'Thursday nights offer the most relaxed atmosphere and the best chance of walk-in entry. Friday and Saturday require advance booking for guaranteed entry.',
     whyRanked: 'The futuristic design and fashion-forward crowd give Libertine a distinct identity in Mayfair. It proves upscale clubbing doesn\'t have to feel old-fashioned.',
     mapUrl: 'https://maps.google.com/?q=Libertine+London+Mayfair',
+    tonightSuitability: 'Permanently closed.',
+    guestlistRealistic: false,
+    guestlistNote: 'Permanently closed.',
+    bestForGroups: 'all',
+    lastMinuteTableFriendly: false,
+    lastMinuteNote: 'Permanently closed.',
   },
   {
     slug: 'luxx-club',
@@ -217,6 +253,12 @@ Tables start from £1,000 and are well-positioned to enjoy both the light show a
     insiderTip: 'Request a table near the main LED wall for the most immersive visual experience. The light shows peak between 1am and 2:30am.',
     whyRanked: 'The LED light show concept is executed better here than anywhere else in London. It adds a genuinely unique dimension to the VIP club experience.',
     mapUrl: 'https://maps.google.com/?q=Luxx+Club+London+Mayfair',
+    tonightSuitability: 'Permanently closed.',
+    guestlistRealistic: false,
+    guestlistNote: 'Permanently closed.',
+    bestForGroups: 'all',
+    lastMinuteTableFriendly: false,
+    lastMinuteNote: 'Permanently closed.',
   },
   {
     slug: 'maddox',
@@ -247,6 +289,12 @@ Tables start from £1,000 for the club portion of the evening. Dinner reservatio
     insiderTip: 'Book dinner for 9pm — you\'ll have a relaxed meal and be perfectly positioned as the music transitions. The house music programming on Fridays is particularly strong.',
     whyRanked: 'The restaurant-to-club transition is the smoothest in London, and the house music policy gives Maddox a unique position in a hip-hop dominated market.',
     mapUrl: 'https://maps.google.com/?q=Maddox+Club+London+Mayfair',
+    tonightSuitability: 'Sophisticated dinner-to-club transition. House music, cocktails, and a grown-up crowd. Great for date nights.',
+    guestlistRealistic: true,
+    guestlistNote: 'Guestlist available and realistic for most groups. Couples especially welcome.',
+    bestForGroups: 'mixed',
+    lastMinuteTableFriendly: true,
+    lastMinuteNote: 'Dinner reservations and club tables often available same-day, especially midweek.',
   },
   {
     slug: 'scotch-of-st-james',
@@ -277,6 +325,12 @@ Tables start from £1,000 and the intimate scale means every table feels premium
     insiderTip: 'Ask about the venue\'s history when you visit — the staff know the stories and the Hendrix connection is genuine. Thursday nights tend to be more intimate and musically eclectic.',
     whyRanked: 'No other club in London has this combination of genuine history, intimate atmosphere, and musical credibility. It\'s a living piece of London\'s cultural heritage.',
     mapUrl: 'https://maps.google.com/?q=Scotch+of+St+James+London',
+    tonightSuitability: 'Historic Mayfair atmosphere with an eclectic crowd. More relaxed than the big-name venues — genuine character.',
+    guestlistRealistic: true,
+    guestlistNote: 'Guestlist works well. The door is welcoming to well-dressed groups of all compositions.',
+    bestForGroups: 'all',
+    lastMinuteTableFriendly: true,
+    lastMinuteNote: 'One of the easier Mayfair venues for same-day table bookings. Good availability most nights.',
   },
   {
     slug: 'cuckoo-club',
@@ -307,6 +361,12 @@ Tables start from £1,000 and are available on both floors. The guestlist is rel
     insiderTip: 'Wednesday and Thursday nights are the most relaxed and affordable entry points. The upstairs room on Saturdays often has the better atmosphere despite being quieter.',
     whyRanked: 'The two-floor format solves the "what music do we want" argument and the consistent quality across years of operation shows genuine professionalism.',
     mapUrl: 'https://maps.google.com/?q=Cuckoo+Club+London+Swallow+Street',
+    tonightSuitability: 'Two floors, two vibes — house upstairs, hip-hop downstairs. Reliable Mayfair night with guaranteed variety.',
+    guestlistRealistic: true,
+    guestlistNote: 'Guestlist works well for mixed groups. One of the more accessible Mayfair guestlists.',
+    bestForGroups: 'all',
+    lastMinuteTableFriendly: true,
+    lastMinuteNote: 'Good same-day availability. Tables are reasonably priced and the team is accommodating.',
   },
   {
     slug: 'dear-darling',
@@ -337,6 +397,12 @@ Tables start from £1,000 for the late-night experience. Earlier evening booking
     insiderTip: 'Arrive at 9pm for cocktails when the venue is at its most atmospheric. The transition to late-night happens gradually — enjoy the evolution rather than arriving at midnight.',
     whyRanked: 'The cocktail-to-club transition in these surroundings is unmatched. It\'s the most beautiful room in Mayfair\'s nightlife.',
     mapUrl: 'https://maps.google.com/?q=Dear+Darling+Mayfair+London',
+    tonightSuitability: 'Glamorous cocktail bar that becomes a late-night venue. Best for an elegant, low-key start to the evening.',
+    guestlistRealistic: true,
+    guestlistNote: 'Guestlist available. The cocktail bar format means entry is generally straightforward.',
+    bestForGroups: 'ladies',
+    lastMinuteTableFriendly: true,
+    lastMinuteNote: 'Very flexible for same-day bookings. The cocktail-focused format means less pressure on table minimums.',
   },
   {
     slug: 'beat-london',
@@ -367,6 +433,12 @@ Tables start from £1,000 and offer good views of the dancefloor and DJ booth. T
     insiderTip: 'Stand near the main speakers for the full audio experience — the system is calibrated so it sounds powerful without being painful. Saturday nights have the strongest DJ lineups.',
     whyRanked: 'The sound system alone justifies the inclusion. When the DJ is right and the room is full, BEAT delivers one of the best pure clubbing experiences in central London.',
     mapUrl: 'https://maps.google.com/?q=BEAT+London+Margaret+Street',
+    tonightSuitability: 'Music-first venue with one of London\'s best sound systems. High energy, less pretension than Mayfair.',
+    guestlistRealistic: true,
+    guestlistNote: 'Guestlist is straightforward here. Less strict than Mayfair venues on group composition.',
+    bestForGroups: 'all',
+    lastMinuteTableFriendly: true,
+    lastMinuteNote: 'Good same-day availability. More accessible than Mayfair for last-minute plans.',
   },
   {
     slug: 'ministry-of-sound',
@@ -397,6 +469,12 @@ Unlike the Mayfair clubs, Ministry operates on a larger scale. Capacity runs int
     insiderTip: 'Buy tickets in advance for headline events — they sell out. Arrive by midnight to avoid the longest queues. Spend time in the smaller rooms too — some of the best sets happen away from the main stage.',
     whyRanked: 'Ministry of Sound is a London institution and one of the most important nightclubs in the world. The sound system, the history, and the commitment to electronic music make it irreplaceable.',
     mapUrl: 'https://maps.google.com/?q=Ministry+of+Sound+London',
+    tonightSuitability: 'The legendary club with the best sound system in London. Ticket-based entry — no guestlist politics, just music.',
+    guestlistRealistic: false,
+    guestlistNote: 'Ministry is ticket-based. Buy tickets online in advance or on the door if not sold out.',
+    bestForGroups: 'all',
+    lastMinuteTableFriendly: true,
+    lastMinuteNote: 'Tables available but Ministry is primarily a ticket venue. Check the lineup and buy tickets online.',
   },
   {
     slug: 'lio-london',
@@ -427,6 +505,12 @@ Tables start from £1,000 for the club portion, with dinner packages offering th
     insiderTip: 'The dinner-and-show package is the way to experience Lio properly. Arriving just for the club portion means missing the best entertainment. Wednesday nights are more intimate and relaxed.',
     whyRanked: 'Lio brings genuine international glamour to London\'s club scene. The dinner-show-club format is polished, and the Mediterranean influence distinguishes it from everything else in Mayfair.',
     mapUrl: 'https://maps.google.com/?q=Lio+Club+London+Mayfair',
+    tonightSuitability: 'Permanently closed.',
+    guestlistRealistic: false,
+    guestlistNote: 'Permanently closed.',
+    bestForGroups: 'all',
+    lastMinuteTableFriendly: false,
+    lastMinuteNote: 'Permanently closed.',
   },
   {
     slug: 'funky-buddha',
@@ -457,6 +541,12 @@ Tables start from £1,000 and the table service experience benefits from years o
     insiderTip: 'Thursday nights have the most relaxed atmosphere and the best chance of walk-in entry. The regular DJs on Saturdays know the room inside out — the music is consistently excellent.',
     whyRanked: 'Longevity in London\'s nightlife is the ultimate quality signal. Funky Buddha has been delivering great nights for over 25 years — that track record is unmatched.',
     mapUrl: 'https://maps.google.com/?q=Funky+Buddha+London+Berkeley+Street',
+    tonightSuitability: 'Legendary Mayfair energy with accessible hip-hop and RnB. Fun crowd, celebration-friendly, always a party.',
+    guestlistRealistic: true,
+    guestlistNote: 'Guestlist works well for all group types. One of the friendliest doors in Mayfair.',
+    bestForGroups: 'all',
+    lastMinuteTableFriendly: true,
+    lastMinuteNote: 'Good same-day table availability. The team is flexible and accommodating for last-minute plans.',
   },
   {
     slug: 'the-box-london',
@@ -487,6 +577,12 @@ This is not a club for everyone, and it doesn't pretend to be. The content can b
     insiderTip: 'Book a table bordering the stage for the full experience — the proximity to the performances makes all the difference. Wednesday and Thursday nights are slightly easier to get into and often have the most experimental shows.',
     whyRanked: 'Nothing else in London comes close to this level of theatrical provocation combined with genuine nightclub energy. It\'s divisive by design, but those who love it are obsessed.',
     mapUrl: 'https://maps.google.com/?q=The+Box+Soho+London',
+    tonightSuitability: 'Provocative cabaret meets nightclub. Boundary-pushing performances in an exclusive Soho setting.',
+    guestlistRealistic: false,
+    guestlistNote: 'The Box is highly selective. A table booking is strongly recommended for tonight.',
+    bestForGroups: 'high-spenders',
+    lastMinuteTableFriendly: false,
+    lastMinuteNote: 'Same-day tables are rare. The Box requires advance planning for the best experience.',
   },
   {
     slug: 'luna-club-london',
@@ -517,6 +613,12 @@ Tables start from £1,000 and book up quickly, particularly on Saturdays. Guestl
     insiderTip: 'Saturday nights are the flagship — the DJ lineup is strongest and the atmosphere peaks between 1am and 3am. Book early in the week as tables sell out fast.',
     whyRanked: 'Luna has established itself quickly by getting the fundamentals right — great sound, smart design, and genuine energy. A strong addition to Mayfair\'s roster.',
     mapUrl: 'https://maps.google.com/?q=Luna+Club+London+Mayfair',
+    tonightSuitability: 'High-energy newcomer with spectacular production. Hip-hop, RnB, and Afrobeats in a striking Mayfair space.',
+    guestlistRealistic: true,
+    guestlistNote: 'Guestlist available and the door is fair. Mixed groups have the best experience.',
+    bestForGroups: 'mixed',
+    lastMinuteTableFriendly: true,
+    lastMinuteNote: 'As a newer venue, same-day tables are often available. Good option for spontaneous plans.',
   },
   {
     slug: 'selene-london',
@@ -547,6 +649,12 @@ Tables start from £1,000 and the service is polished. The crowd is well-dressed
     insiderTip: 'Arrive early enough to experience the cocktail bar phase — the drinks are excellent and the atmosphere during the transition to club mode is Selene at its best. Thursday is the most intimate night.',
     whyRanked: 'Selene fills a gap in Mayfair for people who want sophistication and quality across every element of their evening. The cocktail-to-club concept is executed with real finesse.',
     mapUrl: 'https://maps.google.com/?q=Selene+London+Mayfair',
+    tonightSuitability: 'Sophisticated cocktail lounge transitioning to late-night house music. The grown-up Mayfair option.',
+    guestlistRealistic: true,
+    guestlistNote: 'Guestlist available. The refined cocktail-bar format makes entry generally straightforward.',
+    bestForGroups: 'ladies',
+    lastMinuteTableFriendly: true,
+    lastMinuteNote: 'Flexible for same-day bookings. The cocktail focus means a more relaxed approach to table reservations.',
   },
 ];
 
@@ -568,4 +676,58 @@ export function getClubsByArea(area: string): Club[] {
 
 export function getClubsByGenre(genre: string): Club[] {
   return clubs.filter(c => c.status === 'open' && c.musicGenres.some(g => g.toLowerCase() === genre.toLowerCase()));
+}
+
+export function getClubsByDay(day: string): Club[] {
+  return clubs.filter(c =>
+    c.status === 'open' &&
+    c.openingNights.toLowerCase().includes(day.toLowerCase())
+  );
+}
+
+export function getCurrentDayName(): string {
+  return new Date().toLocaleDateString('en-GB', {
+    weekday: 'long',
+    timeZone: 'Europe/London',
+  });
+}
+
+export function getClubsOpenTonight(): Club[] {
+  return getClubsByDay(getCurrentDayName());
+}
+
+export function getFridayClubs(): Club[] {
+  return getClubsByDay('Friday');
+}
+
+export function getSaturdayClubs(): Club[] {
+  return getClubsByDay('Saturday');
+}
+
+export function getSundayClubs(): Club[] {
+  return getClubsByDay('Sunday');
+}
+
+export function getGuestlistFriendlyClubs(): Club[] {
+  return getOpenClubs().filter(c => c.guestlistRealistic);
+}
+
+export function getLastMinuteTableClubs(): Club[] {
+  return getOpenClubs().filter(c => c.lastMinuteTableFriendly);
+}
+
+export function getWhatsAppTonightUrl(clubName?: string): string {
+  const club = clubName ? clubName : '(open to suggestions)';
+  const message = encodeURIComponent(
+    `Hi, I need a table TONIGHT. Found you on londonclubstonight.com.\n\nClub: ${club}\nGroup size:\nArrival time:`
+  );
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+}
+
+export function getWhatsAppGuestlistTonightUrl(clubName?: string): string {
+  const club = clubName ? clubName : '(open to suggestions)';
+  const message = encodeURIComponent(
+    `Hi, can I get on a guestlist TONIGHT? Found you on londonclubstonight.com.\n\nClub: ${club}\nNumber of girls:\nNumber of guys:\nArrival time:`
+  );
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
 }
