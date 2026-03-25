@@ -952,6 +952,691 @@ function getPostContent(slug: string): React.ReactNode {
         </>
       );
 
+    // ─────────────────────────────────────────────
+    // POST: Girls Night Out London Clubs
+    // ─────────────────────────────────────────────
+    case 'girls-night-out-london-clubs':
+      return (
+        <>
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Why All-Female Groups Have an Advantage at London Clubs</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Here is something the door teams will never say publicly but everyone in nightlife knows: all-female groups are the most welcome demographic at every club in London. Venues want women inside because a balanced room creates the right atmosphere, and groups of girls who are well-dressed and in good spirits get waved through doors that make other groups wait.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            This is not about anything cynical. It is simple club economics. A room with a good gender balance creates a better experience for everyone, and all-female groups almost always bring energy, spend well at the bar, and create the kind of atmosphere that makes a night memorable. Knowing this gives you leverage. Use it.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Getting on the <Link href="/guestlist-tonight-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">guestlist</Link> as an all-female group is straightforward &mdash; most clubs offer free entry for women before midnight, and some will extend that throughout the night for larger groups. If you are planning ahead, getting on the guestlist takes thirty seconds via WhatsApp and saves you money and time at the door.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Best Clubs for a Girls Night: The Shortlist</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white"><Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link> &mdash; The Show-Stopper:</strong> If your girls night needs to be an event rather than just a night out, Cirque is the one. The circus-themed performances, fire-breathers, and acrobats create a spectacle that gives your group something to react to together. The hip-hop soundtrack keeps the dancefloor packed, and the venue photographs beautifully for anyone who cares about the Instagram factor. Tables start from around &pound;1,000, which split between eight makes it very reasonable per head.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white"><Link href="/clubs/dear-darling" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Dear Darling</Link> &mdash; Cocktails First, Dancing Later:</strong> Dear Darling is ideal for the group that wants to start with proper cocktails before the night evolves into something louder. The venue transitions from a sophisticated bar to a full club environment as the evening progresses. It is particularly good for groups where not everyone wants to go straight to a dancefloor &mdash; the cocktail-led first half of the evening eases everyone in.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white"><Link href="/clubs/selene-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Selene</Link> &mdash; New and Sophisticated:</strong> Selene is one of London&apos;s newest arrivals and has quickly become a favourite for girls nights. The aesthetic is sleek, the cocktail menu is genuinely excellent, and the crowd tends towards late twenties and thirties. If your group leans more towards sophistication than chaos, Selene delivers. The lounge-to-club format means you can arrive early, settle in, and let the night build.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white"><Link href="/clubs/cuckoo-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Cuckoo Club</Link> &mdash; Intimate Soho Vibes:</strong> Tucked away in <Link href="/areas/soho" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Soho</Link>, The Cuckoo Club is small enough that your group feels like they own the room. The atmosphere is members-club-meets-nightclub, the cocktails are strong, and the music spans commercial dance, RnB, and hip-hop. Ideal for groups of four to eight who want a night that feels exclusive without a massive bill.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white"><Link href="/clubs/the-london-reign" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The London Reign</Link> &mdash; The Full Experience:</strong> If your group wants dinner, entertainment, and clubbing in one venue, Reign is the play. The cabaret and burlesque show is genuinely impressive, and when the show ends, the room becomes a full nightclub. For birthday girls nights or special occasions, this format is hard to beat.
+          </p>
+
+          <div className="my-8">
+            <WhatsAppCTA variant="inline" />
+          </div>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">What to Wear on a Girls Night Out</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Women have more flexibility than men at London clubs, but the expectation at the venues listed above is firmly &quot;dressed up&quot;. A dress or jumpsuit with heels is the most reliable combination across every club. Smart separates &mdash; a going-out top with tailored trousers &mdash; also work well.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            At <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link>, bold and theatrical outfits are actually rewarded. Their brand is all about spectacle, so a standout look can work in your favour with the door team. At <Link href="/clubs/selene-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Selene</Link> and <Link href="/clubs/dear-darling" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Dear Darling</Link>, think elegant rather than outrageous &mdash; these are sophisticated venues.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            For the full breakdown, read our <Link href="/blog/what-to-wear-to-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">complete dress code guide</Link>.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Safety and Looking After Each Other</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            London&apos;s established clubs take safety seriously. Door security at venues like <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque</Link>, <Link href="/clubs/cuckoo-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cuckoo</Link>, and <Link href="/clubs/the-london-reign" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Reign</Link> are trained to spot problems and will intervene if anyone in the venue is making guests uncomfortable. Staff are briefed on the &quot;Ask for Angela&quot; initiative, and you can approach any member of bar or security staff if you feel unsafe.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Practical tips: designate one person to have the venue address and a backup plan. Pre-book an Uber or know the nearest night bus route. Keep your phone charged. Watch each other&apos;s drinks. And stick to venues with reputations &mdash; the clubs listed in this guide all have professional security teams and track records of looking after their guests.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Guestlist and Booking for Girls Groups</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Getting on the guestlist as an all-female group is the easiest booking in nightlife. Most clubs actively want you on their list. <Link href="/guestlist-tonight-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Guestlist registration</Link> typically means free entry before midnight and priority queuing after. For groups of six or more, some clubs will offer extras &mdash; complimentary drinks on arrival, a reserved area, or extended free entry.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            If you want a table, check <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London Bottle Service</a> for pricing. A table gives you your own space, bottle service, and guaranteed entry with no queue. For birthday celebrations, <a href="https://londonbirthdayclub.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London Birthday Club</a> specialises in girls birthday nights and can handle everything from venue booking to cake and decorations.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            For more on what to expect from club promoters and why their service is free, read our <Link href="/guides/how-to-get-into-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">guide to getting into London clubs</Link>. And for couples in the group or date night ideas, check out <Link href="/blog/london-clubs-for-couples" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">our couples guide</Link>.
+          </p>
+        </>
+      );
+
+    // ─────────────────────────────────────────────
+    // POST: Afrobeats Clubs London
+    // ─────────────────────────────────────────────
+    case 'afrobeats-clubs-london':
+      return (
+        <>
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Afrobeats Has Taken Over London Nightlife</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Five years ago, finding a dedicated Afrobeats night in London meant knowing the right people and checking obscure flyers. That has completely changed. Afrobeats is now a staple of London&apos;s club scene &mdash; played at mainstream venues, headlining major nights, and influencing every DJ set that touches hip-hop or RnB. Wizkid, Burna Boy, and Rema are not niche names any more. They are the soundtrack to London&apos;s biggest club nights.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The crossover with amapiano has accelerated this further. London DJs now seamlessly blend Afrobeats, amapiano, hip-hop, and RnB into sets that reflect how people actually listen to music &mdash; without genre boundaries. If you are looking for clubs that play Afrobeats regularly, you have more options than ever. The question is no longer &quot;where can I find Afrobeats?&quot; but &quot;which venue plays it the way I want to hear it?&quot;
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The Best Clubs for Afrobeats in London</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white"><Link href="/clubs/luna-club-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Luna Club</Link> &mdash; The Afrobeats Epicentre:</strong> If Afrobeats is the primary reason you are going out, Luna Club is the answer. The venue consistently books DJs who understand the genre deeply &mdash; not just the commercial hits, but the deeper cuts that separate a good night from an exceptional one. The crowd is young, energetic, and there for the music. Fridays and Saturdays both deliver, with Afrobeats forming the backbone of every set alongside hip-hop and amapiano.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white"><Link href="/clubs/tabu-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">TABU</Link> &mdash; Afrobeats Meets Energy:</strong> TABU plays Afrobeats heavily across its weekend nights. The venue&apos;s hip-hop and RnB foundation means Afrobeats is woven into the DNA of every set rather than being a separate segment. The crowd is receptive and the energy on the dancefloor when a Wizkid or Burna Boy track drops is unmatched. The atmosphere is lively without being aggressive &mdash; it is a room full of people who genuinely love this music.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white"><Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link> &mdash; Afrobeats With Spectacle:</strong> Cirque Le Soir&apos;s hip-hop-heavy music policy regularly incorporates Afrobeats, particularly on Saturdays. The difference here is the setting &mdash; hearing Afrobeats while circus performers move through the room creates a uniquely London experience. The crowd is international, the energy is celebratory, and the DJs know exactly when to drop an Afrobeats banger for maximum impact.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white"><Link href="/clubs/beat-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">BEAT London</Link> &mdash; Underground and Authentic:</strong> BEAT keeps things raw. The focus is on the music, the sound system is excellent, and the DJs are given freedom to go deeper into Afrobeats and amapiano than more commercial venues allow. If you want to hear tracks before they blow up on TikTok, BEAT is where to find them. The crowd skews younger and more musically knowledgeable.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white"><Link href="/clubs/funky-buddha" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Funky Buddha</Link> &mdash; Afrobeats in Mayfair:</strong> Funky Buddha integrates Afrobeats into its broader music policy alongside RnB and hip-hop. The <Link href="/areas/mayfair" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair</Link> setting means the crowd is well-dressed and the atmosphere is premium, but the dancefloor reacts to Afrobeats tracks with genuine enthusiasm. It is a good option for groups who want Afrobeats within a more upscale setting.
+          </p>
+
+          <div className="my-8">
+            <WhatsAppCTA variant="inline" />
+          </div>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Amapiano in London: Where to Find It</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Amapiano has moved from South African house parties to London dancefloors with remarkable speed. The genre&apos;s log-drum rhythms and infectious basslines have found a natural home in London&apos;s clubs, particularly at venues that already lean into Afrobeats. <Link href="/clubs/luna-club-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Luna Club</Link> and <Link href="/clubs/tabu-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">TABU</Link> are the most reliable for amapiano in their regular sets, while <Link href="/clubs/beat-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">BEAT</Link> occasionally hosts dedicated amapiano events.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The beauty of amapiano in London is how naturally it blends with Afrobeats and hip-hop. DJs rarely play an entire amapiano set at mainstream clubs &mdash; instead, they weave tracks in and out, creating a flow that moves between genres without ever losing the dancefloor. This crossover approach works because London&apos;s crowds are musically fluent across all three genres.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Dedicated Nights vs Mixed-Genre Clubs</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            There is a difference between a club that plays Afrobeats as part of a broader set and a dedicated Afrobeats night. Both have their place. Mixed-genre clubs like <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link> and <Link href="/clubs/funky-buddha" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Funky Buddha</Link> give you Afrobeats within a varied soundtrack &mdash; perfect if your group has mixed music tastes. Dedicated nights at <Link href="/clubs/luna-club-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Luna Club</Link> and events that rotate across London venues go deeper into the catalogue and attract crowds who are specifically there for the music.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            For a broader view of which clubs play which genres, check our <Link href="/guides/london-clubs-by-music-genre" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">clubs by music genre guide</Link>. For tonight&apos;s listings, see <Link href="/clubs-tonight-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">clubs open tonight</Link>. And for the overall best venues in the city, our <Link href="/best-clubs-in-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">best clubs in London</Link> ranking covers every major venue.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Getting In: Dress Code and Guestlist</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The dress code at Afrobeats-heavy clubs follows the same rules as the wider London scene. <Link href="/areas/mayfair" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair</Link> venues like <Link href="/clubs/funky-buddha" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Funky Buddha</Link> expect smart shoes, fitted clothing, and genuine effort. <Link href="/clubs/luna-club-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Luna Club</Link> and <Link href="/clubs/tabu-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">TABU</Link> are slightly more relaxed &mdash; clean designer trainers can work &mdash; but smart is still the default.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Guestlist is essential. Walk-ups face longer queues, higher prices, and a real chance of being turned away on busy nights. Getting on the list is free and takes thirty seconds &mdash; message us on WhatsApp with your group details and the night you want, and we will sort it.
+          </p>
+        </>
+      );
+
+    // ─────────────────────────────────────────────
+    // POST: What to Expect at a London Nightclub
+    // ─────────────────────────────────────────────
+    case 'what-to-expect-at-a-london-nightclub':
+      return (
+        <>
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Before You Leave the House</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            A London club night starts before you get anywhere near the venue. You need three things sorted before you leave: you should be on the <Link href="/guestlist-tonight-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">guestlist</Link>, you should know the dress code, and you should have valid photo ID. Skip any one of these and you are risking your entire night.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Guestlist is free and takes seconds to arrange &mdash; message us on WhatsApp with your names, group size, and the night you are going. Without guestlist, you are in the general queue, paying full price, and subject to the door team&apos;s discretion. With guestlist, you have a name on a list, priority entry, and usually free or reduced admission.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Dress code varies by venue. <Link href="/areas/mayfair" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair</Link> clubs like <Link href="/clubs/maddox" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Maddox</Link> and <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link> require smart dress &mdash; no trainers, no sportswear. <Link href="/clubs/ministry-of-sound" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Ministry of Sound</Link> is far more relaxed. Read our <Link href="/blog/what-to-wear-to-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">complete dress code guide</Link> for specifics.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Arriving at the Club: The Door Experience</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            This is the part that makes first-timers nervous, and honestly, it is the most variable part of the night. Every club has a door team &mdash; security and sometimes a host &mdash; who decide who gets in. You will queue (unless you have a table booking), reach the front, give your name if you are on the guestlist, show your ID, and the door team will make a decision.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            At most clubs, this process is smooth and quick. You give your name, they find it on the list, you show ID, you go in. At the most exclusive venues like <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link>, the door team may also assess your group&apos;s size, gender balance, and overall presentation. This is not personal &mdash; it is how London&apos;s top clubs curate their rooms.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Be confident, be polite, and do not argue with the door team. If they say no, arguing will never change that decision. For everything you need to know about navigating the door, read our <Link href="/guides/how-to-get-into-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">guide to getting into London clubs</Link>.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Inside the Club: Layout and Atmosphere</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Once you are inside, the layout depends on the venue. Most London clubs have a bar area, a dancefloor, and VIP or table-service sections. Smaller clubs like <Link href="/clubs/cuckoo-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Cuckoo Club</Link> feel intimate &mdash; one main room where everything happens. Larger venues like <Link href="/clubs/ministry-of-sound" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Ministry of Sound</Link> have multiple rooms, each with different DJs and genres.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Table-service areas are roped off or elevated sections where guests with bottle-service bookings sit. If you do not have a table, you are on the general dancefloor and at the bar. This is where most people are, and where the energy is highest. Tables give you a base, somewhere to leave your jacket, and bottle service brought to you. For pricing and details on table service, see <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London Bottle Service</a>.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The music will be loud. Conversation happens between songs, near the bar, or in the smoking area (which doubles as the social hub at most clubs). Do not fight the volume &mdash; if you want to chat, move to a quieter spot rather than shouting over the DJ.
+          </p>
+
+          <div className="my-8">
+            <WhatsAppCTA variant="inline" />
+          </div>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Drinks: What to Order and What It Costs</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Drinks at London clubs are not cheap. Expect &pound;14&ndash;20 for cocktails at Mayfair venues, &pound;8&ndash;14 elsewhere. Beers and basic spirits with mixers run &pound;8&ndash;12. Most clubs are card-only or strongly prefer contactless payment &mdash; carrying cash is no longer essential but can speed things up at busy bars.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Bar queues at peak time (midnight to 1:30am) can be long. If you want to avoid them, arrive earlier when the bar is quieter, or consider a table booking where drinks come to you. Tipping bar staff is not mandatory in London but leaving a pound or two will get you remembered and served faster next time. For a full cost breakdown, read our <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">guide to night out costs</Link>.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The Dancefloor: Etiquette and Energy</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            London dancefloors have unwritten rules. Give people space. Do not push to the front of a packed floor. Read the room &mdash; if everyone is dancing to hip-hop, this is not the moment for your interpretive dance routine. At venues like <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link>, performers move through the crowd and interact with guests &mdash; engage with it. That is the experience.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            At <Link href="/clubs/ministry-of-sound" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Ministry of Sound</Link>, the dancefloor is sacred. People are there for the music. The energy builds over hours, and the crowd moves as one. It is a different experience to a Mayfair club dancefloor where people come and go from their tables. Both are great &mdash; just different.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Leaving and Getting Home</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Most London clubs close between 2am and 3am, with some running until 5am or later (particularly <Link href="/clubs/ministry-of-sound" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Ministry of Sound</Link>). When you are ready to leave, collect your jacket from the cloakroom (tip a pound or two), and head outside.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Transport home: Uber and Bolt are the most common options. Surge pricing is real &mdash; at 3am on a Saturday, expect to pay two to three times the normal fare from <Link href="/areas/mayfair" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair</Link> or <Link href="/areas/central-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Central London</Link>. Night buses run across London all night &mdash; the N routes cover most of Zone 1 and 2. The Night Tube runs on Fridays and Saturdays on select lines. Pre-plan your route home so you are not figuring it out at 3am in the cold.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            For visitors to London, our <Link href="/blog/london-nightlife-guide-for-tourists" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">tourist nightlife guide</Link> covers everything else you need to know, including areas, transport, and cultural differences.
+          </p>
+        </>
+      );
+
+    // ─────────────────────────────────────────────
+    // POST: How to Skip the Queue at London Clubs
+    // ─────────────────────────────────────────────
+    case 'how-to-skip-the-queue-at-london-clubs':
+      return (
+        <>
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The Truth About London Club Queues</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Standing in a queue outside a London nightclub at midnight is one of the worst experiences the city has to offer. It is cold, it is boring, and there is always the nagging possibility that after all that waiting, the door team will turn you away anyway. The good news is that almost nobody who knows what they are doing actually queues. There are several legitimate ways to bypass the line entirely, and none of them require knowing a celebrity or spending a fortune.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Method 1: Book a Table &mdash; The Guaranteed Skip</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            A table booking is the only way to genuinely skip the queue at every London club, every time, no exceptions. When you arrive with a table reservation, you go to a separate entrance or a dedicated host, give your name, and you are walked straight in. No queue, no assessment, no waiting. You are a paying customer and you are treated accordingly.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            At <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link>, where the general queue on a Saturday can stretch well past midnight, table guests walk past the entire line. At <Link href="/clubs/funky-buddha" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Funky Buddha</Link>, the door team separates table bookings from general entry immediately. At <Link href="/clubs/maddox" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Maddox</Link>, the transition from pavement to table is seamless.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Tables start from around &pound;1,000 at most Mayfair clubs, which split between a group of eight to ten becomes &pound;100&ndash;125 per person &mdash; and that includes your drinks for the night. Check <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London Bottle Service</a> for exact pricing at every venue, or see our <Link href="/last-minute-table-booking-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">last-minute table booking</Link> page for same-night availability.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Method 2: Get on the Guestlist &mdash; The Priority Lane</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <Link href="/guestlist-tonight-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Guestlist</Link> does not mean you skip the queue entirely, but it puts you in a significantly faster one. Most clubs operate two lines: the general admission queue and the guestlist queue. The guestlist queue moves faster, the entry is usually free or reduced, and you are treated as an expected guest rather than a walk-up.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            At clubs like <Link href="/clubs/cuckoo-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Cuckoo Club</Link> and <Link href="/clubs/tabu-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">TABU</Link>, the guestlist queue is often a formality &mdash; you give your name and walk straight in, particularly if you arrive before midnight. At busier venues on peak nights, even the guestlist queue can build, but it is always a fraction of the general wait.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Guestlist is free. There is genuinely no reason not to use it. Message us on WhatsApp with your names, group size, and night, and we will add you to the list at any venue in London. That is it. No catch, no fee.
+          </p>
+
+          <div className="my-8">
+            <WhatsAppCTA variant="inline" />
+          </div>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Method 3: Arrive Early &mdash; The Timing Strategy</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The simplest queue-avoidance strategy is arriving early. Most London clubs open between 10pm and 11pm, and for the first hour or so, there is almost no queue at all. If you arrive at 10:30pm or 11pm, you walk straight in at almost every venue. The queues build from midnight onwards, peak between 12:30am and 1:30am, and then gradually reduce.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The downside is that the atmosphere at 10:30pm is not the same as at midnight. The room is quieter, the dancefloor is emptier, and the energy has not built yet. But you are inside, you are settled, and by the time the room fills up, you are already part of it rather than stuck outside watching it happen.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The sweet spot: arrive between 11pm and 11:30pm. Early enough to avoid the worst queues, late enough that the venue has some atmosphere. Combine this with guestlist and your wait will be minimal.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Which Clubs Have the Longest Queues?</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link> has the most notoriously long queues in the city. On a Saturday, the general admission queue can run for an hour or more, and even with guestlist, you might wait 15&ndash;20 minutes at peak time. A table is the only reliable way to skip it completely.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link> builds long queues on Fridays and Saturdays. <Link href="/clubs/funky-buddha" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Funky Buddha</Link> attracts substantial queues due to its reputation and Mayfair location. <Link href="/clubs/ministry-of-sound" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Ministry of Sound</Link> can have long queues for headline DJ events.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            On the other end, <Link href="/clubs/maddox" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Maddox</Link>, <Link href="/clubs/scotch-of-st-james" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Scotch of St James</Link>, and <Link href="/clubs/dear-darling" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Dear Darling</Link> tend to have shorter, more manageable queues. These venues rely more on reservations and guestlist than walk-up traffic, so the queue situation is generally smoother.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The Promoter Advantage</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Working with a promoter &mdash; like us &mdash; gives you an advantage at the door that goes beyond just having a name on a list. A promoter has a direct relationship with the door team. When your name comes up, the door staff know exactly who put you on the list and what to expect. This makes the whole interaction smoother and faster.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Read our full <Link href="/blog/london-club-promoter-guide" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London club promoter guide</Link> to understand how promoters work and why the service is free. The short version: we get paid by the clubs, not by you. You get faster entry, free guestlist, and someone who can actually help if anything goes wrong at the door.
+          </p>
+        </>
+      );
+
+    // ─────────────────────────────────────────────
+    // POST: Best After-Work Clubs in London
+    // ─────────────────────────────────────────────
+    case 'best-after-work-clubs-london':
+      return (
+        <>
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The After-Work-to-Club Pipeline</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The best nights out in London are rarely planned. They start with a few colleagues at a bar near the office, someone suggests &quot;one more drink,&quot; and by 11pm you are on a dancefloor wondering how this happened on a Thursday. London is uniquely good at this particular transition because the city has venues designed for exactly this journey &mdash; places that operate as sophisticated bars early in the evening and transform into proper clubs later.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The key to a successful after-work club night is choosing a venue that handles both phases well. You need somewhere that feels right at 7pm with a glass of wine and equally right at midnight with a vodka on the dancefloor. Not every club pulls this off. Here are the ones that do.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The Best After-Work Club Venues</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white"><Link href="/clubs/maddox" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Maddox</Link> &mdash; The Original Transition Venue:</strong> Maddox in <Link href="/areas/mayfair" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair</Link> was practically built for the after-work crowd. The cocktail lounge operates from early evening with a grown-up atmosphere, excellent drinks, and the kind of setting where you can have a proper conversation. As the night progresses, the music builds, the lights dim, and by 11pm it is a full nightclub. The crowd on Thursdays is predominantly professionals in their late twenties and thirties, most of whom started the evening in an office.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white"><Link href="/clubs/dear-darling" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Dear Darling</Link> &mdash; Cocktail Bar Meets Club:</strong> Dear Darling excels at the cocktail-to-club transition. The cocktail menu is genuinely impressive &mdash; these are not afterthought drinks served in a waiting room before the club opens. The bar operates as a destination in its own right, and if your group decides to leave before it becomes a club, you have still had a great evening. But if you stay, the energy shifts and the venue delivers a proper late-night experience.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white"><Link href="/clubs/selene-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Selene</Link> &mdash; The New Contender:</strong> Selene is one of London&apos;s newest openings and fits the after-work brief perfectly. The lounge atmosphere is sleek and sophisticated in the early hours, the drinks are exceptional, and the crowd skews towards late twenties and thirties professionals. As the evening develops, Selene transitions into a clubbier atmosphere without losing its grown-up edge. It is quickly becoming a Thursday favourite for the Mayfair after-work set.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white"><Link href="/clubs/cuckoo-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Cuckoo Club</Link> &mdash; Soho&apos;s After-Work Secret:</strong> Tucked into <Link href="/areas/soho" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Soho</Link>, The Cuckoo Club draws a strong after-work crowd, particularly on Thursdays and Fridays. The compact venue means even a modest crowd creates atmosphere, and the members-club feel makes it an easy sell to colleagues who would not normally consider clubbing on a work night. The cocktail game is strong, and the transition from bar to club happens organically around 10pm.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white"><Link href="/clubs/scotch-of-st-james" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Scotch of St James</Link> &mdash; For the Slightly Older Crowd:</strong> If your after-work group is in their thirties and forties, Scotch is the natural choice. The venue has a lived-in sophistication that attracts an older, well-established crowd. The music ranges from funk to hip-hop to soul, the atmosphere is warm rather than frantic, and you will never feel out of place arriving in a suit. It is the kind of place where the evening extends naturally without any pressure to rage.
+          </p>
+
+          <div className="my-8">
+            <WhatsAppCTA variant="inline" />
+          </div>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Thursday Is the New Friday</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Ask anyone who works in London nightlife and they will tell you: Thursday has quietly become the best night of the week. The atmosphere on a Thursday is different from the weekend. The crowd is slightly older, slightly more professional, and noticeably more relaxed. People are out because they want to be, not because it is Saturday and they feel obligated.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Queues are shorter on Thursdays. Tables are easier to book. Entry is more straightforward. And the clubs, knowing they are competing with the sofa and Netflix, bring their best programming. <Link href="/clubs/maddox" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Maddox</Link>, <Link href="/clubs/cuckoo-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cuckoo</Link>, <Link href="/clubs/dear-darling" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Dear Darling</Link>, and <Link href="/clubs/selene-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Selene</Link> all deliver strong Thursday nights that rival their Saturday offerings.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Dress Code: From Office to Club</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Here is the good news: office clothes are often the perfect club outfit. A well-cut suit or smart office separates meet the dress code at every Mayfair and Soho venue without any adjustment. Men in a shirt, trousers, and smart shoes are exactly what the door team wants to see. Women in office-appropriate dresses, skirts, or tailored trousers with heels are similarly well-positioned.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The only adjustment you might consider: lose the lanyard and work badge before you reach the door. Beyond that, going straight from the office to the club is one of the few advantages of London&apos;s obsession with smart dress codes. For venue-specific dress code details, check our <Link href="/blog/what-to-wear-to-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">full dress code guide</Link>.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Making It Happen Tonight</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The beauty of the after-work night out is its spontaneity. But a little planning goes a long way. Get on the <Link href="/guestlist-tonight-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">guestlist</Link> during your lunch break &mdash; it takes one WhatsApp message. Suggest pre-drinks at a bar near the office in the late afternoon. Let the evening build naturally. The best after-work nights do not feel forced &mdash; they feel inevitable.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            For tonight&apos;s specific options, check <Link href="/clubs-tonight-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">clubs open tonight</Link>. For Mayfair venues specifically, <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair Tonight</a> has the latest events. And for pre-club bars to start the evening, read our <Link href="/blog/pre-drinks-bars-near-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">pre-drinks bars guide</Link>.
+          </p>
+        </>
+      );
+
+    // ─────────────────────────────────────────────
+    // POST 16: Are London Clubs Worth the Money
+    // ─────────────────────────────────────────────
+    case 'are-london-clubs-worth-the-money':
+      return (
+        <>
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The Honest Answer: It Depends on How You Do It</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            London clubs are expensive. That is not a secret and pretending otherwise would be dishonest. But the question is not really whether clubs cost a lot &mdash; they do &mdash; it is whether the experience justifies the spend. And the answer changes dramatically depending on which club you choose, what night you go, and how you structure the evening.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            A night at <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link> with a table and bottles for a group of eight is a completely different value proposition to standing at the bar buying &pound;18 cocktails one at a time. Both happen at the same venue, but one person walks away feeling like they had a bargain and the other feels robbed. The difference is planning.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            For the full cost breakdown of drinks, entry, and transport, read our <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">night out cost guide</Link>.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">When Table Service Is Genuinely Worth It</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Table service gets a bad reputation as something only flashy people do, but the maths often tells a different story. A table at <Link href="/clubs/cuckoo-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Cuckoo Club</Link> or <Link href="/clubs/beat-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Beat London</Link> with a minimum spend of &pound;1,000 split between eight people is &pound;125 per head. That covers entry, a reserved space, and enough drinks for the whole night. Compare that to buying rounds at the bar: four or five drinks each at &pound;16 a pop plus &pound;20 entry is already &pound;100 &mdash; and you have spent the entire night queueing.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">Tables make financial sense when:</strong> You have a group of six or more, you are celebrating something, you want guaranteed entry without the queue, or you simply prefer having a base for the night. The per-head cost drops as the group grows, and you avoid the expensive trap of bar-bought rounds.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">Tables are not worth it when:</strong> You are a couple or a group of three, you are on a tight budget, or you are the type who wants to roam the dancefloor all night and will barely sit down. In those cases, you are paying for a piece of furniture you will not use.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            For table pricing and packages, check <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London Bottle Service</a> or message us to get current rates at any venue.
+          </p>
+
+          <div className="my-8">
+            <WhatsAppCTA variant="inline" />
+          </div>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The Guestlist: London&apos;s Best Free Option</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            If you want value for money at London clubs, the guestlist is where it starts. Getting on a <Link href="/guestlist-tonight-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">guestlist</Link> is free, takes about two minutes, and gives you free or heavily reduced entry at most clubs. Women on guestlist typically get free entry before midnight. Mixed groups get free or reduced entry. Even all-male groups can get reduced rates through a good promoter.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Think about what that means in practice: you can walk into a venue like <Link href="/clubs/funky-buddha" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Funky Buddha</Link> for free, buy two drinks at the bar, and have a complete night out for under &pound;40. That is less than most restaurant dinners. The catch is that guestlist does not guarantee entry &mdash; you still need to meet the dress code and group ratio expectations &mdash; but for the price of zero pounds, it is an exceptional deal.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Which Clubs Deliver the Best Value</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white"><Link href="/clubs/ministry-of-sound" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Ministry of Sound</Link>:</strong> The best value major club in London by some distance. Entry is typically &pound;15&ndash;25, drinks are &pound;8&ndash;12, and you get a world-class sound system with internationally renowned DJs. The experience rivals clubs that charge three times as much. If value is your priority and you love electronic music, Ministry is unbeatable.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white"><Link href="/clubs/beat-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Beat London</Link> and <Link href="/clubs/cuckoo-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Cuckoo Club</Link>:</strong> Both offer lower minimum spends than the top-tier Mayfair venues, making them excellent entry points to table service without the eye-watering bills. You still get the Mayfair-Soho experience, good music, and a strong crowd &mdash; just at a more accessible price point.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white"><Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link>:</strong> The most expensive option on this list, but also the most prestigious. If you are booking Tape, you are paying for the exclusivity, the crowd, and the bragging rights. It is worth it for special occasions or when you want the best of the best &mdash; but for a casual Tuesday, it is not where you should be spending your money.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Club Night vs Restaurant Night: The Real Comparison</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            People rarely question spending &pound;150 per head at a nice restaurant in Mayfair. Starter, main, dessert, a bottle of wine, maybe a cocktail &mdash; you are at &pound;150 before you have thought about it. A night at a club on guestlist with a few drinks can cost half that. Even a table split between eight costs roughly the same as that restaurant meal, except the club night lasts until 3am and involves entertainment, music, and an experience you will actually remember.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The clubs that feel overpriced are the ones where you did not plan ahead: you paid full walk-in entry, bought drinks one by one at inflated bar prices, and left at 1am because you could not find anywhere to sit. The clubs that feel worth every penny are the ones where you used a guestlist, chose the right night, or split a table with enough friends to make the per-head cost reasonable.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The Bottom Line</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            London clubs are worth the money when you approach them intelligently. Use the guestlist system, go on the right nights, choose the right venues for your budget, and book a table when the group is big enough to make it economical. They are not worth the money when you walk in blind, pay full price for everything, and end up in a venue that does not match your expectations.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            For a deeper look at the VIP experience and whether it justifies the premium, read our <Link href="/blog/vip-nightlife-london-guide" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">VIP nightlife guide</Link>. And if you want to book a table at the right price, <Link href="/last-minute-table-booking-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">last-minute table bookings</Link> are available through us with no markup.
+          </p>
+        </>
+      );
+
+    // ─────────────────────────────────────────────
+    // POST 17: Mayfair vs Soho Nightlife
+    // ─────────────────────────────────────────────
+    case 'mayfair-vs-soho-nightlife':
+      return (
+        <>
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Two Neighbourhoods, Two Completely Different Nights</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <Link href="/areas/mayfair" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair</Link> and <Link href="/areas/soho" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Soho</Link> sit either side of Regent Street, separated by a five-minute walk and an entirely different attitude. Both are home to some of London&apos;s best clubs, but the experience they deliver could not be more different. Choosing the wrong one for your mood is the fastest way to ruin an otherwise promising night.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            This is not a matter of one being better than the other. It is about knowing what each area offers and matching it to what you actually want from your evening. A birthday celebration has different requirements to a spontaneous Tuesday out with a mate, and the area you choose should reflect that.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The Mayfair Experience</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Mayfair is London&apos;s premium nightlife district. The clubs here &mdash; <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link>, <Link href="/clubs/maddox" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Maddox</Link>, <Link href="/clubs/tabu-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">TABU</Link> &mdash; trade on exclusivity, polish, and a certain kind of glamour. The dress code is strictly enforced, the door policy is selective, and the crowd tends towards well-dressed professionals and international visitors who have come to spend money.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">The vibe:</strong> Aspirational, sleek, and unapologetically expensive. Tables with bottle service dominate the floor. The music leans towards commercial hip-hop, RnB, and crowd-pleasers. The energy peaks around 1am when the tables are full and the room is properly buzzing.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">The crowd:</strong> Late twenties to early forties. Groups celebrating something, international visitors, City workers on a big night, and regulars who know the hosts by name. Mayfair is not the place for a low-key evening &mdash; people come here to be seen and to make a statement.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">The cost:</strong> Expect to spend more. Table minimums start from &pound;1,000 and climb quickly at top-tier venues. Walk-in entry is &pound;20&ndash;30 when available, and drinks at the bar are &pound;15&ndash;20 for cocktails. This is the trade-off for the exclusivity and the environment.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The Soho Experience</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Soho is London&apos;s original entertainment district and it retains a creative, slightly chaotic energy that Mayfair deliberately avoids. Clubs here &mdash; <Link href="/clubs/the-box-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Box</Link>, <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link>, <Link href="/clubs/cuckoo-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Cuckoo Club</Link> &mdash; tend to value personality over pedigree. The atmosphere is more eclectic, the music is more varied, and the whole area has a walk-around quality that Mayfair lacks.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">The vibe:</strong> Creative, energetic, and unpredictable. Soho rewards spontaneity. You can start at a cocktail bar, stumble into a live performance, and end up dancing at a club you had never heard of. The night writes itself in a way that Mayfair&apos;s more structured environment does not allow.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">The crowd:</strong> More diverse in every sense. Younger on average, more mixed in terms of background, and more interested in the experience than the flex. Fashion creatives, media types, tourists, and locals all share the same dancefloors.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">The cost:</strong> Generally more accessible than Mayfair. Entry is cheaper or free on guestlist, drinks are a few pounds less, and table minimums are lower at most venues. The exception is The Box, where the door is notoriously selective and the experience commands a premium.
+          </p>
+
+          <div className="my-8">
+            <WhatsAppCTA variant="inline" />
+          </div>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Head-to-Head: What Matters Most</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">Dress code:</strong> Mayfair wins (or loses, depending on your perspective) on strictness. Smart shoes, tailored clothes, and a put-together look are non-negotiable. Soho is more forgiving &mdash; smart-casual works at most venues, and clean trainers can pass at several clubs. If you want to dress down slightly and still get in, Soho is your area.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">Music:</strong> Mayfair clubs largely play commercial hip-hop, RnB, and chart music. It is safe, crowd-pleasing, and reliable. Soho is more adventurous &mdash; Cirque Le Soir mixes everything from house to hip-hop, The Box has live performances, and The Cuckoo Club shifts between genres depending on the night. If music matters to you, Soho usually delivers more variety.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">Spontaneity:</strong> Soho wins comfortably. The density of bars, clubs, and late-night spots means you are never more than two minutes from your next option. Mayfair requires more planning &mdash; guestlists, bookings, and knowing which nights to target. A walk-in approach works in Soho; in Mayfair, it is a gamble.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Which Area Suits Your Night</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">Choose Mayfair if:</strong> You are celebrating something, you want table service, you enjoy dressing up, your group wants a polished VIP experience, or you are visiting London and want the aspirational night out that the city is famous for. Check <Link href="/mayfair-clubs-tonight" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair clubs tonight</Link> for what is open.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">Choose Soho if:</strong> You want flexibility, you prefer a more relaxed door policy, you like eclectic music, you are going out with a smaller group, or you value atmosphere over status. Soho works brilliantly for dates, creative nights out, and evenings where the plan is to have no plan.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">Do both:</strong> Honestly, this is the move that most experienced London clubbers make. Start in Soho for drinks and early-evening atmosphere, then cross Regent Street into Mayfair for the main event after midnight. The areas complement each other perfectly, and the walk between them is five minutes. For the full list of venues across both areas, browse our <Link href="/best-clubs-in-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">best clubs in London</Link> guide.
+          </p>
+        </>
+      );
+
+    // ─────────────────────────────────────────────
+    // POST 18: What Happens at a VIP Table in London
+    // ─────────────────────────────────────────────
+    case 'what-happens-at-a-vip-table-london':
+      return (
+        <>
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Before You Arrive: What You Need to Know</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            You have booked a table. The WhatsApp confirmation is on your phone. Now what? If you have never done VIP table service at a London club before, the whole process can feel like a mystery. Nobody explains the mechanics &mdash; you are just expected to know. So here is every step, from booking confirmation to leaving at the end of the night.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            When you book through us or through <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London Bottle Service</a>, you will receive a confirmation with your arrival time (usually between 11pm and midnight), the name the booking is under, and any details about your table location or minimum spend. Your minimum spend is the amount you have agreed to spend on bottles and drinks at the table &mdash; it is not an entry fee.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">What to arrange before the night:</strong> Confirm the final headcount with your promoter. Most tables are booked for a specific group size and venues have maximum capacities per table. Make sure everyone in your group knows the dress code &mdash; even with a table booking, you still need to meet the club&apos;s <Link href="/blog/what-to-wear-to-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">dress code requirements</Link>.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Arriving at the Club</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            When you arrive, go to the front of the queue and tell the door team or host that you have a table booking. Give the name it is booked under. At venues like <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link> and <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link>, a host will meet you and walk you through to your table. At others, security will check you off the list and point you in the right direction.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            You do not need to arrive all at once. The person whose name is on the booking should arrive first to claim the table, and others can join throughout the night. Just let the door know that additional guests are coming under the same booking.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">Timing matters:</strong> Arrive within the window given in your confirmation. If you are told 11pm, arriving at 12:30am means you have missed an hour and a half of your table time. On busy nights, significantly late arrivals risk losing their table entirely.
+          </p>
+
+          <div className="my-8">
+            <WhatsAppCTA variant="inline" />
+          </div>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">At the Table: How Service Actually Works</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Your table will be set up and waiting for you. At most venues, you will find ice, mixers (tonic, lemonade, cranberry, Red Bull), and glassware already laid out. A dedicated server or waitress will be assigned to your table for the night &mdash; they are your point of contact for everything.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">Choosing your bottles:</strong> Your server will bring a menu. Most groups order vodka (Grey Goose or Belvedere are standard) and champagne. You can also order whisky, tequila, gin, or rum depending on the venue&apos;s list. The server will help you choose based on your minimum spend and group size. You do not need to order everything at once &mdash; most groups order a couple of bottles to start and add more through the night.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">The sparkler moment:</strong> At venues like <Link href="/clubs/the-london-reign" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The London Reign</Link> and <Link href="/clubs/luna-club-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Luna Club</Link>, bottles arrive with sparklers, LED displays, or other theatrical presentations. It is part of the show. At more understated venues, bottles arrive without the fireworks. Either way, your server pours the drinks and keeps the table stocked with ice and mixers throughout the night.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Through the Night: What to Expect</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Your server will check in regularly, clear empty glasses, refresh ice, and ask if you want to order more. Good service is attentive without being intrusive. If you need anything &mdash; more mixers, a different type of glass, recommendations from the menu &mdash; flag your server down. They are there to make your night run smoothly.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            You are free to leave the table and dance, go to the bar, or move around the club. The table is your base, not your prison. Your bottles and belongings are looked after while you are away. At busier venues, a security presence near the VIP section keeps an eye on things.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">When the bottles run out:</strong> If you have hit your minimum spend and want more, just order additional bottles. If you have met the minimum and are done drinking, that is fine too &mdash; the table is yours for the rest of the night. There is no pressure to keep ordering once you have met the spend.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The Bill and Tipping</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            At the end of the night, your server will bring the bill. This will show your total spend, which should meet or exceed your agreed minimum. Some venues add a discretionary service charge of 12.5&ndash;15 per cent. If there is no service charge, tipping 10&ndash;15 per cent is standard for good service. Cash tips go directly to your server, which is always appreciated.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Payment is usually by card. Some venues require the cardholder to be present at the table to settle the bill. If you are splitting the bill between multiple people, let your server know in advance &mdash; most venues can split across two or three cards but not ten.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">First-Timer Tips</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Order a mix of spirits and champagne rather than all of one thing &mdash; it gives your group variety. Do not be intimidated by the process; the server has done this thousands of times and will guide you. Arrive on time. Dress well. Be friendly to your server. And if you are not sure about something, just ask. Nobody judges you for being new to table service &mdash; they judge you for being rude.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            For more on the VIP scene including how to decide if it is worth the investment, read our <Link href="/blog/vip-nightlife-london-guide" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">VIP nightlife London guide</Link>. To book a table for tonight, check our <Link href="/last-minute-table-booking-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">last-minute table bookings</Link> or read the full <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">cost breakdown</Link> to budget properly.
+          </p>
+        </>
+      );
+
+    // ─────────────────────────────────────────────
+    // POST 19: Best Walk-In Friendly Clubs in London
+    // ─────────────────────────────────────────────
+    case 'best-walk-in-friendly-clubs-london':
+      return (
+        <>
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The Reality of Walk-Ins at London Clubs</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Walking into a London club without a booking or guestlist is absolutely possible &mdash; at the right venues, on the right nights, at the right time. But it is not possible everywhere, and pretending otherwise would waste your evening. Some clubs are genuinely walk-in friendly. Others will turn you away without a second thought unless your name is on a list. Knowing the difference saves you from standing in a queue that goes nowhere.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The factors that determine your walk-in success are consistent: timing, dress code, group composition, and which night of the week it is. Get all four right and your odds are excellent at the venues below. Get even one wrong and you are gambling.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The Most Walk-In Friendly Clubs</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white"><Link href="/clubs/ministry-of-sound" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Ministry of Sound</Link>:</strong> The most reliably walk-in friendly major club in London. The focus here is music, not exclusivity, and the door policy reflects that. Buy a ticket online or pay on the door, meet a basic dress code (comfortable clubwear is fine), and you are in. Queues can build after midnight on big nights, but arrival between 10:30pm and 11:30pm typically means a short wait. This is the gold standard for spontaneous nights out.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white"><Link href="/clubs/beat-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Beat London</Link>:</strong> Genuinely welcoming to walk-ins, particularly on Thursdays and Fridays. The door is friendly but expects you to look smart &mdash; no trainers, no sportswear. Mixed groups of men and women walk in with minimal fuss. All-male groups may need to wait slightly longer but are not turned away as a rule.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white"><Link href="/clubs/funky-buddha" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Funky Buddha</Link>:</strong> Walk-ins work well here, especially before midnight. The crowd is hip-hop and RnB focused, the atmosphere is energetic, and the door is approachable for well-dressed groups. Saturdays are busier and more competitive, so Fridays and Thursdays are your best bet for a no-booking visit.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white"><Link href="/clubs/cuckoo-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Cuckoo Club</Link>:</strong> Walk-ins are possible, particularly on quieter weeknights. Saturdays are harder without a guestlist or booking, but Thursday and Friday walk-ins have a realistic shot if you arrive before 11:30pm and look the part. The door team are fair but firm.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white"><Link href="/clubs/scotch-of-st-james" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Scotch of St James</Link>:</strong> The intimate size means capacity fills quickly, but the door is reasonable for walk-ins on less hectic nights. This is a members&apos; club atmosphere, so confidence and appropriate dress go a long way. Couples and small groups fare better than large parties.
+          </p>
+
+          <div className="my-8">
+            <WhatsAppCTA variant="inline" />
+          </div>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Clubs That Are NOT Walk-In Friendly</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Let us be honest about the other end of the spectrum. <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link>, <Link href="/clubs/the-box-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Box</Link>, and <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link> are not realistic walk-in options on busy nights. These venues operate on guestlists, table bookings, and door selection. Turning up without a plan at Tape on a Saturday is setting yourself up for disappointment. If you want to visit these venues, get on the guestlist or book a table &mdash; it takes two minutes and costs nothing for the guestlist.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">How to Maximise Your Walk-In Chances</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">Arrive early:</strong> Between 10:30pm and 11:30pm is the window. The club is open but not yet at capacity, and the door team is still filling the room rather than turning people away. After midnight, your chances drop significantly at every venue.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">Dress properly:</strong> This is not optional. The dress code matters more for walk-ins than for anyone else because you have no booking to fall back on. Read our <Link href="/guides/how-to-get-into-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">guide to getting into London clubs</Link> for exactly what to wear.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">Bring a mixed group:</strong> A group of four men walking up to a Mayfair club door is a harder sell than two couples or a mixed group of six. This is the reality of London club door policies. If your group is all male, guestlist is strongly recommended over walk-in.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">Choose Thursday or Friday over Saturday:</strong> Saturday is the busiest night everywhere and the hardest for walk-ins. Thursday is the easiest, followed by Friday. If you value spontaneity, midweek is your friend.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The Guestlist: Your Free Backup Plan</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Even if you plan to walk in, getting on the <Link href="/guestlist-tonight-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">guestlist</Link> is a two-minute safety net that costs nothing. Message us on WhatsApp, give us your name, group size, and the club you want, and we will put you on the list. If you walk in without needing it, no harm done. If the door is being difficult, you have a name to give them. It is free insurance for your evening.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            For tonight&apos;s options across all venues, check <Link href="/clubs-tonight-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">clubs tonight London</Link>. And for a full breakdown of how London club promoters can help you get in, read our <Link href="/blog/london-club-promoter-guide" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">promoter guide</Link>.
+          </p>
+        </>
+      );
+
+    // ─────────────────────────────────────────────
+    // POST 20: London Club Etiquette Guide
+    // ─────────────────────────────────────────────
+    case 'london-club-etiquette-guide':
+      return (
+        <>
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Why Etiquette Matters More Than You Think</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            London clubs operate on a set of unwritten rules that nobody explains to you before your first visit. There is no orientation, no FAQ pinned to the wall, no helpful guide inside the door. You are expected to just know. And the people who do know &mdash; the regulars, the hosts, the staff &mdash; can tell within five minutes whether you are one of them or not.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            This is not about snobbery. It is about the fact that every good club runs on mutual respect between guests, staff, and the venue itself. The people who understand the etiquette have better nights, get better service, and are welcomed back. The people who do not end up feeling like the club is hostile or unwelcoming when really they just missed the memo. Consider this the memo.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">At the Door: First Impressions Count</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The door is where the night begins or ends, and how you handle it sets the tone for everything. At venues like <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link>, <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link>, and <Link href="/clubs/maddox" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Maddox</Link>, the door team are making a judgement call about whether you will add to or detract from the atmosphere inside.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">Be calm and confident.</strong> State your name if you are on the guestlist. Have your ID ready without being asked. Do not crowd the door with your entire group &mdash; send one or two people to check in and let the rest wait nearby. If there is a queue, join it without complaint. Trying to skip the queue or arguing with door staff is the single fastest way to not get in.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">If you are turned away:</strong> Accept it gracefully. Ask politely if there is anything you can do differently. Sometimes the answer is simply that the club is at capacity and trying again in thirty minutes works. Sometimes it does not. Either way, being rude to the door team guarantees you will never be welcome at that venue. Door staff talk to each other across venues &mdash; a bad reputation travels. For more on navigating the door, read our <Link href="/guides/how-to-get-into-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">complete guide to getting into London clubs</Link>.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Phone and Photography Etiquette</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            This is the area where most newcomers get it wrong. Your phone is not a camera crew. A quick selfie with your friends is fine. Recording the DJ set, filming other guests, using flash photography, or holding your phone up for an extended video is not. Many clubs, particularly <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link> and The Box, have strict no-photography policies during their performances for good reason.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The general rule is: capture your moment quickly and put the phone away. Nobody came to a nightclub to appear in a stranger&apos;s Instagram story. If you want to take photos of the venue, do it early in the night when the space is emptier. Once the dancefloor is packed, the phone should be in your pocket.
+          </p>
+
+          <div className="my-8">
+            <WhatsAppCTA variant="inline" />
+          </div>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">On the Dancefloor</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The dancefloor is shared space, and awareness of the people around you is the baseline. Do not take up more room than you need. Do not push to the front and stand there talking instead of dancing. If someone bumps into you accidentally, let it go &mdash; it is a busy dancefloor, not a personal affront.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Drinks on the dancefloor are a hazard. If you must bring a drink, hold it low and be conscious of spilling on other people. At venues like <Link href="/clubs/scotch-of-st-james" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Scotch of St James</Link> and <Link href="/clubs/selene-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Selene</Link>, where the spaces are intimate, spatial awareness is even more important.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Table and Bar Behaviour</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">If you have a table:</strong> Your table is your space. Other people&apos;s tables are their space. Do not wander into someone else&apos;s table area uninvited, help yourself to their bottles, or sit in their section. This seems obvious but it happens regularly, and it creates the kind of tension that ruins nights.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">At the bar:</strong> Wait your turn. Do not wave money or snap your fingers at bar staff. Make eye contact, be patient, and have your order ready when it is your turn. Tip if you feel the service was good &mdash; it is not obligatory in London but it is remembered. The regulars who tip well get served faster. That is just how it works.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <strong className="text-white">With staff generally:</strong> The best-run clubs in London &mdash; the places where the atmosphere feels genuinely good &mdash; are the ones where guests treat staff with respect. A simple thank you goes further than you think. Rudeness to servers, bar staff, or security creates a negative atmosphere that affects everyone around you.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Drinking and Pacing</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Getting too drunk too early is the most common etiquette failure at London clubs. Pre-drinking is smart for your wallet but dangerous for your night if you overdo it. The clubs that are hardest to get into &mdash; <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape</Link>, Cirque, <Link href="/clubs/maddox" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Maddox</Link> &mdash; will turn you away at the door if you appear too intoxicated. Even if you get in, stumbling around a premium venue is not the look anyone wants.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Pace yourself. Alternate alcoholic drinks with water. Eat before you go out. These are not revolutionary insights, but the number of people who ignore them and then wonder why their night went sideways is remarkable.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The Regulars&apos; Code</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The people who get invited back, who get recognised by door staff, who get upgraded to better tables &mdash; they all share the same traits. They dress well. They are polite to everyone. They drink responsibly. They tip fairly. They do not cause drama. They read the room and match its energy. None of this is complicated. It is simply about being a good guest in someone else&apos;s venue.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            For more on dress codes specifically, read our <Link href="/blog/what-to-wear-to-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">what to wear guide</Link>. For first-time visitors, our <Link href="/blog/london-nightlife-guide-for-tourists" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">tourist nightlife guide</Link> covers the broader landscape. And for a full list of London&apos;s best venues, browse our <Link href="/best-clubs-in-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">best clubs in London</Link>.
+          </p>
+        </>
+      );
+
     default:
       return (
         <p className="text-[#BBB] leading-relaxed">
