@@ -151,7 +151,7 @@ export default function BlogPage() {
               </p>
             </Link>
             <Link
-              href="/best-clubs"
+              href="/best-clubs-in-london"
               className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-all duration-300"
             >
               <h3 className="text-white font-semibold mb-1">Best Clubs</h3>

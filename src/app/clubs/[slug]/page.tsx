@@ -279,7 +279,7 @@ export default async function ClubPage({
               </p>
             </Link>
             <Link
-              href="/guides/getting-into-london-clubs"
+              href="/guides/how-to-get-into-london-clubs"
               className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-colors"
             >
               <span className="text-[#C0C0C0] font-semibold text-lg">

@@ -96,7 +96,7 @@ export default function ClubsPage() {
           </p>
           <div className="grid sm:grid-cols-3 gap-6">
             <Link
-              href="/guides/getting-into-london-clubs"
+              href="/guides/how-to-get-into-london-clubs"
               className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-6 text-center transition-colors"
             >
               <span className="text-[#C0C0C0] font-semibold">Entry Guide</span>
