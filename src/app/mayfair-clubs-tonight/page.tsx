@@ -3,14 +3,14 @@ import Link from 'next/link';
 import { getClubsOpenTonight, getCurrentDayName } from '@/lib/clubs';
 import TonightClubCard from '@/components/TonightClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
-import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
+import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/components/SchemaMarkup';
 
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: 'Mayfair Clubs Tonight — What\'s Open in Mayfair Right Now',
+  title: 'Mayfair Clubs Open Tonight — Guestlist & Tables Available Now',
   description:
-    'Which Mayfair clubs are open tonight? Live updates on guestlist availability, table bookings, and door policies from promoters who work Mayfair every night.',
+    'What\'s open in Mayfair tonight? Live guestlist spots, same-night VIP tables, and insider tips. Message us on WhatsApp for instant confirmation.',
   keywords: [
     'Mayfair clubs tonight',
     'clubs open in Mayfair tonight',
@@ -80,10 +80,15 @@ export default function MayfairClubsTonightPage() {
     '2025-01-15'
   );
   const faqSchema = getFAQSchema(faqs);
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Tonight', url: '/clubs-tonight-london' },
+    { name: 'Mayfair Clubs Tonight', url: '/mayfair-clubs-tonight' },
+  ]);
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-white">
-      <SchemaMarkup schema={[articleSchema, faqSchema]} />
+      <SchemaMarkup schema={[articleSchema, faqSchema, breadcrumbSchema]} />
 
       {/* Hero */}
       <section className="max-w-5xl mx-auto px-6 sm:px-8 pt-28 pb-12 md:pt-36 md:pb-16 text-center">
@@ -219,16 +224,52 @@ export default function MayfairClubsTonightPage() {
               Which Mayfair Club Is Right for You Tonight
             </h3>
             <p>
-              If you want hip-hop in an intimate underground setting, TABU is
-              the call. The Japanese-inspired interiors and focused music
-              programming create an atmosphere that feels nothing like the rest
-              of Mayfair. If you want the most exclusive room in the area, Tape
-              London is the answer — but bring your wallet and ideally a
-              reservation. For house music fans, Maddox is the only serious
-              option in Mayfair, with a restaurant-to-club flow that works
-              seamlessly. Cuckoo Club splits the difference with house on one
-              floor and hip-hop on another, making it the safest bet for groups
-              who cannot agree on music.
+              <strong className="text-white">Tape London</strong> is the pinnacle of exclusivity. A members club on Hanover Square where the crowd genuinely includes celebrities and the sound system is among the best in the world. If you want the most exclusive experience Mayfair offers, this is it — but you will need a table booking or a very good reason to be at the door.
+            </p>
+            <p>
+              <strong className="text-white">TABU</strong> brings a completely different energy. The Japanese underground aesthetic creates an atmosphere that is both intimate and intense, with hip-hop programming that caters to genuine music lovers rather than tourists. The crowd is younger, more fashion-forward, and less concerned with VIP posturing.
+            </p>
+            <p>
+              <strong className="text-white">Dear Darling</strong> takes yet another approach — starting your evening with genuinely excellent cocktails in a gilded, opulent setting before transitioning into a late-night venue. It is the best option for groups that want the evening to build gradually rather than arriving at a club cold at midnight.
+            </p>
+            <p>
+              <strong className="text-white">Maddox</strong> is the house music stronghold of Mayfair. While most Mayfair clubs lean heavily into hip-hop and RnB, Maddox has committed to a sound that attracts a crowd who actually want to dance. The restaurant-to-club format is polished, and the transition between the two feels natural.
+            </p>
+            <p>
+              <strong className="text-white">Cuckoo Club</strong> solves the most common group argument by offering house music on one floor and hip-hop on the other. It is perhaps the most consistently reliable night out in Mayfair — never the most fashionable, but never disappointing either.
+            </p>
+            <p>
+              <strong className="text-white">Funky Buddha</strong> remains one of the most prestigious names in Mayfair nightlife. The heritage of the venue — decades of celebrity patronage and cultural significance — gives it a weight that newer clubs cannot match. Fridays and Saturdays here have a particular energy that longtime London clubbers recognise immediately.
+            </p>
+            <h3 className="text-xl font-bold text-white pt-4">
+              How to Actually Get Into Mayfair Clubs Tonight
+            </h3>
+            <p>
+              Mayfair door policies are the most discussed topic in London nightlife, and for good reason. Every venue here operates a selective door, and the level of selectivity varies from firm-but-fair to genuinely elite.
+            </p>
+            <p>
+              <strong className="text-white">Book a table.</strong> This is the most reliable approach across all Mayfair venues. A table reservation guarantees your entry, removes the stress of door assessments, and lets you focus on the night itself. Tables start from &#163;1,000 at most venues, which splits reasonably across a group of four or more.
+            </p>
+            <p>
+              <strong className="text-white">Use a promoter for guestlist.</strong> Where guestlist is available — TABU, Cuckoo Club, Dear Darling, and others — going through a promoter is significantly more effective than enquiring directly. Promoters have allocated spots and established relationships with door teams. Message us on WhatsApp and we handle the guestlist process for you.
+            </p>
+            <p>
+              <strong className="text-white">Dress the part.</strong> This is not optional in Mayfair. Smart shoes, tailored clothing, and a sense of occasion are the minimum. If you are unsure about any item, upgrade it. The door team makes fast decisions based on appearance, and there is rarely a second chance.
+            </p>
+            <p>
+              <strong className="text-white">Group composition matters.</strong> Mixed groups of men and women fare significantly better than all-male groups at every Mayfair venue. If your group is all male, a table booking moves from recommended to essential.
+            </p>
+            <h3 className="text-xl font-bold text-white pt-4">
+              What to Expect From a Night Out in Mayfair
+            </h3>
+            <p>
+              A typical Mayfair night follows a rhythm. Doors open between 10pm and 11pm, but the venues do not truly fill until midnight. Arriving between 11pm and midnight is the sweet spot — you avoid the empty-room awkwardness of arriving too early while securing a good position before the peak.
+            </p>
+            <p>
+              Most Mayfair clubs close between 2:30am and 3:30am. This is significantly earlier than the clubs in South London or East London, so pace your night accordingly. The peak energy window is typically midnight to 2am — arrive too late and you have missed the best of it.
+            </p>
+            <p>
+              Drinks are expensive by any standard. Cocktails start around &#163;16 and premium options run significantly higher. If you have a table, your minimum spend covers bottles and mixers — Grey Goose, Belvedere, or Ciroc are the standard vodka options, with champagne and premium spirits available at higher price points.
             </p>
             <p>
               For the full Mayfair experience — the scene, the venues, the

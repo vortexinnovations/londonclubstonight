@@ -8,14 +8,14 @@ import {
 } from '@/lib/clubs';
 import TonightClubCard from '@/components/TonightClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
-import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
+import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getItemListSchema } from '@/components/SchemaMarkup';
 
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: 'Clubs Open Tonight in London — What\'s Open & How to Get In',
+  title: `Clubs Open Tonight in London — Live Updates [${new Date().toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}]`,
   description:
-    'Find out which London clubs are open tonight. Live updates on what\'s open, guestlist availability, last-minute table bookings, and insider tips from promoters on the ground.',
+    'Which London clubs are open RIGHT NOW? Live guestlist availability, same-night table bookings, and what\'s happening tonight. Updated every hour.',
   keywords: [
     'clubs open tonight London',
     'London clubs tonight',
@@ -90,10 +90,18 @@ export default function ClubsTonightLondonPage() {
     '2025-01-15'
   );
   const faqSchema = getFAQSchema(faqs);
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Clubs Open Tonight', url: '/clubs-tonight-london' },
+  ]);
+  const itemListSchema = getItemListSchema(
+    'Clubs Open Tonight in London',
+    tonightClubs.map((club) => ({ name: club.name, url: '/clubs/' + club.slug }))
+  );
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-white">
-      <SchemaMarkup schema={[articleSchema, faqSchema]} />
+      <SchemaMarkup schema={[articleSchema, faqSchema, breadcrumbSchema, itemListSchema]} />
 
       {/* Hero */}
       <section className="max-w-5xl mx-auto px-6 sm:px-8 pt-28 pb-12 md:pt-36 md:pb-16 text-center">

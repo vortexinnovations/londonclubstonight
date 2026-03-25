@@ -3,14 +3,14 @@ import Link from 'next/link';
 import { getLastMinuteTableClubs, getClubsOpenTonight, getCurrentDayName } from '@/lib/clubs';
 import TonightClubCard from '@/components/TonightClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
-import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
+import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/components/SchemaMarkup';
 
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: 'Last Minute Table Booking London — Book a VIP Table Tonight',
+  title: 'Last Minute Table Booking London — VIP Tables Available Tonight',
   description:
-    'Need a VIP table tonight in London? Same-day table bookings at Mayfair, Soho, and Central London clubs. Live availability, pricing, and instant WhatsApp confirmation.',
+    'Need a VIP table tonight? Same-day availability at London\'s top clubs. Message us on WhatsApp — we confirm in minutes. No deposit, no fees.',
   keywords: [
     'last minute table booking London',
     'book a table tonight London',
@@ -85,10 +85,14 @@ export default function LastMinuteTableBookingPage() {
     '2025-01-15'
   );
   const faqSchema = getFAQSchema(faqs);
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Last Minute Table Booking', url: '/last-minute-table-booking-london' },
+  ]);
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-white">
-      <SchemaMarkup schema={[articleSchema, faqSchema]} />
+      <SchemaMarkup schema={[articleSchema, faqSchema, breadcrumbSchema]} />
 
       {/* Hero */}
       <section className="max-w-5xl mx-auto px-6 sm:px-8 pt-28 pb-12 md:pt-36 md:pb-16 text-center">
@@ -298,6 +302,33 @@ export default function LastMinuteTableBookingPage() {
               have Saturday availability until Friday evening, and even
               popular clubs sometimes have cancellation tables that open
               up on the day.
+            </p>
+            <h3 className="text-xl font-bold text-white pt-4">
+              Timing Your Last-Minute Booking
+            </h3>
+            <p>
+              The earlier in the day you enquire, the better your options. The difference between messaging at 2pm versus 9pm is significant. By early evening, the most desirable table positions are usually allocated. By late evening, you are working with whatever remains.
+            </p>
+            <p>
+              <strong className="text-white">Before 4pm:</strong> Best selection across all venues. You can usually secure your first-choice club and a good table position. This is also when promoters have the most leverage with venue managers.
+            </p>
+            <p>
+              <strong className="text-white">4pm to 8pm:</strong> Good options still available but popular venues on Saturdays may already be limited. Second and third choices become relevant. Flexibility on venue helps significantly.
+            </p>
+            <p>
+              <strong className="text-white">After 8pm:</strong> Workable but limited. Some venues will have released un-confirmed reservations, which creates late openings. This is where promoter relationships become critical — we know which tables have fallen through and can move quickly.
+            </p>
+            <p>
+              <strong className="text-white">After 10pm:</strong> You are relying on cancellations and no-shows. Still possible — we have arranged tables at 11pm on Saturdays — but your choice of venue narrows considerably.
+            </p>
+            <h3 className="text-xl font-bold text-white pt-4">
+              Why Some Clubs Are More Accommodating
+            </h3>
+            <p>
+              Venue capacity is the most obvious factor — a club with twelve tables does not have the same flexibility as a venue with thirty positions. But business model matters too. Some venues operate on a scarcity model where exclusivity is the brand. Others are more commercially driven and would rather fill a table at short notice than leave it empty.
+            </p>
+            <p>
+              The cocktail-bar-to-club venues like Dear Darling tend to be the most flexible. Their format naturally accommodates walk-ins and last-minute guests because the evening starts as a bar experience before transitioning into a club. Music-focused venues like BEAT London also tend to be more welcoming of spontaneous bookings — they would rather have a full, energetic room than hold empty tables.
             </p>
             <p>
               Our promoter network gives us access to tables that are not

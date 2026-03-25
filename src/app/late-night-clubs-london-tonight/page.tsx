@@ -3,12 +3,14 @@ import Link from 'next/link';
 import { getOpenClubs } from '@/lib/clubs';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import TonightClubCard from '@/components/TonightClubCard';
-import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
+import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/components/SchemaMarkup';
+
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: 'Late Night Clubs in London Tonight — Open Until 3am, 4am & Beyond',
+  title: 'Late Night Clubs London Tonight — Open Until 3am, 4am & 6am',
   description:
-    'Which London clubs stay open latest tonight? From 3am closers to 6am marathons at Ministry of Sound. Sorted by closing time with transport advice and insider tips.',
+    'Which clubs stay open latest tonight? Sorted by closing time with last-entry times, transport home, and what to expect after midnight.',
   keywords: [
     'late night clubs London',
     'clubs open late London tonight',
@@ -91,6 +93,10 @@ export default function LateNightClubsLondonTonightPage() {
             '2025-06-01'
           ),
           getFAQSchema(faqs),
+          getBreadcrumbSchema([
+            { name: 'Home', url: '/' },
+            { name: 'Late Night Clubs Tonight', url: '/late-night-clubs-london-tonight' },
+          ]),
         ]}
       />
 
@@ -124,7 +130,9 @@ export default function LateNightClubsLondonTonightPage() {
               The landscape divides into three tiers. The earliest closers — venues like Dear Darling at 2:30am — are cocktail-bar-to-club concepts where the late-night element is secondary to the earlier evening experience. The mid-range — most Mayfair clubs closing between 3:00am and 3:30am — represents the core of London nightlife. And then there is Ministry of Sound, which operates in a different league entirely with its 6am closing time and occasional events that run even later.
             </p>
             <p>
-              Your choice of late-night venue depends on what you prioritise. If you want the most prestigious VIP experience, the Mayfair clubs deliver that until 3:30am. If you want to dance until dawn, Ministry of Sound is the answer — and the only serious answer in London that operates at that scale and quality every weekend.
+              Your choice of late-night venue depends on what you prioritise. If you want the most prestigious VIP experience, the Mayfair clubs deliver that until 3:30am — for table bookings and bottle service at any late-night venue, see{' '}
+              <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London Bottle Service</a>. If you want to dance until dawn, Ministry of Sound is the answer — and the only serious answer in London that operates at that scale and quality every weekend. For tonight&apos;s Mayfair schedule specifically, check{' '}
+              <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair Tonight</a>.
             </p>
             <p>
               The hours after 2am bring a change in atmosphere at every venue. The crowd thins slightly, the energy shifts from anticipation to commitment, and the people who remain are there because they genuinely want to be. Some of the best moments in a night out happen in those later hours — the DJ takes more risks, the dancefloor becomes more communal, and the social barriers that exist earlier in the evening dissolve.

@@ -3,7 +3,9 @@ import Link from 'next/link';
 import { getSundayClubs, getFridayClubs, getSaturdayClubs } from '@/lib/clubs';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import TonightClubCard from '@/components/TonightClubCard';
-import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
+import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/components/SchemaMarkup';
+
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: 'Clubs Open Sunday Night in London — Your Sunday Night Options',
@@ -78,6 +80,10 @@ export default function ClubsOpenSundayNightLondonPage() {
             '2025-06-01'
           ),
           getFAQSchema(faqs),
+          getBreadcrumbSchema([
+            { name: 'Home', url: '/' },
+            { name: 'Sunday Night Clubs', url: '/clubs-open-sunday-night-london' },
+          ]),
         ]}
       />
 
@@ -218,7 +224,9 @@ export default function ClubsOpenSundayNightLondonPage() {
               <strong className="text-white">Saturday nights</strong> are the peak of London nightlife. Every club is open, every venue is at full capacity, and the atmosphere across the city is electric. Booking is more important on Saturdays — tables and guestlist spots fill up faster — but the experience justifies the planning.
             </p>
             <p>
-              If you are visiting London and your schedule only allows for a Sunday night out, we would honestly recommend adjusting your plans to include a Friday or Saturday instead. The difference in available options and overall quality of experience is substantial. Message us on WhatsApp and we can help you plan the strongest night for whenever your schedule allows.
+              If you are visiting London and your schedule only allows for a Sunday night out, we would honestly recommend adjusting your plans to include a Friday or Saturday instead. The difference in available options and overall quality of experience is substantial. To get ahead on weekend table planning and bottle service, visit{' '}
+              <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London Bottle Service</a>, and for weekend events across the Mayfair scene, see{' '}
+              <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair Tonight</a>. Message us on WhatsApp and we can help you plan the strongest night for whenever your schedule allows.
             </p>
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-2">

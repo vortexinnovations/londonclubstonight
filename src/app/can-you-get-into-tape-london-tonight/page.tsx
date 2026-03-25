@@ -2,7 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getClubBySlug } from '@/lib/clubs';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
-import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
+import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/components/SchemaMarkup';
+
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: 'Can You Get Into Tape London Tonight? — Insider Guide',
@@ -75,6 +77,10 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
             '2025-06-01'
           ),
           getFAQSchema(faqs),
+          getBreadcrumbSchema([
+            { name: 'Home', url: '/' },
+            { name: 'Can You Get Into Tape Tonight', url: '/can-you-get-into-tape-london-tonight' },
+          ]),
         ]}
       />
 
@@ -183,7 +189,8 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
               This is not the door team being difficult for the sake of it. The intimacy is what makes Tape special. The small room, the concentrated energy, the genuine likelihood of standing next to a recognisable face — all of that depends on controlled capacity. If Tape let everyone in, it would lose the quality that makes it worth going to in the first place.
             </p>
             <p>
-              Our recommendation is always the same: book a table. If the minimum spend works for your group, it removes all uncertainty. If you are a group of four or more, splitting a {tape?.tableMinimum || '£1,500'} minimum works out to less than you would spend on a night out anyway — except you are guaranteed entry to one of the most exclusive rooms in London.
+              Our recommendation is always the same: book a table. If the minimum spend works for your group, it removes all uncertainty. For a full breakdown of table pricing, bottle packages, and what your minimum spend includes, see{' '}
+              <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London Bottle Service</a>. If you are a group of four or more, splitting a {tape?.tableMinimum || '£1,500'} minimum works out to less than you would spend on a night out anyway — except you are guaranteed entry to one of the most exclusive rooms in London.
             </p>
           </div>
         </div>
@@ -209,7 +216,8 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
               The intimacy creates an atmosphere that larger clubs cannot replicate. When Tape is at its best — a packed Thursday night, the right DJ behind the decks, a crowd that is there because they want to be — the energy in that room is unlike anything else in London. It is a room where things happen. Spontaneous performances, unexpected guests, moments that become stories.
             </p>
             <p>
-              Located on Hanover Square in Mayfair, the venue itself reflects its neighbourhood — understated luxury without unnecessary flashiness. The interior is dark and moody with plush seating and warm lighting that creates pockets of privacy even when the room is full.
+              Located on Hanover Square in Mayfair, the venue itself reflects its neighbourhood — understated luxury without unnecessary flashiness. The interior is dark and moody with plush seating and warm lighting that creates pockets of privacy even when the room is full. For a wider look at what is happening across the Mayfair scene tonight, check{' '}
+              <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair Tonight</a>.
             </p>
           </div>
         </div>

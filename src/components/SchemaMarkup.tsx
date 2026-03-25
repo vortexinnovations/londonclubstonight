@@ -75,6 +75,70 @@ export function getFAQSchema(faqs: { question: string; answer: string }[]) {
   };
 }
 
+export function getOrganizationSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'London Clubs Tonight',
+    url: 'https://londonclubstonight.com',
+    description: 'London nightclub promoters offering table bookings, guestlist access, and insider recommendations at the city\'s best clubs.',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'reservations',
+      telephone: '+447880662708',
+      availableLanguage: 'English',
+    },
+    sameAs: [
+      'https://mayfairtonight.com',
+      'https://londonbottleservice.com',
+      'https://londonbirthdayclub.com',
+      'https://londonluxurynightlife.com',
+    ],
+  };
+}
+
+export function getWebSiteSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'London Clubs Tonight',
+    url: 'https://londonclubstonight.com',
+    description: 'The definitive guide to London\'s best nightclubs. What\'s open tonight, table bookings, guestlist access, and insider tips.',
+    publisher: {
+      '@type': 'Organization',
+      name: 'London Clubs Tonight',
+    },
+  };
+}
+
+export function getBreadcrumbSchema(items: { name: string; url: string }[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      item: `https://londonclubstonight.com${item.url}`,
+    })),
+  };
+}
+
+export function getItemListSchema(name: string, items: { name: string; url: string }[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: name,
+    numberOfItems: items.length,
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      url: `https://londonclubstonight.com${item.url}`,
+    })),
+  };
+}
+
 export function getNightClubSchema(name: string, description: string, address: string, url: string) {
   return {
     '@context': 'https://schema.org',

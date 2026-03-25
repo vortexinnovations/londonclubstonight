@@ -3,12 +3,14 @@ import Link from 'next/link';
 import { getFridayClubs } from '@/lib/clubs';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import TonightClubCard from '@/components/TonightClubCard';
-import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
+import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getItemListSchema } from '@/components/SchemaMarkup';
+
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: 'Friday Nightclubs in London — Where to Go This Friday',
+  title: 'Friday Night Clubs London — Best Clubs Open This Friday',
   description:
-    'The best London nightclubs open on Friday nights. Which clubs have their strongest nights on Fridays, booking tips, pricing, and insider advice for making the most of your Friday.',
+    'The best London nightclubs open this Friday. Which venues peak on Fridays, booking tips, and how to guarantee your spot this week.',
   keywords: [
     'Friday nightclubs London',
     'Friday night clubs London',
@@ -76,6 +78,14 @@ export default function FridayNightclubsLondonPage() {
             '2025-06-01'
           ),
           getFAQSchema(faqs),
+          getBreadcrumbSchema([
+            { name: 'Home', url: '/' },
+            { name: 'Friday Night Clubs', url: '/friday-nightclubs-london' },
+          ]),
+          getItemListSchema(
+            'Friday Night Clubs in London',
+            fridayClubs.map((club) => ({ name: club.name, url: '/clubs/' + club.slug }))
+          ),
         ]}
       />
 
@@ -95,53 +105,50 @@ export default function FridayNightclubsLondonPage() {
         </div>
       </section>
 
-      {/* What Makes Fridays Different */}
+      {/* The Friday Feeling */}
       <section className="py-20 md:py-28 border-t border-[#222]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            What Makes Friday Nights Different
+            The Friday Feeling: Office to Dancefloor
           </h2>
           <div className="space-y-6 text-[#BBB] text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
             <p>
-              Friday night in London carries an energy that Saturday does not replicate. It is the release valve — five days of accumulated work pressure, social plans that have been building all week, and the knowledge that you have the entire weekend ahead of you. The atmosphere in London clubs on Friday reflects this collective exhale.
+              Friday night in London starts before anyone sets foot in a club. It starts at 5pm in the pubs around Bank and Canary Wharf, at 6pm in the wine bars along Heddon Street, at 8pm over dinner in Soho when someone at the table says the words that change the evening: &quot;Shall we go somewhere after this?&quot;
             </p>
             <p>
-              The crowd on a Friday is different in subtle but important ways. People arrive with the momentum of after-work drinks, dinner plans that evolved into something bigger, and a spontaneity that Saturday&apos;s more planned outings lack. Friday clubbers are celebrating the end of something, while Saturday clubbers are executing something they arranged days ago.
+              That trajectory — the unplanned escalation from after-work drinks to a full night out — defines Friday in a way that no other night of the week can claim. Saturday is premeditated. Thursday is a conscious midweek choice. But Friday catches people in transition. They arrive at clubs still carrying the adrenaline of closing a deal, finishing a project, surviving a week. The result is a crowd that is genuinely elated, slightly unpredictable, and hungry for release.
             </p>
             <p>
-              From a practical standpoint, Fridays offer genuine advantages. Table availability is better at most venues — not dramatically, but enough that a same-day booking request has a higher success rate than on Saturday. Door policies, while still enforced, tend to be a fraction more forgiving. Guestlist spots are slightly easier to secure. The overall pressure is one notch lower, which often makes for a more enjoyable experience.
+              This shapes the atmosphere in tangible ways. The dancefloor on a Friday fills faster than you would expect — people do not ease in, they commit. Conversations are louder and more animated. Groups that formed over dinner arrive together with shared energy rather than the fragmented arrivals of a Saturday where everyone is coming from different parts of the city. There is a cohesion to a Friday crowd that clubs thrive on.
             </p>
             <p>
-              The music programming on Fridays often differs from Saturdays too. Some clubs use Friday as the night for their more experimental bookings — guest DJs who bring a different sound, themed nights that deviate from the regular format, or extended sets that take the music in unexpected directions. If you value musical variety, Friday can be the more interesting night.
+              The after-work pipeline also means Friday crowds skew slightly older and more professional than Saturday. You will find more City workers, more media types, more people who dress well for work and can transition straight to a club without going home to change. This is not a hard rule, but it gives Friday a slightly more polished, grown-up character at many venues.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Which Clubs Have Their Best Night on Friday */}
+      {/* Friday DJ Programming and Events */}
       <section className="py-20 md:py-28 border-t border-[#222]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            Which Clubs Have Their Best Night on Friday
+            Friday Night Programming: Where the Music Stands Out
           </h2>
           <div className="space-y-6 text-[#BBB] text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
             <p>
-              Not every club peaks on Saturday. Several London venues are genuinely at their best on Friday, and knowing which ones can shape your decision.
+              Clubs approach Friday differently from Saturday in their programming decisions. Saturday is the guaranteed seller, so venues play it safe with proven formats and crowd-pleasing resident DJs. Friday is where creative directors take risks. Guest DJs who bring an unfamiliar sound, genre-crossing nights that blend hip-hop with afrobeats or house with garage, themed events that would be too niche for Saturday — all of these land on Fridays.
             </p>
             <p>
-              <strong className="text-white">Cirque Le Soir</strong> is arguably a stronger Friday than Saturday proposition. The production — fire-breathers, contortionists, the full circus experience — runs on both nights, but Friday&apos;s slightly smaller crowd means more intimate performer interactions and a room where the energy concentrates rather than disperses. The entertainment feels more personal on Fridays.
+              <strong className="text-white">Cirque Le Soir</strong> runs its full circus production on Fridays, and the slightly more intimate crowd means the performers work closer to the audience. Fire acts happen at arm&apos;s length. The acrobats interact directly with tables. The show becomes immersive rather than observed, and that shift in proximity changes the entire experience.
             </p>
             <p>
-              <strong className="text-white">Ministry of Sound</strong> frequently books its most interesting DJ lineups for Fridays. While Saturday draws the largest crowd, Friday attracts a more dedicated, music-focused audience. The main room on a Friday night with the right headliner is a purist experience — the crowd is there specifically for the music, and the atmosphere reflects that intentionality.
+              <strong className="text-white">Ministry of Sound</strong> uses Fridays for its most adventurous bookings. While Saturday draws the headline names, Friday&apos;s lineup often features rising DJs, label showcases, and genre-specific events that attract a crowd who came specifically for the music. The main room on a well-booked Friday has a purity of purpose that Saturday&apos;s broader crowd dilutes.
             </p>
             <p>
-              <strong className="text-white">BEAT London</strong> thrives on Friday energy. The music-first venue attracts a crowd that has been anticipating the weekend, and the powerful sound system rewards an audience that arrives ready to dance. The smaller scale means Friday nights build atmosphere quickly.
+              <strong className="text-white">BEAT London</strong> was built for nights like Friday. The bass-heavy sound system and compact room reach critical energy faster with a Friday crowd that arrives already warmed up from the evening. The venue&apos;s music-first philosophy pairs naturally with an audience that chose to be there rather than defaulting to the obvious Saturday option.
             </p>
             <p>
-              <strong className="text-white">TABU</strong> on Fridays offers an excellent hip-hop experience in an intimate setting. The Japanese underground atmosphere pairs well with Friday&apos;s looser energy, and the venue&apos;s regulars tend to treat Friday as their primary night out.
-            </p>
-            <p>
-              The Mayfair staples — Tape, Maddox, Cuckoo Club, Funky Buddha — deliver strong Friday nights without question, though many would argue their peak is Saturday. The choice between the two nights at these venues comes down to personal preference: slightly easier access and a more relaxed start on Friday, versus peak glamour and the biggest crowd on Saturday.
+              <strong className="text-white">TABU</strong> treats Friday as the night for its core hip-hop community. The intimate underground setting fills with regulars who consider Friday their home night — people who know the DJs, know the bartenders, and set the tone for anyone joining them. Friday at TABU feels like being let into a secret that Saturday visitors do not get to see.
             </p>
           </div>
         </div>
@@ -172,13 +179,15 @@ export default function FridayNightclubsLondonPage() {
           </h2>
           <div className="space-y-6 text-[#BBB] text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
             <p>
-              <strong className="text-white">Same-day tables are realistic.</strong> Unlike Saturdays, where most venues fill their table sheet by Thursday, Friday tables remain available longer. Messaging us by early afternoon gives you an excellent chance of securing a table at your first-choice venue. Even evening enquiries have a reasonable success rate.
+              <strong className="text-white">Same-day tables are realistic.</strong> Unlike Saturdays, where most venues fill their table sheet by Thursday, Friday tables remain available longer. Messaging us by early afternoon gives you an excellent chance of securing a table at your first-choice venue. Even evening enquiries have a reasonable success rate. For a full guide to Friday table pricing and bottle packages, see{' '}
+              <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London Bottle Service</a>.
             </p>
             <p>
               <strong className="text-white">Guestlist works well on Fridays.</strong> Venues like TABU, Cuckoo Club, Dear Darling, and Cirque Le Soir are all accessible via guestlist on Fridays. Mixed groups fare best, but the overall standard is slightly more inclusive than Saturday. Get on our guestlist by messaging WhatsApp with your group details.
             </p>
             <p>
-              <strong className="text-white">After-work transitions are common.</strong> Many successful Friday nights begin as after-work drinks that evolve organically. If your group is coming from drinks in Soho or dinner in Mayfair, let us know your timing and we can advise on which clubs will be at the right level of energy when you arrive.
+              <strong className="text-white">After-work transitions are common.</strong> Many successful Friday nights begin as after-work drinks that evolve organically. If your group is coming from drinks in Soho or dinner in Mayfair, let us know your timing and we can advise on which clubs will be at the right level of energy when you arrive. For Friday events across the Mayfair clubs specifically, check{' '}
+              <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair Tonight</a>.
             </p>
             <p>
               <strong className="text-white">Dress code still applies.</strong> The Friday dress code is the same as Saturday at every venue. Do not assume that a more relaxed atmosphere means a relaxed door. If you are coming straight from work, a smart office look is fine for most venues — you may need to lose the backpack and adjust your outfit, but the smart-work-to-club transition works on Fridays.

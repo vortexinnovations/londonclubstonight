@@ -3,14 +3,14 @@ import Link from 'next/link';
 import { getFridayClubs, getSaturdayClubs } from '@/lib/clubs';
 import TonightClubCard from '@/components/TonightClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
-import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
+import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getItemListSchema } from '@/components/SchemaMarkup';
 
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: 'Best Clubs This Weekend in London — Friday & Saturday Guide',
+  title: `Best Clubs This Weekend London — Friday & Saturday Picks [${new Date().toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}]`,
   description:
-    'The best London clubs this weekend. Friday and Saturday night picks, table availability, guestlist options, and honest recommendations from promoters who work every weekend.',
+    'Planning this weekend? The best London clubs open Friday and Saturday with table availability, guestlist options, and honest insider picks.',
   keywords: [
     'best clubs this weekend London',
     'London clubs this weekend',
@@ -74,6 +74,7 @@ export default function BestClubsThisWeekendPage() {
   const saturdayClubs = getSaturdayClubs();
   const now = new Date().toISOString();
 
+  const allWeekendClubs = [...fridayClubs, ...saturdayClubs.filter((sc) => !fridayClubs.some((fc) => fc.slug === sc.slug))];
   const articleSchema = getArticleSchema(
     'Best Clubs This Weekend in London — Friday & Saturday Guide',
     'The best London clubs this weekend with Friday and Saturday night picks, table availability, and insider tips.',
@@ -81,10 +82,18 @@ export default function BestClubsThisWeekendPage() {
     '2025-01-15'
   );
   const faqSchema = getFAQSchema(faqs);
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Best Clubs This Weekend', url: '/best-clubs-this-weekend-london' },
+  ]);
+  const itemListSchema = getItemListSchema(
+    'Best Clubs This Weekend in London',
+    allWeekendClubs.map((club) => ({ name: club.name, url: '/clubs/' + club.slug }))
+  );
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-white">
-      <SchemaMarkup schema={[articleSchema, faqSchema]} />
+      <SchemaMarkup schema={[articleSchema, faqSchema, breadcrumbSchema, itemListSchema]} />
 
       {/* Hero */}
       <section className="max-w-5xl mx-auto px-6 sm:px-8 pt-28 pb-12 md:pt-36 md:pb-16 text-center">
@@ -164,86 +173,77 @@ export default function BestClubsThisWeekendPage() {
         </div>
       </section>
 
-      {/* Weekend Planning Editorial */}
+      {/* Friday vs Saturday — Decision Guide */}
       <section className="bg-[#0A0A0A] py-20 md:py-28 border-t border-[#222]">
         <div className="max-w-3xl mx-auto px-6 sm:px-8">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
-            How to Plan Your Weekend Night Out
+            Friday vs Saturday — Which Night Suits You?
           </h2>
           <div className="space-y-5 text-[#BBB] text-sm leading-relaxed">
             <p>
-              A great weekend night in London does not happen by accident. The
-              people who have the best nights are the ones who commit to a
-              plan early, sort their booking by Thursday at the latest, and
-              arrive at the right time. The people who have mediocre nights
-              are the ones who leave the decision until 10pm on Saturday
-              evening, scramble for guestlist spots that are already full,
-              and arrive at venues that peaked an hour ago.
+              If you can only go out one night this weekend, the choice between
+              Friday and Saturday is not about quality — both deliver
+              world-class clubbing. It is about what kind of night you want.
+              The two nights attract different crowds, carry different energy,
+              and reward different approaches. This guide exists to help you
+              pick the right one.
             </p>
             <h3 className="text-xl font-bold text-white pt-4">
-              The Timing Blueprint
+              The Character of Each Night
             </h3>
             <p>
-              London clubs generally open between 10pm and 11pm, but the
-              sweet spot for arrival depends on whether you have a table or
-              are on guestlist. For table bookings, arriving between
-              11:30pm and midnight is ideal — your table is ready, the
-              room is filling up, and you settle in just as the energy
-              begins to build. For guestlist, earlier is always better.
-              Arriving at 10:30pm or 11pm gives you the shortest queue
-              and the highest chance of getting through the door before
-              the venue reaches capacity. By 12:30am, most guestlists
-              are functionally closed at the busiest venues.
+              Friday is the exhale. People arrive carrying the momentum of
+              the working week — after-work drinks that spiralled into dinner
+              plans, dinner plans that spiralled into a club booking. The
+              crowd is spontaneous, slightly looser, and riding the high of
+              having two free days ahead. Saturday is the set piece. Groups
+              have coordinated outfits, booked restaurants, arranged pre-drinks.
+              The crowd is more deliberate, more glamorous, and more invested
+              in the night going exactly as planned.
             </p>
             <h3 className="text-xl font-bold text-white pt-4">
-              Pre-Drinks Strategy
+              Side-by-Side: Friday vs Saturday
             </h3>
-            <p>
-              Pre-drinks are part of London nightlife culture, but where
-              and how you do them matters. A cocktail bar near your chosen
-              club is the smartest play — you arrive looking polished and
-              slightly warmed up, not dishevelled from a house party across
-              town. For Mayfair clubs, bars around Shepherd Market or on
-              Dover Street work well. For Soho venues, Carnaby Street and
-              the surrounding streets have excellent cocktail options. Do
-              not overdo it — the door teams can and will refuse entry to
-              anyone who appears too intoxicated, regardless of their
-              booking status.
-            </p>
+            <div className="grid grid-cols-2 gap-4 my-6">
+              <div className="bg-[#141414] border border-[#222] rounded-xl p-5">
+                <h4 className="text-white font-semibold text-sm mb-3">Friday</h4>
+                <ul className="space-y-2 text-xs text-[#BBB]">
+                  <li>End-of-week release energy</li>
+                  <li>Same-day tables often available</li>
+                  <li>Guestlist more accessible</li>
+                  <li>Door policies one notch softer</li>
+                  <li>Lower minimums at some venues</li>
+                  <li>More experimental DJ bookings</li>
+                  <li>After-work crowd adds spontaneity</li>
+                </ul>
+              </div>
+              <div className="bg-[#141414] border border-[#222] rounded-xl p-5">
+                <h4 className="text-white font-semibold text-sm mb-3">Saturday</h4>
+                <ul className="space-y-2 text-xs text-[#BBB]">
+                  <li>Peak atmosphere and fullest rooms</li>
+                  <li>Tables book out by midweek</li>
+                  <li>Guestlist competitive and limited</li>
+                  <li>Strictest door enforcement</li>
+                  <li>Higher minimums, premium pricing</li>
+                  <li>Headline DJs and strongest lineups</li>
+                  <li>International and celebratory crowd</li>
+                </ul>
+              </div>
+            </div>
             <h3 className="text-xl font-bold text-white pt-4">
-              The Dress Code Weekend Reality
+              Budget Comparison
             </h3>
             <p>
-              Dress codes are enforced more strictly on Saturdays than any
-              other night. What passes on a Thursday — clean trainers at
-              certain venues, a slightly more casual look — will get you
-              turned away on a Saturday. The rule of thumb: if you would
-              not wear it to a high-end restaurant, do not wear it to a
-              Mayfair nightclub on a Saturday night. Soho venues offer
-              slightly more creative latitude, but even Cirque Le Soir
-              expects smart-glamorous at the weekend.
-            </p>
-            <h3 className="text-xl font-bold text-white pt-4">
-              Booking Deadlines That Actually Matter
-            </h3>
-            <p>
-              For Saturday tables at top-tier venues like Tape London, book
-              by Wednesday at the absolute latest. Anything later and you are
-              relying on cancellations. For Friday tables at most venues,
-              Thursday booking is usually fine, with some availability
-              extending to Friday afternoon. Guestlist requests should be
-              submitted by Friday morning for Saturday and by Thursday
-              for Friday. Same-day guestlist requests on Saturdays are
-              a coin-flip at best.
-            </p>
-            <p>
-              The safest approach: message us on WhatsApp right now. We
-              know what is available at every venue because we have
-              direct lines to the reservations teams. We can tell you
-              in minutes whether your preferred venue has availability
-              and what your options are if it does not. For detailed
-              table pricing, minimums, and packages, check our partner
-              site{' '}
+              Friday is the more wallet-friendly night across the board. Table
+              minimums at several venues sit lower on Fridays — where a
+              Saturday table might start at £1,500, the same position on
+              Friday could be £1,000. Guestlist entry is free or low-cost at
+              more venues on Fridays. Drink prices are identical, but
+              Saturday&apos;s higher demand for premium bottles means your
+              overall spend tends to climb. If cost matters to your group,
+              Friday stretches your budget further without sacrificing the
+              quality of venue. For full table pricing across both nights,
+              see{' '}
               <a
                 href="https://londonbottleservice.com"
                 target="_blank"
@@ -254,25 +254,31 @@ export default function BestClubsThisWeekendPage() {
               </a>.
             </p>
             <h3 className="text-xl font-bold text-white pt-4">
-              Friday vs Saturday — The Honest Comparison
+              How to Choose Your Night
             </h3>
             <p>
-              Friday nights in London have a particular energy that Saturdays
-              do not — the release of the working week gives the crowd an
-              urgency and enthusiasm that feels different from Saturday&apos;s
-              more measured hedonism. The practical advantages of Friday are
-              real: easier table availability, softer door policies, lower
-              minimum spends at some venues, and less queue time. The
-              trade-off is that Saturday generally attracts the better DJs,
-              the fuller rooms, and the more committed nightlife crowd.
+              <strong className="text-white">Pick Friday if:</strong> you
+              want more flexibility, your group is deciding last minute, you
+              prefer a looser atmosphere, or your budget is a factor. Friday
+              rewards spontaneity and gives you more room to manoeuvre.
             </p>
             <p>
-              Our recommendation: if you are celebrating something special
-              or want the full London club experience, pick Saturday. If you
-              want a fun, slightly less pressured night with better odds of
-              getting exactly what you want, go Friday. Both nights deliver
-              exceptional clubbing at London&apos;s best venues. For
-              Mayfair-specific weekend planning, visit{' '}
+              <strong className="text-white">Pick Saturday if:</strong> you
+              are celebrating a birthday or special occasion, you want the
+              absolute peak London club experience, you have already planned
+              your group and outfit, and you are happy to book in advance.
+              Saturday is the night London puts on its best show.
+            </p>
+            <p>
+              <strong className="text-white">Do both if:</strong> your
+              weekend allows it. A Friday warm-up at a music-led venue like
+              BEAT or Cirque Le Soir followed by a Saturday main event at
+              Tape or TABU is the ideal London weekend. Different venues,
+              different energy, same city at its best.
+            </p>
+            <p>
+              For Mayfair-specific weekend planning across both nights,
+              visit{' '}
               <a
                 href="https://mayfairtonight.com"
                 target="_blank"
@@ -280,7 +286,9 @@ export default function BestClubsThisWeekendPage() {
                 className="text-[#C0C0C0] hover:text-white transition-colors"
               >
                 Mayfair Tonight
-              </a>.
+              </a>. Message us on WhatsApp and we will tell you exactly
+              what is available this weekend and help you pick the right
+              night for your group.
             </p>
           </div>
         </div>

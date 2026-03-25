@@ -185,6 +185,57 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Going Out Tonight? */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Going Out Tonight?
+            </h2>
+            <p className="text-[#BBB] text-base max-w-xl mx-auto">
+              Quick links to tonight&apos;s options, guestlist, and last-minute bookings.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Link
+              href="/clubs-tonight-london"
+              className="bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
+            >
+              <h3 className="text-white font-semibold mb-1">Clubs Open Tonight</h3>
+              <p className="text-[#888] text-sm">See what&apos;s open right now</p>
+            </Link>
+            <Link
+              href="/mayfair-clubs-tonight"
+              className="bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
+            >
+              <h3 className="text-white font-semibold mb-1">Mayfair Tonight</h3>
+              <p className="text-[#888] text-sm">Tonight&apos;s Mayfair options</p>
+            </Link>
+            <Link
+              href="/best-clubs-this-weekend-london"
+              className="bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
+            >
+              <h3 className="text-white font-semibold mb-1">This Weekend</h3>
+              <p className="text-[#888] text-sm">Friday &amp; Saturday picks</p>
+            </Link>
+            <Link
+              href="/guestlist-tonight-london"
+              className="bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
+            >
+              <h3 className="text-white font-semibold mb-1">Guestlist Tonight</h3>
+              <p className="text-[#888] text-sm">Free same-night entry</p>
+            </Link>
+            <Link
+              href="/last-minute-table-booking-london"
+              className="bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
+            >
+              <h3 className="text-white font-semibold mb-1">Last Minute Tables</h3>
+              <p className="text-[#888] text-sm">Book a VIP table now</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* WhatsApp CTA Banner */}
       <section className="bg-[#141414] border-y border-[#222] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 text-center">

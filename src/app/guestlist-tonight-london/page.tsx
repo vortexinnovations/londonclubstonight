@@ -7,14 +7,14 @@ import {
 } from '@/lib/clubs';
 import TonightClubCard from '@/components/TonightClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
-import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
+import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getItemListSchema } from '@/components/SchemaMarkup';
 
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: 'Get on a Guestlist Tonight in London — Same-Night Guestlist Access',
+  title: 'Get on a Guestlist Tonight London — Free Same-Night Entry',
   description:
-    'How to get on a London club guestlist tonight. Which clubs accept same-night guestlist requests, what the ratio requirements are, and how to maximise your chances at the door.',
+    'Free guestlist at London\'s best clubs tonight. Which venues still have spots, what ratio you need, and how to get your name on the door in minutes.',
   keywords: [
     'guestlist tonight London',
     'London club guestlist tonight',
@@ -87,10 +87,18 @@ export default function GuestlistTonightLondonPage() {
     '2025-01-15'
   );
   const faqSchema = getFAQSchema(faqs);
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Guestlist Tonight', url: '/guestlist-tonight-london' },
+  ]);
+  const itemListSchema = getItemListSchema(
+    'Guestlist Available Tonight in London',
+    tonightGuestlistClubs.map((club) => ({ name: club.name, url: '/clubs/' + club.slug }))
+  );
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-white">
-      <SchemaMarkup schema={[articleSchema, faqSchema]} />
+      <SchemaMarkup schema={[articleSchema, faqSchema, breadcrumbSchema, itemListSchema]} />
 
       {/* Hero */}
       <section className="max-w-5xl mx-auto px-6 sm:px-8 pt-28 pb-12 md:pt-36 md:pb-16 text-center">
