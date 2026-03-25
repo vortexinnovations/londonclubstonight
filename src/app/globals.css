@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  --accent: #C0C0C0;
+  --accent-bright: #FFFFFF;
+  --bg-dark: #0A0A0A;
+  --bg-card: #141414;
+  --bg-card-hover: #1A1A1A;
+  --border: #222222;
+  --text-primary: #F5F5F5;
+  --text-secondary: #999999;
+  --text-muted: #666666;
+  --whatsapp: #25D366;
+  --whatsapp-hover: #20BD5A;
+  --gold: #D4AF37;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
