@@ -29,7 +29,7 @@ export default function ClubsPage() {
   return (
     <main className="min-h-screen bg-[#0A0A0A]">
       {/* Breadcrumb */}
-      <div className="max-w-5xl mx-auto px-4 pt-6 pb-2">
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 pt-6 pb-2">
         <nav className="flex items-center gap-2 text-sm text-[#666]">
           <Link href="/" className="hover:text-[#999] transition-colors">
             Home
@@ -39,21 +39,23 @@ export default function ClubsPage() {
         </nav>
       </div>
 
-      {/* Header */}
-      <header className="max-w-5xl mx-auto px-4 pt-8 pb-10">
-        <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
-          London Nightclubs
-        </h1>
-        <p className="text-lg text-[#999] leading-relaxed max-w-2xl">
-          The complete list of London&apos;s best nightclubs, ranked by our team.
-          Every club includes insider tips on entry, dress code, table prices,
-          and what to expect on the night.
-        </p>
+      {/* Hero */}
+      <header className="py-20 md:py-28 text-center">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+            London Nightclubs
+          </h1>
+          <p className="text-lg text-[#999] leading-relaxed max-w-2xl mx-auto">
+            The complete list of London&apos;s best nightclubs, ranked by our team.
+            Every club includes insider tips on entry, dress code, table prices,
+            and what to expect on the night.
+          </p>
+        </div>
       </header>
 
       {/* Club Grid */}
-      <section className="max-w-5xl mx-auto px-4 pb-12">
-        <div className="grid md:grid-cols-2 gap-5">
+      <section className="max-w-6xl mx-auto px-6 sm:px-8 pb-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {getOpenClubs().map((club, index) => (
             <ClubCard
               key={club.slug}
@@ -66,60 +68,69 @@ export default function ClubsPage() {
       </section>
 
       {/* CTA */}
-      <section className="max-w-5xl mx-auto px-4 pb-16">
-        <div className="bg-[#141414] border border-[#222] rounded-xl p-8 text-center">
-          <h2 className="text-2xl font-bold text-white mb-3">
-            Not Sure Which Club?
-          </h2>
-          <p className="text-[#999] mb-6 max-w-lg mx-auto">
-            Message us on WhatsApp and we&apos;ll recommend the best club for
-            your group, budget, and music taste.
-          </p>
-          <div className="flex justify-center">
-            <WhatsAppCTA />
+      <section className="py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8">
+          <div className="bg-[#141414] border border-[#222] rounded-2xl p-10 md:p-14 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+              Not Sure Which Club?
+            </h2>
+            <p className="text-[#999] max-w-2xl mx-auto text-center mb-8">
+              Message us on WhatsApp and we&apos;ll recommend the best club for
+              your group, budget, and music taste.
+            </p>
+            <div className="flex justify-center">
+              <WhatsAppCTA />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Internal Links */}
-      <section className="max-w-5xl mx-auto px-4 pb-16">
-        <h2 className="text-xl font-bold text-white mb-6">Explore More</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
-          <Link
-            href="/guides/getting-into-london-clubs"
-            className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-colors"
-          >
-            <span className="text-[#C0C0C0] font-semibold">Entry Guide</span>
-            <p className="text-[#666] text-sm mt-1">
-              How to get past the door at London&apos;s best clubs
-            </p>
-          </Link>
-          <a
-            href="https://londonbottleservice.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-colors"
-          >
-            <span className="text-[#C0C0C0] font-semibold">
-              Table &amp; Bottle Pricing
-            </span>
-            <p className="text-[#666] text-sm mt-1">
-              Full menus at londonbottleservice.com
-            </p>
-          </a>
-          <a
-            href="https://mayfairtonight.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-colors"
-          >
-            <span className="text-[#C0C0C0] font-semibold">
-              Tonight&apos;s Events
-            </span>
-            <p className="text-[#666] text-sm mt-1">
-              What&apos;s on tonight at mayfairtonight.com
-            </p>
-          </a>
+      <section className="py-20 md:py-28 border-t border-[#222]">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+            Explore More
+          </h2>
+          <p className="text-[#999] max-w-2xl mx-auto text-center mb-12">
+            Guides, pricing, and event listings to help you plan the perfect night.
+          </p>
+          <div className="grid sm:grid-cols-3 gap-6">
+            <Link
+              href="/guides/getting-into-london-clubs"
+              className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-6 text-center transition-colors"
+            >
+              <span className="text-[#C0C0C0] font-semibold">Entry Guide</span>
+              <p className="text-[#666] text-sm mt-2">
+                How to get past the door at London&apos;s best clubs
+              </p>
+            </Link>
+            <a
+              href="https://londonbottleservice.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-6 text-center transition-colors"
+            >
+              <span className="text-[#C0C0C0] font-semibold">
+                Table &amp; Bottle Pricing
+              </span>
+              <p className="text-[#666] text-sm mt-2">
+                Full menus at londonbottleservice.com
+              </p>
+            </a>
+            <a
+              href="https://mayfairtonight.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-6 text-center transition-colors"
+            >
+              <span className="text-[#C0C0C0] font-semibold">
+                Tonight&apos;s Events
+              </span>
+              <p className="text-[#666] text-sm mt-2">
+                What&apos;s on tonight at mayfairtonight.com
+              </p>
+            </a>
+          </div>
         </div>
       </section>
     </main>

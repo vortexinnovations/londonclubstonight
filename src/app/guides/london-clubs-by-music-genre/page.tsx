@@ -18,13 +18,13 @@ const genreSections = [
     id: 'hip-hop-rnb',
     title: 'Hip-Hop & RnB',
     description: 'The dominant sound across most of London\'s Mayfair clubs. If you want hip-hop, you have the most options — the question is which venue suits your style and budget.',
-    slugs: ['tape-london', 'cirque-le-soir', 'tabu-london', 'libertine', 'luxx-club', 'beat-london', 'cuckoo-club'],
+    slugs: ['tape-london', 'cirque-le-soir', 'tabu-london', 'funky-buddha', 'luna-club-london', 'beat-london', 'cuckoo-club'],
     notes: [
-      { slug: 'tape-london', note: 'The gold standard for hip-hop in an intimate, exclusive setting. The sound system was originally designed for music production and the difference is audible. Very Hard entry.' },
+      { slug: 'tape-london', note: 'The gold standard for hip-hop in an intimate, exclusive setting. The sound system was originally designed for music production and the difference is audible.' },
       { slug: 'cirque-le-soir', note: 'Hip-hop and RnB played loud over circus entertainment. The music is the backdrop to the spectacle — expect current hits and crowd-pleasers rather than deep cuts.' },
       { slug: 'tabu-london', note: 'Arguably the purest hip-hop experience in Mayfair. The Japanese underground theme combined with focused hip-hop programming makes this feel different from the rest.' },
-      { slug: 'libertine', note: 'Fashion-forward hip-hop. The DJs here lean into current hip-hop and RnB with a slightly more curated feel than mainstream venues.' },
-      { slug: 'luxx-club', note: 'Open format with a lean towards hip-hop. The LED light shows complement the music and the DJs move fluidly between hip-hop, RnB, and other genres.' },
+      { slug: 'funky-buddha', note: 'The legendary name carries a fun, accessible hip-hop and RnB soundtrack. DJs play crowd-pleasers and classics alongside current hits — the kind of music that gets everyone moving.' },
+      { slug: 'luna-club-london', note: 'A newer addition with a global edge — hip-hop and RnB blended with Afrobeats and amapiano. The production setup and lighting add a theatrical dimension to the music.' },
       { slug: 'beat-london', note: 'The sound system makes the hip-hop hit harder here than almost anywhere else. This is a venue for people who care about audio quality.' },
       { slug: 'cuckoo-club', note: 'The downstairs room at Cuckoo is dedicated hip-hop and RnB — louder, more energetic, and younger. The upstairs room is house music if you want a break.' },
     ],
@@ -56,9 +56,9 @@ const genreSections = [
     id: 'open-format',
     title: 'Open Format',
     description: 'Open format means the DJ plays across genres — hip-hop, house, pop, RnB, dance — reading the room and adjusting. These clubs prioritise energy over genre purity.',
-    slugs: ['luxx-club', 'the-london-reign', 'lio-london', 'beat-london'],
+    slugs: ['luna-club-london', 'the-london-reign', 'selene-london', 'beat-london'],
     notes: [
-      { slug: 'luxx-club', note: 'The LED light show pairs well with the open format approach. DJs move fluidly between genres, with a lean towards hip-hop. The visual spectacle means the music is part of a larger experience.' },
+      { slug: 'luna-club-london', note: 'The production setup pairs well with the open format approach. DJs move fluidly between hip-hop, RnB, Afrobeats, and amapiano, creating a global sound that keeps the energy high all night.' },
       { slug: 'the-london-reign', note: 'The showclub format means the music shifts throughout the evening — from sophisticated dinner accompaniment to full party energy. Expect mainstream hits, pop, RnB, and crowd-pleasers.' },
       { slug: 'selene-london', note: 'Elegant cocktail-bar-to-club concept with a sophisticated house soundtrack. The refined setting means the music enhances the atmosphere rather than dominating it — perfect for the grown-up crowd.' },
       { slug: 'beat-london', note: 'Open format delivered through one of London\'s best sound systems. The DJs vary by night but the consistent thread is energy and quality audio.' },
@@ -80,7 +80,7 @@ export default function MusicGenrePage() {
       />
 
       <div className="bg-[#0A0A0A] min-h-screen">
-        <div className="max-w-4xl mx-auto px-4 py-16 sm:py-24">
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 py-20 md:py-28">
           <div className="mb-4 flex gap-4 text-sm">
             <Link href="/" className="text-[#999] hover:text-white transition-colors">
               Home
@@ -91,17 +91,17 @@ export default function MusicGenrePage() {
             </Link>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
             London Clubs by Music Genre
           </h1>
-          <p className="text-[#999] text-lg mb-12 max-w-2xl">
+          <p className="text-center text-[#999] max-w-2xl mx-auto mb-12">
             Finding the right club is as much about the music as the venue. Here is every club categorised by what they actually play, with honest assessments of which is best for each genre.
           </p>
 
           {/* Quick Jump */}
-          <div className="bg-[#141414] border border-[#222] rounded-xl p-6 mb-12">
-            <h2 className="text-sm font-semibold text-[#C0C0C0] mb-3">Jump to genre</h2>
-            <div className="flex flex-wrap gap-3">
+          <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 mb-12">
+            <h2 className="text-sm font-semibold text-[#C0C0C0] mb-3 text-center">Jump to genre</h2>
+            <div className="flex flex-wrap gap-3 justify-center">
               {genreSections.map((section) => (
                 <a
                   key={section.id}
@@ -116,18 +116,15 @@ export default function MusicGenrePage() {
 
           {genreSections.map((section) => (
             <section key={section.id} id={section.id} className="mb-16">
-              <div className="flex items-center gap-3 mb-3">
-                <h2 className="text-2xl font-bold text-white">{section.title}</h2>
-                <div className="h-px flex-1 bg-[#222]" />
-              </div>
-              <p className="text-[#999] text-sm mb-6 max-w-2xl">{section.description}</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">{section.title}</h2>
+              <p className="text-center text-[#999] max-w-2xl mx-auto mb-12">{section.description}</p>
 
-              <div className="grid gap-4 mb-6">
+              <div className="grid gap-6 mb-6">
                 {section.notes.map(({ slug, note }) => {
                   const club = clubs.find(c => c.slug === slug);
                   if (!club) return null;
                   return (
-                    <div key={slug} className="bg-[#141414] border border-[#222] rounded-xl p-6">
+                    <div key={slug} className="bg-[#141414] border border-[#222] rounded-2xl p-7">
                       <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 mb-3">
                         <div>
                           <Link href={`/clubs/${club.slug}`} className="text-lg font-bold text-white hover:text-[#C0C0C0] transition-colors">
@@ -137,9 +134,6 @@ export default function MusicGenrePage() {
                             {club.area} &middot; {club.musicGenres.join(', ')} &middot; Closes {club.closingTime}
                           </p>
                         </div>
-                        <span className="text-[#666] text-xs border border-[#222] px-2 py-1 rounded whitespace-nowrap">
-                          {club.entryDifficulty}
-                        </span>
                       </div>
                       <p className="text-[#999] text-sm leading-relaxed">{note}</p>
                       <div className="mt-3">
@@ -152,7 +146,7 @@ export default function MusicGenrePage() {
                 })}
               </div>
 
-              <div className="bg-[#0A0A0A] border border-[#222] rounded-lg p-4">
+              <div className="bg-[#0A0A0A] border border-[#222] rounded-2xl p-7">
                 <p className="text-sm">
                   <span className="text-[#C0C0C0] font-semibold">Best for {section.title.toLowerCase()}: </span>
                   <span className="text-[#999]">{section.bestFor}</span>
@@ -162,8 +156,9 @@ export default function MusicGenrePage() {
           ))}
 
           {/* Summary */}
-          <div className="bg-[#141414] border border-[#222] rounded-xl p-6 sm:p-8 mb-12">
-            <h2 className="text-2xl font-bold text-white mb-4">The Bottom Line</h2>
+          <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">The Bottom Line</h2>
+            <p className="text-center text-[#999] max-w-2xl mx-auto mb-8">A quick summary to help you choose.</p>
             <div className="space-y-4 text-[#999] text-sm leading-relaxed">
               <p>
                 If hip-hop is your thing, you have the most choice — nearly every Mayfair club leans that direction. The differences come down to exclusivity (Tape), atmosphere (TABU, Cirque), and sound quality (BEAT).
@@ -181,7 +176,7 @@ export default function MusicGenrePage() {
           </div>
 
           {/* WhatsApp CTA */}
-          <div className="bg-[#141414] border border-[#222] rounded-xl p-6 sm:p-8 mb-12 text-center">
+          <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 mb-12 text-center">
             <h2 className="text-xl font-bold text-white mb-3">
               Not sure which club suits your taste?
             </h2>
@@ -196,10 +191,10 @@ export default function MusicGenrePage() {
             <h2 className="text-lg font-bold text-white mb-4">Related Guides</h2>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/guides/hardest-clubs-to-get-into" className="text-[#C0C0C0] hover:text-white text-sm transition-colors">
-                Hardest Clubs to Get Into &rarr;
+                London&apos;s Most Exclusive Clubs &rarr;
               </Link>
               <Link href="/guides/how-to-get-into-london-clubs" className="text-[#C0C0C0] hover:text-white text-sm transition-colors">
-                How to Get Into London Clubs &rarr;
+                Guestlists &amp; Table Bookings Guide &rarr;
               </Link>
               <Link href="/guides/clubs-open-late" className="text-[#C0C0C0] hover:text-white text-sm transition-colors">
                 Clubs Open Late in London &rarr;

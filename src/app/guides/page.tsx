@@ -5,8 +5,8 @@ import WhatsAppCTA from '@/components/WhatsAppCTA';
 
 export const metadata: Metadata = {
   title: 'London Nightclub Guides — Everything You Need to Know',
-  description: 'Insider guides to London nightlife. Entry tips, late-night venues, music genres, dress codes, and honest advice from promoters who know the scene.',
-  keywords: ['London nightclub guides', 'London club tips', 'London nightlife guide', 'how to get into London clubs'],
+  description: 'Insider guides to London nightlife. Late-night venues, music genres, dress codes, guestlists, table bookings, and honest advice from promoters who know the scene.',
+  keywords: ['London nightclub guides', 'London club tips', 'London nightlife guide', 'London club guestlist'],
   alternates: {
     canonical: 'https://londonclubstonight.com/guides',
   },
@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 
 const guides = [
   {
-    title: 'Hardest Clubs to Get Into in London',
-    description: 'Every club ranked by entry difficulty, with honest advice on what actually works at the door. From near-impossible walk-ins to easy advance tickets.',
+    title: 'London\'s Most Exclusive Clubs',
+    description: 'A guide to London\'s most premium nightlife experiences. What makes each venue special, what to expect, and how to arrange your night.',
     href: '/guides/hardest-clubs-to-get-into',
   },
   {
@@ -24,8 +24,8 @@ const guides = [
     href: '/guides/clubs-open-late',
   },
   {
-    title: 'How to Get Into London\'s Exclusive Clubs',
-    description: 'The complete guide to guestlists, table bookings, walk-ins, dress codes, group composition, and everything else that affects whether you get past the door.',
+    title: 'Guestlists & Table Bookings — The Complete Guide',
+    description: 'Everything you need to know about guestlists, table bookings, dress codes, group composition, and planning your night at London clubs.',
     href: '/guides/how-to-get-into-london-clubs',
   },
   {
@@ -41,25 +41,25 @@ export default function GuidesPage() {
       <SchemaMarkup
         schema={getArticleSchema(
           'London Nightclub Guides — Everything You Need to Know',
-          'Insider guides to London nightlife. Entry tips, late-night venues, music genres, dress codes, and honest advice from promoters who know the scene.',
+          'Insider guides to London nightlife. Late-night venues, music genres, dress codes, guestlists, table bookings, and honest advice from promoters who know the scene.',
           '/guides',
           '2025-01-01'
         )}
       />
 
       <div className="bg-[#0A0A0A] min-h-screen">
-        <div className="max-w-4xl mx-auto px-4 py-16 sm:py-24">
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 py-20 md:py-28">
           <div className="mb-4">
             <Link href="/" className="text-[#999] hover:text-white text-sm transition-colors">
               &larr; Back to all clubs
             </Link>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
             London Nightclub Guides
           </h1>
-          <p className="text-[#999] text-lg mb-12 max-w-2xl">
-            Everything you need to know about London nightlife. Written by promoters who work the doors, book the tables, and know how the scene actually works.
+          <p className="text-center text-[#999] max-w-2xl mx-auto mb-12">
+            Everything you need to know about London nightlife. Written by promoters who work the scene, book the tables, and know how it all works.
           </p>
 
           <div className="grid gap-6">
@@ -67,12 +67,12 @@ export default function GuidesPage() {
               <Link
                 key={guide.href}
                 href={guide.href}
-                className="block bg-[#141414] border border-[#222] rounded-xl p-6 sm:p-8 hover:border-[#C0C0C0]/30 transition-colors group"
+                className="block bg-[#141414] border border-[#222] rounded-2xl p-7 hover:border-[#C0C0C0]/30 transition-colors group text-center"
               >
                 <h2 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-[#C0C0C0] transition-colors">
                   {guide.title}
                 </h2>
-                <p className="text-[#999] leading-relaxed">
+                <p className="text-[#999] leading-relaxed max-w-xl mx-auto">
                   {guide.description}
                 </p>
                 <span className="inline-block mt-4 text-[#C0C0C0] text-sm font-medium">
@@ -82,7 +82,7 @@ export default function GuidesPage() {
             ))}
           </div>
 
-          <div className="mt-16 bg-[#141414] border border-[#222] rounded-xl p-6 sm:p-8 text-center">
+          <div className="mt-16 bg-[#141414] border border-[#222] rounded-2xl p-7 text-center">
             <h2 className="text-xl font-bold text-white mb-3">
               Need help planning your night?
             </h2>

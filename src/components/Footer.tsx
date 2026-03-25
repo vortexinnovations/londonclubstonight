@@ -14,9 +14,9 @@ const clubLinks = [
 
 const guideLinks = [
   { href: '/best-clubs-in-london', label: 'Best Clubs in London' },
-  { href: '/guides/hardest-clubs-to-get-into', label: 'Hardest to Get Into' },
+  { href: '/guides/hardest-clubs-to-get-into', label: 'Most Exclusive Clubs' },
   { href: '/guides/clubs-open-late', label: 'Clubs Open Late' },
-  { href: '/guides/how-to-get-into-london-clubs', label: 'How to Get In' },
+  { href: '/guides/how-to-get-into-london-clubs', label: 'Guestlist & Bookings' },
   { href: '/guides/london-clubs-by-music-genre', label: 'Clubs by Genre' },
 ];
 
@@ -43,15 +43,18 @@ const networkLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#080808] border-t border-[#222] mt-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
+    <footer className="relative bg-[#080808] mt-20">
+      {/* Subtle gradient accent line above footer */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C0C0C0]/30 to-transparent" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-10 mb-16">
           <div>
-            <h3 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Clubs</h3>
-            <ul className="space-y-2">
+            <h3 className="text-white font-semibold text-sm mb-5 uppercase tracking-widest">Clubs</h3>
+            <ul className="space-y-3">
               {clubLinks.map(link => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-[#666] hover:text-white text-sm transition-colors">
+                  <Link href={link.href} className="text-[#666] hover:text-[#C0C0C0] text-sm transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -65,11 +68,11 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Guides</h3>
-            <ul className="space-y-2">
+            <h3 className="text-white font-semibold text-sm mb-5 uppercase tracking-widest">Guides</h3>
+            <ul className="space-y-3">
               {guideLinks.map(link => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-[#666] hover:text-white text-sm transition-colors">
+                  <Link href={link.href} className="text-[#666] hover:text-[#C0C0C0] text-sm transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -78,11 +81,11 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Areas</h3>
-            <ul className="space-y-2">
+            <h3 className="text-white font-semibold text-sm mb-5 uppercase tracking-widest">Areas</h3>
+            <ul className="space-y-3">
               {areaLinks.map(link => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-[#666] hover:text-white text-sm transition-colors">
+                  <Link href={link.href} className="text-[#666] hover:text-[#C0C0C0] text-sm transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -91,11 +94,11 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Blog</h3>
-            <ul className="space-y-2">
+            <h3 className="text-white font-semibold text-sm mb-5 uppercase tracking-widest">Blog</h3>
+            <ul className="space-y-3">
               {blogLinks.map(link => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-[#666] hover:text-white text-sm transition-colors">
+                  <Link href={link.href} className="text-[#666] hover:text-[#C0C0C0] text-sm transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -109,15 +112,15 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Our Network</h3>
-            <ul className="space-y-2">
+            <h3 className="text-white font-semibold text-sm mb-5 uppercase tracking-widest">Our Network</h3>
+            <ul className="space-y-3">
               {networkLinks.map(link => (
                 <li key={link.href}>
                   <a
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#666] hover:text-white text-sm transition-colors"
+                    className="text-[#666] hover:text-[#C0C0C0] text-sm transition-colors"
                   >
                     {link.label}
                   </a>
@@ -127,15 +130,15 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-[#222] pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-[#222] pt-10 flex flex-col md:flex-row justify-between items-center gap-4 text-center">
           <div className="text-[#666] text-sm">
             © {new Date().getFullYear()} London Clubs Tonight. The definitive guide to London&apos;s best nightclubs.
           </div>
           <div className="flex items-center gap-6">
-            <Link href="/contact" className="text-[#666] hover:text-white text-sm transition-colors">
+            <Link href="/contact" className="text-[#666] hover:text-[#C0C0C0] text-sm transition-colors">
               Contact
             </Link>
-            <Link href="/best-clubs-in-london" className="text-[#666] hover:text-white text-sm transition-colors">
+            <Link href="/best-clubs-in-london" className="text-[#666] hover:text-[#C0C0C0] text-sm transition-colors">
               Best Clubs
             </Link>
           </div>

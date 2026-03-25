@@ -84,10 +84,10 @@ const guides = [
       'Guestlists, table bookings, dress codes, and the ratio rules nobody tells you about. The honest insider guide.',
   },
   {
-    title: 'Hardest Clubs to Get Into',
+    title: 'Most Exclusive London Clubs',
     href: '/guides/hardest-clubs-to-get-into',
     description:
-      'Which clubs are genuinely hard to enter, why, and what you can do to maximise your chances at the door.',
+      'Which clubs are the most exclusive, why, and what you can do to maximise your chances at the door.',
   },
   {
     title: 'Clubs Open Late',
@@ -137,8 +137,8 @@ export default function HomePage() {
     <>
       {/* Hero Section */}
       <section className="relative bg-[#0A0A0A] border-b border-[#222]">
-        <div className="max-w-5xl mx-auto px-4 py-20 md:py-28 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8 py-28 md:py-36 text-center">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight">
             London Clubs Tonight
           </h1>
           <p className="text-lg md:text-xl text-[#999] max-w-2xl mx-auto mb-4 leading-relaxed">
@@ -150,32 +150,34 @@ export default function HomePage() {
             Updated daily by promoters on the ground. Real recommendations, not
             paid placements.
           </p>
-          <WhatsAppCTA variant="hero" />
+          <div className="flex justify-center">
+            <WhatsAppCTA variant="hero" />
+          </div>
         </div>
       </section>
 
       {/* Tonight's Best Options */}
-      <section className="bg-[#0A0A0A] py-16 md:py-20">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="mb-10">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
+      <section className="bg-[#0A0A0A] py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Tonight&apos;s Best Options
             </h2>
-            <p className="text-[#999] text-base max-w-2xl">
+            <p className="text-[#999] text-base max-w-xl mx-auto">
               These are the clubs we&apos;d actually send our friends to tonight.
               Every recommendation is based on what&apos;s genuinely good — the
               music, the crowd, and whether the night is worth the entry price.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {tonightPicks.map((club, i) => (
               <ClubCard key={club.slug} club={club} featured={i < 2} showArea />
             ))}
           </div>
-          <div className="text-center mt-10">
+          <div className="flex justify-center mt-12">
             <Link
               href="/clubs"
-              className="inline-block bg-[#141414] hover:bg-[#1A1A1A] border border-[#222] hover:border-[#333] text-[#C0C0C0] px-8 py-3 rounded-lg text-sm font-medium transition-all"
+              className="inline-block bg-[#141414] hover:bg-[#1A1A1A] border border-[#222] hover:border-[#333] text-[#C0C0C0] px-10 py-4 rounded-xl text-base font-medium transition-all"
             >
               View All Clubs →
             </Link>
@@ -184,47 +186,49 @@ export default function HomePage() {
       </section>
 
       {/* WhatsApp CTA Banner */}
-      <section className="bg-[#141414] border-y border-[#222] py-12 md:py-14">
-        <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-xl md:text-2xl font-bold text-white mb-3">
+      <section className="bg-[#141414] border-y border-[#222] py-16 md:py-20">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
             Not Sure Where to Go?
           </h2>
-          <p className="text-[#999] text-sm mb-6 max-w-lg mx-auto">
+          <p className="text-[#999] text-sm mb-8 max-w-lg mx-auto">
             Message us on WhatsApp and we&apos;ll recommend the right club for
             your group, sort your table or guestlist, and make sure you get in.
             No fees, no catches.
           </p>
-          <WhatsAppCTA />
+          <div className="flex justify-center">
+            <WhatsAppCTA />
+          </div>
         </div>
       </section>
 
-      {/* Quick Guide Section */}
-      <section className="bg-[#0A0A0A] py-16 md:py-20">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="mb-10">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
+      {/* Quick Guides Section */}
+      <section className="bg-[#0A0A0A] py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Quick Guides
             </h2>
-            <p className="text-[#999] text-base max-w-2xl">
+            <p className="text-[#999] text-base max-w-xl mx-auto">
               Everything you need to know before going out in London tonight.
               Written by people who actually work in the clubs, not travel
               bloggers who visited once.
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {guides.map((guide) => (
               <Link
                 key={guide.href}
                 href={guide.href}
-                className="block bg-[#141414] hover:bg-[#1A1A1A] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-all duration-300 group"
+                className="block bg-[#141414] hover:bg-[#1A1A1A] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300 group"
               >
-                <h3 className="font-bold text-white text-base mb-2 group-hover:text-[#C0C0C0] transition-colors">
+                <h3 className="font-bold text-white text-base mb-2 text-center group-hover:text-[#C0C0C0] transition-colors">
                   {guide.title}
                 </h3>
                 <p className="text-[#999] text-sm leading-relaxed">
                   {guide.description}
                 </p>
-                <span className="inline-block mt-3 text-xs text-[#C0C0C0]">
+                <span className="inline-block mt-4 text-xs text-[#C0C0C0]">
                   Read Guide →
                 </span>
               </Link>
@@ -234,33 +238,31 @@ export default function HomePage() {
       </section>
 
       {/* Area Breakdown */}
-      <section className="bg-[#0A0A0A] border-t border-[#222] py-16 md:py-20">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="mb-10">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
+      <section className="bg-[#0A0A0A] border-t border-[#222] py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Clubs by Area
             </h2>
-            <p className="text-[#999] text-base max-w-2xl">
+            <p className="text-[#999] text-base max-w-xl mx-auto">
               London&apos;s nightlife is spread across distinct pockets, each
               with its own character. Where you go matters as much as which club
               you pick.
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid sm:grid-cols-2 gap-6">
             {areas.map((area) => (
               <Link
-                key={area.slug}
+                key={area.slug + area.name}
                 href={`/areas/${area.slug}`}
-                className="block bg-[#141414] hover:bg-[#1A1A1A] border border-[#222] hover:border-[#333] rounded-xl p-6 transition-all duration-300 group"
+                className="block bg-[#141414] hover:bg-[#1A1A1A] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300 group"
               >
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="font-bold text-white text-lg group-hover:text-[#C0C0C0] transition-colors">
-                    {area.name}
-                  </h3>
-                  <span className="text-xs text-[#666] bg-white/5 px-2.5 py-1 rounded-full">
-                    {area.clubCount} {area.clubCount === 1 ? 'club' : 'clubs'}
-                  </span>
-                </div>
+                <h3 className="font-bold text-white text-lg mb-2 group-hover:text-[#C0C0C0] transition-colors">
+                  {area.name}
+                </h3>
+                <span className="inline-block text-xs text-[#666] bg-white/5 px-2.5 py-1 rounded-full mb-3">
+                  {area.clubCount} {area.clubCount === 1 ? 'club' : 'clubs'}
+                </span>
                 <p className="text-[#999] text-sm leading-relaxed">
                   {area.description}
                 </p>
@@ -274,26 +276,26 @@ export default function HomePage() {
       </section>
 
       {/* Network Cross-Links */}
-      <section className="bg-[#141414] border-t border-[#222] py-12 md:py-14">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="mb-8 text-center">
-            <h2 className="text-lg md:text-xl font-bold text-white mb-2">
+      <section className="bg-[#141414] border-t border-[#222] py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
               Our Network
             </h2>
-            <p className="text-[#666] text-sm">
+            <p className="text-[#999] text-sm max-w-xl mx-auto">
               Specialist guides from our London nightlife network
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {networkSites.map((site) => (
               <a
                 key={site.url}
                 href={site.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block bg-[#0A0A0A] hover:bg-[#1A1A1A] border border-[#222] hover:border-[#333] rounded-xl p-5 text-center transition-all duration-300 group"
+                className="block bg-[#0A0A0A] hover:bg-[#1A1A1A] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300 group"
               >
-                <h3 className="font-semibold text-white text-sm mb-1 group-hover:text-[#C0C0C0] transition-colors">
+                <h3 className="font-semibold text-white text-sm mb-2 group-hover:text-[#C0C0C0] transition-colors">
                   {site.name}
                 </h3>
                 <p className="text-[#666] text-xs">{site.description}</p>
@@ -304,9 +306,9 @@ export default function HomePage() {
       </section>
 
       {/* Bottom SEO Content */}
-      <section className="bg-[#0A0A0A] border-t border-[#222] py-16 md:py-20">
-        <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-xl md:text-2xl font-bold text-white mb-6">
+      <section className="bg-[#0A0A0A] border-t border-[#222] py-20 md:py-28">
+        <div className="max-w-3xl mx-auto px-6 sm:px-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
             Going Out in London Tonight
           </h2>
           <div className="space-y-4 text-[#999] text-sm leading-relaxed">

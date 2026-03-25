@@ -1,13 +1,12 @@
 import type { Metadata } from 'next';
-import { clubs } from '@/lib/clubs';
 import Link from 'next/link';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'How to Get Into London\'s Exclusive Clubs — The Complete Guide',
-  description: 'The complete guide to getting into London nightclubs. Guestlists, table bookings, walk-ins, dress codes, group composition, and age requirements explained honestly.',
-  keywords: ['how to get into clubs London', 'London club entry tips', 'do you need a table London clubs', 'London club door policy', 'London club dress code'],
+  title: 'Guestlists & Table Bookings — The Complete Guide to London Clubs',
+  description: 'The complete guide to guestlists, table bookings, dress codes, group composition, and age requirements at London nightclubs. Honest advice from promoters.',
+  keywords: ['London club guestlist', 'London club table booking', 'London club dress code', 'London club entry tips', 'London nightclub guide'],
   alternates: {
     canonical: 'https://londonclubstonight.com/guides/how-to-get-into-london-clubs',
   },
@@ -16,7 +15,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'What is a guestlist at a London club?',
-    answer: 'A guestlist is a pre-approved list of names submitted to the door team before the night. Being on the guestlist means you are expected — but at exclusive venues, it does not guarantee entry. You still need to meet the dress code and pass the door team\'s assessment. At less exclusive venues, guestlist is essentially free entry with reduced or no queue.',
+    answer: 'A guestlist is a pre-approved list of names submitted to the door team before the night. Being on the guestlist means you are expected — you get priority consideration and usually free entry or a reduced queue. Contact a promoter to get your names added.',
   },
   {
     question: 'How do I get on a club guestlist in London?',
@@ -24,7 +23,7 @@ const faqs = [
   },
   {
     question: 'Do I need to book a table to get into a London club?',
-    answer: 'Not always, but it is the only way to guarantee entry at every venue. At moderate-difficulty clubs like Funky Buddha, Cuckoo, or Luna Club, guestlist works well. At the hardest clubs like Tape London and Cirque Le Soir, a table booking is practically essential. Tables start from £1,000 at most venues.',
+    answer: 'Not always. Guestlist works well at most venues and is completely free. A table booking is the premium option that guarantees entry everywhere and gives you a reserved space with bottle service. Tables start from £1,000 at most venues.',
   },
   {
     question: 'What is the dress code for London clubs?',
@@ -32,19 +31,15 @@ const faqs = [
   },
   {
     question: 'Can a group of guys get into London clubs?',
-    answer: 'It is the hardest group composition to get in with. All-male groups without a table booking will be turned away from most Mayfair clubs. If you have a table, group composition does not matter. On guestlist, mixed groups are strongly preferred. If your group is all male, your best options are booking a table or going to Ministry of Sound where entry is ticket-based.',
+    answer: 'Mixed groups have the best experience at Mayfair clubs. All-male groups are best served by booking a table, which guarantees entry regardless of group composition. Ministry of Sound is ticket-based so group composition does not apply there.',
   },
   {
     question: 'What time should I arrive at London clubs?',
-    answer: 'Most clubs open between 10pm and 11pm. For guestlist entry, arriving between 11pm and midnight gives you the best chance — you beat the main rush and the door team has capacity to work with. After 1am, some venues reach capacity and stop accepting new guests, even from the guestlist. For table bookings, arrive whenever suits you.',
+    answer: 'Most clubs open between 10pm and 11pm. For guestlist entry, arriving between 11pm and midnight gives you the best experience — you beat the main rush. After 1am, some venues reach capacity. For table bookings, arrive whenever suits you.',
   },
   {
     question: 'How old do you have to be to get into London clubs?',
     answer: 'The legal minimum is 18, and all clubs will ID you if you look under 25. Most Mayfair clubs have a practical minimum of 21 for men and 19-20 for women, though this is not officially stated. Bring photo ID — passport or driving licence. Student IDs are not accepted.',
-  },
-  {
-    question: 'What happens if I am turned away at the door?',
-    answer: 'Do not argue. The door team\'s decision is final and making a scene will guarantee you never get in. Walk away calmly and message us — we can often arrange entry at an alternative venue the same night. Getting turned away is not the end of your night, but losing your composure at the door is.',
   },
   {
     question: 'Is it worth paying for a table at a London club?',
@@ -52,7 +47,7 @@ const faqs = [
   },
   {
     question: 'Can I get into clubs without spending money?',
-    answer: 'Yes — through guestlist. Guestlist is free and available at most venues. It does not guarantee entry at the most exclusive clubs, but at moderate-difficulty venues it works well. You will still need to buy your own drinks once inside, but there is no entry fee or minimum spend.',
+    answer: 'Yes — through guestlist. Guestlist is free and available at most venues. You will still need to buy your own drinks once inside, but there is no entry fee or minimum spend.',
   },
 ];
 
@@ -62,8 +57,8 @@ export default function HowToGetInPage() {
       <SchemaMarkup
         schema={[
           getArticleSchema(
-            'How to Get Into London\'s Exclusive Clubs — The Complete Guide',
-            'The complete guide to guestlists, table bookings, walk-ins, dress codes, and everything that affects entry at London clubs.',
+            'Guestlists & Table Bookings — The Complete Guide to London Clubs',
+            'The complete guide to guestlists, table bookings, dress codes, and everything you need to plan your night at London clubs.',
             '/guides/how-to-get-into-london-clubs',
             '2025-01-01'
           ),
@@ -72,7 +67,7 @@ export default function HowToGetInPage() {
       />
 
       <div className="bg-[#0A0A0A] min-h-screen">
-        <div className="max-w-4xl mx-auto px-4 py-16 sm:py-24">
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 py-20 md:py-28">
           <div className="mb-4 flex gap-4 text-sm">
             <Link href="/" className="text-[#999] hover:text-white transition-colors">
               Home
@@ -83,30 +78,30 @@ export default function HowToGetInPage() {
             </Link>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-            How to Get Into London&apos;s Exclusive Clubs
+          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+            Guestlists &amp; Table Bookings
           </h1>
-          <p className="text-[#999] text-lg mb-12 max-w-2xl">
-            The straightforward, no-nonsense guide to how entry actually works at London nightclubs. We are promoters — this is what we do every night.
+          <p className="text-center text-[#999] max-w-2xl mx-auto mb-12">
+            The practical guide to planning your night at London clubs. We are promoters — this is what we do every night.
           </p>
 
           {/* Table of Contents */}
-          <div className="bg-[#141414] border border-[#222] rounded-xl p-6 mb-12">
+          <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 mb-12">
             <h2 className="text-sm font-semibold text-[#C0C0C0] mb-3">In this guide</h2>
             <div className="grid sm:grid-cols-2 gap-2 text-sm">
               <a href="#guestlist" className="text-[#999] hover:text-white transition-colors">1. Guestlist</a>
               <a href="#table-bookings" className="text-[#999] hover:text-white transition-colors">2. Table Bookings</a>
-              <a href="#walk-ins" className="text-[#999] hover:text-white transition-colors">3. Walk-ins</a>
-              <a href="#dress-code" className="text-[#999] hover:text-white transition-colors">4. Dress Code</a>
-              <a href="#group-composition" className="text-[#999] hover:text-white transition-colors">5. Group Composition</a>
-              <a href="#age-and-id" className="text-[#999] hover:text-white transition-colors">6. Age &amp; ID</a>
+              <a href="#dress-code" className="text-[#999] hover:text-white transition-colors">3. Dress Code</a>
+              <a href="#group-composition" className="text-[#999] hover:text-white transition-colors">4. Group Composition</a>
+              <a href="#age-and-id" className="text-[#999] hover:text-white transition-colors">5. Age &amp; ID</a>
             </div>
           </div>
 
           {/* Section 1: Guestlist */}
           <section id="guestlist" className="mb-12">
-            <h2 className="text-2xl font-bold text-white mb-4">1. Guestlist</h2>
-            <div className="bg-[#141414] border border-[#222] rounded-xl p-6 space-y-4 text-[#999] text-sm leading-relaxed">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">1. Guestlist</h2>
+            <p className="text-center text-[#999] max-w-2xl mx-auto mb-12">The free way to arrange your night at any London club.</p>
+            <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 space-y-4 text-[#999] text-sm leading-relaxed">
               <p>
                 A guestlist is a list of names submitted to the venue by a promoter before the night. When you arrive, you give your name at the door and they check you against the list. If you are on it, you get priority consideration for entry.
               </p>
@@ -114,24 +109,23 @@ export default function HowToGetInPage() {
                 <h3 className="text-white font-semibold mb-2">What guestlist gets you</h3>
                 <ul className="list-disc pl-5 space-y-1">
                   <li>Your name is expected at the door — the team knows you are coming</li>
-                  <li>Priority over walk-ins who are not on any list</li>
+                  <li>Priority over guests who are not on any list</li>
                   <li>Usually free entry or reduced queue</li>
-                  <li>At moderate venues, guestlist is essentially guaranteed entry</li>
+                  <li>At most venues, guestlist is a straightforward way to arrange your night</li>
                 </ul>
               </div>
               <div>
                 <h3 className="text-white font-semibold mb-2">What guestlist does not get you</h3>
                 <ul className="list-disc pl-5 space-y-1">
-                  <li>Guaranteed entry at the most exclusive clubs (Tape, Cirque, TABU)</li>
+                  <li>A reserved table or seating area</li>
                   <li>A pass on dress code — you still need to look the part</li>
                   <li>Entry if the venue is at capacity</li>
-                  <li>Entry if the door team decides your group does not fit</li>
                 </ul>
               </div>
               <div>
                 <h3 className="text-white font-semibold mb-2">Who qualifies for guestlist</h3>
                 <p>
-                  Anyone can request guestlist through a promoter. There is no fee. Mixed groups with a good ratio of women to men have the best success rate. All-female groups are almost always approved. All-male groups will be asked to bring women or consider a table booking instead.
+                  Anyone can request guestlist through a promoter. There is no fee. Mixed groups with a good ratio of women to men have the best success rate. All-female groups are almost always approved. All-male groups may be advised to consider a table booking for the best experience.
                 </p>
               </div>
             </div>
@@ -139,17 +133,12 @@ export default function HowToGetInPage() {
 
           {/* Section 2: Table Bookings */}
           <section id="table-bookings" className="mb-12">
-            <h2 className="text-2xl font-bold text-white mb-4">2. Table Bookings</h2>
-            <div className="bg-[#141414] border border-[#222] rounded-xl p-6 space-y-4 text-[#999] text-sm leading-relaxed">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">2. Table Bookings</h2>
+            <p className="text-center text-[#999] max-w-2xl mx-auto mb-12">The premium option for a guaranteed, hassle-free night.</p>
+            <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 space-y-4 text-[#999] text-sm leading-relaxed">
               <p>
-                A table booking is the only way to guarantee entry at every London club. When you book a table, you commit to a minimum spend on drinks for the evening. In return, you get a reserved table, dedicated service, and — most importantly — guaranteed entry for your group.
+                A table booking is the premium way to enjoy any London club. When you book a table, you commit to a minimum spend on drinks for the evening. In return, you get a reserved table, dedicated service, and guaranteed entry for your group.
               </p>
-              <div>
-                <h3 className="text-white font-semibold mb-2">Why tables guarantee entry</h3>
-                <p>
-                  Clubs make their money from table service. A table booking represents committed revenue, so venues will always prioritise table guests. No club will turn away a confirmed table booking (provided you meet basic dress code and are not visibly intoxicated).
-                </p>
-              </div>
               <div>
                 <h3 className="text-white font-semibold mb-2">What you get</h3>
                 <ul className="list-disc pl-5 space-y-1">
@@ -168,7 +157,7 @@ export default function HowToGetInPage() {
               </div>
             </div>
 
-            <div className="mt-4 bg-[#141414] border border-[#222] rounded-xl p-6 text-center">
+            <div className="mt-6 bg-[#141414] border border-[#222] rounded-2xl p-7 text-center">
               <p className="text-[#999] text-sm mb-4">
                 We handle table bookings at every club listed on this site. Message us with your preferred venue, date, and group size.
               </p>
@@ -176,50 +165,13 @@ export default function HowToGetInPage() {
             </div>
           </section>
 
-          {/* Section 3: Walk-ins */}
-          <section id="walk-ins" className="mb-12">
-            <h2 className="text-2xl font-bold text-white mb-4">3. Walk-ins</h2>
-            <div className="bg-[#141414] border border-[#222] rounded-xl p-6 space-y-4 text-[#999] text-sm leading-relaxed">
-              <p>
-                A walk-in means arriving at the club without being on a guestlist or having a table booking, and hoping the door team lets you in. It is the least reliable method and the one most people overestimate their chances with.
-              </p>
-              <div>
-                <h3 className="text-white font-semibold mb-2">Realistic expectations by venue type</h3>
-                <ul className="list-disc pl-5 space-y-2">
-                  <li>
-                    <span className="text-white">Very Hard clubs (Tape London):</span> Walk-ins are essentially impossible. Do not plan your night around this.
-                  </li>
-                  <li>
-                    <span className="text-white">Hard clubs (Cirque, TABU, Scotch):</span> Walk-ins happen but are rare. You need to look exceptional, have a well-balanced group, and arrive at the right time.
-                  </li>
-                  <li>
-                    <span className="text-white">Moderate clubs (Funky Buddha, Luna Club, Cuckoo, etc.):</span> Walk-ins are genuinely possible for well-dressed mixed groups, especially before midnight on less busy nights.
-                  </li>
-                  <li>
-                    <span className="text-white">Easy clubs (Ministry of Sound):</span> Buy a ticket online. Walk-up on the night is possible but expect a queue.
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-white font-semibold mb-2">Tips if you must walk in</h3>
-                <ul className="list-disc pl-5 space-y-1">
-                  <li>Arrive between 11pm and midnight — earlier is better</li>
-                  <li>Have a mixed group with more women than men</li>
-                  <li>Dress above the minimum standard, not at it</li>
-                  <li>Be polite, confident, and sober at the door</li>
-                  <li>Do not argue if turned away — ask the door team what other nights might work better</li>
-                  <li>Have a backup plan. Always have a backup plan.</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          {/* Section 4: Dress Code */}
+          {/* Section 3: Dress Code */}
           <section id="dress-code" className="mb-12">
-            <h2 className="text-2xl font-bold text-white mb-4">4. Dress Code</h2>
-            <div className="bg-[#141414] border border-[#222] rounded-xl p-6 space-y-4 text-[#999] text-sm leading-relaxed">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">3. Dress Code</h2>
+            <p className="text-center text-[#999] max-w-2xl mx-auto mb-12">What to wear for a night out at London&apos;s clubs.</p>
+            <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 space-y-4 text-[#999] text-sm leading-relaxed">
               <p>
-                Dress code is the most common reason people get turned away. Every club says &ldquo;smart&rdquo; — here is what that actually means in practice.
+                Every club says &ldquo;smart&rdquo; — here is what that actually means in practice.
               </p>
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>
@@ -244,7 +196,7 @@ export default function HowToGetInPage() {
                 </div>
               </div>
               <div>
-                <h3 className="text-white font-semibold mb-2">What will get you turned away</h3>
+                <h3 className="text-white font-semibold mb-2">What to avoid</h3>
                 <ul className="list-disc pl-5 space-y-1">
                   <li>Trainers at strict venues (some allow clean designer pairs — ask us)</li>
                   <li>Sportswear, tracksuits, football shirts</li>
@@ -263,46 +215,48 @@ export default function HowToGetInPage() {
             </div>
           </section>
 
-          {/* Section 5: Group Composition */}
+          {/* Section 4: Group Composition */}
           <section id="group-composition" className="mb-12">
-            <h2 className="text-2xl font-bold text-white mb-4">5. Group Composition</h2>
-            <div className="bg-[#141414] border border-[#222] rounded-xl p-6 space-y-4 text-[#999] text-sm leading-relaxed">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">4. Group Composition</h2>
+            <p className="text-center text-[#999] max-w-2xl mx-auto mb-12">How your group makeup affects your night.</p>
+            <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 space-y-4 text-[#999] text-sm leading-relaxed">
               <p>
-                This is the factor most people do not want to hear about, but it is the most important after booking status. The gender ratio of your group directly affects your chances of entry at every Mayfair club.
+                The gender ratio of your group is a factor at Mayfair clubs. Here is how it works in practice.
               </p>
               <div>
-                <h3 className="text-white font-semibold mb-2">The reality</h3>
+                <h3 className="text-white font-semibold mb-2">What works best</h3>
                 <ul className="list-disc pl-5 space-y-2">
                   <li>
-                    <span className="text-white">All-female groups:</span> Highest chance of entry everywhere. Guestlist works at even the hardest clubs.
+                    <span className="text-white">All-female groups:</span> Welcomed everywhere. Guestlist works at every club.
                   </li>
                   <li>
-                    <span className="text-white">Mixed groups (more women than men):</span> Excellent chances. This is the ideal group composition for guestlist entry.
+                    <span className="text-white">Mixed groups (more women than men):</span> Excellent experience. This is the ideal group composition for guestlist.
                   </li>
                   <li>
-                    <span className="text-white">Mixed groups (equal or more men):</span> Possible at moderate venues. Difficult at hard venues without a table.
+                    <span className="text-white">Mixed groups (equal or more men):</span> Works well at most venues, especially with guestlist or a table.
                   </li>
                   <li>
-                    <span className="text-white">All-male groups:</span> Without a table booking, you will be turned away from most Mayfair clubs. This is not personal — it is the policy.
+                    <span className="text-white">All-male groups:</span> A table booking is the best route for all-male groups at Mayfair clubs. Ministry of Sound is ticket-based so group composition does not apply.
                   </li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-white font-semibold mb-2">What to do if your group is all male</h3>
+                <h3 className="text-white font-semibold mb-2">Options for all-male groups</h3>
                 <ul className="list-disc pl-5 space-y-1">
                   <li>Book a table — group composition does not matter with a booking</li>
-                  <li>Go to Ministry of Sound — entry is ticket-based, not ratio-based</li>
+                  <li>Go to Ministry of Sound — entry is ticket-based</li>
                   <li>Try midweek nights where policies are more relaxed</li>
-                  <li>Message us — we can sometimes arrange guestlist for smaller all-male groups at specific venues</li>
+                  <li>Message us — we can advise on the best venues for your group</li>
                 </ul>
               </div>
             </div>
           </section>
 
-          {/* Section 6: Age & ID */}
+          {/* Section 5: Age & ID */}
           <section id="age-and-id" className="mb-12">
-            <h2 className="text-2xl font-bold text-white mb-4">6. Age &amp; ID</h2>
-            <div className="bg-[#141414] border border-[#222] rounded-xl p-6 space-y-4 text-[#999] text-sm leading-relaxed">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">5. Age &amp; ID</h2>
+            <p className="text-center text-[#999] max-w-2xl mx-auto mb-12">What you need to know about age requirements.</p>
+            <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 space-y-4 text-[#999] text-sm leading-relaxed">
               <p>
                 The legal minimum age for entry to any London nightclub is 18. However, the practical minimum at Mayfair clubs is often higher.
               </p>
@@ -321,39 +275,25 @@ export default function HowToGetInPage() {
           </section>
 
           {/* Final CTA */}
-          <div className="bg-[#141414] border border-[#222] rounded-xl p-6 sm:p-8 mb-12 text-center">
+          <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 mb-12 text-center">
             <h2 className="text-xl font-bold text-white mb-3">
               Let us handle it for you
             </h2>
             <p className="text-[#999] mb-6 max-w-lg mx-auto">
-              Guestlists and table bookings at every club on this site. Message us with where you want to go, when, and who is in your group. We will make it work.
+              Guestlists and table bookings at every club on this site. Message us with where you want to go, when, and who is in your group. We will sort it.
             </p>
             <WhatsAppCTA />
           </div>
 
           {/* FAQ Section */}
           <div className="mb-12">
-            <h2 className="text-2xl font-bold text-white mb-8">Frequently Asked Questions</h2>
-            <div className="space-y-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">Frequently Asked Questions</h2>
+            <p className="text-center text-[#999] max-w-2xl mx-auto mb-12">Common questions about guestlists, table bookings, and planning your night.</p>
+            <div className="grid gap-6">
               {faqs.map((faq, index) => (
-                <div key={index} className="bg-[#141414] border border-[#222] rounded-xl p-6">
+                <div key={index} className="bg-[#141414] border border-[#222] rounded-2xl p-7">
                   <h3 className="text-white font-semibold mb-3">{faq.question}</h3>
                   <p className="text-[#999] text-sm leading-relaxed">{faq.answer}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Club Quick Reference */}
-          <div className="bg-[#141414] border border-[#222] rounded-xl p-6 mb-12">
-            <h2 className="text-lg font-bold text-white mb-4">Club Entry Difficulty — Quick Reference</h2>
-            <div className="space-y-2">
-              {clubs.map((club) => (
-                <div key={club.slug} className="flex items-center justify-between py-2 border-b border-[#222] last:border-0">
-                  <Link href={`/clubs/${club.slug}`} className="text-[#999] hover:text-white text-sm transition-colors">
-                    {club.name}
-                  </Link>
-                  <span className="text-[#666] text-xs">{club.entryDifficulty}</span>
                 </div>
               ))}
             </div>
@@ -364,7 +304,7 @@ export default function HowToGetInPage() {
             <h2 className="text-lg font-bold text-white mb-4">Related Guides</h2>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/guides/hardest-clubs-to-get-into" className="text-[#C0C0C0] hover:text-white text-sm transition-colors">
-                Hardest Clubs to Get Into &rarr;
+                London&apos;s Most Exclusive Clubs &rarr;
               </Link>
               <Link href="/guides/clubs-open-late" className="text-[#C0C0C0] hover:text-white text-sm transition-colors">
                 Clubs Open Late in London &rarr;

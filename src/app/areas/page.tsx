@@ -75,12 +75,12 @@ export default function AreasPage() {
 
       <main className="min-h-screen bg-[#0A0A0A]">
         {/* Hero */}
-        <section className="border-b border-[#222] py-16 md:py-24">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+        <section className="border-b border-[#222] py-20 md:py-28">
+          <div className="max-w-5xl mx-auto px-6 sm:px-8 text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight">
               London Clubs by Area
             </h1>
-            <p className="text-[#999] text-lg md:text-xl leading-relaxed max-w-3xl">
+            <p className="text-[#999] text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
               London&apos;s nightlife is concentrated in a handful of key areas, each
               with its own character and crowd. Whether you&apos;re looking for Mayfair&apos;s
               exclusivity, Soho&apos;s energy, or the broader West End scene, find the
@@ -90,16 +90,16 @@ export default function AreasPage() {
         </section>
 
         {/* Area Cards */}
-        <section className="border-b border-[#222] py-12 md:py-16">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            <div className="grid gap-4">
+        <section className="border-b border-[#222] py-20 md:py-28">
+          <div className="max-w-5xl mx-auto px-6 sm:px-8">
+            <div className="grid gap-6">
               {areas.map((area) => (
                 <Link
                   key={area.slug}
                   href={`/areas/${area.slug}`}
-                  className="block bg-[#141414] hover:bg-[#1A1A1A] border border-[#222] hover:border-[#333] rounded-xl p-6 md:p-8 transition-all duration-300"
+                  className="block bg-[#141414] hover:bg-[#1A1A1A] border border-[#222] hover:border-[#333] rounded-2xl p-7 md:p-8 text-center transition-all duration-300"
                 >
-                  <div className="flex items-start justify-between gap-4 mb-3">
+                  <div className="flex items-center justify-center gap-3 mb-3">
                     <h2 className="text-xl md:text-2xl font-bold text-white">
                       {area.name}
                     </h2>
@@ -107,7 +107,7 @@ export default function AreasPage() {
                       {area.clubCount} {area.clubCount === 1 ? 'club' : 'clubs'}
                     </span>
                   </div>
-                  <p className="text-[#999] text-sm leading-relaxed mb-4">
+                  <p className="text-[#999] text-sm leading-relaxed mb-4 max-w-2xl mx-auto">
                     {area.description}
                   </p>
                   <span className="text-[#C0C0C0] text-sm">
@@ -120,45 +120,50 @@ export default function AreasPage() {
         </section>
 
         {/* WhatsApp CTA */}
-        <section className="border-b border-[#222] py-10">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            <div className="bg-[#141414] border border-[#222] rounded-xl p-6 md:p-8">
-              <h2 className="text-xl font-bold text-white mb-2">
+        <section className="border-b border-[#222] py-20 md:py-28">
+          <div className="max-w-5xl mx-auto px-6 sm:px-8">
+            <div className="bg-[#141414] border border-[#222] rounded-2xl p-8 md:p-10 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
                 Not sure which area?
               </h2>
-              <p className="text-[#999] text-sm mb-5">
+              <p className="text-[#999] max-w-2xl mx-auto text-center mb-8">
                 Tell us what kind of night you&apos;re after — the vibe, the music, your
                 group size — and we&apos;ll recommend the right area and club.
               </p>
-              <WhatsAppCTA />
+              <div className="flex justify-center">
+                <WhatsAppCTA />
+              </div>
             </div>
           </div>
         </section>
 
         {/* Internal Links */}
-        <section className="py-12 md:py-16">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+        <section className="py-20 md:py-28">
+          <div className="max-w-5xl mx-auto px-6 sm:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
               More Guides
             </h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <p className="text-[#999] max-w-2xl mx-auto text-center mb-12">
+              Explore our other guides to London&apos;s nightlife scene.
+            </p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <Link
                 href="/best-clubs-in-london"
-                className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-all duration-300"
+                className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
               >
                 <h3 className="text-white font-semibold mb-1">Best Clubs in London</h3>
                 <p className="text-[#666] text-sm">Our ranked guide to the top clubs across the city.</p>
               </Link>
               <Link
-                href="/guides/entry"
-                className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-all duration-300"
+                href="/guides/how-to-get-into-london-clubs"
+                className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
               >
                 <h3 className="text-white font-semibold mb-1">Entry Guide</h3>
                 <p className="text-[#666] text-sm">How to get into London&apos;s most exclusive clubs.</p>
               </Link>
               <Link
                 href="/"
-                className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-all duration-300"
+                className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
               >
                 <h3 className="text-white font-semibold mb-1">Tonight&apos;s Picks</h3>
                 <p className="text-[#666] text-sm">See which clubs are open tonight.</p>

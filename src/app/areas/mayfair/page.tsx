@@ -54,8 +54,8 @@ export default function MayfairPage() {
 
       <main className="min-h-screen bg-[#0A0A0A]">
         {/* Hero */}
-        <section className="border-b border-[#222] py-16 md:py-24">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6">
+        <section className="border-b border-[#222] py-20 md:py-28">
+          <div className="max-w-5xl mx-auto px-6 sm:px-8 text-center">
             <div className="mb-4">
               <Link href="/areas" className="text-[#666] hover:text-[#999] text-sm transition-colors">
                 Areas
@@ -63,10 +63,10 @@ export default function MayfairPage() {
               <span className="text-[#444] mx-2">/</span>
               <span className="text-[#999] text-sm">Mayfair</span>
             </div>
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight">
               Best Clubs in Mayfair
             </h1>
-            <p className="text-[#999] text-lg md:text-xl leading-relaxed max-w-3xl">
+            <p className="text-[#999] text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
               Mayfair is the undisputed centre of London&apos;s luxury nightlife. Within a few
               streets of each other, you&apos;ll find the highest concentration of exclusive
               members clubs, celebrity haunts, and high-end venues anywhere in the city. If
@@ -76,32 +76,34 @@ export default function MayfairPage() {
         </section>
 
         {/* WhatsApp CTA */}
-        <section className="border-b border-[#222] py-10">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            <div className="bg-[#141414] border border-[#222] rounded-xl p-6 md:p-8">
-              <h2 className="text-xl font-bold text-white mb-2">
+        <section className="border-b border-[#222] py-20 md:py-28">
+          <div className="max-w-5xl mx-auto px-6 sm:px-8">
+            <div className="bg-[#141414] border border-[#222] rounded-2xl p-8 md:p-10 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
                 Need help choosing a Mayfair club?
               </h2>
-              <p className="text-[#999] text-sm mb-5">
+              <p className="text-[#999] max-w-2xl mx-auto text-center mb-8">
                 We know every door in W1. Message us for table bookings, guestlist access,
                 or personalised recommendations.
               </p>
-              <WhatsAppCTA />
+              <div className="flex justify-center">
+                <WhatsAppCTA />
+              </div>
             </div>
           </div>
         </section>
 
         {/* Club Listings */}
-        <section className="border-b border-[#222] py-12 md:py-16">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
+        <section className="border-b border-[#222] py-20 md:py-28">
+          <div className="max-w-5xl mx-auto px-6 sm:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
               Mayfair Clubs
             </h2>
-            <p className="text-[#999] mb-8">
+            <p className="text-[#999] max-w-2xl mx-auto text-center mb-12">
               {mayfairClubs.length} clubs in Mayfair — from exclusive members clubs to
               high-energy party venues.
             </p>
-            <div className="grid gap-4">
+            <div className="grid gap-6">
               {mayfairClubs.map((club) => (
                 <ClubCard key={club.slug} club={club} showArea={false} />
               ))}
@@ -110,11 +112,14 @@ export default function MayfairPage() {
         </section>
 
         {/* Why Mayfair */}
-        <section className="border-b border-[#222] py-12 md:py-16">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+        <section className="border-b border-[#222] py-20 md:py-28">
+          <div className="max-w-5xl mx-auto px-6 sm:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
               Why Mayfair?
             </h2>
+            <p className="text-[#999] max-w-2xl mx-auto text-center mb-12">
+              What makes Mayfair the centre of London&apos;s nightlife.
+            </p>
             <div className="space-y-4 text-[#999] leading-relaxed">
               <p>
                 The W1 postcode dominates London nightlife for a reason. Mayfair sits between
@@ -133,27 +138,29 @@ export default function MayfairPage() {
               </p>
               <p>
                 The crowd in Mayfair skews towards high-net-worth individuals, celebrities,
-                and fashion-conscious Londoners who expect a certain standard. Door policies
-                are strict across the board, dress codes are enforced, and table bookings are
-                the most reliable way to guarantee entry. This selectiveness is exactly what
-                keeps the standard high.
+                and fashion-conscious Londoners who expect a certain standard. Dress codes are
+                enforced and table bookings are the most reliable way to guarantee entry. This
+                selectiveness is exactly what keeps the standard high.
               </p>
             </div>
           </div>
         </section>
 
         {/* Cross-links */}
-        <section className="border-b border-[#222] py-12 md:py-16">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+        <section className="border-b border-[#222] py-20 md:py-28">
+          <div className="max-w-5xl mx-auto px-6 sm:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
               Plan Your Mayfair Night
             </h2>
-            <div className="grid sm:grid-cols-2 gap-4">
+            <p className="text-[#999] max-w-2xl mx-auto text-center mb-12">
+              Essential resources for your Mayfair night out.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-6">
               <a
                 href="https://mayfairtonight.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-6 transition-all duration-300"
+                className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
               >
                 <h3 className="text-lg font-bold text-white mb-2">
                   Mayfair Tonight
@@ -170,7 +177,7 @@ export default function MayfairPage() {
                 href="https://londonbottleservice.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-6 transition-all duration-300"
+                className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
               >
                 <h3 className="text-lg font-bold text-white mb-2">
                   Table &amp; Bottle Pricing
@@ -188,29 +195,32 @@ export default function MayfairPage() {
         </section>
 
         {/* Internal Links */}
-        <section className="py-12 md:py-16">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+        <section className="py-20 md:py-28">
+          <div className="max-w-5xl mx-auto px-6 sm:px-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
               More London Club Guides
             </h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <p className="text-[#999] max-w-2xl mx-auto text-center mb-12">
+              Explore more of London&apos;s nightlife scene.
+            </p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <Link
                 href="/best-clubs-in-london"
-                className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-all duration-300"
+                className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
               >
                 <h3 className="text-white font-semibold mb-1">Best Clubs in London</h3>
                 <p className="text-[#666] text-sm">Our ranked guide to the top clubs across the city.</p>
               </Link>
               <Link
-                href="/guides/entry"
-                className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-all duration-300"
+                href="/guides/how-to-get-into-london-clubs"
+                className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
               >
                 <h3 className="text-white font-semibold mb-1">Entry Guide</h3>
                 <p className="text-[#666] text-sm">How to get into London&apos;s most exclusive clubs.</p>
               </Link>
               <Link
                 href="/areas/central-london"
-                className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-all duration-300"
+                className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
               >
                 <h3 className="text-white font-semibold mb-1">Central London Clubs</h3>
                 <p className="text-[#666] text-sm">The wider West End scene including Soho and St James&apos;s.</p>
@@ -218,7 +228,7 @@ export default function MayfairPage() {
             </div>
 
             {/* Final CTA */}
-            <div className="mt-12 bg-[#141414] border border-[#222] rounded-xl p-6 md:p-8 text-center">
+            <div className="mt-12 bg-[#141414] border border-[#222] rounded-2xl p-8 md:p-10 text-center">
               <h3 className="text-xl font-bold text-white mb-2">
                 Ready for a Mayfair night out?
               </h3>
@@ -226,7 +236,9 @@ export default function MayfairPage() {
                 Message us on WhatsApp and we&apos;ll sort your table, guestlist, or give
                 you our honest recommendation.
               </p>
-              <WhatsAppCTA />
+              <div className="flex justify-center">
+                <WhatsAppCTA />
+              </div>
             </div>
           </div>
         </section>

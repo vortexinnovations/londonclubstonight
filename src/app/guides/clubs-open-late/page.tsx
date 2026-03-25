@@ -53,7 +53,7 @@ export default function ClubsOpenLatePage() {
       />
 
       <div className="bg-[#0A0A0A] min-h-screen">
-        <div className="max-w-4xl mx-auto px-4 py-16 sm:py-24">
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 py-20 md:py-28">
           <div className="mb-4 flex gap-4 text-sm">
             <Link href="/" className="text-[#999] hover:text-white transition-colors">
               Home
@@ -64,20 +64,20 @@ export default function ClubsOpenLatePage() {
             </Link>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
             Clubs Open Late in London
           </h1>
-          <p className="text-[#999] text-lg mb-6 max-w-2xl">
+          <p className="text-center text-[#999] max-w-2xl mx-auto mb-6">
             It is 1am, the bar has kicked you out, and the night is still young. Here is where you can go and how late you can stay.
           </p>
-          <p className="text-[#999] text-sm mb-12 max-w-2xl">
+          <p className="text-center text-[#999] text-sm max-w-2xl mx-auto mb-12">
             All closing times listed are standard. Special events and bank holiday weekends may extend hours. Check with us on WhatsApp for the latest on any specific night.
           </p>
 
           {/* Quick Reference */}
-          <div className="bg-[#141414] border border-[#222] rounded-xl p-6 mb-12">
-            <h2 className="text-lg font-bold text-white mb-4">Quick Reference</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 mb-12">
+            <h2 className="text-lg font-bold text-white mb-4 text-center">Quick Reference</h2>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
               {closingGroups.map((group) => (
                 <div key={group.time} className="text-center">
                   <div className="text-2xl font-bold text-[#C0C0C0]">{group.time.replace(':00', '')}</div>
@@ -89,13 +89,10 @@ export default function ClubsOpenLatePage() {
 
           {closingGroups.map((group) => (
             <div key={group.time} className="mb-12">
-              <div className="flex items-center gap-3 mb-3">
-                <h2 className="text-2xl font-bold text-white">{group.label}</h2>
-                <div className="h-px flex-1 bg-[#222]" />
-              </div>
-              <p className="text-[#999] text-sm mb-6">{group.description}</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">{group.label}</h2>
+              <p className="text-center text-[#999] max-w-2xl mx-auto mb-12">{group.description}</p>
 
-              <div className="grid gap-4">
+              <div className="grid gap-6">
                 {group.slugs.map((slug) => {
                   const club = clubs.find(c => c.slug === slug);
                   if (!club) return null;
@@ -105,7 +102,7 @@ export default function ClubsOpenLatePage() {
                   return (
                     <div
                       key={club.slug}
-                      className={`bg-[#141414] border rounded-xl p-6 ${isMinistry ? 'border-[#C0C0C0]/30' : 'border-[#222]'}`}
+                      className={`bg-[#141414] border rounded-2xl p-7 ${isMinistry ? 'border-[#C0C0C0]/30' : 'border-[#222]'}`}
                     >
                       <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 mb-4">
                         <div>
@@ -123,7 +120,7 @@ export default function ClubsOpenLatePage() {
                         <div className="bg-[#C0C0C0]/5 border border-[#C0C0C0]/20 rounded-lg p-4 mb-4">
                           <p className="text-[#C0C0C0] text-sm font-semibold mb-1">London&apos;s latest club</p>
                           <p className="text-[#999] text-sm">
-                            Ministry of Sound is the only venue on this list open until 6am. On special event nights, it can run even later. If your sole priority is staying out as late as possible, this is where you go. Buy tickets in advance online — entry is straightforward compared to the Mayfair clubs.
+                            Ministry of Sound is the only venue on this list open until 6am. On special event nights, it can run even later. If your sole priority is staying out as late as possible, this is where you go. Buy tickets in advance online.
                           </p>
                         </div>
                       )}
@@ -132,8 +129,6 @@ export default function ClubsOpenLatePage() {
 
                       <div className="flex flex-wrap gap-4 text-xs text-[#666]">
                         <span>{club.openingNights}</span>
-                        <span>&middot;</span>
-                        <span>Entry: {club.entryDifficulty}</span>
                         <span>&middot;</span>
                         <span>Tables from {club.tableMinimum}</span>
                       </div>
@@ -151,19 +146,20 @@ export default function ClubsOpenLatePage() {
           ))}
 
           {/* Practical Advice */}
-          <div className="bg-[#141414] border border-[#222] rounded-xl p-6 sm:p-8 mb-12">
-            <h2 className="text-2xl font-bold text-white mb-4">Practical Advice for Late-Night London</h2>
+          <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">Practical Advice for Late-Night London</h2>
+            <p className="text-center text-[#999] max-w-2xl mx-auto mb-8">Tips for making the most of your late night out.</p>
             <div className="space-y-4 text-[#999] leading-relaxed text-sm">
               <div>
                 <h3 className="text-white font-semibold mb-2">If you are already out and need somewhere</h3>
                 <p>
-                  Message us on WhatsApp. Seriously. Trying to walk into a club at 1am without any arrangement is the hardest way to do it. We can get you on a guestlist or arrange a last-minute table at most venues with very little notice.
+                  Message us on WhatsApp. We can get you on a guestlist or arrange a last-minute table at most venues with very little notice.
                 </p>
               </div>
               <div>
                 <h3 className="text-white font-semibold mb-2">Arrival time matters</h3>
                 <p>
-                  Most clubs hit peak capacity between midnight and 1:30am. If you are moving on from somewhere else and arrive at 2am, some venues will already be at capacity and will not let anyone new in, regardless of your booking. The later you leave it, the fewer options you have.
+                  Most clubs hit peak capacity between midnight and 1:30am. If you are moving on from somewhere else and arrive at 2am, some venues will already be at capacity. The earlier you arrange your guestlist or table, the better.
                 </p>
               </div>
               <div>
@@ -176,7 +172,7 @@ export default function ClubsOpenLatePage() {
           </div>
 
           {/* WhatsApp CTA */}
-          <div className="bg-[#141414] border border-[#222] rounded-xl p-6 sm:p-8 mb-12 text-center">
+          <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 mb-12 text-center">
             <h2 className="text-xl font-bold text-white mb-3">
               Need somewhere tonight?
             </h2>
@@ -191,10 +187,10 @@ export default function ClubsOpenLatePage() {
             <h2 className="text-lg font-bold text-white mb-4">Related Guides</h2>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/guides/hardest-clubs-to-get-into" className="text-[#C0C0C0] hover:text-white text-sm transition-colors">
-                Hardest Clubs to Get Into &rarr;
+                London&apos;s Most Exclusive Clubs &rarr;
               </Link>
               <Link href="/guides/how-to-get-into-london-clubs" className="text-[#C0C0C0] hover:text-white text-sm transition-colors">
-                How to Get Into London Clubs &rarr;
+                Guestlists &amp; Table Bookings Guide &rarr;
               </Link>
               <Link href="/guides/london-clubs-by-music-genre" className="text-[#C0C0C0] hover:text-white text-sm transition-colors">
                 London Clubs by Music Genre &rarr;

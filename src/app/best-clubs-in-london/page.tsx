@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getOpenClubs } from '@/lib/clubs';
-import ClubCard from '@/components/ClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 
@@ -103,25 +102,24 @@ export default function BestClubsInLondonPage() {
       <SchemaMarkup schema={articleSchema} />
 
       {/* Hero */}
-      <section className="px-4 pt-24 pb-16 md:pt-32 md:pb-20 max-w-4xl mx-auto">
-        <p className="text-[#C0C0C0] text-sm uppercase tracking-widest mb-4">
+      <section className="max-w-5xl mx-auto px-6 sm:px-8 pt-28 pb-20 md:pt-36 md:pb-28 text-center">
+        <p className="text-[#C0C0C0] text-sm uppercase tracking-[0.2em] mb-6">
           Updated for 2026
         </p>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">
-          Best Clubs in London 2026
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-8">
+          Best Clubs in London
         </h1>
-        <p className="text-lg md:text-xl text-[#AAAAAA] leading-relaxed max-w-3xl">
+        <p className="text-lg md:text-xl text-[#AAAAAA] leading-relaxed max-w-3xl mx-auto">
           This is not another recycled list from a lifestyle magazine that sends
           a freelancer to one club once a year. We are promoters. We work these
           doors every weekend. We know which clubs are actually worth your time
           and money in 2026 — and which ones are coasting on reputation. Every
           club on this list has been ranked based on hundreds of nights, thousands
           of client bookings, and honest conversations with the people who run
-          them. If you want the sanitised version, go read TimeOut. If you want
-          the truth, keep scrolling.
+          them.
         </p>
-        <div className="mt-8 flex flex-wrap gap-4 text-sm text-[#666]">
-          <span>13 clubs ranked</span>
+        <div className="mt-10 flex flex-wrap justify-center gap-4 text-sm text-[#666]">
+          <span>{rankedClubs.length} clubs ranked</span>
           <span className="text-[#333]">|</span>
           <span>Honest reviews from promoters</span>
           <span className="text-[#333]">|</span>
@@ -130,109 +128,75 @@ export default function BestClubsInLondonPage() {
       </section>
 
       {/* Ranked List */}
-      <section className="px-4 pb-16 max-w-4xl mx-auto">
-        <div className="space-y-12">
+      <section className="max-w-5xl mx-auto px-6 sm:px-8 pb-20 md:pb-28">
+        <div className="space-y-8 md:space-y-10">
           {rankedClubs.map((club, index) => {
             const rank = index + 1;
             return (
               <article
                 key={club.slug}
                 id={club.slug}
-                className="relative bg-[#141414] border border-[#222] rounded-2xl p-6 md:p-8 hover:border-[#333] transition-colors"
+                className="bg-[#141414] border border-[#222] rounded-2xl p-8 md:p-10 hover:border-[#333] transition-colors"
               >
-                {/* Rank Number */}
-                <div className="absolute -top-5 -left-2 md:-left-4">
-                  <span className="text-6xl md:text-7xl font-black text-[#1A1A1A] select-none" style={{ WebkitTextStroke: '1px #333' }}>
-                    {String(rank).padStart(2, '0')}
-                  </span>
+                {/* Rank Label */}
+                <p className="text-sm font-bold text-[#C0C0C0] tracking-widest uppercase mb-3">
+                  #{rank}
+                </p>
+
+                {/* Club Name */}
+                <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
+                  <Link
+                    href={`/clubs/${club.slug}`}
+                    className="text-white hover:text-[#C0C0C0] transition-colors"
+                  >
+                    {club.name}
+                  </Link>
+                </h2>
+
+                {/* Why It Made the List */}
+                <div className="mb-8 text-center max-w-3xl mx-auto">
+                  <h3 className="text-xs font-semibold text-[#C0C0C0] uppercase tracking-widest mb-3">
+                    Why It Made the List
+                  </h3>
+                  <p className="text-[#999] leading-relaxed">
+                    {clubOpinions[club.slug]}
+                  </p>
                 </div>
 
-                <div className="pt-6">
-                  {/* Club Name */}
-                  <div className="flex items-start justify-between gap-4 mb-4">
-                    <Link
-                      href={`/clubs/${club.slug}`}
-                      className="text-2xl md:text-3xl font-bold text-white hover:text-[#C0C0C0] transition-colors"
-                    >
-                      #{rank} {club.name}
-                    </Link>
-                    <span
-                      className={`shrink-0 text-xs font-medium px-2.5 py-1 rounded-full ${
-                        club.entryDifficulty === 'Very Hard'
-                          ? 'bg-red-500/20 text-red-400'
-                          : club.entryDifficulty === 'Hard'
-                            ? 'bg-orange-500/20 text-orange-400'
-                            : club.entryDifficulty === 'Moderate'
-                              ? 'bg-yellow-500/20 text-yellow-400'
-                              : 'bg-green-500/20 text-green-400'
-                      }`}
-                    >
-                      {club.entryDifficulty}
-                    </span>
-                  </div>
-
-                  {/* Why It Made the List */}
-                  <div className="mb-6">
-                    <h3 className="text-sm font-semibold text-[#C0C0C0] uppercase tracking-wide mb-2">
-                      Why it made the list
-                    </h3>
-                    <p className="text-[#999] leading-relaxed">
-                      {clubOpinions[club.slug]}
+                {/* Best For */}
+                <div className="max-w-xl mx-auto mb-8">
+                  <div className="bg-[#0A0A0A] border border-[#1A1A1A] rounded-xl p-5 text-center">
+                    <h4 className="text-xs font-semibold text-green-400 uppercase tracking-widest mb-2">
+                      Best For
+                    </h4>
+                    <p className="text-[#999] text-sm leading-relaxed">
+                      {club.bestFor}
                     </p>
                   </div>
+                </div>
 
-                  {/* Best For / Skip It */}
-                  <div className="grid md:grid-cols-2 gap-4 mb-6">
-                    <div className="bg-[#0A0A0A] rounded-lg p-4">
-                      <h4 className="text-xs font-semibold text-green-400 uppercase tracking-wide mb-1.5">
-                        Best for
-                      </h4>
-                      <p className="text-[#999] text-sm leading-relaxed">
-                        {club.bestFor}
-                      </p>
-                    </div>
-                    <div className="bg-[#0A0A0A] rounded-lg p-4">
-                      <h4 className="text-xs font-semibold text-red-400 uppercase tracking-wide mb-1.5">
-                        Who should skip it
-                      </h4>
-                      <p className="text-[#999] text-sm leading-relaxed">
-                        {club.notIdealFor}
-                      </p>
-                    </div>
-                  </div>
+                {/* Details Row */}
+                <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-sm text-[#999] mb-6">
+                  <span>{club.musicGenres.join(', ')}</span>
+                  <span className="text-[#333]">/</span>
+                  <Link
+                    href={`/areas/${club.area.toLowerCase().replace(/['\s]+/g, '-')}`}
+                    className="hover:text-white transition-colors"
+                  >
+                    {club.area}
+                  </Link>
+                  <span className="text-[#333]">/</span>
+                  <span>Tables from {club.tableMinimum}</span>
+                </div>
 
-                  {/* Details Row */}
-                  <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-[#666] mb-4">
-                    <div>
-                      <span className="text-[#555]">Music: </span>
-                      <span className="text-[#999]">
-                        {club.musicGenres.join(', ')}
-                      </span>
-                    </div>
-                    <div>
-                      <span className="text-[#555]">Area: </span>
-                      <Link
-                        href={`/areas/${club.area.toLowerCase().replace(/['\s]+/g, '-')}`}
-                        className="text-[#999] hover:text-white transition-colors"
-                      >
-                        {club.area}
-                      </Link>
-                    </div>
-                    <div>
-                      <span className="text-[#555]">Tables from: </span>
-                      <span className="text-[#999]">{club.tableMinimum}</span>
-                    </div>
-                  </div>
-
-                  {/* CTA */}
-                  <div className="flex flex-wrap gap-3 pt-2">
-                    <Link
-                      href={`/clubs/${club.slug}`}
-                      className="text-sm text-[#C0C0C0] hover:text-white transition-colors"
-                    >
-                      Full review &rarr;
-                    </Link>
-                  </div>
+                {/* Full Review Link */}
+                <div className="text-center">
+                  <Link
+                    href={`/clubs/${club.slug}`}
+                    className="inline-block text-sm text-[#C0C0C0] hover:text-white transition-colors"
+                  >
+                    Full review &rarr;
+                  </Link>
                 </div>
               </article>
             );
@@ -241,12 +205,12 @@ export default function BestClubsInLondonPage() {
       </section>
 
       {/* Book a Table CTA */}
-      <section className="px-4 py-16 max-w-4xl mx-auto">
-        <div className="bg-[#141414] border border-[#222] rounded-2xl p-8 md:p-12 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+      <section className="max-w-5xl mx-auto px-6 sm:px-8 py-20 md:py-28">
+        <div className="text-center">
+          <h2 className="text-2xl md:text-3xl font-bold mb-5">
             Ready to Book?
           </h2>
-          <p className="text-[#999] mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-[#999] mb-10 max-w-2xl mx-auto leading-relaxed">
             Skip the research. Tell us what kind of night you want — the music,
             the vibe, the budget — and we will put you in the right club with a
             table or guestlist spot sorted. One WhatsApp message is all it takes.
@@ -256,21 +220,19 @@ export default function BestClubsInLondonPage() {
       </section>
 
       {/* How We Ranked These Clubs */}
-      <section className="px-4 py-16 max-w-4xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold mb-8">
-          How We Ranked These Clubs
-        </h2>
-        <p className="text-[#999] leading-relaxed mb-8">
-          Every ranking is subjective, and we are not pretending otherwise. But
-          ours is informed by years of working inside London nightlife, not a
-          single visit on a press night. Here are the criteria we used:
-        </p>
+      <section className="max-w-5xl mx-auto px-6 sm:px-8 py-20 md:py-28">
+        <div className="text-center mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold mb-5">
+            How We Ranked These Clubs
+          </h2>
+          <p className="text-[#999] leading-relaxed max-w-3xl mx-auto">
+            Every ranking is subjective, and we are not pretending otherwise. But
+            ours is informed by years of working inside London nightlife, not a
+            single visit on a press night. Here are the criteria we used:
+          </p>
+        </div>
         <div className="grid md:grid-cols-2 gap-6">
           {[
-            {
-              title: 'Exclusivity & Door Quality',
-              desc: 'How well does the venue curate its crowd? A good door policy is not about turning people away — it is about ensuring everyone inside has the best possible night.',
-            },
             {
               title: 'Music Quality',
               desc: 'Does the club have a genuine music identity, or does it play the same generic playlist every week? We reward venues that invest in DJs and sound systems.',
@@ -288,13 +250,17 @@ export default function BestClubsInLondonPage() {
               desc: 'Interiors, lighting, layout, sound — the physical space matters enormously. A well-designed room elevates every other aspect of the experience.',
             },
             {
+              title: 'Service & Experience',
+              desc: 'From the moment you arrive to the moment you leave — how well does the venue look after you? Table service, bar speed, and staff attitude all count.',
+            },
+            {
               title: 'Consistency',
               desc: 'Anyone can have one great night. The clubs at the top of this list deliver excellent nights week after week, month after month. That takes real operational skill.',
             },
           ].map((criterion) => (
             <div
               key={criterion.title}
-              className="bg-[#141414] border border-[#222] rounded-xl p-5"
+              className="bg-[#141414] border border-[#222] rounded-xl p-6 text-center"
             >
               <h3 className="font-semibold text-white mb-2">
                 {criterion.title}
@@ -308,33 +274,35 @@ export default function BestClubsInLondonPage() {
       </section>
 
       {/* How to Book */}
-      <section className="px-4 py-16 max-w-4xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold mb-4">
-          How to Book Any Club on This List
-        </h2>
-        <p className="text-[#999] leading-relaxed mb-6">
-          We handle bookings for every club ranked above. Whether you want a VIP
-          table, a guestlist spot, or just advice on which club suits your group,
-          we are one message away. No fees, no mark-ups — we are paid by the
-          clubs, so our service is free to you.
-        </p>
-        <div className="space-y-4 mb-8">
-          <div className="flex items-start gap-3">
-            <span className="text-[#C0C0C0] font-bold text-lg mt-0.5">1.</span>
+      <section className="max-w-5xl mx-auto px-6 sm:px-8 py-20 md:py-28">
+        <div className="text-center mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold mb-5">
+            How to Book Any Club on This List
+          </h2>
+          <p className="text-[#999] leading-relaxed max-w-3xl mx-auto">
+            We handle bookings for every club ranked above. Whether you want a VIP
+            table, a guestlist spot, or just advice on which club suits your group,
+            we are one message away. No fees, no mark-ups — we are paid by the
+            clubs, so our service is free to you.
+          </p>
+        </div>
+        <div className="max-w-2xl mx-auto space-y-6 mb-12">
+          <div className="text-center">
+            <span className="inline-block text-[#C0C0C0] font-bold text-lg mb-1">1.</span>
             <p className="text-[#999]">
               <strong className="text-white">Message us on WhatsApp</strong> with
               your preferred club, date, group size, and any preferences.
             </p>
           </div>
-          <div className="flex items-start gap-3">
-            <span className="text-[#C0C0C0] font-bold text-lg mt-0.5">2.</span>
+          <div className="text-center">
+            <span className="inline-block text-[#C0C0C0] font-bold text-lg mb-1">2.</span>
             <p className="text-[#999]">
               <strong className="text-white">We confirm your booking</strong>{' '}
               directly with the club and send you all the details.
             </p>
           </div>
-          <div className="flex items-start gap-3">
-            <span className="text-[#C0C0C0] font-bold text-lg mt-0.5">3.</span>
+          <div className="text-center">
+            <span className="inline-block text-[#C0C0C0] font-bold text-lg mb-1">3.</span>
             <p className="text-[#999]">
               <strong className="text-white">Turn up and enjoy</strong> — your
               name is on the list, your table is ready, and we are available all
@@ -342,17 +310,19 @@ export default function BestClubsInLondonPage() {
             </p>
           </div>
         </div>
-        <WhatsAppCTA variant="inline" />
+        <div className="text-center">
+          <WhatsAppCTA variant="inline" />
+        </div>
       </section>
 
-      {/* Internal Links & Cross-links */}
-      <section className="px-4 py-16 max-w-4xl mx-auto border-t border-[#222]">
-        <h2 className="text-2xl md:text-3xl font-bold mb-8">
+      {/* Explore More */}
+      <section className="max-w-5xl mx-auto px-6 sm:px-8 py-20 md:py-28 border-t border-[#222]">
+        <h2 className="text-2xl md:text-3xl font-bold mb-10 text-center">
           Explore More
         </h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          <div>
-            <h3 className="font-semibold text-white mb-3">By Area</h3>
+        <div className="grid md:grid-cols-2 gap-10 max-w-3xl mx-auto">
+          <div className="text-center">
+            <h3 className="font-semibold text-white mb-4">By Area</h3>
             <ul className="space-y-2">
               <li>
                 <Link
@@ -380,8 +350,8 @@ export default function BestClubsInLondonPage() {
               </li>
             </ul>
           </div>
-          <div>
-            <h3 className="font-semibold text-white mb-3">Guides</h3>
+          <div className="text-center">
+            <h3 className="font-semibold text-white mb-4">Guides</h3>
             <ul className="space-y-2">
               <li>
                 <Link
@@ -412,16 +382,16 @@ export default function BestClubsInLondonPage() {
         </div>
 
         {/* Cross-links to Network */}
-        <div className="mt-12 pt-8 border-t border-[#1A1A1A]">
-          <h3 className="font-semibold text-white mb-4">
+        <div className="mt-16 pt-10 border-t border-[#1A1A1A]">
+          <h3 className="font-semibold text-white mb-6 text-center">
             From Our Network
           </h3>
-          <div className="grid sm:grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
             <a
               href="https://mayfairtonight.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-4 transition-colors block"
+              className="bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-colors block text-center"
             >
               <p className="font-semibold text-white text-sm mb-1">
                 Mayfair Tonight
@@ -434,7 +404,7 @@ export default function BestClubsInLondonPage() {
               href="https://londonbottleservice.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-4 transition-colors block"
+              className="bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-colors block text-center"
             >
               <p className="font-semibold text-white text-sm mb-1">
                 London Bottle Service
@@ -447,7 +417,7 @@ export default function BestClubsInLondonPage() {
               href="https://londonbirthdayclub.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-4 transition-colors block"
+              className="bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-colors block text-center"
             >
               <p className="font-semibold text-white text-sm mb-1">
                 London Birthday Club
@@ -461,9 +431,9 @@ export default function BestClubsInLondonPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="px-4 py-16 max-w-4xl mx-auto">
+      <section className="max-w-5xl mx-auto px-6 sm:px-8 py-20 md:py-28">
         <div className="text-center">
-          <p className="text-[#666] text-sm mb-4">
+          <p className="text-[#666] text-sm mb-5">
             Still not sure which club is right for you?
           </p>
           <WhatsAppCTA variant="inline" />
