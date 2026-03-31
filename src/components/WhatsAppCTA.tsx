@@ -32,7 +32,7 @@ export default function WhatsAppCTA({ clubName, variant = 'inline', heading }: W
             href={tonightTableUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#25D366] hover:bg-[#20BD5A] text-white text-center py-4 px-8 rounded-lg font-semibold text-base transition-colors flex items-center justify-center gap-2"
+            className="bg-[#25D366] hover:bg-[#20BD5A] text-[#003d20] text-center py-4 px-8 rounded-lg font-semibold text-base transition-colors flex items-center justify-center gap-2"
           >
             <WhatsAppIcon />
             Book Table Tonight
@@ -59,7 +59,7 @@ export default function WhatsAppCTA({ clubName, variant = 'inline', heading }: W
             href={tableUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 bg-[#25D366] hover:bg-[#20BD5A] text-white text-center py-3 px-4 rounded-lg font-semibold text-sm transition-colors flex items-center justify-center gap-2"
+            className="flex-1 bg-[#25D366] hover:bg-[#20BD5A] text-[#003d20] text-center py-3 px-4 rounded-lg font-semibold text-sm transition-colors flex items-center justify-center gap-2"
           >
             <WhatsAppIcon />
             Book a Table
@@ -84,7 +84,7 @@ export default function WhatsAppCTA({ clubName, variant = 'inline', heading }: W
           href={tableUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#25D366] hover:bg-[#20BD5A] text-white text-center py-4 px-8 rounded-lg font-semibold text-base transition-colors flex items-center justify-center gap-2"
+          className="bg-[#25D366] hover:bg-[#20BD5A] text-[#003d20] text-center py-4 px-8 rounded-lg font-semibold text-base transition-colors flex items-center justify-center gap-2"
         >
           <WhatsAppIcon />
           Book a Table
@@ -108,7 +108,7 @@ export default function WhatsAppCTA({ clubName, variant = 'inline', heading }: W
         href={tableUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-[#25D366] hover:bg-[#20BD5A] text-white text-center py-3 px-6 rounded-lg font-semibold text-sm transition-colors flex items-center justify-center gap-2"
+        className="bg-[#25D366] hover:bg-[#20BD5A] text-[#003d20] text-center py-3 px-6 rounded-lg font-semibold text-sm transition-colors flex items-center justify-center gap-2"
       >
         <WhatsAppIcon />
         Book a Table

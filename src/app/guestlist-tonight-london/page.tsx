@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import {
   getClubsOpenTonight,
@@ -101,24 +102,35 @@ export default function GuestlistTonightLondonPage() {
       <SchemaMarkup schema={[articleSchema, faqSchema, breadcrumbSchema, itemListSchema]} />
 
       {/* Hero */}
-      <section className="max-w-5xl mx-auto px-6 sm:px-8 pt-28 pb-12 md:pt-36 md:pb-16 text-center">
-        <p className="text-[#C0C0C0] text-sm uppercase tracking-[0.2em] mb-6">
-          Same-Night Access — {dayName}
-        </p>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
-          Guestlist Tonight in London
-        </h1>
-        <p className="text-lg md:text-xl text-[#BBB] max-w-2xl mx-auto leading-relaxed mb-4">
-          Which clubs are still accepting guestlist requests for tonight,
-          what the ratio requirements actually are, and how to maximise
-          your chances of getting through the door without a table booking.
-        </p>
-        <time
-          dateTime={now}
-          className="inline-block text-xs text-[#888] mb-10"
-        >
-          Updated {new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/London' })}
-        </time>
+      <section className="relative min-h-[40vh] flex items-end overflow-hidden">
+        <Image
+          src="/gallery/images/fe4414_250ad5247e7546dcbe9f0c7b4e2fcbaf.jpg"
+          alt="London club guestlist tonight with queue and nightlife scene"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/60 to-black/30" />
+        <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20 text-center">
+          <p className="text-[#C0C0C0] text-sm uppercase tracking-[0.2em] mb-6">
+            Same-Night Access — {dayName}
+          </p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
+            Guestlist Tonight in London
+          </h1>
+          <p className="text-lg md:text-xl text-[#BBB] max-w-2xl mx-auto leading-relaxed mb-4">
+            Which clubs are still accepting guestlist requests for tonight,
+            what the ratio requirements actually are, and how to maximise
+            your chances of getting through the door without a table booking.
+          </p>
+          <time
+            dateTime={now}
+            className="inline-block text-xs text-[#888] mb-10"
+          >
+            Updated {new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/London' })}
+          </time>
+        </div>
       </section>
 
       {/* WhatsApp CTA */}

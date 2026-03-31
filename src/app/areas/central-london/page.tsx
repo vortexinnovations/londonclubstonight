@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { clubs, getClubsByArea } from '@/lib/clubs';
 import ClubCard from '@/components/ClubCard';
@@ -66,8 +67,17 @@ export default function CentralLondonPage() {
 
       <main className="min-h-screen bg-[#0A0A0A]">
         {/* Hero */}
-        <section className="border-b border-[#222] py-20 md:py-28">
-          <div className="max-w-5xl mx-auto px-6 sm:px-8 text-center">
+        <section className="relative min-h-[40vh] flex items-end overflow-hidden">
+          <Image
+            src="/gallery/images/fe4414_243e282bb43f4d2cb03320ddb0cf5549.jpg"
+            alt="Central London nightlife with West End clubs and city lights"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/60 to-black/30" />
+          <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20 text-center">
             <div className="mb-4">
               <Link href="/areas" className="text-[#888] hover:text-[#BBB] text-sm transition-colors">
                 Areas

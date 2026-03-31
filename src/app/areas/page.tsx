@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { clubs, getClubsByArea } from '@/lib/clubs';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
@@ -75,8 +76,17 @@ export default function AreasPage() {
 
       <main className="min-h-screen bg-[#0A0A0A]">
         {/* Hero */}
-        <section className="border-b border-[#222] py-20 md:py-28">
-          <div className="max-w-5xl mx-auto px-6 sm:px-8 text-center">
+        <section className="relative min-h-[40vh] flex items-end overflow-hidden">
+          <Image
+            src="/gallery/images/fe4414_23e37ad1543140e68e62e62587f7120c.jpg"
+            alt="London nightlife areas overview with city lights"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/60 to-black/30" />
+          <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20 text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight">
               London Clubs by Area
             </h1>

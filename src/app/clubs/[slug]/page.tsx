@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { clubs, getClubBySlug } from '@/lib/clubs';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getNightClubSchema } from '@/components/SchemaMarkup';
@@ -105,20 +106,31 @@ export default async function ClubPage({
       )}
 
       {/* Hero */}
-      <header className="max-w-5xl mx-auto px-6 sm:px-8 pt-10 pb-12 md:pb-16 text-center">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-5">
-          {club.name}
-        </h1>
-        <p className="text-lg md:text-xl text-[#BBB] leading-relaxed max-w-2xl mx-auto">
-          {club.tagline}
-        </p>
+      <section className="relative min-h-[50vh] flex items-end overflow-hidden">
+        <Image
+          src={club.heroImage}
+          alt={`${club.name} nightclub London`}
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/60 to-black/30" />
+        <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-5 text-center">
+            {club.name}
+          </h1>
+          <p className="text-lg md:text-xl text-[#BBB] leading-relaxed max-w-2xl mx-auto text-center">
+            {club.tagline}
+          </p>
 
-        {!isClosed && (
-          <div className="flex justify-center mt-10">
-            <WhatsAppCTA clubName={club.name} variant="hero" />
-          </div>
-        )}
-      </header>
+          {!isClosed && (
+            <div className="flex justify-center mt-10">
+              <WhatsAppCTA clubName={club.name} variant="hero" />
+            </div>
+          )}
+        </div>
+      </section>
 
       {/* Quick Info Grid */}
       <section className="max-w-5xl mx-auto px-6 sm:px-8 pb-16">
@@ -248,6 +260,26 @@ export default async function ClubPage({
           )}
         </div>
       </section>
+
+      {/* Gallery */}
+      {club.galleryImages.length > 0 && (
+        <section className="max-w-6xl mx-auto px-4 py-16">
+          <h2 className="text-2xl font-bold text-white mb-8 text-center">Gallery</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {club.galleryImages.map((img, i) => (
+              <div key={i} className="relative aspect-[3/2] overflow-hidden rounded-xl">
+                <Image
+                  src={img}
+                  alt={`${club.name} London nightclub photo ${i + 1}`}
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 50vw, 33vw"
+                />
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Cross Links & Internal Links */}
       <section className="py-12 md:py-16 pb-16">

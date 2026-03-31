@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { getFridayClubs } from '@/lib/clubs';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
@@ -90,8 +91,17 @@ export default function FridayNightclubsLondonPage() {
       />
 
       {/* Hero */}
-      <section className="py-20 md:py-28">
-        <div className="max-w-5xl mx-auto px-6 sm:px-8 text-center">
+      <section className="relative min-h-[40vh] flex items-end overflow-hidden">
+        <Image
+          src="/gallery/images/fe4414_25ff700f6f0a4725aeb1d7343720970d.jpg"
+          alt="Friday night clubs in London with energetic crowd"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/60 to-black/30" />
+        <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20 text-center">
           <p className="text-[#C0C0C0] text-sm uppercase tracking-widest mb-6">
             Friday Night London
           </p>

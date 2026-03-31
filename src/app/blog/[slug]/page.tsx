@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getAllBlogPosts, getBlogPostBySlug } from '@/lib/blog';
 import { clubs } from '@/lib/clubs';
@@ -1720,6 +1721,19 @@ export default async function BlogPostPage({
           <p className="text-lg text-[#BBB] leading-relaxed mb-8 border-l-2 border-[#333] pl-5">
             {post.excerpt}
           </p>
+
+          {/* Featured image */}
+          <div className="relative aspect-video w-full overflow-hidden rounded-2xl mb-10">
+            <Image
+              src={post.featuredImage}
+              alt={post.title}
+              fill
+              className="object-cover"
+              sizes="100vw"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent" />
+          </div>
 
           {/* Main Content */}
           <div className="prose-custom">{getPostContent(slug)}</div>

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { getOpenClubs } from '@/lib/clubs';
 import ClubCard from '@/components/ClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
@@ -40,8 +41,17 @@ export default function ClubsPage() {
       </div>
 
       {/* Hero */}
-      <header className="py-20 md:py-28 text-center">
-        <div className="max-w-6xl mx-auto px-6 sm:px-8">
+      <section className="relative min-h-[40vh] flex items-center justify-center overflow-hidden">
+        <Image
+          src="/gallery/images/TapeFriday041024PartyNextDoor-333.jpg"
+          alt="London nightclubs"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/60 to-black/30" />
+        <div className="relative z-10 text-center px-4 py-16">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
             London Nightclubs
           </h1>
@@ -51,7 +61,7 @@ export default function ClubsPage() {
             and what to expect on the night.
           </p>
         </div>
-      </header>
+      </section>
 
       {/* Club Grid */}
       <section className="max-w-6xl mx-auto px-6 sm:px-8 pb-20">

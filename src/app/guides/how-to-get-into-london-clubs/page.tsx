@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
@@ -67,24 +68,37 @@ export default function HowToGetInPage() {
       />
 
       <div className="bg-[#0A0A0A] min-h-screen">
-        <div className="max-w-5xl mx-auto px-6 sm:px-8 py-20 md:py-28">
-          <div className="mb-4 flex gap-4 text-sm">
-            <Link href="/" className="text-[#BBB] hover:text-white transition-colors">
-              Home
-            </Link>
-            <span className="text-[#888]">/</span>
-            <Link href="/guides" className="text-[#BBB] hover:text-white transition-colors">
-              Guides
-            </Link>
+        <section className="relative min-h-[40vh] flex items-end overflow-hidden">
+          <Image
+            src="/gallery/images/fe4414_22e8141bc1f24230af229704c5102b96.jpg"
+            alt="London club guestlists and table bookings guide hero background"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/60 to-black/30" />
+          <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20">
+            <div className="mb-4 flex gap-4 text-sm">
+              <Link href="/" className="text-[#BBB] hover:text-white transition-colors">
+                Home
+              </Link>
+              <span className="text-[#888]">/</span>
+              <Link href="/guides" className="text-[#BBB] hover:text-white transition-colors">
+                Guides
+              </Link>
+            </div>
+
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+              Guestlists &amp; Table Bookings
+            </h1>
+            <p className="text-center text-[#BBB] max-w-2xl mx-auto">
+              The practical guide to planning your night at London clubs. We are promoters — this is what we do every night.
+            </p>
           </div>
+        </section>
 
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
-            Guestlists &amp; Table Bookings
-          </h1>
-          <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-12">
-            The practical guide to planning your night at London clubs. We are promoters — this is what we do every night.
-          </p>
-
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 py-12">
           {/* Table of Contents */}
           <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 mb-12">
             <h2 className="text-sm font-semibold text-[#C0C0C0] mb-3">In this guide</h2>

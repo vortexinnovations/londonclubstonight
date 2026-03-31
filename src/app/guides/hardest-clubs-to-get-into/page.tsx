@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { clubs } from '@/lib/clubs';
 import Link from 'next/link';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
@@ -73,24 +74,37 @@ export default function ExclusiveClubsPage() {
       />
 
       <div className="bg-[#0A0A0A] min-h-screen">
-        <div className="max-w-5xl mx-auto px-6 sm:px-8 py-20 md:py-28">
-          <div className="mb-4 flex gap-4 text-sm">
-            <Link href="/" className="text-[#BBB] hover:text-white transition-colors">
-              Home
-            </Link>
-            <span className="text-[#888]">/</span>
-            <Link href="/guides" className="text-[#BBB] hover:text-white transition-colors">
-              Guides
-            </Link>
+        <section className="relative min-h-[40vh] flex items-end overflow-hidden">
+          <Image
+            src="/gallery/images/fe4414_22a9f180029946ac94c1e31e1460ac65.jpg"
+            alt="London's most exclusive clubs hero background"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/60 to-black/30" />
+          <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20">
+            <div className="mb-4 flex gap-4 text-sm">
+              <Link href="/" className="text-[#BBB] hover:text-white transition-colors">
+                Home
+              </Link>
+              <span className="text-[#888]">/</span>
+              <Link href="/guides" className="text-[#BBB] hover:text-white transition-colors">
+                Guides
+              </Link>
+            </div>
+
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+              London&apos;s Most Exclusive Clubs
+            </h1>
+            <p className="text-center text-[#BBB] max-w-2xl mx-auto">
+              A guide to London&apos;s most premium nightlife experiences. What makes each venue special, what to expect, and how to arrange your night.
+            </p>
           </div>
+        </section>
 
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
-            London&apos;s Most Exclusive Clubs
-          </h1>
-          <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-12">
-            A guide to London&apos;s most premium nightlife experiences. What makes each venue special, what to expect, and how to arrange your night.
-          </p>
-
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 py-12">
           <div className="grid gap-6">
             {exclusiveClubs.map((slug) => {
               const club = clubs.find(c => c.slug === slug);

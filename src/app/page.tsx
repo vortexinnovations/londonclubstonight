@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { clubs, getOpenClubs } from '@/lib/clubs';
 import ClubCard from '@/components/ClubCard';
@@ -136,8 +137,17 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-[#0A0A0A] border-b border-[#222]">
-        <div className="max-w-6xl mx-auto px-6 sm:px-8 py-28 md:py-36 text-center">
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+        <Image
+          src="/gallery/images/TapeFriday041024PartyNextDoor-410.jpg"
+          alt="London nightclub VIP atmosphere"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/70 to-black/40" />
+        <div className="relative z-10 text-center max-w-4xl mx-auto px-4 py-20">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight">
             London Clubs Tonight
           </h1>
@@ -184,6 +194,18 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Visual break */}
+      <div className="relative h-[300px] w-full overflow-hidden">
+        <Image
+          src="/gallery/images/fe4414_22246854daae4814bd1b4a551b4fd3b6.jpg"
+          alt="London nightclub atmosphere"
+          fill
+          className="object-cover"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-black/50" />
+      </div>
 
       {/* Going Out Tonight? */}
       <section className="py-20 md:py-28">
@@ -325,6 +347,18 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Visual break */}
+      <div className="relative h-[300px] w-full overflow-hidden">
+        <Image
+          src="/gallery/images/fe4414_2291dbc51f7c454086afe6888d025fdb.jpg"
+          alt="VIP bottle service London nightclub"
+          fill
+          className="object-cover"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-black/50" />
+      </div>
 
       {/* Network Cross-Links */}
       <section className="bg-[#141414] border-t border-[#222] py-20 md:py-28">

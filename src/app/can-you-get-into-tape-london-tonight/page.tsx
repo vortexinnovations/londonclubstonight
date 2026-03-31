@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { getClubBySlug } from '@/lib/clubs';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
@@ -85,8 +86,17 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
       />
 
       {/* Hero */}
-      <section className="py-20 md:py-28">
-        <div className="max-w-5xl mx-auto px-6 sm:px-8 text-center">
+      <section className="relative min-h-[40vh] flex items-end overflow-hidden">
+        <Image
+          src="/gallery/images/Tape-4-2.jpg"
+          alt="Tape London nightclub interior with exclusive VIP atmosphere"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/60 to-black/30" />
+        <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20 text-center">
           <p className="text-[#C0C0C0] text-sm uppercase tracking-widest mb-6">
             Insider Guide
           </p>

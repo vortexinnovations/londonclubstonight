@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { clubs } from '@/lib/clubs';
 import Link from 'next/link';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
@@ -53,27 +54,40 @@ export default function ClubsOpenLatePage() {
       />
 
       <div className="bg-[#0A0A0A] min-h-screen">
-        <div className="max-w-5xl mx-auto px-6 sm:px-8 py-20 md:py-28">
-          <div className="mb-4 flex gap-4 text-sm">
-            <Link href="/" className="text-[#BBB] hover:text-white transition-colors">
-              Home
-            </Link>
-            <span className="text-[#888]">/</span>
-            <Link href="/guides" className="text-[#BBB] hover:text-white transition-colors">
-              Guides
-            </Link>
+        <section className="relative min-h-[40vh] flex items-end overflow-hidden">
+          <Image
+            src="/gallery/images/fe4414_22bea265d7434a9990ce468023444910.jpg"
+            alt="Late night London clubs hero background"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/60 to-black/30" />
+          <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20">
+            <div className="mb-4 flex gap-4 text-sm">
+              <Link href="/" className="text-[#BBB] hover:text-white transition-colors">
+                Home
+              </Link>
+              <span className="text-[#888]">/</span>
+              <Link href="/guides" className="text-[#BBB] hover:text-white transition-colors">
+                Guides
+              </Link>
+            </div>
+
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+              Clubs Open Late in London
+            </h1>
+            <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-6">
+              It is 1am, the bar has kicked you out, and the night is still young. Here is where you can go and how late you can stay.
+            </p>
+            <p className="text-center text-[#BBB] text-sm max-w-2xl mx-auto">
+              All closing times listed are standard. Special events and bank holiday weekends may extend hours. Check with us on WhatsApp for the latest on any specific night.
+            </p>
           </div>
+        </section>
 
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
-            Clubs Open Late in London
-          </h1>
-          <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-6">
-            It is 1am, the bar has kicked you out, and the night is still young. Here is where you can go and how late you can stay.
-          </p>
-          <p className="text-center text-[#BBB] text-sm max-w-2xl mx-auto mb-12">
-            All closing times listed are standard. Special events and bank holiday weekends may extend hours. Check with us on WhatsApp for the latest on any specific night.
-          </p>
-
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 py-12">
           {/* Quick Reference */}
           <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 mb-12">
             <h2 className="text-lg font-bold text-white mb-4 text-center">Quick Reference</h2>

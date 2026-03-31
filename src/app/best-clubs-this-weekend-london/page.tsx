@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { getFridayClubs, getSaturdayClubs } from '@/lib/clubs';
 import TonightClubCard from '@/components/TonightClubCard';
@@ -96,24 +97,35 @@ export default function BestClubsThisWeekendPage() {
       <SchemaMarkup schema={[articleSchema, faqSchema, breadcrumbSchema, itemListSchema]} />
 
       {/* Hero */}
-      <section className="max-w-5xl mx-auto px-6 sm:px-8 pt-28 pb-12 md:pt-36 md:pb-16 text-center">
-        <p className="text-[#C0C0C0] text-sm uppercase tracking-[0.2em] mb-6">
-          Friday &amp; Saturday Night Guide
-        </p>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
-          Best Clubs This Weekend in London
-        </h1>
-        <p className="text-lg md:text-xl text-[#BBB] max-w-2xl mx-auto leading-relaxed mb-4">
-          Your complete guide to this weekend&apos;s best clubs. Which venues are
-          running their strongest nights, where the tables are still available,
-          and what you need to know before you arrive.
-        </p>
-        <time
-          dateTime={now}
-          className="inline-block text-xs text-[#888] mb-10"
-        >
-          Updated {new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/London' })}
-        </time>
+      <section className="relative min-h-[40vh] flex items-end overflow-hidden">
+        <Image
+          src="/gallery/images/fe4414_24f7263a295a420d9b4105549832f0dc.jpg"
+          alt="Best London clubs this weekend with Friday and Saturday nightlife"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/60 to-black/30" />
+        <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20 text-center">
+          <p className="text-[#C0C0C0] text-sm uppercase tracking-[0.2em] mb-6">
+            Friday &amp; Saturday Night Guide
+          </p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
+            Best Clubs This Weekend in London
+          </h1>
+          <p className="text-lg md:text-xl text-[#BBB] max-w-2xl mx-auto leading-relaxed mb-4">
+            Your complete guide to this weekend&apos;s best clubs. Which venues are
+            running their strongest nights, where the tables are still available,
+            and what you need to know before you arrive.
+          </p>
+          <time
+            dateTime={now}
+            className="inline-block text-xs text-[#888] mb-10"
+          >
+            Updated {new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/London' })}
+          </time>
+        </div>
       </section>
 
       {/* WhatsApp CTA */}

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { getWhatsAppTableUrl, getWhatsAppGuestlistUrl } from '@/lib/clubs';
 import Link from 'next/link';
 
@@ -20,16 +21,30 @@ export default function ContactPage() {
   const guestlistUrl = getWhatsAppGuestlistUrl();
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
-      <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-        Book a Table or Join Guestlist
-      </h1>
-      <p className="text-lg text-[#BBB] mb-12 max-w-2xl">
-        Skip the forms. We use WhatsApp because it&apos;s faster, more personal, and means you get a real reply
-        from a real promoter — not an automated confirmation email. Tell us what you&apos;re looking for
-        and we&apos;ll sort the rest.
-      </p>
+    <>
+    <section className="relative min-h-[40vh] flex items-end overflow-hidden">
+      <Image
+        src="/gallery/images/fe4414_23971aa95d054304b70968e4b8c2aaa3.jpg"
+        alt="Contact London Clubs Tonight hero background"
+        fill
+        className="object-cover"
+        priority
+        sizes="100vw"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/60 to-black/30" />
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20">
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          Book a Table or Join Guestlist
+        </h1>
+        <p className="text-lg text-[#BBB] max-w-2xl">
+          Skip the forms. We use WhatsApp because it&apos;s faster, more personal, and means you get a real reply
+          from a real promoter — not an automated confirmation email. Tell us what you&apos;re looking for
+          and we&apos;ll sort the rest.
+        </p>
+      </div>
+    </section>
 
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="grid md:grid-cols-2 gap-6 mb-16">
         {/* Table Booking */}
         <div className="bg-[#141414] border border-[#222] rounded-xl p-8">
@@ -66,7 +81,7 @@ export default function ContactPage() {
             href={tableUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="block bg-[#25D366] hover:bg-[#20BD5A] text-white text-center py-4 px-6 rounded-lg font-semibold transition-colors"
+            className="block bg-[#25D366] hover:bg-[#20BD5A] text-[#003d20] text-center py-4 px-6 rounded-lg font-semibold transition-colors"
           >
             Book a Table on WhatsApp
           </a>
@@ -199,5 +214,6 @@ export default function ContactPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

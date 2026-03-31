@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
@@ -48,20 +49,33 @@ export default function GuidesPage() {
       />
 
       <div className="bg-[#0A0A0A] min-h-screen">
-        <div className="max-w-5xl mx-auto px-6 sm:px-8 py-20 md:py-28">
-          <div className="mb-4">
-            <Link href="/" className="text-[#BBB] hover:text-white text-sm transition-colors">
-              &larr; Back to all clubs
-            </Link>
+        <section className="relative min-h-[40vh] flex items-end overflow-hidden">
+          <Image
+            src="/gallery/images/fe4414_22997fd2f5824b99815073940cd43fd2.jpg"
+            alt="London nightclub guides hero background"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/60 to-black/30" />
+          <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20">
+            <div className="mb-4">
+              <Link href="/" className="text-[#BBB] hover:text-white text-sm transition-colors">
+                &larr; Back to all clubs
+              </Link>
+            </div>
+
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+              London Nightclub Guides
+            </h1>
+            <p className="text-center text-[#BBB] max-w-2xl mx-auto">
+              Everything you need to know about London nightlife. Written by promoters who work the scene, book the tables, and know how it all works.
+            </p>
           </div>
+        </section>
 
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
-            London Nightclub Guides
-          </h1>
-          <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-12">
-            Everything you need to know about London nightlife. Written by promoters who work the scene, book the tables, and know how it all works.
-          </p>
-
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 py-12">
           <div className="grid gap-6">
             {guides.map((guide) => (
               <Link

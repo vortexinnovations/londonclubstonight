@@ -25,6 +25,9 @@ export interface Club {
   bestForGroups: 'ladies' | 'mixed' | 'high-spenders' | 'all';
   lastMinuteTableFriendly: boolean;
   lastMinuteNote: string;
+  heroImage: string;
+  cardImage: string;
+  galleryImages: string[];
 }
 
 export const WHATSAPP_NUMBER = '447880662708';
@@ -79,6 +82,9 @@ The music leans heavily into hip-hop, trap, and RnB with the occasional pop cros
     bestForGroups: 'high-spenders',
     lastMinuteTableFriendly: false,
     lastMinuteNote: 'Same-day tables are rare on Fridays and Saturdays. Thursdays have better last-minute availability.',
+    heroImage: '/gallery/images/Tape-1.jpg',
+    cardImage: '/gallery/images/Tape-3.jpg',
+    galleryImages: ['/gallery/images/Tape-10.jpg', '/gallery/images/Tape-15.jpg', '/gallery/images/Tape-17.jpg', '/gallery/images/Tape-20.jpg', '/gallery/images/TapeFriday041024PartyNextDoor-279.jpg', '/gallery/images/TapeSaturday191024-102.jpg'],
   },
   {
     slug: 'cirque-le-soir',
@@ -115,6 +121,9 @@ What makes Cirque Le Soir special is the commitment to spectacle. Every night fe
     bestForGroups: 'mixed',
     lastMinuteTableFriendly: true,
     lastMinuteNote: 'Same-day tables often available, especially on Wednesdays and Fridays. Saturdays book out faster.',
+    heroImage: '/gallery/images/DSC_6749.jpg',
+    cardImage: '/gallery/images/DSC_6757.jpg',
+    galleryImages: ['/gallery/images/DSC_6773.jpg', '/gallery/images/DSC_6780.jpg', '/gallery/images/DSC_6797.jpg', '/gallery/images/DSC_6810.jpg', '/gallery/images/DSC_6830.jpg', '/gallery/images/DSC_6852.jpg'],
   },
   {
     slug: 'the-london-reign',
@@ -151,6 +160,9 @@ Reign appeals to a broad crowd — from couples celebrating special occasions to
     bestForGroups: 'mixed',
     lastMinuteTableFriendly: true,
     lastMinuteNote: 'Club-only tables often available same-day. Dinner-show packages usually need 24 hours notice.',
+    heroImage: '/gallery/images/DSC_6868.jpg',
+    cardImage: '/gallery/images/DSC_6882.jpg',
+    galleryImages: ['/gallery/images/DSC_6890.jpg', '/gallery/images/DSC_6895.jpg', '/gallery/images/DSC_6903.jpg', '/gallery/images/DSC_6920.jpg', '/gallery/images/DSC_6932.jpg', '/gallery/images/DSC_6946.jpg'],
   },
   {
     slug: 'tabu-london',
@@ -187,6 +199,9 @@ TABU works best when you embrace the unique atmosphere. It's not trying to be th
     bestForGroups: 'all',
     lastMinuteTableFriendly: true,
     lastMinuteNote: 'One of the more flexible Mayfair venues for same-day bookings. Message us and we will check availability.',
+    heroImage: '/gallery/images/DSC_6981.jpg',
+    cardImage: '/gallery/images/DSC_6989.jpg',
+    galleryImages: ['/gallery/images/DSC_6997.jpg', '/gallery/images/DSC_7013.jpg', '/gallery/images/DSC_7034.jpg', '/gallery/images/DSC_7047.jpg', '/gallery/images/DSC_7056.jpg', '/gallery/images/DSC_7072.jpg'],
   },
   {
     slug: 'libertine',
@@ -223,6 +238,9 @@ Libertine works particularly well for groups who are tired of the same Mayfair f
     bestForGroups: 'all',
     lastMinuteTableFriendly: false,
     lastMinuteNote: 'Permanently closed.',
+    heroImage: '/gallery/images/DSC_7086.jpg',
+    cardImage: '/gallery/images/DSC_7089.jpg',
+    galleryImages: ['/gallery/images/DSC_7092.jpg', '/gallery/images/DSC_7136.jpg'],
   },
   {
     slug: 'luxx-club',
@@ -259,6 +277,9 @@ Tables start from £1,000 and are well-positioned to enjoy both the light show a
     bestForGroups: 'all',
     lastMinuteTableFriendly: false,
     lastMinuteNote: 'Permanently closed.',
+    heroImage: '/gallery/images/DSC_7150.jpg',
+    cardImage: '/gallery/images/DSC_7155.jpg',
+    galleryImages: ['/gallery/images/DSC_7164.jpg', '/gallery/images/DSC_7170.jpg'],
   },
   {
     slug: 'maddox',
@@ -295,6 +316,9 @@ Tables start from £1,000 for the club portion of the evening. Dinner reservatio
     bestForGroups: 'mixed',
     lastMinuteTableFriendly: true,
     lastMinuteNote: 'Dinner reservations and club tables often available same-day, especially midweek.',
+    heroImage: '/gallery/images/DSC_7176.jpg',
+    cardImage: '/gallery/images/DSC_7183.jpg',
+    galleryImages: ['/gallery/images/DSC_7219.jpg', '/gallery/images/DSC_7230.jpg', '/gallery/images/DSC_7257.jpg', '/gallery/images/DSC_7276.jpg', '/gallery/images/DSC_7331.jpg', '/gallery/images/DSC_7350.jpg'],
   },
   {
     slug: 'scotch-of-st-james',
@@ -331,6 +355,9 @@ Tables start from £1,000 and the intimate scale means every table feels premium
     bestForGroups: 'all',
     lastMinuteTableFriendly: true,
     lastMinuteNote: 'One of the easier Mayfair venues for same-day table bookings. Good availability most nights.',
+    heroImage: '/gallery/images/DSC_7358.jpg',
+    cardImage: '/gallery/images/DSC_7371.jpg',
+    galleryImages: ['/gallery/images/DSC_7399.jpg', '/gallery/images/DSC_7404.jpg', '/gallery/images/DSC_7420.jpg', '/gallery/images/DSC_7435.jpg', '/gallery/images/DSC_7453.jpg', '/gallery/images/DSC_7496.jpg'],
   },
   {
     slug: 'cuckoo-club',
@@ -367,6 +394,9 @@ Tables start from £1,000 and are available on both floors. The guestlist is rel
     bestForGroups: 'all',
     lastMinuteTableFriendly: true,
     lastMinuteNote: 'Good same-day availability. Tables are reasonably priced and the team is accommodating.',
+    heroImage: '/gallery/images/DSC_7507.jpg',
+    cardImage: '/gallery/images/DSC_7537.jpg',
+    galleryImages: ['/gallery/images/DSC_7610.jpg', '/gallery/images/DSC_7613.jpg', '/gallery/images/DSC_7617.jpg', '/gallery/images/DSC_7638.jpg', '/gallery/images/DSC_7672.jpg', '/gallery/images/DSC_7705.jpg'],
   },
   {
     slug: 'dear-darling',
@@ -403,6 +433,9 @@ Tables start from £1,000 for the late-night experience. Earlier evening booking
     bestForGroups: 'ladies',
     lastMinuteTableFriendly: true,
     lastMinuteNote: 'Very flexible for same-day bookings. The cocktail-focused format means less pressure on table minimums.',
+    heroImage: '/gallery/images/DSC_7715.jpg',
+    cardImage: '/gallery/images/DSC_7737.jpg',
+    galleryImages: ['/gallery/images/DSC_7741.jpg', '/gallery/images/DSC_7767.jpg', '/gallery/images/DSC_7812.jpg', '/gallery/images/DSC_7828.jpg', '/gallery/images/DSC_7854.jpg', '/gallery/images/DSC_7877.jpg'],
   },
   {
     slug: 'beat-london',
@@ -439,6 +472,9 @@ Tables start from £1,000 and offer good views of the dancefloor and DJ booth. T
     bestForGroups: 'all',
     lastMinuteTableFriendly: true,
     lastMinuteNote: 'Good same-day availability. More accessible than Mayfair for last-minute plans.',
+    heroImage: '/gallery/images/DSC_7884.jpg',
+    cardImage: '/gallery/images/DSC_7900.jpg',
+    galleryImages: ['/gallery/images/DSC_7916.jpg', '/gallery/images/DSC_7931.jpg', '/gallery/images/DSC_7943.jpg', '/gallery/images/DSC_7952.jpg', '/gallery/images/DSC_7988.jpg', '/gallery/images/DSC_7995.jpg'],
   },
   {
     slug: 'ministry-of-sound',
@@ -475,6 +511,9 @@ Unlike the Mayfair clubs, Ministry operates on a larger scale. Capacity runs int
     bestForGroups: 'all',
     lastMinuteTableFriendly: true,
     lastMinuteNote: 'Tables available but Ministry is primarily a ticket venue. Check the lineup and buy tickets online.',
+    heroImage: '/gallery/images/DSC_8000.jpg',
+    cardImage: '/gallery/images/DSC_8017.jpg',
+    galleryImages: ['/gallery/images/DSC_8026.jpg', '/gallery/images/DSC_8129.jpg', '/gallery/images/DSC_8155.jpg', '/gallery/images/DSC_8163.jpg', '/gallery/images/DSC_8179.jpg', '/gallery/images/DSC_8282.jpg'],
   },
   {
     slug: 'lio-london',
@@ -511,6 +550,9 @@ Tables start from £1,000 for the club portion, with dinner packages offering th
     bestForGroups: 'all',
     lastMinuteTableFriendly: false,
     lastMinuteNote: 'Permanently closed.',
+    heroImage: '/gallery/images/fe4414_0023ee263fca4fe9806bc09d74113eaa.jpg',
+    cardImage: '/gallery/images/fe4414_002538ddacfe4ce1a4fe89fa0e8305ae.jpg',
+    galleryImages: ['/gallery/images/fe4414_00edcb5adc4c4c4cb5dd97d80ea2f4c4.jpg'],
   },
   {
     slug: 'funky-buddha',
@@ -547,6 +589,9 @@ Tables start from £1,000 and the table service experience benefits from years o
     bestForGroups: 'all',
     lastMinuteTableFriendly: true,
     lastMinuteNote: 'Good same-day table availability. The team is flexible and accommodating for last-minute plans.',
+    heroImage: '/gallery/images/fe4414_0152b4f29a9540be8eef055230e66221.jpg',
+    cardImage: '/gallery/images/fe4414_016460dc35074665a9f15d051da0d9de.jpg',
+    galleryImages: ['/gallery/images/fe4414_0165fb3b91da4e7993307b522fb58de4.jpg', '/gallery/images/fe4414_01702fa34a044f768289fe742cd80053.jpg', '/gallery/images/fe4414_03d0d58e1fb54eb885d6b4ae0986f483.jpg', '/gallery/images/fe4414_03db13b7a1d845d2887fe95e547b1369.jpg', '/gallery/images/fe4414_03e57f432c7d4f689fa9a2d9906ef9d0.jpg', '/gallery/images/fe4414_0528f444f562494791e99146e727f269.jpg'],
   },
   {
     slug: 'the-box-london',
@@ -583,6 +628,9 @@ This is not a club for everyone, and it doesn't pretend to be. The content can b
     bestForGroups: 'high-spenders',
     lastMinuteTableFriendly: false,
     lastMinuteNote: 'Same-day tables are rare. The Box requires advance planning for the best experience.',
+    heroImage: '/gallery/images/fe4414_059f2162e2de4e39a12f8c67843cc717.jpg',
+    cardImage: '/gallery/images/fe4414_0628cad52eb04160b0e05f31c8ab7adf.jpg',
+    galleryImages: ['/gallery/images/fe4414_0671e2a8f6974449a73307a48ce1b12e.jpg', '/gallery/images/fe4414_0676bc05b33b43d1b091746138a35a8a.jpg', '/gallery/images/fe4414_06c4956241eb411b8774897492ccdb20.jpg', '/gallery/images/fe4414_072d223d158244a6815f1ed7b01e900b.jpg', '/gallery/images/fe4414_079171b00717438b8594796362b0247d.jpg', '/gallery/images/fe4414_07bc468fe5a042e0a11c182c21dc63ad.jpg'],
   },
   {
     slug: 'luna-club-london',
@@ -619,6 +667,9 @@ Tables start from £1,000 and book up quickly, particularly on Saturdays. Guestl
     bestForGroups: 'mixed',
     lastMinuteTableFriendly: true,
     lastMinuteNote: 'As a newer venue, same-day tables are often available. Good option for spontaneous plans.',
+    heroImage: '/gallery/images/fe4414_07f1808f9ba84bdd8fe93d124ef624ae.jpg',
+    cardImage: '/gallery/images/fe4414_08ffe6ecd7e64958b22d4b1ab42d1722.jpg',
+    galleryImages: ['/gallery/images/fe4414_0901bc84893644f297dce6bab32eedf0.jpg', '/gallery/images/fe4414_0908e40d5430400dbcd1bde279384671.jpg', '/gallery/images/fe4414_091285b805994cfc8a1f60f2da0dcb9c.jpg', '/gallery/images/fe4414_093630378f1e499889ffc7920902d7f6.jpg', '/gallery/images/fe4414_0a9241c0940740cba4cdbc9ec6705847.jpg', '/gallery/images/fe4414_0b0ef282cb324fc59641002ddeb34465.jpg'],
   },
   {
     slug: 'selene-london',
@@ -655,6 +706,9 @@ Tables start from £1,000 and the service is polished. The crowd is well-dressed
     bestForGroups: 'ladies',
     lastMinuteTableFriendly: true,
     lastMinuteNote: 'Flexible for same-day bookings. The cocktail focus means a more relaxed approach to table reservations.',
+    heroImage: '/gallery/images/fe4414_0b515258f9b045329589a7de8017c4ee.jpg',
+    cardImage: '/gallery/images/fe4414_0b56407f8e7340daab04b2f48da1b04a.jpg',
+    galleryImages: ['/gallery/images/fe4414_0cba03ea5abe4657beb2d4e9b87a2f35.jpg', '/gallery/images/fe4414_0da5b1d362b845eda0fd7208e737c37f.jpg', '/gallery/images/fe4414_0da8a7994beb4cf9a8cbc05f1e3b133a.jpg', '/gallery/images/fe4414_0de6edc0e91842caa94cd80d20c6a200.jpg', '/gallery/images/fe4414_0e5e4e6b5fa641e9a0b8b9fe23d7669f.jpg', '/gallery/images/fe4414_0e78eec042ae483cb581ada1fad923a5.jpg'],
   },
 ];
 

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import type { BlogPost } from '@/lib/blog';
 
 interface BlogCardProps {
@@ -10,14 +11,24 @@ export default function BlogCard({ post, featured = false }: BlogCardProps) {
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className={`group relative block bg-[#141414] border border-[#222] rounded-2xl transition-all duration-500 hover:border-[#444] hover:shadow-[0_0_40px_rgba(255,255,255,0.04)] hover:-translate-y-0.5 overflow-hidden ${
-        featured ? 'p-8' : 'p-6'
-      }`}
+      className={`group relative block bg-[#141414] border border-[#222] rounded-2xl transition-all duration-500 hover:border-[#444] hover:shadow-[0_0_40px_rgba(255,255,255,0.04)] hover:-translate-y-0.5 overflow-hidden`}
     >
+      {/* Featured image */}
+      <div className={`relative w-full overflow-hidden ${featured ? 'aspect-video' : 'aspect-[3/2]'}`}>
+        <Image
+          src={post.featuredImage}
+          alt={post.title}
+          fill
+          className="object-cover group-hover:scale-105 transition-transform duration-500"
+          sizes={featured ? '(max-width: 768px) 100vw, 100vw' : '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#141414] via-transparent to-transparent" />
+      </div>
+
       {/* Subtle gradient overlay on hover */}
       <div className="absolute inset-0 bg-gradient-to-b from-white/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-2xl" />
 
-      <div className="relative z-10">
+      <div className={`relative z-10 ${featured ? 'p-8' : 'p-6'}`}>
         {/* Category badge + date centered */}
         <div className="flex items-center justify-center gap-3 mb-5">
           <span className="text-xs font-medium text-[#C0C0C0] bg-white/5 px-3 py-1 rounded-full border border-white/[0.04]">
