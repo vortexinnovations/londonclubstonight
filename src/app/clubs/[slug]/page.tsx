@@ -115,12 +115,12 @@ export default async function ClubPage({
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/60 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/80 to-black/60" />
         <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-5 text-center">
             {club.name}
           </h1>
-          <p className="text-lg md:text-xl text-[#BBB] leading-relaxed max-w-2xl mx-auto text-center">
+          <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-2xl mx-auto text-center">
             {club.tagline}
           </p>
 

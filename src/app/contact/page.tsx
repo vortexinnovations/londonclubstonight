@@ -31,12 +31,12 @@ export default function ContactPage() {
         priority
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/60 to-black/30" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/80 to-black/60" />
       <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
           Book a Table or Join Guestlist
         </h1>
-        <p className="text-lg text-[#BBB] max-w-2xl">
+        <p className="text-lg text-white/80 max-w-2xl">
           Skip the forms. We use WhatsApp because it&apos;s faster, more personal, and means you get a real reply
           from a real promoter — not an automated confirmation email. Tell us what you&apos;re looking for
           and we&apos;ll sort the rest.

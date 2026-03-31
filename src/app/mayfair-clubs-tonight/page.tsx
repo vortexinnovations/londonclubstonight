@@ -101,22 +101,22 @@ export default function MayfairClubsTonightPage() {
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/60 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/80 to-black/60" />
         <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20 text-center">
-          <p className="text-[#C0C0C0] text-sm uppercase tracking-[0.2em] mb-6">
+          <p className="text-white/80 text-sm uppercase tracking-[0.2em] mb-6">
             {dayName} Night in Mayfair
           </p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
             Mayfair Clubs Tonight
           </h1>
-          <p className="text-lg md:text-xl text-[#BBB] max-w-2xl mx-auto leading-relaxed mb-4">
+          <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed mb-4">
             The definitive guide to what is open in Mayfair right now.
             Which clubs are running, which guestlists are still accepting
             names, and where you can still get a table tonight.
           </p>
           <time
             dateTime={now}
-            className="inline-block text-xs text-[#888] mb-10"
+            className="inline-block text-xs text-white/60 mb-10"
           >
             Updated {new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/London' })}
           </time>

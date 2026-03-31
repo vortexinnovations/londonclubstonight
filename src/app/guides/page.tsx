@@ -58,10 +58,10 @@ export default function GuidesPage() {
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/60 to-black/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/80 to-black/60" />
           <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20">
             <div className="mb-4">
-              <Link href="/" className="text-[#BBB] hover:text-white text-sm transition-colors">
+              <Link href="/" className="text-white/80 hover:text-white text-sm transition-colors">
                 &larr; Back to all clubs
               </Link>
             </div>
@@ -69,7 +69,7 @@ export default function GuidesPage() {
             <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
               London Nightclub Guides
             </h1>
-            <p className="text-center text-[#BBB] max-w-2xl mx-auto">
+            <p className="text-center text-white/80 max-w-2xl mx-auto">
               Everything you need to know about London nightlife. Written by promoters who work the scene, book the tables, and know how it all works.
             </p>
           </div>

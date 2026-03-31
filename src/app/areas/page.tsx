@@ -85,12 +85,12 @@ export default function AreasPage() {
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/60 to-black/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/80 to-black/60" />
           <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20 text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight">
               London Clubs by Area
             </h1>
-            <p className="text-[#BBB] text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+            <p className="text-white/80 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
               London&apos;s nightlife is concentrated in a handful of key areas, each
               with its own character and crowd. Whether you&apos;re looking for Mayfair&apos;s
               exclusivity, Soho&apos;s energy, or the broader West End scene, find the

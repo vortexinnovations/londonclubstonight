@@ -95,15 +95,15 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/60 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/80 to-black/60" />
         <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20 text-center">
-          <p className="text-[#C0C0C0] text-sm uppercase tracking-widest mb-6">
+          <p className="text-white/80 text-sm uppercase tracking-widest mb-6">
             Insider Guide
           </p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6">
             Can You Get Into Tape London Tonight?
           </h1>
-          <p className="text-[#BBB] text-lg md:text-xl max-w-2xl mx-auto mb-10">
+          <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10">
             An honest assessment from promoters who work with Tape every week. No false promises, just straight answers about your chances tonight.
           </p>
           <WhatsAppCTA clubName="Tape London" variant="tonight" heading="Need a Table at Tape Tonight?" />

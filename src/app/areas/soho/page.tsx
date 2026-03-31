@@ -64,19 +64,19 @@ export default function SohoPage() {
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/60 to-black/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/80 to-black/60" />
           <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20 text-center">
             <div className="mb-4">
-              <Link href="/areas" className="text-[#888] hover:text-[#BBB] text-sm transition-colors">
+              <Link href="/areas" className="text-white/60 hover:text-white/80 text-sm transition-colors">
                 Areas
               </Link>
               <span className="text-[#444] mx-2">/</span>
-              <span className="text-[#BBB] text-sm">Soho</span>
+              <span className="text-white/80 text-sm">Soho</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight">
               Best Clubs in Soho
             </h1>
-            <p className="text-[#BBB] text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+            <p className="text-white/80 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
               Soho is London&apos;s most vibrant entertainment district, renowned for
               its bars, restaurants, theatres, and late-night energy. While the majority
               of London&apos;s luxury nightclubs sit technically within Mayfair&apos;s

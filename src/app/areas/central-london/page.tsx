@@ -76,19 +76,19 @@ export default function CentralLondonPage() {
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/60 to-black/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/80 to-black/60" />
           <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20 text-center">
             <div className="mb-4">
-              <Link href="/areas" className="text-[#888] hover:text-[#BBB] text-sm transition-colors">
+              <Link href="/areas" className="text-white/60 hover:text-white/80 text-sm transition-colors">
                 Areas
               </Link>
               <span className="text-[#444] mx-2">/</span>
-              <span className="text-[#BBB] text-sm">Central London</span>
+              <span className="text-white/80 text-sm">Central London</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight">
               Best Clubs in Central London
             </h1>
-            <p className="text-[#BBB] text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+            <p className="text-white/80 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
               Central London is home to virtually every major nightclub worth visiting.
               From the exclusive members clubs of Mayfair to the energy of Soho and
               the theatrical venues around St James&apos;s and Piccadilly, the West End

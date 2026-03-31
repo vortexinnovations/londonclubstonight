@@ -50,12 +50,12 @@ export default function ClubsPage() {
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/60 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/80 to-black/60" />
         <div className="relative z-10 text-center px-4 py-16">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
             London Nightclubs
           </h1>
-          <p className="text-lg text-[#BBB] leading-relaxed max-w-2xl mx-auto">
+          <p className="text-lg text-white/80 leading-relaxed max-w-2xl mx-auto">
             The complete list of London&apos;s best nightclubs, ranked by our team.
             Every club includes insider tips on entry, dress code, table prices,
             and what to expect on the night.

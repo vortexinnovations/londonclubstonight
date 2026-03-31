@@ -112,15 +112,15 @@ export default function BestClubsInLondonPage() {
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/60 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/80 to-black/60" />
         <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20 text-center">
-          <p className="text-[#C0C0C0] text-sm uppercase tracking-[0.2em] mb-6">
+          <p className="text-white/80 text-sm uppercase tracking-[0.2em] mb-6">
             Updated for 2026
           </p>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-8">
             Best Clubs in London
           </h1>
-          <p className="text-lg md:text-xl text-[#AAAAAA] leading-relaxed max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-3xl mx-auto">
             This is not another recycled list from a lifestyle magazine that sends
             a freelancer to one club once a year. We are promoters. We work these
             doors every weekend. We know which clubs are actually worth your time
@@ -129,7 +129,7 @@ export default function BestClubsInLondonPage() {
             of client bookings, and honest conversations with the people who run
             them.
           </p>
-          <div className="mt-10 flex flex-wrap justify-center gap-4 text-sm text-[#888]">
+          <div className="mt-10 flex flex-wrap justify-center gap-4 text-sm text-white/60">
             <span>{rankedClubs.length} clubs ranked</span>
             <span className="text-[#333]">|</span>
             <span>Honest reviews from promoters</span>
