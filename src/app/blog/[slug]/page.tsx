@@ -1638,6 +1638,76 @@ function getPostContent(slug: string): React.ReactNode {
         </>
       );
 
+    // ─────────────────────────────────────────────
+    // POST 25: Best R&B and Hip-Hop Clubs in London
+    // ─────────────────────────────────────────────
+    case 'best-rnb-hip-hop-clubs-london':
+      return (
+        <>
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Why R&amp;B and Hip-Hop Still Rule London Nightlife</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Walk into almost any club in central London on a Friday or Saturday night and you will hear R&amp;B and hip-hop within the first ten minutes. These genres are not a niche — they are the backbone of the city&apos;s nightlife. From Mayfair table-service venues to basement clubs in Soho, RnB and hip-hop fill dancefloors more consistently than any other sound.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            But not every club does it well. Some play a token R&amp;B track between house sets. Others build their entire identity around it. We work with these venues every week, and we know which ones genuinely deliver for people who want to hear proper R&amp;B and hip-hop all night — not just a Drake song every forty minutes.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The Best Clubs for R&amp;B and Hip-Hop in London</h2>
+
+          <h3 className="text-xl font-bold text-white mt-8 mb-3">Tape London</h3>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link> is the venue most closely associated with hip-hop and R&amp;B in Mayfair. The music policy centres on commercial hip-hop, RnB, and party anthems, played through one of the best sound systems in the area. The resident DJs know exactly how to read the room, blending new releases with classics that keep the energy high. If you want a premium Mayfair experience with guaranteed R&amp;B all night, Tape is the standard.
+          </p>
+
+          <h3 className="text-xl font-bold text-white mt-8 mb-3">BEAT London</h3>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <Link href="/clubs/beat-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">BEAT London</Link> is arguably the most dedicated hip-hop club in London. Multiple rooms play different flavours of the genre — from mainstream hip-hop and trap to RnB slow jams and throwback sets. The crowd comes specifically for the music, which creates an atmosphere that feels different from venues where hip-hop is just part of a wider rotation. If hip-hop is genuinely what you are after, BEAT should be near the top of your list.
+          </p>
+
+          <h3 className="text-xl font-bold text-white mt-8 mb-3">Funky Buddha</h3>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <Link href="/clubs/funky-buddha" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Funky Buddha</Link> has been a Mayfair institution for years, and its music policy has always leaned into R&amp;B, hip-hop, and commercial party tracks. The DJs blend old-school classics — think Usher, Beyonc&eacute;, Jay-Z — with current hits. It is one of the few Mayfair venues where you can genuinely hear 90s and 2000s RnB woven into every set. The crowd loves it, and the dancefloor reflects that energy.
+          </p>
+
+          <h3 className="text-xl font-bold text-white mt-8 mb-3">Cirque Le Soir</h3>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link> is known for its theatrical performances, but the music is equally strong. The DJ sets lean heavily into hip-hop and RnB, with a commercial edge that keeps the atmosphere lively. Between the live acts, the dancefloor fills with people who came as much for the music as the spectacle. It is a unique combination — R&amp;B in a venue that feels nothing like a standard club.
+          </p>
+
+          <h3 className="text-xl font-bold text-white mt-8 mb-3">Luna Club London</h3>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <Link href="/clubs/luna-club-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Luna Club</Link> blends R&amp;B with Afrobeats and amapiano, creating a sound that reflects the diversity of London&apos;s nightlife audience. If you want hip-hop and RnB mixed with African rhythms, Luna delivers that crossover seamlessly. The DJs move between genres without it ever feeling forced, and the crowd responds to all of it.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">What to Expect on the Night</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            R&amp;B and hip-hop nights at London clubs tend to attract a well-dressed, sociable crowd. The dress code at <Link href="/areas/mayfair" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair venues</Link> is smart — collared shirts, smart shoes, and clean tailoring for men. Women dress up. The energy on the dancefloor is different from house or techno nights — people sing along, the vibe is more social, and the atmosphere peaks later in the night as the DJ drops bigger tracks.
+          </p>
+          <ul className="list-disc list-inside text-[#BBB] space-y-2 mb-6 ml-4">
+            <li><strong className="text-white">Peak hours:</strong> 12:30am to 2:30am is when the dancefloor hits its stride</li>
+            <li><strong className="text-white">Best nights:</strong> Friday and Saturday are the strongest for R&amp;B — Thursday can also deliver at select venues</li>
+            <li><strong className="text-white">Dress code:</strong> Smart is non-negotiable at Mayfair clubs — read our <Link href="/blog/what-to-wear-to-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">dress code guide</Link> for specifics</li>
+            <li><strong className="text-white">Guestlist:</strong> Always sign up — it is free and gets you priority entry at every venue listed here</li>
+          </ul>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Old-School R&amp;B vs New School — Where to Find Each</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            If you grew up on Aaliyah, TLC, and early 2000s Destiny&apos;s Child, Funky Buddha and Tape London are your best choices. Their DJs consistently weave throwback R&amp;B into modern sets. If you prefer current hip-hop — Travis Scott, 21 Savage, Future — BEAT London and Luna Club lean more heavily into new releases. Most clubs offer a blend of both, but the balance varies.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Dedicated throwback nights do exist in London and they rotate between venues. They are not weekly fixtures at any one club, so the best way to catch one is to <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">message us on WhatsApp</a> and ask what is running this week.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">How to Get In</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            R&amp;B nights at popular clubs fill up quickly. <Link href="/blog/how-to-skip-the-queue-at-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Skipping the queue</Link> starts with getting on the guestlist — it is free, takes two minutes, and gives you priority at the door. For the best experience, a <Link href="/last-minute-table-booking-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">table booking</Link> guarantees entry and gives you a base for the night with bottle service included. Tables at R&amp;B-heavy venues like Tape and Cirque book out fast on Saturdays, so plan ahead.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Whether you want a table overlooking the dancefloor or just guestlist entry and a spot at the bar, we can sort it. <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20book%20a%20table." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> and we&apos;ll get you into the right venue for your night.
+          </p>
+        </>
+      );
+
     default:
       return (
         <p className="text-[#BBB] leading-relaxed">

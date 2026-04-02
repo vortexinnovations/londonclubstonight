@@ -399,6 +399,25 @@ export const blogPosts: BlogPost[] = [
       { question: 'What are the biggest etiquette mistakes at London clubs?', answer: 'Blocking the dancefloor to take photos, being overly aggressive at the bar, ignoring the dress code, getting too drunk before you arrive, being rude to staff, and trying to move into someone else\'s table area. The clubs that feel the best are the ones where everyone reads the room and contributes to the atmosphere rather than disrupting it.' },
     ],
   },
+  {
+    slug: 'best-rnb-hip-hop-clubs-london',
+    title: 'Best R&B and Hip-Hop Clubs in London — Where to Hear the Best Sets',
+    metaTitle: 'Best R&B & Hip-Hop Clubs London 2026',
+    metaDescription: 'The best clubs in London for R&B and hip-hop music. Which venues play RnB every weekend, the best dedicated nights, resident DJs, and where to hear old-school and new.',
+    excerpt: 'R&B and hip-hop dominate London\'s biggest dancefloors. Here\'s where to find the best sets every weekend — from old-school classics to the latest releases.',
+    featuredImage: '/gallery/images/fe4414_1c914d7fbee84e38825006560f28fea6.jpg',
+    category: 'Going Out',
+    tags: ['rnb', 'hip-hop', 'music', 'clubs'],
+    publishedDate: '2026-04-02',
+    updatedDate: '2026-04-02',
+    relatedClubs: ['tape-london', 'cirque-le-soir', 'funky-buddha', 'beat-london', 'luna-club-london'],
+    faqs: [
+      { question: 'Which London clubs play R&B every weekend?', answer: 'Tape London, Cirque Le Soir, and Funky Buddha all play R&B as a core part of their weekend playlists. BEAT London leans heavily into hip-hop and RnB across multiple rooms. Luna Club mixes RnB with Afrobeats. For a guaranteed R&B-heavy night, Tape and Funky Buddha are your safest choices.' },
+      { question: 'Are there old-school R&B nights in London?', answer: 'Yes. Several clubs run throwback sets featuring 90s and 2000s R&B and hip-hop. Funky Buddha is known for weaving classics into its sets. Dedicated old-school nights rotate across venues — message us on WhatsApp for the current schedule. Thursday nights often lean more heavily into classic tracks.' },
+      { question: 'What is the best hip-hop club in London?', answer: 'BEAT London is the most dedicated hip-hop venue in the city, with multiple rooms playing hip-hop, trap, and RnB. Tape London plays hip-hop alongside commercial and RnB. For underground hip-hop, check Ministry of Sound event listings. For Mayfair hip-hop with a premium setting, Tape is hard to beat.' },
+      { question: 'Do London clubs play UK rap and drill?', answer: 'Some venues feature UK rap in their sets, particularly BEAT London and Luna Club. However, most Mayfair clubs lean towards US hip-hop and commercial RnB. Drill specifically is less common at central London nightclubs but features at dedicated event nights. Check specific venue listings for genre-focused evenings.' },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
