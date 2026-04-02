@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-  const posts = getAllBlogPosts();
+  const posts = getAllBlogPosts().sort((a, b) => new Date(b.publishedDate).getTime() - new Date(a.publishedDate).getTime());
   const categories = getCategories();
   const featuredPost = posts[0];
   const remainingPosts = posts.slice(1);
