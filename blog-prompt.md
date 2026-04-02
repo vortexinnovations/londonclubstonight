@@ -86,17 +86,19 @@ The two valid categories are (case-sensitive, exact strings):
 
 ### Fetch available images
 
-Run this Node.js script to get all images in the Supabase bucket:
+Run this command to get all images in the Supabase bucket. It reads the key from the `.env` file in the project root:
 
-```js
+```bash
+node -e "
+const fs = require('fs');
+const env = Object.fromEntries(fs.readFileSync('.env','utf8').trim().split('\n').map(l=>l.split('=')).map(([k,...v])=>[k,v.join('=')]));
 const https = require('https');
-const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
-if (!key) { console.error('SUPABASE_SERVICE_ROLE_KEY env var is required'); process.exit(1); }
 const url = 'https://hgsgysaxiraaezeneshr.supabase.co/storage/v1/object/list/gallery';
 const options = {
   method: 'POST',
   headers: {
-    'Authorization': `Bearer ${key}`,
+    'apikey': env.SUPABASE_SECRET_KEY,
+    'Authorization': 'Bearer ' + env.SUPABASE_SECRET_KEY,
     'Content-Type': 'application/json',
   },
 };
@@ -110,9 +112,14 @@ const req = https.request(url, options, (res) => {
 });
 req.write(JSON.stringify({ prefix: '', limit: 1000, offset: 0 }));
 req.end();
+"
 ```
 
-**Environment variable required:** `SUPABASE_SERVICE_ROLE_KEY` must be set in the scheduler environment. Get the value from your Supabase project dashboard under Settings > API > Service Role Key.
+**Setup required:** The `.env` file in the project root must contain:
+```
+SUPABASE_SECRET_KEY=<your-supabase-secret-key>
+```
+This file is gitignored and never committed.
 
 ### Check used images
 
