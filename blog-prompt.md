@@ -86,8 +86,6 @@ The two valid categories are (case-sensitive, exact strings):
 
 ### Fetch available images
 
-Run this command to get all images in the Supabase bucket. It reads the key from the `.env` file in the project root:
-
 ```bash
 ```
 Fetch the list of available images from the tracker repo (all sites share the same image pool):
@@ -99,12 +97,6 @@ If you cannot read it, try:
 gh api repos/vortexinnovations/blog-scheduler-tracker/contents/images.json --jq '.content' | base64 -d
 ```
 
-This returns all image filenames. No Supabase API key or .env file is needed.
-
-**Setup required:** The `.env` file in the project root must contain:
-```
-SUPABASE_SECRET_KEY=<your-supabase-secret-key>
-```
 This file is gitignored and never committed.
 
 ### Check used images
