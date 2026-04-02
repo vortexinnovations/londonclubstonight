@@ -90,11 +90,13 @@ Run this Node.js script to get all images in the Supabase bucket:
 
 ```js
 const https = require('https');
+const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+if (!key) { console.error('SUPABASE_SERVICE_ROLE_KEY env var is required'); process.exit(1); }
 const url = 'https://hgsgysaxiraaezeneshr.supabase.co/storage/v1/object/list/gallery';
 const options = {
   method: 'POST',
   headers: {
-    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhnc2d5c2F4aXJhYWV6ZW5lc2hyIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NDU3MTA0MCwiZXhwIjoyMDkwMTQ3MDQwfQ.i_-3uggRCa52chsppLL8f8MVC-FaCjKDeUJKiWf7i28',
+    'Authorization': `Bearer ${key}`,
     'Content-Type': 'application/json',
   },
 };
@@ -109,6 +111,8 @@ const req = https.request(url, options, (res) => {
 req.write(JSON.stringify({ prefix: '', limit: 1000, offset: 0 }));
 req.end();
 ```
+
+**Environment variable required:** `SUPABASE_SERVICE_ROLE_KEY` must be set in the scheduler environment. Get the value from your Supabase project dashboard under Settings > API > Service Role Key.
 
 ### Check used images
 
