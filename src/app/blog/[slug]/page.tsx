@@ -1791,6 +1791,78 @@ function getPostContent(slug: string): React.ReactNode {
         </>
       );
 
+    // ─────────────────────────────────────────────
+    // POST 26: Bank Holiday Clubbing in London
+    // ─────────────────────────────────────────────
+    case 'bank-holiday-clubbing-london-guide':
+      return (
+        <>
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Bank Holidays Hit Different in London</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            A bank holiday weekend in London is not just a regular night out with a day off attached. The entire rhythm of the city&apos;s nightlife shifts. Clubs extend their hours, promoters bring out headline DJs, door prices climb, and every venue in central London fills to capacity hours earlier than usual. If you treat it like a normal Saturday, you will be caught off guard.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            We work these nights every time they come around — May Day, the late May bank holiday, August, Easter — and the pattern is always the same. The people who plan ahead have a brilliant night. The people who wing it spend half the evening in a queue. Here is what actually changes and how to stay ahead of it.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">What Changes on a Bank Holiday Night</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The biggest shift is hours. Venues that normally close at 3am often push to 4am or even 5am on bank holidays. <Link href="/clubs/the-box-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Box</Link> in Soho and <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link> regularly run extended sets on these weekends, and the energy in the room at 3am feels like midnight on a standard Saturday.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Pricing changes too. Expect door charges to increase by a few pounds and minimum spends on tables to rise by 20 to 50 per cent depending on the venue. Guestlist entry is still the smartest way to manage costs, but the lists close earlier — often by late afternoon rather than the usual 6pm to 9pm window.
+          </p>
+          <ul className="list-disc list-inside text-[#BBB] space-y-2 mb-6 ml-4">
+            <li><strong className="text-white">Extended hours</strong> — most clubs stay open 1-2 hours later than normal</li>
+            <li><strong className="text-white">Higher door prices</strong> — walk-in rates increase across the board</li>
+            <li><strong className="text-white">Earlier guestlist deadlines</strong> — lists fill up and close by mid-afternoon</li>
+            <li><strong className="text-white">Special events</strong> — headline DJs, themed nights, and one-off parties</li>
+            <li><strong className="text-white">Bigger crowds</strong> — venues reach capacity earlier, queues build from 10pm</li>
+          </ul>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Where the Nights Are Strongest</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Not every club treats a bank holiday the same way. The venues that consistently deliver on these weekends are the ones with the infrastructure to handle the surge — better sound, more space, experienced promoter teams running the door.
+          </p>
+          <h3 className="text-xl font-bold text-white mt-8 mb-3">For Atmosphere and Production</h3>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <Link href="/clubs/the-box-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Box</Link> thrives on bank holidays. The performances get more elaborate, the crowd is in full party mode, and the extended hours mean the energy builds properly rather than cutting short. <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link> runs a similar model — the circus-style production hits harder when everyone knows there is no alarm clock the next morning.
+          </p>
+          <h3 className="text-xl font-bold text-white mt-8 mb-3">For a Polished Night Out</h3>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <Link href="/clubs/selene-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Selene</Link> and <Link href="/clubs/scotch-of-st-james" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Scotch of St James</Link> are strong choices when you want something refined but still buzzing. Both venues attract a well-dressed crowd that takes the night seriously, and the bank holiday atmosphere raises the bar without losing the sophistication. <Link href="/clubs/tabu-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tabu</Link> is another solid option — it tends to draw people who know the scene and want a quality night without the tourist spillover.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">How to Prepare for a Bank Holiday Night</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The single most important thing you can do is plan earlier than you think you need to. A week ahead is not too soon. Three days ahead is the minimum. Here is a practical checklist:
+          </p>
+          <ol className="list-decimal list-inside text-[#BBB] space-y-2 mb-6 ml-4">
+            <li><strong className="text-white">Get on a guestlist by midweek</strong> — do not wait until Friday. Read our <Link href="/guestlist-tonight-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">guestlist page</Link> for more details.</li>
+            <li><strong className="text-white">Arrive before 11pm</strong> — queues on bank holidays are genuinely long by midnight. Our <Link href="/guides/how-to-get-into-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">entry guide</Link> covers how to time your arrival.</li>
+            <li><strong className="text-white">Sort transport home in advance</strong> — Ubers surge hard after 3am on bank holidays. Pre-book a cab or check Night Tube times.</li>
+            <li><strong className="text-white">Know the door policy</strong> — standards tighten on big nights. If you are unsure, check our <Link href="/blog/what-to-wear-to-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">clothing guide</Link> and play it safe.</li>
+            <li><strong className="text-white">Have a backup venue</strong> — if your first choice is full, a promoter can redirect you. That is one of the biggest advantages of working with someone who has eyes on every door.</li>
+          </ol>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Sunday Bank Holidays vs Saturday Bank Holidays</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            There is a meaningful difference. When the bank holiday falls on a Monday, Sunday night becomes the main event. Clubs that are normally quiet on Sundays suddenly run full-scale programming — headline DJs, extended hours, premium crowds. It is one of the only times a <Link href="/clubs-open-sunday-night-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Sunday night in London</Link> genuinely rivals a Saturday.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Saturday bank holiday weekends, by contrast, feel like a supercharged version of a normal Saturday. The crowd is bigger, the energy is higher, and the night goes later — but the format is familiar. If you are choosing between the two, Sunday bank holidays tend to have a more unique atmosphere because people are less jaded and more ready to commit to the night.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Get Sorted for the Next Bank Holiday</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            We manage guestlists and tables at every major club across London on bank holiday weekends. Whether you are a group of four or a party of twenty, we can get you into the right venue at the right time — no guesswork, no stress at the door.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20book%20a%20table." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> and tell us which bank holiday you are planning for. We&apos;ll take it from there.
+          </p>
+        </>
+      );
+
     default:
       return (
         <p className="text-[#BBB] leading-relaxed">

@@ -437,6 +437,25 @@ export const blogPosts: BlogPost[] = [
       { question: 'Can a group of guys get on a London club guestlist?', answer: 'Yes, but it depends on the venue and the night. Some Mayfair clubs prefer mixed groups on their guestlists, especially on Saturdays. A promoter can advise which venues are most welcoming to all-male groups and help position your booking so you have the best chance of smooth entry.' },
     ],
   },
+  {
+    slug: 'bank-holiday-clubbing-london-guide',
+    title: 'Bank Holiday Clubbing in London — What Changes and How to Prepare',
+    metaTitle: 'Bank Holiday Clubbing in London 2026 Guide',
+    metaDescription: 'Bank holiday clubbing in London is a different game. Longer hours, bigger crowds, higher prices — here\'s how to prepare and where the real nights happen.',
+    excerpt: 'Bank holidays change everything about London nightlife. Longer sets, later doors, bigger crowds. Here\'s what actually shifts and how to stay ahead of it.',
+    featuredImage: '/gallery/images/fe4414_22997fd2f5824b99815073940cd43fd2.jpg',
+    category: 'Going Out',
+    tags: ['bank holiday', 'events', 'tonight', 'planning'],
+    publishedDate: '2026-04-03',
+    updatedDate: '2026-04-03',
+    relatedClubs: ['selene-london', 'tabu-london', 'the-box-london', 'scotch-of-st-james', 'cirque-le-soir'],
+    faqs: [
+      { question: 'Are London clubs open on bank holidays?', answer: 'Yes. Most London clubs run bank holiday specials, often with extended hours. Many venues stay open an hour or two later than usual, and some run special themed events. Sunday bank holidays are particularly big because everyone has Monday off.' },
+      { question: 'Do London clubs charge more on bank holidays?', answer: 'Usually, yes. Door prices increase at most venues, and minimum spends on tables tend to rise by 20 to 50 per cent. Guestlist entry can still save you money, but you need to arrange it earlier than usual — lists fill up fast on bank holiday weekends.' },
+      { question: 'What time do London clubs close on bank holidays?', answer: 'Most extend their hours. Venues that normally close at 3am may stay open until 4am or 5am on a bank holiday. Some clubs run dedicated late-night events that go even later. Check with a promoter for the exact closing time on the night you are planning.' },
+      { question: 'Should I book a table for a bank holiday night out?', answer: 'If you can, yes. Bank holidays are among the busiest nights of the year and walk-in entry becomes unpredictable. A table guarantees your group gets in, gives you a base for the night, and avoids any door stress. Message a promoter early in the week to secure one.' },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
