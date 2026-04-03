@@ -418,6 +418,25 @@ export const blogPosts: BlogPost[] = [
       { question: 'Do London clubs play UK rap and drill?', answer: 'Some venues feature UK rap in their sets, particularly BEAT London and Luna Club. However, most Mayfair clubs lean towards US hip-hop and commercial RnB. Drill specifically is less common at central London nightclubs but features at dedicated event nights. Check specific venue listings for genre-focused evenings.' },
     ],
   },
+  {
+    slug: 'how-london-club-guestlists-work',
+    title: 'How London Club Guestlists Work — Everything You Need to Know',
+    metaTitle: 'How London Club Guestlists Work 2026',
+    metaDescription: 'How guestlists actually work at London clubs. How to get on one, what it gets you, deadlines, the difference between guestlist and walk-in, and tips for groups of guys.',
+    excerpt: 'Guestlists are free, fast, and give you a genuine advantage at the door. Here\'s exactly how they work and why you should always use one.',
+    featuredImage: '/gallery/images/fe4414_2107b337ac804698b2950ce330519049.jpg',
+    category: 'Practical Tips',
+    tags: ['guestlist', 'entry', 'door policy', 'tips'],
+    publishedDate: '2026-04-03',
+    updatedDate: '2026-04-03',
+    relatedClubs: ['tape-london', 'maddox', 'cuckoo-club', 'cirque-le-soir', 'the-box-london'],
+    faqs: [
+      { question: 'How do I get on a London club guestlist?', answer: 'The easiest way is to message a promoter directly via WhatsApp. You give your full name, the number of people in your group, and which night you want. The promoter adds you to the venue\'s list and you simply give your name at the door. Most guestlists are free and take under two minutes to arrange.' },
+      { question: 'What is the difference between guestlist and walk-in?', answer: 'A guestlist gives you priority entry, often reduced or free entry before a certain time, and your name on the door team\'s list. Walking in means joining the general queue with no guarantee of entry. On busy nights, guestlist guests get in while walk-ins may be turned away once capacity fills.' },
+      { question: 'Is there a deadline for London club guestlists?', answer: 'Most clubs close their guestlists between 6pm and 9pm on the night. Some Mayfair venues require names by the afternoon. The earlier you confirm, the better your chances. Last-minute requests sometimes work on quieter midweek nights, but for Friday and Saturday you should aim to confirm by early evening.' },
+      { question: 'Can a group of guys get on a London club guestlist?', answer: 'Yes, but it depends on the venue and the night. Some Mayfair clubs prefer mixed groups on their guestlists, especially on Saturdays. A promoter can advise which venues are most welcoming to all-male groups and help position your booking so you have the best chance of smooth entry.' },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {

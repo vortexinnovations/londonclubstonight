@@ -1708,6 +1708,89 @@ function getPostContent(slug: string): React.ReactNode {
         </>
       );
 
+    // ─────────────────────────────────────────────
+    // POST 25: How London Club Guestlists Work
+    // ─────────────────────────────────────────────
+    case 'how-london-club-guestlists-work':
+      return (
+        <>
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">What Is a Club Guestlist?</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            A guestlist is a list of names submitted to a club&apos;s door team before the night begins. When you arrive, you give your name at the door and the team checks you off. It is free, it is fast, and it is one of the simplest ways to improve your night out in London. If you have never used one before, you are making things harder than they need to be.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Most London clubs — from <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link> in Mayfair to <Link href="/clubs/ministry-of-sound" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Ministry of Sound</Link> in Elephant &amp; Castle — run some form of guestlist system. The details vary by venue, but the principle is the same: your name is on the list, and the door knows you are expected.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">How to Get on a Guestlist</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The most reliable way is through a promoter. That is what we do. You message us on WhatsApp with your name, the number of people in your group, and which night you are going out. We add you to the guestlist at the right venue and confirm the details — entry time, dress code, anything else you need to know. The whole thing takes under two minutes.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Some clubs also accept guestlist sign-ups through their own websites or social media pages, but these are often less flexible and you will not get the same level of personal advice. A promoter knows which nights suit your group, which venues have space, and how to handle last-minute changes.
+          </p>
+
+          <h3 className="text-xl font-bold text-white mt-8 mb-3">What You Need to Provide</h3>
+          <ul className="list-disc list-inside text-[#BBB] space-y-2 mb-6 ml-4">
+            <li><strong className="text-white">Full name</strong> — the name you will give at the door</li>
+            <li><strong className="text-white">Group size</strong> — how many people are coming</li>
+            <li><strong className="text-white">Date and venue</strong> — which night and where</li>
+            <li><strong className="text-white">Gender split</strong> — some venues ask, especially for larger groups</li>
+          </ul>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Guestlist vs Walk-In — What Is the Difference?</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Walking in means turning up without any arrangement. You join the general queue, pay full door price if you get in, and have no guarantee of entry. On a quiet Tuesday, that might be fine. On a Saturday at a Mayfair venue like <Link href="/clubs/maddox" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Maddox</Link> or <Link href="/clubs/cuckoo-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cuckoo Club</Link>, it is a gamble.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            A guestlist gives you several advantages:
+          </p>
+          <ul className="list-disc list-inside text-[#BBB] space-y-2 mb-6 ml-4">
+            <li><strong className="text-white">Priority entry</strong> — you skip the general queue or get moved to the front</li>
+            <li><strong className="text-white">Free or reduced entry</strong> — many venues waive the door charge for guestlist guests who arrive before a set time, usually midnight</li>
+            <li><strong className="text-white">Guaranteed consideration</strong> — your name is expected, which means the door team is already inclined to let you in</li>
+            <li><strong className="text-white">A point of contact</strong> — if there is an issue at the door, your promoter can help resolve it</li>
+          </ul>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            For a deeper look at getting past the door quickly, read our <Link href="/blog/how-to-skip-the-queue-at-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">guide to skipping the queue</Link>.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Guestlist Deadlines and Timing</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Every club has a cut-off time for guestlist submissions. At most Mayfair venues, you need to have your name in by early evening — typically between 6pm and 9pm on the night. Some of the busier clubs, like <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link> and <Link href="/clubs/the-box-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Box</Link>, may close lists even earlier on Saturdays.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Arrival time matters too. Most guestlist perks — particularly free entry — require you to arrive before midnight. Show up at 1am and you may still get in, but you will likely pay the full door price. If you are planning <Link href="/blog/pre-drinks-bars-near-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">pre-drinks nearby</Link>, keep an eye on the clock.
+          </p>
+
+          <h3 className="text-xl font-bold text-white mt-8 mb-3">Midweek vs Weekend</h3>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            On weeknights — particularly Thursdays — guestlists tend to be more relaxed. Deadlines are later, arrival windows are wider, and venues are more flexible with group composition. Fridays and Saturdays are tighter. If you are going out on a <Link href="/friday-nightclubs-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Friday</Link> or <Link href="/saturday-nightclubs-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Saturday</Link>, confirm your guestlist as early in the day as possible.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Guestlists for Groups of Guys</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            This is the question we get asked most. Yes, all-male groups can get on guestlists — but it depends on the venue and the night. Some clubs, particularly on Saturdays, prefer mixed groups on their guestlists. Others are more relaxed, especially midweek.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            As promoters, we know which venues are welcoming to all-male groups on any given night. We can steer you to the right club so you are not wasting time queuing at a door that was never going to work. Venues like <Link href="/clubs/beat-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">BEAT London</Link> and <Link href="/clubs/funky-buddha" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Funky Buddha</Link> tend to be more flexible with group composition. If your group is larger than six, consider a <Link href="/last-minute-table-booking-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">table booking</Link> — it guarantees entry regardless of group makeup.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Guestlist vs Table Booking</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            A guestlist gets you through the door. A table booking gets you through the door and gives you a reserved area with bottle service. If you want guaranteed entry with no ambiguity, a table is the way to go — read our <Link href="/blog/what-happens-at-a-vip-table-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">VIP table guide</Link> for the full breakdown. But for most casual nights out, a guestlist is all you need.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Get on the Guestlist Tonight</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            We run guestlists at every major club in London — Mayfair, Soho, and beyond. Tell us where you want to go, how many of you there are, and we will handle the rest. No fees, no sign-up forms, just a quick WhatsApp message.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> and we&apos;ll get you on the list.
+          </p>
+        </>
+      );
+
     default:
       return (
         <p className="text-[#BBB] leading-relaxed">
