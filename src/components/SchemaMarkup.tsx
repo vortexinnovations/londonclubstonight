@@ -20,10 +20,13 @@ export function getLocalBusinessSchema() {
     name: 'London Clubs Tonight',
     description: 'The definitive guide to London\'s best nightclubs. Table bookings, guestlist access, and insider knowledge for London\'s top clubs.',
     url: 'https://londonclubstonight.com',
+    image: 'https://londonclubstonight.com/gallery/images/TapeFriday041024PartyNextDoor-410.jpg',
     telephone: '+447880662708',
     address: {
       '@type': 'PostalAddress',
+      streetAddress: 'Mayfair',
       addressLocality: 'London',
+      postalCode: 'W1',
       addressCountry: 'GB',
     },
     areaServed: {
@@ -37,6 +40,18 @@ export function getLocalBusinessSchema() {
       opens: '22:00',
       closes: '03:30',
     },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'reservations',
+      telephone: '+447880662708',
+      availableLanguage: 'English',
+    },
+    sameAs: [
+      'https://mayfairtonight.com',
+      'https://londonbottleservice.com',
+      'https://londonbirthdayclub.com',
+      'https://londonluxurynightlife.com',
+    ],
   };
 }
 

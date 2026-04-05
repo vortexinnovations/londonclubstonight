@@ -3,7 +3,7 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
-import SchemaMarkup, { getLocalBusinessSchema, getOrganizationSchema, getWebSiteSchema } from '@/components/SchemaMarkup';
+import SchemaMarkup, { getLocalBusinessSchema, getWebSiteSchema } from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
   title: {
@@ -50,7 +50,6 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <SchemaMarkup schema={getLocalBusinessSchema()} />
-        <SchemaMarkup schema={getOrganizationSchema()} />
         <SchemaMarkup schema={getWebSiteSchema()} />
         <Header />
         <main className="pt-20 pb-24 lg:pb-0">
