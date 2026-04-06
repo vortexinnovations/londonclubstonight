@@ -1863,6 +1863,82 @@ function getPostContent(slug: string): React.ReactNode {
         </>
       );
 
+    // ─────────────────────────────────────────────
+    // POST 28: How to Find London Club Events Worth Your Time
+    // ─────────────────────────────────────────────
+    case 'how-to-find-london-club-events':
+      return (
+        <>
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Why Most Event Listings Are Useless</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Open any London event listing site and you&apos;ll see hundreds of club nights, launch parties, and &quot;exclusive&quot; events competing for your attention. The problem is that most of them are either outdated, exaggerated, or straight-up cancelled. We&apos;ve lost count of the number of people who&apos;ve turned up to a venue expecting a packed themed night only to find a half-empty room with a playlist running off someone&apos;s phone.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Finding genuine London club events that are worth your time requires a different approach. You need to know where to look, what signals actually matter, and — most importantly — who to ask. This is the framework we use as promoters, and it works whether you&apos;re planning a week ahead or deciding at 9pm tonight.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Start with the Venue, Not the Event</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The single best indicator of a good night is the venue itself. A strong club with solid programming will deliver a good experience even on a &quot;quiet&quot; night. A weak venue running a flashy one-off event will disappoint no matter how good the marketing looks.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Focus on venues with consistent weekly programming. <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque Le Soir</Link> runs a different production every night and rarely has an off evening. <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link> has built its reputation on reliable energy across weeknights and weekends. <Link href="/clubs/selene-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Selene</Link> has quickly established itself as one of the most dependable newer rooms in the city. These venues invest in their programming week after week — that consistency is what you&apos;re looking for.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">How to Actually Check What&apos;s On</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Forget generic event websites. Here&apos;s what actually works:
+          </p>
+          <ul className="list-disc list-inside text-[#BBB] space-y-2 mb-6 ml-4">
+            <li><strong className="text-white">Venue Instagram stories</strong> — the most reliable real-time source. If a club is running something tonight, their story will show it. No story usually means a quiet night or a private hire.</li>
+            <li><strong className="text-white">Promoter WhatsApp</strong> — a good promoter knows every venue&apos;s schedule for the week. One message gets you a filtered rundown of what&apos;s actually worth going to. <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> and we&apos;ll tell you what&apos;s on tonight.</li>
+            <li><strong className="text-white">Venue websites</strong> — some clubs publish weekly schedules. Check our <Link href="/clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">clubs directory</Link> for direct links to every venue.</li>
+            <li><strong className="text-white">Word of mouth</strong> — if someone who goes out regularly says a night is good, that carries more weight than any advert.</li>
+          </ul>
+
+          <h3 className="text-xl font-bold text-white mt-8 mb-3">Red Flags to Watch For</h3>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Not every promoted event is a good one. Watch out for these warning signs:
+          </p>
+          <ul className="list-disc list-inside text-[#BBB] space-y-2 mb-6 ml-4">
+            <li>Events at venues you&apos;ve never heard of — established clubs don&apos;t need to over-promote</li>
+            <li>Aggressive &quot;limited tickets&quot; language with no venue tag — usually a promoter trying to fill a room</li>
+            <li>No mention of a specific DJ or music policy — a sign the programming is generic</li>
+            <li>Prices that seem too good to be true — free entry to a Mayfair club on a Saturday should raise questions</li>
+          </ul>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Promoter Nights vs Standard Nights</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            There&apos;s an important distinction that most people miss. A <strong className="text-white">standard night</strong> is the venue&apos;s own regular programming — their resident DJs, their usual door policy, their normal crowd. A <strong className="text-white">promoter night</strong> is when a specific promoter takes over or co-hosts, bringing their own crowd and sometimes their own music direction.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Neither is automatically better. Standard nights at somewhere like <Link href="/clubs/the-london-reign" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Reign</Link> are consistently strong because the venue&apos;s own team runs tight programming. Promoter nights at <Link href="/clubs/tabu-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tabu</Link> can bring a completely different energy depending on who&apos;s running the list. The key is knowing which promoters have a track record and which are just selling tickets.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Our <Link href="/blog/london-club-promoter-guide" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">guide to London club promoters</Link> breaks down how this works in more detail.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Matching the Event to Your Group</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The right event depends entirely on who you&apos;re going with. A couple looking for a late-night date spot has different needs from a group of eight celebrating a promotion. Before you pick an event, think about:
+          </p>
+          <ul className="list-disc list-inside text-[#BBB] space-y-2 mb-6 ml-4">
+            <li><strong className="text-white">Group size</strong> — some events work better for small groups. Larger groups should consider a table. Read our <Link href="/blog/best-clubs-for-groups-in-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">groups guide</Link> for specifics.</li>
+            <li><strong className="text-white">Music preference</strong> — do you want R&amp;B, commercial, tech house, or Afrobeats? Check our <Link href="/guides/london-clubs-by-music-genre" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">music genre guide</Link> to match venues to your taste.</li>
+            <li><strong className="text-white">Budget</strong> — a guestlist night with free entry is a different proposition from a bottle-service evening. Know what you want to spend before you commit.</li>
+            <li><strong className="text-white">Timing</strong> — midweek events tend to be more relaxed and easier to get into. Weekend events are busier but have bigger production. Our <Link href="/blog/bank-holiday-clubbing-london-guide" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">bank holiday guide</Link> covers the busiest nights of the year.</li>
+          </ul>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The Fastest Way to Find a Good Night</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            We manage guestlists and tables across every major London club. When you message us, we don&apos;t just add you to a list — we tell you where the energy is, which venues are running events, and which night suits what you&apos;re looking for. That&apos;s the advantage of working with promoters who are at these venues every week.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> with your date, group size, and what kind of night you&apos;re after. We&apos;ll come back with a recommendation you can trust.
+          </p>
+        </>
+      );
+
     default:
       return (
         <p className="text-[#BBB] leading-relaxed">

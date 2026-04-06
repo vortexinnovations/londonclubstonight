@@ -456,6 +456,25 @@ export const blogPosts: BlogPost[] = [
       { question: 'Should I book a table for a bank holiday night out?', answer: 'If you can, yes. Bank holidays are among the busiest nights of the year and walk-in entry becomes unpredictable. A table guarantees your group gets in, gives you a base for the night, and avoids any door stress. Message a promoter early in the week to secure one.' },
     ],
   },
+  {
+    slug: 'how-to-find-london-club-events',
+    title: 'How to Find London Club Events Worth Your Time',
+    metaTitle: 'How to Find London Club Events 2026',
+    metaDescription: 'Stop wasting nights at dead events. Here\'s how London promoters find the best club events, what to look for, and how to filter the noise before you leave the house.',
+    excerpt: 'Most event listings are noise. Here\'s how promoters actually find the nights worth showing up for — and how you can do the same.',
+    featuredImage: '/gallery/images/fe4414_28685897121b4816a8e61668db72bd17.jpg',
+    category: 'Practical Tips',
+    tags: ['events', 'tonight', 'planning', 'promoters'],
+    publishedDate: '2026-04-06',
+    updatedDate: '2026-04-06',
+    relatedClubs: ['selene-london', 'tabu-london', 'the-london-reign', 'cirque-le-soir', 'tape-london'],
+    faqs: [
+      { question: 'How do I find out what\'s on at London clubs tonight?', answer: 'The fastest way is to message a promoter on WhatsApp. They know which venues are running events, which nights are busy, and where the energy will be. Social media is useful for browsing, but a promoter gives you real-time, filtered information rather than a wall of listings.' },
+      { question: 'Are London club event listings accurate?', answer: 'Not always. Some listing sites show events that were cancelled or rescheduled. Venue Instagram stories are more reliable because they are posted in real time. The safest approach is to confirm through a promoter or the venue\'s own social media on the day.' },
+      { question: 'What is a promoter night at a London club?', answer: 'A promoter night is when a specific promoter curates the guestlist, vibe, and sometimes the music policy for an evening. These nights often have a particular crowd or energy that differs from the venue\'s standard programming. Getting on a promoter\'s list usually means smoother entry and sometimes reduced cover.' },
+      { question: 'How far in advance should I plan a London club night?', answer: 'For a standard midweek night, same-day planning works if you message a promoter early enough. For Friday and Saturday, confirming by Wednesday or Thursday is ideal. For special events, bank holidays, or New Year\'s Eve, you should be planning at least a week ahead to guarantee entry.' },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
