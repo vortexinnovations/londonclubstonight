@@ -45,6 +45,9 @@ export async function generateMetadata({
       url: `https://londonclubstonight.com/clubs/${club.slug}`,
       type: 'website',
     },
+    alternates: {
+      canonical: `https://londonclubstonight.com/clubs/${club.slug}`,
+    },
   };
 }
 
