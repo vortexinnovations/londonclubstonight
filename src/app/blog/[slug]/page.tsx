@@ -1939,6 +1939,80 @@ function getPostContent(slug: string): React.ReactNode {
         </>
       );
 
+    // ─────────────────────────────────────────────
+    // POST 29: How London Club Nights Change in Summer
+    // ─────────────────────────────────────────────
+    case 'london-club-nights-summer':
+      return (
+        <>
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Later Starts, Longer Nights</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The single biggest shift in summer is timing. When the sun does not set until 9pm, nobody is rushing to get ready at 8. Pre-drinks move outdoors, dinner reservations push later, and the whole night slides forward by at least an hour. Where people might arrive at <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link> at 10:30pm in January, in July that becomes 11:15pm at the earliest.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            This matters for planning. If you are on a guestlist with a &quot;before midnight&quot; window, you need to be aware that summer crowds cut it close. Arriving at 11:45pm on a Saturday in August is not fashionably late - it is genuinely tight. The venues do not adjust their guestlist windows just because the sun stayed out longer.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The upside is that peak energy shifts too. The dancefloor hits its stride around 1am rather than midnight, and the atmosphere builds more gradually. If you prefer a club when it is properly full and the music is locked in, summer nights reward patience.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The Crowd Changes</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            From late May onwards, London fills with visitors. International tourists, people in town for events, and short-stay groups who want one big night out. This changes the feel of every major venue. <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque le Soir</Link> and <Link href="/clubs/the-london-reign" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Reign</Link> see a noticeable uptick in first-time visitors, and door teams adjust accordingly.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            For regulars, this can be a mixed bag. Venues are busier and more energetic, but queues grow and walk-in entry becomes harder to guarantee. Thursdays - normally a reliable local night - start attracting weekend-level crowds. Fridays and Saturdays hit capacity earlier than you might expect.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The smart move is to treat summer like an extended bank holiday season. <Link href="/blog/how-london-club-guestlists-work" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Get on a guestlist</Link> every time you go out, even on nights when you would normally just walk in. It costs nothing and removes the uncertainty.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Sunday Sessions Become a Main Event</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            This is the change that catches people off guard. In winter, Sunday is a write-off. In summer, it becomes one of the best nights of the week. Multiple venues open their doors on Sundays specifically for the warmer months, running day-to-night sessions that carry a completely different energy to a standard Saturday.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <Link href="/clubs/funky-buddha" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Funky Buddha</Link> and <Link href="/clubs/cuckoo-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cuckoo Club</Link> both benefit from this shift. The mood is more relaxed, the dress code loosens slightly, and people are there because they genuinely want to be rather than because it is the expected night to go out. Add a bank holiday Monday into the mix and you have one of the liveliest nights of the summer.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            If you have never tried a London <Link href="/blog/bank-holiday-clubbing-london-guide" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">bank holiday Sunday session</Link>, summer is the time. The atmosphere sits somewhere between a rooftop bar and a proper club night, and it works.
+          </p>
+
+          <h3 className="text-xl font-bold text-white mt-8 mb-3">Where the Energy Moves</h3>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Venues with outdoor space or terrace areas gain an edge in summer. Kensington Roof Gardens draws crowds who want that open-air feeling before heading to the dancefloor. Rex Rooms in Chelsea picks up from groups who have been drinking along the King&apos;s Road. <Link href="/clubs/selene-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Selene</Link> attracts a crowd that has been at Mayfair restaurants and wants to extend the evening somewhere polished.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The clubs themselves do not change much inside - the music, the service, and the experience stay consistent. But the journey to the club changes. People arrive from outdoor bars, rooftop terraces, and park gatherings rather than from their living rooms. That brings a looser, more sociable energy through the door.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">What to Book Ahead in Summer</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Summer is when last-minute planning stops working reliably. Here is what you should arrange in advance:
+          </p>
+          <ul className="list-disc list-inside text-[#BBB] space-y-2 mb-6 ml-4">
+            <li><strong className="text-white">Guestlists:</strong> confirm by Wednesday for weekend nights. Summer guestlists close earlier because venues know they will fill regardless.</li>
+            <li><strong className="text-white">Tables:</strong> book at least a week ahead for Fridays and Saturdays in June, July, and August. Popular venues sell out their tables days in advance.</li>
+            <li><strong className="text-white">Special events:</strong> Pride weekend, summer bank holidays, and any major event weekends need two weeks&apos; notice minimum. These are the busiest nights of the year.</li>
+            <li><strong className="text-white">Transport:</strong> Ubers surge harder in summer. Book a return ride or know your night bus routes before you leave the house.</li>
+          </ul>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The one thing that does not change is how easy it is to get sorted through a promoter. <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> with your date and group size and we will handle the rest - <Link href="/guestlist-tonight-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">guestlist</Link>, table, recommendations, all of it.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Making the Most of Summer Nights</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Summer in London is when nightlife is at its best. The energy is higher, the nights are warmer, and there are more reasons to go out than at any other time of year. But it also means more competition for entry, tighter guestlists, and less room for winging it.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The people who have the best summer nights are the ones who plan just enough - a guestlist confirmed, an arrival time agreed, a venue chosen - without overcomplicating it. London rewards that balance between spontaneity and preparation, and summer is when it matters most.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            If you want to know what is happening this week or need help choosing a venue, <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20book%20a%20table." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">get in touch on WhatsApp</a>. We are at these clubs every week and we will point you in the right direction.
+          </p>
+        </>
+      );
+
     default:
       return (
         <p className="text-[#BBB] leading-relaxed">

@@ -475,6 +475,25 @@ export const blogPosts: BlogPost[] = [
       { question: 'How far in advance should I plan a London club night?', answer: 'For a standard midweek night, same-day planning works if you message a promoter early enough. For Friday and Saturday, confirming by Wednesday or Thursday is ideal. For special events, bank holidays, or New Year\'s Eve, you should be planning at least a week ahead to guarantee entry.' },
     ],
   },
+  {
+    slug: 'london-club-nights-summer',
+    title: 'How London Club Nights Change in Summer - What to Expect This Season',
+    metaTitle: 'London Club Nights in Summer - What to Expect 2026',
+    metaDescription: 'How London club nights change in summer. Later start times, busier weekends, outdoor venues, and bigger Sunday sessions. Here is what shifts and how to plan.',
+    excerpt: 'Summer rewrites the rules of London nightlife. Later arrivals, different crowds, and Sunday sessions that rival Saturdays. Here is what actually changes.',
+    featuredImage: '/gallery/images/fe4414_598e58dd8d364b2bb6ffbafeba8d6e63.jpg',
+    category: 'Going Out',
+    tags: ['summer', 'seasonal', 'tonight', 'planning'],
+    publishedDate: '2026-04-21',
+    updatedDate: '2026-04-21',
+    relatedClubs: ['tape-london', 'the-london-reign', 'cuckoo-club', 'funky-buddha', 'selene-london'],
+    faqs: [
+      { question: 'Do London clubs get busier in summer?', answer: 'Yes. Tourist season, longer evenings, and bank holidays all push numbers up from May through September. Fridays and Saturdays fill faster and guestlists close earlier. If you plan to go out on a summer weekend, arrange your guestlist or table by Wednesday at the latest.' },
+      { question: 'What time do people go out in London in summer?', answer: 'Later than winter. In summer, most people arrive at clubs between 11pm and midnight rather than 10:30pm. The longer daylight means pre-drinks start later and people linger outdoors before heading to venues. Peak energy on the dancefloor shifts to around 1am.' },
+      { question: 'Are London clubs open on Sundays in summer?', answer: 'Several clubs run Sunday sessions in summer, especially around bank holiday weekends. Venues that are normally closed on Sundays open for special events. Sunday night becomes a genuine going-out option rather than just an afterthought. Message a promoter to find out what is running each week.' },
+      { question: 'Should I book a table in summer at a London club?', answer: 'If you are going out on a Friday or Saturday in summer, booking a table is strongly recommended. Walk-in entry becomes less reliable as venues hit capacity earlier. A table guarantees entry and gives your group a base. Midweek nights are still manageable without a booking.' },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
