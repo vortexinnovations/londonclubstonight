@@ -513,6 +513,25 @@ export const blogPosts: BlogPost[] = [
       { question: 'How do I find out about upcoming themed nights in London?', answer: 'Follow the venues you like on Instagram for event announcements. Message a promoter on WhatsApp for curated recommendations based on your taste. Most recurring themed nights happen on the same day each week, so once you find one you like, it is easy to plan around it.' },
     ],
   },
+  {
+    slug: 'after-party-clubs-london',
+    title: 'After-Party Clubs in London: Where to Keep Going After 2am',
+    metaTitle: 'After-Party Clubs in London 2026',
+    metaDescription: 'Looking for after-party clubs in London? Here are the venues that keep going past 2am, how to get in late, and where promoters send their own groups.',
+    excerpt: 'The main event finishes but the night doesn\'t have to. These are the London clubs that actually deliver after 2am, and how to get through the door.',
+    featuredImage: '/gallery/images/fe4414_6a237a985af240bb93c4400abac43ef2.jpg',
+    category: 'Going Out',
+    tags: ['after party', 'late night', 'tonight'],
+    publishedDate: '2026-04-27',
+    updatedDate: '2026-04-27',
+    relatedClubs: ['tape-london', 'the-box-london', 'cirque-le-soir', 'funky-buddha', 'maddox'],
+    faqs: [
+      { question: 'How late do London after-party clubs stay open?', answer: 'Most Mayfair and Soho clubs run until 3am on weeknights and 3:30am to 4am on Fridays and Saturdays. Some venues push later on bank holidays or special events. The key is arriving before last entry, which is usually 30 to 60 minutes before closing.' },
+      { question: 'Can you get into a London club after midnight?', answer: 'Yes, but it depends on the venue and the night. Clubs with strong late-night programming expect arrivals well past midnight. Having your name on a guestlist or a table booking makes late entry far smoother. Walk-ins after midnight on a Saturday are risky at popular venues.' },
+      { question: 'Where do people go after London clubs close?', answer: 'Some groups move to members clubs or late-licence bars. Others head to 24-hour restaurants in Mayfair or Soho. The real answer is to pick a club that closes later in the first place, so you are not scrambling at 3am. A promoter can steer you to venues with the latest hours on any given night.' },
+      { question: 'Do you need a guestlist for after-party clubs?', answer: 'Not always, but it helps significantly. Late at night, door teams become more selective because the venue is already busy. A guestlist or a quick message to a promoter means your name is expected and you skip the uncertainty of walking up cold.' },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {

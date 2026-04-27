@@ -2090,6 +2090,75 @@ function getPostContent(slug: string): React.ReactNode {
         </>
       );
 
+    // ─────────────────────────────────────────────
+    // POST 31: After-Party Clubs in London
+    // ─────────────────────────────────────────────
+    case 'after-party-clubs-london':
+      return (
+        <>
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The After-Party Is Where the Real Night Happens</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            There&apos;s a moment every weekend in London where one half of the crowd heads home and the other half starts looking for somewhere else to go. That second half usually has the better night. The after-party scene in London is where the energy concentrates, the crowds thin out to the people who actually want to be there, and the music gets better because DJs stop playing it safe.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The problem is that most people have no plan for what happens after 2am. They leave a club, stand on the pavement, and start scrolling through their phones hoping something appears. That rarely ends well. The key to a great after-party in London is knowing which venues run late, which nights have the strongest late programming, and how to get through the door when everyone else is being turned away.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Which London Clubs Actually Run Late</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Not every club is built for the after-party crowd. Some venues peak at midnight and wind down quickly. Others are designed to build through the night and deliver their strongest sets after 1am. These are the venues we consistently send people to when the question is &quot;where next?&quot;
+          </p>
+          <ul className="list-disc list-inside text-[#BBB] space-y-2 mb-6 ml-4">
+            <li><strong className="text-white"><Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link></strong> - one of the most reliable late-night rooms in Mayfair. The energy builds steadily and the best DJs often save their strongest sets for after 1am. Fridays and Saturdays regularly run past 3am with a crowd that arrived specifically for the late shift.</li>
+            <li><strong className="text-white"><Link href="/clubs/the-box-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Box</Link></strong> - Soho&apos;s most theatrical club is practically built for after-hours. The performances intensify as the night goes on and the crowd skews towards people who planned to be out late. If you want an after-party that feels like an event in itself, this is the one.</li>
+            <li><strong className="text-white"><Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque le Soir</Link></strong> - the immersive format means there is always something happening, even at 2:30am. The performers, the production, and the music all run at full intensity right up to closing. People who arrive late often catch the best part of the night.</li>
+            <li><strong className="text-white"><Link href="/clubs/funky-buddha" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Funky Buddha</Link></strong> - a Mayfair staple with a crowd that tends to arrive late and stay late. The music leans commercial R&amp;B and hip-hop, and the atmosphere stays strong through the final hour.</li>
+            <li><strong className="text-white"><Link href="/clubs/maddox" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Maddox Club</Link></strong> - smaller and more intimate than some of the bigger rooms, which makes it a natural after-party destination. The dance floor fills up properly after midnight and the late crowd tends to be well-dressed and up for it.</li>
+          </ul>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">How to Get Into a Club Late at Night</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Getting into a London club at 11pm is a completely different proposition to walking up at 1:30am. By that point, the venue is already busy, the door team is selective, and they have no reason to let in anyone who looks like they might cause problems or have already had too much to drink.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Here&apos;s what actually works for late-night entry:
+          </p>
+          <ul className="list-disc list-inside text-[#BBB] space-y-2 mb-6 ml-4">
+            <li><strong className="text-white">Get on a guestlist earlier in the day</strong> - even if you don&apos;t plan to arrive until after midnight, having your name down gives the door team a reason to let you in. Check our <Link href="/guestlist-tonight-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">guestlist page</Link> to get sorted before you go out.</li>
+            <li><strong className="text-white">Message a promoter</strong> - we know which venues still have space, which are running at capacity, and which door teams are being strict. A quick WhatsApp message saves you wandering between venues.</li>
+            <li><strong className="text-white">Look presentable</strong> - this matters more late at night than early in the evening. Door teams are looking for reasons to say no when the venue is busy. Smart shoes, no sportswear, and looking like you belong goes a long way.</li>
+            <li><strong className="text-white">Book a table</strong> - if your group has budget for it, a table booking guarantees entry regardless of the time. You skip the queue entirely and walk straight in. Our <Link href="/last-minute-table-booking-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">last-minute table booking</Link> service can arrange this even on the night.</li>
+          </ul>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            For more detail on beating the queue, read our full <Link href="/blog/how-to-skip-the-queue-at-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">guide to skipping the queue at London clubs</Link>.
+          </p>
+
+          <h3 className="text-xl font-bold text-white mt-8 mb-3">Know the Last Entry Times</h3>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Every venue has a last entry time, and it is usually 30 to 60 minutes before closing. On a Saturday, if a club shuts at 3:30am, last entry might be 2:30am or even 2am. Missing last entry means you are not getting in regardless of your guestlist status or how well you know the promoter. Always confirm last entry with us before heading over late. Times can shift depending on how busy the night is and whether the venue is running a special event.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Planning the Transition Between Venues</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The biggest mistake people make is leaving one club without knowing where they are going next. Standing on a Mayfair street at 1am trying to make a group decision is how nights die. The best after-party experiences happen when someone in the group has already sorted the next stop.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            If you start your night with <Link href="/blog/pre-drinks-bars-near-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">pre-drinks near the clubs</Link>, then hit a main venue around 11pm, you should already have a late-night venue in mind by the time you arrive. Most of the clubs listed above are within walking distance of each other in Mayfair and Soho, so moving between them is straightforward.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Check what&apos;s running tonight on our <Link href="/late-night-clubs-london-tonight" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">late-night clubs tonight</Link> page, or browse the full <Link href="/guides/clubs-open-late" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">clubs open late guide</Link> for a complete rundown of hours by venue.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Let Us Sort the After-Party</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            We handle guestlists and table bookings at every major late-night venue in London. If you are already out and the night is winding down at your current spot, message us and we will tell you exactly where to go next, get your name on the door, and make sure you walk straight in.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> with where you are and what you&apos;re looking for. We&apos;ll point you to the right venue and handle the door.
+          </p>
+        </>
+      );
+
     default:
       return (
         <p className="text-[#BBB] leading-relaxed">
