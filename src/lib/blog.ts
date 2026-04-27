@@ -494,6 +494,25 @@ export const blogPosts: BlogPost[] = [
       { question: 'Should I book a table in summer at a London club?', answer: 'If you are going out on a Friday or Saturday in summer, booking a table is strongly recommended. Walk-in entry becomes less reliable as venues hit capacity earlier. A table guarantees entry and gives your group a base. Midweek nights are still manageable without a booking.' },
     ],
   },
+  {
+    slug: 'themed-club-nights-london',
+    title: 'Themed Club Nights in London - The Events Worth Showing Up For',
+    metaTitle: 'Themed Club Nights London - Best Events 2026',
+    metaDescription: 'The best themed club nights in London. Which recurring events deliver real atmosphere, what to expect at each, and how to pick the right themed night for your group.',
+    excerpt: 'Not every themed night lives up to the name. These are the London club events that actually deliver something different from the standard weekend playlist.',
+    featuredImage: '/gallery/images/fe4414_6a238b52fa0b4a898ae87603e62eef4a.jpg',
+    category: 'Going Out',
+    tags: ['themed nights', 'events', 'club nights', 'london'],
+    publishedDate: '2026-04-27',
+    updatedDate: '2026-04-27',
+    relatedClubs: ['cirque-le-soir', 'the-box-london', 'tape-london', 'the-london-reign', 'selene-london'],
+    faqs: [
+      { question: 'What are the best themed club nights in London?', answer: 'Cirque le Soir runs theatrical burlesque and circus performances every weekend in Soho. The Box puts on immersive cabaret shows that change weekly. Tape London hosts genre-specific nights including R&B residencies and hip-hop sets. Reign runs showtime events with dancers and live entertainment. Each delivers a genuinely different experience from a standard club night.' },
+      { question: 'Are themed club nights more expensive than regular nights?', answer: 'Some are, some are not. Cirque le Soir and The Box tend to charge higher entry because the production costs are real. Standard themed nights at other venues often have the same pricing as any other weekend. Guestlist entry is still the best way to save on the door regardless of the theme.' },
+      { question: 'Do you need to dress up for a themed club night in London?', answer: 'It depends on the event. Most London themed nights do not require costumes. The standard smart dress code still applies. Some venues encourage theme-appropriate accessories but rarely enforce it. If a specific event has a strict theme, it will be clearly advertised. When in doubt, dress smart and you will be fine.' },
+      { question: 'How do I find out about upcoming themed nights in London?', answer: 'Follow the venues you like on Instagram for event announcements. Message a promoter on WhatsApp for curated recommendations based on your taste. Most recurring themed nights happen on the same day each week, so once you find one you like, it is easy to plan around it.' },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {

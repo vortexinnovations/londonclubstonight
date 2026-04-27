@@ -2013,6 +2013,83 @@ function getPostContent(slug: string): React.ReactNode {
         </>
       );
 
+    // ─────────────────────────────────────────────
+    // POST 30: Themed Club Nights in London
+    // ─────────────────────────────────────────────
+    case 'themed-club-nights-london':
+      return (
+        <>
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Why Themed Nights Matter</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Most London clubs run the same format every weekend: commercial playlist, bottle service, standard crowd. That works for plenty of people. But if you want a night that actually feels like something, themed events are where the real energy lives. The production is different, the crowd commits harder, and you leave remembering specifics rather than a blur of the same tracks.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The catch is that &quot;themed night&quot; gets slapped on everything from a half-hearted costume prompt to a full theatrical production. Some events genuinely transform the venue. Others just change the flyer and play the same music. We work these rooms every week, so here is an honest breakdown of which themed club nights in London are actually worth your time.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The Theatrical Nights</h2>
+          <h3 className="text-xl font-bold text-white mt-8 mb-3">Cirque le Soir</h3>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque le Soir</Link> is the gold standard for themed nightlife in London. Every weekend in Soho, the venue runs a full circus-burlesque production with acrobats, fire breathers, contortionists, and performers weaving through the crowd. This is not background entertainment. The shows are loud, physical, and impossible to ignore. The performers work the room, interact with tables, and build an atmosphere that no DJ set alone can match.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The crowd knows what they are signing up for. People dress sharper, arrive earlier, and commit to the energy. If you have never been, expect to be surprised by how immersive it is. If you have been, you already know why people keep coming back. It runs Thursday through Saturday, with each night carrying a slightly different flavour.
+          </p>
+
+          <h3 className="text-xl font-bold text-white mt-8 mb-3">The Box</h3>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <Link href="/clubs/the-box-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">The Box</Link> in Soho takes a different approach. The cabaret shows are provocative, boundary-pushing, and deliberately unpredictable. No two weeks are exactly the same. The performances are designed to shock, entertain, and create genuine talking points. This is the venue people either love completely or find too intense. There is no middle ground.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The key difference from Cirque le Soir is tone. Cirque is celebratory and high-energy. The Box is darker, edgier, and more confrontational. Both are theatrical, but they serve different moods. If you want spectacle with a party atmosphere, go to Cirque. If you want something you have genuinely never seen before, The Box is the one.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Genre Nights and Residencies</h2>
+          <h3 className="text-xl font-bold text-white mt-8 mb-3">Tape London</h3>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link> runs some of the strongest genre-specific nights in Mayfair. Their R&amp;B and hip-hop residencies pull a dedicated crowd that knows exactly what sound they are getting. The music is not an afterthought here. Resident DJs build sets across the night rather than jumping between genres, and the result is a dancefloor that actually moves together.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Tuesday and Thursday nights at Tape tend to lean into specific genres more heavily than the weekend, which is broader. If you care about the music as much as the venue, the midweek residencies are where you will find the most focused programming.
+          </p>
+
+          <h3 className="text-xl font-bold text-white mt-8 mb-3">Reign</h3>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <Link href="/clubs/the-london-reign" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Reign</Link> runs showtime events that sit somewhere between a standard club night and a full production. Dancers, live performers, and curated music create an energy that lifts the room beyond a typical Friday or Saturday. The programming rotates, so it is worth checking what is on before you arrive rather than assuming every week is the same.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">How to Tell a Good Themed Night from a Gimmick</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            A real themed night changes the experience, not just the marketing. Here is what separates the two:
+          </p>
+          <ul className="list-disc list-inside text-[#BBB] space-y-2 mb-6 ml-4">
+            <li><strong className="text-white">Live performers or production</strong> - if the theme only exists on the Instagram flyer, it is not a themed night. Look for venues that invest in actual entertainment</li>
+            <li><strong className="text-white">A crowd that commits</strong> - the best themed nights attract people who came specifically for that event, not people who wandered in. That changes the energy entirely</li>
+            <li><strong className="text-white">Consistent programming</strong> - one-off events can be great but the strongest themed nights run every week. The team gets better, the crowd gets more loyal, and the atmosphere compounds</li>
+            <li><strong className="text-white">Different from the venue&apos;s standard night</strong> - if the themed night feels identical to a regular Saturday, the theme is cosmetic. The best ones genuinely alter how the evening unfolds</li>
+          </ul>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Picking the Right Night for Your Group</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Themed nights work best when everyone in your group is on the same page about what they want. If half of you want a wild theatrical experience and the other half want to sit at a table with a standard playlist, you are going to have a mixed evening regardless of the venue.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            For birthdays and celebrations, Cirque le Soir and Reign both handle groups well and the performance element gives the night a natural focal point. For couples or smaller groups who want something memorable, The Box delivers an experience you will talk about for weeks. For music-focused groups, <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape&apos;s residency nights</Link> are harder to beat. And if you want a premium atmosphere with an edge, <Link href="/clubs/selene-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Selene</Link> and <Link href="/clubs/tabu-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tabu</Link> run nights where the energy shifts depending on the event programming.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Check our <Link href="/clubs-tonight-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">clubs tonight</Link> page for what is running this week, or read our <Link href="/blog/how-to-find-london-club-events" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">guide to finding London club events</Link> for a deeper look at filtering the noise.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Let Us Point You to the Right Night</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            We are at these venues every week. We know which themed nights are delivering right now, which ones have lost their edge, and which new events are building momentum. If you tell us what kind of evening you are after, we will match you with the right night rather than leaving you to scroll through listings.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> with your date and group size and we will recommend the best themed night running that week.
+          </p>
+        </>
+      );
+
     default:
       return (
         <p className="text-[#BBB] leading-relaxed">
