@@ -532,6 +532,25 @@ export const blogPosts: BlogPost[] = [
       { question: 'Do you need a guestlist for after-party clubs?', answer: 'Not always, but it helps significantly. Late at night, door teams become more selective because the venue is already busy. A guestlist or a quick message to a promoter means your name is expected and you skip the uncertainty of walking up cold.' },
     ],
   },
+  {
+    slug: 'solo-clubbing-london-guide',
+    title: 'Going Out Alone in London - A Solo Clubbing Guide',
+    metaTitle: 'Solo Clubbing London - Going Out Alone 2026',
+    metaDescription: 'Going to a London club alone? Where solo clubbers fit in, how to handle the door on your own, which venues suit solo nights, and how to make the most of it.',
+    excerpt: 'Going out alone is more common than you think. Here is how to pick the right venue, handle the door solo, and have a better night than most groups.',
+    featuredImage: '/gallery/images/fe4414_1700d1cd0c8f417493e5e7a301dbcfa7.jpg',
+    category: 'Practical Tips',
+    tags: ['solo', 'going out alone', 'tonight'],
+    publishedDate: '2026-05-02',
+    updatedDate: '2026-05-02',
+    relatedClubs: ['scotch-of-st-james', 'maddox', 'cuckoo-club', 'funky-buddha', 'tape-london'],
+    faqs: [
+      { question: 'Is it weird to go to a London club alone?', answer: 'No. More people go out solo than you would expect, especially on weeknights. Bartenders, promoters, and regulars all notice that solo clubbers tend to have a good time because they are not managing group logistics or waiting for someone else to make a decision. Most clubs welcome solo guests who look the part and are there for the right reasons.' },
+      { question: 'Which London clubs are best for going out alone?', answer: 'Smaller, more intimate venues work best. Scotch of St James has a bar-forward layout that makes solo visits feel natural. Maddox Club is compact enough that the dancefloor pulls everyone in. Cuckoo Club mixes bar energy with club energy across its different areas. Avoid the largest rooms on the busiest nights if it is your first time going out alone.' },
+      { question: 'Will door staff let me in to a club on my own?', answer: 'Yes, but you need to look confident and put-together. Solo arrivals sometimes get more scrutiny at the door because the team is assessing whether you will fit the room. Getting on a guestlist through a promoter removes most of the friction. Message us on WhatsApp and we will sort your name on the door.' },
+      { question: 'How do I get on a guestlist if I am going out alone?', answer: 'The same way as anyone else. Message a promoter on WhatsApp with your name, which venue you want, and which night. Being solo is not a problem. Promoters handle solo guestlist requests regularly and can recommend which night or venue will suit you best.' },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
