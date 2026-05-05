@@ -2233,6 +2233,132 @@ function getPostContent(slug: string): React.ReactNode {
         </>
       );
 
+    // ─────────────────────────────────────────────
+    // POST 33: Getting Home from London Clubs
+    // ─────────────────────────────────────────────
+    case 'getting-home-from-london-clubs':
+      return (
+        <>
+          <p className="text-[#BBB] leading-relaxed mb-4 text-sm italic">
+            By Daniel Whitaker, Nightlife Scout | Last updated: 5 May 2026
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The 3am Problem Every London Clubber Faces</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            You have had a great night. The music was right, the crowd was right, and you stayed until the lights came on. Now you are standing outside a club at 3am, phone battery at 12 per cent, and you need to get home. This is a scenario I deal with every single weekend, and I have watched hundreds of people handle it badly - standing in one spot refreshing Uber while the surge price climbs, or wandering towards a tube station that closed two hours ago.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The good news is that London has more late-night transport options than most people realise. The bad news is that none of them are obvious at 3am when your decision-making is not at its sharpest. This guide covers every realistic option, tested by a team that finishes work at the same time the clubs close.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Night Buses - The Option Most People Forget</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            London&apos;s night bus network is one of the most extensive in Europe, and it runs all night, every night. If you are leaving a club in <Link href="/areas/soho" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Soho</Link> or central London, you are almost certainly within walking distance of a night bus stop. As <a href="https://www.timeout.com/london/travel" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Time Out London&apos;s transport coverage</a> highlights, the network covers most of the city with services running every 15 to 30 minutes.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The key routes to know from the West End:
+          </p>
+          <ul className="list-disc list-inside text-[#BBB] space-y-2 mb-6 ml-4">
+            <li><strong className="text-white">N11</strong> - runs through the West End towards Fulham and south-west London</li>
+            <li><strong className="text-white">N29</strong> - connects Trafalgar Square to north London including Camden and Wood Green</li>
+            <li><strong className="text-white">N55</strong> - links Oxford Circus to Leyton in east London</li>
+            <li><strong className="text-white">N207</strong> - Holborn through to Shepherd&apos;s Bush and Acton</li>
+            <li><strong className="text-white">N19</strong> - Finsbury Park through to Battersea via the West End</li>
+          </ul>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            I check my route before I leave the house every time - it takes 30 seconds and saves standing in the cold trying to read a bus map at 3am. One practical detail most guides miss: night bus stops are not always at the same location as daytime stops. I have seen people wait at the wrong stop for 40 minutes because they assumed it was the same as during the day.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Night Tube and Night Overground</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The Night Tube runs on Friday and Saturday nights on the Central, Jubilee, Victoria, Northern, and Piccadilly lines. Services run roughly every 10 minutes, which is better than most people expect.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            If you are leaving <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link> or another club near Green Park, you have the Jubilee, Victoria, and Piccadilly lines within a five-minute walk. From <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque le Soir</Link> in Soho, Tottenham Court Road and Leicester Square are your closest stations. After a night at <Link href="/clubs/ministry-of-sound" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Ministry of Sound</Link> near Elephant and Castle, the Northern line is right there.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            We noticed that the Night Tube gets busy around 1am to 2am when bars close, but thins out again after 3am when the club crowd arrives. If you time your exit right, you can get a seat rather than standing the whole way home. The Night Overground also runs on Friday and Saturday nights, connecting areas like Dalston, Hackney, and Clapham that the Night Tube does not reach.
+          </p>
+
+          <h3 className="text-xl font-bold text-white mt-8 mb-3">When the Night Tube Does Not Run</h3>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Sunday to Thursday nights, there is no Night Tube. If you are heading home from a midweek club night, your options are night buses, black cabs, or rideshare apps. Check our <Link href="/guides/clubs-open-late" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">guide to clubs open late</Link> to see which venues run latest on specific nights, so you can plan accordingly.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Rideshare Apps - Beating the 3am Surge</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Uber and Bolt are the default choice for most clubbers, but the pricing at 3am can be punishing. I have stood outside <Link href="/clubs/scotch-of-st-james" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Scotch of St James</Link> on a Saturday and watched the Uber surge hit 3x - a ride that costs £15 during the day suddenly costs £45 or more.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Some ways to reduce the damage:
+          </p>
+          <ul className="list-disc list-inside text-[#BBB] space-y-2 mb-6 ml-4">
+            <li><strong className="text-white">Walk away from the club</strong> - move 5 to 10 minutes from the venue before requesting. The surge zone is tightest directly outside the door. Two streets away, the price often drops significantly.</li>
+            <li><strong className="text-white">Compare apps</strong> - check both Uber and Bolt. One is almost always cheaper, and at 3am the difference can be £15 or more.</li>
+            <li><strong className="text-white">Wait 20 minutes</strong> - the first wave of people leaving creates a price spike. By 3:30am, driver supply usually catches up with demand and prices settle.</li>
+            <li><strong className="text-white">Pick a main road</strong> - set your pickup point on a main road rather than a side street. Drivers accept main road pickups more readily, and you avoid cancellation fees from drivers who cannot find you.</li>
+          </ul>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Black Cabs and Licensed Minicabs</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            When the apps fail or the surge is too steep, black cabs are reliable. You can hail one on any main road, and the fare is metered so there are no surge surprises. From central London to most of zones 2 and 3, expect to pay between £20 and £40 as of May 2026.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            On my last visit out in Soho, I walked to Shaftesbury Avenue and flagged a black cab within two minutes. The trick is to avoid the taxi ranks directly outside clubs where queues build up quickly. Walk a block or two to a main road and your chances improve dramatically.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Licensed minicabs, the ones you book by phone through a local firm, are another solid option if you live further out. They tend to be cheaper than Uber surge pricing but you need to call ahead. Having a local minicab number saved in your phone is a habit worth building. If you are out later than expected, check our <Link href="/blog/after-party-clubs-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">after-party clubs guide</Link> for venues that keep going past 3am.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Plan Your Exit Before You Arrive</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The people who get home smoothly are the ones who planned it before they left the house. It takes 60 seconds and changes everything about how your night ends.
+          </p>
+          <ul className="list-disc list-inside text-[#BBB] space-y-2 mb-6 ml-4">
+            <li>Screenshot your night bus route or save it in Google Maps offline</li>
+            <li>Note the nearest Night Tube station to the club you are visiting</li>
+            <li>Charge your phone fully before going out, or bring a portable charger</li>
+            <li>Keep enough cash for a black cab as a backup</li>
+            <li>If you are going out midweek, remember the Night Tube does not run Sunday to Thursday</li>
+          </ul>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            If you are heading out solo, transport planning matters even more. Our <Link href="/blog/solo-clubbing-london-guide" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">solo clubbing guide</Link> covers more on handling a night out independently.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Let Us Help You Plan</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            We help people plan nights out every day, from guestlists and tables to recommending the right venue. If you are not sure where to go or how to get home afterwards, get in touch and we will point you in the right direction.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> and we will sort everything for you, from the guestlist to the journey home.
+          </p>
+
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Getting Home from London Clubs - Transport Options That Work After 3am",
+            "datePublished": "2026-05-05",
+            "dateModified": "2026-05-05",
+            "author": {
+              "@type": "Person",
+              "name": "Daniel Whitaker",
+              "url": "https://londonclubstonight.com/about-the-editor/",
+              "jobTitle": "Nightlife Scout"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "London Clubs Tonight",
+              "url": "https://londonclubstonight.com"
+            },
+            "image": "https://londonclubstonight.com/gallery/images/fe4414_03d0d58e1fb54eb885d6b4ae0986f483.jpg",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://londonclubstonight.com/blog/getting-home-from-london-clubs"
+            }
+          }) }} />
+        </>
+      );
+
     default:
       return (
         <p className="text-[#BBB] leading-relaxed">

@@ -551,6 +551,25 @@ export const blogPosts: BlogPost[] = [
       { question: 'How do I get on a guestlist if I am going out alone?', answer: 'The same way as anyone else. Message a promoter on WhatsApp with your name, which venue you want, and which night. Being solo is not a problem. Promoters handle solo guestlist requests regularly and can recommend which night or venue will suit you best.' },
     ],
   },
+  {
+    slug: 'getting-home-from-london-clubs',
+    title: 'Getting Home from London Clubs - Transport Options That Work After 3am',
+    metaTitle: 'Getting Home from London Clubs - Transport After 3am 2026',
+    metaDescription: 'How to get home from London clubs after 3am. Night buses, Night Tube, Uber surge tips, black cabs, and the transport tricks London promoters actually use.',
+    excerpt: 'Nobody plans the journey home until 3am arrives. Here are the transport options that actually work after London clubs close.',
+    featuredImage: '/gallery/images/fe4414_03d0d58e1fb54eb885d6b4ae0986f483.jpg',
+    category: 'Practical Tips',
+    tags: ['transport', 'night bus', 'getting home', 'tonight'],
+    publishedDate: '2026-05-05',
+    updatedDate: '2026-05-05',
+    relatedClubs: ['tape-london', 'cirque-le-soir', 'ministry-of-sound', 'scotch-of-st-james', 'funky-buddha'],
+    faqs: [
+      { question: 'What is the best way to get home from a London club at 3am?', answer: 'On Friday and Saturday nights, the Night Tube is the cheapest and most reliable option. The Central, Jubilee, Victoria, Northern, and Piccadilly lines all run through the night. On other nights, night buses run across London every 15 to 30 minutes. Uber and Bolt work but expect surge pricing between 2am and 4am.' },
+      { question: 'Does the Night Tube run every night in London?', answer: 'No. The Night Tube only runs on Friday and Saturday nights. On Sunday through Thursday, the last trains are around midnight. On non-Night Tube nights, your options are night buses, black cabs, or rideshare apps like Uber and Bolt.' },
+      { question: 'How much does an Uber cost at 3am in London?', answer: 'Expect to pay two to three times the normal fare due to surge pricing. A ride that costs 15 pounds during the day can easily reach 40 to 50 pounds at 3am on a Saturday. Walking a few streets away from the club before requesting can reduce the surge. Always compare Uber and Bolt prices as one is usually cheaper.' },
+      { question: 'Are London night buses safe?', answer: 'Yes. Night buses are well used and have CCTV throughout. The busier routes through central London are particularly safe because they carry a steady stream of passengers all night. Sit near the driver if you prefer, and keep your phone charged so you can track your stop.' },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
