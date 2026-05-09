@@ -570,6 +570,25 @@ export const blogPosts: BlogPost[] = [
       { question: 'Are London night buses safe?', answer: 'Yes. Night buses are well used and have CCTV throughout. The busier routes through central London are particularly safe because they carry a steady stream of passengers all night. Sit near the driver if you prefer, and keep your phone charged so you can track your stop.' },
     ],
   },
+  {
+    slug: 'last-minute-night-out-london',
+    title: 'Last-Minute Night Out in London - How to Make It Happen Tonight',
+    metaTitle: 'Last-Minute Night Out in London - Tonight Guide 2026',
+    metaDescription: 'Planning a last-minute night out in London tonight? How to reach a promoter, pick the right club, and get through the door, all sorted the same night.',
+    excerpt: 'Most great nights start with a last-minute idea. Here\'s how to go from sofa to dancefloor in a couple of hours.',
+    featuredImage: '/gallery/images/fe4414_1d5c45241bb044c2887a5aebe1a9cb59.jpg',
+    category: 'Going Out',
+    tags: ['last minute', 'tonight', 'planning', 'spontaneous'],
+    publishedDate: '2026-05-09',
+    updatedDate: '2026-05-09',
+    relatedClubs: ['tape-london', 'dear-darling', 'cuckoo-club', 'maddox', 'cirque-le-soir'],
+    faqs: [
+      { question: 'Can you plan a last-minute night out in London?', answer: 'Yes. Most London clubs have availability on any given night, especially midweek. The key is messaging a promoter as early as possible, even a few hours before you plan to arrive. They can arrange guestlist entry, recommend venues with space, and tell you what is running tonight.' },
+      { question: 'How late can you arrange a London club guestlist?', answer: 'Most clubs close their guestlists between 6pm and 9pm on the night. Some venues are more flexible midweek. The earlier you confirm, the better your chances. On Fridays and Saturdays, aim to message by early afternoon for the best options.' },
+      { question: 'Which London clubs are easiest to get into at short notice?', answer: 'Smaller, more intimate venues like Cuckoo Club, Maddox Club, and Dear Darling tend to be more accommodating for last-minute visits. Larger production clubs like Cirque le Soir depend more on the specific event running. A promoter can tell you instantly which venues have space tonight.' },
+      { question: 'Do you need to book a table for a same-night club visit?', answer: 'Not necessarily. Guestlist entry is usually sufficient for last-minute plans, especially for smaller groups. Tables are harder to arrange on short notice and carry minimum spend requirements. If guestlist spots are available, that is the fastest route in.' },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {

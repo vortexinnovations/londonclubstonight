@@ -2359,6 +2359,126 @@ function getPostContent(slug: string): React.ReactNode {
         </>
       );
 
+    // ─────────────────────────────────────────────
+    // POST 34: Last-Minute Night Out in London
+    // ─────────────────────────────────────────────
+    case 'last-minute-night-out-london':
+      return (
+        <>
+          <p className="text-[#BBB] leading-relaxed mb-4 italic">
+            By Daniel Whitaker, Nightlife Scout | Last updated: 9 May 2026
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Why Last-Minute Nights Out Often Work Better</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Some of the best nights I&apos;ve had in London started with zero planning. A message at 7pm, a quick outfit change, and we were at <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link> by 11pm without a hitch. The idea that you need to plan days in advance to have a good night out is a myth, at least if you know what to do in the right order.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Most London clubs have space on any given night. Even popular venues rarely run at full capacity early in the week. On Fridays and Saturdays, a promoter can usually sort you right up until early evening. I&apos;ve seen people message us at 6pm on a Saturday and be on the guestlist for <Link href="/clubs/dear-darling" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Dear Darling</Link> by 8pm. The spontaneous groups often have a better time because they arrive without overthinking it.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Message a Promoter Before Anything Else</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            This is the single most important step. Before you decide what to wear or check transport, message a promoter on WhatsApp. A good promoter responds within minutes and can tell you what&apos;s on tonight, which venues have space, and what your group needs to do to get in.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            When I first started helping people get into clubs, I noticed that the smoothest entries always came from guests who had messaged ahead, even if it was only 30 minutes before arrival. The door team has your name and group size before you walk up, which changes the entire dynamic. Instead of explaining yourself cold, you give your name and walk through. Read our <Link href="/blog/london-club-promoter-guide" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">promoter guide</Link> for more on how this works.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Give the promoter your name, how many people are coming, and roughly what time you plan to arrive. If you&apos;re not sure which venue suits your group, say that too, and they&apos;ll recommend something based on what&apos;s running tonight.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> right now and we&apos;ll have you sorted within minutes.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Pick the Right Venue for a Same-Night Visit</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Not every club is equally easy to get into at short notice. Smaller, more intimate venues tend to be more accommodating because their door teams can make quick decisions. <Link href="/clubs/cuckoo-club" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cuckoo Club</Link> or <Link href="/clubs/maddox" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Maddox Club</Link> will often have room on a weeknight, and even at weekends there&apos;s usually space if you&apos;re on the guestlist before the cut-off.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            For bigger production venues like <Link href="/clubs/cirque-le-soir" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Cirque le Soir</Link>, same-night access depends on the specific event running. Some nights are already at capacity by early evening. A promoter will know instantly whether it&apos;s worth trying or whether you should pivot to another option.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            As <a href="https://www.timeout.com/london/nightlife" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Time Out&apos;s London nightlife coverage</a> highlights, the city has more late-night options than almost any other European capital. There&apos;s always somewhere good open, even if your first choice is full.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Factors to weigh up tonight:
+          </p>
+          <ul className="list-disc list-inside text-[#BBB] space-y-2 mb-6 ml-4">
+            <li><strong className="text-white">What day is it?</strong> Midweek gives you the widest choice. Fridays and Saturdays need faster action.</li>
+            <li><strong className="text-white">What music do you want?</strong> Different venues run different genres on different nights.</li>
+            <li><strong className="text-white">How big is your group?</strong> Smaller groups of two to four get in more easily at short notice.</li>
+            <li><strong className="text-white">Guestlist or table?</strong> Guestlist is faster to arrange. Tables carry minimum spend requirements, as of May 2026.</li>
+          </ul>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Get Ready in Under an Hour</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            You don&apos;t need an entire evening of preparation. We&apos;ve seen hundreds of people throw together a sharp outfit in 30 minutes and look completely at home in any central London club. Smart shoes, well-fitted trousers or a dress, a clean top or blazer, and you&apos;re sorted.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            If you&apos;re unsure what works, check our <Link href="/blog/what-to-wear-to-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">complete dress code guide</Link> for quick answers. The key is looking put together, not overdressed.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Charge your phone fully before you leave. You&apos;ll need it for guestlist confirmations, transport apps, and keeping in touch with your group. I always bring a portable charger on a spontaneous night, because nothing kills the momentum like a dead phone at 1am when you&apos;re trying to find the entrance on a side street you&apos;ve never been to.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Time Your Arrival Right</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            On a weeknight, arrive between 10:30pm and 11:30pm. The venue has enough energy to feel alive without being so packed that the door becomes difficult. On my last visit to Maddox on a Wednesday, the queue was practically non-existent at 10:45pm and the dancefloor had a great buzz by 11:30pm.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            On Fridays and Saturdays, aim for 11pm to midnight if you&apos;re on the guestlist. Later arrivals work but your name needs to be on the list, because walk-in entry gets progressively harder as the venue fills. If you&apos;re unsure about timing, ask your promoter. They&apos;ll tell you the sweet spot for whichever venue you&apos;re heading to.
+          </p>
+
+          <h3 className="text-xl font-bold text-white mt-8 mb-3">Venues That Suit Spontaneous Plans</h3>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Some clubs are naturally better for last-minute nights. Here&apos;s where we send people most often:
+          </p>
+          <ul className="list-disc list-inside text-[#BBB] space-y-2 mb-6 ml-4">
+            <li><strong className="text-white">Tape London</strong> - Consistent programming, quick guestlist process, music leans R&amp;B and hip-hop</li>
+            <li><strong className="text-white">Cuckoo Club</strong> - Compact and energetic, good for smaller groups on short notice</li>
+            <li><strong className="text-white">Maddox Club</strong> - Central location, accommodating door team, varied music across the week</li>
+            <li><strong className="text-white">Dear Darling</strong> - Intimate setting, often has space midweek, as of May 2026</li>
+            <li><strong className="text-white">Scotch of St James</strong> - Bar-forward atmosphere that works well for unplanned visits</li>
+          </ul>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Browse all our venues on the <Link href="/clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">clubs page</Link> to see what suits your group.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Make It Happen</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The best last-minute nights work because someone took five minutes to message a promoter and sort the basics. That single step removes almost all the uncertainty, from getting your name on the guestlist to knowing what to expect at the door.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            If you&apos;re reading this and thinking about going out tonight, you&apos;re already ahead of most people. <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> and we&apos;ll tell you exactly where to go.
+          </p>
+
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Last-Minute Night Out in London - How to Make It Happen Tonight",
+            "datePublished": "2026-05-09",
+            "dateModified": "2026-05-09",
+            "author": {
+              "@type": "Person",
+              "name": "Daniel Whitaker",
+              "url": "https://londonclubstonight.com/about-the-editor/",
+              "jobTitle": "Nightlife Scout"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "London Clubs Tonight",
+              "url": "https://londonclubstonight.com"
+            },
+            "image": "https://londonclubstonight.com/gallery/images/fe4414_1d5c45241bb044c2887a5aebe1a9cb59.jpg",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://londonclubstonight.com/blog/last-minute-night-out-london"
+            }
+          }) }} />
+        </>
+      );
+
     default:
       return (
         <p className="text-[#BBB] leading-relaxed">
