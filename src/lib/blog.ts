@@ -589,6 +589,25 @@ export const blogPosts: BlogPost[] = [
       { question: 'Do you need to book a table for a same-night club visit?', answer: 'Not necessarily. Guestlist entry is usually sufficient for last-minute plans, especially for smaller groups. Tables are harder to arrange on short notice and carry minimum spend requirements. If guestlist spots are available, that is the fastest route in.' },
     ],
   },
+  {
+    slug: 'late-night-food-after-london-clubs',
+    title: 'Late-Night Food in London After Clubs - Where to Eat When the Music Stops',
+    metaTitle: 'Late-Night Food After London Clubs - Tonight Guide 2026',
+    metaDescription: 'Where to find late-night food in London after the clubs close. Open past 3am in Soho, central London, and beyond - here is where promoters actually eat.',
+    excerpt: 'Closing music doesn\'t mean closing kitchens. Here is where to find late-night food in London after the clubs shut their doors - the spots promoters use.',
+    featuredImage: '/gallery/images/fe4414_2a1a2ccb69d84f499c63c22504715c1e.jpg',
+    category: 'Going Out',
+    tags: ['late night food', 'after clubs', 'soho', 'tonight'],
+    publishedDate: '2026-05-16',
+    updatedDate: '2026-05-16',
+    relatedClubs: ['tape-london', 'cirque-le-soir', 'cuckoo-club', 'maddox', 'funky-buddha'],
+    faqs: [
+      { question: 'What time does Bar Italia in Soho stay open?', answer: 'Bar Italia on Frith Street is open 24 hours, every day of the week, and has been since 1949. It is the closest reliable late-night standby to most Soho nightclubs and serves coffee, focaccia, tramezzini, and pastries through the night. Expect a steady stream of clubbers, chefs, and night workers from 2am onwards.' },
+      { question: 'Where do people eat after a night at Mayfair clubs?', answer: 'Mayfair itself has limited options after 3am because the area is largely residential and most hotel restaurants close by midnight. Most regulars walk east into Soho, where Bar Italia and the Old Compton Street late-night spots stay open well past 3am. The McDonald\'s at Hyde Park Corner and Five Guys on Lower Regent Street are also reliable closer options if you are heading south or west.' },
+      { question: 'Is Beigel Bake on Brick Lane really open 24 hours?', answer: 'Yes. Beigel Bake on Brick Lane has run a 24-hour, 7-day operation for decades and is one of the most famous late-night food spots in London. The salt beef bagel is the order to know. A black cab from central London runs about 12 to 15 pounds as of May 2026. Expect queues every weekend night past midnight.' },
+      { question: 'Are there any late-night food spots inside Mayfair itself?', answer: 'Very few past 2am. Most hotel restaurants in Mayfair close by midnight and the streets are mostly residential after 1am. Realistic options inside the postcode are limited to a few late-licence hotel bars that serve food until 1am or 2am. For anything past 3am, you will need to walk into Soho, head south to Piccadilly, or take a cab to Brick Lane or Bloomsbury.' },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
