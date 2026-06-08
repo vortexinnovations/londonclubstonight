@@ -2590,6 +2590,101 @@ function getPostContent(slug: string): React.ReactNode {
         </>
       );
 
+    // ─────────────────────────────────────────────
+    // POST 38: Day Parties in London
+    // ─────────────────────────────────────────────
+    case 'day-parties-in-london':
+      return (
+        <>
+          <p className="text-[#BBB] leading-relaxed mb-4 italic">
+            By Daniel Whitaker, Nightlife Scout | Last updated: 9 June 2026
+          </p>
+
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            London does not get many genuinely warm weekends, so when the sun finally holds for a Saturday, the city changes gear completely. The day party scene wakes up, rooftops and warehouses fill from the early afternoon, and the people who plan ahead end up having the best summer days out in the city. This is our guide to how day parties work in London, where they happen, and how to find the good ones, based on years of running our own groups through summer after summer.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">When Day Parties Take Over London</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The London day party calendar runs mainly from late May through September, and the difference a stretch of good weather makes is dramatic. A grey forecast empties a rooftop in hours; a sunny one sells it out days in advance. From experience, the busiest weekends of the whole year are the summer bank holidays, when promoters stack their biggest line-ups and the good events sell out well before the day itself, as of June 2026.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The format is simple. Most day parties start in the early afternoon, somewhere between 1pm and 3pm, and run through to mid or late evening. The best ones are built as a full day-to-night session rather than a quick afternoon, which is why we always tell our groups to treat a day party as a marathon and not a sprint.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Where the Day Parties Actually Happen</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Day parties cluster in a few specific parts of London, and knowing the geography saves you a wasted afternoon. The scene splits roughly into three settings: rooftops, outdoor terraces, and big indoor warehouse spaces that open their doors and let the daylight in.
+          </p>
+          <ul className="list-disc list-inside text-[#BBB] space-y-2 mb-6 ml-4">
+            <li><strong className="text-white">Rooftops and terraces.</strong> The City and east London hold most of the rooftop day events, where the draw is the skyline as much as the music. These go quickly on a sunny forecast.</li>
+            <li><strong className="text-white">South London terraces.</strong> Greenwich and the south have long been home to some of the best terrace day parties in the city, with Studio 338 a long-standing fixture of that scene.</li>
+            <li><strong className="text-white">Warehouse spaces.</strong> East London venues such as Tobacco Dock and the larger Drumsheds run major daytime events, and Colour Factory in Hackney Wick is a reliable spot for a day-into-night session.</li>
+            <li><strong className="text-white">Central anchors.</strong> Some of the bigger central clubs run day events too, and <Link href="/clubs/ministry-of-sound" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Ministry of Sound</Link> is the obvious one to keep an eye on for a daytime line-up.</li>
+          </ul>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Boat parties on the Thames deserve their own mention. They run all summer, sell out fast, and almost always end with everyone piling into a club afterwards, so they pair perfectly with our <Link href="/blog/after-party-clubs-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">guide to after-party clubs in London</Link>.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">What to Expect at a London Day Party</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The energy at a day party is different to a night club, and that catches first-timers out. The crowd is looser and friendlier in daylight, the dress code is lighter, and the whole thing feels closer to a small festival than a night out. I have spent more summer Saturdays than I can count starting on a rooftop at 2pm with the sun still high, and the shift when the sky finally darkens and the lights take over is one of the best moments in London nightlife.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            We noticed long ago that the people who struggle are the ones who treat the early hours like a night out. Six hours in the sun with no food and no water is how a good day ends early. The regulars pace themselves, eat properly beforehand, and keep something in reserve for the night section.
+          </p>
+
+          <h3 className="text-xl font-bold text-white mt-8 mb-3">How to Pace a Day-to-Night Session</h3>
+          <ul className="list-disc list-inside text-[#BBB] space-y-2 mb-6 ml-4">
+            <li><strong className="text-white">Eat before you arrive.</strong> A proper meal at noon beats a meal deal at 5pm when the queues are long.</li>
+            <li><strong className="text-white">Bring sunglasses and layers.</strong> Rooftops are cold by 9pm even after a hot afternoon.</li>
+            <li><strong className="text-white">Plan the night before the day starts.</strong> Decide where you are going after, and sort the guestlist early.</li>
+            <li><strong className="text-white">Pace the drinks.</strong> The afternoon sun does half the work, so go slower than you think you need to.</li>
+          </ul>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">How to Find What Is On</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The single most useful habit is to check listings before every sunny weekend. As <a href="https://www.timeout.com/london/nightlife" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Time Out&apos;s London nightlife coverage</a> shows, the day-event calendar shifts week to week, and the strongest line-ups are the ones that sell out first. For the night portion, our <Link href="/blog/london-club-nights-summer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">guide to how London club nights change in summer</Link> covers what to expect once the day event winds down, and the <Link href="/best-clubs-this-weekend-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">best clubs this weekend</Link> page tracks where the strongest nights are running.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            If you would rather not trawl listings yourself, that is exactly what we do. Browse our <Link href="/clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">venues</Link> or check the <Link href="/guides/clubs-open-late" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">clubs open late guide</Link> for where to land after the day event finishes.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Make a Day of It</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            A great London day party is really two events stitched together: the daytime session and the night that follows. Get both right and it is the best kind of summer day the city offers. Get only the first right and you peak at 7pm and miss the best part.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Tell us your weekend and your group size and we will line up the right day event and the right club to roll into afterwards. <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> and we&apos;ll sort the day end to end, guestlist included.
+          </p>
+
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Day Parties in London: Where to Go When the Sun Is Out",
+            "datePublished": "2026-06-09",
+            "dateModified": "2026-06-09",
+            "author": {
+              "@type": "Person",
+              "name": "Daniel Whitaker",
+              "url": "https://londonclubstonight.com/about-the-editor/",
+              "jobTitle": "Nightlife Scout"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "London Clubs Tonight",
+              "url": "https://londonclubstonight.com"
+            },
+            "image": "https://londonclubstonight.com/gallery/images/fe4414_002538ddacfe4ce1a4fe89fa0e8305ae.jpg",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://londonclubstonight.com/blog/day-parties-in-london"
+            }
+          }) }} />
+        </>
+      );
+
+
     default:
       return (
         <p className="text-[#BBB] leading-relaxed">

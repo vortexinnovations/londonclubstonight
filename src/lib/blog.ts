@@ -608,6 +608,25 @@ export const blogPosts: BlogPost[] = [
       { question: 'Are there any late-night food spots inside Mayfair itself?', answer: 'Very few past 2am. Most hotel restaurants in Mayfair close by midnight and the streets are mostly residential after 1am. Realistic options inside the postcode are limited to a few late-licence hotel bars that serve food until 1am or 2am. For anything past 3am, you will need to walk into Soho, head south to Piccadilly, or take a cab to Brick Lane or Bloomsbury.' },
     ],
   },
+  {
+    slug: 'day-parties-in-london',
+    title: 'Day Parties in London: Where to Go When the Sun Is Out',
+    metaTitle: 'Day Parties in London - Summer Day Party Guide 2026',
+    metaDescription: 'The London day party scene explained: where summer day parties happen, what to expect, how they run into the night, and how to find what is on near you.',
+    excerpt: 'When London gets a rare run of sunshine, the day party scene comes alive. Here is where to go, what to expect, and how to find the good ones.',
+    featuredImage: '/gallery/images/fe4414_002538ddacfe4ce1a4fe89fa0e8305ae.jpg',
+    category: 'Going Out',
+    tags: ['day parties', 'summer', 'events'],
+    publishedDate: '2026-06-09',
+    updatedDate: '2026-06-09',
+    relatedClubs: ['ministry-of-sound', 'tape-london', 'cirque-le-soir'],
+    faqs: [
+      { question: 'When is day party season in London?', answer: 'The London day party scene runs mainly from late May through September, peaking across the summer months when the weather holds. Most events cluster on Saturdays and Sundays, with bank holiday weekends being the busiest of all as of June 2026.' },
+      { question: 'What should I wear to a London day party?', answer: 'Dress lighter than you would for a night club. Most day parties keep a smart-casual look but lean into summer fabrics, sunglasses and comfortable footwear, since you may be on your feet outdoors for hours. Rooftop and outdoor events are more relaxed than indoor warehouse parties.' },
+      { question: 'Do London day parties run into the night?', answer: 'Many do. A lot of day parties start in the early afternoon and run until 10pm or 11pm, and the bigger ones either hold a late licence or feed directly into an after-party at a nearby club. We always plan the night portion before the day event even starts.' },
+      { question: 'How do I find day parties in London?', answer: 'Listings platforms like Resident Advisor are the most reliable place to see what is running on a given weekend. You can also message a promoter directly to find the best event for your group and get on the guestlist before tickets sell out.' },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
