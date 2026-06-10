@@ -2240,7 +2240,7 @@ function getPostContent(slug: string): React.ReactNode {
       return (
         <>
           <p className="text-[#BBB] leading-relaxed mb-4 text-sm italic">
-            By Daniel Whitaker, Nightlife Scout | Last updated: 5 May 2026
+            By <Link href="/about-the-editor" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Daniel Whitaker</Link>, Nightlife Scout | Last updated: 5 May 2026
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">The 3am Problem Every London Clubber Faces</h2>
@@ -2366,7 +2366,7 @@ function getPostContent(slug: string): React.ReactNode {
       return (
         <>
           <p className="text-[#BBB] leading-relaxed mb-4 italic">
-            By Daniel Whitaker, Nightlife Scout | Last updated: 9 May 2026
+            By <Link href="/about-the-editor" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Daniel Whitaker</Link>, Nightlife Scout | Last updated: 9 May 2026
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">Why Last-Minute Nights Out Often Work Better</h2>
@@ -2486,7 +2486,7 @@ function getPostContent(slug: string): React.ReactNode {
       return (
         <>
           <p className="text-[#BBB] leading-relaxed mb-4 italic">
-            By Daniel Whitaker, Nightlife Scout | Last updated: 16 May 2026
+            By <Link href="/about-the-editor" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Daniel Whitaker</Link>, Nightlife Scout | Last updated: 16 May 2026
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">Closing Music Doesn&apos;t Switch Off Your Appetite</h2>
@@ -2597,7 +2597,7 @@ function getPostContent(slug: string): React.ReactNode {
       return (
         <>
           <p className="text-[#BBB] leading-relaxed mb-4 italic">
-            By Daniel Whitaker, Nightlife Scout | Last updated: 9 June 2026
+            By <Link href="/about-the-editor" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Daniel Whitaker</Link>, Nightlife Scout | Last updated: 9 June 2026
           </p>
 
           <p className="text-[#BBB] leading-relaxed mb-4">
@@ -2692,7 +2692,7 @@ function getPostContent(slug: string): React.ReactNode {
       return (
         <>
           <p className="text-[#BBB] leading-relaxed mb-4 italic">
-            By Daniel Whitaker, Nightlife Scout | Last updated: 10 June 2026
+            By <Link href="/about-the-editor" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Daniel Whitaker</Link>, Nightlife Scout | Last updated: 10 June 2026
           </p>
 
           <p className="text-[#BBB] leading-relaxed mb-4">
