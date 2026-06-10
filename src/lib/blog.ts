@@ -627,6 +627,25 @@ export const blogPosts: BlogPost[] = [
       { question: 'How do I find day parties in London?', answer: 'Listings platforms like Resident Advisor are the most reliable place to see what is running on a given weekend. You can also message a promoter directly to find the best event for your group and get on the guestlist before tickets sell out.' },
     ],
   },
+  {
+    slug: 'uk-garage-nights-london',
+    title: 'UK Garage Nights in London: Where the Sound Still Lives',
+    metaTitle: 'UK Garage Nights in London - UKG Guide 2026',
+    metaDescription: 'Where to find UK garage nights in London: the rooms keeping UKG alive, what the nights feel like, and how to catch the right garage lineup this weekend.',
+    excerpt: 'UK garage was born in London and it never really left. Here is where UKG actually lives now, what the nights feel like, and how to find the good ones.',
+    featuredImage: '/gallery/images/fe4414_912daead5f6e44e091a08db6c280fff0.jpg',
+    category: 'Going Out',
+    tags: ['uk garage', 'music', 'events'],
+    publishedDate: '2026-06-10',
+    updatedDate: '2026-06-10',
+    relatedClubs: ['ministry-of-sound', 'tape-london', 'funky-buddha'],
+    faqs: [
+      { question: 'Is UK garage back in London clubs?', answer: 'It never fully left, but the revival is real. A new generation has picked the sound up alongside the original heads, and as of June 2026 you can find dedicated UKG nights most weekends plus garage classics threaded through open-format sets across the city.' },
+      { question: 'Which London venues play UK garage?', answer: 'The dedicated nights cluster around the bigger music-led rooms and one-off events, with Ministry of Sound the most reliable large-room host. In Mayfair you will hear UKG classics inside open-format sets rather than full garage nights.' },
+      { question: 'What should I wear to a UKG night?', answer: 'It depends on the room. Dedicated garage nights at the big music venues run relaxed, trainers included. If you are catching the sound in a Mayfair room, the usual smart standard applies regardless of the genre being played.' },
+      { question: 'Are UK garage nights weekly or one-offs?', answer: 'A mix. A handful of residencies run regularly, but many of the best UKG events are one-off bookings around touring DJs and anniversaries, so check listings for the specific weekend rather than assuming a fixed night.' },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {

@@ -2685,6 +2685,110 @@ function getPostContent(slug: string): React.ReactNode {
       );
 
 
+    // ─────────────────────────────────────────────
+    // POST 39: UK Garage Nights in London
+    // ─────────────────────────────────────────────
+    case 'uk-garage-nights-london':
+      return (
+        <>
+          <p className="text-[#BBB] leading-relaxed mb-4 italic">
+            By Daniel Whitaker, Nightlife Scout | Last updated: 10 June 2026
+          </p>
+
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            UK garage is London&apos;s own sound. It came up through the city&apos;s pirate radio and south London Sunday sessions in the nineties, conquered the charts, went underground again, and never actually left the dancefloors. Ask anyone who works nights in this city: the moment a DJ drops a garage classic, the room lifts in a way almost nothing else manages. This guide covers where UKG actually lives in London right now, what the nights feel like, and how to catch the right one.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Why UKG Is Having Another Moment</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The revival is not nostalgia marketing, it is a genuine generational handover. The producers and MCs who built the scene are still booking out rooms, and a wave of younger DJs has folded the two-step swing into their own sets, pulling a crowd that was not born when the anthems first charted. As{" "}
+            <a href="https://mixmag.net" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mixmag&apos;s ongoing UK garage coverage</a>{" "}
+            documents, UKG has spent the last few years moving from revival to simply being part of London&apos;s weekly diet again, as of June 2026.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            From experience, the crowd split is what makes these nights special: original heads in their forties sharing a floor with twenty-somethings, and both halves knowing every word. Very few scenes in London manage that.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Where the Sound Actually Lives</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Be honest about the geography and you will have a better night. The dedicated UKG events cluster around London&apos;s bigger music-led rooms and one-off bookings rather than the Mayfair circuit.{" "}
+            <Link href="/clubs/ministry-of-sound" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Ministry of Sound</Link>{" "}
+            is the most reliable large-room host, with garage-leaning lineups appearing regularly through the year, and the city&apos;s warehouse-scale spaces pick up the biggest anniversary and headline events.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            In Mayfair, the relationship is different. Full garage nights are rare, but the open-format DJs at rooms like{" "}
+            <Link href="/clubs/tape-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Tape London</Link>{" "}
+            and{" "}
+            <Link href="/clubs/funky-buddha" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Funky Buddha</Link>{" "}
+            treat UKG classics as guaranteed floor-fillers, dropped mid-set when the room needs lifting. I watched a Mayfair DJ pull a flagging Friday back to life with two garage records in a row, and the cheer when the second one landed was the loudest moment of the night.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">What a UKG Night Feels Like</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            A proper garage night runs on swing and call-and-response. The two-step rhythm keeps the floor bouncing rather than stomping, the MC works the crowd between vocal hooks, and the energy is communal rather than performative. Phones come out for the anthems, but mostly people dance.
+          </p>
+          <ul className="list-disc list-inside text-[#BBB] space-y-2 mb-6 ml-4">
+            <li><strong className="text-white">The dress code is room-dependent.</strong> Dedicated UKG nights run relaxed; Mayfair rooms keep their smart standard whatever the genre.</li>
+            <li><strong className="text-white">The peak comes in waves.</strong> Garage sets build around anthems, so the night peaks several times rather than once.</li>
+            <li><strong className="text-white">The crowd is mixed by design.</strong> Expect every age from early twenties to late forties, and a friendlier floor than most genres draw.</li>
+          </ul>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            I have been on garage floors in both halves of the city in the last year, and the contrast is part of the fun. At the big music-led rooms the night belongs entirely to the sound: the MC runs the room, the reloads are earned, and the crowd polices its own energy. In the West End version, the garage moment arrives inside a broader set, lands like a firework, and hands the floor back to the open-format flow. Neither is the wrong way to hear it; they are simply different doses of the same medicine.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The Anthems and the New Wave</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            What you will actually hear splits into two layers. The first is the canon: the chart-era anthems and the underground classics that every garage night is contractually obliged to reach by the final hour, the records that turn strangers into a choir. The second layer is the new wave, producers who grew up on the genre and now fold its two-step swing into modern club music, keeping the sets from becoming a museum exhibit.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The best nights run both layers together, and that blend is the real test of a UKG booking. A set that leans only on the anthems burns hot and shallow; a set that ignores them entirely loses the room. When the DJ threads new productions between the classics and the floor stays locked for both, you are at a proper garage night rather than a throwback party. That balance is worth checking the lineup for before you commit your Saturday, as of June 2026.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">How to Find the Good Ones</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Because many UKG events are one-offs built around specific DJs, the listings habit matters more here than for any weekly night. Check what the weekend is holding before you commit: our{" "}
+            <Link href="/best-clubs-this-weekend-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">best clubs this weekend</Link>{" "}
+            page tracks the strongest nights as they are announced, and our{" "}
+            <Link href="/guides/london-clubs-by-music-genre" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">clubs by music genre guide</Link>{" "}
+            maps which rooms lean toward which sounds. If your taste sits closer to the hip-hop end of the spectrum, our{" "}
+            <Link href="/blog/best-rnb-hip-hop-clubs-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">R&amp;B and hip-hop guide</Link>{" "}
+            pairs naturally with this one.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Make It a Night</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            UKG rewards a planned night: the good events sell through, the headline sets have a start time worth honouring, and the after-party question answers itself if you have sorted the venue in advance. Tell us the weekend and the sound you are after, and we will point you to the right room.{" "}
+            <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a>{" "}
+            and we&apos;ll sort it end to end.
+          </p>
+
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "UK Garage Nights in London: Where the Sound Still Lives",
+            "datePublished": "2026-06-10",
+            "dateModified": "2026-06-10",
+            "author": {
+              "@type": "Person",
+              "name": "Daniel Whitaker",
+              "url": "https://londonclubstonight.com/about-the-editor/",
+              "jobTitle": "Nightlife Scout"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "London Clubs Tonight",
+              "url": "https://londonclubstonight.com"
+            },
+            "image": "https://londonclubstonight.com/gallery/images/fe4414_912daead5f6e44e091a08db6c280fff0.jpg",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://londonclubstonight.com/blog/uk-garage-nights-london"
+            }
+          }) }} />
+        </>
+      );
+
+
     default:
       return (
         <p className="text-[#BBB] leading-relaxed">
