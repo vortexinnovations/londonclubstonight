@@ -646,6 +646,25 @@ export const blogPosts: BlogPost[] = [
       { question: 'Are UK garage nights weekly or one-offs?', answer: 'A mix. A handful of residencies run regularly, but many of the best UKG events are one-off bookings around touring DJs and anniversaries, so check listings for the specific weekend rather than assuming a fixed night.' },
     ],
   },
+  {
+    slug: 'latin-reggaeton-nights-london',
+    title: 'Latin and Reggaeton Nights in London: Where the Party Is',
+    metaTitle: 'Latin & Reggaeton Nights in London: The 2026 Guide',
+    metaDescription: 'Where to find latin and reggaeton nights in London: the party brands, the salsa socials, the open-format rooms, and how to catch the right night this week.',
+    excerpt: 'London runs three very different kinds of latin night. Here is how the scene is organised, where the parties actually land, and how to pick your lane.',
+    featuredImage: '/gallery/images/fe4414_e2f0482a8a69492e892195e6e4455f86.jpg',
+    category: 'Going Out',
+    tags: ['latin', 'reggaeton', 'music', 'events'],
+    publishedDate: '2026-06-11',
+    updatedDate: '2026-06-11',
+    relatedClubs: ['ministry-of-sound', 'funky-buddha', 'the-london-reign'],
+    faqs: [
+      { question: 'Where can you hear reggaeton in London?', answer: 'Three places: dedicated latin party brands that book the bigger music-led rooms, long-running salsa and bachata socials, and reggaeton runs inside open-format sets across the West End. The dedicated parties move venues, so follow the brand rather than the room.' },
+      { question: 'Are there weekly latin nights in London?', answer: 'The salsa and bachata socials run weekly, often midweek with a beginner class early in the evening. The big reggaeton parties tend to be one-off or monthly bookings announced a few weeks ahead, so check listings for the specific weekend.' },
+      { question: 'What time do latin nights get going?', answer: 'Earlier than standard London clubbing. Dedicated parties fill fast because the crowd comes to dance, with rooms busy before midnight as of June 2026. Salsa socials start around eight with classes before the open floor.' },
+      { question: 'Do you need to know how to dance?', answer: 'Not for the party lane or the open-format rooms, where the floor is a normal club floor. At the salsa socials a beginner class is usually built into the night, and asking someone to dance is normal etiquette rather than a big move.' },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {

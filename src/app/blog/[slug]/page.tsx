@@ -2789,6 +2789,107 @@ function getPostContent(slug: string): React.ReactNode {
       );
 
 
+    case 'latin-reggaeton-nights-london':
+      return (
+        <>
+          <p className="text-[#BBB] leading-relaxed mb-4 italic">
+            By <Link href="/about-the-editor" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Daniel Whitaker</Link>, Nightlife Scout | Last updated: 11 June 2026
+          </p>
+
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Reggaeton is one of the biggest sounds on the planet, and London caught up properly years ago. The city now runs everything from full-scale latin parties in its biggest music rooms to salsa socials that have been going for decades, plus a steady stream of reggaeton inside the West End&apos;s open-format sets. We track the listings every week, and the honest headline is that the scene is thriving but scattered: there is no single home for it, which is exactly why a guide helps. Here is how London&apos;s latin nightlife is organised, where the nights actually land, and how to pick the right one for your group.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Three Different Latin Nights, and Which One You Want</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The first thing we tell anyone asking about latin nights is that London runs three very different versions, and turning up to the wrong one is the most common way these nights disappoint.
+          </p>
+          <ul className="list-disc list-inside text-[#BBB] space-y-2 mb-6 ml-4">
+            <li><strong className="text-white">The party lane:</strong> dedicated reggaeton and latin-urban events, usually one-off bookings by party brands that move between venues. Big rooms, big production, and a crowd that knows every word.</li>
+            <li><strong className="text-white">The dance lane:</strong> the long-running salsa and bachata socials, mostly midweek, often with a beginner class early in the evening before the floor opens up. These nights are about dancing properly, not bottle sparklers.</li>
+            <li><strong className="text-white">The blend lane:</strong> reggaeton folded into open-format sets across the West End. You will not get a full latin night, but you will get a guaranteed run of it around peak time.</li>
+          </ul>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Decide which lane you are in before you plan anything else. Everything below follows from that choice.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Where the Parties Actually Land</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The dedicated latin and reggaeton parties cluster around London&apos;s bigger music-led venues rather than a fixed weekly home.{" "}
+            <Link href="/clubs/ministry-of-sound" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Ministry of Sound</Link>{" "}
+            is the most reliable large-room host, with latin and reggaeton lineups appearing on its calendar through the year, and the live-led rooms further north pick up the touring acts and the biggest brand parties. The brands are the thing to follow here: the same party can land in a different postcode each time it runs, so as of June 2026 our advice is to follow the promoter, not the room.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            In the West End the relationship is different. Full latin nights are rare, but open-format rooms like{" "}
+            <Link href="/clubs/the-london-reign" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Reign</Link>{" "}
+            and{" "}
+            <Link href="/clubs/funky-buddha" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Funky Buddha</Link>{" "}
+            treat a reggaeton run as a guaranteed floor-filler, dropped when the room is at full strength. From our experience working these rooms weekly, that run usually lands between half past midnight and half one, and it is consistently one of the loudest singalong moments of the night.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">What the Nights Feel Like</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Dedicated latin nights run on a different clock to standard London clubbing. The rooms fill early because the crowd comes to dance rather than to be seen: we have watched reggaeton parties hit a packed floor by half past eleven while the average Saturday room across town was still warming up. Expect higher energy, a crowd that sings in Spanish whether or not it speaks it, and DJs who work the room like a live show rather than a background soundtrack.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The salsa socials are the opposite, and proudly so. The room builds from the class into a proper social where strangers dance with strangers as standard. If you are used to club rules, the etiquette shift is the pleasant surprise: asking someone to dance is normal, expected and entirely unloaded.
+          </p>
+
+          <h3 className="text-xl font-bold text-white mt-8 mb-3">When to Arrive</h3>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            For the party lane, treat the advertised start seriously and be in before eleven; these events sell through and the floor peaks earlier than a standard club night. For the dance lane, arrive around eight if you want the class, later if you just want the social. For the blend lane, normal club timing applies: through the door before midnight puts you in the room for the latin run when it comes.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">How to Find This Week&apos;s Latin Night</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Because the best latin events move venues, the listings habit matters more than loyalty to any single room. As{" "}
+            <a href="https://www.timeout.com/london/nightlife" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Time Out&apos;s London nightlife coverage</a>{" "}
+            shows, the latin calendar runs year-round with the biggest parties announced a few weeks out. Our guide on{" "}
+            <Link href="/blog/how-to-find-london-club-events" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">finding London club events worth your time</Link>{" "}
+            covers the method we use ourselves, and our{" "}
+            <Link href="/guides/london-clubs-by-music-genre" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">clubs by music genre guide</Link>{" "}
+            maps which rooms lean toward which sounds.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            If your taste sits closer to the afrobeats end of the spectrum, the two scenes share venues, DJs and plenty of crowd: our{" "}
+            <Link href="/blog/afrobeats-clubs-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">afrobeats and amapiano guide</Link>{" "}
+            pairs naturally with this one.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Make It a Night</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            A latin night rewards a small amount of planning: the dedicated parties sell through, the socials reward an early start, and the open-format rooms need the usual door sense. Tell us the weekend and the lane you want, party, dance or blend, and we will point you to the right room.{" "}
+            <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a>{" "}
+            and we&apos;ll sort it end to end.
+          </p>
+
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Latin and Reggaeton Nights in London: Where the Party Is",
+            "datePublished": "2026-06-11",
+            "dateModified": "2026-06-11",
+            "author": {
+              "@type": "Person",
+              "name": "Daniel Whitaker",
+              "url": "https://londonclubstonight.com/about-the-editor/",
+              "jobTitle": "Nightlife Scout"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "London Clubs Tonight",
+              "url": "https://londonclubstonight.com"
+            },
+            "image": "https://londonclubstonight.com/gallery/images/fe4414_e2f0482a8a69492e892195e6e4455f86.jpg",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://londonclubstonight.com/blog/latin-reggaeton-nights-london"
+            }
+          }) }} />
+        </>
+      );
+
+
     default:
       return (
         <p className="text-[#BBB] leading-relaxed">
