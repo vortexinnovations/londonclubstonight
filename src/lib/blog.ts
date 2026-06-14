@@ -665,6 +665,25 @@ export const blogPosts: BlogPost[] = [
       { question: 'Do you need to know how to dance?', answer: 'Not for the party lane or the open-format rooms, where the floor is a normal club floor. At the salsa socials a beginner class is usually built into the night, and asking someone to dance is normal etiquette rather than a big move.' },
     ],
   },
+  {
+    slug: 'london-boat-parties',
+    title: 'London Boat Parties: Summer Nights Out on the Thames',
+    metaTitle: 'London Boat Parties: The Summer Thames Party Guide 2026',
+    metaDescription: 'Your guide to London boat parties: how a Thames party cruise works, when the season runs, what the night feels like, and how to find the good ones in 2026.',
+    excerpt: 'A summer night on the Thames shows off London nightlife at its best. Here is how boat parties work, what to expect on board, and how to find the good ones.',
+    featuredImage: '/gallery/images/fe4414_4b25a078578f419581101465f5cd5a1b.jpg',
+    category: 'Going Out',
+    tags: ['boat parties', 'summer', 'events'],
+    publishedDate: '2026-06-14',
+    updatedDate: '2026-06-14',
+    relatedClubs: ['ministry-of-sound', 'tape-london', 'the-london-reign'],
+    faqs: [
+      { question: 'When is the London boat party season?', answer: 'The Thames boat party season runs from roughly May to September, with June to August the peak. Long summer evenings mean you board in daylight and watch the sun set over the city, so as of June 2026 the calendar is in full swing and the best dates sell through early.' },
+      { question: 'Do London boat parties include a club after-party?', answer: 'Many do. A large share of Thames boat parties sell a combined ticket that carries you straight into a nearby club once the cruise docks. Always check whether the after-party is included or sold separately before you buy, because the boat portion alone usually runs only two to four hours.' },
+      { question: 'What should I expect when boarding a Thames boat party?', answer: 'Boarding closes well before departure, often twenty to thirty minutes ahead, and the boat leaves on time whether or not you are on it. Bring valid ID, arrive at the right pier early, and treat the printed boarding time as a hard deadline rather than a suggestion.' },
+      { question: 'How do I find a good London boat party?', answer: 'Listings platforms and promoter pages are the most reliable source, since the best events sell out weeks ahead and the lineup matters more than the boat. Follow the promoter running the night and get on the guestlist or buy early rather than chancing a walk-up on the day.' },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {

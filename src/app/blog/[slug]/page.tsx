@@ -2890,6 +2890,104 @@ function getPostContent(slug: string): React.ReactNode {
       );
 
 
+    case 'london-boat-parties':
+      return (
+        <>
+          <p className="text-[#BBB] leading-relaxed mb-4 italic">
+            By <Link href="/about-the-editor" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Daniel Whitaker</Link>, Nightlife Scout | Last updated: 14 June 2026
+          </p>
+
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            For a few months each summer, some of the best nights out in London happen on the water. Thames boat parties are a fixture of the warm-weather calendar, and they are one of the few formats that genuinely feels different to a normal club night: a DJ, a few hundred people, and the city skyline sliding past the deck. We track these events every week, and the honest truth is that the experience swings wildly depending on which one you pick. Here is how London boat parties actually work, what to expect once you are on board, and how to find the good ones as of June 2026.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">What a London Boat Party Actually Is</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Strip away the marketing and a boat party is a chartered Thames cruise with a soundsystem. You board at a central pier, the boat casts off, and you spend two to four hours cruising past the landmarks while a DJ works the deck, usually finishing back where you started. The good ones feel like a club that happens to be moving; the weak ones feel like a sightseeing tour with a speaker bolted on. The difference is almost always the promoter and the lineup, not the boat itself.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The single most important thing we tell first-timers is about boarding. The gangway closes well before the advertised departure, often twenty to thirty minutes ahead, and the boat leaves on time without you. We have watched groups jog down the pier and miss the ropes by two minutes, and there is no second sailing. Treat the boarding time on your ticket as the real start of the night, not the time you aim to be nearby.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">When the Season Runs, and Why Now Is the Time</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The Thames party season runs from roughly May to September, and June through August is the peak. The reason is simple: the long evenings mean you board in daylight and catch the sunset from the deck, which is the whole point. As of June 2026 the calendar is in full swing, and the best-dated events, the Friday and Saturday sailings and anything tied to a bank holiday, sell through first. If a specific date matters to your group, book it now rather than later in the week.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The Two Kinds of Boat Party</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Before you buy, work out which of the two formats you are looking at, because they make for very different nights.
+          </p>
+          <ul className="list-disc list-inside text-[#BBB] space-y-2 mb-6 ml-4">
+            <li><strong className="text-white">The cruise-only party:</strong> just the boat. Two to four hours on the water and then everyone disperses. Ideal if you want an early, contained night, or you are pairing it with your own plans afterwards.</li>
+            <li><strong className="text-white">The boat plus after-party:</strong> a combined ticket that carries you straight off the gangway into a nearby club to keep going. This is the one most people actually want in peak season, and it is better value if you were going to end up in a club anyway.</li>
+          </ul>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Always check which one you are buying. The boat portion alone is short, and turning up expecting an all-night event when you booked a two-hour cruise is the most common boat-party disappointment we hear about. If your night is built around the after-party, our guide to{" "}
+            <Link href="/blog/after-party-clubs-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">after-party clubs in London</Link>{" "}
+            covers where these nights tend to land.
+          </p>
+
+          <h3 className="text-xl font-bold text-white mt-8 mb-3">Where They Board</h3>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Most central Thames parties leave from the cluster of piers around Embankment, Temple and Westminster, with the exact one printed on your ticket. They are a short walk from each other, but they are not the same place, so check the pier name and not just the area. Arrive early, have your ID ready, and remember the recurring rule: the boat does not wait.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">What the Night Feels Like on Board</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Almost every party boat splits into two worlds. The top deck is open-air and built for the view: the skyline, the bridges lighting up, and the sunset if you have timed it right. The lower deck is where the soundsystem and the actual dancefloor live, usually covered, which also makes it the place everyone migrates to if the weather turns. From experience the smart move is to start on top for the sail-out and the photos, then drop downstairs once the DJ hits full stride.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The music leans broad and crowd-pleasing, house, afrobeats, garage and R&amp;B depending on the promoter, because a boat crowd is mixed and there to enjoy itself rather than to study the DJ. The crowd skews celebratory: birthdays, work groups and friends marking the summer. It is a friendlier, more open room than a hard-door West End club, and that is a big part of the appeal.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            A few practical notes from working these nights: drinks are bought on board, so there is no nipping out, and the bar gets busy the moment the boat fills, so get your first round in early. Bring a layer even in July, because the open deck cools down once you are moving on the water after dark. And keep your phone charged, because the skyline at golden hour is the most photographed thing on the river for good reason.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">How to Find a Good One</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Because the boat matters less than the night, the listings habit beats loyalty to any single operator. As{" "}
+            <a href="https://www.timeout.com/london/nightlife" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Time Out&apos;s London nightlife coverage</a>{" "}
+            shows, the summer river calendar is busy and the standout events are announced weeks ahead. Follow the promoter rather than the boat, and use the same approach we set out in our guide to{" "}
+            <Link href="/blog/how-to-find-london-club-events" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">finding London club events worth your time</Link>. If you would rather stay on dry land, our roundups of{" "}
+            <Link href="/blog/day-parties-in-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">day parties in London</Link>{" "}
+            and{" "}
+            <Link href="/blog/london-club-nights-summer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">how London club nights change in summer</Link>{" "}
+            cover the rest of the warm-weather calendar.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            A boat party rewards a little planning: pick the right format, book the date early, and line up the after-party before you sail. Tell us the weekend and your group size and we will point you to the sailings worth your money and sort the after-party.{" "}
+            <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a>{" "}
+            and we&apos;ll handle it end to end.
+          </p>
+
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "London Boat Parties: Summer Nights Out on the Thames",
+            "datePublished": "2026-06-14",
+            "dateModified": "2026-06-14",
+            "author": {
+              "@type": "Person",
+              "name": "Daniel Whitaker",
+              "url": "https://londonclubstonight.com/about-the-editor/",
+              "jobTitle": "Nightlife Scout"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "London Clubs Tonight",
+              "url": "https://londonclubstonight.com"
+            },
+            "image": "https://londonclubstonight.com/gallery/images/fe4414_4b25a078578f419581101465f5cd5a1b.jpg",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://londonclubstonight.com/blog/london-boat-parties"
+            }
+          }) }} />
+        </>
+      );
+
+
     default:
       return (
         <p className="text-[#BBB] leading-relaxed">
