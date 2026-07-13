@@ -3067,6 +3067,96 @@ function getPostContent(slug: string): React.ReactNode {
       );
 
 
+    case 'london-festival-after-parties':
+      return (
+        <>
+          <p className="text-[#BBB] leading-relaxed mb-4 italic">
+            By <Link href="/about-the-editor" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Daniel Whitaker</Link>, Nightlife Scout | Last updated: 13 July 2026
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Every summer weekend we watch the same scene play out. Tens of thousands of people spend a whole day getting warmed up in a London park, and then, somewhere between half nine and half ten, the music stops. London runs the earliest festival curfews of any major party city, which means the festival after-party is not an afterthought here; it is the second half of the day, and the city&apos;s clubs are built to catch it.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            This is how the festival-to-club pipeline actually works, where each crowd goes when the gates open, and how to make sure your night has somewhere to land, as of July 2026.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Why London Festivals End So Early</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The big London festivals happen in parks with neighbours, and the licences reflect it: most of the major events wrap between 9.30pm and 10.30pm, with sound limits that get stricter the later it gets. You can track the whole summer calendar through{" "}
+            <a href="https://www.timeout.com/london/music" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Time Out&apos;s London music coverage</a>, and the pattern holds across nearly all of it. The result is unique among big party cities: a crowd at absolute peak energy, ejected into the evening with a full night of licensed London still ahead of it. Somebody has to catch that crowd. That is the entire after-party economy in one sentence.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">The Festival-to-Club Pipeline</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The pipeline runs on three routes. The first is official: the bigger festivals announce partner after-parties, often with names from the bill, ticketed separately and capped. These are the safest landing and the first to sell out. The second is the DJ double-shift: artists who play a festival slot in the afternoon frequently appear in a city venue the same night, so following the artist rather than the venue is one of the sharpest moves of the season. The third route is the one nobody announces: certain rooms are simply known landing zones for certain crowds, and the flow happens on its own.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            From our side of the rope, the tell is unmistakable: the busiest hour of our summer is 8pm on a festival Saturday, when half the park seems to decide at once that the day should not end. The groups that message us then still get sorted; the ones who message at midnight join the back of the story.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Where Each Crowd Actually Goes</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Each festival empties into the parts of the city that match its sound. The pop and urban weekenders flow into the West End&apos;s open-format rooms, where the music carries straight on from the day. The house and dance crowds head for the big-system venues, with{" "}
+            <Link href="/clubs/ministry-of-sound" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Ministry of Sound</Link>{" "}
+            the classic example: on the right festival Saturday you can spot the wristbands in the queue from across the road by 11pm. The bass and drum &amp; bass contingent has its own map, with rooms like{" "}
+            <Link href="/clubs/beat-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">BEAT London</Link>{" "}
+            carrying the harder sounds on the right night. If you are matching a crowd to a room from scratch, our guide to{" "}
+            <Link href="/guides/london-clubs-by-music-genre" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London clubs by music genre</Link>{" "}
+            does the sorting for you.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            One wrinkle worth knowing: Sunday festival days behave differently. The casual half of the crowd goes home to face Monday, which thins the pipeline, but the dedicated half carries on regardless, and the rooms that stay properly open on a Sunday get a concentrated version of the same flow. If your festival day is a Sunday, the landing options are fewer and the ones that exist are better than you would expect.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Timing the Night and the State You Are In</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Two small logistics decide more festival nights than any door ever does. The first is the tote bag: nearly every club will make you cloak the festival kit, so budget for the cloakroom queue and do not arrive carrying a camping chair. The second is the phone: a park day flattens batteries, and the group that agreed a meeting point before the last set is the group that actually arrives together. Sort both at the festival, not at the club door.
+          </p>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            Beyond that, the decision that shapes the whole night happens at the festival gates: straight on, or home first. Straight on puts you at a club door around 11pm, which is close to perfect, and the more relaxed, music-led rooms will take a tidy festival crowd all night long. Home first means a shower and a midnight-plus arrival, at which point{" "}
+            <Link href="/guides/clubs-open-late" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">the clubs that run latest</Link>{" "}
+            become your map, and the classic{" "}
+            <Link href="/blog/after-party-clubs-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">after-party rooms</Link>{" "}
+            come into their own. Be honest about the state you are in and pick the room to match it; a smarter door after a twelve-hour park day is a losing argument. And for the season&apos;s final boss, the August bank holiday, the whole city plays by different rules, which we covered in our{" "}
+            <Link href="/blog/notting-hill-carnival-after-parties" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">carnival weekend guide</Link>.
+          </p>
+
+          <h2 className="text-2xl font-bold text-white mt-10 mb-4">Sort the Night Before the Headliner Ends</h2>
+          <p className="text-[#BBB] leading-relaxed mb-4">
+            The festival after-party is the easiest night of the year to get right and the easiest to fumble: the demand is citywide, the crowd moves at the same moment, and the good rooms know exactly what is coming. Tell us which festival you are at, the size of your group and the sound you want to carry on, and we will line up the landing.{" "}
+            <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a>{" "}
+            before the encore, or browse{" "}
+            <Link href="/clubs-tonight-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">what is on tonight</Link>{" "}
+            and pick your own landing zone.
+          </p>
+
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Festival After-Parties in London: Where the Night Goes After the Curfew",
+            "datePublished": "2026-07-13",
+            "dateModified": "2026-07-13",
+            "author": {
+              "@type": "Person",
+              "name": "Daniel Whitaker",
+              "url": "https://londonclubstonight.com/about-the-editor/",
+              "jobTitle": "Nightlife Scout"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "London Clubs Tonight",
+              "url": "https://londonclubstonight.com"
+            },
+            "image": "https://londonclubstonight.com/gallery/images/fe4414_634b7e2a2ea143a4a6b071f42a7be061.jpg",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://londonclubstonight.com/blog/london-festival-after-parties"
+            }
+          }) }} />
+        </>
+      );
+
+
     default:
       return (
         <p className="text-[#BBB] leading-relaxed">
