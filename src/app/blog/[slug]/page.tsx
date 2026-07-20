@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getAllBlogPosts, getBlogPostBySlug } from '@/lib/blog';
-import { clubs } from '@/lib/clubs';
+import { clubs, WHATSAPP_TABLE_LINK, WHATSAPP_GUESTLIST_LINK } from '@/lib/clubs';
 import ClubCard from '@/components/ClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
@@ -1695,7 +1695,7 @@ function getPostContent(slug: string): React.ReactNode {
             If you grew up on Aaliyah, TLC, and early 2000s Destiny&apos;s Child, Funky Buddha and Tape London are your best choices. Their DJs consistently weave throwback R&amp;B into modern sets. If you prefer current hip-hop — Travis Scott, 21 Savage, Future — BEAT London and Luna Club lean more heavily into new releases. Most clubs offer a blend of both, but the balance varies.
           </p>
           <p className="text-[#BBB] leading-relaxed mb-4">
-            Dedicated throwback nights do exist in London and they rotate between venues. They are not weekly fixtures at any one club, so the best way to catch one is to <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">message us on WhatsApp</a> and ask what is running this week.
+            Dedicated throwback nights do exist in London and they rotate between venues. They are not weekly fixtures at any one club, so the best way to catch one is to <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">message us on WhatsApp</a> and ask what is running this week.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">How to Get In</h2>
@@ -1703,7 +1703,7 @@ function getPostContent(slug: string): React.ReactNode {
             R&amp;B nights at popular clubs fill up quickly. <Link href="/blog/how-to-skip-the-queue-at-london-clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Skipping the queue</Link> starts with getting on the guestlist — it is free, takes two minutes, and gives you priority at the door. For the best experience, a <Link href="/last-minute-table-booking-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">table booking</Link> guarantees entry and gives you a base for the night with bottle service included. Tables at R&amp;B-heavy venues like Tape and Cirque book out fast on Saturdays, so plan ahead.
           </p>
           <p className="text-[#BBB] leading-relaxed mb-4">
-            Whether you want a table overlooking the dancefloor or just guestlist entry and a spot at the bar, we can sort it. <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20book%20a%20table." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> and we&apos;ll get you into the right venue for your night.
+            Whether you want a table overlooking the dancefloor or just guestlist entry and a spot at the bar, we can sort it. <a href={WHATSAPP_TABLE_LINK} target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> and we&apos;ll get you into the right venue for your night.
           </p>
         </>
       );
@@ -1786,7 +1786,7 @@ function getPostContent(slug: string): React.ReactNode {
             We run guestlists at every major club in London — Mayfair, Soho, and beyond. Tell us where you want to go, how many of you there are, and we will handle the rest. No fees, no sign-up forms, just a quick WhatsApp message.
           </p>
           <p className="text-[#BBB] leading-relaxed mb-4">
-            <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> and we&apos;ll get you on the list.
+            <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> and we&apos;ll get you on the list.
           </p>
         </>
       );
@@ -1858,7 +1858,7 @@ function getPostContent(slug: string): React.ReactNode {
             We manage guestlists and tables at every major club across London on bank holiday weekends. Whether you are a group of four or a party of twenty, we can get you into the right venue at the right time — no guesswork, no stress at the door.
           </p>
           <p className="text-[#BBB] leading-relaxed mb-4">
-            <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20book%20a%20table." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> and tell us which bank holiday you are planning for. We&apos;ll take it from there.
+            <a href={WHATSAPP_TABLE_LINK} target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> and tell us which bank holiday you are planning for. We&apos;ll take it from there.
           </p>
         </>
       );
@@ -1891,7 +1891,7 @@ function getPostContent(slug: string): React.ReactNode {
           </p>
           <ul className="list-disc list-inside text-[#BBB] space-y-2 mb-6 ml-4">
             <li><strong className="text-white">Venue Instagram stories</strong> — the most reliable real-time source. If a club is running something tonight, their story will show it. No story usually means a quiet night or a private hire.</li>
-            <li><strong className="text-white">Promoter WhatsApp</strong> — a good promoter knows every venue&apos;s schedule for the week. One message gets you a filtered rundown of what&apos;s actually worth going to. <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> and we&apos;ll tell you what&apos;s on tonight.</li>
+            <li><strong className="text-white">Promoter WhatsApp</strong> — a good promoter knows every venue&apos;s schedule for the week. One message gets you a filtered rundown of what&apos;s actually worth going to. <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> and we&apos;ll tell you what&apos;s on tonight.</li>
             <li><strong className="text-white">Venue websites</strong> — some clubs publish weekly schedules. Check our <Link href="/clubs" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">clubs directory</Link> for direct links to every venue.</li>
             <li><strong className="text-white">Word of mouth</strong> — if someone who goes out regularly says a night is good, that carries more weight than any advert.</li>
           </ul>
@@ -1934,7 +1934,7 @@ function getPostContent(slug: string): React.ReactNode {
             We manage guestlists and tables across every major London club. When you message us, we don&apos;t just add you to a list — we tell you where the energy is, which venues are running events, and which night suits what you&apos;re looking for. That&apos;s the advantage of working with promoters who are at these venues every week.
           </p>
           <p className="text-[#BBB] leading-relaxed mb-4">
-            <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> with your date, group size, and what kind of night you&apos;re after. We&apos;ll come back with a recommendation you can trust.
+            <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> with your date, group size, and what kind of night you&apos;re after. We&apos;ll come back with a recommendation you can trust.
           </p>
         </>
       );
@@ -1997,7 +1997,7 @@ function getPostContent(slug: string): React.ReactNode {
             <li><strong className="text-white">Transport:</strong> Ubers surge harder in summer. Book a return ride or know your night bus routes before you leave the house.</li>
           </ul>
           <p className="text-[#BBB] leading-relaxed mb-4">
-            The one thing that does not change is how easy it is to get sorted through a promoter. <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> with your date and group size and we will handle the rest - <Link href="/guestlist-tonight-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">guestlist</Link>, table, recommendations, all of it.
+            The one thing that does not change is how easy it is to get sorted through a promoter. <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> with your date and group size and we will handle the rest - <Link href="/guestlist-tonight-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">guestlist</Link>, table, recommendations, all of it.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">Making the Most of Summer Nights</h2>
@@ -2008,7 +2008,7 @@ function getPostContent(slug: string): React.ReactNode {
             The people who have the best summer nights are the ones who plan just enough - a guestlist confirmed, an arrival time agreed, a venue chosen - without overcomplicating it. London rewards that balance between spontaneity and preparation, and summer is when it matters most.
           </p>
           <p className="text-[#BBB] leading-relaxed mb-4">
-            If you want to know what is happening this week or need help choosing a venue, <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20book%20a%20table." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">get in touch on WhatsApp</a>. We are at these clubs every week and we will point you in the right direction.
+            If you want to know what is happening this week or need help choosing a venue, <a href={WHATSAPP_TABLE_LINK} target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">get in touch on WhatsApp</a>. We are at these clubs every week and we will point you in the right direction.
           </p>
         </>
       );
@@ -2085,7 +2085,7 @@ function getPostContent(slug: string): React.ReactNode {
             We are at these venues every week. We know which themed nights are delivering right now, which ones have lost their edge, and which new events are building momentum. If you tell us what kind of evening you are after, we will match you with the right night rather than leaving you to scroll through listings.
           </p>
           <p className="text-[#BBB] leading-relaxed mb-4">
-            <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> with your date and group size and we will recommend the best themed night running that week.
+            <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> with your date and group size and we will recommend the best themed night running that week.
           </p>
         </>
       );
@@ -2154,7 +2154,7 @@ function getPostContent(slug: string): React.ReactNode {
             We handle guestlists and table bookings at every major late-night venue in London. If you are already out and the night is winding down at your current spot, message us and we will tell you exactly where to go next, get your name on the door, and make sure you walk straight in.
           </p>
           <p className="text-[#BBB] leading-relaxed mb-4">
-            <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> with where you are and what you&apos;re looking for. We&apos;ll point you to the right venue and handle the door.
+            <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> with where you are and what you&apos;re looking for. We&apos;ll point you to the right venue and handle the door.
           </p>
         </>
       );
@@ -2228,7 +2228,7 @@ function getPostContent(slug: string): React.ReactNode {
             Whether it is your first time going out alone or you do it regularly, we can point you to the right venue on the right night. We handle solo guestlist requests all the time and can recommend which clubs will suit the evening you want.
           </p>
           <p className="text-[#BBB] leading-relaxed mb-4">
-            <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> and tell us what you are looking for. We will sort the rest.
+            <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> and tell us what you are looking for. We will sort the rest.
           </p>
         </>
       );
@@ -2330,7 +2330,7 @@ function getPostContent(slug: string): React.ReactNode {
             We help people plan nights out every day, from guestlists and tables to recommending the right venue. If you are not sure where to go or how to get home afterwards, get in touch and we will point you in the right direction.
           </p>
           <p className="text-[#BBB] leading-relaxed mb-4">
-            <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> and we will sort everything for you, from the guestlist to the journey home.
+            <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> and we will sort everything for you, from the guestlist to the journey home.
           </p>
 
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -2388,7 +2388,7 @@ function getPostContent(slug: string): React.ReactNode {
             Give the promoter your name, how many people are coming, and roughly what time you plan to arrive. If you&apos;re not sure which venue suits your group, say that too, and they&apos;ll recommend something based on what&apos;s running tonight.
           </p>
           <p className="text-[#BBB] leading-relaxed mb-4">
-            <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> right now and we&apos;ll have you sorted within minutes.
+            <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> right now and we&apos;ll have you sorted within minutes.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">Pick the Right Venue for a Same-Night Visit</h2>
@@ -2450,7 +2450,7 @@ function getPostContent(slug: string): React.ReactNode {
             The best last-minute nights work because someone took five minutes to message a promoter and sort the basics. That single step removes almost all the uncertainty, from getting your name on the guestlist to knowing what to expect at the door.
           </p>
           <p className="text-[#BBB] leading-relaxed mb-4">
-            If you&apos;re reading this and thinking about going out tonight, you&apos;re already ahead of most people. <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> and we&apos;ll tell you exactly where to go.
+            If you&apos;re reading this and thinking about going out tonight, you&apos;re already ahead of most people. <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> and we&apos;ll tell you exactly where to go.
           </p>
 
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -2561,7 +2561,7 @@ function getPostContent(slug: string): React.ReactNode {
             For more on lining up the right venue first, see our <Link href="/blog/after-party-clubs-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">guide to after-party clubs in London</Link>, then read this and plan your stop after that. The two posts back to back are essentially the late-shift kit for a London night out.
           </p>
           <p className="text-[#BBB] leading-relaxed mb-4">
-            If you are not sure which venue suits your group tonight or what is open near it, <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">message us on WhatsApp</a> and we will sort the night end to end - guestlist on the way in, food map on the way out.
+            If you are not sure which venue suits your group tonight or what is open near it, <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">message us on WhatsApp</a> and we will sort the night end to end - guestlist on the way in, food map on the way out.
           </p>
 
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -2655,7 +2655,7 @@ function getPostContent(slug: string): React.ReactNode {
             A great London day party is really two events stitched together: the daytime session and the night that follows. Get both right and it is the best kind of summer day the city offers. Get only the first right and you peak at 7pm and miss the best part.
           </p>
           <p className="text-[#BBB] leading-relaxed mb-4">
-            Tell us your weekend and your group size and we will line up the right day event and the right club to roll into afterwards. <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> and we&apos;ll sort the day end to end, guestlist included.
+            Tell us your weekend and your group size and we will line up the right day event and the right club to roll into afterwards. <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a> and we&apos;ll sort the day end to end, guestlist included.
           </p>
 
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -2758,7 +2758,7 @@ function getPostContent(slug: string): React.ReactNode {
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">Make It a Night</h2>
           <p className="text-[#BBB] leading-relaxed mb-4">
             UKG rewards a planned night: the good events sell through, the headline sets have a start time worth honouring, and the after-party question answers itself if you have sorted the venue in advance. Tell us the weekend and the sound you are after, and we will point you to the right room.{" "}
-            <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a>{" "}
+            <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a>{" "}
             and we&apos;ll sort it end to end.
           </p>
 
@@ -2859,7 +2859,7 @@ function getPostContent(slug: string): React.ReactNode {
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">Make It a Night</h2>
           <p className="text-[#BBB] leading-relaxed mb-4">
             A latin night rewards a small amount of planning: the dedicated parties sell through, the socials reward an early start, and the open-format rooms need the usual door sense. Tell us the weekend and the lane you want, party, dance or blend, and we will point you to the right room.{" "}
-            <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a>{" "}
+            <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a>{" "}
             and we&apos;ll sort it end to end.
           </p>
 
@@ -2957,7 +2957,7 @@ function getPostContent(slug: string): React.ReactNode {
           </p>
           <p className="text-[#BBB] leading-relaxed mb-4">
             A boat party rewards a little planning: pick the right format, book the date early, and line up the after-party before you sail. Tell us the weekend and your group size and we will point you to the sailings worth your money and sort the after-party.{" "}
-            <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a>{" "}
+            <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a>{" "}
             and we&apos;ll handle it end to end.
           </p>
 
@@ -3036,7 +3036,7 @@ function getPostContent(slug: string): React.ReactNode {
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">Make It a Weekend</h2>
           <p className="text-[#BBB] leading-relaxed mb-4">
             Carnival is the one weekend where the day decides the night, and the people who plan both halves get the best of the biggest party London throws. Tell us your group, your nights and how hard you want to go, and we will line up the right rooms for the handover.{" "}
-            <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a>{" "}
+            <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a>{" "}
             and we&apos;ll sort carnival weekend end to end.
           </p>
 
@@ -3124,7 +3124,7 @@ function getPostContent(slug: string): React.ReactNode {
           <h2 className="text-2xl font-bold text-white mt-10 mb-4">Sort the Night Before the Headliner Ends</h2>
           <p className="text-[#BBB] leading-relaxed mb-4">
             The festival after-party is the easiest night of the year to get right and the easiest to fumble: the demand is citywide, the crowd moves at the same moment, and the good rooms know exactly what is coming. Tell us which festival you are at, the size of your group and the sound you want to carry on, and we will line up the landing.{" "}
-            <a href="https://wa.me/447880662708?text=Hi%2C%20I%20found%20you%20on%20londonclubstonight.com%20and%20I%27d%20like%20to%20get%20on%20the%20guestlist." target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a>{" "}
+            <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Message us on WhatsApp</a>{" "}
             before the encore, or browse{" "}
             <Link href="/clubs-tonight-london" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">what is on tonight</Link>{" "}
             and pick your own landing zone.

@@ -30,14 +30,26 @@ export interface Club {
   galleryImages: string[];
 }
 
-export const WHATSAPP_NUMBER = '447880662708';
+// WhatsApp numbers come from Vercel env vars so they can be changed without a code change.
+// Set NEXT_PUBLIC_WHATSAPP_TABLE_NUMBER and NEXT_PUBLIC_WHATSAPP_GUESTLIST_NUMBER on Vercel
+// (a redeploy is needed after changing them since pages are statically generated).
+export const WHATSAPP_TABLE_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_TABLE_NUMBER || '447880662708';
+export const WHATSAPP_GUESTLIST_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_GUESTLIST_NUMBER || '447348644054';
+
+// Simple pre-built links for inline CTAs (e.g. blog posts)
+export const WHATSAPP_TABLE_LINK = `https://wa.me/${WHATSAPP_TABLE_NUMBER}?text=${encodeURIComponent(
+  "Hi, I found you on londonclubstonight.com and I'd like to book a table."
+)}`;
+export const WHATSAPP_GUESTLIST_LINK = `https://wa.me/${WHATSAPP_GUESTLIST_NUMBER}?text=${encodeURIComponent(
+  "Hi, I found you on londonclubstonight.com and I'd like to get on the guestlist."
+)}`;
 
 export function getWhatsAppTableUrl(clubName?: string): string {
   const club = clubName ? clubName : '(or open to suggestions)';
   const message = encodeURIComponent(
     `Hi, I found you on londonclubstonight.com and I'd like to book a table. Here are my details:\n\nClub: ${club}\nDate:\nGroup size:\nAny preferences:`
   );
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+  return `https://wa.me/${WHATSAPP_TABLE_NUMBER}?text=${message}`;
 }
 
 export function getWhatsAppGuestlistUrl(clubName?: string): string {
@@ -45,7 +57,7 @@ export function getWhatsAppGuestlistUrl(clubName?: string): string {
   const message = encodeURIComponent(
     `Hi, I found you on londonclubstonight.com and I'd like to get on the guestlist. Here are my details:\n\nNight/date:\nClub preference: ${club}\nNumber of girls:\nNumber of guys:\nArrival time:`
   );
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+  return `https://wa.me/${WHATSAPP_GUESTLIST_NUMBER}?text=${message}`;
 }
 
 export const clubs: Club[] = [
@@ -775,7 +787,7 @@ export function getWhatsAppTonightUrl(clubName?: string): string {
   const message = encodeURIComponent(
     `Hi, I need a table TONIGHT. Found you on londonclubstonight.com.\n\nClub: ${club}\nGroup size:\nArrival time:`
   );
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+  return `https://wa.me/${WHATSAPP_TABLE_NUMBER}?text=${message}`;
 }
 
 export function getWhatsAppGuestlistTonightUrl(clubName?: string): string {
@@ -783,5 +795,5 @@ export function getWhatsAppGuestlistTonightUrl(clubName?: string): string {
   const message = encodeURIComponent(
     `Hi, can I get on a guestlist TONIGHT? Found you on londonclubstonight.com.\n\nClub: ${club}\nNumber of girls:\nNumber of guys:\nArrival time:`
   );
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+  return `https://wa.me/${WHATSAPP_GUESTLIST_NUMBER}?text=${message}`;
 }

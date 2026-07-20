@@ -1,3 +1,5 @@
+import { WHATSAPP_TABLE_NUMBER } from '@/lib/clubs';
+
 interface SchemaMarkupProps {
   schema: Record<string, unknown> | Record<string, unknown>[];
 }
@@ -21,7 +23,7 @@ export function getLocalBusinessSchema() {
     description: 'The definitive guide to London\'s best nightclubs. Table bookings, guestlist access, and insider knowledge for London\'s top clubs.',
     url: 'https://londonclubstonight.com',
     image: 'https://londonclubstonight.com/gallery/images/TapeFriday041024PartyNextDoor-410.jpg',
-    telephone: '+447880662708',
+    telephone: `+${WHATSAPP_TABLE_NUMBER}`,
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Mayfair',
@@ -43,7 +45,7 @@ export function getLocalBusinessSchema() {
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'reservations',
-      telephone: '+447880662708',
+      telephone: `+${WHATSAPP_TABLE_NUMBER}`,
       availableLanguage: 'English',
     },
     sameAs: [
@@ -102,7 +104,7 @@ export function getOrganizationSchema() {
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'reservations',
-      telephone: '+447880662708',
+      telephone: `+${WHATSAPP_TABLE_NUMBER}`,
       availableLanguage: 'English',
     },
     sameAs: [
