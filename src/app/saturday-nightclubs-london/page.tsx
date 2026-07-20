@@ -96,32 +96,41 @@ export default function SaturdayNightclubsLondonPage() {
           src="/gallery/images/fe4414_26d48086ecb64d8e9e654bb6de0a081f.jpg"
           alt="Saturday night clubs in London at peak atmosphere"
           fill
-          className="object-cover"
+          className="object-cover animate-slow-zoom"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/80 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-night-950 via-night-950/70 to-night-950/30" />
+        <div className="glow-orb w-[480px] h-[380px] bg-neon-500/25 -top-32 -right-24" aria-hidden />
         <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20 text-center">
-          <p className="text-white/80 text-sm uppercase tracking-widest mb-6">
-            Saturday Night London
+          <p className="animate-fade-up mb-6 flex justify-center">
+            <span className="chip chip-accent uppercase tracking-widest">
+              <span className="live-dot scale-75" aria-hidden />
+              Saturday Night London
+            </span>
           </p>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6">
-            Saturday Nightclubs in London
+          <h1 className="animate-fade-up anim-delay-1 font-display text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
+            Saturday Nightclubs in <span className="serif-accent text-gradient">London</span>
           </h1>
-          <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10">
+          <p className="animate-fade-up anim-delay-2 text-frost-100/85 text-lg md:text-xl max-w-2xl mx-auto mb-10">
             The biggest night of the week in the biggest city in Europe. Every major club is open, every venue is at peak capacity, and the energy across London is unmistakable. Here is how to navigate it.
           </p>
-          <WhatsAppCTA variant="tonight" heading="Going Out This Saturday?" />
+          <div className="animate-fade-up anim-delay-3">
+            <WhatsAppCTA variant="tonight" heading="Going Out This Saturday?" />
+          </div>
         </div>
       </section>
 
       {/* The Saturday Crowd */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            The Saturday Crowd: Who Goes Out and Why
-          </h2>
-          <div className="space-y-6 text-[#BBB] text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto mb-12">
+            <span className="eyebrow">The crowd</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4">
+              The Saturday Crowd: Who Goes Out and <span className="serif-accent text-gradient">Why</span>
+            </h2>
+          </div>
+          <div className="space-y-6 text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
             <p>
               Saturday night in London draws a crowd that has been planning for days. This is the night of birthdays, hen parties, anniversary celebrations, and groups of friends who locked in a date two weeks ago and spent the intervening time coordinating outfits, booking restaurants, and building anticipation. The result is a crowd that arrives with purpose and investment that no other night matches.
             </p>
@@ -139,12 +148,15 @@ export default function SaturdayNightclubsLondonPage() {
       </section>
 
       {/* Booking on Saturdays */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            Why Advance Booking Is Critical on Saturdays
-          </h2>
-          <div className="space-y-6 text-[#BBB] text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto mb-12">
+            <span className="eyebrow">Book ahead</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4">
+              Why Advance Booking Is Critical on <span className="serif-accent text-gradient">Saturdays</span>
+            </h2>
+          </div>
+          <div className="space-y-6 text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
             <p>
               Saturday is the one night where improvisation fails. The competition for tables, guestlist spots, and even walk-in entry is at its peak. Every group in London has the same idea, and the venues have finite capacity. The groups that secure the best tables, the best positions, and the smoothest entry are the ones who committed earliest.
             </p>
@@ -163,7 +175,7 @@ export default function SaturdayNightclubsLondonPage() {
                 href="https://londonbottleservice.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#C0C0C0] hover:text-white underline underline-offset-4"
+                className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors"
               >
                 londonbottleservice.com
               </a>
@@ -174,14 +186,17 @@ export default function SaturdayNightclubsLondonPage() {
       </section>
 
       {/* Saturday Clubs */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="section-glow py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-6">
-            All Saturday Night Clubs
-          </h2>
-          <p className="text-[#BBB] text-center mb-12 max-w-2xl mx-auto">
-            {saturdayClubs.length} venues open on Saturday night. Message us for tables, guestlist, or advice on which venue suits your group.
-          </p>
+          <div className="mb-12 max-w-2xl">
+            <span className="eyebrow">The lineup</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
+              All Saturday Night <span className="serif-accent text-gradient">Clubs</span>
+            </h2>
+            <p className="text-frost-300">
+              {saturdayClubs.length} venues open on Saturday night. Message us for tables, guestlist, or advice on which venue suits your group.
+            </p>
+          </div>
           <div className="grid gap-6 md:grid-cols-2">
             {saturdayClubs.map((club) => (
               <TonightClubCard key={club.slug} club={club} showGuestlistStatus showTableCTA />
@@ -191,12 +206,15 @@ export default function SaturdayNightclubsLondonPage() {
       </section>
 
       {/* Best Arrival Times */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            Saturday Night Arrival Strategy
-          </h2>
-          <div className="space-y-6 text-[#BBB] text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto mb-12">
+            <span className="eyebrow">Timing</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4">
+              Saturday Night Arrival <span className="serif-accent text-gradient">Strategy</span>
+            </h2>
+          </div>
+          <div className="space-y-6 text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
             <p>
               Timing your arrival on Saturday is more important than any other night. Get it wrong and you either sit in a half-empty room for an hour or face a door that has stopped admitting people. Get it right and you walk into a club at its energetic peak.
             </p>
@@ -220,12 +238,15 @@ export default function SaturdayNightclubsLondonPage() {
       </section>
 
       {/* Saturday Energy and Competition */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            The Saturday Experience: Intensity, Spectacle, and Competition
-          </h2>
-          <div className="space-y-6 text-[#BBB] text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto mb-12">
+            <span className="eyebrow">The energy</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4">
+              The Saturday Experience: Intensity, Spectacle, and <span className="serif-accent text-gradient">Competition</span>
+            </h2>
+          </div>
+          <div className="space-y-6 text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
             <p>
               A Saturday night in a London club operates at a different intensity from every other night. The rooms are at capacity. The dancefloors are dense. The queues at the bar move faster because the staff have doubled. The DJ plays with more authority because the crowd is larger, more responsive, and more committed to every track. Saturday is when London nightlife runs at full power, and everything — the highs and the logistics — reflects that scale.
             </p>
@@ -244,7 +265,7 @@ export default function SaturdayNightclubsLondonPage() {
                 href="https://mayfairtonight.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#C0C0C0] hover:text-white underline underline-offset-4"
+                className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors"
               >
                 mayfairtonight.com
               </a>.
@@ -254,23 +275,26 @@ export default function SaturdayNightclubsLondonPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="section-glow py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 text-center">
           <WhatsAppCTA variant="tonight" heading="Book Your Saturday Night" />
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            Frequently Asked Questions
-          </h2>
-          <div className="space-y-8 max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto mb-12">
+            <span className="eyebrow">Good to know</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4">
+              Frequently Asked <span className="serif-accent text-gradient">Questions</span>
+            </h2>
+          </div>
+          <div className="space-y-5 max-w-3xl mx-auto">
             {faqs.map((faq) => (
-              <div key={faq.question}>
-                <h3 className="text-lg font-semibold text-white mb-3">{faq.question}</h3>
-                <p className="text-[#BBB] text-base leading-relaxed">{faq.answer}</p>
+              <div key={faq.question} className="glass-card p-6">
+                <h3 className="font-display font-bold tracking-tight text-lg text-white mb-3">{faq.question}</h3>
+                <p className="text-frost-300 text-base leading-relaxed">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -278,45 +302,46 @@ export default function SaturdayNightclubsLondonPage() {
       </section>
 
       {/* Internal Links */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">
-            More Night-Out Guides
+          <span className="eyebrow justify-center">Keep exploring</span>
+          <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mt-4 mb-8">
+            More Night-Out <span className="serif-accent text-gradient">Guides</span>
           </h2>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/blog/best-saturday-night-clubs-in-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white transition-colors text-sm"
             >
               Best Saturday Night Clubs Blog
             </Link>
             <Link
               href="/best-clubs-this-weekend-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white transition-colors text-sm"
             >
               Best Clubs This Weekend
             </Link>
             <Link
               href="/friday-nightclubs-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white transition-colors text-sm"
             >
               Friday Nightclubs
             </Link>
             <Link
               href="/clubs-tonight-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white transition-colors text-sm"
             >
               Clubs Open Tonight
             </Link>
             <Link
               href="/guestlist-tonight-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white transition-colors text-sm"
             >
               Guestlist Tonight
             </Link>
             <Link
               href="/last-minute-table-booking-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white transition-colors text-sm"
             >
               Last Minute Tables
             </Link>
@@ -324,7 +349,7 @@ export default function SaturdayNightclubsLondonPage() {
               href="https://londonbottleservice.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white transition-colors text-sm"
             >
               London Bottle Service Guide
             </a>

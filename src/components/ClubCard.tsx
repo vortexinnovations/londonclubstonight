@@ -12,47 +12,60 @@ export default function ClubCard({ club, featured = false, showArea = true }: Cl
   return (
     <Link
       href={`/clubs/${club.slug}`}
-      className={`group relative block bg-[#141414] border border-[#222] rounded-2xl transition-all duration-500 hover:border-[#444] hover:shadow-[0_0_40px_rgba(255,255,255,0.04)] hover:-translate-y-0.5 overflow-hidden`}
+      className="glass-card glass-card-hover group relative block overflow-hidden"
     >
-      {/* Card image */}
+      {/* Card image with overlaid name */}
       <div className={`relative w-full overflow-hidden ${featured ? 'aspect-[16/9]' : 'aspect-[3/2]'}`}>
         <Image
           src={club.cardImage}
           alt={`${club.name} nightclub London`}
           fill
-          className="object-cover group-hover:scale-105 transition-transform duration-500"
+          className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#141414] via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-night-950/95 via-night-950/20 to-transparent" />
+
+        {/* Chips on image */}
+        <div className="absolute top-4 left-4 right-4 flex justify-between items-start gap-2">
+          {showArea ? (
+            <span className="chip backdrop-blur-md bg-night-950/50">{club.area}</span>
+          ) : <span />}
+          <span className="chip chip-accent backdrop-blur-md">Tables from {club.tableMinimum}</span>
+        </div>
+
+        {/* Name overlaid at image base */}
+        <h3
+          className={`absolute bottom-4 left-5 right-5 font-display font-extrabold text-white tracking-tight drop-shadow-lg ${
+            featured ? 'text-3xl md:text-4xl' : 'text-2xl'
+          }`}
+        >
+          {club.name}
+        </h3>
       </div>
 
       {/* Content */}
-      <div className={`relative z-10 ${featured ? 'p-8 md:p-10' : 'p-6 md:p-7'}`}>
-        <h3 className={`font-bold text-white text-center tracking-tight ${featured ? 'text-2xl md:text-3xl' : 'text-xl'}`}>
-          {club.name}
-        </h3>
-        <p className={`text-[#BBB] text-center leading-relaxed ${featured ? 'text-sm md:text-base mt-4' : 'text-sm mt-3'}`}>
+      <div className={featured ? 'p-6 md:p-8 pt-5 md:pt-5' : 'p-5 md:p-6 pt-4 md:pt-4'}>
+        <p className={`text-frost-300 leading-relaxed ${featured ? 'text-sm md:text-base' : 'text-sm'}`}>
           {club.tagline}
         </p>
-        <div className="flex flex-wrap justify-center gap-2 mt-5">
+
+        <div className="flex flex-wrap gap-1.5 mt-4">
           {club.musicGenres.map((genre) => (
-            <span key={genre} className="text-xs bg-white/5 text-[#aaa] px-3 py-1 rounded-full border border-white/[0.04]">
+            <span key={genre} className="chip">
               {genre}
             </span>
           ))}
         </div>
-        <div className="flex items-center justify-center gap-3 mt-6 text-xs text-[#888]">
-          {showArea && (
-            <>
-              <span>{club.area}</span>
-              <span className="text-[#333]">&middot;</span>
-            </>
+
+        <div className="flex items-center justify-between mt-5 pt-4 border-t border-white/[0.06]">
+          {showArea ? (
+            <span className="text-xs text-frost-400">London &middot; {club.area}</span>
+          ) : (
+            <span />
           )}
-          <span>Tables from {club.tableMinimum}</span>
-        </div>
-        <div className="text-center mt-5">
-          <span className="text-sm text-[#C0C0C0] group-hover:text-white transition-colors duration-300">
-            View Details →
+          <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-neon-300 group-hover:text-white transition-colors duration-300">
+            View Details
+            <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
           </span>
         </div>
       </div>

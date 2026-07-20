@@ -107,32 +107,39 @@ export default function LateNightClubsLondonTonightPage() {
           src="/gallery/images/fe4414_278db07c31a840f799c9b1550ac218fb.jpg"
           alt="Late night London clubs with dancefloor and DJ booth"
           fill
-          className="object-cover"
+          className="object-cover animate-slow-zoom"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/80 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-night-950 via-night-950/70 to-night-950/30" />
+        <div className="glow-orb w-[480px] h-[380px] bg-neon-500/25 -top-32 -right-24" aria-hidden />
         <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20 text-center">
-          <p className="text-white/80 text-sm uppercase tracking-widest mb-6">
+          <span className="chip chip-accent animate-fade-up mb-6">
+            <span className="live-dot scale-75" aria-hidden />
             Late Night London
-          </p>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6">
-            Late Night Clubs in London Tonight
+          </span>
+          <h1 className="animate-fade-up anim-delay-1 font-display font-extrabold tracking-tight text-4xl sm:text-5xl md:text-6xl text-white leading-tight mb-6">
+            Late Night Clubs in London <span className="serif-accent text-gradient">Tonight</span>
           </h1>
-          <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10">
+          <p className="animate-fade-up anim-delay-2 text-frost-100/85 text-lg md:text-xl max-w-2xl mx-auto mb-10">
             Sorted by closing time, latest first. Know exactly which clubs keep the lights on longest and what to expect when the hour gets late.
           </p>
-          <WhatsAppCTA variant="tonight" heading="Looking for a Late Night Out?" />
+          <div className="animate-fade-up anim-delay-3">
+            <WhatsAppCTA variant="tonight" heading="Looking for a Late Night Out?" />
+          </div>
         </div>
       </section>
 
       {/* Editorial */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            How Late Can You Stay Out in London?
-          </h2>
-          <div className="space-y-6 text-[#BBB] text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto">
+            <span className="eyebrow">After hours</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-10">
+              How Late Can You Stay Out in London?
+            </h2>
+          </div>
+          <div className="space-y-6 text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
             <p>
               London is not Berlin. The city does not have a culture of all-night clubbing in the way that some European capitals do, and licensing laws mean that most clubs operate within defined closing times. That said, London offers a genuine range — from venues that wind down at 2:30am to clubs that are still running at sunrise.
             </p>
@@ -141,8 +148,8 @@ export default function LateNightClubsLondonTonightPage() {
             </p>
             <p>
               Your choice of late-night venue depends on what you prioritise. If you want the most prestigious VIP experience, the Mayfair clubs deliver that until 3:30am — for table bookings and bottle service at any late-night venue, see{' '}
-              <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London Bottle Service</a>. If you want to dance until dawn, Ministry of Sound is the answer — and the only serious answer in London that operates at that scale and quality every weekend. For tonight&apos;s Mayfair schedule specifically, check{' '}
-              <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair Tonight</a>.
+              <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">London Bottle Service</a>. If you want to dance until dawn, Ministry of Sound is the answer — and the only serious answer in London that operates at that scale and quality every weekend. For tonight&apos;s Mayfair schedule specifically, check{' '}
+              <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Mayfair Tonight</a>.
             </p>
             <p>
               The hours after 2am bring a change in atmosphere at every venue. The crowd thins slightly, the energy shifts from anticipation to commitment, and the people who remain are there because they genuinely want to be. Some of the best moments in a night out happen in those later hours — the DJ takes more risks, the dancefloor becomes more communal, and the social barriers that exist earlier in the evening dissolve.
@@ -155,30 +162,33 @@ export default function LateNightClubsLondonTonightPage() {
       </section>
 
       {/* Clubs sorted by closing time */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="section-glow py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-6">
-            London Clubs by Closing Time
-          </h2>
-          <p className="text-[#BBB] text-center mb-12 max-w-2xl mx-auto">
-            Sorted from latest to earliest. Check opening nights against today before heading out.
-          </p>
+          <div className="mb-12 max-w-xl">
+            <span className="eyebrow">Latest first</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
+              London Clubs by Closing Time
+            </h2>
+            <p className="text-frost-300">
+              Sorted from latest to earliest. Check opening nights against today before heading out.
+            </p>
+          </div>
           <div className="grid gap-6 md:grid-cols-2">
             {sortedByClosing.map((club) => (
-              <div key={club.slug} className="bg-[#141414] border border-[#222] rounded-2xl p-6 md:p-7 text-center">
-                <div className="text-xs text-[#C0C0C0] uppercase tracking-wider mb-3">
+              <div key={club.slug} className="glass-card p-6 md:p-7 text-center">
+                <div className="text-xs text-neon-300 uppercase tracking-wider mb-3">
                   Closes at {club.closingTime}
                 </div>
                 <Link
                   href={`/clubs/${club.slug}`}
-                  className="text-xl font-bold text-white hover:text-[#C0C0C0] transition-colors"
+                  className="font-display text-xl font-bold tracking-tight text-white hover:text-neon-200 transition-colors"
                 >
                   {club.name}
                 </Link>
-                <p className="text-[#BBB] text-sm mt-3">{club.tonightSuitability}</p>
-                <div className="flex items-center justify-center gap-3 mt-5 text-xs text-[#888]">
+                <p className="text-frost-300 text-sm mt-3">{club.tonightSuitability}</p>
+                <div className="flex items-center justify-center gap-3 mt-5 text-xs text-frost-500">
                   <span>{club.area}</span>
-                  <span className="text-[#333]">&middot;</span>
+                  <span className="text-frost-500/50">&middot;</span>
                   <span>{club.openingNights}</span>
                 </div>
               </div>
@@ -188,12 +198,15 @@ export default function LateNightClubsLondonTonightPage() {
       </section>
 
       {/* After 2am */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            What to Expect After 2am
-          </h2>
-          <div className="space-y-6 text-[#BBB] text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto">
+            <span className="eyebrow">The late shift</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-10">
+              What to Expect After 2am
+            </h2>
+          </div>
+          <div className="space-y-6 text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
             <p>
               The character of a night changes after 2am. In the Mayfair clubs, the final hour before closing is often the most intense. DJs play their biggest tracks, the dancefloor fills completely, and there is a collective energy that comes from everyone knowing the night is approaching its end. These are frequently the moments people remember most.
             </p>
@@ -211,12 +224,15 @@ export default function LateNightClubsLondonTonightPage() {
       </section>
 
       {/* Transport */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            Getting Home: Late Night Transport
-          </h2>
-          <div className="space-y-6 text-[#BBB] text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto">
+            <span className="eyebrow">Plan ahead</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-10">
+              Getting Home: Late Night Transport
+            </h2>
+          </div>
+          <div className="space-y-6 text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
             <p>
               Transport planning is essential for late nights. London has improved significantly in recent years, but your options depend on the night of the week and where you are coming from.
             </p>
@@ -237,23 +253,27 @@ export default function LateNightClubsLondonTonightPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
-        <div className="max-w-5xl mx-auto px-6 sm:px-8 text-center">
+      <section className="relative overflow-hidden py-20 md:py-28 border-t border-white/[0.06]">
+        <div className="glow-orb w-[520px] h-[360px] bg-glow-500/15 -bottom-40 left-1/4" aria-hidden />
+        <div className="relative max-w-5xl mx-auto px-6 sm:px-8 text-center">
           <WhatsAppCTA variant="tonight" heading="Plan Your Late Night Out" />
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            Frequently Asked Questions
-          </h2>
-          <div className="space-y-8 max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto">
+            <span className="eyebrow">Good to know</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-10">
+              Frequently Asked Questions
+            </h2>
+          </div>
+          <div className="space-y-5 max-w-3xl mx-auto">
             {faqs.map((faq) => (
-              <div key={faq.question}>
-                <h3 className="text-lg font-semibold text-white mb-3">{faq.question}</h3>
-                <p className="text-[#BBB] text-base leading-relaxed">{faq.answer}</p>
+              <div key={faq.question} className="glass-card p-6">
+                <h3 className="font-display text-lg font-bold tracking-tight text-white mb-3">{faq.question}</h3>
+                <p className="text-frost-300 text-base leading-relaxed">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -261,39 +281,40 @@ export default function LateNightClubsLondonTonightPage() {
       </section>
 
       {/* Internal Links */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">
+          <span className="eyebrow justify-center">Keep exploring</span>
+          <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mt-4 mb-8">
             Related Guides
           </h2>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/clubs-tonight-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white transition-colors text-sm"
             >
               Clubs Open Tonight
             </Link>
             <Link
               href="/guides/clubs-open-late"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white transition-colors text-sm"
             >
               Clubs Open Late Guide
             </Link>
             <Link
               href="/last-minute-table-booking-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white transition-colors text-sm"
             >
               Last Minute Tables
             </Link>
             <Link
               href="/guestlist-tonight-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white transition-colors text-sm"
             >
               Guestlist Tonight
             </Link>
             <Link
               href="/best-clubs-for-last-minute-tables-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white transition-colors text-sm"
             >
               Best Last Minute Table Clubs
             </Link>

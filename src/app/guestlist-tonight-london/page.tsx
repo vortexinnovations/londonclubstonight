@@ -98,7 +98,7 @@ export default function GuestlistTonightLondonPage() {
   );
 
   return (
-    <main className="min-h-screen bg-[#0A0A0A] text-white">
+    <main className="min-h-screen text-white">
       <SchemaMarkup schema={[articleSchema, faqSchema, breadcrumbSchema, itemListSchema]} />
 
       {/* Hero */}
@@ -107,26 +107,28 @@ export default function GuestlistTonightLondonPage() {
           src="/gallery/images/fe4414_250ad5247e7546dcbe9f0c7b4e2fcbaf.jpg"
           alt="London club guestlist tonight with queue and nightlife scene"
           fill
-          className="object-cover"
+          className="object-cover animate-slow-zoom"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/80 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-night-950 via-night-950/70 to-night-950/30" />
+        <div className="glow-orb w-[480px] h-[380px] bg-neon-500/25 -top-32 -right-24" aria-hidden />
         <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20 text-center">
-          <p className="text-white/80 text-sm uppercase tracking-[0.2em] mb-6">
+          <span className="chip chip-accent animate-fade-up mb-6">
+            <span className="live-dot scale-75" aria-hidden />
             Same-Night Access — {dayName}
-          </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
-            Guestlist Tonight in London
+          </span>
+          <h1 className="animate-fade-up anim-delay-1 font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6">
+            Guestlist Tonight in <span className="serif-accent text-gradient">London</span>
           </h1>
-          <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed mb-4">
+          <p className="animate-fade-up anim-delay-2 text-lg md:text-xl text-frost-100/85 max-w-2xl mx-auto leading-relaxed mb-4">
             Which clubs are still accepting guestlist requests for tonight,
             what the ratio requirements actually are, and how to maximise
             your chances of getting through the door without a table booking.
           </p>
           <time
             dateTime={now}
-            className="inline-block text-xs text-white/60 mb-10"
+            className="animate-fade-up anim-delay-3 inline-block text-xs text-frost-300 mb-10"
           >
             Updated {new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/London' })}
           </time>
@@ -139,13 +141,14 @@ export default function GuestlistTonightLondonPage() {
       </section>
 
       {/* Guestlist Available Tonight */}
-      <section className="bg-[#0A0A0A] py-20 md:py-28 border-t border-[#222]">
+      <section className="section-glow py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Guestlist Open Tonight
+          <div className="max-w-xl mb-12 md:mb-16">
+            <span className="eyebrow">Tonight</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
+              Guestlist Open <span className="serif-accent text-gradient">Tonight</span>
             </h2>
-            <p className="text-[#BBB] text-base max-w-xl mx-auto">
+            <p className="text-frost-300 text-base">
               {tonightGuestlistClubs.length > 0
                 ? `${tonightGuestlistClubs.length} clubs are accepting guestlist requests for tonight. These venues have confirmed they are open to same-night guestlist submissions.`
                 : `No guestlist-friendly clubs are open tonight. Most London clubs run their guestlist-friendly nights on Thursdays, Fridays, and Saturdays.`}
@@ -162,12 +165,12 @@ export default function GuestlistTonightLondonPage() {
               ))}
             </div>
           ) : (
-            <div className="bg-[#141414] border border-[#222] rounded-2xl p-8 md:p-10 text-center">
-              <p className="text-[#BBB] mb-4">
+            <div className="glass-card p-8 md:p-10 text-center">
+              <p className="text-frost-300 mb-4">
                 No clubs with guestlist availability are open tonight. Check
                 back on Thursday, Friday, or Saturday for the widest selection.
               </p>
-              <Link href="/best-clubs-this-weekend-london" className="text-sm text-[#C0C0C0] hover:text-white transition-colors">
+              <Link href="/best-clubs-this-weekend-london" className="text-sm text-neon-300 hover:text-white transition-colors">
                 Plan for this weekend instead &rarr;
               </Link>
             </div>
@@ -177,13 +180,14 @@ export default function GuestlistTonightLondonPage() {
 
       {/* Table Recommended Tonight */}
       {nonGuestlistTonight.length > 0 && (
-        <section className="bg-[#0A0A0A] py-20 md:py-28 border-t border-[#222]">
+        <section className="py-20 md:py-28 border-t border-white/[0.06]">
           <div className="max-w-5xl mx-auto px-6 sm:px-8">
-            <div className="text-center mb-12 md:mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Table Recommended Tonight
+            <div className="max-w-xl mb-12 md:mb-16">
+              <span className="eyebrow">Guaranteed entry</span>
+              <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
+                Table Recommended <span className="serif-accent text-gradient">Tonight</span>
               </h2>
-              <p className="text-[#BBB] text-base max-w-xl mx-auto">
+              <p className="text-frost-300 text-base">
                 These clubs are open tonight but guestlist entry is unreliable
                 or unavailable. A table booking is the recommended route for
                 guaranteed entry.
@@ -202,7 +206,7 @@ export default function GuestlistTonightLondonPage() {
             <div className="text-center mt-10">
               <Link
                 href="/last-minute-table-booking-london"
-                className="text-sm text-[#C0C0C0] hover:text-white transition-colors"
+                className="text-sm text-neon-300 hover:text-white transition-colors"
               >
                 Full guide to last-minute tables &rarr;
               </Link>
@@ -212,12 +216,13 @@ export default function GuestlistTonightLondonPage() {
       )}
 
       {/* Editorial Content */}
-      <section className="bg-[#0A0A0A] py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-3xl mx-auto px-6 sm:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
-            How Same-Night Guestlist Actually Works
+          <span className="eyebrow">The guide</span>
+          <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mt-4 mb-8">
+            How Same-Night Guestlist Actually <span className="serif-accent text-gradient">Works</span>
           </h2>
-          <div className="space-y-5 text-[#BBB] text-sm leading-relaxed">
+          <div className="space-y-5 text-frost-300 text-sm leading-relaxed">
             <p>
               Guestlist in London is widely misunderstood. Most people assume
               that getting on a guestlist means they are guaranteed entry and
@@ -240,7 +245,7 @@ export default function GuestlistTonightLondonPage() {
               tend to be the ones where you arrive with a confirmed spot
               and still wait thirty minutes.
             </p>
-            <h3 className="text-xl font-bold text-white pt-4">
+            <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               The Ratio Rules Nobody Publishes
             </h3>
             <p>
@@ -264,7 +269,7 @@ export default function GuestlistTonightLondonPage() {
               your group is male-heavy, a table booking eliminates the
               ratio problem entirely.
             </p>
-            <h3 className="text-xl font-bold text-white pt-4">
+            <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               Guestlist vs Tables — When Each Makes Sense
             </h3>
             <p>
@@ -290,12 +295,12 @@ export default function GuestlistTonightLondonPage() {
                 href="https://londonbottleservice.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#C0C0C0] hover:text-white transition-colors"
+                className="text-neon-300 hover:text-white transition-colors"
               >
                 London Bottle Service
               </a>.
             </p>
-            <h3 className="text-xl font-bold text-white pt-4">
+            <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               How to Submit a Same-Night Guestlist Request
             </h3>
             <p>
@@ -318,7 +323,7 @@ export default function GuestlistTonightLondonPage() {
                 href="https://mayfairtonight.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#C0C0C0] hover:text-white transition-colors"
+                className="text-neon-300 hover:text-white transition-colors"
               >
                 Mayfair Tonight
               </a>{' '}
@@ -329,18 +334,19 @@ export default function GuestlistTonightLondonPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-[#0A0A0A] py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-3xl mx-auto px-6 sm:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-12 text-center">
-            Guestlist FAQ
+          <span className="eyebrow">Questions</span>
+          <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mt-4 mb-12">
+            Guestlist <span className="serif-accent text-gradient">FAQ</span>
           </h2>
           <div className="space-y-8">
             {faqs.map((faq) => (
-              <div key={faq.question} className="bg-[#141414] border border-[#222] rounded-2xl p-6 md:p-8">
-                <h3 className="text-lg font-semibold text-white mb-3 text-center">
+              <div key={faq.question} className="glass-card p-6 md:p-8">
+                <h3 className="font-display text-lg font-bold tracking-tight text-white mb-3">
                   {faq.question}
                 </h3>
-                <p className="text-[#BBB] text-sm leading-relaxed text-center">
+                <p className="text-frost-300 text-sm leading-relaxed">
                   {faq.answer}
                 </p>
               </div>
@@ -350,57 +356,58 @@ export default function GuestlistTonightLondonPage() {
       </section>
 
       {/* Internal Links */}
-      <section className="bg-[#0A0A0A] py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-10 text-center">
-            Explore More
+          <span className="eyebrow">Keep going</span>
+          <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mt-4 mb-10">
+            Explore <span className="serif-accent text-gradient">More</span>
           </h2>
-          <div className="grid md:grid-cols-2 gap-10 max-w-3xl mx-auto">
-            <div className="text-center">
-              <h3 className="font-semibold text-white mb-4">Tonight</h3>
+          <div className="grid md:grid-cols-2 gap-10 max-w-3xl">
+            <div>
+              <h3 className="font-display font-semibold tracking-tight text-white mb-4">Tonight</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/clubs-tonight-london" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <Link href="/clubs-tonight-london" className="text-frost-300 hover:text-white transition-colors text-sm">
                     All clubs open tonight &rarr;
                   </Link>
                 </li>
                 <li>
-                  <Link href="/mayfair-clubs-tonight" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <Link href="/mayfair-clubs-tonight" className="text-frost-300 hover:text-white transition-colors text-sm">
                     Mayfair clubs tonight &rarr;
                   </Link>
                 </li>
                 <li>
-                  <Link href="/last-minute-table-booking-london" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <Link href="/last-minute-table-booking-london" className="text-frost-300 hover:text-white transition-colors text-sm">
                     Last-minute table booking &rarr;
                   </Link>
                 </li>
                 <li>
-                  <Link href="/best-clubs-this-weekend-london" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <Link href="/best-clubs-this-weekend-london" className="text-frost-300 hover:text-white transition-colors text-sm">
                     Best clubs this weekend &rarr;
                   </Link>
                 </li>
               </ul>
             </div>
-            <div className="text-center">
-              <h3 className="font-semibold text-white mb-4">Guides</h3>
+            <div>
+              <h3 className="font-display font-semibold tracking-tight text-white mb-4">Guides</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/best-clubs-in-london" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <Link href="/best-clubs-in-london" className="text-frost-300 hover:text-white transition-colors text-sm">
                     Best clubs in London — ranked &rarr;
                   </Link>
                 </li>
                 <li>
-                  <Link href="/guides/how-to-get-into-london-clubs" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <Link href="/guides/how-to-get-into-london-clubs" className="text-frost-300 hover:text-white transition-colors text-sm">
                     How to get into London clubs &rarr;
                   </Link>
                 </li>
                 <li>
-                  <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-frost-300 hover:text-white transition-colors text-sm">
                     London Bottle Service — table pricing &rarr;
                   </a>
                 </li>
                 <li>
-                  <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-frost-300 hover:text-white transition-colors text-sm">
                     Mayfair Tonight &rarr;
                   </a>
                 </li>
@@ -413,7 +420,7 @@ export default function GuestlistTonightLondonPage() {
       {/* Bottom CTA */}
       <section className="max-w-5xl mx-auto px-6 sm:px-8 py-20 md:py-28">
         <div className="text-center">
-          <p className="text-[#888] text-sm mb-5">
+          <p className="text-frost-500 text-sm mb-5">
             Need a guestlist spot sorted in minutes? We are one message away.
           </p>
           <div className="flex justify-center">

@@ -91,32 +91,37 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
           src="/gallery/images/Tape-4-2.jpg"
           alt="Tape London nightclub interior with exclusive VIP atmosphere"
           fill
-          className="object-cover"
+          className="object-cover animate-slow-zoom"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/80 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-night-950 via-night-950/70 to-night-950/30" />
+        <div className="glow-orb w-[480px] h-[380px] bg-neon-500/25 -top-32 -right-24" aria-hidden />
         <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20 text-center">
-          <p className="text-white/80 text-sm uppercase tracking-widest mb-6">
+          <span className="chip chip-accent uppercase animate-fade-up mb-6">
+            <span className="live-dot scale-75" aria-hidden />
             Insider Guide
-          </p>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6">
-            Can You Get Into Tape London Tonight?
+          </span>
+          <h1 className="animate-fade-up anim-delay-1 font-display text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
+            Can You Get Into Tape London <span className="serif-accent text-gradient">Tonight?</span>
           </h1>
-          <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10">
+          <p className="animate-fade-up anim-delay-2 text-frost-100/85 text-lg md:text-xl max-w-2xl mx-auto mb-10">
             An honest assessment from promoters who work with Tape every week. No false promises, just straight answers about your chances tonight.
           </p>
-          <WhatsAppCTA clubName="Tape London" variant="tonight" heading="Need a Table at Tape Tonight?" />
+          <div className="animate-fade-up anim-delay-3">
+            <WhatsAppCTA clubName="Tape London" variant="tonight" heading="Need a Table at Tape Tonight?" />
+          </div>
         </div>
       </section>
 
       {/* The Honest Answer */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            The Honest Answer
+          <span className="eyebrow">Straight talk</span>
+          <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-12">
+            The Honest <span className="serif-accent text-gradient">Answer</span>
           </h2>
-          <div className="space-y-6 text-[#BBB] text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+          <div className="space-y-6 text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl">
             <p>
               Let us be direct: if you are searching for this question at 9pm on a Friday or Saturday night, your chances of walking into Tape London without a booking are slim. Not impossible, but slim enough that you should have a backup plan.
             </p>
@@ -134,40 +139,41 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
       </section>
 
       {/* Table Booking vs Walk-In */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            Table Booking vs Walk-In: What Actually Works
+          <span className="eyebrow">Your options</span>
+          <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-12">
+            Table Booking vs Walk-In: What Actually <span className="serif-accent text-gradient">Works</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-[#141414] border border-[#222] rounded-2xl p-8">
-              <h3 className="text-xl font-bold text-white mb-4">Book a Table</h3>
-              <ul className="space-y-3 text-[#BBB] text-sm">
+            <div className="glass-card p-8">
+              <h3 className="font-display text-xl font-bold tracking-tight text-white mb-4">Book a Table</h3>
+              <ul className="space-y-3 text-frost-300 text-sm">
                 <li className="flex items-start gap-3">
-                  <span className="inline-block w-2 h-2 rounded-full bg-green-500 mt-2 shrink-0" />
+                  <span className="inline-block w-2 h-2 rounded-full bg-wa-500 mt-2 shrink-0" />
                   Guaranteed entry regardless of the night
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="inline-block w-2 h-2 rounded-full bg-green-500 mt-2 shrink-0" />
+                  <span className="inline-block w-2 h-2 rounded-full bg-wa-500 mt-2 shrink-0" />
                   Tables start from {tape?.tableMinimum || '£1,500'} minimum spend
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="inline-block w-2 h-2 rounded-full bg-green-500 mt-2 shrink-0" />
+                  <span className="inline-block w-2 h-2 rounded-full bg-wa-500 mt-2 shrink-0" />
                   Skip the door assessment entirely
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="inline-block w-2 h-2 rounded-full bg-green-500 mt-2 shrink-0" />
+                  <span className="inline-block w-2 h-2 rounded-full bg-wa-500 mt-2 shrink-0" />
                   The only reliable method on Fridays and Saturdays
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="inline-block w-2 h-2 rounded-full bg-green-500 mt-2 shrink-0" />
+                  <span className="inline-block w-2 h-2 rounded-full bg-wa-500 mt-2 shrink-0" />
                   Same-day tables are sometimes available — especially Thursdays
                 </li>
               </ul>
             </div>
-            <div className="bg-[#141414] border border-[#222] rounded-2xl p-8">
-              <h3 className="text-xl font-bold text-white mb-4">Walk-In Attempt</h3>
-              <ul className="space-y-3 text-[#BBB] text-sm">
+            <div className="glass-card p-8">
+              <h3 className="font-display text-xl font-bold tracking-tight text-white mb-4">Walk-In Attempt</h3>
+              <ul className="space-y-3 text-frost-300 text-sm">
                 <li className="flex items-start gap-3">
                   <span className="inline-block w-2 h-2 rounded-full bg-amber-500 mt-2 shrink-0" />
                   Very low success rate — Tape is not a walk-in venue
@@ -191,7 +197,7 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
               </ul>
             </div>
           </div>
-          <div className="text-[#BBB] text-base md:text-lg leading-relaxed max-w-3xl mx-auto space-y-6">
+          <div className="text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl space-y-6">
             <p>
               The maths is straightforward. Tape has a small capacity by design — it is an intimate room, not a warehouse. On a typical Friday or Saturday, the majority of that capacity is allocated to table bookings before the doors even open. The remaining space is filled by members and their personal guests. What remains for walk-ins is minimal.
             </p>
@@ -200,19 +206,20 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
             </p>
             <p>
               Our recommendation is always the same: book a table. If the minimum spend works for your group, it removes all uncertainty. For a full breakdown of table pricing, bottle packages, and what your minimum spend includes, see{' '}
-              <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London Bottle Service</a>. If you are a group of four or more, splitting a {tape?.tableMinimum || '£1,500'} minimum works out to less than you would spend on a night out anyway — except you are guaranteed entry to one of the most exclusive rooms in London.
+              <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">London Bottle Service</a>. If you are a group of four or more, splitting a {tape?.tableMinimum || '£1,500'} minimum works out to less than you would spend on a night out anyway — except you are guaranteed entry to one of the most exclusive rooms in London.
             </p>
           </div>
         </div>
       </section>
 
       {/* What Makes Tape Special */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            What Makes Tape Worth the Effort
+          <span className="eyebrow">The payoff</span>
+          <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-12">
+            What Makes Tape Worth the <span className="serif-accent text-gradient">Effort</span>
           </h2>
-          <div className="text-[#BBB] text-base md:text-lg leading-relaxed max-w-3xl mx-auto space-y-6">
+          <div className="text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl space-y-6">
             <p>
               There are dozens of clubs in London. Most of them will let you in without the drama. So why does Tape command this level of demand? Because the experience, when you are inside, is genuinely different.
             </p>
@@ -227,19 +234,20 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
             </p>
             <p>
               Located on Hanover Square in Mayfair, the venue itself reflects its neighbourhood — understated luxury without unnecessary flashiness. The interior is dark and moody with plush seating and warm lighting that creates pockets of privacy even when the room is full. For a wider look at what is happening across the Mayfair scene tonight, check{' '}
-              <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair Tonight</a>.
+              <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Mayfair Tonight</a>.
             </p>
           </div>
         </div>
       </section>
 
       {/* Dress Code */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            The Dress Code — What You Actually Need to Know
+          <span className="eyebrow">Door standards</span>
+          <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-12">
+            The Dress Code — What You Actually Need to <span className="serif-accent text-gradient">Know</span>
           </h2>
-          <div className="text-[#BBB] text-base md:text-lg leading-relaxed max-w-3xl mx-auto space-y-6">
+          <div className="text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl space-y-6">
             <p>
               {tape?.dressCode || 'Smart and stylish. Think designer — no trainers, no sportswear, no exceptions.'}
             </p>
@@ -257,12 +265,13 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
       </section>
 
       {/* Tonight Suitability */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            Is Tonight a Good Night for Tape?
+          <span className="eyebrow">Night by night</span>
+          <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-12">
+            Is Tonight a Good Night for <span className="serif-accent text-gradient">Tape?</span>
           </h2>
-          <div className="text-[#BBB] text-base md:text-lg leading-relaxed max-w-3xl mx-auto space-y-6">
+          <div className="text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl space-y-6">
             <p>
               Tape opens Thursday, Friday, and Saturday. Each night has a distinct character, and understanding the difference helps you decide whether tonight is the right night for your group.
             </p>
@@ -280,23 +289,24 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="section-glow py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 text-center">
           <WhatsAppCTA clubName="Tape London" variant="tonight" heading="Ready to Book Tape Tonight?" />
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            Frequently Asked Questions
+          <span className="eyebrow">Good to know</span>
+          <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-12">
+            Frequently Asked <span className="serif-accent text-gradient">Questions</span>
           </h2>
-          <div className="space-y-8 max-w-3xl mx-auto">
+          <div className="space-y-5 max-w-3xl">
             {faqs.map((faq) => (
-              <div key={faq.question}>
-                <h3 className="text-lg font-semibold text-white mb-3">{faq.question}</h3>
-                <p className="text-[#BBB] text-base leading-relaxed">{faq.answer}</p>
+              <div key={faq.question} className="glass-card p-6">
+                <h3 className="font-display text-lg font-bold tracking-tight text-white mb-3">{faq.question}</h3>
+                <p className="text-frost-300 text-base leading-relaxed">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -304,39 +314,40 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
       </section>
 
       {/* Internal Links */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">
-            Explore More
+          <span className="eyebrow justify-center">Keep going</span>
+          <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mt-4 mb-8">
+            Explore <span className="serif-accent text-gradient">More</span>
           </h2>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/clubs/tape-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white text-sm"
             >
               Tape London Full Guide
             </Link>
             <Link
               href="/clubs-tonight-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white text-sm"
             >
               All Clubs Open Tonight
             </Link>
             <Link
               href="/guestlist-tonight-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white text-sm"
             >
               Guestlist Tonight
             </Link>
             <Link
               href="/last-minute-table-booking-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white text-sm"
             >
               Last Minute Tables
             </Link>
             <Link
               href="/best-clubs-for-last-minute-tables-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white text-sm"
             >
               Best Clubs for Last Minute Tables
             </Link>

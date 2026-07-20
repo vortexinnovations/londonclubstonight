@@ -80,32 +80,34 @@ export default function MusicGenrePage() {
         )}
       />
 
-      <div className="bg-[#0A0A0A] min-h-screen">
+      <div className="min-h-screen">
         <section className="relative min-h-[40vh] flex items-end overflow-hidden">
           <Image
             src="/gallery/images/fe4414_22fad6959fa54bad8139439061c16ab1.jpg"
             alt="London clubs by music genre hero background"
             fill
-            className="object-cover"
+            className="object-cover animate-slow-zoom"
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/80 to-black/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-night-950 via-night-950/70 to-night-950/30" />
+          <div className="glow-orb w-[480px] h-[380px] bg-neon-500/25 -top-32 -right-24" aria-hidden />
           <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20">
-            <div className="mb-4 flex gap-4 text-sm">
-              <Link href="/" className="text-white/70 hover:text-white transition-colors">
+            <div className="animate-fade-up mb-4 flex gap-4 text-sm">
+              <Link href="/" className="text-frost-400 hover:text-neon-200 transition-colors">
                 Home
               </Link>
-              <span className="text-white/50">/</span>
-              <Link href="/guides" className="text-white/70 hover:text-white transition-colors">
+              <span className="text-frost-500">/</span>
+              <Link href="/guides" className="text-frost-400 hover:text-neon-200 transition-colors">
                 Guides
               </Link>
             </div>
 
-            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
-              London Clubs by Music Genre
+            <span className="eyebrow animate-fade-up anim-delay-1 mb-4">Genre guide</span>
+            <h1 className="animate-fade-up anim-delay-1 font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-4">
+              London Clubs by Music <span className="serif-accent text-gradient">Genre</span>
             </h1>
-            <p className="text-center text-white/80 max-w-2xl mx-auto">
+            <p className="animate-fade-up anim-delay-2 text-frost-100/85 max-w-2xl">
               Finding the right club is as much about the music as the venue. Here is every club categorised by what they actually play, with honest assessments of which is best for each genre.
             </p>
           </div>
@@ -113,14 +115,14 @@ export default function MusicGenrePage() {
 
         <div className="max-w-5xl mx-auto px-6 sm:px-8 py-12">
           {/* Quick Jump */}
-          <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 mb-12">
-            <h2 className="text-sm font-semibold text-[#C0C0C0] mb-3 text-center">Jump to genre</h2>
-            <div className="flex flex-wrap gap-3 justify-center">
+          <div className="glass-card p-7 mb-12">
+            <h2 className="font-display tracking-tight text-sm font-extrabold text-neon-300 mb-3">Jump to genre</h2>
+            <div className="flex flex-wrap gap-3">
               {genreSections.map((section) => (
                 <a
                   key={section.id}
                   href={`#${section.id}`}
-                  className="text-[#BBB] hover:text-white text-sm px-3 py-1 border border-[#222] rounded-full hover:border-[#C0C0C0]/30 transition-colors"
+                  className="chip hover:text-white hover:border-neon-400/40 transition-colors"
                 >
                   {section.title}
                 </a>
@@ -130,28 +132,28 @@ export default function MusicGenrePage() {
 
           {genreSections.map((section) => (
             <section key={section.id} id={section.id} className="mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">{section.title}</h2>
-              <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-12">{section.description}</p>
+              <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-4">{section.title}</h2>
+              <p className="text-frost-300 max-w-2xl mb-12">{section.description}</p>
 
               <div className="grid gap-6 mb-6">
                 {section.notes.map(({ slug, note }) => {
                   const club = clubs.find(c => c.slug === slug);
                   if (!club) return null;
                   return (
-                    <div key={slug} className="bg-[#141414] border border-[#222] rounded-2xl p-7">
+                    <div key={slug} className="glass-card p-7">
                       <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 mb-3">
                         <div>
-                          <Link href={`/clubs/${club.slug}`} className="text-lg font-bold text-white hover:text-[#C0C0C0] transition-colors">
+                          <Link href={`/clubs/${club.slug}`} className="font-display tracking-tight text-lg font-bold text-white hover:text-neon-300 transition-colors">
                             {club.name}
                           </Link>
-                          <p className="text-[#888] text-sm mt-1">
+                          <p className="text-frost-500 text-sm mt-1">
                             {club.area} &middot; {club.musicGenres.join(', ')} &middot; Closes {club.closingTime}
                           </p>
                         </div>
                       </div>
-                      <p className="text-[#BBB] text-sm leading-relaxed">{note}</p>
+                      <p className="text-frost-300 text-sm leading-relaxed">{note}</p>
                       <div className="mt-3">
-                        <Link href={`/clubs/${club.slug}`} className="text-[#C0C0C0] text-sm hover:text-white transition-colors">
+                        <Link href={`/clubs/${club.slug}`} className="text-neon-300 text-sm hover:text-white transition-colors">
                           Full club profile &rarr;
                         </Link>
                       </div>
@@ -160,20 +162,21 @@ export default function MusicGenrePage() {
                 })}
               </div>
 
-              <div className="bg-[#0A0A0A] border border-[#222] rounded-2xl p-7">
+              <div className="glass-card p-7">
                 <p className="text-sm">
-                  <span className="text-[#C0C0C0] font-semibold">Best for {section.title.toLowerCase()}: </span>
-                  <span className="text-[#BBB]">{section.bestFor}</span>
+                  <span className="text-neon-300 font-semibold">Best for {section.title.toLowerCase()}: </span>
+                  <span className="text-frost-300">{section.bestFor}</span>
                 </p>
               </div>
             </section>
           ))}
 
           {/* Summary */}
-          <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">The Bottom Line</h2>
-            <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-8">A quick summary to help you choose.</p>
-            <div className="space-y-4 text-[#BBB] text-sm leading-relaxed">
+          <div className="glass-card section-glow overflow-hidden p-7 mb-12">
+            <span className="eyebrow mb-3">Quick verdict</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-4">The Bottom <span className="serif-accent text-gradient">Line</span></h2>
+            <p className="text-frost-300 max-w-2xl mb-8">A quick summary to help you choose.</p>
+            <div className="space-y-4 text-frost-300 text-sm leading-relaxed">
               <p>
                 If hip-hop is your thing, you have the most choice — nearly every Mayfair club leans that direction. The differences come down to exclusivity (Tape), atmosphere (TABU, Cirque), and sound quality (BEAT).
               </p>
@@ -190,27 +193,27 @@ export default function MusicGenrePage() {
           </div>
 
           {/* WhatsApp CTA */}
-          <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 mb-12 text-center">
-            <h2 className="text-xl font-bold text-white mb-3">
+          <div className="glass-card p-7 mb-12 text-center">
+            <h2 className="font-display text-xl font-extrabold tracking-tight text-white mb-3">
               Not sure which club suits your taste?
             </h2>
-            <p className="text-[#BBB] mb-6 max-w-lg mx-auto">
+            <p className="text-frost-300 mb-6 max-w-lg mx-auto">
               Message us on WhatsApp. Tell us what music you like and we will recommend the right venue and sort your guestlist or table booking.
             </p>
             <WhatsAppCTA />
           </div>
 
           {/* Related Links */}
-          <div className="border-t border-[#222] pt-8">
-            <h2 className="text-lg font-bold text-white mb-4">Related Guides</h2>
+          <div className="border-t border-white/[0.06] pt-8">
+            <h2 className="font-display text-lg font-extrabold tracking-tight text-white mb-4">Related Guides</h2>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/guides/hardest-clubs-to-get-into" className="text-[#C0C0C0] hover:text-white text-sm transition-colors">
+              <Link href="/guides/hardest-clubs-to-get-into" className="text-neon-300 hover:text-white text-sm transition-colors">
                 London&apos;s Most Exclusive Clubs &rarr;
               </Link>
-              <Link href="/guides/how-to-get-into-london-clubs" className="text-[#C0C0C0] hover:text-white text-sm transition-colors">
+              <Link href="/guides/how-to-get-into-london-clubs" className="text-neon-300 hover:text-white text-sm transition-colors">
                 Guestlists &amp; Table Bookings Guide &rarr;
               </Link>
-              <Link href="/guides/clubs-open-late" className="text-[#C0C0C0] hover:text-white text-sm transition-colors">
+              <Link href="/guides/clubs-open-late" className="text-neon-300 hover:text-white text-sm transition-colors">
                 Clubs Open Late in London &rarr;
               </Link>
             </div>

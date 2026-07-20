@@ -73,32 +73,34 @@ export default function ExclusiveClubsPage() {
         ]}
       />
 
-      <div className="bg-[#0A0A0A] min-h-screen">
+      <div className="min-h-screen">
         <section className="relative min-h-[40vh] flex items-end overflow-hidden">
           <Image
             src="/gallery/images/fe4414_22a9f180029946ac94c1e31e1460ac65.jpg"
             alt="London's most exclusive clubs hero background"
             fill
-            className="object-cover"
+            className="object-cover animate-slow-zoom"
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/80 to-black/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-night-950 via-night-950/70 to-night-950/30" />
+          <div className="glow-orb w-[480px] h-[380px] bg-neon-500/25 -top-32 -right-24" aria-hidden />
           <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20">
-            <div className="mb-4 flex gap-4 text-sm">
-              <Link href="/" className="text-white/80 hover:text-white transition-colors">
+            <div className="mb-4 flex gap-4 text-sm animate-fade-up">
+              <Link href="/" className="text-frost-400 hover:text-neon-200 transition-colors">
                 Home
               </Link>
-              <span className="text-white/60">/</span>
-              <Link href="/guides" className="text-white/80 hover:text-white transition-colors">
+              <span className="text-frost-500">/</span>
+              <Link href="/guides" className="text-frost-400 hover:text-neon-200 transition-colors">
                 Guides
               </Link>
             </div>
 
-            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
-              London&apos;s Most Exclusive Clubs
+            <span className="eyebrow animate-fade-up anim-delay-1 mb-4">Insider guide</span>
+            <h1 className="animate-fade-up anim-delay-2 font-display text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-4">
+              London&apos;s Most <span className="serif-accent text-gradient">Exclusive</span> Clubs
             </h1>
-            <p className="text-center text-white/80 max-w-2xl mx-auto">
+            <p className="animate-fade-up anim-delay-3 text-frost-100/85 max-w-2xl leading-relaxed">
               A guide to London&apos;s most premium nightlife experiences. What makes each venue special, what to expect, and how to arrange your night.
             </p>
           </div>
@@ -110,26 +112,26 @@ export default function ExclusiveClubsPage() {
               const club = clubs.find(c => c.slug === slug);
               if (!club) return null;
               return (
-                <div key={club.slug} className="bg-[#141414] border border-[#222] rounded-2xl p-7">
+                <div key={club.slug} className="glass-card p-7">
                   <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                     <div>
-                      <Link href={`/clubs/${club.slug}`} className="text-xl font-bold text-white hover:text-[#C0C0C0] transition-colors">
+                      <Link href={`/clubs/${club.slug}`} className="font-display text-xl font-bold tracking-tight text-white hover:text-neon-200 transition-colors">
                         {club.name}
                       </Link>
-                      <p className="text-[#888] text-sm mt-1">{club.area} &middot; Closes {club.closingTime}</p>
+                      <p className="text-frost-500 text-sm mt-1">{club.area} &middot; Closes {club.closingTime}</p>
                     </div>
                   </div>
 
                   <div className="mb-4">
-                    <p className="text-[#BBB] text-sm leading-relaxed">{club.description}</p>
+                    <p className="text-frost-300 text-sm leading-relaxed">{club.description}</p>
                   </div>
 
                   <div className="mb-4">
-                    <h3 className="text-sm font-semibold text-[#C0C0C0] mb-2">Insider tip</h3>
-                    <p className="text-[#BBB] text-sm leading-relaxed">{club.insiderTip}</p>
+                    <h3 className="font-display tracking-tight text-sm font-semibold text-neon-300 mb-2">Insider tip</h3>
+                    <p className="text-frost-300 text-sm leading-relaxed">{club.insiderTip}</p>
                   </div>
 
-                  <div className="flex flex-wrap gap-4 text-xs text-[#888]">
+                  <div className="flex flex-wrap gap-4 text-xs text-frost-500">
                     <span>Tables from {club.tableMinimum}</span>
                     <span>&middot;</span>
                     <span>{club.openingNights}</span>
@@ -138,7 +140,7 @@ export default function ExclusiveClubsPage() {
                   </div>
 
                   <div className="mt-4">
-                    <Link href={`/clubs/${club.slug}`} className="text-[#C0C0C0] text-sm hover:text-white transition-colors">
+                    <Link href={`/clubs/${club.slug}`} className="text-neon-300 text-sm hover:text-white transition-colors">
                       Full club profile &rarr;
                     </Link>
                   </div>
@@ -148,10 +150,11 @@ export default function ExclusiveClubsPage() {
           </div>
 
           {/* The Experience Section */}
-          <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 mt-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">Making the Most of Your Night</h2>
-            <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-8">Practical advice from promoters who know the scene.</p>
-            <div className="space-y-4 text-[#BBB] leading-relaxed">
+          <div className="glass-card section-glow overflow-hidden p-7 md:p-10 mt-12">
+            <span className="eyebrow mb-4">The playbook</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-4">Making the Most of Your <span className="serif-accent text-gradient">Night</span></h2>
+            <p className="text-frost-300 max-w-2xl mb-8">Practical advice from promoters who know the scene.</p>
+            <div className="space-y-4 text-frost-300 leading-relaxed">
               <p>
                 The best way to experience any of these clubs is with a table booking. Every venue will welcome you with a table reservation, giving you a reserved space, dedicated service, and bottles for your group. For most clubs, tables start from £1,000.
               </p>
@@ -168,41 +171,45 @@ export default function ExclusiveClubsPage() {
           </div>
 
           {/* WhatsApp CTA */}
-          <div className="bg-[#141414] border border-[#222] rounded-2xl p-7 mt-12 text-center">
-            <h2 className="text-xl font-bold text-white mb-3">
-              Ready to experience London&apos;s best clubs?
-            </h2>
-            <p className="text-[#BBB] mb-6 max-w-lg mx-auto">
-              Message us on WhatsApp. We handle table bookings and guestlists at every club on this page. Tell us where you want to go and we will make it happen.
-            </p>
-            <WhatsAppCTA />
+          <div className="glass-card relative overflow-hidden p-7 md:p-10 mt-12 text-center">
+            <div className="glow-orb w-[420px] h-[320px] bg-glow-500/20 -top-24 -right-16" aria-hidden />
+            <div className="relative">
+              <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mb-3">
+                Ready to experience London&apos;s best clubs?
+              </h2>
+              <p className="text-frost-300 mb-6 max-w-lg mx-auto">
+                Message us on WhatsApp. We handle table bookings and guestlists at every club on this page. Tell us where you want to go and we will make it happen.
+              </p>
+              <WhatsAppCTA />
+            </div>
           </div>
 
           {/* FAQ Section */}
           <div className="mt-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">Frequently Asked Questions</h2>
-            <p className="text-center text-[#BBB] max-w-2xl mx-auto mb-12">Common questions about London&apos;s exclusive club scene.</p>
+            <span className="eyebrow mb-4">Good to know</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-4">Frequently Asked <span className="serif-accent text-gradient">Questions</span></h2>
+            <p className="text-frost-300 max-w-2xl mb-12">Common questions about London&apos;s exclusive club scene.</p>
             <div className="grid gap-6">
               {faqs.map((faq, index) => (
-                <div key={index} className="bg-[#141414] border border-[#222] rounded-2xl p-7">
-                  <h3 className="text-white font-semibold mb-3">{faq.question}</h3>
-                  <p className="text-[#BBB] text-sm leading-relaxed">{faq.answer}</p>
+                <div key={index} className="glass-card p-6">
+                  <h3 className="font-display font-bold tracking-tight text-white mb-3">{faq.question}</h3>
+                  <p className="text-frost-300 text-sm leading-relaxed">{faq.answer}</p>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Related Links */}
-          <div className="border-t border-[#222] pt-8 mt-12">
-            <h2 className="text-lg font-bold text-white mb-4">Related Guides</h2>
+          <div className="border-t border-white/[0.06] pt-8 mt-12">
+            <h2 className="font-display text-lg font-extrabold tracking-tight text-white mb-4">Related Guides</h2>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/guides/how-to-get-into-london-clubs" className="text-[#C0C0C0] hover:text-white text-sm transition-colors">
+              <Link href="/guides/how-to-get-into-london-clubs" className="text-neon-300 hover:text-white text-sm transition-colors">
                 Guestlists &amp; Table Bookings Guide &rarr;
               </Link>
-              <Link href="/guides/clubs-open-late" className="text-[#C0C0C0] hover:text-white text-sm transition-colors">
+              <Link href="/guides/clubs-open-late" className="text-neon-300 hover:text-white text-sm transition-colors">
                 Clubs Open Late in London &rarr;
               </Link>
-              <Link href="/guides/london-clubs-by-music-genre" className="text-[#C0C0C0] hover:text-white text-sm transition-colors">
+              <Link href="/guides/london-clubs-by-music-genre" className="text-neon-300 hover:text-white text-sm transition-colors">
                 London Clubs by Music Genre &rarr;
               </Link>
             </div>

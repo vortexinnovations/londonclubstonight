@@ -88,7 +88,7 @@ export default function MayfairClubsTonightPage() {
   ]);
 
   return (
-    <main className="min-h-screen bg-[#0A0A0A] text-white">
+    <main className="min-h-screen text-white">
       <SchemaMarkup schema={[articleSchema, faqSchema, breadcrumbSchema]} />
 
       {/* Hero */}
@@ -97,26 +97,28 @@ export default function MayfairClubsTonightPage() {
           src="/gallery/images/fe4414_24f4d361183d41c98885246c15872b8e.jpg"
           alt="Mayfair clubs tonight with exclusive London nightlife"
           fill
-          className="object-cover"
+          className="object-cover animate-slow-zoom"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/80 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-night-950 via-night-950/70 to-night-950/30" />
+        <div className="glow-orb w-[480px] h-[380px] bg-neon-500/25 -top-32 -right-24" aria-hidden />
         <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20 text-center">
-          <p className="text-white/80 text-sm uppercase tracking-[0.2em] mb-6">
+          <span className="chip chip-accent uppercase animate-fade-up mb-6">
+            <span className="live-dot scale-75" aria-hidden />
             {dayName} Night in Mayfair
-          </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
-            Mayfair Clubs Tonight
+          </span>
+          <h1 className="animate-fade-up anim-delay-1 font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6">
+            Mayfair Clubs <span className="serif-accent text-gradient">Tonight</span>
           </h1>
-          <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed mb-4">
+          <p className="animate-fade-up anim-delay-2 text-lg md:text-xl text-frost-100/85 max-w-2xl mx-auto leading-relaxed mb-4">
             The definitive guide to what is open in Mayfair right now.
             Which clubs are running, which guestlists are still accepting
             names, and where you can still get a table tonight.
           </p>
           <time
             dateTime={now}
-            className="inline-block text-xs text-white/60 mb-10"
+            className="animate-fade-up anim-delay-3 inline-block text-xs text-frost-300 mb-10"
           >
             Updated {new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/London' })}
           </time>
@@ -129,13 +131,14 @@ export default function MayfairClubsTonightPage() {
       </section>
 
       {/* Mayfair Clubs Open Tonight */}
-      <section className="bg-[#0A0A0A] py-20 md:py-28 border-t border-[#222]">
+      <section className="section-glow py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Open in Mayfair Tonight
+          <div className="mb-12 md:mb-16 max-w-xl">
+            <span className="eyebrow">Live now</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
+              Open in Mayfair <span className="serif-accent text-gradient">Tonight</span>
             </h2>
-            <p className="text-[#BBB] text-base max-w-xl mx-auto">
+            <p className="text-frost-300 text-base">
               {mayfairClubs.length > 0
                 ? `${mayfairClubs.length} Mayfair ${mayfairClubs.length === 1 ? 'club is' : 'clubs are'} open tonight. Every venue listed below is confirmed running this ${dayName}.`
                 : `No Mayfair clubs are open tonight. Most Mayfair venues operate Thursday through Saturday.`}
@@ -153,14 +156,14 @@ export default function MayfairClubsTonightPage() {
               ))}
             </div>
           ) : (
-            <div className="bg-[#141414] border border-[#222] rounded-2xl p-8 md:p-10 text-center">
-              <p className="text-[#BBB] mb-4">
+            <div className="glass-card p-8 md:p-10 text-center">
+              <p className="text-frost-300 mb-4">
                 Mayfair&apos;s club scene is dormant tonight. The area runs
                 its biggest nights on Thursdays, Fridays, and Saturdays.
               </p>
-              <p className="text-[#888] text-sm">
+              <p className="text-frost-500 text-sm">
                 Looking for what&apos;s open elsewhere?{' '}
-                <Link href="/clubs-tonight-london" className="text-[#C0C0C0] hover:text-white transition-colors">
+                <Link href="/clubs-tonight-london" className="text-neon-300 hover:text-white transition-colors">
                   See all London clubs open tonight
                 </Link>
               </p>
@@ -171,13 +174,14 @@ export default function MayfairClubsTonightPage() {
 
       {/* Guestlist Tonight in Mayfair */}
       {guestlistClubs.length > 0 && (
-        <section className="bg-[#0A0A0A] py-20 md:py-28 border-t border-[#222]">
+        <section className="py-20 md:py-28 border-t border-white/[0.06]">
           <div className="max-w-5xl mx-auto px-6 sm:px-8">
-            <div className="text-center mb-12 md:mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Guestlist Open in Mayfair Tonight
+            <div className="mb-12 md:mb-16 max-w-xl">
+              <span className="eyebrow">Free entry</span>
+              <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
+                Guestlist Open in Mayfair <span className="serif-accent text-gradient">Tonight</span>
               </h2>
-              <p className="text-[#BBB] text-base max-w-xl mx-auto">
+              <p className="text-frost-300 text-base">
                 These Mayfair venues are currently accepting guestlist requests
                 for tonight. The earlier you apply, the better your chances.
                 Mixed groups with a balanced ratio are strongly preferred.
@@ -197,12 +201,13 @@ export default function MayfairClubsTonightPage() {
       )}
 
       {/* Mayfair Tonight Editorial */}
-      <section className="bg-[#0A0A0A] py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-3xl mx-auto px-6 sm:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
-            The Insider&apos;s Guide to Mayfair Tonight
+          <span className="eyebrow">The guide</span>
+          <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mt-4 mb-8">
+            The Insider&apos;s Guide to <span className="serif-accent text-gradient">Mayfair Tonight</span>
           </h2>
-          <div className="space-y-5 text-[#BBB] text-sm leading-relaxed">
+          <div className="space-y-5 text-frost-300 text-sm leading-relaxed">
             <p>
               Mayfair is the epicentre of London&apos;s high-end nightlife, and
               it has been for decades. The concentration of premium clubs within
@@ -232,7 +237,7 @@ export default function MayfairClubsTonightPage() {
               reservation. This is not speculation — it is the consistent
               reality we observe every single night.
             </p>
-            <h3 className="text-xl font-bold text-white pt-4">
+            <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               Which Mayfair Club Is Right for You Tonight
             </h3>
             <p>
@@ -253,7 +258,7 @@ export default function MayfairClubsTonightPage() {
             <p>
               <strong className="text-white">Funky Buddha</strong> remains one of the most prestigious names in Mayfair nightlife. The heritage of the venue — decades of celebrity patronage and cultural significance — gives it a weight that newer clubs cannot match. Fridays and Saturdays here have a particular energy that longtime London clubbers recognise immediately.
             </p>
-            <h3 className="text-xl font-bold text-white pt-4">
+            <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               How to Actually Get Into Mayfair Clubs Tonight
             </h3>
             <p>
@@ -271,7 +276,7 @@ export default function MayfairClubsTonightPage() {
             <p>
               <strong className="text-white">Group composition matters.</strong> Mixed groups of men and women fare significantly better than all-male groups at every Mayfair venue. If your group is all male, a table booking moves from recommended to essential.
             </p>
-            <h3 className="text-xl font-bold text-white pt-4">
+            <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               What to Expect From a Night Out in Mayfair
             </h3>
             <p>
@@ -290,7 +295,7 @@ export default function MayfairClubsTonightPage() {
                 href="https://mayfairtonight.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#C0C0C0] hover:text-white transition-colors"
+                className="text-neon-300 hover:text-white transition-colors"
               >
                 Mayfair Tonight
               </a>
@@ -301,12 +306,12 @@ export default function MayfairClubsTonightPage() {
                 href="https://londonbottleservice.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#C0C0C0] hover:text-white transition-colors"
+                className="text-neon-300 hover:text-white transition-colors"
               >
                 London Bottle Service
               </a>.
             </p>
-            <h3 className="text-xl font-bold text-white pt-4">
+            <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               Getting There and Getting Home
             </h3>
             <p>
@@ -318,7 +323,7 @@ export default function MayfairClubsTonightPage() {
               you are booking a table, many venues can arrange car service as
               part of the package — ask us when you book and we will sort it.
             </p>
-            <h3 className="text-xl font-bold text-white pt-4">
+            <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               The Table Question
             </h3>
             <p>
@@ -344,18 +349,19 @@ export default function MayfairClubsTonightPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-[#0A0A0A] py-20 md:py-28 border-t border-[#222]">
+      <section className="section-glow py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-3xl mx-auto px-6 sm:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-12 text-center">
-            Mayfair Tonight — FAQ
+          <span className="eyebrow">Questions</span>
+          <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mt-4 mb-12">
+            Mayfair Tonight — <span className="serif-accent text-gradient">FAQ</span>
           </h2>
           <div className="space-y-8">
             {faqs.map((faq) => (
-              <div key={faq.question} className="bg-[#141414] border border-[#222] rounded-2xl p-6 md:p-8">
-                <h3 className="text-lg font-semibold text-white mb-3 text-center">
+              <div key={faq.question} className="glass-card p-6 md:p-8">
+                <h3 className="font-display text-lg font-bold tracking-tight text-white mb-3">
                   {faq.question}
                 </h3>
-                <p className="text-[#BBB] text-sm leading-relaxed text-center">
+                <p className="text-frost-300 text-sm leading-relaxed">
                   {faq.answer}
                 </p>
               </div>
@@ -365,57 +371,58 @@ export default function MayfairClubsTonightPage() {
       </section>
 
       {/* Internal Links */}
-      <section className="bg-[#0A0A0A] py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-10 text-center">
-            Explore More
+          <span className="eyebrow">Keep exploring</span>
+          <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mt-4 mb-10">
+            Explore <span className="serif-accent text-gradient">More</span>
           </h2>
-          <div className="grid md:grid-cols-2 gap-10 max-w-3xl mx-auto">
-            <div className="text-center">
-              <h3 className="font-semibold text-white mb-4">Tonight</h3>
+          <div className="grid md:grid-cols-2 gap-10 max-w-3xl">
+            <div>
+              <h3 className="font-display font-semibold tracking-tight text-white mb-4">Tonight</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/clubs-tonight-london" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <Link href="/clubs-tonight-london" className="text-frost-300 hover:text-white transition-colors text-sm">
                     All clubs open tonight in London &rarr;
                   </Link>
                 </li>
                 <li>
-                  <Link href="/guestlist-tonight-london" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <Link href="/guestlist-tonight-london" className="text-frost-300 hover:text-white transition-colors text-sm">
                     Get on a guestlist tonight &rarr;
                   </Link>
                 </li>
                 <li>
-                  <Link href="/last-minute-table-booking-london" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <Link href="/last-minute-table-booking-london" className="text-frost-300 hover:text-white transition-colors text-sm">
                     Last-minute table booking &rarr;
                   </Link>
                 </li>
                 <li>
-                  <Link href="/best-clubs-this-weekend-london" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <Link href="/best-clubs-this-weekend-london" className="text-frost-300 hover:text-white transition-colors text-sm">
                     Best clubs this weekend &rarr;
                   </Link>
                 </li>
               </ul>
             </div>
-            <div className="text-center">
-              <h3 className="font-semibold text-white mb-4">Mayfair Guides</h3>
+            <div>
+              <h3 className="font-display font-semibold tracking-tight text-white mb-4">Mayfair Guides</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/areas/mayfair" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <Link href="/areas/mayfair" className="text-frost-300 hover:text-white transition-colors text-sm">
                     Complete Mayfair club guide &rarr;
                   </Link>
                 </li>
                 <li>
-                  <Link href="/best-clubs-in-london" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <Link href="/best-clubs-in-london" className="text-frost-300 hover:text-white transition-colors text-sm">
                     Best clubs in London — ranked &rarr;
                   </Link>
                 </li>
                 <li>
-                  <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-frost-300 hover:text-white transition-colors text-sm">
                     Mayfair Tonight — full Mayfair guide &rarr;
                   </a>
                 </li>
                 <li>
-                  <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-frost-300 hover:text-white transition-colors text-sm">
                     London Bottle Service — table pricing &rarr;
                   </a>
                 </li>
@@ -428,7 +435,7 @@ export default function MayfairClubsTonightPage() {
       {/* Bottom CTA */}
       <section className="max-w-5xl mx-auto px-6 sm:px-8 py-20 md:py-28">
         <div className="text-center">
-          <p className="text-[#888] text-sm mb-5">
+          <p className="text-frost-500 text-sm mb-5">
             Not sure which Mayfair club suits your group tonight?
           </p>
           <div className="flex justify-center">

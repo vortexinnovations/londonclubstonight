@@ -10,17 +10,17 @@ export default function Icon() {
         style={{
           width: 32,
           height: 32,
-          background: '#0A0A0A',
-          borderRadius: 6,
+          background: 'linear-gradient(135deg, #1e1a2c 0%, #07060b 100%)',
+          borderRadius: 8,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          border: '1.5px solid #C0C0C0',
+          border: '1px solid #8b5cf6',
           fontFamily: 'Arial, sans-serif',
           fontWeight: 'bold',
-          fontSize: 14,
-          color: '#FFFFFF',
+          fontSize: 13,
           letterSpacing: -0.5,
+          color: '#e879f9',
         }}
       >
         LC

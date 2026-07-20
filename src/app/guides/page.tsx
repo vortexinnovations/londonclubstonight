@@ -48,28 +48,30 @@ export default function GuidesPage() {
         )}
       />
 
-      <div className="bg-[#0A0A0A] min-h-screen">
+      <div className="min-h-screen">
         <section className="relative min-h-[40vh] flex items-end overflow-hidden">
           <Image
             src="/gallery/images/fe4414_22997fd2f5824b99815073940cd43fd2.jpg"
             alt="London nightclub guides hero background"
             fill
-            className="object-cover"
+            className="object-cover animate-slow-zoom"
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/80 to-black/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-night-950 via-night-950/70 to-night-950/30" />
+          <div className="glow-orb w-[480px] h-[380px] bg-neon-500/25 -top-32 -right-24" aria-hidden />
           <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20">
-            <div className="mb-4">
-              <Link href="/" className="text-white/80 hover:text-white text-sm transition-colors">
+            <div className="mb-6 animate-fade-up">
+              <Link href="/" className="text-frost-300 hover:text-neon-200 text-sm transition-colors">
                 &larr; Back to all clubs
               </Link>
             </div>
 
-            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
-              London Nightclub Guides
+            <span className="eyebrow animate-fade-up anim-delay-1 mb-4">Insider guides</span>
+            <h1 className="animate-fade-up anim-delay-1 font-display font-extrabold tracking-tight text-4xl md:text-5xl text-white mb-4">
+              London Nightclub <span className="serif-accent text-gradient">Guides</span>
             </h1>
-            <p className="text-center text-white/80 max-w-2xl mx-auto">
+            <p className="animate-fade-up anim-delay-2 text-frost-300 max-w-2xl">
               Everything you need to know about London nightlife. Written by promoters who work the scene, book the tables, and know how it all works.
             </p>
           </div>
@@ -81,29 +83,33 @@ export default function GuidesPage() {
               <Link
                 key={guide.href}
                 href={guide.href}
-                className="block bg-[#141414] border border-[#222] rounded-2xl p-7 hover:border-[#C0C0C0]/30 transition-colors group text-center"
+                className="glass-card glass-card-hover block p-7 group"
               >
-                <h2 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-[#C0C0C0] transition-colors">
+                <h2 className="font-display tracking-tight text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-neon-300 transition-colors">
                   {guide.title}
                 </h2>
-                <p className="text-[#BBB] leading-relaxed max-w-xl mx-auto">
+                <p className="text-frost-300 leading-relaxed max-w-xl">
                   {guide.description}
                 </p>
-                <span className="inline-block mt-4 text-[#C0C0C0] text-sm font-medium">
+                <span className="inline-block mt-4 text-neon-300 text-sm font-medium transition-transform duration-300 group-hover:translate-x-1.5">
                   Read guide &rarr;
                 </span>
               </Link>
             ))}
           </div>
 
-          <div className="mt-16 bg-[#141414] border border-[#222] rounded-2xl p-7 text-center">
-            <h2 className="text-xl font-bold text-white mb-3">
-              Need help planning your night?
-            </h2>
-            <p className="text-[#BBB] mb-6 max-w-lg mx-auto">
-              Message us on WhatsApp. We handle guestlists and table bookings at every club listed on this site. Tell us what you want and we will sort it.
-            </p>
-            <WhatsAppCTA />
+          <div className="glass-card relative overflow-hidden mt-16 p-7 md:p-10 text-center">
+            <div className="glow-orb w-[380px] h-[280px] bg-glow-500/15 -top-24 left-1/2 -translate-x-1/2" aria-hidden />
+            <div className="relative">
+              <span className="eyebrow justify-center">Free concierge</span>
+              <h2 className="font-display font-extrabold tracking-tight text-xl sm:text-2xl text-white mt-3 mb-3">
+                Need help planning your night?
+              </h2>
+              <p className="text-frost-300 mb-6 max-w-lg mx-auto">
+                Message us on WhatsApp. We handle guestlists and table bookings at every club listed on this site. Tell us what you want and we will sort it.
+              </p>
+              <WhatsAppCTA />
+            </div>
           </div>
         </div>
       </div>

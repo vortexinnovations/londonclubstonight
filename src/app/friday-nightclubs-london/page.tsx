@@ -96,32 +96,37 @@ export default function FridayNightclubsLondonPage() {
           src="/gallery/images/fe4414_25ff700f6f0a4725aeb1d7343720970d.jpg"
           alt="Friday night clubs in London with energetic crowd"
           fill
-          className="object-cover"
+          className="object-cover animate-slow-zoom"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/80 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-night-950 via-night-950/70 to-night-950/30" />
+        <div className="glow-orb w-[480px] h-[380px] bg-neon-500/25 -top-32 -right-24" aria-hidden />
         <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20 text-center">
-          <p className="text-white/80 text-sm uppercase tracking-widest mb-6">
+          <span className="chip chip-accent animate-fade-up mb-6">
+            <span className="live-dot scale-75" aria-hidden />
             Friday Night London
-          </p>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6">
-            Friday Nightclubs in London
+          </span>
+          <h1 className="animate-fade-up anim-delay-1 font-display text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
+            Friday Nightclubs in <span className="serif-accent text-gradient">London</span>
           </h1>
-          <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10">
+          <p className="animate-fade-up anim-delay-2 text-frost-100/85 text-lg md:text-xl max-w-2xl mx-auto mb-10">
             The working week is over. London wakes up. Here is every club worth your Friday night, with honest advice on which venues deliver their best night at the end of the week.
           </p>
-          <WhatsAppCTA variant="tonight" heading="Going Out This Friday?" />
+          <div className="animate-fade-up anim-delay-3">
+            <WhatsAppCTA variant="tonight" heading="Going Out This Friday?" />
+          </div>
         </div>
       </section>
 
       {/* The Friday Feeling */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            The Friday Feeling: Office to Dancefloor
+          <span className="eyebrow">End of week</span>
+          <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-12">
+            The Friday Feeling: Office to <span className="serif-accent text-gradient">Dancefloor</span>
           </h2>
-          <div className="space-y-6 text-[#BBB] text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+          <div className="space-y-6 text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl">
             <p>
               Friday night in London starts before anyone sets foot in a club. It starts at 5pm in the pubs around Bank and Canary Wharf, at 6pm in the wine bars along Heddon Street, at 8pm over dinner in Soho when someone at the table says the words that change the evening: &quot;Shall we go somewhere after this?&quot;
             </p>
@@ -139,12 +144,13 @@ export default function FridayNightclubsLondonPage() {
       </section>
 
       {/* Friday DJ Programming and Events */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            Friday Night Programming: Where the Music Stands Out
+          <span className="eyebrow">The sound</span>
+          <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-12">
+            Friday Night Programming: Where the <span className="serif-accent text-gradient">Music</span> Stands Out
           </h2>
-          <div className="space-y-6 text-[#BBB] text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+          <div className="space-y-6 text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl">
             <p>
               Clubs approach Friday differently from Saturday in their programming decisions. Saturday is the guaranteed seller, so venues play it safe with proven formats and crowd-pleasing resident DJs. Friday is where creative directors take risks. Guest DJs who bring an unfamiliar sound, genre-crossing nights that blend hip-hop with afrobeats or house with garage, themed events that would be too niche for Saturday — all of these land on Fridays.
             </p>
@@ -165,12 +171,13 @@ export default function FridayNightclubsLondonPage() {
       </section>
 
       {/* Friday Clubs */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="section-glow py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-6">
-            All Friday Night Clubs
+          <span className="eyebrow">The venues</span>
+          <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-6">
+            All Friday Night <span className="serif-accent text-gradient">Clubs</span>
           </h2>
-          <p className="text-[#BBB] text-center mb-12 max-w-2xl mx-auto">
+          <p className="text-frost-300 mb-12 max-w-2xl">
             {fridayClubs.length} venues open their doors on Friday nights. Message us for guestlist, tables, or advice.
           </p>
           <div className="grid gap-6 md:grid-cols-2">
@@ -182,22 +189,23 @@ export default function FridayNightclubsLondonPage() {
       </section>
 
       {/* Friday Booking Tips */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
+          <span className="eyebrow">Insider tips</span>
+          <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-12">
             Friday Night Booking Tips
           </h2>
-          <div className="space-y-6 text-[#BBB] text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+          <div className="space-y-6 text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl">
             <p>
               <strong className="text-white">Same-day tables are realistic.</strong> Unlike Saturdays, where most venues fill their table sheet by Thursday, Friday tables remain available longer. Messaging us by early afternoon gives you an excellent chance of securing a table at your first-choice venue. Even evening enquiries have a reasonable success rate. For a full guide to Friday table pricing and bottle packages, see{' '}
-              <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London Bottle Service</a>.
+              <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">London Bottle Service</a>.
             </p>
             <p>
               <strong className="text-white">Guestlist works well on Fridays.</strong> Venues like TABU, Cuckoo Club, Dear Darling, and Cirque Le Soir are all accessible via guestlist on Fridays. Mixed groups fare best, but the overall standard is slightly more inclusive than Saturday. Get on our guestlist by messaging WhatsApp with your group details.
             </p>
             <p>
               <strong className="text-white">After-work transitions are common.</strong> Many successful Friday nights begin as after-work drinks that evolve organically. If your group is coming from drinks in Soho or dinner in Mayfair, let us know your timing and we can advise on which clubs will be at the right level of energy when you arrive. For Friday events across the Mayfair clubs specifically, check{' '}
-              <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair Tonight</a>.
+              <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Mayfair Tonight</a>.
             </p>
             <p>
               <strong className="text-white">Dress code still applies.</strong> The Friday dress code is the same as Saturday at every venue. Do not assume that a more relaxed atmosphere means a relaxed door. If you are coming straight from work, a smart office look is fine for most venues — you may need to lose the backpack and adjust your outfit, but the smart-work-to-club transition works on Fridays.
@@ -210,23 +218,24 @@ export default function FridayNightclubsLondonPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="section-glow py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 text-center">
           <WhatsAppCTA variant="tonight" heading="Book Your Friday Night" />
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
+          <span className="eyebrow">Questions</span>
+          <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-12">
             Frequently Asked Questions
           </h2>
-          <div className="space-y-8 max-w-3xl mx-auto">
+          <div className="space-y-6 max-w-3xl">
             {faqs.map((faq) => (
-              <div key={faq.question}>
-                <h3 className="text-lg font-semibold text-white mb-3">{faq.question}</h3>
-                <p className="text-[#BBB] text-base leading-relaxed">{faq.answer}</p>
+              <div key={faq.question} className="glass-card p-6">
+                <h3 className="font-display text-lg font-bold tracking-tight text-white mb-3">{faq.question}</h3>
+                <p className="text-frost-300 text-base leading-relaxed">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -234,45 +243,46 @@ export default function FridayNightclubsLondonPage() {
       </section>
 
       {/* Internal Links */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
-        <div className="max-w-5xl mx-auto px-6 sm:px-8 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
+        <div className="max-w-5xl mx-auto px-6 sm:px-8">
+          <span className="eyebrow">Keep exploring</span>
+          <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mt-4 mb-8">
             More Night-Out Guides
           </h2>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap gap-4">
             <Link
               href="/blog/best-friday-night-clubs-in-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white transition-colors text-sm"
             >
               Best Friday Night Clubs Blog
             </Link>
             <Link
               href="/best-clubs-this-weekend-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white transition-colors text-sm"
             >
               Best Clubs This Weekend
             </Link>
             <Link
               href="/saturday-nightclubs-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white transition-colors text-sm"
             >
               Saturday Nightclubs
             </Link>
             <Link
               href="/clubs-tonight-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white transition-colors text-sm"
             >
               Clubs Open Tonight
             </Link>
             <Link
               href="/guestlist-tonight-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white transition-colors text-sm"
             >
               Guestlist Tonight
             </Link>
             <Link
               href="/last-minute-table-booking-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white transition-colors text-sm"
             >
               Last Minute Tables
             </Link>

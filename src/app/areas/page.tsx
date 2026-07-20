@@ -74,23 +74,25 @@ export default function AreasPage() {
         )}
       />
 
-      <main className="min-h-screen bg-[#0A0A0A]">
+      <main className="min-h-screen">
         {/* Hero */}
         <section className="relative min-h-[40vh] flex items-end overflow-hidden">
           <Image
             src="/gallery/images/fe4414_23e37ad1543140e68e62e62587f7120c.jpg"
             alt="London nightlife areas overview with city lights"
             fill
-            className="object-cover"
+            className="object-cover animate-slow-zoom"
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/80 to-black/60" />
-          <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20 text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight">
-              London Clubs by Area
+          <div className="absolute inset-0 bg-gradient-to-t from-night-950 via-night-950/70 to-night-950/30" />
+          <div className="glow-orb w-[480px] h-[380px] bg-neon-500/25 -top-32 -right-24" aria-hidden />
+          <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20">
+            <span className="eyebrow animate-fade-up">Area guide</span>
+            <h1 className="animate-fade-up anim-delay-1 font-display text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mt-4 mb-4 tracking-tight">
+              London Clubs by <span className="serif-accent text-gradient">Area</span>
             </h1>
-            <p className="text-white/80 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+            <p className="animate-fade-up anim-delay-2 text-frost-100/85 text-lg md:text-xl leading-relaxed max-w-2xl">
               London&apos;s nightlife is concentrated in a handful of key areas, each
               with its own character and crowd. Whether you&apos;re looking for Mayfair&apos;s
               exclusivity, Soho&apos;s energy, or the broader West End scene, find the
@@ -100,27 +102,27 @@ export default function AreasPage() {
         </section>
 
         {/* Area Cards */}
-        <section className="border-b border-[#222] py-20 md:py-28">
+        <section className="section-glow border-b border-white/[0.06] py-20 md:py-28">
           <div className="max-w-5xl mx-auto px-6 sm:px-8">
             <div className="grid gap-6">
               {areas.map((area) => (
                 <Link
                   key={area.slug}
                   href={`/areas/${area.slug}`}
-                  className="block bg-[#141414] hover:bg-[#1A1A1A] border border-[#222] hover:border-[#333] rounded-2xl p-7 md:p-8 text-center transition-all duration-300"
+                  className="glass-card glass-card-hover group block p-7 md:p-8"
                 >
-                  <div className="flex items-center justify-center gap-3 mb-3">
-                    <h2 className="text-xl md:text-2xl font-bold text-white">
+                  <div className="flex items-center gap-3 mb-3">
+                    <h2 className="font-display text-xl md:text-2xl font-extrabold tracking-tight text-white">
                       {area.name}
                     </h2>
-                    <span className="shrink-0 text-xs font-medium px-2.5 py-1 rounded-full bg-white/5 text-[#BBB]">
+                    <span className="chip shrink-0">
                       {area.clubCount} {area.clubCount === 1 ? 'club' : 'clubs'}
                     </span>
                   </div>
-                  <p className="text-[#BBB] text-sm leading-relaxed mb-4 max-w-2xl mx-auto">
+                  <p className="text-frost-300 text-sm leading-relaxed mb-4 max-w-2xl">
                     {area.description}
                   </p>
-                  <span className="text-[#C0C0C0] text-sm">
+                  <span className="text-neon-300 text-sm inline-flex items-center gap-1.5 transition-transform duration-300 group-hover:translate-x-1">
                     Explore {area.name} clubs &rarr;
                   </span>
                 </Link>
@@ -130,13 +132,15 @@ export default function AreasPage() {
         </section>
 
         {/* WhatsApp CTA */}
-        <section className="border-b border-[#222] py-20 md:py-28">
-          <div className="max-w-5xl mx-auto px-6 sm:px-8">
-            <div className="bg-[#141414] border border-[#222] rounded-2xl p-8 md:p-10 text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
-                Not sure which area?
+        <section className="relative overflow-hidden border-b border-white/[0.06] py-20 md:py-28">
+          <div className="glow-orb w-[520px] h-[360px] bg-glow-500/15 -bottom-40 right-1/4" aria-hidden />
+          <div className="relative max-w-5xl mx-auto px-6 sm:px-8">
+            <div className="glass-card p-8 md:p-10 text-center">
+              <span className="eyebrow justify-center">Free concierge</span>
+              <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4 text-center">
+                Not sure which <span className="serif-accent text-gradient">area?</span>
               </h2>
-              <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-8">
+              <p className="text-frost-300 max-w-2xl mx-auto text-center mb-8">
                 Tell us what kind of night you&apos;re after — the vibe, the music, your
                 group size — and we&apos;ll recommend the right area and club.
               </p>
@@ -150,33 +154,36 @@ export default function AreasPage() {
         {/* Internal Links */}
         <section className="py-20 md:py-28">
           <div className="max-w-5xl mx-auto px-6 sm:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
-              More Guides
-            </h2>
-            <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-12">
-              Explore our other guides to London&apos;s nightlife scene.
-            </p>
+            <div className="mb-12 max-w-xl">
+              <span className="eyebrow">Keep exploring</span>
+              <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
+                More <span className="serif-accent text-gradient">Guides</span>
+              </h2>
+              <p className="text-frost-300 max-w-2xl">
+                Explore our other guides to London&apos;s nightlife scene.
+              </p>
+            </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <Link
                 href="/best-clubs-in-london"
-                className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
+                className="glass-card glass-card-hover block p-7"
               >
-                <h3 className="text-white font-semibold mb-1">Best Clubs in London</h3>
-                <p className="text-[#888] text-sm">Our ranked guide to the top clubs across the city.</p>
+                <h3 className="font-display tracking-tight text-white font-semibold mb-1">Best Clubs in London</h3>
+                <p className="text-frost-500 text-sm">Our ranked guide to the top clubs across the city.</p>
               </Link>
               <Link
                 href="/guides/how-to-get-into-london-clubs"
-                className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
+                className="glass-card glass-card-hover block p-7"
               >
-                <h3 className="text-white font-semibold mb-1">Entry Guide</h3>
-                <p className="text-[#888] text-sm">How to get into London&apos;s most exclusive clubs.</p>
+                <h3 className="font-display tracking-tight text-white font-semibold mb-1">Entry Guide</h3>
+                <p className="text-frost-500 text-sm">How to get into London&apos;s most exclusive clubs.</p>
               </Link>
               <Link
                 href="/"
-                className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
+                className="glass-card glass-card-hover block p-7"
               >
-                <h3 className="text-white font-semibold mb-1">Tonight&apos;s Picks</h3>
-                <p className="text-[#888] text-sm">See which clubs are open tonight.</p>
+                <h3 className="font-display tracking-tight text-white font-semibold mb-1">Tonight&apos;s Picks</h3>
+                <p className="text-frost-500 text-sm">See which clubs are open tonight.</p>
               </Link>
             </div>
           </div>

@@ -53,30 +53,32 @@ export default function SohoPage() {
         )}
       />
 
-      <main className="min-h-screen bg-[#0A0A0A]">
+      <main className="min-h-screen">
         {/* Hero */}
         <section className="relative min-h-[40vh] flex items-end overflow-hidden">
           <Image
             src="/gallery/images/fe4414_248f34e1849a4e7688a7b3eb2ef234d2.jpg"
             alt="Soho nightlife district with neon lights and vibrant streets"
             fill
-            className="object-cover"
+            className="object-cover animate-slow-zoom"
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/80 to-black/60" />
-          <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20 text-center">
-            <div className="mb-4">
-              <Link href="/areas" className="text-white/60 hover:text-white/80 text-sm transition-colors">
+          <div className="absolute inset-0 bg-gradient-to-t from-night-950 via-night-950/70 to-night-950/30" />
+          <div className="glow-orb w-[480px] h-[380px] bg-neon-500/25 -top-32 -right-24" aria-hidden />
+          <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20">
+            <div className="mb-5 animate-fade-up">
+              <Link href="/areas" className="text-frost-400 hover:text-neon-200 text-sm transition-colors">
                 Areas
               </Link>
-              <span className="text-[#444] mx-2">/</span>
-              <span className="text-white/80 text-sm">Soho</span>
+              <span className="text-frost-500 mx-2">/</span>
+              <span className="text-frost-300 text-sm">Soho</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight">
-              Best Clubs in Soho
+            <span className="eyebrow animate-fade-up anim-delay-1">Area guide</span>
+            <h1 className="animate-fade-up anim-delay-2 font-display text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mt-4 mb-4 tracking-tight">
+              Best Clubs in <span className="serif-accent text-gradient">Soho</span>
             </h1>
-            <p className="text-white/80 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+            <p className="animate-fade-up anim-delay-3 text-frost-100/85 text-lg md:text-xl leading-relaxed max-w-2xl">
               Soho is London&apos;s most vibrant entertainment district, renowned for
               its bars, restaurants, theatres, and late-night energy. While the majority
               of London&apos;s luxury nightclubs sit technically within Mayfair&apos;s
@@ -87,13 +89,14 @@ export default function SohoPage() {
         </section>
 
         {/* WhatsApp CTA */}
-        <section className="border-b border-[#222] py-20 md:py-28">
+        <section className="section-glow border-b border-white/[0.06] py-20 md:py-28">
           <div className="max-w-5xl mx-auto px-6 sm:px-8">
-            <div className="bg-[#141414] border border-[#222] rounded-2xl p-8 md:p-10 text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+            <div className="glass-card p-8 md:p-10 text-center">
+              <span className="eyebrow justify-center">Free concierge</span>
+              <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4 text-center">
                 Looking for a Soho night out?
               </h2>
-              <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-8">
+              <p className="text-frost-300 max-w-2xl mx-auto text-center mb-8">
                 We know the Soho and Mayfair scene inside out. Message us for table bookings,
                 guestlist, or help picking the right venue for your group.
               </p>
@@ -105,12 +108,13 @@ export default function SohoPage() {
         </section>
 
         {/* Soho Club Listings */}
-        <section className="border-b border-[#222] py-20 md:py-28">
+        <section className="border-b border-white/[0.06] py-20 md:py-28">
           <div className="max-w-5xl mx-auto px-6 sm:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+            <span className="eyebrow">The lineup</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
               Clubs in &amp; Around Soho
             </h2>
-            <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-12">
+            <p className="text-frost-300 max-w-2xl mb-12">
               The clubs that sit within Soho or on its immediate borders with Mayfair
               and the Carnaby area.
             </p>
@@ -123,15 +127,16 @@ export default function SohoPage() {
         </section>
 
         {/* Soho & Mayfair Overlap */}
-        <section className="border-b border-[#222] py-20 md:py-28">
+        <section className="border-b border-white/[0.06] py-20 md:py-28">
           <div className="max-w-5xl mx-auto px-6 sm:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+            <span className="eyebrow">Blurred lines</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
               The Soho &amp; Mayfair Overlap
             </h2>
-            <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-12">
+            <p className="text-frost-300 max-w-2xl mb-12">
               How the two areas blend together for a seamless night out.
             </p>
-            <div className="space-y-4 text-[#BBB] leading-relaxed">
+            <div className="space-y-4 text-frost-300 leading-relaxed">
               <p>
                 The boundary between Soho and Mayfair runs roughly along Regent Street,
                 but in practice the two areas blend into each other. Venues on streets
@@ -152,14 +157,14 @@ export default function SohoPage() {
                 Mayfair guide.
               </p>
             </div>
-            <div className="mt-8 flex justify-center">
+            <div className="mt-8 flex">
               <Link
                 href="/areas/mayfair"
-                className="inline-block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl px-8 py-5 text-center transition-all duration-300"
+                className="glass-card glass-card-hover inline-block px-8 py-5"
               >
                 <span className="text-white font-semibold">Mayfair Clubs Guide</span>
-                <span className="text-[#C0C0C0] text-sm ml-2">&rarr;</span>
-                <p className="text-[#888] text-sm mt-1">
+                <span className="text-neon-300 text-sm ml-2">&rarr;</span>
+                <p className="text-frost-500 text-sm mt-1">
                   The full guide to Mayfair&apos;s {getClubsByArea('Mayfair').length} clubs,
                   table bookings, and guestlist.
                 </p>
@@ -169,15 +174,16 @@ export default function SohoPage() {
         </section>
 
         {/* The Soho Scene */}
-        <section className="border-b border-[#222] py-20 md:py-28">
+        <section className="border-b border-white/[0.06] py-20 md:py-28">
           <div className="max-w-5xl mx-auto px-6 sm:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+            <span className="eyebrow">After hours</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
               The Broader Soho Scene
             </h2>
-            <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-12">
+            <p className="text-frost-300 max-w-2xl mb-12">
               Beyond the clubs, Soho is the ideal starting point for any London night.
             </p>
-            <div className="space-y-4 text-[#BBB] leading-relaxed">
+            <div className="space-y-4 text-frost-300 leading-relaxed">
               <p>
                 Beyond the high-end clubs, Soho is packed with late-night bars, cocktail
                 spots, and smaller music venues that make it the ideal starting point for
@@ -196,51 +202,52 @@ export default function SohoPage() {
         </section>
 
         {/* Internal Links */}
-        <section className="py-20 md:py-28">
+        <section className="section-glow py-20 md:py-28">
           <div className="max-w-5xl mx-auto px-6 sm:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
+            <span className="eyebrow">Keep exploring</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
               More London Club Guides
             </h2>
-            <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-12">
+            <p className="text-frost-300 max-w-2xl mb-12">
               Explore more of London&apos;s nightlife scene.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <Link
                 href="/areas/mayfair"
-                className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
+                className="glass-card glass-card-hover group block p-7"
               >
-                <h3 className="text-white font-semibold mb-1">Mayfair Clubs</h3>
-                <p className="text-[#888] text-sm">The luxury nightlife epicentre with {getClubsByArea('Mayfair').length} clubs.</p>
+                <h3 className="font-display font-bold tracking-tight text-white mb-1 group-hover:text-neon-200 transition-colors">Mayfair Clubs</h3>
+                <p className="text-frost-500 text-sm">The luxury nightlife epicentre with {getClubsByArea('Mayfair').length} clubs.</p>
               </Link>
               <Link
                 href="/areas/central-london"
-                className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
+                className="glass-card glass-card-hover group block p-7"
               >
-                <h3 className="text-white font-semibold mb-1">Central London Clubs</h3>
-                <p className="text-[#888] text-sm">The complete West End nightlife guide.</p>
+                <h3 className="font-display font-bold tracking-tight text-white mb-1 group-hover:text-neon-200 transition-colors">Central London Clubs</h3>
+                <p className="text-frost-500 text-sm">The complete West End nightlife guide.</p>
               </Link>
               <Link
                 href="/best-clubs-in-london"
-                className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
+                className="glass-card glass-card-hover group block p-7"
               >
-                <h3 className="text-white font-semibold mb-1">Best Clubs in London</h3>
-                <p className="text-[#888] text-sm">Our ranked guide to the top clubs across the city.</p>
+                <h3 className="font-display font-bold tracking-tight text-white mb-1 group-hover:text-neon-200 transition-colors">Best Clubs in London</h3>
+                <p className="text-frost-500 text-sm">Our ranked guide to the top clubs across the city.</p>
               </Link>
               <Link
                 href="/guides/how-to-get-into-london-clubs"
-                className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-7 text-center transition-all duration-300"
+                className="glass-card glass-card-hover group block p-7"
               >
-                <h3 className="text-white font-semibold mb-1">Entry Guide</h3>
-                <p className="text-[#888] text-sm">How to get into London&apos;s most exclusive clubs.</p>
+                <h3 className="font-display font-bold tracking-tight text-white mb-1 group-hover:text-neon-200 transition-colors">Entry Guide</h3>
+                <p className="text-frost-500 text-sm">How to get into London&apos;s most exclusive clubs.</p>
               </Link>
             </div>
 
             {/* Final CTA */}
-            <div className="mt-12 bg-[#141414] border border-[#222] rounded-2xl p-8 md:p-10 text-center">
-              <h3 className="text-xl font-bold text-white mb-2">
+            <div className="mt-12 glass-card p-8 md:p-10 text-center">
+              <h3 className="font-display text-xl font-bold tracking-tight text-white mb-2">
                 Planning a night around Soho?
               </h3>
-              <p className="text-[#BBB] text-sm mb-5 max-w-md mx-auto">
+              <p className="text-frost-300 text-sm mb-5 max-w-md mx-auto">
                 Message us on WhatsApp and we&apos;ll help you plan the perfect evening,
                 from pre-drinks to the main event.
               </p>

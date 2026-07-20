@@ -55,36 +55,38 @@ export default function BlogPage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#0A0A0A]">
+    <main className="min-h-screen">
       <SchemaMarkup schema={blogListSchema} />
 
       {/* Header */}
-      <section className="pt-24 pb-12 px-4 sm:px-6">
-        <div className="max-w-5xl mx-auto">
+      <section className="relative overflow-hidden pt-24 pb-12 px-4 sm:px-6">
+        <div className="glow-orb w-[480px] h-[380px] bg-neon-500/25 -top-32 -right-24" aria-hidden />
+        <div className="relative max-w-5xl mx-auto">
           {/* Breadcrumbs */}
-          <nav className="flex items-center gap-2 text-sm text-[#888] mb-8">
-            <Link href="/" className="hover:text-[#BBB] transition-colors">
+          <nav className="flex items-center gap-2 text-sm text-frost-400 mb-8">
+            <Link href="/" className="hover:text-neon-200 transition-colors">
               Home
             </Link>
             <span>/</span>
-            <span className="text-[#BBB]">Blog</span>
+            <span className="text-frost-300">Blog</span>
           </nav>
 
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-            London Nightlife Blog
+          <span className="eyebrow animate-fade-up">Editorial</span>
+          <h1 className="animate-fade-up anim-delay-1 font-display text-4xl md:text-6xl font-extrabold text-white mt-4 mb-4 tracking-tight">
+            London Nightlife <span className="serif-accent text-gradient">Blog</span>
           </h1>
-          <p className="text-[#BBB] text-lg md:text-xl max-w-2xl leading-relaxed">
+          <p className="animate-fade-up anim-delay-2 text-frost-300 text-lg md:text-xl max-w-2xl leading-relaxed">
             Insider knowledge from people who work the scene. Weekly guides,
             honest reviews, and everything you need to plan a proper night out
             in London.
           </p>
 
           {/* Category filters */}
-          <div className="flex flex-wrap gap-2 mt-8">
+          <div className="animate-fade-up anim-delay-3 flex flex-wrap gap-2 mt-8">
             {categories.map((category) => (
               <span
                 key={category}
-                className="text-sm font-medium text-[#C0C0C0] bg-white/5 border border-[#222] px-4 py-2 rounded-full"
+                className="chip"
               >
                 {category}
               </span>
@@ -96,7 +98,7 @@ export default function BlogPage() {
       {/* Featured Post */}
       <section className="px-4 sm:px-6 pb-8">
         <div className="max-w-5xl mx-auto">
-          <p className="text-xs uppercase tracking-widest text-[#888] mb-4 font-medium">
+          <p className="eyebrow mb-4">
             Featured
           </p>
           <BlogCard post={featuredPost} featured={true} />
@@ -117,17 +119,21 @@ export default function BlogPage() {
       {/* WhatsApp CTA */}
       <section className="px-4 sm:px-6 pb-16">
         <div className="max-w-5xl mx-auto">
-          <div className="bg-[#141414] border border-[#222] rounded-xl p-8 md:p-10 text-center">
-            <h2 className="text-2xl font-bold text-white mb-3">
-              Need Help Planning Your Night?
-            </h2>
-            <p className="text-[#BBB] mb-6 max-w-lg mx-auto">
-              Message us on WhatsApp for free, personalised recommendations.
-              Table bookings, guestlist access, or just honest advice on where
-              to go tonight.
-            </p>
-            <div className="flex justify-center">
-              <WhatsAppCTA />
+          <div className="glass-card relative overflow-hidden p-8 md:p-10 text-center">
+            <div className="glow-orb w-[420px] h-[300px] bg-glow-500/15 -bottom-32 -right-24" aria-hidden />
+            <div className="relative">
+              <span className="eyebrow justify-center">Free concierge</span>
+              <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mt-3 mb-3">
+                Need Help Planning <span className="serif-accent text-gradient">Your Night?</span>
+              </h2>
+              <p className="text-frost-300 mb-6 max-w-lg mx-auto">
+                Message us on WhatsApp for free, personalised recommendations.
+                Table bookings, guestlist access, or just honest advice on where
+                to go tonight.
+              </p>
+              <div className="flex justify-center">
+                <WhatsAppCTA />
+              </div>
             </div>
           </div>
         </div>
@@ -136,38 +142,39 @@ export default function BlogPage() {
       {/* Internal Links */}
       <section className="px-4 sm:px-6 pb-24">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-xl font-bold text-white mb-6">
+          <span className="eyebrow">Keep going</span>
+          <h2 className="font-display text-xl md:text-2xl font-extrabold tracking-tight text-white mt-3 mb-6">
             Explore More
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <Link
               href="/guides/how-to-get-into-london-clubs"
-              className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-all duration-300"
+              className="glass-card glass-card-hover block p-5"
             >
-              <h3 className="text-white font-semibold mb-1">Club Guides</h3>
-              <p className="text-[#888] text-sm">
+              <h3 className="font-display tracking-tight text-white font-bold mb-1">Club Guides</h3>
+              <p className="text-frost-500 text-sm">
                 How to get into London&apos;s best clubs, from dress codes to
                 door policies.
               </p>
             </Link>
             <Link
               href="/best-clubs-in-london"
-              className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-all duration-300"
+              className="glass-card glass-card-hover block p-5"
             >
-              <h3 className="text-white font-semibold mb-1">Best Clubs</h3>
-              <p className="text-[#888] text-sm">
+              <h3 className="font-display tracking-tight text-white font-bold mb-1">Best Clubs</h3>
+              <p className="text-frost-500 text-sm">
                 The top-ranked nightclubs in London right now, reviewed and
                 rated.
               </p>
             </Link>
             <Link
               href="/areas/mayfair"
-              className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-all duration-300"
+              className="glass-card glass-card-hover block p-5"
             >
-              <h3 className="text-white font-semibold mb-1">
+              <h3 className="font-display tracking-tight text-white font-bold mb-1">
                 Clubs by Area
               </h3>
-              <p className="text-[#888] text-sm">
+              <p className="text-frost-500 text-sm">
                 Mayfair, Soho, Central London — find the best clubs near you.
               </p>
             </Link>

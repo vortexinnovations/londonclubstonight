@@ -94,32 +94,38 @@ export default function ClubsOpenSundayNightLondonPage() {
           src="/gallery/images/fe4414_277db2fabaf64b3bb38e4f0b766c5841.jpg"
           alt="Sunday night clubs in London with late-night atmosphere"
           fill
-          className="object-cover"
+          className="object-cover animate-slow-zoom"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/80 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-night-950 via-night-950/70 to-night-950/30" />
+        <div className="glow-orb w-[480px] h-[380px] bg-neon-500/25 -top-32 -right-24" aria-hidden />
         <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20 text-center">
-          <p className="text-white/80 text-sm uppercase tracking-widest mb-6">
+          <p className="eyebrow justify-center animate-fade-up mb-6">
             Sunday Night London
           </p>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6">
-            Clubs Open Sunday Night in London
+          <h1 className="animate-fade-up anim-delay-1 font-display text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
+            Clubs Open Sunday Night in <span className="serif-accent text-gradient">London</span>
           </h1>
-          <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10">
+          <p className="animate-fade-up anim-delay-2 text-frost-100/85 text-lg md:text-xl max-w-2xl mx-auto mb-10">
             We will be honest with you: Sunday night clubbing in London is extremely limited. Here is the full picture — what is available, what is not, and how to make the most of your weekend.
           </p>
-          <WhatsAppCTA variant="tonight" heading="Planning Your Weekend?" />
+          <div className="animate-fade-up anim-delay-3">
+            <WhatsAppCTA variant="tonight" heading="Planning Your Weekend?" />
+          </div>
         </div>
       </section>
 
       {/* The Honest Truth */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            The Honest Truth About Sunday Nights
-          </h2>
-          <div className="space-y-6 text-[#BBB] text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto mb-12">
+            <span className="eyebrow">Straight talk</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4">
+              The Honest Truth About Sunday Nights
+            </h2>
+          </div>
+          <div className="space-y-6 text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
             <p>
               Most London clubs do not open on Sundays. That is not a diplomatic way of saying options are limited — it is the straightforward reality. Every Mayfair club is closed. The Soho venues are closed. The entertainment-led clubs are closed. If you are looking for a traditional London club night on a Sunday, you will struggle to find one.
             </p>
@@ -135,12 +141,13 @@ export default function ClubsOpenSundayNightLondonPage() {
 
       {/* Sunday Clubs if any */}
       {sundayClubs.length > 0 ? (
-        <section className="py-20 md:py-28 border-t border-[#222]">
+        <section className="py-20 md:py-28 border-t border-white/[0.06]">
           <div className="max-w-5xl mx-auto px-6 sm:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-6">
+            <span className="eyebrow">Open now</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-6">
               Clubs Open on Sundays
             </h2>
-            <p className="text-[#BBB] text-center mb-12 max-w-2xl mx-auto">
+            <p className="text-frost-300 mb-12 max-w-2xl">
               These venues have Sunday listed in their opening schedule. Availability may vary — message us to confirm.
             </p>
             <div className="grid gap-6 md:grid-cols-2">
@@ -151,13 +158,13 @@ export default function ClubsOpenSundayNightLondonPage() {
           </div>
         </section>
       ) : (
-        <section className="py-20 md:py-28 border-t border-[#222]">
+        <section className="py-20 md:py-28 border-t border-white/[0.06]">
           <div className="max-w-5xl mx-auto px-6 sm:px-8 text-center">
-            <div className="bg-[#141414] border border-[#222] rounded-2xl p-10 max-w-2xl mx-auto">
-              <h2 className="text-2xl font-bold text-white mb-4">
+            <div className="glass-card p-10 max-w-2xl mx-auto">
+              <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mb-4">
                 No Regular Sunday Clubs
               </h2>
-              <p className="text-[#BBB] mb-6">
+              <p className="text-frost-300 mb-6">
                 None of the clubs in our directory currently operate a regular Sunday night programme. Keep reading for your best alternatives and how to plan a better weekend.
               </p>
             </div>
@@ -166,12 +173,15 @@ export default function ClubsOpenSundayNightLondonPage() {
       )}
 
       {/* Ministry of Sound */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="section-glow py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            Ministry of Sound: The Sunday Exception
-          </h2>
-          <div className="space-y-6 text-[#BBB] text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto mb-12">
+            <span className="eyebrow">The exception</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4">
+              Ministry of Sound: The Sunday Exception
+            </h2>
+          </div>
+          <div className="space-y-6 text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
             <p>
               Ministry of Sound is the one venue that occasionally breaks the Sunday silence. The legendary Elephant and Castle superclub does not run a regular Sunday programme, but it hosts special events on Sundays several times throughout the year — and when it does, it is worth knowing about.
             </p>
@@ -192,12 +202,15 @@ export default function ClubsOpenSundayNightLondonPage() {
       </section>
 
       {/* Alternatives */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            Sunday Night Alternatives
-          </h2>
-          <div className="space-y-6 text-[#BBB] text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto mb-12">
+            <span className="eyebrow">Plan B</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4">
+              Sunday Night Alternatives
+            </h2>
+          </div>
+          <div className="space-y-6 text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
             <p>
               If a full club night is not available, London still offers plenty of ways to spend a Sunday evening with energy and atmosphere. Here are the alternatives that actually deliver:
             </p>
@@ -218,12 +231,15 @@ export default function ClubsOpenSundayNightLondonPage() {
       </section>
 
       {/* Plan Your Weekend Better */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 bg-night-900/60 border-y border-white/[0.05]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            Plan Your Weekend Right
-          </h2>
-          <div className="space-y-6 text-[#BBB] text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto mb-12">
+            <span className="eyebrow">Do it right</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4">
+              Plan Your Weekend Right
+            </h2>
+          </div>
+          <div className="space-y-6 text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
             <p>
               If you are reading this page, there is a good chance you are either planning ahead or realising too late that Sunday night is not the night for London clubs. Either way, the best advice we can give is to redirect your energy to Friday or Saturday — the nights when London genuinely comes alive.
             </p>
@@ -235,31 +251,31 @@ export default function ClubsOpenSundayNightLondonPage() {
             </p>
             <p>
               If you are visiting London and your schedule only allows for a Sunday night out, we would honestly recommend adjusting your plans to include a Friday or Saturday instead. The difference in available options and overall quality of experience is substantial. To get ahead on weekend table planning and bottle service, visit{' '}
-              <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">London Bottle Service</a>, and for weekend events across the Mayfair scene, see{' '}
-              <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-[#C0C0C0] underline underline-offset-2 hover:text-white">Mayfair Tonight</a>. Message us on WhatsApp and we can help you plan the strongest night for whenever your schedule allows.
+              <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">London Bottle Service</a>, and for weekend events across the Mayfair scene, see{' '}
+              <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Mayfair Tonight</a>. Message us on WhatsApp and we can help you plan the strongest night for whenever your schedule allows.
             </p>
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-2">
-            <div className="bg-[#141414] border border-[#222] rounded-2xl p-8 text-center">
-              <h3 className="text-xl font-bold text-white mb-3">Friday Nights</h3>
-              <p className="text-[#BBB] text-sm mb-4">
+            <div className="glass-card p-8 text-center">
+              <h3 className="font-display text-xl font-bold tracking-tight text-white mb-3">Friday Nights</h3>
+              <p className="text-frost-300 text-sm mb-4">
                 {fridayClubs.length} clubs open with full programming and celebratory energy.
               </p>
               <Link
                 href="/friday-nightclubs-london"
-                className="text-[#C0C0C0] hover:text-white text-sm underline underline-offset-4"
+                className="text-neon-300 hover:text-white text-sm underline underline-offset-4 decoration-glow-400/50 transition-colors"
               >
                 See Friday clubs &rarr;
               </Link>
             </div>
-            <div className="bg-[#141414] border border-[#222] rounded-2xl p-8 text-center">
-              <h3 className="text-xl font-bold text-white mb-3">Saturday Nights</h3>
-              <p className="text-[#BBB] text-sm mb-4">
+            <div className="glass-card p-8 text-center">
+              <h3 className="font-display text-xl font-bold tracking-tight text-white mb-3">Saturday Nights</h3>
+              <p className="text-frost-300 text-sm mb-4">
                 {saturdayClubs.length} clubs open — the biggest night in London.
               </p>
               <Link
                 href="/saturday-nightclubs-london"
-                className="text-[#C0C0C0] hover:text-white text-sm underline underline-offset-4"
+                className="text-neon-300 hover:text-white text-sm underline underline-offset-4 decoration-glow-400/50 transition-colors"
               >
                 See Saturday clubs &rarr;
               </Link>
@@ -269,23 +285,26 @@ export default function ClubsOpenSundayNightLondonPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 text-center">
           <WhatsAppCTA variant="tonight" heading="Let Us Help Plan Your Night" />
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            Frequently Asked Questions
-          </h2>
-          <div className="space-y-8 max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto mb-12">
+            <span className="eyebrow">Questions</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4">
+              Frequently Asked Questions
+            </h2>
+          </div>
+          <div className="space-y-5 max-w-3xl mx-auto">
             {faqs.map((faq) => (
-              <div key={faq.question}>
-                <h3 className="text-lg font-semibold text-white mb-3">{faq.question}</h3>
-                <p className="text-[#BBB] text-base leading-relaxed">{faq.answer}</p>
+              <div key={faq.question} className="glass-card p-6">
+                <h3 className="font-display font-bold tracking-tight text-lg text-white mb-3">{faq.question}</h3>
+                <p className="text-frost-300 text-base leading-relaxed">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -293,45 +312,45 @@ export default function ClubsOpenSundayNightLondonPage() {
       </section>
 
       {/* Internal Links */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">
+          <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mb-8">
             Plan a Better Night
           </h2>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/best-clubs-this-weekend-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="btn-ghost px-6 py-3 text-sm"
             >
               Best Clubs This Weekend
             </Link>
             <Link
               href="/friday-nightclubs-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="btn-ghost px-6 py-3 text-sm"
             >
               Friday Nightclubs
             </Link>
             <Link
               href="/saturday-nightclubs-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="btn-ghost px-6 py-3 text-sm"
             >
               Saturday Nightclubs
             </Link>
             <Link
               href="/clubs-tonight-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="btn-ghost px-6 py-3 text-sm"
             >
               Clubs Open Tonight
             </Link>
             <Link
               href="/guestlist-tonight-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="btn-ghost px-6 py-3 text-sm"
             >
               Guestlist Tonight
             </Link>
             <Link
               href="/last-minute-table-booking-london"
-              className="bg-[#141414] border border-[#222] rounded-xl px-6 py-3 text-[#BBB] hover:text-white hover:border-[#444] transition-colors text-sm"
+              className="btn-ghost px-6 py-3 text-sm"
             >
               Last Minute Tables
             </Link>

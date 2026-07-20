@@ -101,7 +101,7 @@ export default function ClubsTonightLondonPage() {
   );
 
   return (
-    <main className="min-h-screen bg-[#0A0A0A] text-white">
+    <main className="min-h-screen text-white">
       <SchemaMarkup schema={[articleSchema, faqSchema, breadcrumbSchema, itemListSchema]} />
 
       {/* Hero */}
@@ -110,26 +110,28 @@ export default function ClubsTonightLondonPage() {
           src="/gallery/images/fe4414_24d0a519c35e4b8e89d956172005cd40.jpg"
           alt="London clubs open tonight with vibrant nightlife energy"
           fill
-          className="object-cover"
+          className="object-cover animate-slow-zoom"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/80 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-night-950 via-night-950/70 to-night-950/30" />
+        <div className="glow-orb w-[480px] h-[380px] bg-neon-500/25 -top-32 -right-24" aria-hidden />
         <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20 text-center">
-          <p className="text-white/80 text-sm uppercase tracking-[0.2em] mb-6">
+          <span className="chip chip-accent animate-fade-up mb-6">
+            <span className="live-dot scale-75" aria-hidden />
             It&apos;s {dayName} Night in London
-          </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
-            Clubs Open Tonight in London
+          </span>
+          <h1 className="animate-fade-up anim-delay-1 font-display font-extrabold text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.05] mb-6">
+            Clubs Open <span className="serif-accent text-gradient">Tonight</span> in London
           </h1>
-          <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed mb-4">
+          <p className="animate-fade-up anim-delay-2 text-lg md:text-xl text-frost-100/85 max-w-2xl mx-auto leading-relaxed mb-4">
             Every club open tonight, which ones have guestlist spots left,
             and where you can still get a table. Updated in real time by
             promoters who work these doors every night.
           </p>
           <time
             dateTime={now}
-            className="inline-block text-xs text-white/60 mb-10"
+            className="animate-fade-up anim-delay-3 inline-block text-xs text-frost-300/80 mb-10"
           >
             Updated {new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/London' })}
           </time>
@@ -142,13 +144,14 @@ export default function ClubsTonightLondonPage() {
       </section>
 
       {/* Tonight's Open Clubs */}
-      <section className="bg-[#0A0A0A] py-20 md:py-28 border-t border-[#222]">
+      <section className="section-glow py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Tonight&apos;s Open Clubs
+          <div className="max-w-xl mb-12 md:mb-16">
+            <span className="eyebrow">Live now</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
+              Tonight&apos;s Open <span className="serif-accent text-gradient">Clubs</span>
             </h2>
-            <p className="text-[#BBB] text-base max-w-xl mx-auto">
+            <p className="text-frost-300 text-base">
               {tonightClubs.length > 0
                 ? `${tonightClubs.length} clubs are open tonight. Here is every venue running a night this ${dayName}, with real-time availability from our team.`
                 : `Most London clubs are closed tonight. Check back on Thursday, Friday, or Saturday for the biggest selection of open venues.`}
@@ -166,15 +169,15 @@ export default function ClubsTonightLondonPage() {
               ))}
             </div>
           ) : (
-            <div className="bg-[#141414] border border-[#222] rounded-2xl p-8 md:p-10 text-center">
-              <p className="text-[#BBB] mb-4">
+            <div className="glass-card p-8 md:p-10 text-center">
+              <p className="text-frost-300 mb-4">
                 No clubs are scheduled to open tonight. London&apos;s club scene
                 runs primarily Thursday through Saturday, with select venues
                 opening on Wednesdays and Sundays.
               </p>
-              <p className="text-[#888] text-sm">
+              <p className="text-frost-500 text-sm">
                 Planning ahead? Check our{' '}
-                <Link href="/best-clubs-this-weekend-london" className="text-[#C0C0C0] hover:text-white transition-colors">
+                <Link href="/best-clubs-this-weekend-london" className="text-neon-300 hover:text-white transition-colors">
                   weekend guide
                 </Link>{' '}
                 for what&apos;s coming up.
@@ -186,13 +189,14 @@ export default function ClubsTonightLondonPage() {
 
       {/* Guestlist Available Tonight */}
       {guestlistClubs.length > 0 && (
-        <section className="bg-[#0A0A0A] py-20 md:py-28 border-t border-[#222]">
+        <section className="py-20 md:py-28 border-t border-white/[0.06]">
           <div className="max-w-5xl mx-auto px-6 sm:px-8">
-            <div className="text-center mb-12 md:mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Guestlist Available Tonight
+            <div className="max-w-xl mb-12 md:mb-16">
+              <span className="eyebrow">On the list</span>
+              <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
+                Guestlist Available <span className="serif-accent text-gradient">Tonight</span>
               </h2>
-              <p className="text-[#BBB] text-base max-w-xl mx-auto">
+              <p className="text-frost-300 text-base">
                 These clubs are accepting guestlist requests for tonight. Guestlist
                 does not guarantee entry — it gets you to the front of the queue
                 and usually means free or reduced entry for girls and mixed groups.
@@ -210,7 +214,7 @@ export default function ClubsTonightLondonPage() {
             <div className="text-center mt-10">
               <Link
                 href="/guestlist-tonight-london"
-                className="text-sm text-[#C0C0C0] hover:text-white transition-colors"
+                className="text-sm text-neon-300 hover:text-white transition-colors"
               >
                 Full guestlist guide for tonight &rarr;
               </Link>
@@ -221,13 +225,14 @@ export default function ClubsTonightLondonPage() {
 
       {/* Last Minute Tables */}
       {lastMinuteClubs.length > 0 && (
-        <section className="bg-[#0A0A0A] py-20 md:py-28 border-t border-[#222]">
+        <section className="py-20 md:py-28 border-t border-white/[0.06]">
           <div className="max-w-5xl mx-auto px-6 sm:px-8">
-            <div className="text-center mb-12 md:mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Last Minute Tables Tonight
+            <div className="max-w-xl mb-12 md:mb-16">
+              <span className="eyebrow">Same night</span>
+              <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
+                Last Minute Tables <span className="serif-accent text-gradient">Tonight</span>
               </h2>
-              <p className="text-[#BBB] text-base max-w-xl mx-auto">
+              <p className="text-frost-300 text-base">
                 These venues are known for accommodating same-day table bookings.
                 Availability changes by the hour on busy nights — message us on
                 WhatsApp for a live check.
@@ -245,7 +250,7 @@ export default function ClubsTonightLondonPage() {
             <div className="text-center mt-10">
               <Link
                 href="/last-minute-table-booking-london"
-                className="text-sm text-[#C0C0C0] hover:text-white transition-colors"
+                className="text-sm text-neon-300 hover:text-white transition-colors"
               >
                 Full last-minute table guide &rarr;
               </Link>
@@ -255,12 +260,13 @@ export default function ClubsTonightLondonPage() {
       )}
 
       {/* Editorial Content */}
-      <section className="bg-[#0A0A0A] py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-3xl mx-auto px-6 sm:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
-            What You Actually Need to Know About Going Out Tonight
+          <span className="eyebrow">The lowdown</span>
+          <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mt-4 mb-8">
+            What You Actually Need to Know About Going Out <span className="serif-accent text-gradient">Tonight</span>
           </h2>
-          <div className="space-y-5 text-[#BBB] text-sm leading-relaxed">
+          <div className="space-y-5 text-frost-300 text-sm leading-relaxed">
             <p>
               London&apos;s club scene does not operate on a simple open-or-closed
               basis. Every night has a different character, and the clubs that are
@@ -290,7 +296,7 @@ export default function ClubsTonightLondonPage() {
               than after your third pre-drink. We can still pull strings later
               in the evening, but your options narrow with every hour.
             </p>
-            <h3 className="text-xl font-bold text-white pt-4">
+            <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               The Dress Code Reality
             </h3>
             <p>
@@ -314,7 +320,7 @@ export default function ClubsTonightLondonPage() {
               of how London nightlife operates, and ignoring it leads to
               disappointed nights standing outside.
             </p>
-            <h3 className="text-xl font-bold text-white pt-4">
+            <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               Guestlist vs Table — The Honest Breakdown
             </h3>
             <p>
@@ -339,12 +345,12 @@ export default function ClubsTonightLondonPage() {
                 href="https://londonbottleservice.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#C0C0C0] hover:text-white transition-colors"
+                className="text-neon-300 hover:text-white transition-colors"
               >
                 London Bottle Service
               </a>.
             </p>
-            <h3 className="text-xl font-bold text-white pt-4">
+            <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               Why Tonight Specifically
             </h3>
             <p>
@@ -363,18 +369,19 @@ export default function ClubsTonightLondonPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-[#0A0A0A] py-20 md:py-28 border-t border-[#222]">
+      <section className="section-glow py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-3xl mx-auto px-6 sm:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-12 text-center">
-            Frequently Asked Questions
+          <span className="eyebrow">Questions</span>
+          <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mt-4 mb-12">
+            Frequently Asked <span className="serif-accent text-gradient">Questions</span>
           </h2>
           <div className="space-y-8">
             {faqs.map((faq) => (
-              <div key={faq.question} className="bg-[#141414] border border-[#222] rounded-2xl p-6 md:p-8">
-                <h3 className="text-lg font-semibold text-white mb-3 text-center">
+              <div key={faq.question} className="glass-card p-6 md:p-8">
+                <h3 className="font-display text-lg font-bold tracking-tight text-white mb-3">
                   {faq.question}
                 </h3>
-                <p className="text-[#BBB] text-sm leading-relaxed text-center">
+                <p className="text-frost-300 text-sm leading-relaxed">
                   {faq.answer}
                 </p>
               </div>
@@ -384,52 +391,53 @@ export default function ClubsTonightLondonPage() {
       </section>
 
       {/* Internal Links & Cross-Links */}
-      <section className="bg-[#0A0A0A] py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-10 text-center">
-            Explore More
+          <span className="eyebrow">Keep going</span>
+          <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mt-4 mb-10">
+            Explore <span className="serif-accent text-gradient">More</span>
           </h2>
-          <div className="grid md:grid-cols-2 gap-10 max-w-3xl mx-auto">
-            <div className="text-center">
-              <h3 className="font-semibold text-white mb-4">Tonight &amp; This Weekend</h3>
+          <div className="grid md:grid-cols-2 gap-10 max-w-3xl">
+            <div>
+              <h3 className="font-display font-bold tracking-tight text-white mb-4">Tonight &amp; This Weekend</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/mayfair-clubs-tonight" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <Link href="/mayfair-clubs-tonight" className="text-frost-300 hover:text-white transition-colors text-sm">
                     Mayfair clubs tonight &rarr;
                   </Link>
                 </li>
                 <li>
-                  <Link href="/guestlist-tonight-london" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <Link href="/guestlist-tonight-london" className="text-frost-300 hover:text-white transition-colors text-sm">
                     Get on a guestlist tonight &rarr;
                   </Link>
                 </li>
                 <li>
-                  <Link href="/last-minute-table-booking-london" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <Link href="/last-minute-table-booking-london" className="text-frost-300 hover:text-white transition-colors text-sm">
                     Last-minute table booking &rarr;
                   </Link>
                 </li>
                 <li>
-                  <Link href="/best-clubs-this-weekend-london" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <Link href="/best-clubs-this-weekend-london" className="text-frost-300 hover:text-white transition-colors text-sm">
                     Best clubs this weekend &rarr;
                   </Link>
                 </li>
               </ul>
             </div>
-            <div className="text-center">
-              <h3 className="font-semibold text-white mb-4">Guides</h3>
+            <div>
+              <h3 className="font-display font-bold tracking-tight text-white mb-4">Guides</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/best-clubs-in-london" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <Link href="/best-clubs-in-london" className="text-frost-300 hover:text-white transition-colors text-sm">
                     Best clubs in London — ranked &rarr;
                   </Link>
                 </li>
                 <li>
-                  <Link href="/guides/how-to-get-into-london-clubs" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <Link href="/guides/how-to-get-into-london-clubs" className="text-frost-300 hover:text-white transition-colors text-sm">
                     How to get into London clubs &rarr;
                   </Link>
                 </li>
                 <li>
-                  <Link href="/areas/mayfair" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <Link href="/areas/mayfair" className="text-frost-300 hover:text-white transition-colors text-sm">
                     Mayfair club guide &rarr;
                   </Link>
                 </li>
@@ -438,37 +446,37 @@ export default function ClubsTonightLondonPage() {
           </div>
 
           {/* Network Cross-Links */}
-          <div className="mt-16 pt-10 border-t border-[#1A1A1A]">
-            <h3 className="font-semibold text-white mb-6 text-center">
+          <div className="mt-16 pt-10 border-t border-white/[0.06]">
+            <h3 className="font-display font-bold tracking-tight text-white mb-6">
               From Our Network
             </h3>
-            <div className="grid sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
+            <div className="grid sm:grid-cols-3 gap-4 max-w-3xl">
               <a
                 href="https://mayfairtonight.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-colors block text-center"
+                className="glass-card glass-card-hover p-5 block"
               >
-                <p className="font-semibold text-white text-sm mb-1">Mayfair Tonight</p>
-                <p className="text-[#888] text-xs">Mayfair clubs, events &amp; bookings</p>
+                <p className="font-display font-bold text-white text-sm mb-1">Mayfair Tonight</p>
+                <p className="text-frost-500 text-xs">Mayfair clubs, events &amp; bookings</p>
               </a>
               <a
                 href="https://londonbottleservice.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-colors block text-center"
+                className="glass-card glass-card-hover p-5 block"
               >
-                <p className="font-semibold text-white text-sm mb-1">London Bottle Service</p>
-                <p className="text-[#888] text-xs">VIP table pricing &amp; packages</p>
+                <p className="font-display font-bold text-white text-sm mb-1">London Bottle Service</p>
+                <p className="text-frost-500 text-xs">VIP table pricing &amp; packages</p>
               </a>
               <a
                 href="https://londonbirthdayclub.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#141414] border border-[#222] hover:border-[#333] rounded-xl p-5 transition-colors block text-center"
+                className="glass-card glass-card-hover p-5 block"
               >
-                <p className="font-semibold text-white text-sm mb-1">London Birthday Club</p>
-                <p className="text-[#888] text-xs">Birthday party planning</p>
+                <p className="font-display font-bold text-white text-sm mb-1">London Birthday Club</p>
+                <p className="text-frost-500 text-xs">Birthday party planning</p>
               </a>
             </div>
           </div>
@@ -478,7 +486,7 @@ export default function ClubsTonightLondonPage() {
       {/* Bottom CTA */}
       <section className="max-w-5xl mx-auto px-6 sm:px-8 py-20 md:py-28">
         <div className="text-center">
-          <p className="text-[#888] text-sm mb-5">
+          <p className="text-frost-500 text-sm mb-5">
             Still deciding? One message is all it takes.
           </p>
           <div className="flex justify-center">

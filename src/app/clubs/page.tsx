@@ -28,15 +28,15 @@ export const metadata: Metadata = {
 
 export default function ClubsPage() {
   return (
-    <main className="min-h-screen bg-[#0A0A0A]">
+    <main className="min-h-screen">
       {/* Breadcrumb */}
       <div className="max-w-6xl mx-auto px-6 sm:px-8 pt-6 pb-2">
-        <nav className="flex items-center gap-2 text-sm text-[#888]">
-          <Link href="/" className="hover:text-[#BBB] transition-colors">
+        <nav className="flex items-center gap-2 text-sm text-frost-400">
+          <Link href="/" className="hover:text-neon-200 transition-colors">
             Home
           </Link>
           <span>/</span>
-          <span className="text-[#BBB]">Clubs</span>
+          <span className="text-frost-300">Clubs</span>
         </nav>
       </div>
 
@@ -46,16 +46,18 @@ export default function ClubsPage() {
           src="/gallery/images/TapeFriday041024PartyNextDoor-333.jpg"
           alt="London nightclubs"
           fill
-          className="object-cover"
+          className="object-cover animate-slow-zoom"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/80 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-night-950 via-night-950/70 to-night-950/30" />
+        <div className="glow-orb w-[480px] h-[380px] bg-neon-500/25 -top-32 -right-24" aria-hidden />
         <div className="relative z-10 text-center px-4 py-16">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-            London Nightclubs
+          <span className="eyebrow animate-fade-up justify-center">The full list</span>
+          <h1 className="animate-fade-up anim-delay-1 font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mt-4 mb-4">
+            London <span className="serif-accent text-gradient">Nightclubs</span>
           </h1>
-          <p className="text-lg text-white/80 leading-relaxed max-w-2xl mx-auto">
+          <p className="animate-fade-up anim-delay-2 text-lg text-frost-100/85 leading-relaxed max-w-2xl mx-auto">
             The complete list of London&apos;s best nightclubs, ranked by our team.
             Every club includes insider tips on entry, dress code, table prices,
             and what to expect on the night.
@@ -78,13 +80,14 @@ export default function ClubsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 md:py-28">
+      <section className="section-glow py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 sm:px-8">
-          <div className="bg-[#141414] border border-[#222] rounded-2xl p-10 md:p-14 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
-              Not Sure Which Club?
+          <div className="glass-card p-10 md:p-14 text-center">
+            <span className="eyebrow justify-center">Free advice</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4 text-center">
+              Not Sure Which <span className="serif-accent text-gradient">Club?</span>
             </h2>
-            <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-8">
+            <p className="text-frost-300 max-w-2xl mx-auto text-center mb-8">
               Message us on WhatsApp and we&apos;ll recommend the best club for
               your group, budget, and music taste.
             </p>
@@ -96,21 +99,24 @@ export default function ClubsPage() {
       </section>
 
       {/* Internal Links */}
-      <section className="py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-6xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
-            Explore More
-          </h2>
-          <p className="text-[#BBB] max-w-2xl mx-auto text-center mb-12">
-            Guides, pricing, and event listings to help you plan the perfect night.
-          </p>
+          <div className="max-w-xl mb-12">
+            <span className="eyebrow">Beyond the list</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
+              Explore <span className="serif-accent text-gradient">More</span>
+            </h2>
+            <p className="text-frost-300">
+              Guides, pricing, and event listings to help you plan the perfect night.
+            </p>
+          </div>
           <div className="grid sm:grid-cols-3 gap-6">
             <Link
               href="/guides/how-to-get-into-london-clubs"
-              className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-6 text-center transition-colors"
+              className="glass-card glass-card-hover block p-6"
             >
-              <span className="text-[#C0C0C0] font-semibold">Entry Guide</span>
-              <p className="text-[#888] text-sm mt-2">
+              <span className="text-neon-300 font-semibold">Entry Guide</span>
+              <p className="text-frost-500 text-sm mt-2">
                 How to get past the door at London&apos;s best clubs
               </p>
             </Link>
@@ -118,12 +124,12 @@ export default function ClubsPage() {
               href="https://londonbottleservice.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-6 text-center transition-colors"
+              className="glass-card glass-card-hover block p-6"
             >
-              <span className="text-[#C0C0C0] font-semibold">
+              <span className="text-neon-300 font-semibold">
                 Table &amp; Bottle Pricing
               </span>
-              <p className="text-[#888] text-sm mt-2">
+              <p className="text-frost-500 text-sm mt-2">
                 Full menus at londonbottleservice.com
               </p>
             </a>
@@ -131,12 +137,12 @@ export default function ClubsPage() {
               href="https://mayfairtonight.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="block bg-[#141414] border border-[#222] hover:border-[#333] rounded-2xl p-6 text-center transition-colors"
+              className="glass-card glass-card-hover block p-6"
             >
-              <span className="text-[#C0C0C0] font-semibold">
+              <span className="text-neon-300 font-semibold">
                 Tonight&apos;s Events
               </span>
-              <p className="text-[#888] text-sm mt-2">
+              <p className="text-frost-500 text-sm mt-2">
                 What&apos;s on tonight at mayfairtonight.com
               </p>
             </a>

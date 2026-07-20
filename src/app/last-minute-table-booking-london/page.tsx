@@ -92,7 +92,7 @@ export default function LastMinuteTableBookingPage() {
   ]);
 
   return (
-    <main className="min-h-screen bg-[#0A0A0A] text-white">
+    <main className="min-h-screen text-white">
       <SchemaMarkup schema={[articleSchema, faqSchema, breadcrumbSchema]} />
 
       {/* Hero */}
@@ -101,26 +101,28 @@ export default function LastMinuteTableBookingPage() {
           src="/gallery/images/fe4414_25212b50087449d0b99b5afa8c93287d.jpg"
           alt="VIP table booking at a London nightclub with bottle service"
           fill
-          className="object-cover"
+          className="object-cover animate-slow-zoom"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-black/80 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-night-950 via-night-950/70 to-night-950/30" />
+        <div className="glow-orb w-[480px] h-[380px] bg-neon-500/25 -top-32 -right-24" aria-hidden />
         <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20 text-center">
-          <p className="text-white/80 text-sm uppercase tracking-[0.2em] mb-6">
+          <span className="chip chip-accent animate-fade-up mb-6">
+            <span className="live-dot scale-75" aria-hidden />
             Same-Day VIP Tables
-          </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
-            Last Minute Table Booking London
+          </span>
+          <h1 className="animate-fade-up anim-delay-1 font-display font-extrabold text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.1] mb-6">
+            Last Minute Table Booking <span className="serif-accent text-gradient">London</span>
           </h1>
-          <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed mb-4">
+          <p className="animate-fade-up anim-delay-2 text-lg md:text-xl text-frost-100/85 max-w-2xl mx-auto leading-relaxed mb-4">
             Need a VIP table tonight? We check live availability across every
             major London club and confirm your booking via WhatsApp in minutes.
             No deposits, no booking fees, no hassle.
           </p>
           <time
             dateTime={now}
-            className="inline-block text-xs text-white/60 mb-10"
+            className="animate-fade-up anim-delay-3 inline-block text-xs text-frost-300 mb-10"
           >
             Updated {new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/London' })}
           </time>
@@ -133,13 +135,14 @@ export default function LastMinuteTableBookingPage() {
       </section>
 
       {/* Table Minimums Quick Reference */}
-      <section className="bg-[#0A0A0A] py-20 md:py-28 border-t border-[#222]">
+      <section className="section-glow py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Table Minimums — Quick Reference
+          <div className="max-w-xl mb-12 md:mb-16">
+            <span className="eyebrow">Pricing</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
+              Table Minimums — <span className="serif-accent text-gradient">Quick Reference</span>
             </h2>
-            <p className="text-[#BBB] text-base max-w-xl mx-auto">
+            <p className="text-frost-300 text-base">
               Minimum spends at London&apos;s top clubs. These are starting
               prices — premium positions and peak nights may be higher. All
               minimums are spend on bottles and drinks, not an additional fee.
@@ -149,30 +152,30 @@ export default function LastMinuteTableBookingPage() {
             {lastMinuteClubs.map((club) => (
               <div
                 key={club.slug}
-                className="bg-[#141414] border border-[#222] rounded-2xl p-6 text-center"
+                className="glass-card p-6 text-center"
               >
                 <Link
                   href={`/clubs/${club.slug}`}
-                  className="text-lg font-bold text-white hover:text-[#C0C0C0] transition-colors"
+                  className="text-lg font-bold text-white hover:text-neon-200 transition-colors"
                 >
                   {club.name}
                 </Link>
-                <p className="text-2xl font-bold text-[#C0C0C0] mt-2">
+                <p className="font-display text-2xl font-bold text-neon-300 mt-2">
                   {club.tableMinimum}
                 </p>
-                <p className="text-xs text-[#888] mt-1">{club.area}</p>
-                <p className="text-xs text-[#BBB] mt-3">{club.lastMinuteNote}</p>
+                <p className="text-xs text-frost-500 mt-1">{club.area}</p>
+                <p className="text-xs text-frost-300 mt-3">{club.lastMinuteNote}</p>
               </div>
             ))}
           </div>
-          <div className="text-center mt-10">
-            <p className="text-[#888] text-sm">
+          <div className="mt-10">
+            <p className="text-frost-500 text-sm">
               For detailed pricing breakdowns, bottle menus, and package options, visit{' '}
               <a
                 href="https://londonbottleservice.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#C0C0C0] hover:text-white transition-colors"
+                className="text-neon-300 hover:text-white transition-colors"
               >
                 London Bottle Service
               </a>
@@ -183,13 +186,14 @@ export default function LastMinuteTableBookingPage() {
 
       {/* Available Tonight */}
       {lastMinuteTonight.length > 0 && (
-        <section className="bg-[#0A0A0A] py-20 md:py-28 border-t border-[#222]">
+        <section className="py-20 md:py-28 border-t border-white/[0.06]">
           <div className="max-w-5xl mx-auto px-6 sm:px-8">
-            <div className="text-center mb-12 md:mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Tables Available Tonight
+            <div className="max-w-xl mb-12 md:mb-16">
+              <span className="eyebrow">Live availability</span>
+              <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
+                Tables Available <span className="serif-accent text-gradient">Tonight</span>
               </h2>
-              <p className="text-[#BBB] text-base max-w-xl mx-auto">
+              <p className="text-frost-300 text-base">
                 These clubs are open tonight and known for accommodating
                 same-day table bookings. Availability is live — message
                 us on WhatsApp for an instant check.
@@ -209,13 +213,14 @@ export default function LastMinuteTableBookingPage() {
       )}
 
       {/* All Last Minute Friendly Clubs */}
-      <section className="bg-[#0A0A0A] py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              All Last-Minute-Friendly Venues
+          <div className="max-w-xl mb-12 md:mb-16">
+            <span className="eyebrow">The venues</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
+              All Last-Minute-Friendly <span className="serif-accent text-gradient">Venues</span>
             </h2>
-            <p className="text-[#BBB] text-base max-w-xl mx-auto">
+            <p className="text-frost-300 text-base">
               Every London club we work with that regularly accommodates
               same-day table bookings. Whether it is for tonight, tomorrow,
               or this weekend — these are the venues where last-minute
@@ -235,12 +240,13 @@ export default function LastMinuteTableBookingPage() {
       </section>
 
       {/* Editorial Content */}
-      <section className="bg-[#0A0A0A] py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-3xl mx-auto px-6 sm:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
-            How Last-Minute Table Booking Works
+          <span className="eyebrow">The guide</span>
+          <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mt-4 mb-8">
+            How Last-Minute Table Booking <span className="serif-accent text-gradient">Works</span>
           </h2>
-          <div className="space-y-5 text-[#BBB] text-sm leading-relaxed">
+          <div className="space-y-5 text-frost-300 text-sm leading-relaxed">
             <p>
               The image most people have of VIP table booking involves weeks
               of planning, large deposits, and inflexible cancellation policies.
@@ -252,7 +258,7 @@ export default function LastMinuteTableBookingPage() {
               is the advantage of having direct relationships with every
               major venue&apos;s reservations team.
             </p>
-            <h3 className="text-xl font-bold text-white pt-4">
+            <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               The Step-by-Step Process
             </h3>
             <p>
@@ -275,7 +281,7 @@ export default function LastMinuteTableBookingPage() {
               the availability or pricing does not work for you, there is
               no obligation.
             </p>
-            <h3 className="text-xl font-bold text-white pt-4">
+            <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               What Your Money Actually Gets You
             </h3>
             <p>
@@ -299,7 +305,7 @@ export default function LastMinuteTableBookingPage() {
               any night where the stakes are high, that peace of mind
               is worth the commitment.
             </p>
-            <h3 className="text-xl font-bold text-white pt-4">
+            <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               Which Nights Have the Best Last-Minute Availability
             </h3>
             <p>
@@ -315,7 +321,7 @@ export default function LastMinuteTableBookingPage() {
               popular clubs sometimes have cancellation tables that open
               up on the day.
             </p>
-            <h3 className="text-xl font-bold text-white pt-4">
+            <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               Timing Your Last-Minute Booking
             </h3>
             <p>
@@ -333,7 +339,7 @@ export default function LastMinuteTableBookingPage() {
             <p>
               <strong className="text-white">After 10pm:</strong> You are relying on cancellations and no-shows. Still possible — we have arranged tables at 11pm on Saturdays — but your choice of venue narrows considerably.
             </p>
-            <h3 className="text-xl font-bold text-white pt-4">
+            <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               Why Some Clubs Are More Accommodating
             </h3>
             <p>
@@ -350,7 +356,7 @@ export default function LastMinuteTableBookingPage() {
               booked on their website. This is the single biggest
               advantage of booking through us rather than directly.
             </p>
-            <h3 className="text-xl font-bold text-white pt-4">
+            <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               Why Book Through Us Instead of Directly
             </h3>
             <p>
@@ -369,7 +375,7 @@ export default function LastMinuteTableBookingPage() {
                 href="https://londonbottleservice.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#C0C0C0] hover:text-white transition-colors"
+                className="text-neon-300 hover:text-white transition-colors"
               >
                 London Bottle Service
               </a>
@@ -378,7 +384,7 @@ export default function LastMinuteTableBookingPage() {
                 href="https://mayfairtonight.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#C0C0C0] hover:text-white transition-colors"
+                className="text-neon-300 hover:text-white transition-colors"
               >
                 Mayfair Tonight
               </a>.
@@ -388,18 +394,19 @@ export default function LastMinuteTableBookingPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-[#0A0A0A] py-20 md:py-28 border-t border-[#222]">
+      <section className="section-glow py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-3xl mx-auto px-6 sm:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-12 text-center">
-            Last Minute Table Booking FAQ
+          <span className="eyebrow">Questions</span>
+          <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mt-4 mb-12">
+            Last Minute Table Booking <span className="serif-accent text-gradient">FAQ</span>
           </h2>
           <div className="space-y-8">
             {faqs.map((faq) => (
-              <div key={faq.question} className="bg-[#141414] border border-[#222] rounded-2xl p-6 md:p-8">
-                <h3 className="text-lg font-semibold text-white mb-3 text-center">
+              <div key={faq.question} className="glass-card p-6 md:p-8">
+                <h3 className="font-display text-lg font-bold tracking-tight text-white mb-3">
                   {faq.question}
                 </h3>
-                <p className="text-[#BBB] text-sm leading-relaxed text-center">
+                <p className="text-frost-300 text-sm leading-relaxed">
                   {faq.answer}
                 </p>
               </div>
@@ -409,57 +416,58 @@ export default function LastMinuteTableBookingPage() {
       </section>
 
       {/* Internal Links */}
-      <section className="bg-[#0A0A0A] py-20 md:py-28 border-t border-[#222]">
+      <section className="py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-10 text-center">
-            Explore More
+          <span className="eyebrow">Keep going</span>
+          <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mt-4 mb-10">
+            Explore <span className="serif-accent text-gradient">More</span>
           </h2>
-          <div className="grid md:grid-cols-2 gap-10 max-w-3xl mx-auto">
-            <div className="text-center">
-              <h3 className="font-semibold text-white mb-4">Tonight</h3>
+          <div className="grid md:grid-cols-2 gap-10 max-w-3xl">
+            <div>
+              <h3 className="font-display font-bold tracking-tight text-white mb-4">Tonight</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/clubs-tonight-london" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <Link href="/clubs-tonight-london" className="text-frost-300 hover:text-white transition-colors text-sm">
                     All clubs open tonight &rarr;
                   </Link>
                 </li>
                 <li>
-                  <Link href="/mayfair-clubs-tonight" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <Link href="/mayfair-clubs-tonight" className="text-frost-300 hover:text-white transition-colors text-sm">
                     Mayfair clubs tonight &rarr;
                   </Link>
                 </li>
                 <li>
-                  <Link href="/guestlist-tonight-london" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <Link href="/guestlist-tonight-london" className="text-frost-300 hover:text-white transition-colors text-sm">
                     Get on a guestlist tonight &rarr;
                   </Link>
                 </li>
                 <li>
-                  <Link href="/best-clubs-this-weekend-london" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <Link href="/best-clubs-this-weekend-london" className="text-frost-300 hover:text-white transition-colors text-sm">
                     Best clubs this weekend &rarr;
                   </Link>
                 </li>
               </ul>
             </div>
-            <div className="text-center">
-              <h3 className="font-semibold text-white mb-4">Guides &amp; Pricing</h3>
+            <div>
+              <h3 className="font-display font-bold tracking-tight text-white mb-4">Guides &amp; Pricing</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/best-clubs-in-london" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <Link href="/best-clubs-in-london" className="text-frost-300 hover:text-white transition-colors text-sm">
                     Best clubs in London — ranked &rarr;
                   </Link>
                 </li>
                 <li>
-                  <Link href="/guides/how-to-get-into-london-clubs" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <Link href="/guides/how-to-get-into-london-clubs" className="text-frost-300 hover:text-white transition-colors text-sm">
                     How to get into London clubs &rarr;
                   </Link>
                 </li>
                 <li>
-                  <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-frost-300 hover:text-white transition-colors text-sm">
                     London Bottle Service — full pricing guide &rarr;
                   </a>
                 </li>
                 <li>
-                  <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-[#BBB] hover:text-white transition-colors text-sm">
+                  <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-frost-300 hover:text-white transition-colors text-sm">
                     Mayfair Tonight &rarr;
                   </a>
                 </li>
@@ -472,7 +480,7 @@ export default function LastMinuteTableBookingPage() {
       {/* Bottom CTA */}
       <section className="max-w-5xl mx-auto px-6 sm:px-8 py-20 md:py-28">
         <div className="text-center">
-          <p className="text-[#888] text-sm mb-5">
+          <p className="text-frost-500 text-sm mb-5">
             Ready to book? One WhatsApp message and your table is sorted.
           </p>
           <div className="flex justify-center">

@@ -11,7 +11,7 @@ export default function BlogCard({ post, featured = false }: BlogCardProps) {
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className={`group relative block bg-[#141414] border border-[#222] rounded-2xl transition-all duration-500 hover:border-[#444] hover:shadow-[0_0_40px_rgba(255,255,255,0.04)] hover:-translate-y-0.5 overflow-hidden`}
+      className="glass-card glass-card-hover group relative block overflow-hidden"
     >
       {/* Featured image */}
       <div className={`relative w-full overflow-hidden ${featured ? 'aspect-video' : 'aspect-[3/2]'}`}>
@@ -19,34 +19,29 @@ export default function BlogCard({ post, featured = false }: BlogCardProps) {
           src={post.featuredImage}
           alt={post.title}
           fill
-          className="object-cover group-hover:scale-105 transition-transform duration-500"
+          className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]"
           sizes={featured ? '(max-width: 768px) 100vw, 100vw' : '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#141414] via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-night-950/95 via-night-950/15 to-transparent" />
+
+        <div className="absolute top-4 left-4 flex items-center gap-2">
+          <span className="chip chip-accent backdrop-blur-md">{post.category}</span>
+        </div>
       </div>
 
-      {/* Subtle gradient overlay on hover */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-2xl" />
-
-      <div className={`relative z-10 ${featured ? 'p-8' : 'p-6'}`}>
-        {/* Category badge + date centered */}
-        <div className="flex items-center justify-center gap-3 mb-5">
-          <span className="text-xs font-medium text-[#C0C0C0] bg-white/5 px-3 py-1 rounded-full border border-white/[0.04]">
-            {post.category}
-          </span>
-          <span className="text-xs text-[#888]">
-            {new Date(post.publishedDate).toLocaleDateString('en-GB', {
-              day: 'numeric',
-              month: 'short',
-              year: 'numeric',
-            })}
-          </span>
-        </div>
+      <div className={featured ? 'p-6 md:p-8 pt-5 md:pt-5' : 'p-5 md:p-6 pt-4 md:pt-4'}>
+        <time className="text-xs text-frost-500 font-medium tracking-wide uppercase">
+          {new Date(post.publishedDate).toLocaleDateString('en-GB', {
+            day: 'numeric',
+            month: 'short',
+            year: 'numeric',
+          })}
+        </time>
 
         {/* Title */}
         <h3
-          className={`font-bold text-white text-center leading-snug tracking-tight ${
-            featured ? 'text-xl md:text-2xl' : 'text-lg'
+          className={`font-display font-bold text-white leading-snug tracking-tight mt-2 group-hover:text-neon-200 transition-colors duration-300 ${
+            featured ? 'text-2xl md:text-3xl' : 'text-lg md:text-xl'
           }`}
         >
           {post.title}
@@ -54,29 +49,25 @@ export default function BlogCard({ post, featured = false }: BlogCardProps) {
 
         {/* Excerpt */}
         <p
-          className={`text-[#BBB] text-center leading-relaxed ${
-            featured ? 'text-sm md:text-base mt-4' : 'text-sm mt-3'
+          className={`text-frost-300 leading-relaxed ${
+            featured ? 'text-sm md:text-base mt-3' : 'text-sm mt-2.5'
           }`}
         >
           {post.excerpt}
         </p>
 
-        {/* Tags centered */}
-        <div className="flex flex-wrap justify-center gap-2 mt-5">
-          {post.tags.slice(0, 3).map((tag) => (
-            <span
-              key={tag}
-              className="text-xs bg-white/5 text-[#888] px-3 py-1 rounded-full border border-white/[0.04]"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-
-        {/* Read Article link */}
-        <div className="text-center mt-5">
-          <span className="text-sm text-[#C0C0C0] group-hover:text-white transition-colors duration-300">
-            Read Article →
+        {/* Footer row */}
+        <div className="flex items-center justify-between mt-5 pt-4 border-t border-white/[0.06]">
+          <div className="flex flex-wrap gap-1.5">
+            {post.tags.slice(0, 2).map((tag) => (
+              <span key={tag} className="chip">
+                {tag}
+              </span>
+            ))}
+          </div>
+          <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-neon-300 group-hover:text-white transition-colors duration-300 whitespace-nowrap">
+            Read Article
+            <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
           </span>
         </div>
       </div>
