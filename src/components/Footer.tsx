@@ -180,12 +180,18 @@ export default function Footer() {
           <div className="text-frost-400 text-sm">
             © {new Date().getFullYear()} London Clubs Tonight. The definitive guide to London&apos;s best nightclubs.
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
             <Link href="/contact" className="text-frost-400 hover:text-neon-200 text-sm transition-colors">
               Contact
             </Link>
             <Link href="/best-clubs-in-london" className="text-frost-400 hover:text-neon-200 text-sm transition-colors">
               Best Clubs
+            </Link>
+            <Link href="/about-the-editor" className="text-frost-400 hover:text-neon-200 text-sm transition-colors">
+              About
+            </Link>
+            <Link href="/privacy" className="text-frost-400 hover:text-neon-200 text-sm transition-colors">
+              Privacy
             </Link>
           </div>
         </div>

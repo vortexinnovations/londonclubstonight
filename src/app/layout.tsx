@@ -27,6 +27,7 @@ import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getLocalBusinessSchema, getWebSiteSchema } from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://londonclubstonight.com'),
   title: {
     default: 'London Clubs Tonight — Where to Go Out in London Tonight',
     template: '%s | London Clubs Tonight',

@@ -1,9 +1,10 @@
 import type { MetadataRoute } from 'next';
 import { clubs } from '@/lib/clubs';
 import { blogPosts } from '@/lib/blog';
+import { SITE_URL, staticRoutes } from '@/lib/site-routes';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://londonclubstonight.com';
+  const baseUrl = SITE_URL;
 
   const clubPages = clubs.map(club => ({
     url: `${baseUrl}/clubs/${club.slug}`,
@@ -19,172 +20,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [
-    {
-      url: baseUrl,
+  const entries: MetadataRoute.Sitemap = [];
+
+  for (const route of staticRoutes) {
+    entries.push({
+      url: route.path === '/' ? baseUrl : `${baseUrl}${route.path}`,
       lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/best-clubs-in-london`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.95,
-    },
-    {
-      url: `${baseUrl}/clubs`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.7,
-    },
-    ...clubPages,
-    {
-      url: `${baseUrl}/guides/hardest-clubs-to-get-into`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/guides/clubs-open-late`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/guides/how-to-get-into-london-clubs`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/guides/london-clubs-by-music-genre`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/guides`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/areas/mayfair`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/areas/central-london`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.75,
-    },
-    {
-      url: `${baseUrl}/areas/soho`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.75,
-    },
-    {
-      url: `${baseUrl}/areas`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/contact`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/about-the-editor`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.5,
-    },
-    {
-      url: `${baseUrl}/blog`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    ...blogPages,
-    // Core urgent-intent pages
-    {
-      url: `${baseUrl}/clubs-tonight-london`,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/mayfair-clubs-tonight`,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/best-clubs-this-weekend-london`,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/guestlist-tonight-london`,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/last-minute-table-booking-london`,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.9,
-    },
-    // Urgent-intent support pages
-    {
-      url: `${baseUrl}/can-you-get-into-tape-london-tonight`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/best-clubs-for-last-minute-tables-london`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/where-to-go-out-tonight-in-mayfair`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/late-night-clubs-london-tonight`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/clubs-open-sunday-night-london`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/friday-nightclubs-london`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/saturday-nightclubs-london`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-  ];
+      changeFrequency: route.changeFrequency,
+      priority: route.priority,
+    });
+
+    // Detail pages follow their index page, preserving the previous ordering.
+    if (route.path === '/clubs') entries.push(...clubPages);
+    if (route.path === '/blog') entries.push(...blogPages);
+  }
+
+  return entries;
 }

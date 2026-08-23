@@ -1,5 +1,15 @@
 import Link from 'next/link';
 
+const recoveryLinks = [
+  { href: '/clubs', label: 'All clubs' },
+  { href: '/clubs-tonight-london', label: 'Open tonight' },
+  { href: '/guides', label: 'Guides' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/contact', label: 'Book a table' },
+  { href: '/sitemap.xml', label: 'Sitemap', external: true },
+  { href: '/llms.txt', label: 'llms.txt (for agents)', external: true },
+];
+
 export default function NotFound() {
   return (
     <section className="relative min-h-[80svh] flex items-center justify-center overflow-hidden">
@@ -31,6 +41,35 @@ export default function NotFound() {
           >
             Best Clubs in London
           </Link>
+        </div>
+
+        {/* Recovery links. Kept in the HTML so crawlers and agents that land on
+            a dead URL can find their way without a second request. */}
+        <div className="animate-fade-up anim-delay-4 mt-14 pt-8 border-t border-white/[0.06]">
+          <h2 className="font-display text-sm font-bold uppercase tracking-[0.22em] text-frost-300 mb-5">
+            Where to look next
+          </h2>
+          <ul className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm">
+            {recoveryLinks.map((link) => (
+              <li key={link.href}>
+                {link.external ? (
+                  <a
+                    href={link.href}
+                    className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link
+                    href={link.href}
+                    className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                )}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

@@ -19,6 +19,12 @@ const nextConfig: NextConfig = {
         source: "/(.*)",
         headers: [
           {
+            // Responses are content-negotiated on Accept (HTML vs Markdown),
+            // so caches must key on it. See https://acceptmarkdown.com.
+            key: "Vary",
+            value: "Accept, Accept-Encoding",
+          },
+          {
             key: "Strict-Transport-Security",
             value: "max-age=31536000; includeSubDomains",
           },

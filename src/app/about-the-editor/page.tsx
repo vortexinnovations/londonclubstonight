@@ -34,9 +34,7 @@ export default function AboutTheEditorPage() {
               description:
                 'Daniel covers tonight-focused nightlife - what is open, what is good, and what you can actually get into right now in London. He tracks event listings, DJ schedules, and last-minute availability.',
               worksFor: {
-                '@type': 'Organization',
-                name: 'London Clubs Tonight',
-                url: 'https://londonclubstonight.com',
+                '@id': 'https://londonclubstonight.com/#organization',
               },
               knowsAbout: [
                 'London nightlife',
