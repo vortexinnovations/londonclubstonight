@@ -722,6 +722,25 @@ export const blogPosts: BlogPost[] = [
       { question: 'Are festival after-parties ticketed?', answer: 'The official ones usually are, and they are limited. The unofficial route, a regular club night absorbing the festival crowd, works on normal entry. Either way, on a big festival weekend the strong play is confirming your night before the headline set starts.' },
     ],
   },
+  {
+    slug: 'freshers-week-london-clubs',
+    title: 'Freshers Week in London: A First Year Guide to the City Nightlife',
+    metaTitle: 'Freshers Week London Clubs 2026: A First-Year Guide',
+    metaDescription: 'Freshers week in London explained: union nights versus city clubs, the ID rules that catch first-years out, realistic costs, and how to get home safely.',
+    excerpt: 'London is the biggest freshers intake in the country. How the union nights and the city clubs actually differ, and how to start the year without wasting it.',
+    featuredImage: '/gallery/images/fe4414_0da8a7994beb4cf9a8cbc05f1e3b133a.jpg',
+    category: 'Going Out',
+    tags: ['freshers', 'students', 'september'],
+    publishedDate: '2026-09-04',
+    updatedDate: '2026-09-04',
+    relatedClubs: ['ministry-of-sound', 'beat-london', 'tabu-london'],
+    faqs: [
+      { question: 'What ID do you need for London clubs as a fresher?', answer: 'A passport, a UK photocard driving licence, or a PASS-accredited card. A student card is not accepted as proof of age, and photos of documents are usually refused. London clubs are 18 and over and the door will check, as of September 2026.' },
+      { question: 'Are union freshers events better than going to a London club?', answer: 'They are better for meeting people, because everyone there is new and the format is built for it. City clubs are better nights out on their own terms but assume you already have a group. Most first-years get the best of the week by doing both for different reasons.' },
+      { question: 'How much should a fresher budget for a night out in London?', answer: 'Union nights are cheap by design; a city night costs considerably more once entry, drinks and getting home are counted. The common mistake is spending heavily across week one and having nothing left for October, so plan the week rather than the night.' },
+      { question: 'Can 18 year olds get into all London clubs?', answer: 'Legally 18 is the minimum, but not every venue suits an 18 year old. Some rooms run a noticeably older crowd and a few operate 21-plus policies on their busiest nights, so check the venue rather than assuming the legal age is the whole answer.' },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {

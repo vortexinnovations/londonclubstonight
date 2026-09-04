@@ -3157,6 +3157,104 @@ function getPostContent(slug: string): React.ReactNode {
       );
 
 
+    case 'freshers-week-london-clubs':
+      return (
+        <>
+          <p className="text-frost-300 leading-relaxed mb-4 italic">
+            By <Link href="/about-the-editor" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Daniel Whitaker</Link>, Nightlife Scout | Last updated: 4 September 2026
+          </p>
+          <p className="text-frost-300 leading-relaxed mb-4">
+            Every September the largest student intake in the country arrives in London at once, and a good share of them go out in the first week. It is the one moment in the year when tens of thousands of people are choosing where to spend their nights from a standing start, with no idea how the city actually works. Freshers week here is not one event; it is two parallel nights out happening in the same city, and knowing which one you are on saves a lot of money and disappointment.
+          </p>
+          <p className="text-frost-300 leading-relaxed mb-4">
+            This is how freshers week really plays out in London, what separates the union route from the city route, and the practical things that catch first-years out, as of September 2026.
+          </p>
+
+          <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mt-10 mb-4">The Two Freshers Weeks</h2>
+          <p className="text-frost-300 leading-relaxed mb-4">
+            The first is the official one your university sells you: wristbands, a week of themed events, coaches or walking groups, and a room full of people in the same position as you. The second is the city itself, which does not run a freshers week at all and simply carries on being London. Both are worth doing, and they are good at completely different things.
+          </p>
+          <p className="text-frost-300 leading-relaxed mb-4">
+            The union route is unbeatable for the thing that actually matters in week one, which is meeting people. Everyone is new, nobody has a group yet, and the whole format is built around that. What it is not is a guide to London nightlife: the venues are chosen for capacity and price, often nowhere near the rooms you would pick for the music. The city route gives you the real scene and a much better night on its own terms, but it asks you to already have people to go with. The mistake is treating them as rivals. Use the union week to find your people, then use the city to find your nights.
+          </p>
+
+          <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mt-10 mb-4">The Door Is 18 and the ID Rules Are Strict</h2>
+          <p className="text-frost-300 leading-relaxed mb-4">
+            London clubs are 18 and over, and the door will check. This is the single thing that ends more freshers nights than anything else, because a student card is not accepted ID anywhere that matters. What works is a passport, a UK photocard driving licence, or a PASS-accredited card, and it needs to be the physical document rather than a photo of it. If you have just moved to the country, sort a usable ID in the first fortnight rather than the first crisis.
+          </p>
+          <p className="text-frost-300 leading-relaxed mb-4">
+            Age is also worth thinking about beyond the legal minimum. Plenty of London rooms run an older crowd, and a few operate a 21-plus policy on their busiest nights, so a venue can be a poor fit at 18 even when the door lets you in. Our{" "}
+            <Link href="/blog/london-club-age-guide" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">London club age guide</Link>{" "}
+            sets out which venues suit which age group, and it is the most useful thing a first-year can read before going out.
+          </p>
+
+          <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mt-10 mb-4">What It Costs, Honestly</h2>
+          <p className="text-frost-300 leading-relaxed mb-4">
+            The financial shape of freshers week is worth seeing before it happens. Union events are cheap by design and the wristband looks like good value, which it usually is. The city is a different economy: entry, drinks and the journey home add up quickly, and the gap between a union night and a West End night is much wider than new arrivals expect. Our breakdown of{" "}
+            <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">what a London night out actually costs</Link>{" "}
+            gives you the real figures rather than the optimistic ones.
+          </p>
+          <p className="text-frost-300 leading-relaxed mb-4">
+            The pattern we see every September is the same: a lot of money spent in seven days on nights that were not especially good, followed by a very quiet October. The better play is to go out less in week one than you think you should, and keep something back for the nights you will actually choose for yourself once you know a few people and the city a little.
+          </p>
+
+          <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mt-10 mb-4">Choose the Room by Sound, Not by Hype</h2>
+          <p className="text-frost-300 leading-relaxed mb-4">
+            The fastest way to go from freshers events to genuinely good nights is to stop picking venues by name recognition and start picking by music. London is unusually well served here: almost every sound has a room that does it properly, and the difference between the right room and a famous room is the difference between a night you talk about and a night you forget. Our guide to{" "}
+            <Link href="/guides/london-clubs-by-music-genre" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">London clubs by music genre</Link>{" "}
+            is built for exactly this, and Time Out&apos;s{" "}
+            <a href="https://www.timeout.com/london/clubs" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">guide to the city&apos;s clubs</a>{" "}
+            is a good second opinion on how broad the scene is beyond the places freshers marketing points you at.
+          </p>
+
+          <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mt-10 mb-4">Getting Home Is Part of the Plan</h2>
+          <p className="text-frost-300 leading-relaxed mb-4">
+            This is the part first-years skip and regret. London is large, student accommodation is often nowhere near the clubs, and a night that ends at 3am in the wrong part of town without a plan is expensive at best. Decide before you leave how you are getting back, keep enough battery to actually book it, and agree with your group that you leave together. Our guide to{" "}
+            <Link href="/blog/getting-home-from-london-clubs" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">getting home from London clubs</Link>{" "}
+            covers what runs late and what does not.
+          </p>
+          <p className="text-frost-300 leading-relaxed mb-4">
+            Two more habits worth forming in week one, because they never stop being useful: pace the drinks across the night rather than the first hour, and keep an eye on the people you came with. Nobody plans for a friend to have a bad night, and the groups that stay together are the ones that avoid it.
+          </p>
+
+          <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mt-10 mb-4">The Freshers Mistakes We See Every September</h2>
+          <p className="text-frost-300 leading-relaxed mb-4">
+            Four come round every year. Turning up somewhere strict in whatever you wore to the union bar, when the door was always going to say no. Arriving far too late on a busy night, then queueing for an hour with no guarantee. Splitting the group across two venues and spending the night trying to reunite it. And treating week one as the whole year, when the good news is that London runs seven nights a week for the next three years and the best nights are almost never in the first seven days.
+          </p>
+
+          <p className="text-frost-300 leading-relaxed mb-4">
+            Freshers week is worth doing properly and not worth exhausting yourself over. Do the union nights for the people, then start choosing your own rooms once you know what you like. If you want a hand with the second half, tell us the group, the sound and the night, and we will point you somewhere that fits.{" "}
+            <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Message us on WhatsApp</a>{" "}
+            or see{" "}
+            <Link href="/clubs-tonight-london" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">what is on tonight</Link>.
+          </p>
+
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Freshers Week in London: A First Year Guide to the City Nightlife",
+            "datePublished": "2026-09-04",
+            "dateModified": "2026-09-04",
+            "author": {
+              "@type": "Person",
+              "name": "Daniel Whitaker",
+              "url": "https://londonclubstonight.com/about-the-editor/",
+              "jobTitle": "Nightlife Scout"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "London Clubs Tonight",
+              "url": "https://londonclubstonight.com"
+            },
+            "image": "https://londonclubstonight.com/gallery/images/fe4414_0da8a7994beb4cf9a8cbc05f1e3b133a.jpg",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://londonclubstonight.com/blog/freshers-week-london-clubs"
+            }
+          }) }} />
+        </>
+      );
+
     default:
       return (
         <p className="text-frost-300 leading-relaxed">
