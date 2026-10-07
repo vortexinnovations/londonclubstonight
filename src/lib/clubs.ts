@@ -688,14 +688,14 @@ For the same sound and crowd today, Tape London on Hanover Square is the closest
     description: 'Sophisticated Mayfair venue offering premium cocktails and late-night clubbing in an elegant setting. Tables from £1,000.',
     longDescription: `Selene London brings a refined elegance to Mayfair's late-night scene. The venue positions itself at the intersection of cocktail bar sophistication and nightclub energy — a space where the evening builds gradually from intimate drinks to a full dancefloor experience.
 
-The design is understated luxury. Clean lines, warm materials, and lighting that shifts seamlessly as the venue transitions from its early-evening cocktail bar mode to its late-night club format. The aesthetic is feminine without being exclusive to women — it's a venue that appeals to anyone who appreciates design and atmosphere over volume and spectacle.
+The design is understated luxury. Clean lines, warm materials, and lighting that shifts seamlessly as the venue transitions from its early-evening cocktail bar mode to its late-night club format. The aesthetic is feminine without being exclusive to women — it's a venue that appeals to anyone who appreciates design and atmosphere over volume and spectacle. Alongside the club rooms, Selene also has private bowling lanes, which can be booked together with a table.
 
 The cocktail programme is a genuine draw. Unlike clubs where drinks are an afterthought between bottle service and shots, Selene takes its cocktails seriously. The bartenders are skilled, the ingredients are premium, and the menu changes seasonally. This attracts a crowd that appreciates quality and is willing to pay for it.
 
 As the night progresses, the music builds. The genre leans into sophisticated house and RnB — tracks chosen for taste rather than chart position. The DJs programme the evening as a journey rather than an assault, and the result is a late-night atmosphere that feels grown-up without being boring.
 
 Tables start from £1,000 and the service is polished. The crowd is well-dressed, predominantly in their late twenties to late thirties, and appreciates the venue's more refined approach. Guestlist is available and the door policy is selective but welcoming to the right crowd.`,
-    address: 'Mayfair, London W1',
+    address: '4 Winsley Street, Fitzrovia, London W1W 8HF',
     area: 'Mayfair',
     areas: ['Mayfair', 'Central London'],
     musicGenres: ['House', 'RnB', 'Deep House'],
