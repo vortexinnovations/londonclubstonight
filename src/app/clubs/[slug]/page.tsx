@@ -87,7 +87,12 @@ export default async function ClubPage({
   const renamedFrom = (club.formerName ?? '').replace(/ London$/i, '');
   // Closed venues are not sold on this page.
   const notBookable = isClosed;
-  const areaSlug = club.area.toLowerCase().replace(/\s+/g, '-');
+  // Only these areas have a page; any other (Fitzrovia, St James's) links to
+  // Central London, which lists every club, instead of a 404.
+  const AREA_PAGES = new Set(['mayfair', 'soho', 'central-london']);
+  const ownAreaSlug = club.area.toLowerCase().replace(/\s+/g, '-');
+  const areaSlug = AREA_PAGES.has(ownAreaSlug) ? ownAreaSlug : 'central-london';
+  const areaLabel = AREA_PAGES.has(ownAreaSlug) ? club.area : 'Central London';
   const paragraphs = club.longDescription.split('\n\n').filter(Boolean);
   const openClubs = getOpenClubs();
   const alternatives = notBookable
@@ -374,10 +379,10 @@ export default async function ClubPage({
               className="glass-card glass-card-hover block p-7 text-center"
             >
               <span className="text-neon-300 font-semibold text-lg">
-                {club.area} Clubs
+                {areaLabel} Clubs
               </span>
               <p className="text-frost-500 text-sm mt-2">
-                Explore all nightclubs in the {club.area} area
+                Explore all nightclubs in the {areaLabel} area
               </p>
             </Link>
             <Link
