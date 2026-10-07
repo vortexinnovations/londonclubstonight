@@ -699,7 +699,7 @@ Tables start from £1,000 and the service is polished. The crowd is well-dressed
     area: 'Mayfair',
     areas: ['Mayfair', 'Central London'],
     musicGenres: ['House', 'RnB', 'Deep House'],
-    openingNights: 'Thursday, Friday, Saturday',
+    openingNights: 'Thursday, Friday, Saturday, Sunday',
     closingTime: '3:00am',
     dressCode: 'Smart elegant. Selene\'s refined atmosphere demands equally refined attire. Think polished and sophisticated.',
     tableMinimum: '£1,000',
