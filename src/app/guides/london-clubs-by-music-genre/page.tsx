@@ -19,13 +19,12 @@ const genreSections = [
     id: 'hip-hop-rnb',
     title: 'Hip-Hop & RnB',
     description: 'The dominant sound across most of London\'s Mayfair clubs. If you want hip-hop, you have the most options — the question is which venue suits your style and budget.',
-    slugs: ['tape-london', 'cirque-le-soir', 'tabu-london', 'funky-buddha', 'luna-club-london', 'beat-london', 'cuckoo-club'],
+    slugs: ['tape-london', 'cirque-le-soir', 'tabu-london', 'funky-buddha', 'beat-london', 'cuckoo-club'],
     notes: [
       { slug: 'tape-london', note: 'The gold standard for hip-hop in an intimate, exclusive setting. The sound system was originally designed for music production and the difference is audible.' },
       { slug: 'cirque-le-soir', note: 'Hip-hop and RnB played loud over circus entertainment. The music is the backdrop to the spectacle — expect current hits and crowd-pleasers rather than deep cuts.' },
       { slug: 'tabu-london', note: 'Arguably the purest hip-hop experience in Mayfair. The Japanese underground theme combined with focused hip-hop programming makes this feel different from the rest.' },
       { slug: 'funky-buddha', note: 'The legendary name carries a fun, accessible hip-hop and RnB soundtrack. DJs play crowd-pleasers and classics alongside current hits — the kind of music that gets everyone moving.' },
-      { slug: 'luna-club-london', note: 'A newer addition with a global edge — hip-hop and RnB blended with Afrobeats and amapiano. The production setup and lighting add a theatrical dimension to the music.' },
       { slug: 'beat-london', note: 'The sound system makes the hip-hop hit harder here than almost anywhere else. This is a venue for people who care about audio quality.' },
       { slug: 'cuckoo-club', note: 'The downstairs room at Cuckoo is dedicated hip-hop and RnB — louder, more energetic, and younger. The upstairs room is house music if you want a break.' },
     ],
@@ -57,14 +56,13 @@ const genreSections = [
     id: 'open-format',
     title: 'Open Format',
     description: 'Open format means the DJ plays across genres — hip-hop, house, pop, RnB, dance — reading the room and adjusting. These clubs prioritise energy over genre purity.',
-    slugs: ['luna-club-london', 'the-london-reign', 'selene-london', 'beat-london'],
+    slugs: ['the-london-reign', 'selene-london', 'beat-london'],
     notes: [
-      { slug: 'luna-club-london', note: 'The production setup pairs well with the open format approach. DJs move fluidly between hip-hop, RnB, Afrobeats, and amapiano, creating a global sound that keeps the energy high all night.' },
       { slug: 'the-london-reign', note: 'The showclub format means the music shifts throughout the evening — from sophisticated dinner accompaniment to full party energy. Expect mainstream hits, pop, RnB, and crowd-pleasers.' },
       { slug: 'selene-london', note: 'Elegant cocktail-bar-to-club concept with a sophisticated house soundtrack. The refined setting means the music enhances the atmosphere rather than dominating it — perfect for the grown-up crowd.' },
       { slug: 'beat-london', note: 'Open format delivered through one of London\'s best sound systems. The DJs vary by night but the consistent thread is energy and quality audio.' },
     ],
-    bestFor: 'Luna Club for energy and visuals, Reign for the theatrical dinner-to-club experience, Selene for sophisticated house-leaning nights, BEAT for pure audio quality.',
+    bestFor: 'Reign for the theatrical dinner-to-club experience, Selene for sophisticated house-leaning nights, BEAT for pure audio quality.',
   },
 ];
 
@@ -184,7 +182,7 @@ export default function MusicGenrePage() {
                 If house music is what you want, Maddox is your best Mayfair option, but Ministry of Sound is where the serious house heads go. The gap in sound quality and DJ calibre between Ministry and everywhere else is significant.
               </p>
               <p>
-                If you are a group with mixed music tastes, open format venues like Luna Club, Reign, and BEAT will keep everyone happy. Cuckoo Club also works because the two floors cover both house and hip-hop.
+                If you are a group with mixed music tastes, open format venues like Reign and BEAT will keep everyone happy. Cuckoo Club also works because the two floors cover both house and hip-hop.
               </p>
               <p>
                 If electronic and techno is your genre, Ministry of Sound is the only serious option on this list. London has other techno venues beyond our coverage, but within this selection, Ministry is unmatched.

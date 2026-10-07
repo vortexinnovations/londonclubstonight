@@ -52,7 +52,6 @@ const exclusiveClubs = [
   'maddox',
   'cuckoo-club',
   'dear-darling',
-  'luna-club-london',
   'selene-london',
   'beat-london',
   'ministry-of-sound',

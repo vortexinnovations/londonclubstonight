@@ -3295,8 +3295,9 @@ export default async function BlogPostPage({
   }
 
   const allPosts = await getMergedPosts();
+  // Closed venues are never shown as related clubs.
   const relatedClubs = clubs.filter((club) =>
-    post.relatedClubs.includes(club.slug)
+    club.status === 'open' && post.relatedClubs.includes(club.slug)
   );
   const morePosts = allPosts
     .filter((p) => p.slug !== post.slug)

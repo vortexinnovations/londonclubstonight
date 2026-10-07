@@ -50,7 +50,6 @@ const rankedSlugs = [
   'scotch-of-st-james',
   'cuckoo-club',
   'maddox',
-  'luna-club-london',
   'selene-london',
   'dear-darling',
   'beat-london',

@@ -8,7 +8,7 @@ const clubLinks = [
   { href: '/clubs/tabu-london', label: 'TABU London' },
   { href: '/clubs/funky-buddha', label: 'Funky Buddha' },
   { href: '/clubs/the-box-london', label: 'The Box' },
-  { href: '/clubs/luna-club-london', label: 'Luna Club' },
+  { href: '/clubs/luna-club-london', label: 'Luna Club (closed)' },
   { href: '/clubs/selene-london', label: 'Selene' },
 ];
 

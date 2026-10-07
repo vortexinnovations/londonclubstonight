@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import { clubs, getClubBySlug } from '@/lib/clubs';
+import { clubs, getClubBySlug, getOpenClubs } from '@/lib/clubs';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getNightClubSchema } from '@/components/SchemaMarkup';
 import type { Metadata } from 'next';
@@ -24,21 +24,29 @@ export async function generateMetadata({
     return { title: 'Club Not Found' };
   }
 
-  const title = `${club.name} London | Table Booking & Guestlist`;
-  const description = `Everything you need to know about ${club.name} nightclub in ${club.area}, London. Table prices from ${club.tableMinimum}, dress code, music, and guestlist access.`;
+  const isClosed = club.status === 'permanently-closed';
+  const fullName = /london$/i.test(club.name) ? club.name : `${club.name} London`;
+  const title = isClosed
+    ? `${fullName} Has Closed: ${club.area} Alternatives`
+    : `${club.name} London | Table Booking & Guestlist`;
+  const description = isClosed
+    ? `${fullName} in ${club.area} has closed. What it was, and the open London clubs with a similar crowd and music to book instead.`
+    : `Everything you need to know about ${club.name} nightclub in ${club.area}, London. Table prices from ${club.tableMinimum}, dress code, music, and guestlist access.`;
 
   return {
     title,
     description,
-    keywords: [
-      `${club.name} London`,
-      `${club.name} club`,
-      `${club.name} nightclub`,
-      `${club.name} table booking`,
-      `${club.name} guestlist`,
-      `${club.name} dress code`,
-      `${club.name} ${club.area}`,
-    ],
+    keywords: isClosed
+      ? [`${club.name} London`, `${club.name} club`, `${club.name} closed`, `${club.name} ${club.area}`]
+      : [
+          `${club.name} London`,
+          `${club.name} club`,
+          `${club.name} nightclub`,
+          `${club.name} table booking`,
+          `${club.name} guestlist`,
+          `${club.name} dress code`,
+          `${club.name} ${club.area}`,
+        ],
     openGraph: {
       title,
       description,
@@ -66,6 +74,12 @@ export default async function ClubPage({
   const isClosed = club.status === 'permanently-closed';
   const areaSlug = club.area.toLowerCase().replace(/\s+/g, '-');
   const paragraphs = club.longDescription.split('\n\n').filter(Boolean);
+  const openClubs = getOpenClubs();
+  const alternatives = isClosed
+    ? (club.alternatives ?? [])
+        .map((s) => openClubs.find((c) => c.slug === s))
+        .filter((c): c is NonNullable<typeof c> => Boolean(c))
+    : [];
 
   const schema = getNightClubSchema(
     club.name,
@@ -99,11 +113,25 @@ export default async function ClubPage({
           <div className="bg-red-500/10 border border-red-500/30 text-red-400 rounded-2xl p-6 text-center">
             <p className="font-semibold text-lg mb-2">Permanently Closed</p>
             <p className="text-sm leading-relaxed max-w-xl mx-auto">
-              {club.name} is permanently closed. This page is maintained for reference. Looking for clubs open tonight? Check our{' '}
+              {club.closedMessage ?? `${club.name} is permanently closed. This page is maintained for reference.`}{' '}
+              Looking for clubs open tonight? Check our{' '}
               <Link href="/clubs" className="underline hover:text-red-300 transition-colors">
                 best clubs guide
               </Link>.
             </p>
+            {alternatives.length > 0 && (
+              <div className="flex flex-wrap justify-center gap-3 mt-5">
+                {alternatives.map((alt) => (
+                  <Link
+                    key={alt.slug}
+                    href={`/clubs/${alt.slug}`}
+                    className="btn-ghost px-5 py-2.5 text-sm text-white"
+                  >
+                    {alt.name}
+                  </Link>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       )}

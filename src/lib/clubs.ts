@@ -3,6 +3,10 @@ export interface Club {
   name: string;
   shortName: string;
   status: 'open' | 'permanently-closed';
+  /** Closed venues only: a plain statement shown at the top of the venue page. */
+  closedMessage?: string;
+  /** Closed venues only: slugs of open venues on this site to suggest instead. */
+  alternatives?: string[];
   tagline: string;
   description: string;
   longDescription: string;
@@ -648,37 +652,35 @@ This is not a club for everyone, and it doesn't pretend to be. The content can b
     slug: 'luna-club-london',
     name: 'Luna Club London',
     shortName: 'Luna',
-    status: 'open',
-    tagline: 'Mayfair\'s newest late-night destination with a celestial edge',
-    description: 'New Mayfair nightclub with a modern celestial theme, strong DJ lineup, and polished table service. Tables from £1,000.',
-    longDescription: `Luna Club London represents the newer generation of Mayfair nightclubs — venues that have learned from their predecessors and arrive fully formed with polished production, strong DJ bookings, and a clear identity from night one.
+    status: 'permanently-closed',
+    closedMessage: 'Luna Club London has closed. The Mayfair club, also known as Luna Mayfair or Club Luna, no longer takes table bookings or guestlist names. For the same hip-hop and RnB with a young, well-dressed crowd, try Tape London, Cirque Le Soir or BEAT London.',
+    alternatives: ['tape-london', 'cirque-le-soir', 'beat-london', 'the-london-reign'],
+    tagline: 'The Mayfair nightclub with a celestial edge, now closed',
+    description: 'Luna Club London in Mayfair has closed. Open alternatives with a similar hip-hop and RnB crowd: Tape London, Cirque Le Soir and BEAT London.',
+    longDescription: `Luna Club London was one of the newer Mayfair nightclubs, and it has now closed. People still search for it as Luna club, Luna Mayfair or Club Luna, so this page explains what it was and where to go instead.
 
-The celestial theme runs through the venue's design without overwhelming it. Subtle lunar references in the lighting, décor, and spatial design create an atmosphere that feels distinctive without being gimmicky. The overall effect is modern and sophisticated — a club that knows exactly what it wants to be.
+When it was open, a celestial theme ran through the design, with subtle lunar touches in the lighting and decor. The music leaned into hip-hop and RnB with Afrobeats, amapiano and occasional house crossovers, and the crowd skewed young and fashionable.
 
-The music programming is well-curated, leaning into contemporary hip-hop and RnB with occasional house music crossovers. Luna has invested in its sound system and the audio quality reflects that — the bass hits clean, the mids are present, and conversation is possible in the right spots without competing with the music.
-
-The crowd skews young and fashionable. Luna has attracted a loyal following quickly by offering what the Mayfair market wants — good music, strong aesthetics, and table service that delivers without the pretension that can plague this postcode. The staff are attentive and the bottle service operation runs smoothly.
-
-Tables start from £1,000 and book up quickly, particularly on Saturdays. Guestlist is available and the door policy is selective but not prohibitively exclusive. Well-presented mixed groups have a reasonable chance without a booking, though reservations remain the safest route.`,
+For the same sound and crowd today, Tape London on Hanover Square is the closest match on music, with a much harder door. Cirque Le Soir adds performers and a show to hip-hop and RnB, and BEAT London is the most relaxed door with the strongest sound system.`,
     address: 'Mayfair, London W1',
     area: 'Mayfair',
     areas: ['Mayfair', 'Central London'],
     musicGenres: ['Hip-Hop', 'RnB', 'House'],
-    openingNights: 'Friday, Saturday',
-    closingTime: '3:30am',
-    dressCode: 'Smart Mayfair standard. Well-dressed and fashion-conscious — smart shoes, no sportswear, contemporary style encouraged.',
-    tableMinimum: '£1,000',
-    crowd: 'Young professionals, fashion-forward, influencer-adjacent. Average age 22-32.',
-    bestFor: 'Groups looking for a fresh Mayfair experience without the legacy venue stuffiness. Instagram-friendly aesthetics with genuine substance.',
-    insiderTip: 'Saturday nights are the flagship — the DJ lineup is strongest and the atmosphere peaks between 1am and 3am. Book early in the week as tables sell out fast.',
-    whyRanked: 'Luna has established itself quickly by getting the fundamentals right — great sound, smart design, and genuine energy. A strong addition to Mayfair\'s roster.',
+    openingNights: 'Closed',
+    closingTime: 'Closed',
+    dressCode: 'When it was open, Luna followed the smart Mayfair standard: smart shoes and no sportswear.',
+    tableMinimum: 'Closed',
+    crowd: 'When it was open: young professionals and a fashion-forward crowd, mostly in their twenties and early thirties.',
+    bestFor: 'Luna Club London has closed. Tape London, Cirque Le Soir and BEAT London suit the same crowd.',
+    insiderTip: 'Luna Club London has closed.',
+    whyRanked: 'Luna Club London has closed.',
     mapUrl: 'https://maps.google.com/?q=Luna+Club+London+Mayfair',
-    tonightSuitability: 'High-energy newcomer with spectacular production. Hip-hop, RnB, and Afrobeats in a striking Mayfair space.',
-    guestlistRealistic: true,
-    guestlistNote: 'Guestlist available and the door is fair. Mixed groups have the best experience.',
-    bestForGroups: 'mixed',
-    lastMinuteTableFriendly: true,
-    lastMinuteNote: 'As a newer venue, same-day tables are often available. Good option for spontaneous plans.',
+    tonightSuitability: 'Permanently closed.',
+    guestlistRealistic: false,
+    guestlistNote: 'Permanently closed.',
+    bestForGroups: 'all',
+    lastMinuteTableFriendly: false,
+    lastMinuteNote: 'Permanently closed.',
     heroImage: '/gallery/images/fe4414_07f1808f9ba84bdd8fe93d124ef624ae.jpg',
     cardImage: '/gallery/images/fe4414_08ffe6ecd7e64958b22d4b1ab42d1722.jpg',
     galleryImages: ['/gallery/images/fe4414_0901bc84893644f297dce6bab32eedf0.jpg', '/gallery/images/fe4414_0908e40d5430400dbcd1bde279384671.jpg', '/gallery/images/fe4414_091285b805994cfc8a1f60f2da0dcb9c.jpg', '/gallery/images/fe4414_093630378f1e499889ffc7920902d7f6.jpg', '/gallery/images/fe4414_0a9241c0940740cba4cdbc9ec6705847.jpg', '/gallery/images/fe4414_0b0ef282cb324fc59641002ddeb34465.jpg'],
