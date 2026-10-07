@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'About the Editor — Daniel Whitaker | London Clubs Tonight',
+  title: 'About the Editor — Daniel Whitaker',
   description:
     'Meet Daniel Whitaker, Nightlife Scout and editor of London Clubs Tonight. He tracks 50+ venues weekly, covering what is open, what is good, and what you can get into tonight.',
   openGraph: {

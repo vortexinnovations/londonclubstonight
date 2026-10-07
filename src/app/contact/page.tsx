@@ -4,7 +4,7 @@ import { getWhatsAppTableUrl, getWhatsAppGuestlistUrl } from '@/lib/clubs';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Book a Table or Join Guestlist — London Clubs Tonight',
+  title: 'Book a Table or Join Guestlist',
   description: 'Book a VIP table or get on the guestlist at London\'s best nightclubs. Direct WhatsApp booking with London\'s top club promoters. Instant response, no forms.',
   openGraph: {
     title: 'Book a Table or Join Guestlist — London Clubs Tonight',
