@@ -46,7 +46,7 @@ const faqs = [
   {
     question: 'What are the best clubs open on Friday night in London?',
     answer:
-      'Friday nights feature most of London\'s top clubs including Tape London, Cirque Le Soir, Ministry of Sound, Maddox, Dear Darling, BEAT London, and more. Cirque Le Soir and Ministry of Sound are particularly strong on Fridays — Cirque delivers its full entertainment production, while Ministry hosts some of its best DJ lineups of the week.',
+      'Friday nights feature most of London\'s top clubs including Tape London, Cirque Le Soir, Ministry of Sound, Maddox, Rumour, 99 Regent Street, Dear Darling, BEAT London, and more. Cirque Le Soir and Ministry of Sound are particularly strong on Fridays: Cirque delivers its full entertainment production, while Ministry hosts some of its best DJ lineups of the week.',
   },
   {
     question: 'Is Friday or Saturday better for clubbing in London?',

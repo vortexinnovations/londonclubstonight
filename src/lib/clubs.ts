@@ -2,13 +2,12 @@ export interface Club {
   slug: string;
   name: string;
   shortName: string;
-  /** 'rebranded': the venue trades under a new name (name holds "New (formerly Old)"). */
-  status: 'open' | 'permanently-closed' | 'rebranded';
-  /** Rebranded venues only: the old name people still search for. */
+  status: 'open' | 'permanently-closed';
+  /** Renamed venues only (still open and bookable; name holds "New (formerly Old)"): the old name people still search for. */
   formerName?: string;
-  /** Closed or rebranded venues: a plain statement shown at the top of the venue page. */
+  /** Closed or renamed venues: a plain statement shown at the top of the venue page. */
   closedMessage?: string;
-  /** Closed or rebranded venues: slugs of open venues on this site to suggest instead. */
+  /** Closed venues: slugs of open venues on this site to suggest instead. */
   alternatives?: string[];
   tagline: string;
   description: string;
@@ -187,38 +186,37 @@ Reign appeals to a broad crowd — from couples celebrating special occasions to
     slug: 'tabu-london',
     name: 'Rumour (formerly TABU)',
     shortName: 'Rumour',
-    status: 'rebranded',
+    status: 'open',
     formerName: 'TABU London',
-    closedMessage: 'TABU London is now Rumour. The Mayfair club trades under the new name, so TABU no longer takes table bookings or guestlist names. Rumour is not on our booking list yet; for a confirmed Mayfair table, try Tape London, The London Reign or Dear Darling.',
-    alternatives: ['tape-london', 'the-london-reign', 'dear-darling', 'maddox'],
-    tagline: 'TABU London is now Rumour',
-    description: 'TABU London in Mayfair is now Rumour. What changed, and the open clubs to book instead: Tape London, The London Reign and Dear Darling.',
-    longDescription: `TABU London is now Rumour. The Mayfair club trades under its new name, and people still search for it as TABU, Tabu club or Tabu Mayfair, so this page explains the change and where to go for a confirmed table.
+    closedMessage: 'TABU London is now Rumour, at 1 Dover Street in Mayfair. Rumour opens Wednesday to Saturday from 11pm, and tables at Rumour are booked on WhatsApp like every other club on this site.',
+    tagline: 'TABU is now Rumour: 1 Dover Street, Mayfair, Wednesday to Saturday from 11pm',
+    description: 'TABU London is now Rumour, at 1 Dover Street in Mayfair, open Wednesday to Saturday from 11pm. Book a table at Rumour on WhatsApp.',
+    longDescription: `TABU is now Rumour. The club at 1 Dover Street in Mayfair trades under its new name, and people still search for it as TABU, Tabu club or Tabu Mayfair, so this page covers the change and how to book a table at Rumour.
 
-Details such as Rumour's music, nights, door policy and table prices are not confirmed here yet, so none of the old TABU terms should be read as Rumour's.
+Rumour opens Wednesday to Saturday from 11pm, according to its public listings. Dover Street runs between Piccadilly and Hay Hill, close to Green Park station, in the busiest part of Mayfair for late nights.
 
-History: as TABU, the venue was a below-street-level Mayfair club with a Japanese underground theme, focused on hip-hop and RnB, with a young, fashionable crowd. Those were TABU's details under the old name.
+Music, dress code and table minimums at Rumour are the new venue's own, and none of TABU's old terms carry over. Message us on WhatsApp with your date and group size for current table prices and availability.
 
-For a hip-hop and RnB night today, Tape London on Hanover Square is the closest match on music, The London Reign adds a show to the night, and Dear Darling suits a well-dressed crowd that wants cocktails before the dancing.`,
-    address: 'Mayfair, London W1',
+History: under the TABU name, the room was a below-street-level Mayfair club with a Japanese underground theme. That was TABU, not Rumour.`,
+    address: '1 Dover Street, Mayfair, London W1',
     area: 'Mayfair',
     areas: ['Mayfair', 'Central London'],
-    musicGenres: ['Not confirmed'],
-    openingNights: 'Not confirmed',
-    closingTime: 'Not confirmed',
-    dressCode: 'Not confirmed for Rumour.',
-    tableMinimum: 'Not confirmed',
-    crowd: 'Not confirmed for Rumour. As TABU, the crowd was young and fashionable.',
-    bestFor: 'TABU is now Rumour. Tape London, The London Reign and Dear Darling suit the same well-dressed Mayfair crowd.',
-    insiderTip: 'TABU London is now Rumour.',
-    whyRanked: 'TABU London is now Rumour and is no longer ranked here.',
-    mapUrl: 'https://maps.google.com/?q=Rumour+Mayfair+London',
-    tonightSuitability: 'Now Rumour: not on our booking list yet.',
+    musicGenres: [],
+    openingNights: 'Wednesday, Thursday, Friday, Saturday',
+    closingTime: 'To be confirmed',
+    dressCode: 'Not confirmed for Rumour yet: ask us when you book.',
+    tableMinimum: 'On request',
+    crowd: 'Not confirmed for Rumour yet.',
+    bestFor: 'Groups who want a table on Dover Street in Mayfair, Wednesday to Saturday from 11pm.',
+    insiderTip: 'TABU is now Rumour, at 1 Dover Street. Doors open from 11pm, Wednesday to Saturday.',
+    whyRanked: 'TABU is now Rumour: a bookable Mayfair club at 1 Dover Street, open Wednesday to Saturday from 11pm.',
+    mapUrl: 'https://maps.google.com/?q=Rumour+1+Dover+Street+Mayfair+London',
+    tonightSuitability: 'TABU is now Rumour: 1 Dover Street, Mayfair, from 11pm Wednesday to Saturday. Message us for a table.',
     guestlistRealistic: false,
-    guestlistNote: 'TABU is now Rumour: no TABU guestlist.',
+    guestlistNote: 'Guestlist terms at Rumour are not confirmed here; a table booked through us is the reliable route.',
     bestForGroups: 'all',
     lastMinuteTableFriendly: false,
-    lastMinuteNote: 'TABU is now Rumour: no TABU tables.',
+    lastMinuteNote: 'Message us on WhatsApp to check same-day tables at Rumour.',
     heroImage: '/gallery/images/fe4414_4c672667e7a5457b9224ad73e3c5dda7.jpg',
     cardImage: '/gallery/images/fe4414_e949276097ce47268f86b1b06b938c57.jpg',
     galleryImages: ['/gallery/images/fe4414_48ae7b23f1e04f0a94a53da7e6a08ea9.jpg', '/gallery/images/fe4414_d03ed6fb1e754a34a815beebf6a14835.jpg', '/gallery/images/fe4414_ff953c00db3a4af5b4b7a6575ab8abae.jpg', '/gallery/images/fe4414_4cdad8e2e343466889cfb9614f83379f.jpg', '/gallery/images/fe4414_c6667a69785e4fac823c8041211beae8.jpg', '/gallery/images/fe4414_458bf79db0954e1ea5f6d28ea1917064.jpg'],
@@ -228,29 +226,27 @@ For a hip-hop and RnB night today, Tape London on Hanover Square is the closest 
     name: 'Libertine',
     shortName: 'Libertine',
     status: 'permanently-closed',
-    tagline: 'Mayfair\'s futuristic playground for the fashion-forward crowd',
-    description: 'Sophisticated and futuristic Mayfair venue with cutting-edge design. Hip-hop & RnB. Tables from £1,000.',
-    longDescription: `Libertine occupies a unique space in Mayfair's club landscape — a venue that feels genuinely futuristic without crossing into gimmick territory. The design is sleek, modern, and deliberately different from the traditional Mayfair club aesthetic. Think clean lines, innovative lighting, and a spatial design that makes the venue feel larger and more dynamic than its physical footprint.
+    closedMessage: 'Libertine has closed, and Selene now operates in its place. Libertine no longer takes table bookings or guestlist names; for a table at Selene, or at Tape London or Dear Darling nearby, message us on WhatsApp.',
+    alternatives: ['selene-london', 'tape-london', 'dear-darling', 'maddox'],
+    tagline: 'The futuristic Mayfair club, now closed: Selene operates in its place',
+    description: 'Libertine in Mayfair has closed, and Selene now operates in its place. What Libertine was, and the open clubs to book instead: Selene, Tape London and Dear Darling.',
+    longDescription: `Libertine has closed, and Selene now operates in its place. People still search for Libertine by name, so this page explains what it was and where to go instead.
 
-The music policy centres on hip-hop and RnB, delivered through a sound system that matches the venue's modern design philosophy. The DJs who rotate through Libertine tend to be skilled at reading the crowd and shifting between current hip-hop, classic tracks, and the occasional curveball that keeps the energy unpredictable.
+History: when it was open, Libertine was a Mayfair club with a futuristic look, clean lines and modern lighting, and it played hip-hop and RnB to a fashion-forward crowd. Tables started from £1,000 at the time.
 
-What sets Libertine apart from its Mayfair neighbours is the crowd it attracts. This is a club for people who consider themselves fashion-forward and culturally switched on. The dress code is smart but encourages personal style — you'll see more creative outfits here than at more traditional venues. The atmosphere is confident without being aggressive, glamorous without being stuffy.
-
-Tables start from £1,000 and the table service experience is polished. The staff know the regulars, the bottles arrive with appropriate fanfare, and the table positions offer genuine views of both the dancefloor and the DJ. Guestlist is available and more accessible than some of the harder-to-enter Mayfair clubs, though booking remains the most reliable route.
-
-Libertine works particularly well for groups who are tired of the same Mayfair formula and want something with more edge. It delivers the upscale experience without the stuffiness.`,
+For a table in the same spot today, Selene is the venue that now operates there. Tape London on Hanover Square suits the same hip-hop and RnB crowd, and Dear Darling suits groups who want cocktails before the dancing.`,
     address: 'Mayfair, London W1',
     area: 'Mayfair',
     areas: ['Mayfair', 'Central London'],
     musicGenres: ['Hip-Hop', 'RnB'],
-    openingNights: 'Thursday, Friday, Saturday',
-    closingTime: '3:30am',
-    dressCode: 'Smart and fashion-forward. Creativity is encouraged but maintain the smart standard. No casual or athletic wear.',
-    tableMinimum: '£1,000',
-    crowd: 'Fashion-forward, creative professionals, influencers. Average age 24-35.',
-    bestFor: 'Style-conscious groups who want a modern club experience. People tired of traditional Mayfair stuffiness.',
-    insiderTip: 'Thursday nights offer the most relaxed atmosphere and the best chance of walk-in entry. Friday and Saturday require advance booking for guaranteed entry.',
-    whyRanked: 'The futuristic design and fashion-forward crowd give Libertine a distinct identity in Mayfair. It proves upscale clubbing doesn\'t have to feel old-fashioned.',
+    openingNights: 'Closed',
+    closingTime: 'Closed',
+    dressCode: 'When it was open, Libertine asked for smart, fashion-forward outfits and turned away casual or athletic wear.',
+    tableMinimum: 'Closed',
+    crowd: 'When it was open: fashion-forward creatives, professionals and influencers, mostly in their mid twenties to mid thirties.',
+    bestFor: 'Libertine has closed. Selene now operates in its place, and Tape London and Dear Darling suit the same crowd.',
+    insiderTip: 'Libertine has closed. Selene now operates in its place.',
+    whyRanked: 'Libertine has closed.',
     mapUrl: 'https://maps.google.com/?q=Libertine+London+Mayfair',
     tonightSuitability: 'Permanently closed.',
     guestlistRealistic: false,
@@ -267,29 +263,27 @@ Libertine works particularly well for groups who are tired of the same Mayfair f
     name: 'Luxx Club London',
     shortName: 'Luxx',
     status: 'permanently-closed',
-    tagline: 'Mayfair\'s electric light show venue where visuals meet VIP nightlife',
-    description: 'Premium Mayfair venue with spectacular LED light shows and electric atmosphere. Open format and hip-hop. Tables from £1,000.',
-    longDescription: `Luxx Club London has established itself as one of Mayfair's most visually spectacular nightclubs. The venue's signature feature is its LED light show — a custom-designed visual experience that transforms the space throughout the night. Walls, ceilings, and surfaces come alive with synchronised imagery that responds to the music, creating an immersive environment that genuinely enhances the clubbing experience.
+    closedMessage: 'Luxx Club London has closed, and its successor is Itzel, which now operates at its Berkeley Street address. Luxx no longer takes table bookings or guestlist names. For an open-format night with a show, try Cirque Le Soir, The London Reign or Tape London.',
+    alternatives: ['cirque-le-soir', 'the-london-reign', 'tape-london', 'dear-darling'],
+    tagline: 'The Mayfair light-show club, now closed: its successor is Itzel',
+    description: 'Luxx Club London in Mayfair has closed; its successor is Itzel. What Luxx was, and the open clubs to book instead: Cirque Le Soir, The London Reign and Tape London.',
+    longDescription: `Luxx Club London has closed, and its successor is Itzel, which now operates at its Berkeley Street address. People still search for Luxx by name, so this page explains what it was and where to go instead.
 
-The technology isn't just decoration — it's integral to the atmosphere. The visual programming changes weekly, and the production team puts genuine effort into creating sequences that complement the DJ's set. On the best nights, the combination of sound and visuals creates moments that feel more like a concert than a club.
+History: when it was open, Luxx was known for its LED light shows, with walls and ceilings that changed through the night in time with the music. It played open format with a lean towards hip-hop, and it drew birthday groups, regulars and international visitors. Tables started from £1,000 at the time.
 
-Musically, Luxx runs an open format policy with a lean towards hip-hop. This means the DJs move fluidly between genres — hip-hop, RnB, house, pop — depending on what the crowd wants. It's a pragmatic approach that ensures the energy stays high regardless of the audience's specific tastes.
-
-The crowd is a genuine mix. You'll find regulars who come for the visual experience, birthday groups attracted by the Instagram-worthy setting, and international visitors who've been recommended the club. The atmosphere is energetic and celebratory without being exclusive to the point of unfriendliness.
-
-Tables start from £1,000 and are well-positioned to enjoy both the light show and the dancefloor views. The table service team is professional and attentive. Guestlist entry is available and more accessible than at some of the stricter Mayfair venues.`,
+For a night where the room is part of the show today, Cirque Le Soir has performers around the tables, The London Reign pairs dinner with a cabaret and a club, and Tape London is the hip-hop choice with a harder door.`,
     address: 'Mayfair, London W1',
     area: 'Mayfair',
     areas: ['Mayfair', 'Central London'],
     musicGenres: ['Open Format', 'Hip-Hop'],
-    openingNights: 'Friday, Saturday',
-    closingTime: '3:30am',
-    dressCode: 'Smart. Standard Mayfair dress code applies — smart shoes for men, no sportswear, dress to impress.',
-    tableMinimum: '£1,000',
-    crowd: 'Mixed — locals, birthday groups, international visitors. Average age 23-35.',
-    bestFor: 'Visual experience lovers. Birthday celebrations that want a spectacular backdrop. Groups who enjoy open format music.',
-    insiderTip: 'Request a table near the main LED wall for the most immersive visual experience. The light shows peak between 1am and 2:30am.',
-    whyRanked: 'The LED light show concept is executed better here than anywhere else in London. It adds a genuinely unique dimension to the VIP club experience.',
+    openingNights: 'Closed',
+    closingTime: 'Closed',
+    dressCode: 'When it was open, Luxx followed the smart Mayfair standard: smart shoes for men and no sportswear.',
+    tableMinimum: 'Closed',
+    crowd: 'When it was open: locals, birthday groups and international visitors, mostly in their twenties and early thirties.',
+    bestFor: 'Luxx Club London has closed; its successor is Itzel. Cirque Le Soir, The London Reign and Tape London suit the same celebration crowd.',
+    insiderTip: 'Luxx Club London has closed. Its successor is Itzel.',
+    whyRanked: 'Luxx Club London has closed.',
     mapUrl: 'https://maps.google.com/?q=Luxx+Club+London+Mayfair',
     tonightSuitability: 'Permanently closed.',
     guestlistRealistic: false,
@@ -383,38 +377,37 @@ Tables start from £1,000 and the intimate scale means every table feels premium
     slug: 'cuckoo-club',
     name: '99 Regent Street (formerly Cuckoo Club)',
     shortName: '99 Regent Street',
-    status: 'rebranded',
+    status: 'open',
     formerName: 'Cuckoo Club',
-    closedMessage: 'Cuckoo Club is now 99 Regent Street. The venue on Swallow Street trades under the new name, so Cuckoo Club no longer takes table bookings or guestlist names. 99 Regent Street is not on our booking list yet; for a confirmed table nearby, try The London Reign, Dear Darling or The Box.',
-    alternatives: ['the-london-reign', 'dear-darling', 'the-box-london', 'scotch-of-st-james'],
-    tagline: 'Cuckoo Club is now 99 Regent Street',
-    description: 'Cuckoo Club on Swallow Street is now 99 Regent Street. What changed, and the open clubs nearby to book instead: The London Reign, Dear Darling and The Box.',
-    longDescription: `Cuckoo Club is now 99 Regent Street. The venue on Swallow Street, just off Regent Street, trades under its new name, and people still search for Cuckoo Club, so this page explains the change and where to go for a confirmed table.
+    closedMessage: 'Cuckoo Club is now 99 Regent Street, on Swallow Street by Piccadilly Circus. 99 Regent Street opens Wednesday to Saturday for over 19s, with tables from £600, booked on WhatsApp like every other club on this site.',
+    tagline: 'Cuckoo Club is now 99 Regent Street: Swallow Street by Piccadilly Circus, tables from £600',
+    description: 'Cuckoo Club is now 99 Regent Street, on Swallow Street by Piccadilly Circus. Open Wednesday to Saturday, over 19s, tables from £600. Book a table on WhatsApp.',
+    longDescription: `Cuckoo Club is now 99 Regent Street. The venue on Swallow Street, by Piccadilly Circus, trades under its new name, and people still search for Cuckoo Club, so this page covers the change and how to book a table at 99 Regent Street.
 
-Details such as the music, nights, door policy and table prices at 99 Regent Street are not confirmed here yet, so none of the old Cuckoo Club terms should be read as 99 Regent Street's.
+99 Regent Street opens Wednesday to Saturday. Entry is for over 19s, and tables start from £600 minimum spend.
 
-History: as Cuckoo Club, the venue ran two rooms, house upstairs and hip-hop and RnB downstairs, with a mixed Mayfair crowd. Those were Cuckoo Club's details under the old name.
+Music and dress code at 99 Regent Street are the new venue's own, and none of Cuckoo Club's old terms carry over. Message us on WhatsApp with your date and group size for availability.
 
-For a night near Piccadilly Circus today, The London Reign on Piccadilly is the closest big room, Dear Darling suits cocktails first and dancing later, and The Box in Soho is the late-night show option.`,
+History: under the Cuckoo Club name, the venue was a long-running Swallow Street club. That was Cuckoo Club, not 99 Regent Street.`,
     address: 'Swallow Street, London W1B 4EZ',
     area: 'Mayfair',
     areas: ['Mayfair', 'Central London'],
-    musicGenres: ['Not confirmed'],
-    openingNights: 'Not confirmed',
-    closingTime: 'Not confirmed',
-    dressCode: 'Not confirmed for 99 Regent Street.',
-    tableMinimum: 'Not confirmed',
-    crowd: 'Not confirmed for 99 Regent Street. As Cuckoo Club, the crowd was a mixed Mayfair one.',
-    bestFor: 'Cuckoo Club is now 99 Regent Street. The London Reign, Dear Darling and The Box are open alternatives nearby.',
-    insiderTip: 'Cuckoo Club is now 99 Regent Street.',
-    whyRanked: 'Cuckoo Club is now 99 Regent Street and is no longer ranked here.',
+    musicGenres: [],
+    openingNights: 'Wednesday, Thursday, Friday, Saturday',
+    closingTime: 'To be confirmed',
+    dressCode: 'Not confirmed for 99 Regent Street yet: ask us when you book. Entry is for over 19s.',
+    tableMinimum: '£600',
+    crowd: 'Over 19s only.',
+    bestFor: 'Groups who want a table by Piccadilly Circus from £600, Wednesday to Saturday.',
+    insiderTip: 'Cuckoo Club is now 99 Regent Street. Entry is for over 19s, so bring photo ID.',
+    whyRanked: 'Cuckoo Club is now 99 Regent Street: a bookable club on Swallow Street, open Wednesday to Saturday, with tables from £600.',
     mapUrl: 'https://maps.google.com/?q=99+Regent+Street+Swallow+Street+London',
-    tonightSuitability: 'Now 99 Regent Street: not on our booking list yet.',
+    tonightSuitability: 'Cuckoo Club is now 99 Regent Street: Swallow Street by Piccadilly Circus, over 19s, tables from £600. Message us for a table.',
     guestlistRealistic: false,
-    guestlistNote: 'Cuckoo Club is now 99 Regent Street: no Cuckoo Club guestlist.',
+    guestlistNote: 'Guestlist terms at 99 Regent Street are not confirmed here; a table booked through us is the reliable route.',
     bestForGroups: 'all',
     lastMinuteTableFriendly: false,
-    lastMinuteNote: 'Cuckoo Club is now 99 Regent Street: no Cuckoo Club tables.',
+    lastMinuteNote: 'Message us on WhatsApp to check same-day tables at 99 Regent Street.',
     heroImage: '/gallery/images/fe4414_52d6295c80bc46b3b8b13d5eb0c385f5.jpg',
     cardImage: '/gallery/images/fe4414_dd9694e452204ef99a0b6c2dc693faf9.jpg',
     galleryImages: ['/gallery/images/fe4414_affd1145589143f7a655ebcb34a0a7c8.jpg', '/gallery/images/fe4414_344fbd63598246e7aa317196b7721a0c.jpg', '/gallery/images/fe4414_950de24e4f2b429ba47a022f13479db5.jpg', '/gallery/images/fe4414_aa163b7210fe4225a069d699f9400858.jpg', '/gallery/images/fe4414_b4633e7c60fa491e8c26bea776d3e98c.jpg', '/gallery/images/fe4414_f1f26d54e1e14b6384eb337005445fbf.jpg'],
@@ -541,29 +534,27 @@ Unlike the Mayfair clubs, Ministry operates on a larger scale. Capacity runs int
     name: 'Lio Club London',
     shortName: 'Lio',
     status: 'permanently-closed',
-    tagline: 'Ibiza\'s iconic dinner-club concept brings Mediterranean glamour to Mayfair',
-    description: 'Elegant Mayfair venue combining gourmet dining with live entertainment and nightlife. Tables from £1,000.',
-    longDescription: `Lio Club London brings the spirit of its legendary Ibiza original to Mayfair, and the translation works beautifully. This is a venue that understands how to merge gourmet dining, live entertainment, and late-night clubbing into a single evening — and does each element with enough quality that none feels like an afterthought.
+    closedMessage: 'Lio Club London has closed. The Mayfair dinner, show and club venue no longer takes table bookings or guestlist names. For dinner, a show and a club in one night, try The London Reign, Cirque Le Soir or Maddox.',
+    alternatives: ['the-london-reign', 'cirque-le-soir', 'maddox', 'the-box-london'],
+    tagline: 'The Ibiza dinner-club concept in Mayfair, now closed',
+    description: 'Lio Club London in Mayfair has closed. What it was, and the open clubs to book instead for dinner, a show and a club: The London Reign, Cirque Le Soir and Maddox.',
+    longDescription: `Lio Club London has closed. People still search for Lio by name, so this page explains what it was and where to go instead.
 
-The dining experience anchors the early evening. Mediterranean-influenced cuisine, presented with flair, served in a room that's been designed for both gastronomy and spectacle. The menu is ambitious and largely delivers — this isn't club food, it's restaurant food in a club setting.
+History: when it was open, Lio brought the dinner, show and club format of its Ibiza original to Mayfair. Mediterranean dining led into live performers and dancers, and the night ended as a club with upbeat open-format music and an international crowd. Tables started from £1,000 for the club part of the night at the time.
 
-As dinner winds down, the entertainment takes centre stage. Live performers, dancers, and acts that draw on the Mediterranean cabaret tradition create a bridge between the dining and clubbing portions of the evening. The production values are high and the performers are genuinely talented — this isn't a ten-minute interlude, it's an integral part of the Lio experience.
-
-The late-night clubbing phase brings a glamorous crowd onto the dancefloor. The music is upbeat and accessible — mainstream enough to keep the dancefloor full, sophisticated enough to match the venue's elegance. The atmosphere is celebratory and glamorous, with a predominantly international crowd who understand the Lio brand from its Mediterranean reputation.
-
-Tables start from £1,000 for the club portion, with dinner packages offering the full experience. The crowd is well-dressed, well-travelled, and expect a premium experience. Lio delivers exactly that.`,
+For the same dinner-show-club night today, The London Reign on Piccadilly is the closest match, Cirque Le Soir adds performers around the tables, and Maddox moves from an Italian dinner into a house music club.`,
     address: 'Mayfair, London W1',
     area: 'Mayfair',
     areas: ['Mayfair', 'Central London'],
     musicGenres: ['Open Format', 'House', 'Pop'],
-    openingNights: 'Wednesday, Thursday, Friday, Saturday',
-    closingTime: '3:00am',
-    dressCode: 'Glamorous. Lio has an Ibiza-meets-Mayfair aesthetic — think elegant resort wear elevated for London. Dress codes are enforced.',
-    tableMinimum: '£1,000',
-    crowd: 'International, glamorous, well-travelled. Average age 28-42.',
-    bestFor: 'People who know Lio from Ibiza and want the London experience. Groups celebrating special occasions. International visitors who appreciate Mediterranean nightlife culture.',
-    insiderTip: 'The dinner-and-show package is the way to experience Lio properly. Arriving just for the club portion means missing the best entertainment. Wednesday nights are more intimate and relaxed.',
-    whyRanked: 'Lio brings genuine international glamour to London\'s club scene. The dinner-show-club format is polished, and the Mediterranean influence distinguishes it from everything else in Mayfair.',
+    openingNights: 'Closed',
+    closingTime: 'Closed',
+    dressCode: 'When it was open, Lio asked for a glamorous, Ibiza-meets-Mayfair look and enforced its dress code.',
+    tableMinimum: 'Closed',
+    crowd: 'When it was open: an international, well-travelled crowd, mostly in their late twenties to early forties.',
+    bestFor: 'Lio Club London has closed. The London Reign, Cirque Le Soir and Maddox suit the same dinner-and-show crowd.',
+    insiderTip: 'Lio Club London has closed.',
+    whyRanked: 'Lio Club London has closed.',
     mapUrl: 'https://maps.google.com/?q=Lio+Club+London+Mayfair',
     tonightSuitability: 'Permanently closed.',
     guestlistRealistic: false,
@@ -580,11 +571,11 @@ Tables start from £1,000 for the club portion, with dinner packages offering th
     name: 'Funky Buddha London',
     shortName: 'Funky Buddha',
     status: 'permanently-closed',
-    closedMessage: 'Funky Buddha has closed. The Berkeley Street club in Mayfair no longer takes table bookings or guestlist names. For the same RnB and hip-hop with a celebration crowd, try Tape London, The London Reign or Dear Darling.',
+    closedMessage: 'Funky Buddha has closed, and Itzel now operates at its Berkeley Street address. Funky Buddha no longer takes table bookings or guestlist names. For the same RnB and hip-hop with a celebration crowd, try Tape London, The London Reign or Dear Darling.',
     alternatives: ['tape-london', 'the-london-reign', 'dear-darling', 'scotch-of-st-james'],
     tagline: 'The long-running Mayfair club on Berkeley Street, now closed',
-    description: 'Funky Buddha London on Berkeley Street, Mayfair, has closed. Open alternatives for a similar RnB and hip-hop night: Tape London, The London Reign and Dear Darling.',
-    longDescription: `Funky Buddha London has closed. It was one of the longest-running clubs in Mayfair, and people still search for it by name, so this page explains what it was and where to go instead.
+    description: 'Funky Buddha London on Berkeley Street, Mayfair, has closed; Itzel now operates at its Berkeley Street address. Open alternatives for a similar RnB and hip-hop night: Tape London, The London Reign and Dear Darling.',
+    longDescription: `Funky Buddha London has closed, and Itzel now operates at its Berkeley Street address. Funky Buddha was one of the longest-running clubs in Mayfair, and people still search for it by name, so this page explains what it was and where to go instead.
 
 When it was open, Funky Buddha on Berkeley Street played RnB, hip-hop and funky house to a crowd of loyal regulars, birthday groups and the occasional famous face, and it was known as one of the friendlier doors in Mayfair.
 
@@ -599,7 +590,7 @@ For the same sound and crowd today, Tape London on Hanover Square is the closest
     tableMinimum: 'Closed',
     crowd: 'When it was open: loyal regulars, birthday groups and professionals, mostly in their mid twenties to forties.',
     bestFor: 'Funky Buddha has closed. Tape London, The London Reign and Dear Darling suit the same crowd.',
-    insiderTip: 'Funky Buddha London has closed.',
+    insiderTip: 'Funky Buddha London has closed. Itzel now operates at its Berkeley Street address.',
     whyRanked: 'Funky Buddha London has closed.',
     mapUrl: 'https://maps.google.com/?q=Funky+Buddha+London+Berkeley+Street',
     tonightSuitability: 'Permanently closed.',
@@ -736,8 +727,22 @@ export function getClubBySlug(slug: string): Club | undefined {
 /** Short status label for lists and markdown. */
 export function clubStatusLabel(club: Club): string {
   if (club.status === 'permanently-closed') return 'Permanently closed';
-  if (club.status === 'rebranded') return `Now ${club.shortName}`;
   return 'Open';
+}
+
+/** Music for lists: renamed venues have no confirmed music yet. */
+export function musicLabel(club: Club): string {
+  return club.musicGenres.length > 0 ? club.musicGenres.join(', ') : 'Music to be confirmed';
+}
+
+/** "Tables from £600", or a price-on-request line when no minimum is confirmed. */
+export function tablesFromLabel(club: Club): string {
+  return club.tableMinimum.startsWith('£') ? `Tables from ${club.tableMinimum}` : 'Table prices on request';
+}
+
+/** "Closes at 3:00am", or a to-be-confirmed line when no closing time is confirmed. */
+export function closesLabel(club: Club): string {
+  return /\d/.test(club.closingTime) ? `Closes at ${club.closingTime}` : 'Closing time to be confirmed';
 }
 
 export function getOpenClubs(): Club[] {

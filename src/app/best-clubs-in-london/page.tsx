@@ -1,14 +1,14 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { getOpenClubs } from '@/lib/clubs';
+import { getOpenClubs, musicLabel, tablesFromLabel } from '@/lib/clubs';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
   title: 'Best Clubs in London 2026 — The Definitive Ranked Guide',
   description:
-    'The 10 best nightclubs in London for 2026, ranked by promoters who actually work the doors. From Tape London to Ministry of Sound — honest reviews, table prices, and how to get in.',
+    'The 12 best nightclubs in London for 2026, ranked by promoters who actually work the doors. From Tape London to Ministry of Sound: honest reviews, table prices, and how to get in.',
   keywords: [
     'best clubs in London',
     'best nightclubs London',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Best Clubs in London 2026 — The Definitive Ranked Guide',
     description:
-      'The 10 best nightclubs in London for 2026, ranked by promoters who work the doors every weekend. Honest, opinionated reviews you won\'t find anywhere else.',
+      'The 12 best nightclubs in London for 2026, ranked by promoters who work the doors every weekend. Honest, opinionated reviews you won\'t find anywhere else.',
     url: 'https://londonclubstonight.com/best-clubs-in-london',
     type: 'article',
     locale: 'en_GB',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Best Clubs in London 2026 — The Definitive Ranked Guide',
     description:
-      'The 10 best nightclubs in London for 2026, ranked by promoters who actually work the doors.',
+      'The 12 best nightclubs in London for 2026, ranked by promoters who actually work the doors.',
   },
   alternates: {
     canonical: 'https://londonclubstonight.com/best-clubs-in-london',
@@ -50,6 +50,8 @@ const rankedSlugs = [
   'selene-london',
   'dear-darling',
   'beat-london',
+  'tabu-london',
+  'cuckoo-club',
 ];
 
 const clubOpinions: Record<string, string> = {
@@ -75,6 +77,10 @@ const clubOpinions: Record<string, string> = {
     'Dear Darling occupies the most beautiful room in Mayfair nightlife. The interiors are opulent without being gaudy — think art-deco glamour with a modern edge. It functions best as a cocktail-bar-to-club transition, where you arrive early, drink well, and ease into the late-night atmosphere as the music builds. The crowd is well-dressed and the vibe is more sophisticated than rowdy. It is not the place for an all-out party, but for a glamorous evening that ends with dancing, it is hard to beat.',
   'beat-london':
     'BEAT earns its place on this list through pure musical credibility. The sound system is built for people who actually care about audio quality, and the programming spans hip-hop, house, and open format depending on the night. Located in Fitzrovia rather than Mayfair, it attracts a crowd that prioritises the music over the postcode. When the right DJ is behind the decks and the room is full, BEAT delivers one of the best pure clubbing experiences in central London. It sits at ten not because it is bad — every club on this list is excellent — but because the VIP experience is less polished than the venues above it.',
+  'tabu-london':
+    'TABU is now Rumour, and the room at 1 Dover Street is back on this list under its new name. Rumour opens Wednesday to Saturday from 11pm on Dover Street, a short walk from Green Park station. It sits at eleven because it is new under this name: Rumour sets its own music, door and table terms, and none of the old TABU terms carry over. Message us for current table prices.',
+  'cuckoo-club':
+    'Cuckoo Club is now 99 Regent Street, on Swallow Street by Piccadilly Circus. It opens Wednesday to Saturday for over 19s, and tables start from £600 minimum spend. It sits at twelve because it is new under this name, and none of the old Cuckoo Club terms carry over.',
 };
 
 export default function BestClubsInLondonPage() {
@@ -85,7 +91,7 @@ export default function BestClubsInLondonPage() {
 
   const articleSchema = getArticleSchema(
     'Best Clubs in London 2026 — The Definitive Ranked Guide',
-    'The 10 best nightclubs in London for 2026, ranked by promoters who actually work the doors.',
+    'The 12 best nightclubs in London for 2026, ranked by promoters who actually work the doors.',
     '/best-clubs-in-london',
     '2025-01-15'
   );
@@ -182,7 +188,7 @@ export default function BestClubsInLondonPage() {
 
                 {/* Details Row */}
                 <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-sm text-frost-300 mb-6">
-                  <span>{club.musicGenres.join(', ')}</span>
+                  <span>{musicLabel(club)}</span>
                   <span className="text-frost-500">/</span>
                   <Link
                     href={`/areas/${club.area.toLowerCase().replace(/['\s]+/g, '-')}`}
@@ -191,7 +197,7 @@ export default function BestClubsInLondonPage() {
                     {club.area}
                   </Link>
                   <span className="text-frost-500">/</span>
-                  <span>Tables from {club.tableMinimum}</span>
+                  <span>{tablesFromLabel(club)}</span>
                 </div>
 
                 {/* Full Review Link */}

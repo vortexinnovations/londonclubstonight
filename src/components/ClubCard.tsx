@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import type { Club } from '@/lib/clubs';
+import { tablesFromLabel, type Club } from '@/lib/clubs';
 
 interface ClubCardProps {
   club: Club;
@@ -30,7 +30,7 @@ export default function ClubCard({ club, featured = false, showArea = true }: Cl
           {showArea ? (
             <span className="chip backdrop-blur-md bg-night-950/50">{club.area}</span>
           ) : <span />}
-          <span className="chip chip-accent backdrop-blur-md">Tables from {club.tableMinimum}</span>
+          <span className="chip chip-accent backdrop-blur-md">{tablesFromLabel(club)}</span>
         </div>
 
         {/* Name overlaid at image base */}

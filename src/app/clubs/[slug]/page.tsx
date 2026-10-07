@@ -25,18 +25,19 @@ export async function generateMetadata({
   }
 
   const isClosed = club.status === 'permanently-closed';
-  const isRebranded = club.status === 'rebranded';
+  // A renamed venue is open and bookable under its new name; the old name stays in the title.
+  const isRenamed = !isClosed && Boolean(club.formerName);
   const fullName = /london$/i.test(club.name) ? club.name : `${club.name} London`;
   const formerName = club.formerName ?? club.name;
   const formerFull = /london$/i.test(formerName) ? formerName : `${formerName} London`;
   const title = isClosed
     ? `${fullName} Has Closed: ${club.area} Alternatives`
-    : isRebranded
-      ? `${formerFull} Is Now ${club.shortName}: What Changed`
+    : isRenamed
+      ? `${formerFull} Is Now ${club.shortName} | Table Booking`
       : `${club.name} London | Table Booking & Guestlist`;
   const description = isClosed
     ? `${fullName} in ${club.area} has closed. What it was, and the open London clubs with a similar crowd and music to book instead.`
-    : isRebranded
+    : isRenamed
       ? club.description
       : `Everything you need to know about ${club.name} nightclub in ${club.area}, London. Table prices from ${club.tableMinimum}, dress code, music, and guestlist access.`;
 
@@ -45,8 +46,8 @@ export async function generateMetadata({
     description,
     keywords: isClosed
       ? [`${club.name} London`, `${club.name} club`, `${club.name} closed`, `${club.name} ${club.area}`]
-      : isRebranded
-        ? [`${formerName}`, `${formerName} club`, `${club.shortName} London`, `${formerName} now ${club.shortName}`]
+      : isRenamed
+        ? [`${formerName}`, `${formerName} club`, `${club.shortName} London`, `${formerName} now ${club.shortName}`, `${club.shortName} table booking`]
         : [
           `${club.name} London`,
           `${club.name} club`,
@@ -81,9 +82,11 @@ export default async function ClubPage({
   }
 
   const isClosed = club.status === 'permanently-closed';
-  const isRebranded = club.status === 'rebranded';
-  // Closed and rebranded venues are not sold on this page.
-  const notBookable = isClosed || isRebranded;
+  // A renamed venue is open and bookable; the page leads with "Old is now New".
+  const isRenamed = !isClosed && Boolean(club.formerName);
+  const renamedFrom = (club.formerName ?? '').replace(/ London$/i, '');
+  // Closed venues are not sold on this page.
+  const notBookable = isClosed;
   const areaSlug = club.area.toLowerCase().replace(/\s+/g, '-');
   const paragraphs = club.longDescription.split('\n\n').filter(Boolean);
   const openClubs = getOpenClubs();
@@ -119,12 +122,26 @@ export default async function ClubPage({
         </nav>
       </div>
 
-      {/* Permanently Closed / Renamed Banner */}
+      {/* Renamed Banner: the venue is open and bookable under its new name */}
+      {isRenamed && (
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 pt-6">
+          <div className="bg-neon-500/10 border border-neon-400/30 text-neon-200 rounded-2xl p-6 text-center">
+            <p className="font-semibold text-lg mb-2">
+              {renamedFrom} is now {club.shortName}
+            </p>
+            {club.closedMessage && (
+              <p className="text-sm leading-relaxed max-w-xl mx-auto">{club.closedMessage}</p>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Permanently Closed Banner */}
       {notBookable && (
         <div className="max-w-5xl mx-auto px-6 sm:px-8 pt-6">
           <div className="bg-red-500/10 border border-red-500/30 text-red-400 rounded-2xl p-6 text-center">
             <p className="font-semibold text-lg mb-2">
-              {isRebranded ? `${club.formerName ?? club.name} is now ${club.shortName}` : 'Permanently Closed'}
+              Permanently Closed
             </p>
             <p className="text-sm leading-relaxed max-w-xl mx-auto">
               {club.closedMessage ?? `${club.name} is permanently closed. This page is maintained for reference.`}{' '}
@@ -181,12 +198,13 @@ export default async function ClubPage({
 
       {/* Quick Info Grid */}
       <section className="max-w-5xl mx-auto px-6 sm:px-8 pb-16">
-        {isRebranded ? (
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        {isRenamed ? (
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             <QuickInfoCard label="Now called" value={club.shortName} />
-            <QuickInfoCard label="Formerly" value={club.formerName ?? club.name} />
-            <QuickInfoCard label="Area" value={club.area} />
+            <QuickInfoCard label="Formerly" value={renamedFrom} />
             <QuickInfoCard label="Address" value={club.address} />
+            <QuickInfoCard label="Open Nights" value={club.openingNights} />
+            <QuickInfoCard label="Table Minimum" value={club.tableMinimum} />
           </div>
         ) : (
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
@@ -217,7 +235,7 @@ export default async function ClubPage({
       </section>
 
       {/* Old-club details (dress code, crowd, tips) are not shown for a renamed venue. */}
-      {!isRebranded && (<>
+      {!isRenamed && (<>
       {/* Dress Code */}
       <section className="py-12 md:py-16">
         <div className="max-w-4xl mx-auto px-6">
@@ -289,9 +307,7 @@ export default async function ClubPage({
                 Looking for a Club <span className="serif-accent text-gradient">Tonight?</span>
               </h2>
               <p className="text-frost-300 mb-8 max-w-lg mx-auto leading-relaxed">
-                {isRebranded
-                  ? `${club.formerName ?? club.name} is now ${club.shortName}, which is not on our booking list yet. Browse the open clubs or get in touch for a recommendation nearby.`
-                  : `${club.name} is permanently closed, but there are plenty of great clubs open tonight. Browse our full list or get in touch for a personal recommendation.`}
+                {`${club.name} is permanently closed, but there are plenty of great clubs open tonight. Browse our full list or get in touch for a personal recommendation.`}
               </p>
               <div className="flex justify-center gap-4 flex-wrap">
                 <Link

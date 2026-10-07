@@ -46,7 +46,7 @@ const faqs = [
   {
     question: 'What Mayfair clubs are open tonight?',
     answer:
-      'Mayfair clubs operate primarily on Thursday, Friday, and Saturday nights. Key venues include Tape London, Maddox, Dear Darling, and Scotch of St James. The exact clubs open tonight depend on the day of the week — our page updates dynamically to show you what is running right now. Message us on WhatsApp for a real-time recommendation based on your group size and preferences.',
+      'Mayfair clubs operate primarily on Thursday, Friday, and Saturday nights. Key venues include Tape London, Maddox, Rumour, 99 Regent Street, Dear Darling, and Scotch of St James. The exact clubs open tonight depend on the day of the week; our page updates dynamically to show you what is running right now. Message us on WhatsApp for a real-time recommendation based on your group size and preferences.',
   },
   {
     question: 'Can I get on a guestlist in Mayfair tonight?',
@@ -249,10 +249,9 @@ export default function MayfairClubsTonightPage() {
               <strong className="text-white">Maddox</strong> is the house music stronghold of Mayfair. While most Mayfair clubs lean heavily into hip-hop and RnB, Maddox has committed to a sound that attracts a crowd who actually want to dance. The restaurant-to-club format is polished, and the transition between the two feels natural.
             </p>
             <p>
-              Three familiar names have changed.{' '}
-              <Link href="/clubs/tabu-london" className="text-neon-300 underline underline-offset-4">TABU is now Rumour</Link>,{' '}
-              <Link href="/clubs/cuckoo-club" className="text-neon-300 underline underline-offset-4">Cuckoo Club is now 99 Regent Street</Link>, and{' '}
-              <Link href="/clubs/funky-buddha" className="text-neon-300 underline underline-offset-4">Funky Buddha has closed</Link>. The clubs above are the open Mayfair options to book tonight.
+              <Link href="/clubs/tabu-london" className="text-neon-300 underline underline-offset-4">TABU is now Rumour</Link>, at 1 Dover Street, open Wednesday to Saturday from 11pm.{' '}
+              <Link href="/clubs/cuckoo-club" className="text-neon-300 underline underline-offset-4">Cuckoo Club is now 99 Regent Street</Link>, on Swallow Street by Piccadilly Circus, open Wednesday to Saturday for over 19s with tables from &#163;600. Both are booked through us like the clubs above.{' '}
+              <Link href="/clubs/funky-buddha" className="text-neon-300 underline underline-offset-4">Funky Buddha has closed</Link>, and Itzel now operates at its Berkeley Street address.
             </p>
             <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               How to Actually Get Into Mayfair Clubs Tonight

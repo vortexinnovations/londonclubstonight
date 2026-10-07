@@ -14,6 +14,8 @@ import {
   getLastMinuteTableClubs,
   getOpenClubs,
   clubStatusLabel,
+  musicLabel,
+  tablesFromLabel,
   type Club,
   WHATSAPP_GUESTLIST_NUMBER,
   WHATSAPP_TABLE_NUMBER,
@@ -74,7 +76,7 @@ function frontMatter(title: string, description: string, canonicalPath: string, 
 
 function clubSummaryLine(club: Club): string {
   const status = club.status === 'open' ? '' : ` *(${clubStatusLabel(club).toLowerCase()})*`;
-  return `- [${club.name}](${SITE_URL}/clubs/${club.slug})${status} — ${club.area}. ${club.musicGenres.join(', ')}. Tables from ${club.tableMinimum}. ${club.tagline}`;
+  return `- [${club.name}](${SITE_URL}/clubs/${club.slug})${status} — ${club.area}. ${musicLabel(club)}. ${tablesFromLabel(club)}. ${club.tagline}`;
 }
 
 /** Full markdown profile for a single club page. */
@@ -93,7 +95,7 @@ export function clubMarkdown(club: Club): string {
     `| Status | ${clubStatusLabel(club)} |`,
     `| Area | ${club.area} |`,
     `| Address | ${club.address} |`,
-    `| Music | ${club.musicGenres.join(', ')} |`,
+    `| Music | ${musicLabel(club)} |`,
     `| Open nights | ${club.openingNights} |`,
     `| Closing time | ${club.closingTime} |`,
     `| Dress code | ${club.dressCode} |`,
@@ -395,7 +397,7 @@ export function llmsTxt(posts: BlogPost[] = blogPosts): string {
     '',
     ...clubs.map((club) => {
       const status = club.status === 'open' ? '' : ` (${clubStatusLabel(club).toLowerCase()})`;
-      return `- [${club.name}](${SITE_URL}/clubs/${club.slug})${status}: ${club.area}. ${club.musicGenres.join(', ')}. Tables from ${club.tableMinimum}. ${club.tagline}`;
+      return `- [${club.name}](${SITE_URL}/clubs/${club.slug})${status}: ${club.area}. ${musicLabel(club)}. ${tablesFromLabel(club)}. ${club.tagline}`;
     }),
     '',
     `## Articles (${posts.length})`,

@@ -46,7 +46,7 @@ const faqs = [
   {
     question: 'What are the best clubs open on Saturday night in London?',
     answer:
-      'Saturday is the biggest night in London and nearly every major club is open. Top choices include Tape London for exclusivity, Cirque Le Soir for entertainment, Ministry of Sound for electronic music, The London Reign for a show-and-club experience, and Maddox for house music. The best club for you depends on your music taste, group size, and budget.',
+      'Saturday is the biggest night in London and nearly every major club is open. Top choices include Tape London for exclusivity, Cirque Le Soir for entertainment, Ministry of Sound for electronic music, The London Reign for a show-and-club experience, Maddox for house music, and Rumour (formerly TABU) or 99 Regent Street (formerly Cuckoo Club) for a Mayfair table. The best club for you depends on your music taste, group size, and budget.',
   },
   {
     question: 'Do I need to book a table for Saturday night in London?',

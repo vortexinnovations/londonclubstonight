@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { getOpenClubs } from '@/lib/clubs';
+import { getOpenClubs, closesLabel } from '@/lib/clubs';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import TonightClubCard from '@/components/TonightClubCard';
 import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/components/SchemaMarkup';
@@ -177,7 +177,7 @@ export default function LateNightClubsLondonTonightPage() {
             {sortedByClosing.map((club) => (
               <div key={club.slug} className="glass-card p-6 md:p-7 text-center">
                 <div className="text-xs text-neon-300 uppercase tracking-wider mb-3">
-                  Closes at {club.closingTime}
+                  {closesLabel(club)}
                 </div>
                 <Link
                   href={`/clubs/${club.slug}`}

@@ -5,7 +5,7 @@ const clubLinks = [
   { href: '/clubs/cirque-le-soir', label: 'Cirque Le Soir' },
   { href: '/clubs/the-london-reign', label: 'The London Reign' },
   { href: '/clubs/ministry-of-sound', label: 'Ministry of Sound' },
-  { href: '/clubs/tabu-london', label: 'TABU (now Rumour)' },
+  { href: '/clubs/tabu-london', label: 'Rumour (formerly TABU)' },
   { href: '/clubs/funky-buddha', label: 'Funky Buddha (closed)' },
   { href: '/clubs/the-box-london', label: 'The Box' },
   { href: '/clubs/luna-club-london', label: 'Luna Club (closed)' },

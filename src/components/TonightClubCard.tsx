@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import type { Club } from '@/lib/clubs';
-import { getWhatsAppTonightUrl } from '@/lib/clubs';
+import { getWhatsAppTonightUrl, closesLabel, tablesFromLabel } from '@/lib/clubs';
 
 interface TonightClubCardProps {
   club: Club;
@@ -76,9 +76,9 @@ export default function TonightClubCard({
 
         {/* Info row */}
         <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-5 pt-4 border-t border-white/[0.06] text-xs text-frost-500">
-          <span>Closes at {club.closingTime}</span>
+          <span>{closesLabel(club)}</span>
           <span className="text-white/15">|</span>
-          <span>Tables from {club.tableMinimum}</span>
+          <span>{tablesFromLabel(club)}</span>
         </div>
 
         {/* Book Table Tonight CTA */}
