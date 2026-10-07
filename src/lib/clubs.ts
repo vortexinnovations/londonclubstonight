@@ -684,9 +684,9 @@ For the same sound and crowd today, Tape London on Hanover Square is the closest
     name: 'Selene London',
     shortName: 'Selene',
     status: 'open',
-    tagline: 'Elegant Mayfair newcomer blending refined cocktails with late-night sophistication',
-    description: 'Sophisticated Mayfair venue offering premium cocktails and late-night clubbing in an elegant setting. Tables from £1,000.',
-    longDescription: `Selene London brings a refined elegance to Mayfair's late-night scene. The venue positions itself at the intersection of cocktail bar sophistication and nightclub energy — a space where the evening builds gradually from intimate drinks to a full dancefloor experience.
+    tagline: 'Elegant newcomer just north of Oxford Circus, blending refined cocktails with late-night sophistication',
+    description: 'Sophisticated Fitzrovia venue just north of Oxford Circus, offering premium cocktails and late-night clubbing in an elegant setting. Tables from £1,000.',
+    longDescription: `Selene London brings a refined elegance to the late-night scene just north of Oxford Circus, on Winsley Street in Fitzrovia, a short walk from Mayfair. The venue positions itself at the intersection of cocktail bar sophistication and nightclub energy — a space where the evening builds gradually from intimate drinks to a full dancefloor experience.
 
 The design is understated luxury. Clean lines, warm materials, and lighting that shifts seamlessly as the venue transitions from its early-evening cocktail bar mode to its late-night club format. The aesthetic is feminine without being exclusive to women — it's a venue that appeals to anyone who appreciates design and atmosphere over volume and spectacle. Alongside the club rooms, Selene also has private bowling lanes, which can be booked together with a table.
 
@@ -696,8 +696,8 @@ As the night progresses, the music builds. The genre leans into sophisticated ho
 
 Tables start from £1,000 and the service is polished. The crowd is well-dressed, predominantly in their late twenties to late thirties, and appreciates the venue's more refined approach. Guestlist is available and the door policy is selective but welcoming to the right crowd.`,
     address: '4 Winsley Street, Fitzrovia, London W1W 8HF',
-    area: 'Mayfair',
-    areas: ['Mayfair', 'Central London'],
+    area: 'Fitzrovia',
+    areas: ['Fitzrovia', 'Central London'],
     musicGenres: ['House', 'RnB', 'Deep House'],
     openingNights: 'Thursday, Friday, Saturday, Sunday',
     closingTime: '3:00am',
@@ -706,9 +706,9 @@ Tables start from £1,000 and the service is polished. The crowd is well-dressed
     crowd: 'Sophisticated, cocktail-appreciating, design-conscious. Average age 27-38.',
     bestFor: 'Couples seeking a sophisticated night out. Groups who appreciate cocktails as much as clubbing. Anyone who wants elegance without stuffiness.',
     insiderTip: 'Arrive early enough to experience the cocktail bar phase — the drinks are excellent and the atmosphere during the transition to club mode is Selene at its best. Thursday is the most intimate night.',
-    whyRanked: 'Selene fills a gap in Mayfair for people who want sophistication and quality across every element of their evening. The cocktail-to-club concept is executed with real finesse.',
+    whyRanked: 'Selene fills a gap just north of Oxford Circus, a short walk from Mayfair, for people who want sophistication and quality across every element of their evening. The cocktail-to-club concept is executed with real finesse.',
     mapUrl: 'https://maps.google.com/?q=Selene+London+Mayfair',
-    tonightSuitability: 'Sophisticated cocktail lounge transitioning to late-night house music. The grown-up Mayfair option.',
+    tonightSuitability: 'Sophisticated cocktail lounge transitioning to late-night house music. The grown-up option just north of Oxford Circus.',
     guestlistRealistic: true,
     guestlistNote: 'Guestlist available. The refined cocktail-bar format makes entry generally straightforward.',
     bestForGroups: 'ladies',
