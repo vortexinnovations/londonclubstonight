@@ -1,5 +1,11 @@
 import { cache } from 'react';
 import { getDbListing, getDbPosts, type DbPost } from '@/lib/site-posts';
+import { WHATSAPP_TABLE_NUMBER } from '@/lib/clubs';
+
+// Database post bodies may link WhatsApp with any number; send them to the
+// live one, as the site's own CTAs do.
+const withLiveWhatsApp = (md: string) =>
+  md.replace(/(wa\.me\/|api\.whatsapp\.com\/send\?phone=)\d+/g, `$1${WHATSAPP_TABLE_NUMBER}`);
 
 export interface BlogPost {
   slug: string;
@@ -766,7 +772,7 @@ function fromDb(p: DbPost): BlogPost {
     relatedClubs: [],
     faqs: p.faqs.length ? p.faqs : undefined,
     source: 'db',
-    bodyMd: p.bodyMd,
+    bodyMd: withLiveWhatsApp(p.bodyMd),
     imageAlt: p.imageAlt,
   };
 }
