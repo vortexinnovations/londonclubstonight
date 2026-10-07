@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getAllBlogPosts, getCategories } from '@/lib/blog';
+import { getMergedPosts } from '@/lib/blog';
 import BlogCard from '@/components/BlogCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
@@ -28,9 +28,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default function BlogPage() {
-  const posts = getAllBlogPosts().sort((a, b) => new Date(b.publishedDate).getTime() - new Date(a.publishedDate).getTime());
-  const categories = getCategories();
+// Refreshed by /api/revalidate when the content API writes; daily safety net.
+export const revalidate = 86400;
+
+export default async function BlogPage() {
+  const all = await getMergedPosts();
+  const posts = [...all].sort((a, b) => new Date(b.publishedDate).getTime() - new Date(a.publishedDate).getTime());
+  const categories = [...new Set(posts.map((p) => p.category))];
   const featuredPost = posts[0];
   const remainingPosts = posts.slice(1);
 

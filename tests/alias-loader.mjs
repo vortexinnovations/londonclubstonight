@@ -18,6 +18,9 @@ function isFile(candidate) {
 }
 
 export async function resolve(specifier, context, nextResolve) {
+  // Next's bundler resolves `next/cache`; Node's ESM resolver needs the file.
+  if (specifier === 'next/cache') return nextResolve('next/cache.js', context);
+
   if (specifier.startsWith('@/')) {
     const base = path.join(srcDir, specifier.slice(2));
 

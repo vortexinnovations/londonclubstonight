@@ -2,15 +2,33 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { getAllBlogPosts, getBlogPostBySlug } from '@/lib/blog';
+import { marked } from 'marked';
+import { getMergedPostBySlug, getMergedPosts } from '@/lib/blog';
 import { clubs, WHATSAPP_TABLE_LINK, WHATSAPP_GUESTLIST_LINK } from '@/lib/clubs';
 import ClubCard from '@/components/ClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
 
-export function generateStaticParams() {
-  return getAllBlogPosts().map((post) => ({ slug: post.slug }));
+// Posts are prerendered at build and refreshed by /api/revalidate when the
+// content API writes; this is a daily safety net on top.
+export const revalidate = 86400;
+
+export async function generateStaticParams() {
+  return (await getMergedPosts()).map((post) => ({ slug: post.slug }));
 }
+
+// Content-API posts are Markdown (the API refuses raw HTML), rendered with the
+// same classes the JSX posts use, element by element.
+const DB_BODY_CLASSES = [
+  '[&_h2]:font-display [&_h2]:text-2xl [&_h2]:font-extrabold [&_h2]:tracking-tight [&_h2]:text-white [&_h2]:mt-10 [&_h2]:mb-4',
+  '[&_h3]:font-display [&_h3]:text-xl [&_h3]:font-bold [&_h3]:tracking-tight [&_h3]:text-white [&_h3]:mt-8 [&_h3]:mb-3',
+  '[&_p]:text-frost-300 [&_p]:leading-relaxed [&_p]:mb-4',
+  '[&_ul]:list-disc [&_ul]:list-inside [&_ul]:text-frost-300 [&_ul]:space-y-2 [&_ul]:mb-6 [&_ul]:ml-4',
+  '[&_ol]:list-decimal [&_ol]:list-inside [&_ol]:text-frost-300 [&_ol]:space-y-2 [&_ol]:mb-6 [&_ol]:ml-4',
+  '[&_strong]:text-white',
+  '[&_a]:text-neon-300 [&_a]:underline [&_a]:underline-offset-4 [&_a]:decoration-glow-400/50 hover:[&_a]:text-white',
+  '[&_table]:block [&_table]:w-full [&_table]:overflow-x-auto [&_table]:text-sm [&_table]:mb-6 [&_th]:text-left [&_th]:text-white [&_th]:py-2 [&_th]:pr-4 [&_th]:border-b [&_th]:border-white/20 [&_td]:text-frost-300 [&_td]:py-2 [&_td]:pr-4 [&_td]:border-b [&_td]:border-white/10',
+].join(' ');
 
 export async function generateMetadata({
   params,
@@ -18,7 +36,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const post = getBlogPostBySlug(slug);
+  const post = await getMergedPostBySlug(slug);
   if (!post) return {};
 
   return {
@@ -3270,13 +3288,13 @@ export default async function BlogPostPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const post = getBlogPostBySlug(slug);
+  const post = await getMergedPostBySlug(slug);
 
   if (!post) {
     notFound();
   }
 
-  const allPosts = getAllBlogPosts();
+  const allPosts = await getMergedPosts();
   const relatedClubs = clubs.filter((club) =>
     post.relatedClubs.includes(club.slug)
   );
@@ -3288,7 +3306,8 @@ export default async function BlogPostPage({
     post.metaTitle,
     post.metaDescription,
     `/blog/${post.slug}`,
-    post.publishedDate
+    post.publishedDate,
+    post.updatedDate
   );
 
   return (
@@ -3345,7 +3364,7 @@ export default async function BlogPostPage({
           <div className="relative aspect-video w-full overflow-hidden rounded-2xl mb-10">
             <Image
               src={post.featuredImage}
-              alt={post.title}
+              alt={post.imageAlt || post.title}
               fill
               className="object-cover animate-slow-zoom"
               sizes="100vw"
@@ -3355,7 +3374,14 @@ export default async function BlogPostPage({
           </div>
 
           {/* Main Content */}
-          <div className="prose-custom">{getPostContent(slug)}</div>
+          {post.source === 'db' ? (
+            <div
+              className={`prose-custom ${DB_BODY_CLASSES}`}
+              dangerouslySetInnerHTML={{ __html: marked.parse(post.bodyMd ?? '', { async: false }) }}
+            />
+          ) : (
+            <div className="prose-custom">{getPostContent(slug)}</div>
+          )}
 
           {/* FAQ Section */}
           {post.faqs && post.faqs.length > 0 && (

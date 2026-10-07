@@ -165,7 +165,7 @@ function listSection(heading: string, list: Club[]): string[] {
 }
 
 /** Markdown for a static (non-club, non-blog) route. */
-export function staticRouteMarkdown(route: SiteRoute): string {
+export function staticRouteMarkdown(route: SiteRoute, posts: BlogPost[] = blogPosts): string {
   const sections: string[] = [
     frontMatter(route.title, route.description, route.path),
     '',
@@ -241,9 +241,9 @@ export function staticRouteMarkdown(route: SiteRoute): string {
 
     case '/blog':
       sections.push(
-        `## Articles (${blogPosts.length})`,
+        `## Articles (${posts.length})`,
         '',
-        ...blogPosts.map(
+        ...posts.map(
           (post) => `- [${post.title}](${SITE_URL}/blog/${post.slug}) — ${post.excerpt}`
         ),
         ''
@@ -299,11 +299,11 @@ export function notFoundMarkdown(requestedPath?: string): string {
 }
 
 /** Resolve any site pathname to its markdown representation, or null. */
-export function markdownForPath(pathname: string): string | null {
+export function markdownForPath(pathname: string, posts: BlogPost[] = blogPosts): string | null {
   const path = normalisePath(pathname);
 
   const staticRoute = getStaticRoute(path);
-  if (staticRoute) return staticRouteMarkdown(staticRoute);
+  if (staticRoute) return staticRouteMarkdown(staticRoute, posts);
 
   const clubMatch = /^\/clubs\/([a-z0-9-]+)$/.exec(path);
   if (clubMatch) {
@@ -313,7 +313,7 @@ export function markdownForPath(pathname: string): string | null {
 
   const blogMatch = /^\/blog\/([a-z0-9-]+)$/.exec(path);
   if (blogMatch) {
-    const post = getBlogPostBySlug(blogMatch[1]);
+    const post = posts.find((p) => p.slug === blogMatch[1]) ?? getBlogPostBySlug(blogMatch[1]);
     return post ? blogPostMarkdown(post) : null;
   }
 
@@ -327,11 +327,11 @@ export function normalisePath(pathname: string): string {
 }
 
 /** Every pathname that has a markdown representation. */
-export function allMarkdownPaths(): string[] {
+export function allMarkdownPaths(posts: BlogPost[] = blogPosts): string[] {
   return [
     ...staticRoutes.map((route) => route.path),
     ...clubs.map((club) => `/clubs/${club.slug}`),
-    ...blogPosts.map((post) => `/blog/${post.slug}`),
+    ...posts.map((post) => `/blog/${post.slug}`),
   ];
 }
 
@@ -340,7 +340,7 @@ export function allMarkdownPaths(): string[] {
  * H2 sections of links. The "When to use this site" section is what tells an
  * agent whether this domain is the right tool for a given request.
  */
-export function llmsTxt(): string {
+export function llmsTxt(posts: BlogPost[] = blogPosts): string {
   const openClubs = getOpenClubs();
 
   const linkList = (routes: SiteRoute[]) =>
@@ -397,9 +397,9 @@ export function llmsTxt(): string {
       return `- [${club.name}](${SITE_URL}/clubs/${club.slug})${status}: ${club.area}. ${club.musicGenres.join(', ')}. Tables from ${club.tableMinimum}. ${club.tagline}`;
     }),
     '',
-    `## Articles (${blogPosts.length})`,
+    `## Articles (${posts.length})`,
     '',
-    ...blogPosts.map((post) => `- [${post.title}](${SITE_URL}/blog/${post.slug}): ${post.excerpt}`),
+    ...posts.map((post) => `- [${post.title}](${SITE_URL}/blog/${post.slug}): ${post.excerpt}`),
     '',
     '## Company',
     '',

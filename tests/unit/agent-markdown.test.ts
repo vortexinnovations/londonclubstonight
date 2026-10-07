@@ -45,8 +45,11 @@ describe('site route registry', () => {
   });
 });
 
+// The sitemap is async (it merges content-API posts); outside Next it falls back to the file posts.
+const sitemapEntries = await sitemap();
+
 describe('sitemap', () => {
-  const entries = sitemap();
+  const entries = sitemapEntries;
   const urls = entries.map((entry) => entry.url);
 
   // The static ordering that shipped before the route registry was extracted,

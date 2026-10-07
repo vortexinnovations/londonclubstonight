@@ -61,7 +61,7 @@ export function getLocalBusinessSchema() {
   };
 }
 
-export function getArticleSchema(title: string, description: string, url: string, datePublished: string) {
+export function getArticleSchema(title: string, description: string, url: string, datePublished: string, dateModified?: string) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -69,7 +69,7 @@ export function getArticleSchema(title: string, description: string, url: string
     description: description,
     url: `${SITE}${url}`,
     datePublished: datePublished,
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: dateModified ?? new Date().toISOString().split('T')[0],
     author: { '@id': ORGANIZATION_ID },
     publisher: { '@id': ORGANIZATION_ID },
   };
