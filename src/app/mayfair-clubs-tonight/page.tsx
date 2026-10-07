@@ -46,22 +46,22 @@ const faqs = [
   {
     question: 'What Mayfair clubs are open tonight?',
     answer:
-      'Mayfair clubs operate primarily on Thursday, Friday, and Saturday nights. Key venues include Tape London, TABU, Maddox, and Cuckoo Club. The exact clubs open tonight depend on the day of the week — our page updates dynamically to show you what is running right now. Message us on WhatsApp for a real-time recommendation based on your group size and preferences.',
+      'Mayfair clubs operate primarily on Thursday, Friday, and Saturday nights. Key venues include Tape London, Maddox, Dear Darling, and Scotch of St James. The exact clubs open tonight depend on the day of the week — our page updates dynamically to show you what is running right now. Message us on WhatsApp for a real-time recommendation based on your group size and preferences.',
   },
   {
     question: 'Can I get on a guestlist in Mayfair tonight?',
     answer:
-      'Same-night guestlist in Mayfair is possible but depends on the venue and the night. TABU, Cuckoo Club, and Maddox are generally receptive to same-day guestlist requests for mixed groups. Tape London is much harder — table booking is the most reliable route there. The key factor is group composition: mixed groups with a good gender ratio have the best chance. Submit your guestlist request as early in the day as possible for the best odds.',
+      'Same-night guestlist in Mayfair is possible but depends on the venue and the night. Dear Darling and Maddox are generally receptive to same-day guestlist requests for mixed groups. Tape London is much harder — table booking is the most reliable route there. The key factor is group composition: mixed groups with a good gender ratio have the best chance. Submit your guestlist request as early in the day as possible for the best odds.',
   },
   {
     question: 'What\'s the dress code for Mayfair clubs?',
     answer:
-      'Mayfair has the strictest dress code of any London nightlife area. For men: smart shoes are non-negotiable, along with tailored trousers and a collared shirt or sharp top. No trainers, no sportswear, no casual denim. For women: heels and a cocktail-style outfit are standard. TABU is slightly more relaxed on footwear if the overall look is fashionable, but most Mayfair venues operate a strict smart-dress policy. The door teams have full discretion and will turn away anyone they consider underdressed.',
+      'Mayfair has the strictest dress code of any London nightlife area. For men: smart shoes are non-negotiable, along with tailored trousers and a collared shirt or sharp top. No trainers, no sportswear, no casual denim. For women: heels and a cocktail-style outfit are standard. Mayfair venues operate a strict smart-dress policy. The door teams have full discretion and will turn away anyone they consider underdressed.',
   },
   {
     question: 'How much is a table in Mayfair tonight?',
     answer:
-      'Table minimums in Mayfair start from around £1,000 at venues like TABU, Cuckoo Club, and Maddox. Tape London starts from £1,500 and can go significantly higher for premium positions on peak nights. These minimums cover your spend on bottles and drinks — you are not paying £1,000 on top of your drinks, it is the minimum amount you commit to spending. For a group of five, that works out to £200 per person, which is competitive when you factor in guaranteed entry and bottle service. For full pricing breakdowns visit londonbottleservice.com.',
+      'Table minimums in Mayfair start from around £1,000 at venues like Maddox and Dear Darling. Tape London starts from £1,500 and can go significantly higher for premium positions on peak nights. These minimums cover your spend on bottles and drinks — you are not paying £1,000 on top of your drinks, it is the minimum amount you commit to spending. For a group of five, that works out to £200 per person, which is competitive when you factor in guaranteed entry and bottle service. For full pricing breakdowns visit londonbottleservice.com.',
   },
 ];
 
@@ -211,9 +211,8 @@ export default function MayfairClubsTonightPage() {
             <p>
               Mayfair is the epicentre of London&apos;s high-end nightlife, and
               it has been for decades. The concentration of premium clubs within
-              a few streets — Tape London on Hanover Square, TABU tucked
-              underground, Maddox on its namesake street, Cuckoo Club on
-              Swallow Street — creates a density of options that no other London
+              a few streets — Tape London on Hanover Square, Maddox on its
+              namesake street, Scotch of St James in Mason&apos;s Yard — creates a density of options that no other London
               neighbourhood can match. But choosing the wrong one on the wrong
               night can mean an expensive, underwhelming evening.
             </p>
@@ -244,19 +243,16 @@ export default function MayfairClubsTonightPage() {
               <strong className="text-white">Tape London</strong> is the pinnacle of exclusivity. A members club on Hanover Square where the crowd genuinely includes celebrities and the sound system is among the best in the world. If you want the most exclusive experience Mayfair offers, this is it — but you will need a table booking or a very good reason to be at the door.
             </p>
             <p>
-              <strong className="text-white">TABU</strong> brings a completely different energy. The Japanese underground aesthetic creates an atmosphere that is both intimate and intense, with hip-hop programming that caters to genuine music lovers rather than tourists. The crowd is younger, more fashion-forward, and less concerned with VIP posturing.
-            </p>
-            <p>
               <strong className="text-white">Dear Darling</strong> takes yet another approach — starting your evening with genuinely excellent cocktails in a gilded, opulent setting before transitioning into a late-night venue. It is the best option for groups that want the evening to build gradually rather than arriving at a club cold at midnight.
             </p>
             <p>
               <strong className="text-white">Maddox</strong> is the house music stronghold of Mayfair. While most Mayfair clubs lean heavily into hip-hop and RnB, Maddox has committed to a sound that attracts a crowd who actually want to dance. The restaurant-to-club format is polished, and the transition between the two feels natural.
             </p>
             <p>
-              <strong className="text-white">Cuckoo Club</strong> solves the most common group argument by offering house music on one floor and hip-hop on the other. It is perhaps the most consistently reliable night out in Mayfair — never the most fashionable, but never disappointing either.
-            </p>
-            <p>
-              <strong className="text-white">Funky Buddha</strong> remains one of the most prestigious names in Mayfair nightlife. The heritage of the venue — decades of celebrity patronage and cultural significance — gives it a weight that newer clubs cannot match. Fridays and Saturdays here have a particular energy that longtime London clubbers recognise immediately.
+              Three familiar names have changed.{' '}
+              <Link href="/clubs/tabu-london" className="text-neon-300 underline underline-offset-4">TABU is now Rumour</Link>,{' '}
+              <Link href="/clubs/cuckoo-club" className="text-neon-300 underline underline-offset-4">Cuckoo Club is now 99 Regent Street</Link>, and{' '}
+              <Link href="/clubs/funky-buddha" className="text-neon-300 underline underline-offset-4">Funky Buddha has closed</Link>. The clubs above are the open Mayfair options to book tonight.
             </p>
             <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               How to Actually Get Into Mayfair Clubs Tonight
@@ -268,7 +264,7 @@ export default function MayfairClubsTonightPage() {
               <strong className="text-white">Book a table.</strong> This is the most reliable approach across all Mayfair venues. A table reservation guarantees your entry, removes the stress of door assessments, and lets you focus on the night itself. Tables start from &#163;1,000 at most venues, which splits reasonably across a group of four or more.
             </p>
             <p>
-              <strong className="text-white">Use a promoter for guestlist.</strong> Where guestlist is available — TABU, Cuckoo Club, Dear Darling, and others — going through a promoter is significantly more effective than enquiring directly. Promoters have allocated spots and established relationships with door teams. Message us on WhatsApp and we handle the guestlist process for you.
+              <strong className="text-white">Use a promoter for guestlist.</strong> Where guestlist is available (Dear Darling, Maddox and others), going through a promoter is significantly more effective than enquiring directly. Promoters have allocated spots and established relationships with door teams. Message us on WhatsApp and we handle the guestlist process for you.
             </p>
             <p>
               <strong className="text-white">Dress the part.</strong> This is not optional in Mayfair. Smart shoes, tailored clothing, and a sense of occasion are the minimum. If you are unsure about any item, upgrade it. The door team makes fast decisions based on appearance, and there is rarely a second chance.

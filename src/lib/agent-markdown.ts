@@ -13,6 +13,7 @@ import {
   getGuestlistFriendlyClubs,
   getLastMinuteTableClubs,
   getOpenClubs,
+  clubStatusLabel,
   type Club,
   WHATSAPP_GUESTLIST_NUMBER,
   WHATSAPP_TABLE_NUMBER,
@@ -72,7 +73,7 @@ function frontMatter(title: string, description: string, canonicalPath: string, 
 }
 
 function clubSummaryLine(club: Club): string {
-  const status = club.status === 'permanently-closed' ? ' *(permanently closed)*' : '';
+  const status = club.status === 'open' ? '' : ` *(${clubStatusLabel(club).toLowerCase()})*`;
   return `- [${club.name}](${SITE_URL}/clubs/${club.slug})${status} — ${club.area}. ${club.musicGenres.join(', ')}. Tables from ${club.tableMinimum}. ${club.tagline}`;
 }
 
@@ -89,7 +90,7 @@ export function clubMarkdown(club: Club): string {
     '',
     `| Field | Value |`,
     `| --- | --- |`,
-    `| Status | ${club.status === 'open' ? 'Open' : 'Permanently closed'} |`,
+    `| Status | ${clubStatusLabel(club)} |`,
     `| Area | ${club.area} |`,
     `| Address | ${club.address} |`,
     `| Music | ${club.musicGenres.join(', ')} |`,
@@ -393,7 +394,7 @@ export function llmsTxt(posts: BlogPost[] = blogPosts): string {
     `## Clubs (${clubs.length})`,
     '',
     ...clubs.map((club) => {
-      const status = club.status === 'permanently-closed' ? ' (permanently closed)' : '';
+      const status = club.status === 'open' ? '' : ` (${clubStatusLabel(club).toLowerCase()})`;
       return `- [${club.name}](${SITE_URL}/clubs/${club.slug})${status}: ${club.area}. ${club.musicGenres.join(', ')}. Tables from ${club.tableMinimum}. ${club.tagline}`;
     }),
     '',

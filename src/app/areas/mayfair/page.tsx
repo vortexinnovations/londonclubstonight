@@ -9,7 +9,7 @@ import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 export const metadata: Metadata = {
   title: 'Best Clubs in Mayfair 2026 — The Heart of London\'s Luxury Nightlife',
   description:
-    'The definitive guide to Mayfair nightclubs. Tape, Cirque, TABU, Funky Buddha, Maddox, Scotch, and more — table bookings, guestlist, and insider tips for every Mayfair club.',
+    'The definitive guide to Mayfair nightclubs. Tape, Cirque, Maddox, Dear Darling, Scotch, and more — table bookings, guestlist, and insider tips for every Mayfair club.',
   keywords: [
     'clubs in Mayfair',
     'Mayfair clubs',
@@ -47,7 +47,7 @@ export default function MayfairPage() {
       <SchemaMarkup
         schema={getArticleSchema(
           'Best Clubs in Mayfair 2026 — The Heart of London\'s Luxury Nightlife',
-          'The definitive guide to Mayfair nightclubs including Tape, Cirque, TABU, Funky Buddha, Maddox, Scotch, and more.',
+          'The definitive guide to Mayfair nightclubs including Tape, Cirque, Maddox, Dear Darling, Scotch, and more.',
           '/areas/mayfair',
           '2025-01-01'
         )}
@@ -145,9 +145,10 @@ export default function MayfairPage() {
               </p>
               <p>
                 Almost every top-tier London club operates within a few minutes&apos; walk of
-                each other in Mayfair. Tape London on Hanover Square, TABU hidden below street
-                level, Funky Buddha on Winsley Street, Maddox on Maddox Street, Scotch of St James
-                tucked away on Mason&apos;s Yard, and Cuckoo Club on Swallow Street. This
+                each other in Mayfair. Tape London on Hanover Square, Maddox on Maddox Street,
+                Scotch of St James tucked away on Mason&apos;s Yard, and Dear Darling close by.
+                Two older names have changed (TABU is now Rumour and Cuckoo Club is now 99
+                Regent Street), and Funky Buddha has closed. This
                 density means that if your first choice doesn&apos;t work out, you&apos;re
                 never far from an alternative.
               </p>

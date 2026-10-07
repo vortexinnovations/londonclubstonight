@@ -51,12 +51,12 @@ const faqs = [
   {
     question: 'What clubs are open tonight in London?',
     answer:
-      'The clubs open tonight depend on the day of the week. Most Mayfair clubs like Tape London, TABU, and Cirque Le Soir operate Thursday through Saturday. Soho venues often add Wednesday nights. Our page updates dynamically to show you exactly which clubs are open tonight based on the current day. Message us on WhatsApp for a real-time recommendation tailored to your group.',
+      'The clubs open tonight depend on the day of the week. Most Mayfair clubs like Tape London, Maddox, and Cirque Le Soir operate Thursday through Saturday. Soho venues often add Wednesday nights. Our page updates dynamically to show you exactly which clubs are open tonight based on the current day. Message us on WhatsApp for a real-time recommendation tailored to your group.',
   },
   {
     question: 'Can I get a table at a London club tonight?',
     answer:
-      'Yes, same-night table bookings are possible at many London clubs, especially earlier in the week or on quieter nights. Venues like Cirque Le Soir, TABU, and The London Reign often have last-minute table availability. Saturdays at the most exclusive clubs like Tape London are harder to secure same-day. Message us on WhatsApp and we will check real-time availability across all venues.',
+      'Yes, same-night table bookings are possible at many London clubs, especially earlier in the week or on quieter nights. Venues like Cirque Le Soir, Maddox, and The London Reign often have last-minute table availability. Saturdays at the most exclusive clubs like Tape London are harder to secure same-day. Message us on WhatsApp and we will check real-time availability across all venues.',
   },
   {
     question: 'What time do London clubs open?',
@@ -301,7 +301,7 @@ export default function ClubsTonightLondonPage() {
             </h3>
             <p>
               Every London club enforces a dress code, but the strictness varies
-              by venue and by night. Mayfair clubs like Tape London and TABU
+              by venue and by night. Mayfair clubs like Tape London and Maddox
               expect smart shoes, tailored trousers, and a collared shirt at
               minimum for men. Trainers are almost universally rejected unless
               they are genuinely high-end designer. Women have more flexibility,

@@ -46,12 +46,12 @@ const faqs = [
   {
     question: 'Can I book a VIP table at a London club tonight?',
     answer:
-      'Yes, same-day table bookings are possible at many London clubs. Venues like Cirque Le Soir, TABU, The London Reign, and Maddox regularly accommodate last-minute table requests, especially on Thursdays and Fridays. Saturday availability is tighter but not impossible — we often have access to promoter-held tables even when the venue shows fully booked on their own system. Message us on WhatsApp for a real-time availability check across all venues.',
+      'Yes, same-day table bookings are possible at many London clubs. Venues like Cirque Le Soir, Dear Darling, The London Reign, and Maddox regularly accommodate last-minute table requests, especially on Thursdays and Fridays. Saturday availability is tighter but not impossible — we often have access to promoter-held tables even when the venue shows fully booked on their own system. Message us on WhatsApp for a real-time availability check across all venues.',
   },
   {
     question: 'How much does a table cost at London clubs?',
     answer:
-      'Table minimums at London clubs typically start from £1,000 and go up from there. This is a minimum spend on bottles and drinks, not an entry fee on top of your drinks. At venues like TABU and Cuckoo Club, £1,000 is the standard starting point. Tape London starts from £1,500. Premium positions and peak Saturdays can push minimums to £2,000 or above. For a group of five, £1,000 works out to £200 per person — competitive with buying individual drinks at the bar over a full night, with vastly better service and guaranteed entry.',
+      'Table minimums at London clubs typically start from £1,000 and go up from there. This is a minimum spend on bottles and drinks, not an entry fee on top of your drinks. At venues like Maddox and Dear Darling, £1,000 is the standard starting point. Tape London starts from £1,500. Premium positions and peak Saturdays can push minimums to £2,000 or above. For a group of five, £1,000 works out to £200 per person — competitive with buying individual drinks at the bar over a full night, with vastly better service and guaranteed entry.',
   },
   {
     question: 'What is included in a table booking?',

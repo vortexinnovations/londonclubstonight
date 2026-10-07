@@ -46,21 +46,21 @@ const areas = [
     slug: 'mayfair',
     description:
       'The epicentre of London nightlife. Exclusive members clubs, celebrity crowds, and tables that start at four figures. If you want the best, this is where you go.',
-    clubCount: clubs.filter((c) => c.areas.includes('Mayfair')).length,
+    clubCount: getOpenClubs().filter((c) => c.areas.includes('Mayfair')).length,
   },
   {
     name: 'Soho',
     slug: 'soho',
     description:
       'Gritty, eclectic, and never boring. From underground hip-hop to circus-themed spectacles, Soho delivers variety that nowhere else in London can match.',
-    clubCount: clubs.filter((c) => c.areas.includes('Soho')).length,
+    clubCount: getOpenClubs().filter((c) => c.areas.includes('Soho')).length,
   },
   {
     name: 'Central London',
     slug: 'central-london',
     description:
       'Piccadilly, St James\'s, and the West End. Showclubs, theatrical nightlife, and venues that blur the line between dinner and dance floor.',
-    clubCount: clubs.filter((c) => c.areas.includes('Central London')).length,
+    clubCount: getOpenClubs().filter((c) => c.areas.includes('Central London')).length,
   },
   {
     name: 'St James\'s & Piccadilly',

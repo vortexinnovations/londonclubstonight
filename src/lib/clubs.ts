@@ -2,10 +2,13 @@ export interface Club {
   slug: string;
   name: string;
   shortName: string;
-  status: 'open' | 'permanently-closed';
-  /** Closed venues only: a plain statement shown at the top of the venue page. */
+  /** 'rebranded': the venue trades under a new name (name holds "New (formerly Old)"). */
+  status: 'open' | 'permanently-closed' | 'rebranded';
+  /** Rebranded venues only: the old name people still search for. */
+  formerName?: string;
+  /** Closed or rebranded venues: a plain statement shown at the top of the venue page. */
   closedMessage?: string;
-  /** Closed venues only: slugs of open venues on this site to suggest instead. */
+  /** Closed or rebranded venues: slugs of open venues on this site to suggest instead. */
   alternatives?: string[];
   tagline: string;
   description: string;
@@ -182,39 +185,40 @@ Reign appeals to a broad crowd — from couples celebrating special occasions to
   },
   {
     slug: 'tabu-london',
-    name: 'TABU London',
-    shortName: 'TABU',
-    status: 'open',
-    tagline: 'Mayfair\'s Japanese underground hideaway with the best hip-hop in W1',
-    description: 'Japanese underground-themed club in Mayfair. Unique décor, hip-hop & RnB focused. Tables from £1,000.',
-    longDescription: `TABU brings something genuinely original to Mayfair's club scene. The Japanese underground theme isn't just a surface-level aesthetic — it runs through the entire experience, from the entrance that feels like stepping into a hidden Tokyo bar to the décor that blends traditional Japanese elements with modern nightclub design.
+    name: 'Rumour (formerly TABU)',
+    shortName: 'Rumour',
+    status: 'rebranded',
+    formerName: 'TABU London',
+    closedMessage: 'TABU London is now Rumour. The Mayfair club trades under the new name, so TABU no longer takes table bookings or guestlist names. Rumour is not on our booking list yet; for a confirmed Mayfair table, try Tape London, The London Reign or Dear Darling.',
+    alternatives: ['tape-london', 'the-london-reign', 'dear-darling', 'maddox'],
+    tagline: 'TABU London is now Rumour',
+    description: 'TABU London in Mayfair is now Rumour. What changed, and the open clubs to book instead: Tape London, The London Reign and Dear Darling.',
+    longDescription: `TABU London is now Rumour. The Mayfair club trades under its new name, and people still search for it as TABU, Tabu club or Tabu Mayfair, so this page explains the change and where to go for a confirmed table.
 
-The venue sits below street level in Mayfair, and the subterranean setting adds to the atmosphere. Low ceilings, intimate corners, and lighting that shifts throughout the night create a space that feels secretive and exclusive without being pretentious. It's the kind of club that rewards regular visits because you notice new details in the design each time.
+Details such as Rumour's music, nights, door policy and table prices are not confirmed here yet, so none of the old TABU terms should be read as Rumour's.
 
-Musically, TABU is firmly hip-hop and RnB territory. The DJs who play here understand the genre deeply — expect a mix of current chart hits, classic hip-hop, and the occasional afrobeats crossover. The sound system is powerful for the room size, and the intimate scale means the music hits differently than in larger venues.
+History: as TABU, the venue was a below-street-level Mayfair club with a Japanese underground theme, focused on hip-hop and RnB, with a young, fashionable crowd. Those were TABU's details under the old name.
 
-The crowd is young, fashionable, and predominantly local. This isn't a tourist club — the regulars know each other and the vibe reflects that community feel. Tables start from £1,000 and book up quickly, particularly on Saturdays. Guestlist is available but the space is limited enough that bookings are strongly recommended.
-
-TABU works best when you embrace the unique atmosphere. It's not trying to be the biggest or the most famous — it's carved out a specific niche and serves it exceptionally well.`,
+For a hip-hop and RnB night today, Tape London on Hanover Square is the closest match on music, The London Reign adds a show to the night, and Dear Darling suits a well-dressed crowd that wants cocktails before the dancing.`,
     address: 'Mayfair, London W1',
     area: 'Mayfair',
     areas: ['Mayfair', 'Central London'],
-    musicGenres: ['Hip-Hop', 'RnB'],
-    openingNights: 'Friday, Saturday',
-    closingTime: '3:30am',
-    dressCode: 'Smart stylish. Fashionable but not overly formal. Clean trainers can work if the rest of the outfit is sharp. No sportswear.',
-    tableMinimum: '£1,000',
-    crowd: 'Young, fashion-forward, local regulars. Average age 22-32.',
-    bestFor: 'Hip-hop purists who want quality music in an intimate setting. Couples and mixed groups looking for somewhere with genuine character.',
-    insiderTip: 'Saturdays are the flagship night. The intimate size means the atmosphere builds fast — arrive by midnight to get the best table positions.',
-    whyRanked: 'The Japanese underground concept is executed brilliantly and the hip-hop programming is some of the best in Mayfair. A genuine hidden gem.',
-    mapUrl: 'https://maps.google.com/?q=TABU+London+Mayfair',
-    tonightSuitability: 'The best last-minute hip-hop night in Mayfair. Underground vibe, focused music, lively crowd.',
-    guestlistRealistic: true,
-    guestlistNote: 'Guestlist works well here. Mixed groups get priority but all groups are considered.',
+    musicGenres: ['Not confirmed'],
+    openingNights: 'Not confirmed',
+    closingTime: 'Not confirmed',
+    dressCode: 'Not confirmed for Rumour.',
+    tableMinimum: 'Not confirmed',
+    crowd: 'Not confirmed for Rumour. As TABU, the crowd was young and fashionable.',
+    bestFor: 'TABU is now Rumour. Tape London, The London Reign and Dear Darling suit the same well-dressed Mayfair crowd.',
+    insiderTip: 'TABU London is now Rumour.',
+    whyRanked: 'TABU London is now Rumour and is no longer ranked here.',
+    mapUrl: 'https://maps.google.com/?q=Rumour+Mayfair+London',
+    tonightSuitability: 'Now Rumour: not on our booking list yet.',
+    guestlistRealistic: false,
+    guestlistNote: 'TABU is now Rumour: no TABU guestlist.',
     bestForGroups: 'all',
-    lastMinuteTableFriendly: true,
-    lastMinuteNote: 'One of the more flexible Mayfair venues for same-day bookings. Message us and we will check availability.',
+    lastMinuteTableFriendly: false,
+    lastMinuteNote: 'TABU is now Rumour: no TABU tables.',
     heroImage: '/gallery/images/fe4414_4c672667e7a5457b9224ad73e3c5dda7.jpg',
     cardImage: '/gallery/images/fe4414_e949276097ce47268f86b1b06b938c57.jpg',
     galleryImages: ['/gallery/images/fe4414_48ae7b23f1e04f0a94a53da7e6a08ea9.jpg', '/gallery/images/fe4414_d03ed6fb1e754a34a815beebf6a14835.jpg', '/gallery/images/fe4414_ff953c00db3a4af5b4b7a6575ab8abae.jpg', '/gallery/images/fe4414_4cdad8e2e343466889cfb9614f83379f.jpg', '/gallery/images/fe4414_c6667a69785e4fac823c8041211beae8.jpg', '/gallery/images/fe4414_458bf79db0954e1ea5f6d28ea1917064.jpg'],
@@ -377,39 +381,40 @@ Tables start from £1,000 and the intimate scale means every table feels premium
   },
   {
     slug: 'cuckoo-club',
-    name: 'Cuckoo Club',
-    shortName: 'Cuckoo',
-    status: 'open',
-    tagline: 'The two-floor Mayfair stalwart that balances house music refinement with hip-hop energy',
-    description: 'Stylish two-floor Mayfair club on Swallow Street. House and hip-hop across two distinct rooms. Tables from £1,000.',
-    longDescription: `Cuckoo Club has been a fixture on Mayfair's Swallow Street for years, and its longevity tells you something about what it gets right. The two-floor format is the key — it gives you two genuinely different experiences under one roof, which is surprisingly rare in London's club scene.
+    name: '99 Regent Street (formerly Cuckoo Club)',
+    shortName: '99 Regent Street',
+    status: 'rebranded',
+    formerName: 'Cuckoo Club',
+    closedMessage: 'Cuckoo Club is now 99 Regent Street. The venue on Swallow Street trades under the new name, so Cuckoo Club no longer takes table bookings or guestlist names. 99 Regent Street is not on our booking list yet; for a confirmed table nearby, try The London Reign, Dear Darling or The Box.',
+    alternatives: ['the-london-reign', 'dear-darling', 'the-box-london', 'scotch-of-st-james'],
+    tagline: 'Cuckoo Club is now 99 Regent Street',
+    description: 'Cuckoo Club on Swallow Street is now 99 Regent Street. What changed, and the open clubs nearby to book instead: The London Reign, Dear Darling and The Box.',
+    longDescription: `Cuckoo Club is now 99 Regent Street. The venue on Swallow Street, just off Regent Street, trades under its new name, and people still search for Cuckoo Club, so this page explains the change and where to go for a confirmed table.
 
-The ground floor leans into house and more sophisticated electronic music. The atmosphere is refined, the lighting is measured, and the crowd here tends to be slightly older and more settled. It's a space where you can hold a conversation between songs and appreciate the DJ's craft. The downstairs room switches energy to hip-hop and RnB — louder, more energetic, and with a younger crowd that's there to party.
+Details such as the music, nights, door policy and table prices at 99 Regent Street are not confirmed here yet, so none of the old Cuckoo Club terms should be read as 99 Regent Street's.
 
-This dual personality is Cuckoo's greatest strength. You can move between floors depending on your mood, and the contrast keeps the evening interesting. Start upstairs with cocktails and house music, then descend to the hip-hop room when you're ready to turn up. Or stay on one floor all night if you know what you want.
+History: as Cuckoo Club, the venue ran two rooms, house upstairs and hip-hop and RnB downstairs, with a mixed Mayfair crowd. Those were Cuckoo Club's details under the old name.
 
-The venue design is stylish without being over-designed. The Mayfair location means the decor is smart and well-maintained, but it doesn't try to wow you with spectacle. It's confident in what it is — a well-run, dual-room nightclub that consistently delivers good nights.
-
-Tables start from £1,000 and are available on both floors. The guestlist is relatively accessible by Mayfair standards, making Cuckoo one of the more approachable upscale venues. The door policy is smart but not aggressively exclusive.`,
+For a night near Piccadilly Circus today, The London Reign on Piccadilly is the closest big room, Dear Darling suits cocktails first and dancing later, and The Box in Soho is the late-night show option.`,
     address: 'Swallow Street, London W1B 4EZ',
     area: 'Mayfair',
     areas: ['Mayfair', 'Central London'],
-    musicGenres: ['House', 'Hip-Hop', 'RnB'],
-    openingNights: 'Wednesday, Thursday, Friday, Saturday',
-    closingTime: '3:00am',
-    dressCode: 'Smart Mayfair standard. Well-dressed but not overly formal. Smart shoes for men essential.',
-    tableMinimum: '£1,000',
-    crowd: 'Mixed Mayfair crowd — professionals, regular clubbers, birthday groups. Average age 24-36.',
-    bestFor: 'Groups who can\'t agree on music — the two floors mean everyone gets what they want. People who want a reliable, well-run Mayfair night without extreme exclusivity.',
-    insiderTip: 'Wednesday and Thursday nights are the most relaxed and affordable entry points. The upstairs room on Saturdays often has the better atmosphere despite being quieter.',
-    whyRanked: 'The two-floor format solves the "what music do we want" argument and the consistent quality across years of operation shows genuine professionalism.',
-    mapUrl: 'https://maps.google.com/?q=Cuckoo+Club+London+Swallow+Street',
-    tonightSuitability: 'Two floors, two vibes — house upstairs, hip-hop downstairs. Reliable Mayfair night with guaranteed variety.',
-    guestlistRealistic: true,
-    guestlistNote: 'Guestlist works well for mixed groups. One of the more accessible Mayfair guestlists.',
+    musicGenres: ['Not confirmed'],
+    openingNights: 'Not confirmed',
+    closingTime: 'Not confirmed',
+    dressCode: 'Not confirmed for 99 Regent Street.',
+    tableMinimum: 'Not confirmed',
+    crowd: 'Not confirmed for 99 Regent Street. As Cuckoo Club, the crowd was a mixed Mayfair one.',
+    bestFor: 'Cuckoo Club is now 99 Regent Street. The London Reign, Dear Darling and The Box are open alternatives nearby.',
+    insiderTip: 'Cuckoo Club is now 99 Regent Street.',
+    whyRanked: 'Cuckoo Club is now 99 Regent Street and is no longer ranked here.',
+    mapUrl: 'https://maps.google.com/?q=99+Regent+Street+Swallow+Street+London',
+    tonightSuitability: 'Now 99 Regent Street: not on our booking list yet.',
+    guestlistRealistic: false,
+    guestlistNote: 'Cuckoo Club is now 99 Regent Street: no Cuckoo Club guestlist.',
     bestForGroups: 'all',
-    lastMinuteTableFriendly: true,
-    lastMinuteNote: 'Good same-day availability. Tables are reasonably priced and the team is accommodating.',
+    lastMinuteTableFriendly: false,
+    lastMinuteNote: 'Cuckoo Club is now 99 Regent Street: no Cuckoo Club tables.',
     heroImage: '/gallery/images/fe4414_52d6295c80bc46b3b8b13d5eb0c385f5.jpg',
     cardImage: '/gallery/images/fe4414_dd9694e452204ef99a0b6c2dc693faf9.jpg',
     galleryImages: ['/gallery/images/fe4414_affd1145589143f7a655ebcb34a0a7c8.jpg', '/gallery/images/fe4414_344fbd63598246e7aa317196b7721a0c.jpg', '/gallery/images/fe4414_950de24e4f2b429ba47a022f13479db5.jpg', '/gallery/images/fe4414_aa163b7210fe4225a069d699f9400858.jpg', '/gallery/images/fe4414_b4633e7c60fa491e8c26bea776d3e98c.jpg', '/gallery/images/fe4414_f1f26d54e1e14b6384eb337005445fbf.jpg'],
@@ -574,37 +579,35 @@ Tables start from £1,000 for the club portion, with dinner packages offering th
     slug: 'funky-buddha',
     name: 'Funky Buddha London',
     shortName: 'Funky Buddha',
-    status: 'open',
-    tagline: 'The legendary Mayfair institution that has outlasted every trend since 1999',
-    description: 'One of Mayfair\'s longest-running nightclubs with a loyal celebrity following. RnB, hip-hop, and funky house. Tables from £1,000.',
-    longDescription: `Funky Buddha is London nightlife royalty. Operating in Mayfair since 1999, this club has outlasted countless venues that opened with bigger budgets and louder fanfare. That longevity tells you everything — the fundamentals here are right, and the loyal crowd keeps coming back because nobody else delivers quite the same atmosphere.
+    status: 'permanently-closed',
+    closedMessage: 'Funky Buddha has closed. The Berkeley Street club in Mayfair no longer takes table bookings or guestlist names. For the same RnB and hip-hop with a celebration crowd, try Tape London, The London Reign or Dear Darling.',
+    alternatives: ['tape-london', 'the-london-reign', 'dear-darling', 'scotch-of-st-james'],
+    tagline: 'The long-running Mayfair club on Berkeley Street, now closed',
+    description: 'Funky Buddha London on Berkeley Street, Mayfair, has closed. Open alternatives for a similar RnB and hip-hop night: Tape London, The London Reign and Dear Darling.',
+    longDescription: `Funky Buddha London has closed. It was one of the longest-running clubs in Mayfair, and people still search for it by name, so this page explains what it was and where to go instead.
 
-The venue occupies a sweet spot between intimate and spacious. It's large enough to generate real energy on the dancefloor but small enough that the atmosphere stays concentrated. The interiors have been refreshed over the years but retain a warmth and character that newer clubs struggle to manufacture. There's a lived-in quality that comes from decades of legendary nights.
+When it was open, Funky Buddha on Berkeley Street played RnB, hip-hop and funky house to a crowd of loyal regulars, birthday groups and the occasional famous face, and it was known as one of the friendlier doors in Mayfair.
 
-Musically, Funky Buddha lives up to its name. The playlist moves between RnB, hip-hop, and funky house — a combination that's become the club's signature sound. The DJs who play here understand the room's history and programme accordingly. You'll hear classics alongside current hits, and the transitions between genres feel natural rather than jarring.
-
-The celebrity connection is genuine and long-standing. Funky Buddha has been a favourite of footballers, musicians, and actors for over two decades. The door team know the regulars, the staff remember your drink, and the whole operation runs with the confidence of a venue that has nothing to prove.
-
-Tables start from £1,000 and the table service experience benefits from years of refinement. The staff are experienced and professional without being stuffy. Guestlist is available and more accessible than at some of the newer, more aggressively exclusive Mayfair clubs.`,
+For the same sound and crowd today, Tape London on Hanover Square is the closest match on music, with a much harder door. The London Reign suits birthday groups who want a show, Dear Darling suits groups who want cocktails before the dancing, and Scotch of St James is the heritage choice.`,
     address: 'Berkeley Street, London W1J 8DY',
     area: 'Mayfair',
     areas: ['Mayfair', 'Central London'],
     musicGenres: ['RnB', 'Hip-Hop', 'Funky House'],
-    openingNights: 'Thursday, Friday, Saturday',
-    closingTime: '3:00am',
-    dressCode: 'Smart and stylish. The usual Mayfair rules apply — smart shoes for men, no sportswear, dress to impress. The crowd here tends toward classic rather than cutting-edge fashion.',
-    tableMinimum: '£1,000',
-    crowd: 'Loyal regulars, celebrities, professionals who\'ve been coming for years. Average age 25-40.',
-    bestFor: 'Anyone who appreciates a venue with genuine history and atmosphere. RnB and funky house lovers. Groups who want a reliable Mayfair night without pretension.',
-    insiderTip: 'Thursday nights have the most relaxed atmosphere and the best chance of walk-in entry. The regular DJs on Saturdays know the room inside out — the music is consistently excellent.',
-    whyRanked: 'Longevity in London\'s nightlife is the ultimate quality signal. Funky Buddha has been delivering great nights for over 25 years — that track record is unmatched.',
+    openingNights: 'Closed',
+    closingTime: 'Closed',
+    dressCode: 'When it was open, Funky Buddha followed the smart Mayfair standard: smart shoes and no sportswear.',
+    tableMinimum: 'Closed',
+    crowd: 'When it was open: loyal regulars, birthday groups and professionals, mostly in their mid twenties to forties.',
+    bestFor: 'Funky Buddha has closed. Tape London, The London Reign and Dear Darling suit the same crowd.',
+    insiderTip: 'Funky Buddha London has closed.',
+    whyRanked: 'Funky Buddha London has closed.',
     mapUrl: 'https://maps.google.com/?q=Funky+Buddha+London+Berkeley+Street',
-    tonightSuitability: 'Legendary Mayfair energy with accessible hip-hop and RnB. Fun crowd, celebration-friendly, always a party.',
-    guestlistRealistic: true,
-    guestlistNote: 'Guestlist works well for all group types. One of the friendliest doors in Mayfair.',
+    tonightSuitability: 'Permanently closed.',
+    guestlistRealistic: false,
+    guestlistNote: 'Permanently closed.',
     bestForGroups: 'all',
-    lastMinuteTableFriendly: true,
-    lastMinuteNote: 'Good same-day table availability. The team is flexible and accommodating for last-minute plans.',
+    lastMinuteTableFriendly: false,
+    lastMinuteNote: 'Permanently closed.',
     heroImage: '/gallery/images/fe4414_0152b4f29a9540be8eef055230e66221.jpg',
     cardImage: '/gallery/images/fe4414_016460dc35074665a9f15d051da0d9de.jpg',
     galleryImages: ['/gallery/images/fe4414_0165fb3b91da4e7993307b522fb58de4.jpg', '/gallery/images/fe4414_01702fa34a044f768289fe742cd80053.jpg', '/gallery/images/fe4414_03d0d58e1fb54eb885d6b4ae0986f483.jpg', '/gallery/images/fe4414_03db13b7a1d845d2887fe95e547b1369.jpg', '/gallery/images/fe4414_03e57f432c7d4f689fa9a2d9906ef9d0.jpg', '/gallery/images/fe4414_0528f444f562494791e99146e727f269.jpg'],
@@ -728,6 +731,13 @@ Tables start from £1,000 and the service is polished. The crowd is well-dressed
 
 export function getClubBySlug(slug: string): Club | undefined {
   return clubs.find(c => c.slug === slug);
+}
+
+/** Short status label for lists and markdown. */
+export function clubStatusLabel(club: Club): string {
+  if (club.status === 'permanently-closed') return 'Permanently closed';
+  if (club.status === 'rebranded') return `Now ${club.shortName}`;
+  return 'Open';
 }
 
 export function getOpenClubs(): Club[] {

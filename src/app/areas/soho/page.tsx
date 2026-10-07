@@ -153,7 +153,7 @@ export default function SohoPage() {
               </p>
               <p>
                 For the main cluster of luxury clubs in the Mayfair area, including Tape,
-                TABU, Funky Buddha, Maddox, Scotch of St James, and more, see our dedicated
+                Maddox, Dear Darling, Scotch of St James, and more, see our dedicated
                 Mayfair guide.
               </p>
             </div>

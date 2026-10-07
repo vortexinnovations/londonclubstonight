@@ -46,7 +46,7 @@ const faqs = [
   {
     question: 'What are the best clubs open on Friday night in London?',
     answer:
-      'Friday nights feature most of London\'s top clubs including Tape London, Cirque Le Soir, Ministry of Sound, TABU, Cuckoo Club, Maddox, BEAT London, and more. Cirque Le Soir and Ministry of Sound are particularly strong on Fridays — Cirque delivers its full entertainment production, while Ministry hosts some of its best DJ lineups of the week.',
+      'Friday nights feature most of London\'s top clubs including Tape London, Cirque Le Soir, Ministry of Sound, Maddox, Dear Darling, BEAT London, and more. Cirque Le Soir and Ministry of Sound are particularly strong on Fridays — Cirque delivers its full entertainment production, while Ministry hosts some of its best DJ lineups of the week.',
   },
   {
     question: 'Is Friday or Saturday better for clubbing in London?',
@@ -56,7 +56,7 @@ const faqs = [
   {
     question: 'Do I need to book for Friday night clubs in London?',
     answer:
-      'It depends on the venue. For Mayfair clubs like Tape, a table booking is essential. For venues like TABU, Cuckoo Club, or BEAT, guestlist is a viable option on Fridays — the door is typically a notch less selective than Saturday. Ministry of Sound operates on tickets which should be bought in advance for headline events.',
+      'It depends on the venue. For Mayfair clubs like Tape, a table booking is essential. For venues like Dear Darling, Maddox, or BEAT, guestlist is a viable option on Fridays — the door is typically a notch less selective than Saturday. Ministry of Sound operates on tickets which should be bought in advance for headline events.',
   },
   {
     question: 'What time should I arrive at a London club on Friday?',
@@ -163,9 +163,6 @@ export default function FridayNightclubsLondonPage() {
             <p>
               <strong className="text-white">BEAT London</strong> was built for nights like Friday. The bass-heavy sound system and compact room reach critical energy faster with a Friday crowd that arrives already warmed up from the evening. The venue&apos;s music-first philosophy pairs naturally with an audience that chose to be there rather than defaulting to the obvious Saturday option.
             </p>
-            <p>
-              <strong className="text-white">TABU</strong> treats Friday as the night for its core hip-hop community. The intimate underground setting fills with regulars who consider Friday their home night — people who know the DJs, know the bartenders, and set the tone for anyone joining them. Friday at TABU feels like being let into a secret that Saturday visitors do not get to see.
-            </p>
           </div>
         </div>
       </section>
@@ -201,7 +198,7 @@ export default function FridayNightclubsLondonPage() {
               <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">London Bottle Service</a>.
             </p>
             <p>
-              <strong className="text-white">Guestlist works well on Fridays.</strong> Venues like TABU, Cuckoo Club, Dear Darling, and Cirque Le Soir are all accessible via guestlist on Fridays. Mixed groups fare best, but the overall standard is slightly more inclusive than Saturday. Get on our guestlist by messaging WhatsApp with your group details.
+              <strong className="text-white">Guestlist works well on Fridays.</strong> Venues like Dear Darling, Maddox, and Cirque Le Soir are all accessible via guestlist on Fridays. Mixed groups fare best, but the overall standard is slightly more inclusive than Saturday. Get on our guestlist by messaging WhatsApp with your group details.
             </p>
             <p>
               <strong className="text-white">After-work transitions are common.</strong> Many successful Friday nights begin as after-work drinks that evolve organically. If your group is coming from drinks in Soho or dinner in Mayfair, let us know your timing and we can advise on which clubs will be at the right level of energy when you arrive. For Friday events across the Mayfair clubs specifically, check{' '}

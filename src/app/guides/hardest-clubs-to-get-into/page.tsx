@@ -45,12 +45,9 @@ const exclusiveClubs = [
   'tape-london',
   'cirque-le-soir',
   'the-box-london',
-  'tabu-london',
   'scotch-of-st-james',
   'the-london-reign',
-  'funky-buddha',
   'maddox',
-  'cuckoo-club',
   'dear-darling',
   'selene-london',
   'beat-london',
@@ -109,7 +106,7 @@ export default function ExclusiveClubsPage() {
           <div className="grid gap-6">
             {exclusiveClubs.map((slug) => {
               const club = clubs.find(c => c.slug === slug);
-              if (!club) return null;
+              if (!club || club.status !== 'open') return null;
               return (
                 <div key={club.slug} className="glass-card p-7">
                   <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">

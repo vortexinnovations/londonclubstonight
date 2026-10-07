@@ -25,20 +25,29 @@ export async function generateMetadata({
   }
 
   const isClosed = club.status === 'permanently-closed';
+  const isRebranded = club.status === 'rebranded';
   const fullName = /london$/i.test(club.name) ? club.name : `${club.name} London`;
+  const formerName = club.formerName ?? club.name;
+  const formerFull = /london$/i.test(formerName) ? formerName : `${formerName} London`;
   const title = isClosed
     ? `${fullName} Has Closed: ${club.area} Alternatives`
-    : `${club.name} London | Table Booking & Guestlist`;
+    : isRebranded
+      ? `${formerFull} Is Now ${club.shortName}: What Changed`
+      : `${club.name} London | Table Booking & Guestlist`;
   const description = isClosed
     ? `${fullName} in ${club.area} has closed. What it was, and the open London clubs with a similar crowd and music to book instead.`
-    : `Everything you need to know about ${club.name} nightclub in ${club.area}, London. Table prices from ${club.tableMinimum}, dress code, music, and guestlist access.`;
+    : isRebranded
+      ? club.description
+      : `Everything you need to know about ${club.name} nightclub in ${club.area}, London. Table prices from ${club.tableMinimum}, dress code, music, and guestlist access.`;
 
   return {
     title,
     description,
     keywords: isClosed
       ? [`${club.name} London`, `${club.name} club`, `${club.name} closed`, `${club.name} ${club.area}`]
-      : [
+      : isRebranded
+        ? [`${formerName}`, `${formerName} club`, `${club.shortName} London`, `${formerName} now ${club.shortName}`]
+        : [
           `${club.name} London`,
           `${club.name} club`,
           `${club.name} nightclub`,
@@ -72,10 +81,13 @@ export default async function ClubPage({
   }
 
   const isClosed = club.status === 'permanently-closed';
+  const isRebranded = club.status === 'rebranded';
+  // Closed and rebranded venues are not sold on this page.
+  const notBookable = isClosed || isRebranded;
   const areaSlug = club.area.toLowerCase().replace(/\s+/g, '-');
   const paragraphs = club.longDescription.split('\n\n').filter(Boolean);
   const openClubs = getOpenClubs();
-  const alternatives = isClosed
+  const alternatives = notBookable
     ? (club.alternatives ?? [])
         .map((s) => openClubs.find((c) => c.slug === s))
         .filter((c): c is NonNullable<typeof c> => Boolean(c))
@@ -107,11 +119,13 @@ export default async function ClubPage({
         </nav>
       </div>
 
-      {/* Permanently Closed Banner */}
-      {isClosed && (
+      {/* Permanently Closed / Renamed Banner */}
+      {notBookable && (
         <div className="max-w-5xl mx-auto px-6 sm:px-8 pt-6">
           <div className="bg-red-500/10 border border-red-500/30 text-red-400 rounded-2xl p-6 text-center">
-            <p className="font-semibold text-lg mb-2">Permanently Closed</p>
+            <p className="font-semibold text-lg mb-2">
+              {isRebranded ? `${club.formerName ?? club.name} is now ${club.shortName}` : 'Permanently Closed'}
+            </p>
             <p className="text-sm leading-relaxed max-w-xl mx-auto">
               {club.closedMessage ?? `${club.name} is permanently closed. This page is maintained for reference.`}{' '}
               Looking for clubs open tonight? Check our{' '}
@@ -157,7 +171,7 @@ export default async function ClubPage({
             {club.tagline}
           </p>
 
-          {!isClosed && (
+          {!notBookable && (
             <div className="animate-fade-up anim-delay-3 flex justify-center mt-10">
               <WhatsAppCTA clubName={club.name} variant="hero" />
             </div>
@@ -167,13 +181,22 @@ export default async function ClubPage({
 
       {/* Quick Info Grid */}
       <section className="max-w-5xl mx-auto px-6 sm:px-8 pb-16">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-          <QuickInfoCard label="Area" value={club.area} />
-          <QuickInfoCard label="Music" value={club.musicGenres.join(', ')} />
-          <QuickInfoCard label="Open Nights" value={club.openingNights} />
-          <QuickInfoCard label="Closing Time" value={club.closingTime} />
-          <QuickInfoCard label="Table Minimum" value={club.tableMinimum} />
-        </div>
+        {isRebranded ? (
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <QuickInfoCard label="Now called" value={club.shortName} />
+            <QuickInfoCard label="Formerly" value={club.formerName ?? club.name} />
+            <QuickInfoCard label="Area" value={club.area} />
+            <QuickInfoCard label="Address" value={club.address} />
+          </div>
+        ) : (
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+            <QuickInfoCard label="Area" value={club.area} />
+            <QuickInfoCard label="Music" value={club.musicGenres.join(', ')} />
+            <QuickInfoCard label="Open Nights" value={club.openingNights} />
+            <QuickInfoCard label="Closing Time" value={club.closingTime} />
+            <QuickInfoCard label="Table Minimum" value={club.tableMinimum} />
+          </div>
+        )}
       </section>
 
       {/* About */}
@@ -193,6 +216,8 @@ export default async function ClubPage({
         </div>
       </section>
 
+      {/* Old-club details (dress code, crowd, tips) are not shown for a renamed venue. */}
+      {!isRebranded && (<>
       {/* Dress Code */}
       <section className="py-12 md:py-16">
         <div className="max-w-4xl mx-auto px-6">
@@ -253,16 +278,20 @@ export default async function ClubPage({
         </div>
       </section>
 
+      </>)}
+
       {/* CTA Section */}
       <section className="section-glow py-12 md:py-16">
         <div className="max-w-4xl mx-auto px-6">
-          {isClosed ? (
+          {notBookable ? (
             <div className="glass-card p-7 md:p-8 text-center">
               <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mb-4">
                 Looking for a Club <span className="serif-accent text-gradient">Tonight?</span>
               </h2>
               <p className="text-frost-300 mb-8 max-w-lg mx-auto leading-relaxed">
-                {club.name} is permanently closed, but there are plenty of great clubs open tonight. Browse our full list or get in touch for a personal recommendation.
+                {isRebranded
+                  ? `${club.formerName ?? club.name} is now ${club.shortName}, which is not on our booking list yet. Browse the open clubs or get in touch for a recommendation nearby.`
+                  : `${club.name} is permanently closed, but there are plenty of great clubs open tonight. Browse our full list or get in touch for a personal recommendation.`}
               </p>
               <div className="flex justify-center gap-4 flex-wrap">
                 <Link
@@ -401,7 +430,7 @@ export default async function ClubPage({
       </section>
 
       {/* Sticky mobile CTA */}
-      {!isClosed && <WhatsAppCTA clubName={club.name} variant="sticky" />}
+      {!notBookable && <WhatsAppCTA clubName={club.name} variant="sticky" />}
     </main>
   );
 }

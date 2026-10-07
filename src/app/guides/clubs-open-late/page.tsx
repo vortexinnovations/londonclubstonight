@@ -25,13 +25,13 @@ const closingGroups = [
     time: '3:30am',
     label: 'Open Until 3:30am',
     description: 'The standard late-night option for most of London\'s best clubs. Plenty of time to have a proper night.',
-    slugs: ['tape-london', 'cirque-le-soir', 'tabu-london', 'libertine', 'luxx-club', 'beat-london'],
+    slugs: ['tape-london', 'cirque-le-soir', 'beat-london'],
   },
   {
     time: '3:00am',
     label: 'Open Until 3am',
     description: 'Closing half an hour earlier, but still late enough for a full night out.',
-    slugs: ['the-london-reign', 'maddox', 'scotch-of-st-james', 'cuckoo-club', 'lio-london'],
+    slugs: ['the-london-reign', 'maddox', 'scotch-of-st-james'],
   },
   {
     time: '2:30am',
@@ -115,7 +115,7 @@ export default function ClubsOpenLatePage() {
               <div className="grid gap-6">
                 {group.slugs.map((slug) => {
                   const club = clubs.find(c => c.slug === slug);
-                  if (!club) return null;
+                  if (!club || club.status !== 'open') return null;
 
                   const isMinistry = club.slug === 'ministry-of-sound';
 

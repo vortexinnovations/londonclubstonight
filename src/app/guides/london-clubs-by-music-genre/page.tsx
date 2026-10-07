@@ -19,25 +19,21 @@ const genreSections = [
     id: 'hip-hop-rnb',
     title: 'Hip-Hop & RnB',
     description: 'The dominant sound across most of London\'s Mayfair clubs. If you want hip-hop, you have the most options — the question is which venue suits your style and budget.',
-    slugs: ['tape-london', 'cirque-le-soir', 'tabu-london', 'funky-buddha', 'beat-london', 'cuckoo-club'],
+    slugs: ['tape-london', 'cirque-le-soir', 'beat-london'],
     notes: [
       { slug: 'tape-london', note: 'The gold standard for hip-hop in an intimate, exclusive setting. The sound system was originally designed for music production and the difference is audible.' },
       { slug: 'cirque-le-soir', note: 'Hip-hop and RnB played loud over circus entertainment. The music is the backdrop to the spectacle — expect current hits and crowd-pleasers rather than deep cuts.' },
-      { slug: 'tabu-london', note: 'Arguably the purest hip-hop experience in Mayfair. The Japanese underground theme combined with focused hip-hop programming makes this feel different from the rest.' },
-      { slug: 'funky-buddha', note: 'The legendary name carries a fun, accessible hip-hop and RnB soundtrack. DJs play crowd-pleasers and classics alongside current hits — the kind of music that gets everyone moving.' },
       { slug: 'beat-london', note: 'The sound system makes the hip-hop hit harder here than almost anywhere else. This is a venue for people who care about audio quality.' },
-      { slug: 'cuckoo-club', note: 'The downstairs room at Cuckoo is dedicated hip-hop and RnB — louder, more energetic, and younger. The upstairs room is house music if you want a break.' },
     ],
-    bestFor: 'Tape London for exclusivity and sound quality, TABU for a focused hip-hop experience, BEAT for the best sound system, Cuckoo Club downstairs for a high-energy party.',
+    bestFor: 'Tape London for exclusivity and sound quality, Cirque Le Soir for hip-hop with a show, BEAT for the best sound system.',
   },
   {
     id: 'house',
     title: 'House Music',
     description: 'Fewer options than hip-hop in central London, but the venues that do house music tend to do it very well. If house is your thing, these are your spots.',
-    slugs: ['maddox', 'cuckoo-club', 'ministry-of-sound'],
+    slugs: ['maddox', 'ministry-of-sound'],
     notes: [
       { slug: 'maddox', note: 'The strongest house music identity in Mayfair. The restaurant-to-club transition means the house music crowd arrives late and committed. Friday nights are particularly strong for house programming.' },
-      { slug: 'cuckoo-club', note: 'The upstairs room at Cuckoo runs house and more sophisticated electronic music. More refined atmosphere than the hip-hop room downstairs.' },
       { slug: 'ministry-of-sound', note: 'The best house music in London, full stop. The sound system is world-class, the DJ bookings are headline-calibre, and the crowd is there specifically for the music. Multiple rooms mean you can explore different subgenres in one night.' },
     ],
     bestFor: 'Ministry of Sound for a dedicated, world-class house music experience. Maddox for house music in a Mayfair setting with the dinner-to-club transition.',
@@ -136,7 +132,7 @@ export default function MusicGenrePage() {
               <div className="grid gap-6 mb-6">
                 {section.notes.map(({ slug, note }) => {
                   const club = clubs.find(c => c.slug === slug);
-                  if (!club) return null;
+                  if (!club || club.status !== 'open') return null;
                   return (
                     <div key={slug} className="glass-card p-7">
                       <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 mb-3">
@@ -176,13 +172,13 @@ export default function MusicGenrePage() {
             <p className="text-frost-300 max-w-2xl mb-8">A quick summary to help you choose.</p>
             <div className="space-y-4 text-frost-300 text-sm leading-relaxed">
               <p>
-                If hip-hop is your thing, you have the most choice — nearly every Mayfair club leans that direction. The differences come down to exclusivity (Tape), atmosphere (TABU, Cirque), and sound quality (BEAT).
+                If hip-hop is your thing, you have the most choice — nearly every Mayfair club leans that direction. The differences come down to exclusivity (Tape), atmosphere (Cirque), and sound quality (BEAT).
               </p>
               <p>
                 If house music is what you want, Maddox is your best Mayfair option, but Ministry of Sound is where the serious house heads go. The gap in sound quality and DJ calibre between Ministry and everywhere else is significant.
               </p>
               <p>
-                If you are a group with mixed music tastes, open format venues like Reign and BEAT will keep everyone happy. Cuckoo Club also works because the two floors cover both house and hip-hop.
+                If you are a group with mixed music tastes, open format venues like Reign and BEAT will keep everyone happy.
               </p>
               <p>
                 If electronic and techno is your genre, Ministry of Sound is the only serious option on this list. London has other techno venues beyond our coverage, but within this selection, Ministry is unmatched.

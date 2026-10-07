@@ -106,7 +106,7 @@ export const staticRoutes: SiteRoute[] = [
     path: '/areas/mayfair',
     title: 'Best Clubs in Mayfair',
     description:
-      "The definitive guide to Mayfair nightclubs. Tape, Cirque, TABU, Funky Buddha, Maddox, Scotch, and more — table bookings, guestlist, and insider tips for every Mayfair club.",
+      "The definitive guide to Mayfair nightclubs. Tape, Cirque, Maddox, Dear Darling, Scotch, and more — table bookings, guestlist, and insider tips for every Mayfair club.",
     priority: 0.8,
     changeFrequency: 'monthly',
     section: 'areas',

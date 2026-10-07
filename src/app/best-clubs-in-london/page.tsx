@@ -8,7 +8,7 @@ import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 export const metadata: Metadata = {
   title: 'Best Clubs in London 2026 — The Definitive Ranked Guide',
   description:
-    'The 14 best nightclubs in London for 2026, ranked by promoters who actually work the doors. From Tape London to Ministry of Sound — honest reviews, table prices, and how to get in.',
+    'The 10 best nightclubs in London for 2026, ranked by promoters who actually work the doors. From Tape London to Ministry of Sound — honest reviews, table prices, and how to get in.',
   keywords: [
     'best clubs in London',
     'best nightclubs London',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Best Clubs in London 2026 — The Definitive Ranked Guide',
     description:
-      'The 14 best nightclubs in London for 2026, ranked by promoters who work the doors every weekend. Honest, opinionated reviews you won\'t find anywhere else.',
+      'The 10 best nightclubs in London for 2026, ranked by promoters who work the doors every weekend. Honest, opinionated reviews you won\'t find anywhere else.',
     url: 'https://londonclubstonight.com/best-clubs-in-london',
     type: 'article',
     locale: 'en_GB',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Best Clubs in London 2026 — The Definitive Ranked Guide',
     description:
-      'The 14 best nightclubs in London for 2026, ranked by promoters who actually work the doors.',
+      'The 10 best nightclubs in London for 2026, ranked by promoters who actually work the doors.',
   },
   alternates: {
     canonical: 'https://londonclubstonight.com/best-clubs-in-london',
@@ -45,10 +45,7 @@ const rankedSlugs = [
   'ministry-of-sound',
   'the-london-reign',
   'the-box-london',
-  'tabu-london',
-  'funky-buddha',
   'scotch-of-st-james',
-  'cuckoo-club',
   'maddox',
   'selene-london',
   'dear-darling',
@@ -66,14 +63,10 @@ const clubOpinions: Record<string, string> = {
     'The London Reign pulls off something that sounds impossible: a fine dining restaurant, a West End-quality cabaret show, and a legitimate nightclub, all in one venue over multiple floors. Most places that try the dinner-and-show format feel like a tourist trap. Reign does not. The production values are enormous, the performers are elite, and when the club floor opens up after midnight the party is genuine. It is the best special-occasion venue in London without question.',
   'lio-london':
     'Lio brought the magic of its Ibiza original to Mayfair and somehow did not lose anything in translation. The dinner-show-club format is polished to a degree that most London venues cannot match, with Mediterranean flair and performers who would not be out of place in a Cirque du Soleil production. The international crowd gives it a different energy from the rest of Mayfair — less corporate, more glamorous. If you have been to Lio in Ibiza, you know exactly what to expect. If you have not, prepare to be impressed.',
-  'tabu-london':
-    'TABU is the hidden gem of this list. The Japanese-underground aesthetic is not a gimmick — every detail of the design has been considered, from the low ceilings to the moody lighting to the custom artwork. The hip-hop programming is among the best in Mayfair, with DJs who genuinely understand the genre rather than playing the same ten tracks on rotation. The room is intimate enough that a busy night feels electric rather than cramped. We rate it this highly because it has real character in a neighbourhood full of identikit clubs.',
   'libertine':
     'Libertine earns its spot by doing something different in Mayfair. While most clubs in the area lean into old-money aesthetics, Libertine went futuristic — clean lines, cutting-edge lighting, and a fashion-forward crowd that actually dresses up because they want to, not because a dress code forced them. The hip-hop and RnB programming is solid, and the venue layout creates natural flow between the bar area and the dancefloor. It is proof that upscale clubbing does not have to feel stuffy.',
   'scotch-of-st-james':
     'Scotch is the most historically significant club on this list. The Rolling Stones, Jimi Hendrix, and The Beatles all walked through these doors. That heritage is not just marketing — you can feel it in the room. The intimate basement setting, the eclectic music programming that spans soul, funk, and hip-hop, and the crowd that skews slightly older and more discerning all contribute to an atmosphere no other London club can replicate. If you want a night with genuine soul, Scotch delivers every time.',
-  'cuckoo-club':
-    'Cuckoo Club solves the most common argument in any group: what music do we want? With house on one floor and hip-hop on the other, everyone in your party gets what they want without anyone having to compromise. It has been running for years and the consistency is remarkable — the door is well managed, the service is professional, and the nights are reliably good without ever being pretentious. It is not the flashiest club on this list, but it might be the most dependable.',
   'maddox':
     'Maddox carved out a unique position in Mayfair by committing to house music when everyone else was playing hip-hop. The restaurant-to-club format is executed better here than almost anywhere — you have dinner downstairs and the transition to the club feels seamless rather than forced. The house music programming attracts a crowd that actually wants to dance, which gives the room a different energy from the table-service-focused competition. If house is your genre and Mayfair is your postcode, Maddox is the clear choice.',
   'luxx-club':
@@ -81,7 +74,7 @@ const clubOpinions: Record<string, string> = {
   'dear-darling':
     'Dear Darling occupies the most beautiful room in Mayfair nightlife. The interiors are opulent without being gaudy — think art-deco glamour with a modern edge. It functions best as a cocktail-bar-to-club transition, where you arrive early, drink well, and ease into the late-night atmosphere as the music builds. The crowd is well-dressed and the vibe is more sophisticated than rowdy. It is not the place for an all-out party, but for a glamorous evening that ends with dancing, it is hard to beat.',
   'beat-london':
-    'BEAT earns its place on this list through pure musical credibility. The sound system is built for people who actually care about audio quality, and the programming spans hip-hop, house, and open format depending on the night. Located in Fitzrovia rather than Mayfair, it attracts a crowd that prioritises the music over the postcode. When the right DJ is behind the decks and the room is full, BEAT delivers one of the best pure clubbing experiences in central London. It sits at thirteen not because it is bad — every club on this list is excellent — but because the VIP experience is less polished than the venues above it.',
+    'BEAT earns its place on this list through pure musical credibility. The sound system is built for people who actually care about audio quality, and the programming spans hip-hop, house, and open format depending on the night. Located in Fitzrovia rather than Mayfair, it attracts a crowd that prioritises the music over the postcode. When the right DJ is behind the decks and the room is full, BEAT delivers one of the best pure clubbing experiences in central London. It sits at ten not because it is bad — every club on this list is excellent — but because the VIP experience is less polished than the venues above it.',
 };
 
 export default function BestClubsInLondonPage() {
@@ -92,7 +85,7 @@ export default function BestClubsInLondonPage() {
 
   const articleSchema = getArticleSchema(
     'Best Clubs in London 2026 — The Definitive Ranked Guide',
-    'The 13 best nightclubs in London for 2026, ranked by promoters who actually work the doors.',
+    'The 10 best nightclubs in London for 2026, ranked by promoters who actually work the doors.',
     '/best-clubs-in-london',
     '2025-01-15'
   );

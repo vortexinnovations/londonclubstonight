@@ -46,7 +46,7 @@ const faqs = [
   {
     question: 'What are the best clubs open on Saturday night in London?',
     answer:
-      'Saturday is the biggest night in London and nearly every major club is open. Top choices include Tape London for exclusivity, Cirque Le Soir for entertainment, Ministry of Sound for electronic music, The London Reign for a show-and-club experience, TABU for hip-hop, and Maddox for house music. The best club for you depends on your music taste, group size, and budget.',
+      'Saturday is the biggest night in London and nearly every major club is open. Top choices include Tape London for exclusivity, Cirque Le Soir for entertainment, Ministry of Sound for electronic music, The London Reign for a show-and-club experience, and Maddox for house music. The best club for you depends on your music taste, group size, and budget.',
   },
   {
     question: 'Do I need to book a table for Saturday night in London?',
@@ -251,7 +251,7 @@ export default function SaturdayNightclubsLondonPage() {
               A Saturday night in a London club operates at a different intensity from every other night. The rooms are at capacity. The dancefloors are dense. The queues at the bar move faster because the staff have doubled. The DJ plays with more authority because the crowd is larger, more responsive, and more committed to every track. Saturday is when London nightlife runs at full power, and everything — the highs and the logistics — reflects that scale.
             </p>
             <p>
-              The competition between tables is part of the Saturday theatre. Groups order champagne not just because they want it but because the presentation — sparklers, LED bottles, the waiter carrying it high above the crowd — is a declaration. At Tape, TABU, and Maddox on a Saturday, the bottle presentations cascade through the night like a chain reaction: one table orders, the neighbouring table responds, and the energy ratchets upward with each round.
+              The competition between tables is part of the Saturday theatre. Groups order champagne not just because they want it but because the presentation — sparklers, LED bottles, the waiter carrying it high above the crowd — is a declaration. At Tape and Maddox on a Saturday, the bottle presentations cascade through the night like a chain reaction: one table orders, the neighbouring table responds, and the energy ratchets upward with each round.
             </p>
             <p>
               Saturday is also when you are most likely to share the room with recognisable faces. Celebrities, athletes, and music industry figures overwhelmingly choose Saturday for their nights out. At Tape London, the small capacity means these encounters feel personal rather than distant. At Cirque Le Soir, the performers interact with everyone regardless of profile, creating a levelling effect that makes Saturday nights feel genuinely communal despite the VIP framework.

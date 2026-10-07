@@ -50,7 +50,7 @@ const faqs = [
   {
     question: 'Can I get on a guestlist tonight?',
     answer:
-      'Yes, same-night guestlist is possible at many London clubs, particularly on Thursdays and Fridays. Venues like Cirque Le Soir, TABU, Cuckoo Club, The London Reign, and Maddox regularly accept same-day guestlist requests. The key factors are timing (submit your request as early as possible, ideally before 6pm), group composition (mixed groups strongly preferred), and the specific night (Saturdays are the hardest for last-minute guestlist). Message us on WhatsApp and we can submit your request directly.',
+      'Yes, same-night guestlist is possible at many London clubs, particularly on Thursdays and Fridays. Venues like Cirque Le Soir, Dear Darling, The London Reign, and Maddox regularly accept same-day guestlist requests. The key factors are timing (submit your request as early as possible, ideally before 6pm), group composition (mixed groups strongly preferred), and the specific night (Saturdays are the hardest for last-minute guestlist). Message us on WhatsApp and we can submit your request directly.',
   },
   {
     question: 'Is guestlist free?',
@@ -60,7 +60,7 @@ const faqs = [
   {
     question: 'What group ratio do I need?',
     answer:
-      'The ideal guestlist ratio for London clubs is more women than men — a group of three women and two men is the golden ratio for most venues. Equal numbers (three and three) is generally fine at venues like TABU, Cuckoo Club, and The London Reign. All-female groups have the highest acceptance rate and the fastest entry at every venue. All-male groups face significant difficulty at Mayfair clubs regardless of guestlist status — for groups of men, a table booking is strongly recommended. These ratio rules are not written down anywhere official but they are consistently enforced.',
+      'The ideal guestlist ratio for London clubs is more women than men — a group of three women and two men is the golden ratio for most venues. Equal numbers (three and three) is generally fine at venues like Dear Darling, BEAT London, and The London Reign. All-female groups have the highest acceptance rate and the fastest entry at every venue. All-male groups face significant difficulty at Mayfair clubs regardless of guestlist status — for groups of men, a table booking is strongly recommended. These ratio rules are not written down anywhere official but they are consistently enforced.',
   },
   {
     question: 'How do I get on a guestlist last minute?',
@@ -239,7 +239,7 @@ export default function GuestlistTonightLondonPage() {
               practically a guarantee of entry. On a packed Saturday at a
               top Mayfair club, it is one factor among many. The clubs that
               truly rely on guestlist as a primary entry route — Cirque Le
-              Soir, TABU, Cuckoo Club, and Maddox — honour it consistently
+              Soir, Dear Darling, and Maddox — honour it consistently
               because they understand that their promoters are bringing
               the right crowd. Clubs that treat guestlist as an afterthought
               tend to be the ones where you arrive with a confirmed spot

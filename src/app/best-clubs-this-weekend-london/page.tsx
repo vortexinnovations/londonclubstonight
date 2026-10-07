@@ -46,7 +46,7 @@ const faqs = [
   {
     question: 'What are the best clubs in London this weekend?',
     answer:
-      'The best weekend clubs depend on what you are looking for. For the most exclusive VIP experience, Tape London on Friday or Saturday is unmatched. For entertainment and spectacle, Cirque Le Soir delivers every weekend. For a Mayfair hip-hop night, TABU on Saturday is the insider pick. For house music, Maddox on Friday is the strongest option. For a complete dinner-show-club experience, The London Reign offers something no other venue can. Message us and we will recommend the right fit for your group.',
+      'The best weekend clubs depend on what you are looking for. For the most exclusive VIP experience, Tape London on Friday or Saturday is unmatched. For entertainment and spectacle, Cirque Le Soir delivers every weekend. For cocktails that turn into a late night, Dear Darling on Saturday is the insider pick. For house music, Maddox on Friday is the strongest option. For a complete dinner-show-club experience, The London Reign offers something no other venue can. Message us and we will recommend the right fit for your group.',
   },
   {
     question: 'Should I go out on Friday or Saturday in London?',
@@ -61,7 +61,7 @@ const faqs = [
   {
     question: 'What should I wear to London clubs this weekend?',
     answer:
-      'Mayfair clubs enforce the strictest dress codes: smart shoes, tailored trousers, and a sharp top for men. No trainers at Tape, TABU, Cuckoo, or Maddox. Soho venues like Cirque Le Soir accept more creative outfits but still expect smart-glamorous. For women, heels and a going-out outfit are standard across all premium venues. If you are unsure, dress up rather than down — nobody gets turned away for being too well-dressed.',
+      'Mayfair clubs enforce the strictest dress codes: smart shoes, tailored trousers, and a sharp top for men. No trainers at Tape, Maddox or Dear Darling. Soho venues like Cirque Le Soir accept more creative outfits but still expect smart-glamorous. For women, heels and a going-out outfit are standard across all premium venues. If you are unsure, dress up rather than down — nobody gets turned away for being too well-dressed.',
   },
   {
     question: 'Can I get a table for this weekend last minute?',
@@ -291,7 +291,7 @@ export default function BestClubsThisWeekendPage() {
               <strong className="text-white">Do both if:</strong> your
               weekend allows it. A Friday warm-up at a music-led venue like
               BEAT or Cirque Le Soir followed by a Saturday main event at
-              Tape or TABU is the ideal London weekend. Different venues,
+              Tape or Maddox is the ideal London weekend. Different venues,
               different energy, same city at its best.
             </p>
             <p>
