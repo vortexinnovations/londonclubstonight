@@ -41,7 +41,7 @@ export const blogPosts: BlogPost[] = [
     updatedDate: '2026-03-25',
     relatedClubs: ['tape-london', 'cirque-le-soir', 'funky-buddha', 'maddox'],
     faqs: [
-      { question: 'Can you wear trainers to London clubs?', answer: 'At most upscale London clubs — particularly in Mayfair — trainers will get you turned away. The exception is some venues like TABU where clean, designer trainers can work if the rest of your outfit is sharp. For guaranteed entry, wear smart shoes.' },
+      { question: 'Can you wear trainers to London clubs?', answer: 'At most upscale London clubs — particularly in Mayfair — trainers will get you turned away. The exception is some venues where clean, designer trainers can work if the rest of your outfit is sharp. For guaranteed entry, wear smart shoes.' },
       { question: 'What should women wear to London nightclubs?', answer: 'Dresses, jumpsuits, or smart separates with heels are the safest bet. The dress code at most London clubs expects women to dress up — think cocktail bar, not casual bar. Avoid flip-flops, sportswear, and overly casual outfits.' },
       { question: 'Do London clubs have strict dress codes?', answer: 'Mayfair clubs have the strictest dress codes in London. Venues like Tape London, Cirque Le Soir, and The Box enforce smart dress codes firmly. Ministry of Sound is more relaxed — comfortable clubwear is fine. Always check the specific club before you go.' },
       { question: 'Can men wear jeans to London clubs?', answer: 'Dark, well-fitted jeans are acceptable at many London clubs when paired with smart shoes, a good shirt, and a blazer or jacket. Ripped jeans, baggy jeans, or light-wash denim will get you refused at most upscale venues.' },
@@ -63,7 +63,7 @@ export const blogPosts: BlogPost[] = [
       { question: 'How old do you have to be to get into London clubs?', answer: 'All London nightclubs are strictly 18+. You will need valid photo ID — a passport, driving licence, or PASS card. Some clubs operate a 21+ policy on certain nights, particularly in Mayfair.' },
       { question: 'What ID do London clubs accept?', answer: 'Passport, UK driving licence, and PASS-accredited ID cards are universally accepted. Some clubs accept EU/EEA national ID cards. Student cards, bank cards, and expired documents are never accepted.' },
       { question: 'Are there over-30s clubs in London?', answer: 'Scotch of St James, Maddox, and The London Reign naturally attract an older crowd (late 20s to 40s) without formally being "over 30s" venues. Ministry of Sound also draws a wide age range thanks to its music-first approach.' },
-      { question: 'Will I feel too old at London clubs?', answer: 'It depends entirely on the venue. Clubs like TABU and Luna Club skew younger (22-30), while Scotch of St James, Maddox, and The London Reign comfortably cater to guests in their 30s and 40s. Choose the right club and age is never an issue.' },
+      { question: 'Will I feel too old at London clubs?', answer: 'It depends entirely on the venue. Clubs like BEAT London and Cirque Le Soir skew younger (22-35), while Scotch of St James, Maddox, and The London Reign comfortably cater to guests in their 30s and 40s. Choose the right club and age is never an issue.' },
     ],
   },
   {
@@ -180,14 +180,14 @@ export const blogPosts: BlogPost[] = [
     slug: 'new-clubs-in-london',
     title: 'New Clubs in London 2026 — The Latest Openings Worth Visiting',
     metaTitle: 'New Clubs in London 2026 — Latest Openings & Reviews',
-    metaDescription: 'The newest nightclubs in London for 2026. Luna Club, Selene, and every fresh opening worth knowing about. First impressions and honest reviews from the ground.',
+    metaDescription: 'The newest nightclubs in London for 2026. Itzel, Selene, Rumour, 99 Regent Street, and every fresh opening worth knowing about. First impressions and honest reviews from the ground.',
     excerpt: 'London\'s club scene never stands still. Here are the newest openings that are actually worth your time — and which established venues they\'re competing with.',
     featuredImage: '/gallery/images/fe4414_10b096491888432598b5a27177f140f9.jpg',
     category: 'Going Out',
     tags: ['new clubs', '2026', 'openings'],
     publishedDate: '2026-03-22',
     updatedDate: '2026-03-25',
-    relatedClubs: ['luna-club-london', 'selene-london', 'the-box-london', 'funky-buddha'],
+    relatedClubs: ['selene-london', 'tabu-london', 'cuckoo-club', 'the-box-london'],
   },
   {
     slug: 'most-unique-clubs-in-london',
@@ -242,8 +242,8 @@ export const blogPosts: BlogPost[] = [
     relatedClubs: ['cirque-le-soir', 'dear-darling', 'selene-london', 'cuckoo-club', 'the-london-reign'],
     faqs: [
       { question: 'Do girls get free entry to London clubs?', answer: 'At most London clubs, women on the guestlist get free entry before a certain time (usually midnight or 12:30am). Some clubs offer free entry for all-female groups throughout the night. Table bookings always include entry. Message us on WhatsApp for tonight\'s guestlist.' },
-      { question: 'Are London clubs safe for all-female groups?', answer: 'London\'s reputable clubs take safety seriously. Venues like Cirque Le Soir, Dear Darling, Selene, and The Cuckoo Club have trained security, well-managed door policies, and staff who intervene if anyone is making guests uncomfortable. Stick to established venues and you will be well looked after.' },
-      { question: 'What is the best club for a girls night in London?', answer: 'It depends on your group\'s vibe. Cirque Le Soir for theatrical entertainment and Instagram moments. Dear Darling for cocktails transitioning into dancing. Selene for a sophisticated lounge atmosphere. The London Reign for dinner-and-show. The Cuckoo Club for an intimate Soho night.' },
+      { question: 'Are London clubs safe for all-female groups?', answer: 'London\'s reputable clubs take safety seriously. Venues like Cirque Le Soir, Dear Darling, Selene, and 99 Regent Street (formerly Cuckoo Club) have trained security, well-managed door policies, and staff who intervene if anyone is making guests uncomfortable. Stick to established venues and you will be well looked after.' },
+      { question: 'What is the best club for a girls night in London?', answer: 'It depends on your group\'s vibe. Cirque Le Soir for theatrical entertainment and Instagram moments. Dear Darling for cocktails transitioning into dancing. Selene for a sophisticated lounge atmosphere. The London Reign for dinner-and-show. 99 Regent Street (formerly Cuckoo Club) for an intimate night just off Piccadilly Circus, Wednesday to Saturday.' },
       { question: 'How many girls do you need for guestlist in London?', answer: 'Most clubs have no minimum group size for women\'s guestlist — even two people can get on the list. However, groups of four or more often get better treatment at the door, including faster entry and sometimes complimentary drinks. All-female groups of six-plus are welcomed enthusiastically at most venues.' },
     ],
   },
@@ -260,9 +260,9 @@ export const blogPosts: BlogPost[] = [
     updatedDate: '2026-03-25',
     relatedClubs: ['luna-club-london', 'tabu-london', 'cirque-le-soir', 'beat-london', 'funky-buddha'],
     faqs: [
-      { question: 'Which London clubs play Afrobeats every weekend?', answer: 'Luna Club and TABU are the most reliable for Afrobeats every Friday and Saturday. Cirque Le Soir mixes Afrobeats into its hip-hop sets regularly. BEAT London features Afrobeats alongside hip-hop and RnB. For dedicated Afrobeats-only nights, check specific event listings as they rotate across venues.' },
-      { question: 'Is there amapiano in London clubs?', answer: 'Yes — amapiano has become a staple at London clubs, particularly at Luna Club, TABU, and BEAT London. DJs increasingly blend amapiano into their Afrobeats and hip-hop sets. Dedicated amapiano nights also run at various venues — message us for the latest schedule.' },
-      { question: 'What is the dress code for Afrobeats clubs in London?', answer: 'The same smart dress code applies as at any London club. Mayfair venues expect smart shoes and well-fitted clothing. Luna Club and TABU are slightly more relaxed but still expect effort. Clean designer trainers can work at some venues but smart shoes are always the safer choice.' },
+      { question: 'Which London clubs play Afrobeats every weekend?', answer: 'Cirque Le Soir mixes Afrobeats into its hip-hop sets regularly, and BEAT London features Afrobeats alongside hip-hop and RnB. For dedicated Afrobeats-only nights, check specific event listings as they rotate across venues.' },
+      { question: 'Is there amapiano in London clubs?', answer: 'Yes — amapiano has become a staple at London clubs, particularly at BEAT London. DJs increasingly blend amapiano into their Afrobeats and hip-hop sets. Dedicated amapiano nights also run at various venues — message us for the latest schedule.' },
+      { question: 'What is the dress code for Afrobeats clubs in London?', answer: 'The same smart dress code applies as at any London club. Mayfair venues expect smart shoes and well-fitted clothing. BEAT London is slightly more relaxed but still expects effort. Clean designer trainers can work at some venues but smart shoes are always the safer choice.' },
     ],
   },
   {
@@ -315,7 +315,7 @@ export const blogPosts: BlogPost[] = [
     updatedDate: '2026-03-25',
     relatedClubs: ['maddox', 'dear-darling', 'selene-london', 'cuckoo-club', 'scotch-of-st-james'],
     faqs: [
-      { question: 'Which London clubs are open on weeknights?', answer: 'Most central London clubs operate Thursday to Saturday. Thursday is the most popular weeknight, with Maddox, The Cuckoo Club, Scotch of St James, Dear Darling, and Selene all open and busy. Some clubs also open on Wednesdays for special events — check individual venues or message us.' },
+      { question: 'Which London clubs are open on weeknights?', answer: 'Most central London clubs operate Thursday to Saturday. Thursday is the most popular weeknight, with Maddox, 99 Regent Street (formerly Cuckoo Club), Scotch of St James, Dear Darling, and Selene all open and busy. Several clubs also open on Wednesdays, including Cirque Le Soir, Rumour, 99 Regent Street and The Box. Message us to check what is on.' },
       { question: 'Can I get into a London club wearing office clothes?', answer: 'Yes — office clothes are often the perfect dress code for London clubs. A suit or smart office outfit comfortably meets the dress code at every Mayfair and Soho venue. Women in office wear are similarly well-dressed enough for any club. Just avoid trainers and very casual pieces.' },
       { question: 'Is Thursday a good night to go clubbing in London?', answer: 'Thursday is arguably the best night in London. The clubs are busy but not as rammed as Friday and Saturday. The crowd tends to be slightly older professionals. Queues are shorter, tables are easier to book, and the atmosphere often feels more sociable and less chaotic than weekends.' },
     ],
@@ -335,7 +335,7 @@ export const blogPosts: BlogPost[] = [
     faqs: [
       { question: 'Are London clubs overpriced?', answer: 'It depends on the venue and how you approach the night. Guestlist entry at many clubs is free, making the only costs drinks and transport. Table service at Mayfair clubs starts from £1,000 but split between a group of 8-10, it can work out comparable to a decent restaurant dinner. The value is in choosing the right venue for your budget.' },
       { question: 'Is table service worth it at London clubs?', answer: 'For groups of 6 or more, table service often delivers better value per person than buying drinks individually at the bar. You also get guaranteed entry, a reserved space, and dedicated service. For couples or small groups, guestlist entry and bar drinks are usually the smarter move.' },
-      { question: 'Which London clubs offer the best value?', answer: 'Ministry of Sound offers outstanding value — affordable entry, reasonable drink prices, and world-class sound and DJs. In the West End, Cuckoo Club and Beat London have more accessible table minimums than venues like Tape London. Guestlist entry is the best free option across the board.' },
+      { question: 'Which London clubs offer the best value?', answer: 'Ministry of Sound offers outstanding value — affordable entry, reasonable drink prices, and world-class sound and DJs. In the West End, 99 Regent Street (formerly Cuckoo Club) and Beat London have more accessible table minimums than venues like Tape London. Guestlist entry is the best free option across the board.' },
       { question: 'How can I save money on a London club night?', answer: 'Get on the guestlist for free or reduced entry, pre-drink before arriving, go on a Thursday or quieter weeknight for lower prices, and consider sharing a table between a larger group to reduce per-head costs. Avoid buying rounds of shots at the bar — that is where the bill spirals.' },
     ],
   },
@@ -389,7 +389,7 @@ export const blogPosts: BlogPost[] = [
     updatedDate: '2026-03-25',
     relatedClubs: ['ministry-of-sound', 'beat-london', 'cuckoo-club', 'funky-buddha', 'scotch-of-st-james'],
     faqs: [
-      { question: 'Can you walk into London clubs without a booking?', answer: 'Yes, at many venues. Ministry of Sound, Beat London, and Funky Buddha all accept walk-ins regularly. The key factors are timing (arrive before midnight), dress code (look the part), and group composition (mixed groups fare better). Mayfair clubs are harder for walk-ins but not impossible on quieter nights.' },
+      { question: 'Can you walk into London clubs without a booking?', answer: 'Yes, at many venues. Ministry of Sound and Beat London both accept walk-ins regularly. The key factors are timing (arrive before midnight), dress code (look the part), and group composition (mixed groups fare better). Mayfair clubs are harder for walk-ins but not impossible on quieter nights.' },
       { question: 'What time should you arrive to walk into a London club?', answer: 'Between 10:30pm and 11:30pm is the sweet spot. Arrive too early and the venue is empty. Arrive after midnight and the queue is long, capacity is filling up, and the door becomes more selective. For popular Saturday nights, earlier is always better.' },
       { question: 'What is the best backup plan if a club turns you away?', answer: 'Sign up for a guestlist — it is free and takes two minutes via WhatsApp or a promoter. If you are already at the door and get turned away, walk to a nearby venue. Mayfair and Soho have multiple clubs within a five-minute walk of each other, so a rejection at one is not the end of the night.' },
     ],
@@ -426,10 +426,10 @@ export const blogPosts: BlogPost[] = [
     updatedDate: '2026-04-02',
     relatedClubs: ['tape-london', 'cirque-le-soir', 'funky-buddha', 'beat-london', 'luna-club-london'],
     faqs: [
-      { question: 'Which London clubs play R&B every weekend?', answer: 'Tape London, Cirque Le Soir, and Funky Buddha all play R&B as a core part of their weekend playlists. BEAT London leans heavily into hip-hop and RnB across multiple rooms. Luna Club mixes RnB with Afrobeats. For a guaranteed R&B-heavy night, Tape and Funky Buddha are your safest choices.' },
-      { question: 'Are there old-school R&B nights in London?', answer: 'Yes. Several clubs run throwback sets featuring 90s and 2000s R&B and hip-hop. Funky Buddha is known for weaving classics into its sets. Dedicated old-school nights rotate across venues — message us on WhatsApp for the current schedule. Thursday nights often lean more heavily into classic tracks.' },
+      { question: 'Which London clubs play R&B every weekend?', answer: 'Tape London and Cirque Le Soir both play R&B as a core part of their weekend playlists. BEAT London leans heavily into hip-hop and RnB across multiple rooms. For a guaranteed R&B-heavy night, Tape and Cirque Le Soir are your safest choices.' },
+      { question: 'Are there old-school R&B nights in London?', answer: 'Yes. Several clubs run throwback sets featuring 90s and 2000s R&B and hip-hop. Dedicated old-school nights rotate across venues — message us on WhatsApp for the current schedule. Thursday nights often lean more heavily into classic tracks.' },
       { question: 'What is the best hip-hop club in London?', answer: 'BEAT London is the most dedicated hip-hop venue in the city, with multiple rooms playing hip-hop, trap, and RnB. Tape London plays hip-hop alongside commercial and RnB. For underground hip-hop, check Ministry of Sound event listings. For Mayfair hip-hop with a premium setting, Tape is hard to beat.' },
-      { question: 'Do London clubs play UK rap and drill?', answer: 'Some venues feature UK rap in their sets, particularly BEAT London and Luna Club. However, most Mayfair clubs lean towards US hip-hop and commercial RnB. Drill specifically is less common at central London nightclubs but features at dedicated event nights. Check specific venue listings for genre-focused evenings.' },
+      { question: 'Do London clubs play UK rap and drill?', answer: 'Some venues feature UK rap in their sets, particularly BEAT London. However, most Mayfair clubs lean towards US hip-hop and commercial RnB. Drill specifically is less common at central London nightclubs but features at dedicated event nights. Check specific venue listings for genre-focused evenings.' },
     ],
   },
   {
@@ -560,7 +560,7 @@ export const blogPosts: BlogPost[] = [
     relatedClubs: ['scotch-of-st-james', 'maddox', 'cuckoo-club', 'funky-buddha', 'tape-london'],
     faqs: [
       { question: 'Is it weird to go to a London club alone?', answer: 'No. More people go out solo than you would expect, especially on weeknights. Bartenders, promoters, and regulars all notice that solo clubbers tend to have a good time because they are not managing group logistics or waiting for someone else to make a decision. Most clubs welcome solo guests who look the part and are there for the right reasons.' },
-      { question: 'Which London clubs are best for going out alone?', answer: 'Smaller, more intimate venues work best. Scotch of St James has a bar-forward layout that makes solo visits feel natural. Maddox Club is compact enough that the dancefloor pulls everyone in. Cuckoo Club mixes bar energy with club energy across its different areas. Avoid the largest rooms on the busiest nights if it is your first time going out alone.' },
+      { question: 'Which London clubs are best for going out alone?', answer: 'Smaller, more intimate venues work best. Scotch of St James has a bar-forward layout that makes solo visits feel natural. Maddox Club is compact enough that the dancefloor pulls everyone in. 99 Regent Street (formerly Cuckoo Club) mixes bar energy with club energy across its different areas. Avoid the largest rooms on the busiest nights if it is your first time going out alone.' },
       { question: 'Will door staff let me in to a club on my own?', answer: 'Yes, but you need to look confident and put-together. Solo arrivals sometimes get more scrutiny at the door because the team is assessing whether you will fit the room. Getting on a guestlist through a promoter removes most of the friction. Message us on WhatsApp and we will sort your name on the door.' },
       { question: 'How do I get on a guestlist if I am going out alone?', answer: 'The same way as anyone else. Message a promoter on WhatsApp with your name, which venue you want, and which night. Being solo is not a problem. Promoters handle solo guestlist requests regularly and can recommend which night or venue will suit you best.' },
     ],
@@ -599,7 +599,7 @@ export const blogPosts: BlogPost[] = [
     faqs: [
       { question: 'Can you plan a last-minute night out in London?', answer: 'Yes. Most London clubs have availability on any given night, especially midweek. The key is messaging a promoter as early as possible, even a few hours before you plan to arrive. They can arrange guestlist entry, recommend venues with space, and tell you what is running tonight.' },
       { question: 'How late can you arrange a London club guestlist?', answer: 'Most clubs close their guestlists between 6pm and 9pm on the night. Some venues are more flexible midweek. The earlier you confirm, the better your chances. On Fridays and Saturdays, aim to message by early afternoon for the best options.' },
-      { question: 'Which London clubs are easiest to get into at short notice?', answer: 'Smaller, more intimate venues like Cuckoo Club, Maddox Club, and Dear Darling tend to be more accommodating for last-minute visits. Larger production clubs like Cirque le Soir depend more on the specific event running. A promoter can tell you instantly which venues have space tonight.' },
+      { question: 'Which London clubs are easiest to get into at short notice?', answer: 'Smaller, more intimate venues like 99 Regent Street (formerly Cuckoo Club), Maddox Club, and Dear Darling tend to be more accommodating for last-minute visits. Larger production clubs like Cirque le Soir depend more on the specific event running. A promoter can tell you instantly which venues have space tonight.' },
       { question: 'Do you need to book a table for a same-night club visit?', answer: 'Not necessarily. Guestlist entry is usually sufficient for last-minute plans, especially for smaller groups. Tables are harder to arrange on short notice and carry minimum spend requirements. If guestlist spots are available, that is the fastest route in.' },
     ],
   },
