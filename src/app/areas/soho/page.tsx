@@ -180,7 +180,7 @@ export default function SohoPage() {
             <p className="animate-fade-up anim-delay-3 text-frost-100/85 text-lg md:text-xl leading-relaxed max-w-2xl">
               There are two nightclubs in Soho itself: Cirque Le Soir on Ganton Street,
               just off Carnaby Street, and The Box on Walker&apos;s Court. Both play mainly
-              hip-hop and RnB, both close at 3:30am, and between them there is a Soho club
+              hip-hop and RnB. Cirque Le Soir closes at 3:45am and The Box at 3:30am, and between them there is a Soho club
               open on Monday and every night from Wednesday to Saturday. The Mayfair clubs start just across
               Regent Street, and Selene and BEAT London are a short walk north of Oxford Circus.
             </p>

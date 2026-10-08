@@ -70,7 +70,7 @@ export const staticRoutes: SiteRoute[] = [
     path: '/guides/clubs-open-late',
     title: 'Clubs Open Late in London',
     description:
-      'Every London club grouped by closing time. Find venues open until 3am, 3:30am, and 6am.',
+      'Every London club grouped by closing time. Find venues open until 3am, 3:30am, 3:45am and 6am.',
     priority: 0.8,
     changeFrequency: 'monthly',
     section: 'guides',

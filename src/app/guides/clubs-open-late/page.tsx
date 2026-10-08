@@ -7,7 +7,7 @@ import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
   title: 'Clubs Open Late in London — Your Guide to Late Night London',
-  description: 'Every London club grouped by closing time. Find venues open until 3am, 3:30am, and 6am. Your guide to keeping the night going in London.',
+  description: 'Every London club grouped by closing time. Find venues open until 3am, 3:30am, 3:45am and 6am. Your guide to keeping the night going in London.',
   keywords: ['clubs open late London', 'late night clubs London', 'clubs open until 6am London', 'after hours London', 'late night London'],
   alternates: {
     canonical: 'https://londonclubstonight.com/guides/clubs-open-late',
@@ -22,10 +22,16 @@ const closingGroups = [
     slugs: ['ministry-of-sound'],
   },
   {
+    time: '3:45am',
+    label: 'Open Until 3:45am',
+    description: 'Tape London and Cirque Le Soir both finish at 3:45am. On Fridays and Saturdays, Little Tape, the room next door to Tape, carries on from 3am to 5:30am.',
+    slugs: ['tape-london', 'cirque-le-soir'],
+  },
+  {
     time: '3:30am',
     label: 'Open Until 3:30am',
-    description: 'The standard late-night option for most of London\'s best clubs. Plenty of time to have a proper night.',
-    slugs: ['tape-london', 'cirque-le-soir', 'beat-london'],
+    description: 'A late finish with plenty of time to have a proper night.',
+    slugs: ['beat-london'],
   },
   {
     time: '3:00am',
@@ -47,7 +53,7 @@ export default function ClubsOpenLatePage() {
       <SchemaMarkup
         schema={getArticleSchema(
           'Clubs Open Late in London — Your Guide to Late Night London',
-          'Every London club grouped by closing time. Find venues open until 3am, 3:30am, and 6am.',
+          'Every London club grouped by closing time. Find venues open until 3am, 3:30am, 3:45am and 6am.',
           '/guides/clubs-open-late',
           '2025-01-01'
         )}
@@ -96,7 +102,7 @@ export default function ClubsOpenLatePage() {
           {/* Quick Reference */}
           <div className="glass-card p-7 mb-12">
             <h2 className="font-display text-lg font-extrabold tracking-tight text-white mb-4 text-center">Quick Reference</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-5 gap-6">
               {closingGroups.map((group) => (
                 <div key={group.time} className="text-center">
                   <div className="font-display text-2xl font-extrabold tracking-tight text-gradient">{group.time.replace(':00', '')}</div>

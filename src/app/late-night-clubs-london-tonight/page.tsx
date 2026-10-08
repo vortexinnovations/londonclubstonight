@@ -51,7 +51,7 @@ const faqs = [
   {
     question: 'Are there clubs open after 3am in London tonight?',
     answer:
-      'Yes, but they are limited. Ministry of Sound in Elephant & Castle regularly runs until 6am on Fridays and Saturdays. Some clubs with 3:30am licences — like Tape London, Cirque Le Soir, and BEAT London — may keep the dancefloor moving close to that time. Beyond those, after-3am options become very specific to the night and event.',
+      'Yes, but they are limited. Ministry of Sound in Elephant & Castle regularly runs until 6am on Fridays and Saturdays. Tape London and Cirque Le Soir both run until 3:45am, and on Fridays and Saturdays Little Tape, the room next door to Tape, carries on from 3am to 5:30am. BEAT London has a 3:30am licence and may keep the dancefloor moving close to that time. Beyond those, after-3am options become very specific to the night and event.',
   },
   {
     question: 'How do I get home from a late night club in London?',
