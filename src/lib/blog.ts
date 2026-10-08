@@ -180,7 +180,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'new-clubs-in-london',
     title: 'New Clubs in London 2026 — The Latest Openings Worth Visiting',
     metaTitle: 'New Clubs in London 2026 — Latest Openings & Reviews',
-    metaDescription: 'The newest nightclubs in London for 2026. Itzel, Selene, Rumour, 99 Regent Street, and every fresh opening worth knowing about. First impressions and honest reviews from the ground.',
+    metaDescription: 'The newest nightclubs in London for 2026: Itzel, Selene, Rumour, 99 Regent Street and every fresh opening worth knowing about, from the booking desk that reserves their tables.',
     excerpt: 'London\'s club scene never stands still. Here are the newest openings that are actually worth your time — and which established venues they\'re competing with.',
     featuredImage: '/gallery/images/fe4414_10b096491888432598b5a27177f140f9.jpg',
     category: 'Going Out',
