@@ -367,7 +367,7 @@ function getPostContent(slug: string): React.ReactNode {
 
           <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mt-10 mb-4">The Best Mayfair Clubs on a Friday</h2>
           <p className="text-frost-300 leading-relaxed mb-4">
-            <strong className="text-white"><Link href="/clubs/tape-london" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Tape London</Link>:</strong>{" "}Open Thursday through Saturday, and Friday is arguably their best night. The crowd is the after-work Mayfair set mixing with industry regulars, and the atmosphere is more approachable than Saturday when it becomes more exclusive. If you have been wanting to try Tape, Friday is your best shot. Book a table through <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">London Bottle Service</a>{" "}to guarantee entry.
+            <strong className="text-white"><Link href="/clubs/tape-london" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Tape London</Link>:</strong>{" "}Open Tuesday, Friday, Saturday and Sunday, and Friday is arguably their best night. The crowd is the after-work Mayfair set mixing with industry regulars, and the atmosphere is more approachable than Saturday when it becomes more exclusive. If you have been wanting to try Tape, Friday is your best shot. Book a table through <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">London Bottle Service</a>{" "}to guarantee entry.
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
             <strong className="text-white"><Link href="/clubs/cirque-le-soir" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Cirque Le Soir</Link>:</strong>{" "}The performances are just as spectacular on Fridays, but the room often has a slightly different mix of people. More international visitors, more birthday groups, and a bit more spontaneity. The guestlist is more accessible on Fridays, making this the best night to experience Cirque without a table booking.
@@ -1990,7 +1990,7 @@ function getPostContent(slug: string): React.ReactNode {
             This is the change that catches people off guard. In winter, Sunday is a write-off. In summer, it becomes one of the best nights of the week. Multiple venues open their doors on Sundays specifically for the warmer months, running day-to-night sessions that carry a completely different energy to a standard Saturday.
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
-            <Link href="/clubs/funky-buddha" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Funky Buddha</Link>{" "}and <Link href="/clubs/cuckoo-club" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Cuckoo Club</Link>{" "}both benefit from this shift. The mood is more relaxed, the dress code loosens slightly, and people are there because they genuinely want to be rather than because it is the expected night to go out. Add a bank holiday Monday into the mix and you have one of the liveliest nights of the summer.
+            <Link href="/clubs/funky-buddha" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Funky Buddha</Link>{" "}benefits from this shift. The mood is more relaxed, the dress code loosens slightly, and people are there because they genuinely want to be rather than because it is the expected night to go out. Add a bank holiday Monday into the mix and you have one of the liveliest nights of the summer.
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
             If you have never tried a London <Link href="/blog/bank-holiday-clubbing-london-guide" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">bank holiday Sunday session</Link>, summer is the time. The atmosphere sits somewhere between a rooftop bar and a proper club night, and it works.
@@ -2051,7 +2051,7 @@ function getPostContent(slug: string): React.ReactNode {
             <Link href="/clubs/cirque-le-soir" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Cirque le Soir</Link>{" "}is the gold standard for themed nightlife in London. Every weekend in Soho, the venue runs a full circus-burlesque production with acrobats, fire breathers, contortionists, and performers weaving through the crowd. This is not background entertainment. The shows are loud, physical, and impossible to ignore. The performers work the room, interact with tables, and build an atmosphere that no DJ set alone can match.
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
-            The crowd knows what they are signing up for. People dress sharper, arrive earlier, and commit to the energy. If you have never been, expect to be surprised by how immersive it is. If you have been, you already know why people keep coming back. It runs Thursday through Saturday, with each night carrying a slightly different flavour.
+            The crowd knows what they are signing up for. People dress sharper, arrive earlier, and commit to the energy. If you have never been, expect to be surprised by how immersive it is. If you have been, you already know why people keep coming back. It runs Monday, Wednesday, Friday and Saturday, with each night carrying a slightly different flavour.
           </p>
 
           <h3 className="font-display text-xl font-bold tracking-tight text-white mt-8 mb-3">The Box</h3>
@@ -2068,7 +2068,7 @@ function getPostContent(slug: string): React.ReactNode {
             <Link href="/clubs/tape-london" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Tape London</Link>{" "}runs some of the strongest genre-specific nights in Mayfair. Their R&amp;B and hip-hop residencies pull a dedicated crowd that knows exactly what sound they are getting. The music is not an afterthought here. Resident DJs build sets across the night rather than jumping between genres, and the result is a dancefloor that actually moves together.
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
-            Tuesday and Thursday nights at Tape tend to lean into specific genres more heavily than the weekend, which is broader. If you care about the music as much as the venue, the midweek residencies are where you will find the most focused programming.
+            Tuesday nights at Tape tend to lean into specific genres more heavily than the weekend, which is broader. If you care about the music as much as the venue, the midweek residencies are where you will find the most focused programming.
           </p>
 
           <h3 className="font-display text-xl font-bold tracking-tight text-white mt-8 mb-3">Reign</h3>
@@ -2442,7 +2442,7 @@ function getPostContent(slug: string): React.ReactNode {
 
           <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mt-10 mb-4">Time Your Arrival Right</h2>
           <p className="text-frost-300 leading-relaxed mb-4">
-            On a weeknight, arrive between 10:30pm and 11:30pm. The venue has enough energy to feel alive without being so packed that the door becomes difficult. On my last visit to Maddox on a Wednesday, the queue was practically non-existent at 10:45pm and the dancefloor had a great buzz by 11:30pm.
+            On a weeknight, arrive between 10:30pm and 11:30pm. The venue has enough energy to feel alive without being so packed that the door becomes difficult. On my last visit to Maddox on a Thursday, the queue was practically non-existent at 10:45pm and the dancefloor had a great buzz by 11:30pm.
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
             On Fridays and Saturdays, aim for 11pm to midnight if you&apos;re on the guestlist. Later arrivals work but your name needs to be on the list, because walk-in entry gets progressively harder as the venue fills. If you&apos;re unsure about timing, ask your promoter. They&apos;ll tell you the sweet spot for whichever venue you&apos;re heading to.

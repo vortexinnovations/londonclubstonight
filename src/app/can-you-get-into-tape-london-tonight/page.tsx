@@ -45,7 +45,7 @@ const faqs = [
   {
     question: 'Can I get into Tape London tonight?',
     answer:
-      'It depends on the night and whether you have a booking. Tape is a members club, so walk-in entry is extremely difficult — especially on Fridays and Saturdays. Your best chance is to book a table through a promoter. Thursday nights tend to be slightly more accessible, and having a mixed group with a strong ratio of women helps. Without a booking, your chances are realistically very low.',
+      'It depends on the night and whether you have a booking. Tape is a members club, so walk-in entry is extremely difficult — especially on Fridays and Saturdays. Your best chance is to book a table through a promoter. Tuesday nights tend to be slightly more accessible, and having a mixed group with a strong ratio of women helps. Without a booking, your chances are realistically very low.',
   },
   {
     question: 'Do I need a table at Tape?',
@@ -129,7 +129,7 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
               Tape is a members club. That distinction matters. Unlike venues that operate as regular nightclubs with a selective door, Tape fills its room primarily through table bookings and member invitations. The door team is not looking for people to fill a queue — they are managing a guest list of people who have already committed to being there. Walk-ups are assessed individually, and the bar is high.
             </p>
             <p>
-              That said, context matters enormously. The night of the week, the size and composition of your group, how you are dressed, and — critically — whether you have any connection to a promoter or member all influence whether the door opens for you. Thursday nights are the most accessible. Friday and Saturday are the most competitive. Wednesday does not exist at Tape.
+              That said, context matters enormously. The night of the week, the size and composition of your group, how you are dressed, and — critically — whether you have any connection to a promoter or member all influence whether the door opens for you. Tuesday nights are the most accessible. Friday and Saturday are the most competitive. Wednesday does not exist at Tape.
             </p>
             <p>
               We work with Tape regularly and can give you a realistic picture. If you want to go tonight, the fastest path is to message us. We can check availability, advise on your best approach, and in many cases arrange a table or entry on your behalf. That is not a sales pitch — it is simply how Tape works.
@@ -167,7 +167,7 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="inline-block w-2 h-2 rounded-full bg-wa-500 mt-2 shrink-0" />
-                  Same-day tables are sometimes available — especially Thursdays
+                  Same-day tables are sometimes available — especially Tuesdays
                 </li>
               </ul>
             </div>
@@ -188,7 +188,7 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="inline-block w-2 h-2 rounded-full bg-amber-500 mt-2 shrink-0" />
-                  Thursday nights offer the best walk-in odds
+                  Tuesday nights offer the best walk-in odds
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="inline-block w-2 h-2 rounded-full bg-amber-500 mt-2 shrink-0" />
@@ -227,10 +227,10 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
               The sound system was originally designed for music production. The bass response, the clarity at high volumes, and the way the room handles the acoustics are a tier above what you hear in other clubs. Tape plays predominantly hip-hop, RnB, and trap, and the system does those genres extraordinary justice. You hear details in tracks that are lost in other venues.
             </p>
             <p>
-              The celebrity presence is real. This is not a club that posts old photos of famous visitors from three years ago. On any given Thursday, Friday, or Saturday, you have a genuine chance of sharing the room with recognisable names from music, sport, film, and fashion. The small capacity means these encounters feel organic rather than staged.
+              The celebrity presence is real. This is not a club that posts old photos of famous visitors from three years ago. On any given Tuesday, Friday, or Saturday, you have a genuine chance of sharing the room with recognisable names from music, sport, film, and fashion. The small capacity means these encounters feel organic rather than staged.
             </p>
             <p>
-              The intimacy creates an atmosphere that larger clubs cannot replicate. When Tape is at its best — a packed Thursday night, the right DJ behind the decks, a crowd that is there because they want to be — the energy in that room is unlike anything else in London. It is a room where things happen. Spontaneous performances, unexpected guests, moments that become stories.
+              The intimacy creates an atmosphere that larger clubs cannot replicate. When Tape is at its best — a packed Tuesday night, the right DJ behind the decks, a crowd that is there because they want to be — the energy in that room is unlike anything else in London. It is a room where things happen. Spontaneous performances, unexpected guests, moments that become stories.
             </p>
             <p>
               Located on Hanover Square in Mayfair, the venue itself reflects its neighbourhood — understated luxury without unnecessary flashiness. The interior is dark and moody with plush seating and warm lighting that creates pockets of privacy even when the room is full. For a wider look at what is happening across the Mayfair scene tonight, check{' '}
@@ -273,10 +273,10 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
           </h2>
           <div className="text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl space-y-6">
             <p>
-              Tape opens Thursday, Friday, and Saturday. Each night has a distinct character, and understanding the difference helps you decide whether tonight is the right night for your group.
+              Tape opens Tuesday, Friday, Saturday and Sunday. Each night has a distinct character, and understanding the difference helps you decide whether tonight is the right night for your group.
             </p>
             <p>
-              <strong className="text-white">Thursdays</strong>{" "}are often considered the insider favourite. The crowd tends to include more music industry figures and genuine regulars. The atmosphere is slightly more relaxed than the weekend — not in quality, but in intensity. Table availability is better, and last-minute bookings are more achievable. If you are trying to experience Tape for the first time, Thursday gives you the best chance of entry and the most authentic representation of what the club is about.
+              <strong className="text-white">Tuesdays</strong>{" "}are often considered the insider favourite. The crowd tends to include more music industry figures and genuine regulars. The atmosphere is slightly more relaxed than the weekend — not in quality, but in intensity. Table availability is better, and last-minute bookings are more achievable. If you are trying to experience Tape for the first time, Tuesday gives you the best chance of entry and the most authentic representation of what the club is about.
             </p>
             <p>
               <strong className="text-white">Fridays</strong>{" "}bring higher energy and a slightly younger demographic. Tables book out earlier in the week, and the door becomes more selective. The music programming is strong, and the DJs tend to play more aggressively — heavier bass, faster transitions, bigger reactions. Friday at Tape is a commitment to a big night.

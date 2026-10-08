@@ -51,7 +51,7 @@ const faqs = [
   {
     question: 'What clubs are open tonight in London?',
     answer:
-      'The clubs open tonight depend on the day of the week. Most Mayfair clubs like Tape London, Maddox, and Cirque Le Soir operate Thursday through Saturday. Soho venues often add Wednesday nights. Our page updates dynamically to show you exactly which clubs are open tonight based on the current day. Message us on WhatsApp for a real-time recommendation tailored to your group.',
+      'The clubs open tonight depend on the day of the week. Most Mayfair clubs like Maddox operate Thursday through Saturday, while Tape London opens Tuesday, Friday, Saturday and Sunday, and Cirque Le Soir opens Monday, Wednesday, Friday and Saturday. Soho venues often add Wednesday nights. Our page updates dynamically to show you exactly which clubs are open tonight based on the current day. Message us on WhatsApp for a real-time recommendation tailored to your group.',
   },
   {
     question: 'Can I get a table at a London club tonight?',
@@ -271,7 +271,7 @@ export default function ClubsTonightLondonPage() {
               London&apos;s club scene does not operate on a simple open-or-closed
               basis. Every night has a different character, and the clubs that are
               technically open on a given evening are not all running their best
-              nights. A Thursday at Tape London has a completely different energy
+              nights. A Tuesday at Tape London has a completely different energy
               from a Saturday at the same venue. The crowd shifts, the DJs change,
               and the atmosphere follows. Knowing which night is the right night
               at each venue is the difference between a good evening and a wasted

@@ -97,7 +97,7 @@ const faqs = [
     question: 'Which nights are Soho clubs open?',
     answer: `${sohoClubs
       .map((c) => `${label(c)} opens ${c.openingNights}`)
-      .join('; ')}. Wednesday, Friday and Saturday are the nights when both are open. Neither runs a regular Monday, Tuesday or Sunday night.`,
+      .join('; ')}. Wednesday, Friday and Saturday are the nights when both are open. Neither runs a regular Tuesday or Sunday night.`,
   },
   {
     question: 'What music do clubs in Soho play?',
@@ -181,7 +181,7 @@ export default function SohoPage() {
               There are two nightclubs in Soho itself: Cirque Le Soir on Ganton Street,
               just off Carnaby Street, and The Box on Walker&apos;s Court. Both play mainly
               hip-hop and RnB, both close at 3:30am, and between them there is a Soho club
-              open every night from Wednesday to Saturday. The Mayfair clubs start just across
+              open on Monday and every night from Wednesday to Saturday. The Mayfair clubs start just across
               Regent Street, and Selene and BEAT London are a short walk north of Oxford Circus.
             </p>
           </div>
