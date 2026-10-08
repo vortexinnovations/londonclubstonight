@@ -122,9 +122,9 @@ export const staticRoutes: SiteRoute[] = [
   },
   {
     path: '/areas/soho',
-    title: 'Best Clubs in Soho',
+    title: 'Clubs in Soho, London',
     description:
-      "Guide to Soho nightclubs and the clubs on Soho's borders. Cirque Le Soir, the Carnaby scene, and links to Mayfair's luxury club cluster just steps away.",
+      'The clubs in Soho, London: Cirque Le Soir and The Box, which nights they open, the music, closing times and the clubs a short walk away.',
     priority: 0.75,
     changeFrequency: 'monthly',
     section: 'areas',

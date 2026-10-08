@@ -1,28 +1,43 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { clubs, getClubsByArea } from '@/lib/clubs';
+import {
+  getClubBySlug,
+  getClubsByArea,
+  musicLabel,
+  tablesFromLabel,
+  closesLabel,
+  type Club,
+} from '@/lib/clubs';
 import ClubCard from '@/components/ClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
-import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
+import SchemaMarkup, {
+  getArticleSchema,
+  getBreadcrumbSchema,
+  getFAQSchema,
+} from '@/components/SchemaMarkup';
+
+const TITLE = 'Clubs in Soho London: Best Soho Nightclubs 2026';
+const DESCRIPTION =
+  'The clubs in Soho, London: Cirque Le Soir and The Box, which nights they open, the music, closing times and the clubs a short walk away. Updated October 2026.';
+const UPDATED = 'October 2026';
 
 export const metadata: Metadata = {
-  title: 'Best Clubs in Soho 2026 — London\'s Most Vibrant Nightlife District',
-  description:
-    'Guide to Soho nightclubs and the clubs on Soho\'s borders. Cirque Le Soir, the Carnaby scene, and links to Mayfair\'s luxury club cluster just steps away.',
+  title: TITLE,
+  description: DESCRIPTION,
   keywords: [
     'clubs in Soho',
+    'clubs in Soho London',
+    'Soho clubs',
     'Soho nightclubs',
-    'best clubs Soho London',
+    'best clubs in Soho',
+    'Soho London nightlife',
     'Soho nightlife',
-    'Soho clubs London',
-    'clubs near Soho',
-    'Carnaby nightlife',
+    'nightclubs in Soho London',
   ],
   openGraph: {
-    title: 'Best Clubs in Soho 2026 — London\'s Most Vibrant Nightlife District',
-    description:
-      'Guide to Soho nightclubs and the clubs on Soho\'s borders including Cirque Le Soir and the Carnaby scene.',
+    title: TITLE,
+    description: DESCRIPTION,
     url: 'https://londonclubstonight.com/areas/soho',
     type: 'article',
     locale: 'en_GB',
@@ -30,9 +45,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Best Clubs in Soho 2026 — Vibrant London Nightlife',
-    description:
-      'Guide to Soho nightclubs and the clubs on Soho\'s borders.',
+    title: TITLE,
+    description: DESCRIPTION,
   },
   alternates: {
     canonical: 'https://londonclubstonight.com/areas/soho',
@@ -41,16 +55,94 @@ export const metadata: Metadata = {
 
 const sohoClubs = getClubsByArea('Soho');
 
+/** Open clubs a short walk from Soho, with where they sit relative to it. */
+const NEARBY: { slug: string; where: string }[] = [
+  { slug: 'tape-london', where: 'Hanover Square, Mayfair, just west of Regent Street' },
+  { slug: 'cuckoo-club', where: 'Swallow Street, Mayfair, just off Regent Street near Piccadilly Circus' },
+  { slug: 'selene-london', where: '4 Winsley Street, Fitzrovia, just north of Oxford Circus' },
+  { slug: 'beat-london', where: '48 Margaret Street, Fitzrovia, north of Oxford Circus' },
+];
+const nearbyClubs = NEARBY.map((n) => ({ ...n, club: getClubBySlug(n.slug) })).filter(
+  (n): n is { slug: string; where: string; club: Club } => !!n.club && n.club.status === 'open'
+);
+
+const DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+const opensOn = (club: Club, day: string) => club.openingNights.toLowerCase().includes(day.toLowerCase());
+
+function names(list: Club[]): string {
+  const n = list.map((c) => c.shortName);
+  if (n.length <= 1) return n.join('');
+  return `${n.slice(0, -1).join(', ')} and ${n[n.length - 1]}`;
+}
+
+const sohoNames = names(sohoClubs);
+const sohoSunday = sohoClubs.filter((c) => opensOn(c, 'Sunday'));
+const nearbySunday = nearbyClubs.filter((n) => opensOn(n.club, 'Sunday')).map((n) => n.club);
+
+const faqs = [
+  {
+    question: 'What clubs are in Soho, London?',
+    answer: `As of ${UPDATED} there are ${sohoClubs.length} nightclubs in Soho itself on our list: ${sohoClubs
+      .map((c) => `${c.name} (${c.address})`)
+      .join(' and ')}. Several more are a short walk away: ${nearbyClubs
+      .map((n) => `${n.club.shortName} (${n.where})`)
+      .join('; ')}.`,
+  },
+  {
+    question: 'Which nights are Soho clubs open?',
+    answer: `${sohoClubs
+      .map((c) => `${c.shortName} opens ${c.openingNights}`)
+      .join('; ')}. Wednesday, Friday and Saturday are the nights when both are open. Neither runs a regular Monday, Tuesday or Sunday night.`,
+  },
+  {
+    question: 'What music do clubs in Soho play?',
+    answer: `Mostly hip-hop and RnB. ${sohoClubs
+      .map((c) => `${c.shortName}: ${musicLabel(c)}`)
+      .join('. ')}. At both venues the performers are as much a part of the night as the music. For house and deep house close by, Selene, just north of Oxford Circus, is the better fit.`,
+  },
+  {
+    question: 'How late do clubs in Soho stay open?',
+    answer: `${sohoClubs
+      .map((c) => `${c.shortName} closes at ${c.closingTime}`)
+      .join(' and ')}. Nothing in Soho on our list runs to 6am; for an all-night session, Ministry of Sound in Elephant and Castle closes at 6am on Fridays and Saturdays.`,
+  },
+  {
+    question: 'Are any clubs in Soho open on a Sunday?',
+    answer:
+      sohoSunday.length > 0
+        ? `Yes: ${names(sohoSunday)} opens on Sundays.`
+        : `Not regularly. Neither ${sohoNames} opens on a Sunday. ${
+            nearbySunday.length > 0
+              ? `${names(nearbySunday)}, a short walk north of Oxford Circus, is the nearest club that does.`
+              : ''
+          }`,
+  },
+  {
+    question: 'Do I need to book a table at a Soho club?',
+    answer: `${sohoClubs
+      .map((c) => `${c.shortName}: ${c.guestlistNote} ${tablesFromLabel(c)}.`)
+      .join(' ')} Message us on WhatsApp and we will tell you what is realistic for your group and your night.`,
+  },
+  {
+    question: 'What is the dress code at clubs in Soho?',
+    answer:
+      'Smart, with no casual wear. Cirque Le Soir asks guests to stand out: heels and dresses for women, smart tailored looks for men. The Box rewards individuality, so dress to express yourself rather than to conform, but smart is still expected.',
+  },
+];
+
 export default function SohoPage() {
   return (
     <>
       <SchemaMarkup
-        schema={getArticleSchema(
-          'Best Clubs in Soho 2026 — London\'s Most Vibrant Nightlife District',
-          'Guide to Soho nightclubs and the clubs on Soho\'s borders including Cirque Le Soir and the Carnaby scene.',
-          '/areas/soho',
-          '2025-01-01'
-        )}
+        schema={[
+          getArticleSchema(TITLE, DESCRIPTION, '/areas/soho', '2025-01-01', '2026-10-08'),
+          getFAQSchema(faqs),
+          getBreadcrumbSchema([
+            { name: 'Home', url: '/' },
+            { name: 'Areas', url: '/areas' },
+            { name: 'Soho', url: '/areas/soho' },
+          ]),
+        ]}
       />
 
       <main className="min-h-screen">
@@ -74,17 +166,119 @@ export default function SohoPage() {
               <span className="text-frost-500 mx-2">/</span>
               <span className="text-frost-300 text-sm">Soho</span>
             </div>
-            <span className="eyebrow animate-fade-up anim-delay-1">Area guide</span>
+            <span className="eyebrow animate-fade-up anim-delay-1">Area guide, updated {UPDATED}</span>
             <h1 className="animate-fade-up anim-delay-2 font-display text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mt-4 mb-4 tracking-tight">
-              Best Clubs in <span className="serif-accent text-gradient">Soho</span>
+              Clubs in <span className="serif-accent text-gradient">Soho</span>, London
             </h1>
             <p className="animate-fade-up anim-delay-3 text-frost-100/85 text-lg md:text-xl leading-relaxed max-w-2xl">
-              Soho is London&apos;s most vibrant entertainment district, renowned for
-              its bars, restaurants, theatres, and late-night energy. While the majority
-              of London&apos;s luxury nightclubs sit technically within Mayfair&apos;s
-              boundaries, Soho&apos;s borders are fluid, and several major venues occupy
-              the overlap between the two areas, particularly around Carnaby and Ganton Street.
+              There are two nightclubs in Soho itself: Cirque Le Soir on Ganton Street,
+              just off Carnaby Street, and The Box on Walker&apos;s Court. Both play mainly
+              hip-hop and RnB, both close at 3:30am, and between them there is a Soho club
+              open every night from Wednesday to Saturday. The Mayfair clubs start just across
+              Regent Street, and Selene and BEAT London are a short walk north of Oxford Circus.
             </p>
+          </div>
+        </section>
+
+        {/* The clubs */}
+        <section className="border-b border-white/[0.06] py-20 md:py-28">
+          <div className="max-w-5xl mx-auto px-6 sm:px-8">
+            <span className="eyebrow">The lineup</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
+              The Clubs in Soho
+            </h2>
+            <p className="text-frost-300 max-w-2xl mb-12">
+              Opening nights, music, closing times and table minimums as of {UPDATED}. Nights
+              can change for holidays and private hire, so message us to confirm a specific date.
+            </p>
+            <div className="grid gap-8 md:grid-cols-2">
+              {sohoClubs.map((club) => (
+                <div key={club.slug} className="space-y-4">
+                  <ClubCard club={club} showArea={true} />
+                  <dl className="glass-card p-6 grid grid-cols-[auto,1fr] gap-x-4 gap-y-2 text-sm">
+                    <dt className="text-frost-500">Address</dt>
+                    <dd className="text-frost-200">{club.address}</dd>
+                    <dt className="text-frost-500">Open</dt>
+                    <dd className="text-frost-200">{club.openingNights}</dd>
+                    <dt className="text-frost-500">Music</dt>
+                    <dd className="text-frost-200">{musicLabel(club)}</dd>
+                    <dt className="text-frost-500">Hours</dt>
+                    <dd className="text-frost-200">{closesLabel(club)}</dd>
+                    <dt className="text-frost-500">Tables</dt>
+                    <dd className="text-frost-200">{tablesFromLabel(club)}</dd>
+                    <dt className="text-frost-500">Door</dt>
+                    <dd className="text-frost-200">{club.guestlistNote}</dd>
+                  </dl>
+                </div>
+              ))}
+            </div>
+            <div className="mt-10 space-y-4 text-frost-300 leading-relaxed max-w-3xl">
+              <p>
+                <strong className="text-white">Cirque Le Soir</strong> is the circus-themed club:
+                fire-breathers, contortionists and stilt-walkers work the room between the tables
+                while the DJs play hip-hop and RnB. It suits birthdays and mixed groups, and
+                guestlist is realistic if you message early in the day.
+              </p>
+              <p>
+                <strong className="text-white">The Box</strong> is the theatrical one: tiered seating
+                around a stage, adults-only cabaret shows, and hip-hop, RnB and house between the
+                performances. The door is one of the most selective in London, so a table is the
+                reliable way in.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Night by night */}
+        <section className="border-b border-white/[0.06] py-20 md:py-28">
+          <div className="max-w-5xl mx-auto px-6 sm:px-8">
+            <span className="eyebrow">Which night</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
+              Soho Clubs Night by Night
+            </h2>
+            <p className="text-frost-300 max-w-2xl mb-10">
+              Which Soho club is open on each night of the week, and the nearest alternatives a
+              short walk away.
+            </p>
+            <div className="grid gap-4">
+              {DAYS.map((day) => {
+                const inSoho = sohoClubs.filter((c) => opensOn(c, day));
+                const near = nearbyClubs.filter((n) => opensOn(n.club, day)).map((n) => n.club);
+                return (
+                  <div key={day} className="glass-card p-5 sm:p-6 grid sm:grid-cols-[8rem,1fr] gap-2">
+                    <h3 className="font-display font-bold text-white">{day}</h3>
+                    <div className="text-frost-300 text-sm leading-relaxed space-y-1">
+                      <p>
+                        <span className="text-frost-500">In Soho: </span>
+                        {inSoho.length > 0
+                          ? inSoho.map((c, i) => (
+                              <span key={c.slug}>
+                                {i > 0 && ', '}
+                                <Link href={`/clubs/${c.slug}`} className="text-neon-300 hover:text-white transition-colors">
+                                  {c.shortName}
+                                </Link>
+                              </span>
+                            ))
+                          : 'no regular club night'}
+                      </p>
+                      {near.length > 0 && (
+                        <p>
+                          <span className="text-frost-500">A short walk away: </span>
+                          {near.map((c, i) => (
+                            <span key={c.slug}>
+                              {i > 0 && ', '}
+                              <Link href={`/clubs/${c.slug}`} className="text-neon-300 hover:text-white transition-colors">
+                                {c.shortName}
+                              </Link>
+                            </span>
+                          ))}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </section>
 
@@ -97,8 +291,8 @@ export default function SohoPage() {
                 Looking for a Soho night out?
               </h2>
               <p className="text-frost-300 max-w-2xl mx-auto text-center mb-8">
-                We know the Soho and Mayfair scene inside out. Message us for table bookings,
-                guestlist, or help picking the right venue for your group.
+                Message us for a table or guestlist at Cirque Le Soir or The Box, or help picking
+                the right club nearby for your group and your night.
               </p>
               <div className="flex justify-center">
                 <WhatsAppCTA />
@@ -107,54 +301,56 @@ export default function SohoPage() {
           </div>
         </section>
 
-        {/* Soho Club Listings */}
+        {/* Nearby clubs */}
         <section className="border-b border-white/[0.06] py-20 md:py-28">
           <div className="max-w-5xl mx-auto px-6 sm:px-8">
-            <span className="eyebrow">The lineup</span>
+            <span className="eyebrow">Just outside Soho</span>
             <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
-              Clubs in &amp; Around Soho
+              Clubs a Short Walk from Soho
             </h2>
-            <p className="text-frost-300 max-w-2xl mb-12">
-              The clubs that sit within Soho or on its immediate borders with Mayfair
-              and the Carnaby area.
+            <p className="text-frost-300 max-w-2xl mb-10">
+              Soho ends at Regent Street to the west and Oxford Street to the north. These clubs
+              sit just beyond those lines, so they work for a night that starts in Soho.
             </p>
-            <div className="grid gap-6">
-              {sohoClubs.map((club) => (
-                <ClubCard key={club.slug} club={club} showArea={true} />
+            <div className="grid gap-4 md:grid-cols-2">
+              {nearbyClubs.map(({ club, where }) => (
+                <Link
+                  key={club.slug}
+                  href={`/clubs/${club.slug}`}
+                  className="glass-card glass-card-hover group block p-6"
+                >
+                  <h3 className="font-display font-bold tracking-tight text-white mb-1 group-hover:text-neon-200 transition-colors">
+                    {club.name}
+                  </h3>
+                  <p className="text-frost-400 text-sm mb-3">{where}</p>
+                  <p className="text-frost-300 text-sm leading-relaxed">
+                    {club.openingNights}. {musicLabel(club)}. {closesLabel(club)}.
+                  </p>
+                </Link>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Soho & Mayfair Overlap */}
+        {/* Soho & Mayfair */}
         <section className="border-b border-white/[0.06] py-20 md:py-28">
           <div className="max-w-5xl mx-auto px-6 sm:px-8">
-            <span className="eyebrow">Blurred lines</span>
+            <span className="eyebrow">Soho or Mayfair</span>
             <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
-              The Soho &amp; Mayfair Overlap
+              Soho Clubs or Mayfair Clubs?
             </h2>
-            <p className="text-frost-300 max-w-2xl mb-12">
-              How the two areas blend together for a seamless night out.
-            </p>
-            <div className="space-y-4 text-frost-300 leading-relaxed">
+            <div className="space-y-4 text-frost-300 leading-relaxed max-w-3xl">
               <p>
-                The boundary between Soho and Mayfair runs roughly along Regent Street,
-                but in practice the two areas blend into each other. Venues on streets
-                like Ganton Street, Carnaby Street, and the surrounding blocks could
-                legitimately claim either postcode. Cirque Le Soir, for example, sits
-                on Ganton Street in what many consider Soho, yet its address falls within
-                the W1F postcode that straddles both areas.
+                Regent Street is the line between the two. Cirque Le Soir sits on Ganton Street, a
+                block east of Regent Street in the W1F Soho postcode, so it is a Soho club even
+                though it is often listed with the Mayfair venues. The Box, on Walker&apos;s Court,
+                is in the middle of Soho.
               </p>
               <p>
-                This overlap works in your favour as a clubgoer. Starting your evening
-                in Soho&apos;s bars and restaurants and walking a few minutes south or
-                west puts you right in Mayfair&apos;s club cluster. The two areas
-                complement each other perfectly for a full night out.
-              </p>
-              <p>
-                For the main cluster of luxury clubs in the Mayfair area, including Tape,
-                Maddox, Dear Darling, Scotch of St James, and more, see our dedicated
-                Mayfair guide.
+                The difference is the night itself. Soho&apos;s two clubs are built around a show,
+                with performers in the room. The Mayfair clubs, such as Tape, Maddox and Dear
+                Darling, are about the table, the crowd and the DJ. Many nights start with dinner
+                or drinks in Soho and finish across Regent Street in Mayfair.
               </p>
             </div>
             <div className="mt-8 flex">
@@ -173,30 +369,20 @@ export default function SohoPage() {
           </div>
         </section>
 
-        {/* The Soho Scene */}
+        {/* FAQ */}
         <section className="border-b border-white/[0.06] py-20 md:py-28">
           <div className="max-w-5xl mx-auto px-6 sm:px-8">
-            <span className="eyebrow">After hours</span>
-            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
-              The Broader Soho Scene
+            <span className="eyebrow">Questions</span>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-10">
+              Clubs in Soho: Frequently Asked Questions
             </h2>
-            <p className="text-frost-300 max-w-2xl mb-12">
-              Beyond the clubs, Soho is the ideal starting point for any London night.
-            </p>
-            <div className="space-y-4 text-frost-300 leading-relaxed">
-              <p>
-                Beyond the high-end clubs, Soho is packed with late-night bars, cocktail
-                spots, and smaller music venues that make it the ideal starting point for
-                any London night out. The area&apos;s energy is unmatched — narrow streets
-                buzzing with people, neon signs, and the kind of atmosphere that only
-                decades of nightlife heritage can create.
-              </p>
-              <p>
-                Soho works brilliantly as a pre-club destination. Start with dinner or
-                drinks in the area&apos;s restaurants and bars, then head south into Mayfair
-                for the main event at one of the luxury clubs. The two areas are minutes
-                apart on foot, making for a seamless evening.
-              </p>
+            <div className="space-y-5 max-w-3xl">
+              {faqs.map((faq) => (
+                <div key={faq.question} className="glass-card p-6">
+                  <h3 className="font-display font-bold tracking-tight text-lg text-white mb-3">{faq.question}</h3>
+                  <p className="text-frost-300 text-base leading-relaxed">{faq.answer}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -227,6 +413,13 @@ export default function SohoPage() {
                 <p className="text-frost-500 text-sm">The complete West End nightlife guide.</p>
               </Link>
               <Link
+                href="/late-night-clubs-london-tonight"
+                className="glass-card glass-card-hover group block p-7"
+              >
+                <h3 className="font-display font-bold tracking-tight text-white mb-1 group-hover:text-neon-200 transition-colors">Late-Night Clubs</h3>
+                <p className="text-frost-500 text-sm">Where to go when you want to stay out latest.</p>
+              </Link>
+              <Link
                 href="/best-clubs-in-london"
                 className="glass-card glass-card-hover group block p-7"
               >
@@ -248,8 +441,8 @@ export default function SohoPage() {
                 Planning a night around Soho?
               </h3>
               <p className="text-frost-300 text-sm mb-5 max-w-md mx-auto">
-                Message us on WhatsApp and we&apos;ll help you plan the perfect evening,
-                from pre-drinks to the main event.
+                Message us on WhatsApp and we&apos;ll help you plan the evening, from dinner
+                and drinks to the club.
               </p>
               <div className="flex justify-center">
                 <WhatsAppCTA />
