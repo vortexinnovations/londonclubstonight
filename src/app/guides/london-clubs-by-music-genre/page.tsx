@@ -172,7 +172,7 @@ export default function MusicGenrePage() {
             <p className="text-frost-300 max-w-2xl mb-8">A quick summary to help you choose.</p>
             <div className="space-y-4 text-frost-300 text-sm leading-relaxed">
               <p>
-                If hip-hop is your thing, you have the most choice — nearly every Mayfair club leans that direction. The differences come down to exclusivity (Tape), atmosphere (Cirque), and sound quality (BEAT).
+                If hip-hop is your thing, you have the most choice — nearly every club in Mayfair and the surrounding West End leans that direction. The differences come down to exclusivity (Tape), atmosphere (Cirque), and sound quality (BEAT).
               </p>
               <p>
                 If house music is what you want, Maddox is your best Mayfair option, but Ministry of Sound is where the serious house heads go. The gap in sound quality and DJ calibre between Ministry and everywhere else is significant.

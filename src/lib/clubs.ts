@@ -228,16 +228,16 @@ History: under the TABU name, the room was a below-street-level Mayfair club wit
     status: 'permanently-closed',
     closedMessage: 'Libertine has closed, and Selene now operates in its place. Libertine no longer takes table bookings or guestlist names; for a table at Selene, or at Tape London or Dear Darling nearby, message us on WhatsApp.',
     alternatives: ['selene-london', 'tape-london', 'dear-darling', 'maddox'],
-    tagline: 'The futuristic Mayfair club, now closed: Selene operates in its place',
-    description: 'Libertine in Mayfair has closed, and Selene now operates in its place. What Libertine was, and the open clubs to book instead: Selene, Tape London and Dear Darling.',
+    tagline: 'The futuristic club just north of Oxford Circus, now closed: Selene operates in its place',
+    description: 'Libertine, on Winsley Street just north of Oxford Circus, has closed, and Selene now operates in its place. What Libertine was, and the open clubs to book instead: Selene, Tape London and Dear Darling.',
     longDescription: `Libertine has closed, and Selene now operates in its place. People still search for Libertine by name, so this page explains what it was and where to go instead.
 
-History: when it was open, Libertine was a Mayfair club with a futuristic look, clean lines and modern lighting, and it played hip-hop and RnB to a fashion-forward crowd. Tables started from £1,000 at the time.
+History: when it was open, Libertine was a club on Winsley Street in Fitzrovia, just north of Oxford Circus and a short walk from Mayfair, with a futuristic look, clean lines and modern lighting, and it played hip-hop and RnB to a fashion-forward crowd. Tables started from £1,000 at the time.
 
 For a table in the same spot today, Selene is the venue that now operates there. Tape London on Hanover Square suits the same hip-hop and RnB crowd, and Dear Darling suits groups who want cocktails before the dancing.`,
-    address: 'Mayfair, London W1',
-    area: 'Mayfair',
-    areas: ['Mayfair', 'Central London'],
+    address: '4 Winsley Street, Fitzrovia, London W1W 8HF',
+    area: 'Fitzrovia',
+    areas: ['Fitzrovia', 'Central London'],
     musicGenres: ['Hip-Hop', 'RnB'],
     openingNights: 'Closed',
     closingTime: 'Closed',
@@ -247,7 +247,7 @@ For a table in the same spot today, Selene is the venue that now operates there.
     bestFor: 'Libertine has closed. Selene now operates in its place, and Tape London and Dear Darling suit the same crowd.',
     insiderTip: 'Libertine has closed. Selene now operates in its place.',
     whyRanked: 'Libertine has closed.',
-    mapUrl: 'https://maps.google.com/?q=Libertine+London+Mayfair',
+    mapUrl: 'https://maps.google.com/?q=Libertine+London+4+Winsley+Street',
     tonightSuitability: 'Permanently closed.',
     guestlistRealistic: false,
     guestlistNote: 'Permanently closed.',
@@ -467,7 +467,7 @@ The programming varies by night but the consistent thread is energy. Whether it'
 The crowd tends to be younger and more music-focused than at some of the flashier Mayfair venues. People come to BEAT because they want to dance and they want to hear music played properly. The atmosphere is enthusiastic without being aggressive, and the lack of VIP pretension is refreshing.
 
 Tables start from £1,000 and offer good views of the dancefloor and DJ booth. The guestlist is accessible and the door policy, while smart, isn't designed to exclude — it's designed to maintain the quality of the crowd.`,
-    address: 'Margaret Street, London W1',
+    address: '48 Margaret Street, Fitzrovia, London W1',
     area: 'Fitzrovia',
     areas: ['Central London'],
     musicGenres: ['Hip-Hop', 'House', 'Open Format'],
@@ -707,7 +707,7 @@ Tables start from £1,000 and the service is polished. The crowd is well-dressed
     bestFor: 'Couples seeking a sophisticated night out. Groups who appreciate cocktails as much as clubbing. Anyone who wants elegance without stuffiness.',
     insiderTip: 'Arrive early enough to experience the cocktail bar phase — the drinks are excellent and the atmosphere during the transition to club mode is Selene at its best. Thursday is the most intimate night.',
     whyRanked: 'Selene fills a gap just north of Oxford Circus, a short walk from Mayfair, for people who want sophistication and quality across every element of their evening. The cocktail-to-club concept is executed with real finesse.',
-    mapUrl: 'https://maps.google.com/?q=Selene+London+Mayfair',
+    mapUrl: 'https://maps.google.com/?q=Selene+London+4+Winsley+Street',
     tonightSuitability: 'Sophisticated cocktail lounge transitioning to late-night house music. The grown-up option just north of Oxford Circus.',
     guestlistRealistic: true,
     guestlistNote: 'Guestlist available. The refined cocktail-bar format makes entry generally straightforward.',

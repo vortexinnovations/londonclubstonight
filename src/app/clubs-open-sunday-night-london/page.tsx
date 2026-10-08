@@ -46,7 +46,7 @@ const faqs = [
   {
     question: 'Are any clubs open on Sunday night in London?',
     answer:
-      'Very few. The vast majority of London nightclubs — including almost all of the Mayfair clubs — are closed on Sundays. Selene opens on Sundays, and Ministry of Sound occasionally hosts Sunday events, particularly bank holiday weekends and special productions. Beyond that, Sunday options are extremely limited. Your best approach is to check for one-off events or redirect your plans to Friday or Saturday.',
+      'Very few. The vast majority of London nightclubs — including all of the Mayfair clubs — are closed on Sundays. Selene, just north of Oxford Circus, opens on Sundays, and Ministry of Sound occasionally hosts Sunday events, particularly bank holiday weekends and special productions. Beyond that, Sunday options are extremely limited. Your best approach is to check for one-off events or redirect your plans to Friday or Saturday.',
   },
   {
     question: 'Why are London clubs closed on Sundays?',
@@ -127,7 +127,7 @@ export default function ClubsOpenSundayNightLondonPage() {
           </div>
           <div className="space-y-6 text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
             <p>
-              Most London clubs do not open on Sundays. That is not a diplomatic way of saying options are limited — it is the straightforward reality. Almost every Mayfair club is closed; Selene is the regular exception. The Soho venues are closed. The entertainment-led clubs are closed. If you are looking for a traditional London club night on a Sunday, you will struggle to find one.
+              Most London clubs do not open on Sundays. That is not a diplomatic way of saying options are limited — it is the straightforward reality. The Mayfair clubs are closed; Selene, just north of Oxford Circus, is the regular exception. The Soho venues are closed. The entertainment-led clubs are closed. If you are looking for a traditional London club night on a Sunday, you will struggle to find one.
             </p>
             <p>
               This is not a London-specific issue. Most major cities have a similar pattern — the economics of running a nightclub simply do not work when the majority of your potential crowd has work the next morning. Staff costs, security, licensing, and operational expenses are the same whether you have 50 guests or 500, and Sunday consistently fails to deliver the numbers that make opening worthwhile.
