@@ -122,7 +122,7 @@ export default function ClubsTonightLondonPage() {
             It&apos;s {dayName} Night in London
           </span>
           <h1 className="animate-fade-up anim-delay-1 font-display font-extrabold text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.05] mb-6">
-            Clubs Open <span className="serif-accent text-gradient">Tonight</span> in London
+            Clubs Open <span className="serif-accent text-gradient">Tonight</span>{" "}in London
           </h1>
           <p className="animate-fade-up anim-delay-2 text-lg md:text-xl text-frost-100/85 max-w-2xl mx-auto leading-relaxed mb-4">
             Every club open tonight, which ones have guestlist spots left,

@@ -275,20 +275,20 @@ export default function BestClubsThisWeekendPage() {
               How to Choose Your Night
             </h3>
             <p>
-              <strong className="text-white">Pick Friday if:</strong> you
+              <strong className="text-white">Pick Friday if:</strong>{" "}you
               want more flexibility, your group is deciding last minute, you
               prefer a looser atmosphere, or your budget is a factor. Friday
               rewards spontaneity and gives you more room to manoeuvre.
             </p>
             <p>
-              <strong className="text-white">Pick Saturday if:</strong> you
+              <strong className="text-white">Pick Saturday if:</strong>{" "}you
               are celebrating a birthday or special occasion, you want the
               absolute peak London club experience, you have already planned
               your group and outfit, and you are happy to book in advance.
               Saturday is the night London puts on its best show.
             </p>
             <p>
-              <strong className="text-white">Do both if:</strong> your
+              <strong className="text-white">Do both if:</strong>{" "}your
               weekend allows it. A Friday warm-up at a music-led venue like
               BEAT or Cirque Le Soir followed by a Saturday main event at
               Tape or Maddox is the ideal London weekend. Different venues,

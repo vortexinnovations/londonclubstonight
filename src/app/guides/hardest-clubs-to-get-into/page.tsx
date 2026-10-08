@@ -94,7 +94,7 @@ export default function ExclusiveClubsPage() {
 
             <span className="eyebrow animate-fade-up anim-delay-1 mb-4">Insider guide</span>
             <h1 className="animate-fade-up anim-delay-2 font-display text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-4">
-              London&apos;s Most <span className="serif-accent text-gradient">Exclusive</span> Clubs
+              London&apos;s Most <span className="serif-accent text-gradient">Exclusive</span>{" "}Clubs
             </h1>
             <p className="animate-fade-up anim-delay-3 text-frost-100/85 max-w-2xl leading-relaxed">
               A guide to London&apos;s most premium nightlife experiences. What makes each venue special, what to expect, and how to arrange your night.

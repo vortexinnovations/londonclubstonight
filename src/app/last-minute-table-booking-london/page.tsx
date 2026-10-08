@@ -328,16 +328,16 @@ export default function LastMinuteTableBookingPage() {
               The earlier in the day you enquire, the better your options. The difference between messaging at 2pm versus 9pm is significant. By early evening, the most desirable table positions are usually allocated. By late evening, you are working with whatever remains.
             </p>
             <p>
-              <strong className="text-white">Before 4pm:</strong> Best selection across all venues. You can usually secure your first-choice club and a good table position. This is also when promoters have the most leverage with venue managers.
+              <strong className="text-white">Before 4pm:</strong>{" "}Best selection across all venues. You can usually secure your first-choice club and a good table position. This is also when promoters have the most leverage with venue managers.
             </p>
             <p>
-              <strong className="text-white">4pm to 8pm:</strong> Good options still available but popular venues on Saturdays may already be limited. Second and third choices become relevant. Flexibility on venue helps significantly.
+              <strong className="text-white">4pm to 8pm:</strong>{" "}Good options still available but popular venues on Saturdays may already be limited. Second and third choices become relevant. Flexibility on venue helps significantly.
             </p>
             <p>
-              <strong className="text-white">After 8pm:</strong> Workable but limited. Some venues will have released un-confirmed reservations, which creates late openings. This is where promoter relationships become critical — we know which tables have fallen through and can move quickly.
+              <strong className="text-white">After 8pm:</strong>{" "}Workable but limited. Some venues will have released un-confirmed reservations, which creates late openings. This is where promoter relationships become critical — we know which tables have fallen through and can move quickly.
             </p>
             <p>
-              <strong className="text-white">After 10pm:</strong> You are relying on cancellations and no-shows. Still possible — we have arranged tables at 11pm on Saturdays — but your choice of venue narrows considerably.
+              <strong className="text-white">After 10pm:</strong>{" "}You are relying on cancellations and no-shows. Still possible — we have arranged tables at 11pm on Saturdays — but your choice of venue narrows considerably.
             </p>
             <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               Why Some Clubs Are More Accommodating

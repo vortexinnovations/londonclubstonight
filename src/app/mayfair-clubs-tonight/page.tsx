@@ -240,13 +240,13 @@ export default function MayfairClubsTonightPage() {
               Which Mayfair Club Is Right for You Tonight
             </h3>
             <p>
-              <strong className="text-white">Tape London</strong> is the pinnacle of exclusivity. A members club on Hanover Square where the crowd genuinely includes celebrities and the sound system is among the best in the world. If you want the most exclusive experience Mayfair offers, this is it — but you will need a table booking or a very good reason to be at the door.
+              <strong className="text-white">Tape London</strong>{" "}is the pinnacle of exclusivity. A members club on Hanover Square where the crowd genuinely includes celebrities and the sound system is among the best in the world. If you want the most exclusive experience Mayfair offers, this is it — but you will need a table booking or a very good reason to be at the door.
             </p>
             <p>
-              <strong className="text-white">Dear Darling</strong> takes yet another approach — starting your evening with genuinely excellent cocktails in a gilded, opulent setting before transitioning into a late-night venue. It is the best option for groups that want the evening to build gradually rather than arriving at a club cold at midnight.
+              <strong className="text-white">Dear Darling</strong>{" "}takes yet another approach — starting your evening with genuinely excellent cocktails in a gilded, opulent setting before transitioning into a late-night venue. It is the best option for groups that want the evening to build gradually rather than arriving at a club cold at midnight.
             </p>
             <p>
-              <strong className="text-white">Maddox</strong> is the house music stronghold of Mayfair. While most Mayfair clubs lean heavily into hip-hop and RnB, Maddox has committed to a sound that attracts a crowd who actually want to dance. The restaurant-to-club format is polished, and the transition between the two feels natural.
+              <strong className="text-white">Maddox</strong>{" "}is the house music stronghold of Mayfair. While most Mayfair clubs lean heavily into hip-hop and RnB, Maddox has committed to a sound that attracts a crowd who actually want to dance. The restaurant-to-club format is polished, and the transition between the two feels natural.
             </p>
             <p>
               <Link href="/clubs/tabu-london" className="text-neon-300 underline underline-offset-4">TABU is now Rumour</Link>, at 1 Dover Street, open Wednesday to Saturday from 11pm.{' '}
@@ -260,16 +260,16 @@ export default function MayfairClubsTonightPage() {
               Mayfair door policies are the most discussed topic in London nightlife, and for good reason. Every venue here operates a selective door, and the level of selectivity varies from firm-but-fair to genuinely elite.
             </p>
             <p>
-              <strong className="text-white">Book a table.</strong> This is the most reliable approach across all Mayfair venues. A table reservation guarantees your entry, removes the stress of door assessments, and lets you focus on the night itself. Tables start from &#163;1,000 at most venues, which splits reasonably across a group of four or more.
+              <strong className="text-white">Book a table.</strong>{" "}This is the most reliable approach across all Mayfair venues. A table reservation guarantees your entry, removes the stress of door assessments, and lets you focus on the night itself. Tables start from &#163;1,000 at most venues, which splits reasonably across a group of four or more.
             </p>
             <p>
-              <strong className="text-white">Use a promoter for guestlist.</strong> Where guestlist is available (Dear Darling, Maddox and others), going through a promoter is significantly more effective than enquiring directly. Promoters have allocated spots and established relationships with door teams. Message us on WhatsApp and we handle the guestlist process for you.
+              <strong className="text-white">Use a promoter for guestlist.</strong>{" "}Where guestlist is available (Dear Darling, Maddox and others), going through a promoter is significantly more effective than enquiring directly. Promoters have allocated spots and established relationships with door teams. Message us on WhatsApp and we handle the guestlist process for you.
             </p>
             <p>
-              <strong className="text-white">Dress the part.</strong> This is not optional in Mayfair. Smart shoes, tailored clothing, and a sense of occasion are the minimum. If you are unsure about any item, upgrade it. The door team makes fast decisions based on appearance, and there is rarely a second chance.
+              <strong className="text-white">Dress the part.</strong>{" "}This is not optional in Mayfair. Smart shoes, tailored clothing, and a sense of occasion are the minimum. If you are unsure about any item, upgrade it. The door team makes fast decisions based on appearance, and there is rarely a second chance.
             </p>
             <p>
-              <strong className="text-white">Group composition matters.</strong> Mixed groups of men and women fare significantly better than all-male groups at every Mayfair venue. If your group is all male, a table booking moves from recommended to essential.
+              <strong className="text-white">Group composition matters.</strong>{" "}Mixed groups of men and women fare significantly better than all-male groups at every Mayfair venue. If your group is all male, a table booking moves from recommended to essential.
             </p>
             <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               What to Expect From a Night Out in Mayfair

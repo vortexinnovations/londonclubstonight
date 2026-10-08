@@ -221,13 +221,13 @@ export default function SohoPage() {
             </div>
             <div className="mt-10 space-y-4 text-frost-300 leading-relaxed max-w-3xl">
               <p>
-                <strong className="text-white">Cirque Le Soir</strong> is the circus-themed club:
+                <strong className="text-white">Cirque Le Soir</strong>{" "}is the circus-themed club:
                 fire-breathers, contortionists and stilt-walkers work the room between the tables
                 while the DJs play hip-hop and RnB. It suits birthdays and mixed groups, and
                 guestlist is realistic if you message early in the day.
               </p>
               <p>
-                <strong className="text-white">The Box</strong> is the theatrical one: tiered seating
+                <strong className="text-white">The Box</strong>{" "}is the theatrical one: tiered seating
                 around a stage, adults-only cabaret shows, and hip-hop, RnB and house between the
                 performances. The door is one of the most selective in London, so a table is the
                 reliable way in.

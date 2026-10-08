@@ -243,16 +243,16 @@ export default function HowToGetInPage() {
                 <h3 className="font-display font-bold tracking-tight text-white mb-2">What works best</h3>
                 <ul className="list-disc pl-5 space-y-2">
                   <li>
-                    <span className="text-white">All-female groups:</span> Welcomed everywhere. Guestlist works at every club.
+                    <span className="text-white">All-female groups:</span>{" "}Welcomed everywhere. Guestlist works at every club.
                   </li>
                   <li>
-                    <span className="text-white">Mixed groups (more women than men):</span> Excellent experience. This is the ideal group composition for guestlist.
+                    <span className="text-white">Mixed groups (more women than men):</span>{" "}Excellent experience. This is the ideal group composition for guestlist.
                   </li>
                   <li>
-                    <span className="text-white">Mixed groups (equal or more men):</span> Works well at most venues, especially with guestlist or a table.
+                    <span className="text-white">Mixed groups (equal or more men):</span>{" "}Works well at most venues, especially with guestlist or a table.
                   </li>
                   <li>
-                    <span className="text-white">All-male groups:</span> A table booking is the best route for all-male groups at Mayfair clubs. Ministry of Sound is ticket-based so group composition does not apply.
+                    <span className="text-white">All-male groups:</span>{" "}A table booking is the best route for all-male groups at Mayfair clubs. Ministry of Sound is ticket-based so group composition does not apply.
                   </li>
                 </ul>
               </div>

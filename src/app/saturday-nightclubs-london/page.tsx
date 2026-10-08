@@ -219,19 +219,19 @@ export default function SaturdayNightclubsLondonPage() {
               Timing your arrival on Saturday is more important than any other night. Get it wrong and you either sit in a half-empty room for an hour or face a door that has stopped admitting people. Get it right and you walk into a club at its energetic peak.
             </p>
             <p>
-              <strong className="text-white">10pm to 11pm:</strong> Only relevant if you have a dinner-and-club booking at The London Reign or a cocktail reservation at Dear Darling. Pure nightclub arrivals at this time will find an empty room and awkward silence. The only exception is Ministry of Sound, which builds atmosphere earlier due to its scale.
+              <strong className="text-white">10pm to 11pm:</strong>{" "}Only relevant if you have a dinner-and-club booking at The London Reign or a cocktail reservation at Dear Darling. Pure nightclub arrivals at this time will find an empty room and awkward silence. The only exception is Ministry of Sound, which builds atmosphere earlier due to its scale.
             </p>
             <p>
-              <strong className="text-white">11pm to 11:30pm:</strong> The early-mover window. The room is filling, the music is building, and you have time to settle in before the peak. If you are on guestlist, this is the ideal arrival time — early enough to guarantee entry, late enough that the atmosphere has started.
+              <strong className="text-white">11pm to 11:30pm:</strong>{" "}The early-mover window. The room is filling, the music is building, and you have time to settle in before the peak. If you are on guestlist, this is the ideal arrival time — early enough to guarantee entry, late enough that the atmosphere has started.
             </p>
             <p>
-              <strong className="text-white">11:30pm to 12:30am:</strong> The sweet spot. Most clubs reach their optimal atmosphere during this window. The dancefloor is active, the DJ is hitting stride, and the energy is climbing. This is when Saturday night feels like Saturday night. Table guests should aim for this window to get the most from their booking.
+              <strong className="text-white">11:30pm to 12:30am:</strong>{" "}The sweet spot. Most clubs reach their optimal atmosphere during this window. The dancefloor is active, the DJ is hitting stride, and the energy is climbing. This is when Saturday night feels like Saturday night. Table guests should aim for this window to get the most from their booking.
             </p>
             <p>
-              <strong className="text-white">12:30am to 1:30am:</strong> Still workable but risks are higher. Popular venues may have reached capacity and stopped admitting from guestlist. Tables that were available earlier may have been released to walk-ins. If you are arriving this late without a confirmed booking, check with us first to confirm the venue is still accepting entry.
+              <strong className="text-white">12:30am to 1:30am:</strong>{" "}Still workable but risks are higher. Popular venues may have reached capacity and stopped admitting from guestlist. Tables that were available earlier may have been released to walk-ins. If you are arriving this late without a confirmed booking, check with us first to confirm the venue is still accepting entry.
             </p>
             <p>
-              <strong className="text-white">After 1:30am:</strong> For Mayfair clubs closing at 3am-3:30am, arriving after 1:30am gives you less than two hours. You are paying full price for a partial experience. At Ministry of Sound, however, 1:30am is perfectly reasonable — the night runs until 6am and the best hours are often 2am to 4am.
+              <strong className="text-white">After 1:30am:</strong>{" "}For Mayfair clubs closing at 3am-3:30am, arriving after 1:30am gives you less than two hours. You are paying full price for a partial experience. At Ministry of Sound, however, 1:30am is perfectly reasonable — the night runs until 6am and the best hours are often 2am to 4am.
             </p>
           </div>
         </div>

@@ -236,7 +236,7 @@ export default function BestClubsInLondonPage() {
         <div className="mb-12">
           <span className="eyebrow">Methodology</span>
           <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight mt-4 mb-5">
-            How We <span className="serif-accent text-gradient">Ranked</span> These Clubs
+            How We <span className="serif-accent text-gradient">Ranked</span>{" "}These Clubs
           </h2>
           <p className="text-frost-300 leading-relaxed max-w-3xl">
             Every ranking is subjective, and we are not pretending otherwise. But
@@ -291,7 +291,7 @@ export default function BestClubsInLondonPage() {
         <div className="mb-12">
           <span className="eyebrow">How it works</span>
           <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight mt-4 mb-5">
-            How to <span className="serif-accent text-gradient">Book</span> Any Club on This List
+            How to <span className="serif-accent text-gradient">Book</span>{" "}Any Club on This List
           </h2>
           <p className="text-frost-300 leading-relaxed max-w-3xl">
             We handle bookings for every club ranked above. Whether you want a VIP
@@ -304,7 +304,7 @@ export default function BestClubsInLondonPage() {
           <div className="flex items-start gap-4">
             <span className="font-display text-neon-300 font-bold text-lg leading-snug">1.</span>
             <p className="text-frost-300">
-              <strong className="text-white">Message us on WhatsApp</strong> with
+              <strong className="text-white">Message us on WhatsApp</strong>{" "}with
               your preferred club, date, group size, and any preferences.
             </p>
           </div>
@@ -318,7 +318,7 @@ export default function BestClubsInLondonPage() {
           <div className="flex items-start gap-4">
             <span className="font-display text-neon-300 font-bold text-lg leading-snug">3.</span>
             <p className="text-frost-300">
-              <strong className="text-white">Turn up and enjoy</strong> — your
+              <strong className="text-white">Turn up and enjoy</strong>{" "}— your
               name is on the list, your table is ready, and we are available all
               night if you need anything.
             </p>

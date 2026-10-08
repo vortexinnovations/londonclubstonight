@@ -215,16 +215,16 @@ export default function ClubsOpenSundayNightLondonPage() {
               If a full club night is not available, London still offers plenty of ways to spend a Sunday evening with energy and atmosphere. Here are the alternatives that actually deliver:
             </p>
             <p>
-              <strong className="text-white">Late-night cocktail bars.</strong> Soho and Shoreditch have numerous bars open until 1am or later on Sundays. These offer cocktails, music, and atmosphere without the full nightclub commitment. Many have DJ sets or live music that create a lively environment, and the dress code is typically more relaxed than clubs.
+              <strong className="text-white">Late-night cocktail bars.</strong>{" "}Soho and Shoreditch have numerous bars open until 1am or later on Sundays. These offer cocktails, music, and atmosphere without the full nightclub commitment. Many have DJ sets or live music that create a lively environment, and the dress code is typically more relaxed than clubs.
             </p>
             <p>
-              <strong className="text-white">Sunday rooftop sessions.</strong> During warmer months, rooftop bars across London host Sunday sessions with DJs, cocktails, and sunset views. These are particularly popular in summer and early autumn. The atmosphere is sociable and upbeat without being a full-blown club night.
+              <strong className="text-white">Sunday rooftop sessions.</strong>{" "}During warmer months, rooftop bars across London host Sunday sessions with DJs, cocktails, and sunset views. These are particularly popular in summer and early autumn. The atmosphere is sociable and upbeat without being a full-blown club night.
             </p>
             <p>
-              <strong className="text-white">Restaurant-bar hybrids.</strong> Several London restaurants transition into late-night venues on Sundays, with DJ sets accompanying dinner and drinks. These offer food, atmosphere, and a later finish than a standard restaurant — typically midnight to 1am.
+              <strong className="text-white">Restaurant-bar hybrids.</strong>{" "}Several London restaurants transition into late-night venues on Sundays, with DJ sets accompanying dinner and drinks. These offer food, atmosphere, and a later finish than a standard restaurant — typically midnight to 1am.
             </p>
             <p>
-              <strong className="text-white">Live music venues.</strong> Jazz bars, live music pubs, and intimate concert venues operate throughout the week including Sundays. If your interest is in the musical experience rather than the clubbing format, these can be excellent Sunday night options.
+              <strong className="text-white">Live music venues.</strong>{" "}Jazz bars, live music pubs, and intimate concert venues operate throughout the week including Sundays. If your interest is in the musical experience rather than the clubbing format, these can be excellent Sunday night options.
             </p>
           </div>
         </div>
@@ -244,10 +244,10 @@ export default function ClubsOpenSundayNightLondonPage() {
               If you are reading this page, there is a good chance you are either planning ahead or realising too late that Sunday night is not the night for London clubs. Either way, the best advice we can give is to redirect your energy to Friday or Saturday — the nights when London genuinely comes alive.
             </p>
             <p>
-              <strong className="text-white">Friday nights</strong> have a particular character in London. The crowd is celebratory — people have just finished their working week and the energy reflects that release. Many clubs run their best programming on Fridays, and table availability is often better than on Saturdays. If you are choosing between Friday and Sunday, there is no contest.
+              <strong className="text-white">Friday nights</strong>{" "}have a particular character in London. The crowd is celebratory — people have just finished their working week and the energy reflects that release. Many clubs run their best programming on Fridays, and table availability is often better than on Saturdays. If you are choosing between Friday and Sunday, there is no contest.
             </p>
             <p>
-              <strong className="text-white">Saturday nights</strong> are the peak of London nightlife. Every club is open, every venue is at full capacity, and the atmosphere across the city is electric. Booking is more important on Saturdays — tables and guestlist spots fill up faster — but the experience justifies the planning.
+              <strong className="text-white">Saturday nights</strong>{" "}are the peak of London nightlife. Every club is open, every venue is at full capacity, and the atmosphere across the city is electric. Booking is more important on Saturdays — tables and guestlist spots fill up faster — but the experience justifies the planning.
             </p>
             <p>
               If you are visiting London and your schedule only allows for a Sunday night out, we would honestly recommend adjusting your plans to include a Friday or Saturday instead. The difference in available options and overall quality of experience is substantial. To get ahead on weekend table planning and bottle service, visit{' '}

@@ -81,7 +81,7 @@ export default function ClubsOpenLatePage() {
               AFTER HOURS
             </span>
             <h1 className="animate-fade-up anim-delay-2 font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-4">
-              Clubs Open <span className="serif-accent text-gradient">Late</span> in London
+              Clubs Open <span className="serif-accent text-gradient">Late</span>{" "}in London
             </h1>
             <p className="animate-fade-up anim-delay-3 text-frost-100/85 max-w-2xl mb-6">
               It is 1am, the bar has kicked you out, and the night is still young. Here is where you can go and how late you can stay.

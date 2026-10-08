@@ -237,16 +237,16 @@ export default function LateNightClubsLondonTonightPage() {
               Transport planning is essential for late nights. London has improved significantly in recent years, but your options depend on the night of the week and where you are coming from.
             </p>
             <p>
-              <strong className="text-white">Night Tube (Fridays & Saturdays):</strong> The Victoria, Central, Jubilee, Northern, and Piccadilly lines run through the night on Friday and Saturday evenings. This covers most of central London effectively. Green Park, Bond Street, and Oxford Circus stations serve the Mayfair clubs. Elephant & Castle station sits directly next to Ministry of Sound.
+              <strong className="text-white">Night Tube (Fridays & Saturdays):</strong>{" "}The Victoria, Central, Jubilee, Northern, and Piccadilly lines run through the night on Friday and Saturday evenings. This covers most of central London effectively. Green Park, Bond Street, and Oxford Circus stations serve the Mayfair clubs. Elephant & Castle station sits directly next to Ministry of Sound.
             </p>
             <p>
-              <strong className="text-white">Night Buses:</strong> Run seven nights a week across London. Most major routes have buses every 15 to 30 minutes through the night. This is the most reliable public transport option on weeknights when the Tube stops running.
+              <strong className="text-white">Night Buses:</strong>{" "}Run seven nights a week across London. Most major routes have buses every 15 to 30 minutes through the night. This is the most reliable public transport option on weeknights when the Tube stops running.
             </p>
             <p>
-              <strong className="text-white">Uber and Bolt:</strong> Available throughout the night but expect surge pricing between 2am and 4am. A journey that costs £15 at 11pm might cost £40 at 3am. Pre-booking a taxi is worth considering if your budget is fixed. The area around Mayfair and Soho is well-served, but finding your driver in the crowds can take time.
+              <strong className="text-white">Uber and Bolt:</strong>{" "}Available throughout the night but expect surge pricing between 2am and 4am. A journey that costs £15 at 11pm might cost £40 at 3am. Pre-booking a taxi is worth considering if your budget is fixed. The area around Mayfair and Soho is well-served, but finding your driver in the crowds can take time.
             </p>
             <p>
-              <strong className="text-white">Black Cabs:</strong> Plentiful in Central London at closing time. They do not surge-price. Hailing a black cab on the street after a club can be faster and cheaper than waiting for an app-booked car on a busy night.
+              <strong className="text-white">Black Cabs:</strong>{" "}Plentiful in Central London at closing time. They do not surge-price. Hailing a black cab on the street after a club can be faster and cheaper than waiting for an app-booked car on a busy night.
             </p>
           </div>
         </div>

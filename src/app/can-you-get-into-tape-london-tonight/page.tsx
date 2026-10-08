@@ -276,13 +276,13 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
               Tape opens Thursday, Friday, and Saturday. Each night has a distinct character, and understanding the difference helps you decide whether tonight is the right night for your group.
             </p>
             <p>
-              <strong className="text-white">Thursdays</strong> are often considered the insider favourite. The crowd tends to include more music industry figures and genuine regulars. The atmosphere is slightly more relaxed than the weekend — not in quality, but in intensity. Table availability is better, and last-minute bookings are more achievable. If you are trying to experience Tape for the first time, Thursday gives you the best chance of entry and the most authentic representation of what the club is about.
+              <strong className="text-white">Thursdays</strong>{" "}are often considered the insider favourite. The crowd tends to include more music industry figures and genuine regulars. The atmosphere is slightly more relaxed than the weekend — not in quality, but in intensity. Table availability is better, and last-minute bookings are more achievable. If you are trying to experience Tape for the first time, Thursday gives you the best chance of entry and the most authentic representation of what the club is about.
             </p>
             <p>
-              <strong className="text-white">Fridays</strong> bring higher energy and a slightly younger demographic. Tables book out earlier in the week, and the door becomes more selective. The music programming is strong, and the DJs tend to play more aggressively — heavier bass, faster transitions, bigger reactions. Friday at Tape is a commitment to a big night.
+              <strong className="text-white">Fridays</strong>{" "}bring higher energy and a slightly younger demographic. Tables book out earlier in the week, and the door becomes more selective. The music programming is strong, and the DJs tend to play more aggressively — heavier bass, faster transitions, bigger reactions. Friday at Tape is a commitment to a big night.
             </p>
             <p>
-              <strong className="text-white">Saturdays</strong> are the most competitive night. Table minimums may be higher, availability is limited, and the crowd is at its most glamorous. Saturday is when you are most likely to encounter genuine celebrities and when the energy peaks. It is also the hardest night to get in without a booking — plan accordingly.
+              <strong className="text-white">Saturdays</strong>{" "}are the most competitive night. Table minimums may be higher, availability is limited, and the crowd is at its most glamorous. Saturday is when you are most likely to encounter genuine celebrities and when the energy peaks. It is also the hardest night to get in without a booking — plan accordingly.
             </p>
           </div>
         </div>
