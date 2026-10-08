@@ -471,7 +471,7 @@ Tables start from £1,000 and offer good views of the dancefloor and DJ booth. T
     area: 'Fitzrovia',
     areas: ['Central London'],
     musicGenres: ['Hip-Hop', 'House', 'Open Format'],
-    openingNights: 'Friday, Saturday',
+    openingNights: 'Thursday (select nights), Friday, Saturday',
     closingTime: '3:30am',
     dressCode: 'Smart casual. Smarter than a bar but less formal than traditional Mayfair. Clean, well-put-together outfits work.',
     tableMinimum: '£1,000',
