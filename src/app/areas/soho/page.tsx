@@ -69,21 +69,26 @@ const nearbyClubs = NEARBY.map((n) => ({ ...n, club: getClubBySlug(n.slug) })).f
 const DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 const opensOn = (club: Club, day: string) => club.openingNights.toLowerCase().includes(day.toLowerCase());
 
-function names(list: Club[]): string {
-  const n = list.map((c) => c.shortName);
+/** Display name without the trailing "London": Cirque Le Soir, The Box, Selene. */
+const label = (c: Club) => c.name.replace(/ London$/, '');
+
+function names(list: Club[], joiner = 'and'): string {
+  const n = list.map(label);
   if (n.length <= 1) return n.join('');
-  return `${n.slice(0, -1).join(', ')} and ${n[n.length - 1]}`;
+  return `${n.slice(0, -1).join(', ')} ${joiner} ${n[n.length - 1]}`;
 }
 
-const sohoNames = names(sohoClubs);
+const NUMBER_WORDS = ['no', 'one', 'two', 'three', 'four', 'five', 'six'];
+const sohoCount = NUMBER_WORDS[sohoClubs.length] ?? String(sohoClubs.length);
+const sohoClosing = [...new Set(sohoClubs.map((c) => c.closingTime))];
 const sohoSunday = sohoClubs.filter((c) => opensOn(c, 'Sunday'));
 const nearbySunday = nearbyClubs.filter((n) => opensOn(n.club, 'Sunday')).map((n) => n.club);
 
 const faqs = [
   {
     question: 'What clubs are in Soho, London?',
-    answer: `As of ${UPDATED} there are ${sohoClubs.length} nightclubs in Soho itself on our list: ${sohoClubs
-      .map((c) => `${c.name} (${c.address})`)
+    answer: `As of ${UPDATED} there are ${sohoCount} nightclubs in Soho itself: ${sohoClubs
+      .map((c) => `${label(c)} (${c.address})`)
       .join(' and ')}. Several more are a short walk away: ${nearbyClubs
       .map((n) => `${n.club.shortName} (${n.where})`)
       .join('; ')}.`,
@@ -91,27 +96,29 @@ const faqs = [
   {
     question: 'Which nights are Soho clubs open?',
     answer: `${sohoClubs
-      .map((c) => `${c.shortName} opens ${c.openingNights}`)
+      .map((c) => `${label(c)} opens ${c.openingNights}`)
       .join('; ')}. Wednesday, Friday and Saturday are the nights when both are open. Neither runs a regular Monday, Tuesday or Sunday night.`,
   },
   {
     question: 'What music do clubs in Soho play?',
     answer: `Mostly hip-hop and RnB. ${sohoClubs
-      .map((c) => `${c.shortName}: ${musicLabel(c)}`)
+      .map((c) => `${label(c)}: ${musicLabel(c)}`)
       .join('. ')}. At both venues the performers are as much a part of the night as the music. For house and deep house close by, Selene, just north of Oxford Circus, is the better fit.`,
   },
   {
     question: 'How late do clubs in Soho stay open?',
-    answer: `${sohoClubs
-      .map((c) => `${c.shortName} closes at ${c.closingTime}`)
-      .join(' and ')}. Nothing in Soho on our list runs to 6am; for an all-night session, Ministry of Sound in Elephant and Castle closes at 6am on Fridays and Saturdays.`,
+    answer: `${
+      sohoClosing.length === 1 && sohoClubs.length > 1
+        ? `Both ${names(sohoClubs)} close at ${sohoClosing[0]}`
+        : sohoClubs.map((c) => `${label(c)} closes at ${c.closingTime}`).join(' and ')
+    }. Nothing in Soho runs to 6am; for an all-night session, Ministry of Sound in Elephant and Castle closes at 6am on Fridays and Saturdays.`,
   },
   {
     question: 'Are any clubs in Soho open on a Sunday?',
     answer:
       sohoSunday.length > 0
         ? `Yes: ${names(sohoSunday)} opens on Sundays.`
-        : `Not regularly. Neither ${sohoNames} opens on a Sunday. ${
+        : `Not regularly. Neither ${names(sohoClubs, 'nor')} opens on a Sunday. ${
             nearbySunday.length > 0
               ? `${names(nearbySunday)}, a short walk north of Oxford Circus, is the nearest club that does.`
               : ''
@@ -120,7 +127,7 @@ const faqs = [
   {
     question: 'Do I need to book a table at a Soho club?',
     answer: `${sohoClubs
-      .map((c) => `${c.shortName}: ${c.guestlistNote} ${tablesFromLabel(c)}.`)
+      .map((c) => `${label(c)}: ${c.guestlistNote} ${tablesFromLabel(c)}.`)
       .join(' ')} Message us on WhatsApp and we will tell you what is realistic for your group and your night.`,
   },
   {
