@@ -6,9 +6,9 @@ import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'London Clubs by Area — Find the Best Nightlife Near You',
+  title: 'London Clubs by Area: Find the Best Nightlife Near You',
   description:
-    'Explore London nightclubs by area. Mayfair, Soho, central London, and beyond — find the best clubs near you with table bookings and guestlist access.',
+    'Explore London nightclubs by area. Mayfair, Soho, central London, and beyond: find the best clubs near you with table bookings and guestlist access.',
   keywords: [
     'London clubs by area',
     'London nightlife areas',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     'London nightlife map',
   ],
   openGraph: {
-    title: 'London Clubs by Area — Find the Best Nightlife Near You',
+    title: 'London Clubs by Area: Find the Best Nightlife Near You',
     description:
       'Explore London nightclubs by area. Mayfair, Soho, central London, and beyond.',
     url: 'https://londonclubstonight.com/areas',
@@ -67,7 +67,7 @@ export default function AreasPage() {
     <>
       <SchemaMarkup
         schema={getArticleSchema(
-          'London Clubs by Area — Find the Best Nightlife Near You',
+          'London Clubs by Area: Find the Best Nightlife Near You',
           'Explore London nightclubs by area including Mayfair, Soho, and central London.',
           '/areas',
           '2025-01-01'
@@ -141,8 +141,8 @@ export default function AreasPage() {
                 Not sure which <span className="serif-accent text-gradient">area?</span>
               </h2>
               <p className="text-frost-300 max-w-2xl mx-auto text-center mb-8">
-                Tell us what kind of night you&apos;re after — the vibe, the music, your
-                group size — and we&apos;ll recommend the right area and club.
+                Tell us what kind of night you&apos;re after (the vibe, the music, your
+                group size) and we&apos;ll recommend the right area and club.
               </p>
               <div className="flex justify-center">
                 <WhatsAppCTA />

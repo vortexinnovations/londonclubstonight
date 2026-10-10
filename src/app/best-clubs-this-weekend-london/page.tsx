@@ -9,7 +9,7 @@ import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getI
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: `Best Clubs This Weekend London — Friday & Saturday Picks [${new Date().toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}]`,
+  title: `Best Clubs This Weekend London: Friday & Saturday Picks [${new Date().toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}]`,
   description:
     'Planning this weekend? The best London clubs open Friday and Saturday with table availability, guestlist options, and honest insider picks.',
   keywords: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     'going out this weekend London',
   ],
   openGraph: {
-    title: 'Best Clubs This Weekend in London — Friday & Saturday Guide',
+    title: 'Best Clubs This Weekend in London: Friday & Saturday Guide',
     description:
       'Friday and Saturday night picks for London clubs. Table availability, guestlist options, and honest insider recommendations.',
     url: 'https://londonclubstonight.com/best-clubs-this-weekend-london',
@@ -51,7 +51,7 @@ const faqs = [
   {
     question: 'Should I go out on Friday or Saturday in London?',
     answer:
-      'Both nights are excellent but have different characters. Friday tends to attract a slightly younger, more energetic crowd fresh from the working week. The door policies are marginally softer and table availability is better. Saturday is the premium night — bigger DJs, fuller rooms, stricter doors, and higher minimum spends. If budget matters, Friday gives you more options. If you want the peak London club experience regardless of cost, Saturday is the night.',
+      'Both nights are excellent but have different characters. Friday tends to attract a slightly younger, more energetic crowd fresh from the working week. The door policies are marginally softer and table availability is better. Saturday is the premium night: bigger DJs, fuller rooms, stricter doors, and higher minimum spends. If budget matters, Friday gives you more options. If you want the peak London club experience regardless of cost, Saturday is the night.',
   },
   {
     question: 'How far in advance should I book for this weekend?',
@@ -61,12 +61,12 @@ const faqs = [
   {
     question: 'What should I wear to London clubs this weekend?',
     answer:
-      'Mayfair clubs enforce the strictest dress codes: smart shoes, tailored trousers, and a sharp top for men. No trainers at Tape, Maddox or Dear Darling. Soho venues like Cirque Le Soir accept more creative outfits but still expect smart-glamorous. For women, heels and a going-out outfit are standard across all premium venues. If you are unsure, dress up rather than down — nobody gets turned away for being too well-dressed.',
+      'Mayfair clubs enforce the strictest dress codes: smart shoes, tailored trousers, and a sharp top for men. No trainers at Tape, Maddox or Dear Darling. Soho venues like Cirque Le Soir accept more creative outfits but still expect smart-glamorous. For women, heels and a going-out outfit are standard across all premium venues. If you are unsure, dress up rather than down: nobody gets turned away for being too well-dressed.',
   },
   {
     question: 'Can I get a table for this weekend last minute?',
     answer:
-      'Friday tables are generally available until the day before, and sometimes same-day. Saturday tables are harder — popular venues book out early. However, we always have options. Some clubs hold tables for our promoter allocation, and we can often secure a booking even when the venue appears full on their own system. Message us on WhatsApp and we will tell you exactly what is available right now.',
+      'Friday tables are generally available until the day before, and sometimes same-day. Saturday tables are harder: popular venues book out early. However, we always have options. Some clubs hold tables for our promoter allocation, and we can often secure a booking even when the venue appears full on their own system. Message us on WhatsApp and we will tell you exactly what is available right now.',
   },
 ];
 
@@ -77,7 +77,7 @@ export default function BestClubsThisWeekendPage() {
 
   const allWeekendClubs = [...fridayClubs, ...saturdayClubs.filter((sc) => !fridayClubs.some((fc) => fc.slug === sc.slug))];
   const articleSchema = getArticleSchema(
-    'Best Clubs This Weekend in London — Friday & Saturday Guide',
+    'Best Clubs This Weekend in London: Friday & Saturday Guide',
     'The best London clubs this weekend with Friday and Saturday night picks, table availability, and insider tips.',
     '/best-clubs-this-weekend-london',
     '2025-01-15'
@@ -173,7 +173,7 @@ export default function BestClubsThisWeekendPage() {
             </h2>
             <p className="text-frost-300 text-base">
               {saturdayClubs.length} clubs are open on Saturday nights. The biggest
-              night of the week — the best DJs, the fullest rooms, and the most
+              night of the week: the best DJs, the fullest rooms, and the most
               electric atmosphere London nightlife has to offer.
             </p>
           </div>
@@ -195,12 +195,12 @@ export default function BestClubsThisWeekendPage() {
         <div className="max-w-3xl mx-auto px-6 sm:px-8">
           <span className="eyebrow">Decision guide</span>
           <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mt-4 mb-8">
-            Friday vs Saturday — Which Night Suits <span className="serif-accent text-gradient">You?</span>
+            Friday vs Saturday: Which Night Suits <span className="serif-accent text-gradient">You?</span>
           </h2>
           <div className="space-y-5 text-frost-300 text-sm leading-relaxed">
             <p>
               If you can only go out one night this weekend, the choice between
-              Friday and Saturday is not about quality — both deliver
+              Friday and Saturday is not about quality: both deliver
               world-class clubbing. It is about what kind of night you want.
               The two nights attract different crowds, carry different energy,
               and reward different approaches. This guide exists to help you
@@ -211,7 +211,7 @@ export default function BestClubsThisWeekendPage() {
             </h3>
             <p>
               Friday is the exhale. People arrive carrying the momentum of
-              the working week — after-work drinks that spiralled into dinner
+              the working week: after-work drinks that spiralled into dinner
               plans, dinner plans that spiralled into a club booking. The
               crowd is spontaneous, slightly looser, and riding the high of
               having two free days ahead. Saturday is the set piece. Groups
@@ -253,7 +253,7 @@ export default function BestClubsThisWeekendPage() {
             </h3>
             <p>
               Friday is the more wallet-friendly night across the board. Table
-              minimums at several venues sit lower on Fridays — where a
+              minimums at several venues sit lower on Fridays, where a
               Saturday table might start at £1,500, the same position on
               Friday could be £1,000. Guestlist entry is free or low-cost at
               more venues on Fridays. Drink prices are identical, but
@@ -372,7 +372,7 @@ export default function BestClubsThisWeekendPage() {
               <ul className="space-y-2">
                 <li>
                   <Link href="/best-clubs-in-london" className="text-frost-300 hover:text-white transition-colors text-sm">
-                    Best clubs in London — ranked &rarr;
+                    Best clubs in London: ranked &rarr;
                   </Link>
                 </li>
                 <li>
@@ -382,12 +382,12 @@ export default function BestClubsThisWeekendPage() {
                 </li>
                 <li>
                   <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-frost-300 hover:text-white transition-colors text-sm">
-                    London Bottle Service — table pricing &rarr;
+                    London Bottle Service: table pricing &rarr;
                   </a>
                 </li>
                 <li>
                   <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-frost-300 hover:text-white transition-colors text-sm">
-                    Mayfair Tonight — Mayfair weekend guide &rarr;
+                    Mayfair Tonight: Mayfair weekend guide &rarr;
                   </a>
                 </li>
               </ul>

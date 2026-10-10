@@ -29,7 +29,7 @@ export default function NotFound() {
           404
         </h1>
         <p className="animate-fade-up anim-delay-2 text-xl text-frost-300 mb-10 max-w-xl mx-auto">
-          This page doesn&apos;t exist — but London&apos;s best clubs do.
+          This page doesn&apos;t exist, but London&apos;s best clubs do.
         </p>
         <div className="animate-fade-up anim-delay-3 flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="/" className="btn-gradient py-3 px-6 font-semibold">

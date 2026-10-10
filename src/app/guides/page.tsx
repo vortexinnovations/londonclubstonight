@@ -5,7 +5,7 @@ import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 
 export const metadata: Metadata = {
-  title: 'London Nightclub Guides — Everything You Need to Know',
+  title: 'London Nightclub Guides: Everything You Need to Know',
   description: 'Insider guides to London nightlife. Late-night venues, music genres, dress codes, guestlists, table bookings, and honest advice from promoters who know the scene.',
   keywords: ['London nightclub guides', 'London club tips', 'London nightlife guide', 'London club guestlist'],
   alternates: {
@@ -25,13 +25,13 @@ const guides = [
     href: '/guides/clubs-open-late',
   },
   {
-    title: 'Guestlists & Table Bookings — The Complete Guide',
+    title: 'Guestlists & Table Bookings: The Complete Guide',
     description: 'Everything you need to know about guestlists, table bookings, dress codes, group composition, and planning your night at London clubs.',
     href: '/guides/how-to-get-into-london-clubs',
   },
   {
     title: 'London Clubs by Music Genre',
-    description: 'Find the right club for your music taste. Hip-hop, house, RnB, techno, open format — every venue categorised by what they actually play.',
+    description: 'Find the right club for your music taste. Hip-hop, house, RnB, techno, open format: every venue categorised by what they actually play.',
     href: '/guides/london-clubs-by-music-genre',
   },
 ];
@@ -41,7 +41,7 @@ export default function GuidesPage() {
     <>
       <SchemaMarkup
         schema={getArticleSchema(
-          'London Nightclub Guides — Everything You Need to Know',
+          'London Nightclub Guides: Everything You Need to Know',
           'Insider guides to London nightlife. Late-night venues, music genres, dress codes, guestlists, table bookings, and honest advice from promoters who know the scene.',
           '/guides',
           '2025-01-01'

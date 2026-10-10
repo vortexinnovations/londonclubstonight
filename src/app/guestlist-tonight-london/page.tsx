@@ -13,7 +13,7 @@ import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getI
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: 'Get on a Guestlist Tonight London — Free Same-Night Entry',
+  title: 'Get on a Guestlist Tonight London: Free Same-Night Entry',
   description:
     'Free guestlist at London\'s best clubs tonight. Which venues still have spots, what ratio you need, and how to get your name on the door in minutes.',
   keywords: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     'club guestlist tonight',
   ],
   openGraph: {
-    title: 'Get on a Guestlist Tonight in London — Same-Night Guestlist Access',
+    title: 'Get on a Guestlist Tonight in London: Same-Night Guestlist Access',
     description:
       'Which London clubs accept same-night guestlist requests? Live availability, ratio requirements, and how to get in tonight.',
     url: 'https://londonclubstonight.com/guestlist-tonight-london',
@@ -55,17 +55,17 @@ const faqs = [
   {
     question: 'Is guestlist free?',
     answer:
-      'Guestlist at most London clubs means free entry for women and either free or reduced entry for men in mixed groups. All-male groups on guestlist often still pay full entry, if they are admitted at all. Guestlist does not cover drinks, table reservations, or any other costs — it is purely an entry mechanism. Some clubs offer guestlist as complimentary entry for everyone in the group, while others charge men a cover fee of £10 to £20. The specific terms vary by venue and by night.',
+      'Guestlist at most London clubs means free entry for women and either free or reduced entry for men in mixed groups. All-male groups on guestlist often still pay full entry, if they are admitted at all. Guestlist does not cover drinks, table reservations, or any other costs. It is purely an entry mechanism. Some clubs offer guestlist as complimentary entry for everyone in the group, while others charge men a cover fee of £10 to £20. The specific terms vary by venue and by night.',
   },
   {
     question: 'What group ratio do I need?',
     answer:
-      'The ideal guestlist ratio for London clubs is more women than men — a group of three women and two men is the golden ratio for most venues. Equal numbers (three and three) is generally fine at venues like Dear Darling, BEAT London, and The London Reign. All-female groups have the highest acceptance rate and the fastest entry at every venue. All-male groups face significant difficulty at Mayfair clubs regardless of guestlist status — for groups of men, a table booking is strongly recommended. These ratio rules are not written down anywhere official but they are consistently enforced.',
+      'The ideal guestlist ratio for London clubs is more women than men: a group of three women and two men is the golden ratio for most venues. Equal numbers (three and three) is generally fine at venues like Dear Darling, BEAT London, and The London Reign. All-female groups have the highest acceptance rate and the fastest entry at every venue. All-male groups face significant difficulty at Mayfair clubs regardless of guestlist status: for groups of men, a table booking is strongly recommended. These ratio rules are not written down anywhere official but they are consistently enforced.',
   },
   {
     question: 'How do I get on a guestlist last minute?',
     answer:
-      'The fastest route to a same-night guestlist spot is through a promoter with direct venue relationships — that is exactly what we do. Message us on WhatsApp with your group details (number of women, number of men, preferred venue, and planned arrival time) and we will submit your request immediately. We can typically confirm within 30 minutes. Going directly through a club website or social media on the same night rarely works as those channels are not monitored in real time.',
+      'The fastest route to a same-night guestlist spot is through a promoter with direct venue relationships. That is exactly what we do. Message us on WhatsApp with your group details (number of women, number of men, preferred venue, and planned arrival time) and we will submit your request immediately. We can typically confirm within 30 minutes. Going directly through a club website or social media on the same night rarely works as those channels are not monitored in real time.',
   },
 ];
 
@@ -82,7 +82,7 @@ export default function GuestlistTonightLondonPage() {
   const now = new Date().toISOString();
 
   const articleSchema = getArticleSchema(
-    'Get on a Guestlist Tonight in London — Same-Night Guestlist Access',
+    'Get on a Guestlist Tonight in London: Same-Night Guestlist Access',
     'How to get on a London club guestlist tonight. Live availability and insider tips for same-night entry.',
     '/guestlist-tonight-london',
     '2025-01-15'
@@ -116,7 +116,7 @@ export default function GuestlistTonightLondonPage() {
         <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-12 pt-20 text-center">
           <span className="chip chip-accent animate-fade-up mb-6">
             <span className="live-dot scale-75" aria-hidden />
-            Same-Night Access — {dayName}
+            Same-Night Access: {dayName}
           </span>
           <h1 className="animate-fade-up anim-delay-1 font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6">
             Guestlist Tonight in <span className="serif-accent text-gradient">London</span>
@@ -238,8 +238,8 @@ export default function GuestlistTonightLondonPage() {
               On a quiet Thursday at a mid-tier venue, a guestlist spot is
               practically a guarantee of entry. On a packed Saturday at a
               top Mayfair club, it is one factor among many. The clubs that
-              truly rely on guestlist as a primary entry route — Cirque Le
-              Soir, Dear Darling, and Maddox — honour it consistently
+              truly rely on guestlist as a primary entry route (Cirque Le
+              Soir, Dear Darling, and Maddox) honour it consistently
               because they understand that their promoters are bringing
               the right crowd. Clubs that treat guestlist as an afterthought
               tend to be the ones where you arrive with a confirmed spot
@@ -255,7 +255,7 @@ export default function GuestlistTonightLondonPage() {
               group is three to five women with one to two men. A group of
               four women and two men will get into every club in London on
               guestlist, every night, with minimal hassle. An equal-ratio
-              group — say, three women and three men — works at most venues
+              group, say, three women and three men, works at most venues
               but may face a wait on Saturdays at the most exclusive spots.
             </p>
             <p>
@@ -264,13 +264,13 @@ export default function GuestlistTonightLondonPage() {
               venues on guestlist, regardless of how well-dressed or
               well-connected they are. And an all-male group on guestlist
               faces near-universal rejection at premium clubs. We are not
-              saying this to discourage anyone — we are saying it because
+              saying this to discourage anyone. We are saying it because
               knowing the rules in advance lets you plan accordingly. If
               your group is male-heavy, a table booking eliminates the
               ratio problem entirely.
             </p>
             <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
-              Guestlist vs Tables — When Each Makes Sense
+              Guestlist vs Tables: When Each Makes Sense
             </h3>
             <p>
               Guestlist is the right choice when you have a well-composed
@@ -284,7 +284,7 @@ export default function GuestlistTonightLondonPage() {
             </p>
             <p>
               A table booking is the right choice when guaranteed entry
-              matters — birthdays, special occasions, male-heavy groups,
+              matters: birthdays, special occasions, male-heavy groups,
               or any night where being turned away would ruin your plans.
               The minimum spend starts from &#163;1,000 at most venues,
               which covers your bottles and drinks for the evening. For a
@@ -305,7 +305,7 @@ export default function GuestlistTonightLondonPage() {
             </h3>
             <p>
               The fastest and most reliable way to get on a guestlist tonight
-              is through a promoter — and that is our entire business. Message
+              is through a promoter, and that is our entire business. Message
               us on WhatsApp with four pieces of information: how many women
               in your group, how many men, which venue you prefer (or ask us
               to recommend one), and what time you plan to arrive. We submit
@@ -393,7 +393,7 @@ export default function GuestlistTonightLondonPage() {
               <ul className="space-y-2">
                 <li>
                   <Link href="/best-clubs-in-london" className="text-frost-300 hover:text-white transition-colors text-sm">
-                    Best clubs in London — ranked &rarr;
+                    Best clubs in London: ranked &rarr;
                   </Link>
                 </li>
                 <li>
@@ -403,7 +403,7 @@ export default function GuestlistTonightLondonPage() {
                 </li>
                 <li>
                   <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-frost-300 hover:text-white transition-colors text-sm">
-                    London Bottle Service — table pricing &rarr;
+                    London Bottle Service: table pricing &rarr;
                   </a>
                 </li>
                 <li>

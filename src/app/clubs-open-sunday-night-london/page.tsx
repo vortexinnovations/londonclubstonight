@@ -9,9 +9,9 @@ import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema } fro
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: 'Clubs Open Sunday Night in London — Your Sunday Night Options',
+  title: 'Clubs Open Sunday Night in London: Your Sunday Night Options',
   description:
-    'Which London clubs are open on Sunday nights? An honest guide — most clubs are closed, but here are your real options, alternatives, and how to plan a better weekend instead.',
+    'Which London clubs are open on Sunday nights? An honest guide: most clubs are closed, but here are your real options, alternatives, and how to plan a better weekend instead.',
   keywords: [
     'clubs open Sunday London',
     'Sunday night clubs London',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     'London Sunday clubbing',
   ],
   openGraph: {
-    title: 'Clubs Open Sunday Night in London — Your Sunday Night Options',
+    title: 'Clubs Open Sunday Night in London: Your Sunday Night Options',
     description:
       'Which London clubs are open on Sunday nights? An honest guide with real options and alternatives.',
     url: 'https://londonclubstonight.com/clubs-open-sunday-night-london',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Clubs Open Sunday Night in London — Your Sunday Night Options',
+    title: 'Clubs Open Sunday Night in London: Your Sunday Night Options',
     description:
       'Which London clubs are open on Sunday nights? An honest guide with real options and alternatives.',
   },
@@ -51,7 +51,7 @@ const faqs = [
   {
     question: 'Why are London clubs closed on Sundays?',
     answer:
-      'It is a combination of licensing restrictions, economics, and tradition. Most clubs operate on Thursday to Saturday schedules because those are the nights with enough demand to justify opening. Staff costs, security, licensing fees, and operational expenses mean clubs need a certain level of attendance to break even — and Sunday consistently falls short.',
+      'It is a combination of licensing restrictions, economics, and tradition. Most clubs operate on Thursday to Saturday schedules because those are the nights with enough demand to justify opening. Staff costs, security, licensing fees, and operational expenses mean clubs need a certain level of attendance to break even, and Sunday consistently falls short.',
   },
   {
     question: 'What can I do on a Sunday night in London instead?',
@@ -61,7 +61,7 @@ const faqs = [
   {
     question: 'Does Ministry of Sound open on Sundays?',
     answer:
-      'Ministry of Sound does not have a regular Sunday night programme, but it does host occasional Sunday events — particularly during bank holiday weekends, over New Year, and for special one-off productions. Check their website or social media for upcoming events. When they do open on a Sunday, the night typically runs into the early hours of Monday morning.',
+      'Ministry of Sound does not have a regular Sunday night programme, but it does host occasional Sunday events, particularly during bank holiday weekends, over New Year, and for special one-off productions. Check their website or social media for upcoming events. When they do open on a Sunday, the night typically runs into the early hours of Monday morning.',
   },
 ];
 
@@ -75,7 +75,7 @@ export default function ClubsOpenSundayNightLondonPage() {
       <SchemaMarkup
         schema={[
           getArticleSchema(
-            'Clubs Open Sunday Night in London — Your Sunday Night Options',
+            'Clubs Open Sunday Night in London: Your Sunday Night Options',
             'Which London clubs are open on Sunday nights? An honest guide with real options and alternatives.',
             '/clubs-open-sunday-night-london',
             '2025-06-01'
@@ -108,7 +108,7 @@ export default function ClubsOpenSundayNightLondonPage() {
             Clubs Open Sunday Night in <span className="serif-accent text-gradient">London</span>
           </h1>
           <p className="animate-fade-up anim-delay-2 text-frost-100/85 text-lg md:text-xl max-w-2xl mx-auto mb-10">
-            We will be honest with you: Sunday night clubbing in London is extremely limited. Here is the full picture — what is available, what is not, and how to make the most of your weekend.
+            We will be honest with you: Sunday night clubbing in London is extremely limited. Here is the full picture: what is available, what is not, and how to make the most of your weekend.
           </p>
           <div className="animate-fade-up anim-delay-3">
             <WhatsAppCTA variant="tonight" heading="Planning Your Weekend?" />
@@ -127,10 +127,10 @@ export default function ClubsOpenSundayNightLondonPage() {
           </div>
           <div className="space-y-6 text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
             <p>
-              Most London clubs do not open on Sundays. That is not a diplomatic way of saying options are limited — it is the straightforward reality. Most of the Mayfair clubs are closed; Tape London and Dear Darling are the exceptions, along with Selene, just north of Oxford Circus. The Soho venues are closed. The entertainment-led clubs are closed. If you are looking for a traditional London club night on a Sunday, you will struggle to find one.
+              Most London clubs do not open on Sundays. That is not a diplomatic way of saying options are limited. It is the straightforward reality. Most of the Mayfair clubs are closed; Tape London and Dear Darling are the exceptions, along with Selene, just north of Oxford Circus. The Soho venues are closed. The entertainment-led clubs are closed. If you are looking for a traditional London club night on a Sunday, you will struggle to find one.
             </p>
             <p>
-              This is not a London-specific issue. Most major cities have a similar pattern — the economics of running a nightclub simply do not work when the majority of your potential crowd has work the next morning. Staff costs, security, licensing, and operational expenses are the same whether you have 50 guests or 500, and Sunday consistently fails to deliver the numbers that make opening worthwhile.
+              This is not a London-specific issue. Most major cities have a similar pattern: the economics of running a nightclub simply do not work when the majority of your potential crowd has work the next morning. Staff costs, security, licensing, and operational expenses are the same whether you have 50 guests or 500, and Sunday consistently fails to deliver the numbers that make opening worthwhile.
             </p>
             <p>
               There are exceptions, and they are worth knowing about. But we would rather give you an honest assessment than a list of venues that might theoretically be open if the right conditions align. Below is what genuinely exists for Sunday nights, followed by better alternatives that deliver a great experience.
@@ -148,7 +148,7 @@ export default function ClubsOpenSundayNightLondonPage() {
               Clubs Open on Sundays
             </h2>
             <p className="text-frost-300 mb-12 max-w-2xl">
-              These venues have Sunday listed in their opening schedule. Availability may vary — message us to confirm.
+              These venues have Sunday listed in their opening schedule. Availability may vary. Message us to confirm.
             </p>
             <div className="grid gap-6 md:grid-cols-2">
               {sundayClubs.map((club) => (
@@ -183,7 +183,7 @@ export default function ClubsOpenSundayNightLondonPage() {
           </div>
           <div className="space-y-6 text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
             <p>
-              Ministry of Sound is the one venue that occasionally breaks the Sunday silence. The legendary Elephant and Castle superclub does not run a regular Sunday programme, but it hosts special events on Sundays several times throughout the year — and when it does, it is worth knowing about.
+              Ministry of Sound is the one venue that occasionally breaks the Sunday silence. The legendary Elephant and Castle superclub does not run a regular Sunday programme, but it hosts special events on Sundays several times throughout the year, and when it does, it is worth knowing about.
             </p>
             <p>
               Bank holiday weekends are the most reliable times to find Ministry open on a Sunday. When Monday is a day off, the club extends its programming, and Sunday nights at Ministry can carry the same energy and calibre of DJ as a regular Saturday. These events typically run until 6am or later, taking full advantage of the extended weekend.
@@ -192,10 +192,10 @@ export default function ClubsOpenSundayNightLondonPage() {
               Special one-off events also land on Sundays periodically. Record label showcases, artist album launches, and seasonal events like New Year and Halloween sometimes fall on a Sunday, and Ministry programmes accordingly. These tend to sell out quickly because the rarity makes them attractive.
             </p>
             <p>
-              If you are specifically looking for a Sunday night out, checking Ministry of Sound&apos;s event calendar is always the first step. When they do open on a Sunday, you get the full Ministry experience — the world-class sound system, multiple rooms of music, and a crowd that treats the extended weekend as an opportunity rather than an obstacle.
+              If you are specifically looking for a Sunday night out, checking Ministry of Sound&apos;s event calendar is always the first step. When they do open on a Sunday, you get the full Ministry experience: the world-class sound system, multiple rooms of music, and a crowd that treats the extended weekend as an opportunity rather than an obstacle.
             </p>
             <p>
-              The key point is that these are event-based rather than regular nights. You cannot assume Ministry will be open on any given Sunday — but when it is, it is typically one of the few serious clubbing options in the city, and the quality reflects that exclusivity.
+              The key point is that these are event-based rather than regular nights. You cannot assume Ministry will be open on any given Sunday, but when it is, it is typically one of the few serious clubbing options in the city, and the quality reflects that exclusivity.
             </p>
           </div>
         </div>
@@ -221,7 +221,7 @@ export default function ClubsOpenSundayNightLondonPage() {
               <strong className="text-white">Sunday rooftop sessions.</strong>{" "}During warmer months, rooftop bars across London host Sunday sessions with DJs, cocktails, and sunset views. These are particularly popular in summer and early autumn. The atmosphere is sociable and upbeat without being a full-blown club night. For bigger daytime events in the warmer months, our guides to{" "}<Link href="/blog/day-parties-in-london" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">day parties in London</Link>{" "}and{" "}<Link href="/blog/london-boat-parties" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Thames boat parties</Link>{" "}cover the summer calendar.
             </p>
             <p>
-              <strong className="text-white">Restaurant-bar hybrids.</strong>{" "}Several London restaurants transition into late-night venues on Sundays, with DJ sets accompanying dinner and drinks. These offer food, atmosphere, and a later finish than a standard restaurant — typically midnight to 1am.
+              <strong className="text-white">Restaurant-bar hybrids.</strong>{" "}Several London restaurants transition into late-night venues on Sundays, with DJ sets accompanying dinner and drinks. These offer food, atmosphere, and a later finish than a standard restaurant, typically midnight to 1am.
             </p>
             <p>
               <strong className="text-white">Live music venues.</strong>{" "}Jazz bars, live music pubs, and intimate concert venues operate throughout the week including Sundays. If your interest is in the musical experience rather than the clubbing format, these can be excellent Sunday night options.
@@ -241,13 +241,13 @@ export default function ClubsOpenSundayNightLondonPage() {
           </div>
           <div className="space-y-6 text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
             <p>
-              If you are reading this page, there is a good chance you are either planning ahead or realising too late that Sunday night is not the night for London clubs. Either way, the best advice we can give is to redirect your energy to Friday or Saturday — the nights when London genuinely comes alive.
+              If you are reading this page, there is a good chance you are either planning ahead or realising too late that Sunday night is not the night for London clubs. Either way, the best advice we can give is to redirect your energy to Friday or Saturday: the nights when London genuinely comes alive.
             </p>
             <p>
-              <strong className="text-white">Friday nights</strong>{" "}have a particular character in London. The crowd is celebratory — people have just finished their working week and the energy reflects that release. Many clubs run their best programming on Fridays, and table availability is often better than on Saturdays. If you are choosing between Friday and Sunday, there is no contest.
+              <strong className="text-white">Friday nights</strong>{" "}have a particular character in London. The crowd is celebratory: people have just finished their working week and the energy reflects that release. Many clubs run their best programming on Fridays, and table availability is often better than on Saturdays. If you are choosing between Friday and Sunday, there is no contest.
             </p>
             <p>
-              <strong className="text-white">Saturday nights</strong>{" "}are the peak of London nightlife. Every club is open, every venue is at full capacity, and the atmosphere across the city is electric. Booking is more important on Saturdays — tables and guestlist spots fill up faster — but the experience justifies the planning.
+              <strong className="text-white">Saturday nights</strong>{" "}are the peak of London nightlife. Every club is open, every venue is at full capacity, and the atmosphere across the city is electric. Booking is more important on Saturdays: tables and guestlist spots fill up faster, but the experience justifies the planning.
             </p>
             <p>
               If you are visiting London and your schedule only allows for a Sunday night out, we would honestly recommend adjusting your plans to include a Friday or Saturday instead. The difference in available options and overall quality of experience is substantial. To get ahead on weekend table planning and bottle service, visit{' '}
@@ -271,7 +271,7 @@ export default function ClubsOpenSundayNightLondonPage() {
             <div className="glass-card p-8 text-center">
               <h3 className="font-display text-xl font-bold tracking-tight text-white mb-3">Saturday Nights</h3>
               <p className="text-frost-300 text-sm mb-4">
-                {saturdayClubs.length} clubs open — the biggest night in London.
+                {saturdayClubs.length} clubs open: the biggest night in London.
               </p>
               <Link
                 href="/saturday-nightclubs-london"

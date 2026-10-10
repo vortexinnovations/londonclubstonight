@@ -6,7 +6,7 @@ import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'Best Clubs in London 2026 — The Definitive Ranked Guide',
+  title: 'Best Clubs in London 2026: The Definitive Ranked Guide',
   description:
     'The 12 best nightclubs in London for 2026, ranked by promoters who actually work the doors. From Tape London to Ministry of Sound: honest reviews, table prices, and how to get in.',
   keywords: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     'London nightclub ranking',
   ],
   openGraph: {
-    title: 'Best Clubs in London 2026 — The Definitive Ranked Guide',
+    title: 'Best Clubs in London 2026: The Definitive Ranked Guide',
     description:
       'The 12 best nightclubs in London for 2026, ranked by promoters who work the doors every weekend. Honest, opinionated reviews you won\'t find anywhere else.',
     url: 'https://londonclubstonight.com/best-clubs-in-london',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Best Clubs in London 2026 — The Definitive Ranked Guide',
+    title: 'Best Clubs in London 2026: The Definitive Ranked Guide',
     description:
       'The 12 best nightclubs in London for 2026, ranked by promoters who actually work the doors.',
   },
@@ -56,21 +56,21 @@ const rankedSlugs = [
 
 const clubOpinions: Record<string, string> = {
   'tape-london':
-    'Tape sits at number one because no other club in London consistently delivers this calibre of night. The crowd is genuinely A-list — not influencers pretending, actual celebrities and music industry heavyweights. The sound system was built for music production before it was a club, and you can hear the difference. The room is small enough that the energy never dissipates and exclusive enough that everyone in the room has earned their spot. We send our most important clients here because it never disappoints.',
+    'Tape sits at number one because no other club in London consistently delivers this calibre of night. The crowd is genuinely A-list, not influencers pretending, actual celebrities and music industry heavyweights. The sound system was built for music production before it was a club, and you can hear the difference. The room is small enough that the energy never dissipates and exclusive enough that everyone in the room has earned their spot. We send our most important clients here because it never disappoints.',
   'cirque-le-soir':
-    'There is nothing else like Cirque Le Soir anywhere in the world, and we mean that literally. Fire-breathers, contortionists, acrobats — all happening around you while you drink champagne at your table. It sounds gimmicky on paper but the execution is flawless. The entertainment is genuinely world-class, the music is hard-hitting hip-hop and RnB, and the atmosphere is controlled chaos in the best possible way. Every client we have ever sent here has messaged us the next morning saying it was the best night of their life.',
+    'There is nothing else like Cirque Le Soir anywhere in the world, and we mean that literally. Fire-breathers, contortionists, acrobats: all happening around you while you drink champagne at your table. It sounds gimmicky on paper but the execution is flawless. The entertainment is genuinely world-class, the music is hard-hitting hip-hop and RnB, and the atmosphere is controlled chaos in the best possible way. Every client we have ever sent here has messaged us the next morning saying it was the best night of their life.',
   'ministry-of-sound':
-    'Ministry of Sound is on this list because it has to be. This is not a Mayfair bottle-service club — it is one of the most important nightclubs ever built, and the sound system remains the best in London by a considerable margin. If you care about electronic music, house, or techno, Ministry is a pilgrimage. The Box room on a Saturday night with the right DJ is a religious experience. It earns the number three spot because its influence on global club culture is undeniable and the quality of the nights has not dropped.',
+    'Ministry of Sound is on this list because it has to be. This is not a Mayfair bottle-service club. It is one of the most important nightclubs ever built, and the sound system remains the best in London by a considerable margin. If you care about electronic music, house, or techno, Ministry is a pilgrimage. The Box room on a Saturday night with the right DJ is a religious experience. It earns the number three spot because its influence on global club culture is undeniable and the quality of the nights has not dropped.',
   'the-london-reign':
     'The London Reign pulls off something that sounds impossible: a fine dining restaurant, a West End-quality cabaret show, and a legitimate nightclub, all in one venue over multiple floors. Most places that try the dinner-and-show format feel like a tourist trap. Reign does not. The production values are enormous, the performers are elite, and when the club floor opens up after midnight the party is genuine. It is the best special-occasion venue in London without question.',
   'scotch-of-st-james':
-    'Scotch is the most historically significant club on this list. The Rolling Stones, Jimi Hendrix, and The Beatles all walked through these doors. That heritage is not just marketing — you can feel it in the room. The intimate basement setting, the eclectic music programming that spans soul, funk, and hip-hop, and the crowd that skews slightly older and more discerning all contribute to an atmosphere no other London club can replicate. If you want a night with genuine soul, Scotch delivers every time.',
+    'Scotch is the most historically significant club on this list. The Rolling Stones, Jimi Hendrix, and The Beatles all walked through these doors. That heritage is not just marketing. You can feel it in the room. The intimate basement setting, the eclectic music programming that spans soul, funk, and hip-hop, and the crowd that skews slightly older and more discerning all contribute to an atmosphere no other London club can replicate. If you want a night with genuine soul, Scotch delivers every time.',
   'maddox':
-    'Maddox carved out a unique position in Mayfair by committing to house music when everyone else was playing hip-hop. The restaurant-to-club format is executed better here than almost anywhere — you have dinner downstairs and the transition to the club feels seamless rather than forced. The house music programming attracts a crowd that actually wants to dance, which gives the room a different energy from the table-service-focused competition. If house is your genre and Mayfair is your postcode, Maddox is the clear choice.',
+    'Maddox carved out a unique position in Mayfair by committing to house music when everyone else was playing hip-hop. The restaurant-to-club format is executed better here than almost anywhere. You have dinner downstairs and the transition to the club feels seamless rather than forced. The house music programming attracts a crowd that actually wants to dance, which gives the room a different energy from the table-service-focused competition. If house is your genre and Mayfair is your postcode, Maddox is the clear choice.',
   'dear-darling':
-    'Dear Darling occupies the most beautiful room in Mayfair nightlife. The interiors are opulent without being gaudy — think art-deco glamour with a modern edge. It functions best as a cocktail-bar-to-club transition, where you arrive early, drink well, and ease into the late-night atmosphere as the music builds. The crowd is well-dressed and the vibe is more sophisticated than rowdy. It is not the place for an all-out party, but for a glamorous evening that ends with dancing, it is hard to beat.',
+    'Dear Darling occupies the most beautiful room in Mayfair nightlife. The interiors are opulent without being gaudy: think art-deco glamour with a modern edge. It functions best as a cocktail-bar-to-club transition, where you arrive early, drink well, and ease into the late-night atmosphere as the music builds. The crowd is well-dressed and the vibe is more sophisticated than rowdy. It is not the place for an all-out party, but for a glamorous evening that ends with dancing, it is hard to beat.',
   'beat-london':
-    'BEAT earns its place on this list through pure musical credibility. The sound system is built for people who actually care about audio quality, and the programming spans hip-hop, house, and open format depending on the night. Located in Fitzrovia rather than Mayfair, it attracts a crowd that prioritises the music over the postcode. When the right DJ is behind the decks and the room is full, BEAT delivers one of the best pure clubbing experiences in central London. It sits at ten not because it is bad — every club on this list is excellent — but because the VIP experience is less polished than the venues above it.',
+    'BEAT earns its place on this list through pure musical credibility. The sound system is built for people who actually care about audio quality, and the programming spans hip-hop, house, and open format depending on the night. Located in Fitzrovia rather than Mayfair, it attracts a crowd that prioritises the music over the postcode. When the right DJ is behind the decks and the room is full, BEAT delivers one of the best pure clubbing experiences in central London. It sits at ten not because it is bad (every club on this list is excellent) but because the VIP experience is less polished than the venues above it.',
   'tabu-london':
     'TABU is now Rumour, and the room at 1 Dover Street is back on this list under its new name. Rumour opens Wednesday to Saturday from 11pm on Dover Street, a short walk from Green Park station. It sits at eleven because it is new under this name: Rumour sets its own music, door and table terms, and none of the old TABU terms carry over. Message us for current table prices.',
   'cuckoo-club':
@@ -84,7 +84,7 @@ export default function BestClubsInLondonPage() {
     .filter((c): c is NonNullable<typeof c> => c !== undefined);
 
   const articleSchema = getArticleSchema(
-    'Best Clubs in London 2026 — The Definitive Ranked Guide',
+    'Best Clubs in London 2026: The Definitive Ranked Guide',
     'The 12 best nightclubs in London for 2026, ranked by promoters who actually work the doors.',
     '/best-clubs-in-london',
     '2025-01-15'
@@ -117,7 +117,7 @@ export default function BestClubsInLondonPage() {
             This is not another recycled list from a lifestyle magazine that sends
             a freelancer to one club once a year. We are promoters. We work these
             doors every weekend. We know which clubs are actually worth your time
-            and money in 2026 — and which ones are coasting on reputation. Every
+            and money in 2026, and which ones are coasting on reputation. Every
             club on this list has been ranked based on hundreds of nights, thousands
             of client bookings, and honest conversations with the people who run
             them.
@@ -217,8 +217,8 @@ export default function BestClubsInLondonPage() {
             Ready to <span className="serif-accent text-gradient">Book?</span>
           </h2>
           <p className="text-frost-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Skip the research. Tell us what kind of night you want — the music,
-            the vibe, the budget — and we will put you in the right club with a
+            Skip the research. Tell us what kind of night you want (the music,
+            the vibe, the budget) and we will put you in the right club with a
             table or guestlist spot sorted. One WhatsApp message is all it takes.
           </p>
           <WhatsAppCTA variant="hero" />
@@ -250,15 +250,15 @@ export default function BestClubsInLondonPage() {
             },
             {
               title: 'Crowd Quality',
-              desc: 'Not about wealth or status — about attitude. The best clubs attract people who are there to have a great time, not to be seen or cause problems.',
+              desc: 'Not about wealth or status: about attitude. The best clubs attract people who are there to have a great time, not to be seen or cause problems.',
             },
             {
               title: 'Venue Design',
-              desc: 'Interiors, lighting, layout, sound — the physical space matters enormously. A well-designed room elevates every other aspect of the experience.',
+              desc: 'Interiors, lighting, layout, sound: the physical space matters enormously. A well-designed room elevates every other aspect of the experience.',
             },
             {
               title: 'Service & Experience',
-              desc: 'From the moment you arrive to the moment you leave — how well does the venue look after you? Table service, bar speed, and staff attitude all count.',
+              desc: 'From the moment you arrive to the moment you leave: how well does the venue look after you? Table service, bar speed, and staff attitude all count.',
             },
             {
               title: 'Consistency',
@@ -290,7 +290,7 @@ export default function BestClubsInLondonPage() {
           <p className="text-frost-300 leading-relaxed max-w-3xl">
             We handle bookings for every club ranked above. Whether you want a VIP
             table, a guestlist spot, or just advice on which club suits your group,
-            we are one message away. No fees, no mark-ups — we are paid by the
+            we are one message away. No fees, no mark-ups. We are paid by the
             clubs, so our service is free to you.
           </p>
         </div>
@@ -312,7 +312,7 @@ export default function BestClubsInLondonPage() {
           <div className="flex items-start gap-4">
             <span className="font-display text-neon-300 font-bold text-lg leading-snug">3.</span>
             <p className="text-frost-300">
-              <strong className="text-white">Turn up and enjoy</strong>{" "}— your
+              <strong className="text-white">Turn up and enjoy</strong>: your
               name is on the list, your table is ready, and we are available all
               night if you need anything.
             </p>

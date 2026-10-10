@@ -9,7 +9,7 @@ import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getI
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: 'Saturday Night Clubs London — Where to Go This Saturday',
+  title: 'Saturday Night Clubs London: Where to Go This Saturday',
   description:
     'Saturday is London\'s biggest night. Every club open, table availability, booking deadlines, and how to make the most of the busiest night of the week.',
   keywords: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     'Saturday clubbing London',
   ],
   openGraph: {
-    title: 'Saturday Nightclubs in London — The Biggest Night of the Week',
+    title: 'Saturday Nightclubs in London: The Biggest Night of the Week',
     description:
       'Every London nightclub open on Saturday night. Table prices, booking advice, and insider tips for the busiest night.',
     url: 'https://londonclubstonight.com/saturday-nightclubs-london',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Saturday Nightclubs in London — The Biggest Night of the Week',
+    title: 'Saturday Nightclubs in London: The Biggest Night of the Week',
     description:
       'Every London nightclub open on Saturday night. Booking advice and insider tips for the busiest night.',
   },
@@ -56,12 +56,12 @@ const faqs = [
   {
     question: 'What time should I arrive at a London club on Saturday?',
     answer:
-      'The optimal arrival window on Saturday is 11pm to midnight. This gets you in before peak capacity while avoiding an empty room. If you are on guestlist, arriving by 11:30pm is advisable — some venues cap guestlist entry after midnight. If you have a table, you have more flexibility, but arriving by midnight lets you enjoy the full peak period.',
+      'The optimal arrival window on Saturday is 11pm to midnight. This gets you in before peak capacity while avoiding an empty room. If you are on guestlist, arriving by 11:30pm is advisable: some venues cap guestlist entry after midnight. If you have a table, you have more flexibility, but arriving by midnight lets you enjoy the full peak period.',
   },
   {
     question: 'How much does a Saturday night out cost in London?',
     answer:
-      'Saturday is the most expensive night. Tables start from £1,000 minimum spend at most venues, with some venues applying higher Saturday minimums. Guestlist entry (where available) may be free or carry a cover charge of £20-30. Drinks inside are premium priced — cocktails £16-25, bottles of spirits £300-500. Budget at least £100-150 per person without a table.',
+      'Saturday is the most expensive night. Tables start from £1,000 minimum spend at most venues, with some venues applying higher Saturday minimums. Guestlist entry (where available) may be free or carry a cover charge of £20-30. Drinks inside are premium priced: cocktails £16-25, bottles of spirits £300-500. Budget at least £100-150 per person without a table.',
   },
 ];
 
@@ -73,7 +73,7 @@ export default function SaturdayNightclubsLondonPage() {
       <SchemaMarkup
         schema={[
           getArticleSchema(
-            'Saturday Nightclubs in London — The Biggest Night of the Week',
+            'Saturday Nightclubs in London: The Biggest Night of the Week',
             'Every London nightclub open on Saturday night with booking advice, pricing, and insider tips.',
             '/saturday-nightclubs-london',
             '2025-06-01'
@@ -135,13 +135,13 @@ export default function SaturdayNightclubsLondonPage() {
               Saturday night in London draws a crowd that has been planning for days. This is the night of birthdays, hen parties, anniversary celebrations, and groups of friends who locked in a date two weeks ago and spent the intervening time coordinating outfits, booking restaurants, and building anticipation. The result is a crowd that arrives with purpose and investment that no other night matches.
             </p>
             <p>
-              The celebratory element defines Saturday. On any given Saturday in Mayfair, a significant portion of the room is marking something — a promotion, a visitor from abroad, a milestone. This changes the energy. People are generous with champagne, more open to conversation with strangers, and more willing to commit to the full experience. Bottle presentations with sparklers, tables ordering rounds for neighbouring groups, spontaneous toasts — these are Saturday phenomena.
+              The celebratory element defines Saturday. On any given Saturday in Mayfair, a significant portion of the room is marking something: a promotion, a visitor from abroad, a milestone. This changes the energy. People are generous with champagne, more open to conversation with strangers, and more willing to commit to the full experience. Bottle presentations with sparklers, tables ordering rounds for neighbouring groups, spontaneous toasts. These are Saturday phenomena.
             </p>
             <p>
               The international contingent is strongest on Saturdays. Visitors from Paris, Dubai, Milan, and New York who have one night to experience London nightlife overwhelmingly choose Saturday. This gives the Mayfair clubs in particular a cosmopolitan atmosphere that Friday, with its London-centric after-work crowd, does not replicate. You are as likely to hear French or Arabic at a Saturday table as you are English.
             </p>
             <p>
-              Saturday also draws the most glamorous crowd. People dress for Saturday in a way they do not for any other night. The preparation shows — the outfits are more considered, the grooming is sharper, the overall standard is visibly higher. Door teams respond to this by enforcing dress codes at their strictest. Saturday is when the unwritten rules become non-negotiable.
+              Saturday also draws the most glamorous crowd. People dress for Saturday in a way they do not for any other night. The preparation shows: the outfits are more considered, the grooming is sharper, the overall standard is visibly higher. Door teams respond to this by enforcing dress codes at their strictest. Saturday is when the unwritten rules become non-negotiable.
             </p>
           </div>
         </div>
@@ -161,13 +161,13 @@ export default function SaturdayNightclubsLondonPage() {
               Saturday is the one night where improvisation fails. The competition for tables, guestlist spots, and even walk-in entry is at its peak. Every group in London has the same idea, and the venues have finite capacity. The groups that secure the best tables, the best positions, and the smoothest entry are the ones who committed earliest.
             </p>
             <p>
-              The booking timeline for Saturday is unforgiving. At exclusive venues like Tape London, the best table positions sell out a week or more in advance. By Wednesday, you are choosing from what remains rather than what you want. By Friday, you are relying on cancellations and promoter allocations. By Saturday afternoon, the options have narrowed to whatever did not sell — and at the most popular venues, that may be nothing at all.
+              The booking timeline for Saturday is unforgiving. At exclusive venues like Tape London, the best table positions sell out a week or more in advance. By Wednesday, you are choosing from what remains rather than what you want. By Friday, you are relying on cancellations and promoter allocations. By Saturday afternoon, the options have narrowed to whatever did not sell, and at the most popular venues, that may be nothing at all.
             </p>
             <p>
-              Guestlist on Saturdays operates under tighter constraints than any other night. Venues allocate fewer guestlist spots, door teams apply stricter criteria when deciding who enters from the list, and the window for guestlist entry closes earlier. At some venues, guestlist is functionally over by midnight on a Saturday — after that, only table guests and members enter. If you are relying on guestlist for Saturday, treat it as a confirmed reservation rather than a casual arrangement: arrive early, dress impeccably, and have a backup plan.
+              Guestlist on Saturdays operates under tighter constraints than any other night. Venues allocate fewer guestlist spots, door teams apply stricter criteria when deciding who enters from the list, and the window for guestlist entry closes earlier. At some venues, guestlist is functionally over by midnight on a Saturday, after that, only table guests and members enter. If you are relying on guestlist for Saturday, treat it as a confirmed reservation rather than a casual arrangement: arrive early, dress impeccably, and have a backup plan.
             </p>
             <p>
-              For Ministry of Sound, the Saturday dynamic is ticket-based. Headline events sell out online, sometimes days in advance. The door price, if tickets remain, will be higher than the advance price. Buying early is not just cheaper — it is the only way to guarantee you get in.
+              For Ministry of Sound, the Saturday dynamic is ticket-based. Headline events sell out online, sometimes days in advance. The door price, if tickets remain, will be higher than the advance price. Buying early is not just cheaper. It is the only way to guarantee you get in.
             </p>
             <p>
               The advantage of booking through a promoter on Saturday is significant. We hold allocations at multiple venues, which means we can often secure a table when the venue&apos;s own booking system shows full. We also know which venues have last-minute cancellations and can move quickly. For Saturday table pricing and bottle service packages, visit{' '}
@@ -222,7 +222,7 @@ export default function SaturdayNightclubsLondonPage() {
               <strong className="text-white">10pm to 11pm:</strong>{" "}Only relevant if you have a dinner-and-club booking at The London Reign or a cocktail reservation at Dear Darling. Pure nightclub arrivals at this time will find an empty room and awkward silence. The only exception is Ministry of Sound, which builds atmosphere earlier due to its scale.
             </p>
             <p>
-              <strong className="text-white">11pm to 11:30pm:</strong>{" "}The early-mover window. The room is filling, the music is building, and you have time to settle in before the peak. If you are on guestlist, this is the ideal arrival time — early enough to guarantee entry, late enough that the atmosphere has started.
+              <strong className="text-white">11pm to 11:30pm:</strong>{" "}The early-mover window. The room is filling, the music is building, and you have time to settle in before the peak. If you are on guestlist, this is the ideal arrival time: early enough to guarantee entry, late enough that the atmosphere has started.
             </p>
             <p>
               <strong className="text-white">11:30pm to 12:30am:</strong>{" "}The sweet spot. Most clubs reach their optimal atmosphere during this window. The dancefloor is active, the DJ is hitting stride, and the energy is climbing. This is when Saturday night feels like Saturday night. Table guests should aim for this window to get the most from their booking.
@@ -231,7 +231,7 @@ export default function SaturdayNightclubsLondonPage() {
               <strong className="text-white">12:30am to 1:30am:</strong>{" "}Still workable but risks are higher. Popular venues may have reached capacity and stopped admitting from guestlist. Tables that were available earlier may have been released to walk-ins. If you are arriving this late without a confirmed booking, check with us first to confirm the venue is still accepting entry.
             </p>
             <p>
-              <strong className="text-white">After 1:30am:</strong>{" "}For Mayfair clubs closing at 3am-3:30am, arriving after 1:30am gives you less than two hours. You are paying full price for a partial experience. At Ministry of Sound, however, 1:30am is perfectly reasonable — the night runs until 6am and the best hours are often 2am to 4am.
+              <strong className="text-white">After 1:30am:</strong>{" "}For Mayfair clubs closing at 3am-3:30am, arriving after 1:30am gives you less than two hours. You are paying full price for a partial experience. At Ministry of Sound, however, 1:30am is perfectly reasonable: the night runs until 6am and the best hours are often 2am to 4am.
             </p>
           </div>
         </div>
@@ -248,16 +248,16 @@ export default function SaturdayNightclubsLondonPage() {
           </div>
           <div className="space-y-6 text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
             <p>
-              A Saturday night in a London club operates at a different intensity from every other night. The rooms are at capacity. The dancefloors are dense. The queues at the bar move faster because the staff have doubled. The DJ plays with more authority because the crowd is larger, more responsive, and more committed to every track. Saturday is when London nightlife runs at full power, and everything — the highs and the logistics — reflects that scale.
+              A Saturday night in a London club operates at a different intensity from every other night. The rooms are at capacity. The dancefloors are dense. The queues at the bar move faster because the staff have doubled. The DJ plays with more authority because the crowd is larger, more responsive, and more committed to every track. Saturday is when London nightlife runs at full power, and everything, the highs and the logistics, reflects that scale.
             </p>
             <p>
-              The competition between tables is part of the Saturday theatre. Groups order champagne not just because they want it but because the presentation — sparklers, LED bottles, the waiter carrying it high above the crowd — is a declaration. At Tape and Maddox on a Saturday, the bottle presentations cascade through the night like a chain reaction: one table orders, the neighbouring table responds, and the energy ratchets upward with each round.
+              The competition between tables is part of the Saturday theatre. Groups order champagne not just because they want it but because the presentation (sparklers, LED bottles, the waiter carrying it high above the crowd) is a declaration. At Tape and Maddox on a Saturday, the bottle presentations cascade through the night like a chain reaction: one table orders, the neighbouring table responds, and the energy ratchets upward with each round.
             </p>
             <p>
               Saturday is also when you are most likely to share the room with recognisable faces. Celebrities, athletes, and music industry figures overwhelmingly choose Saturday for their nights out. At Tape London, the small capacity means these encounters feel personal rather than distant. At Cirque Le Soir, the performers interact with everyone regardless of profile, creating a levelling effect that makes Saturday nights feel genuinely communal despite the VIP framework.
             </p>
             <p>
-              The trade-off for Saturday&apos;s intensity is density. If you are someone who values space, ease of movement, and a quieter conversation, Saturday at a Mayfair club may feel overwhelming. The dancefloor will be shoulder to shoulder. The journey from your table to the bar will take longer than you expect. This is not a drawback for Saturday regulars — the density is the atmosphere. But it is worth knowing in advance so you arrive with the right expectations.
+              The trade-off for Saturday&apos;s intensity is density. If you are someone who values space, ease of movement, and a quieter conversation, Saturday at a Mayfair club may feel overwhelming. The dancefloor will be shoulder to shoulder. The journey from your table to the bar will take longer than you expect. This is not a drawback for Saturday regulars: the density is the atmosphere. But it is worth knowing in advance so you arrive with the right expectations.
             </p>
             <p>
               For dedicated Mayfair Saturday coverage and venue-by-venue guides, visit{' '}

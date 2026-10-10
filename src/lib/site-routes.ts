@@ -34,16 +34,16 @@ export const staticRoutes: SiteRoute[] = [
     path: '/',
     title: 'London Clubs Tonight',
     description:
-      'Find out which London clubs are open tonight. Expert recommendations for Mayfair, Soho, and beyond — VIP tables, guestlist spots, and insider tips from promoters who know every door.',
+      'Find out which London clubs are open tonight. Expert recommendations for Mayfair, Soho, and beyond: VIP tables, guestlist spots, and insider tips from promoters who know every door.',
     priority: 1,
     changeFrequency: 'daily',
     section: 'core',
   },
   {
     path: '/best-clubs-in-london',
-    title: 'Best Clubs in London — The Definitive Ranked Guide',
+    title: 'Best Clubs in London: The Definitive Ranked Guide',
     description:
-      'The best nightclubs in London, ranked by promoters who actually work the doors. From Tape London to Ministry of Sound — honest reviews, table prices, and how to get in.',
+      'The best nightclubs in London, ranked by promoters who actually work the doors. From Tape London to Ministry of Sound: honest reviews, table prices, and how to get in.',
     priority: 0.95,
     changeFrequency: 'weekly',
     section: 'core',
@@ -77,7 +77,7 @@ export const staticRoutes: SiteRoute[] = [
   },
   {
     path: '/guides/how-to-get-into-london-clubs',
-    title: 'Guestlists & Table Bookings — The Complete Guide',
+    title: 'Guestlists & Table Bookings: The Complete Guide',
     description:
       'The complete guide to guestlists, table bookings, dress codes, group composition, and age requirements at London nightclubs. Honest advice from promoters.',
     priority: 0.85,
@@ -88,7 +88,7 @@ export const staticRoutes: SiteRoute[] = [
     path: '/guides/london-clubs-by-music-genre',
     title: 'London Clubs by Music Genre',
     description:
-      'Find the right London club for your music taste. Hip-hop, house, RnB, techno, and open format — every venue categorised by what they actually play.',
+      'Find the right London club for your music taste. Hip-hop, house, RnB, techno, and open format: every venue categorised by what they actually play.',
     priority: 0.8,
     changeFrequency: 'monthly',
     section: 'guides',
@@ -115,7 +115,7 @@ export const staticRoutes: SiteRoute[] = [
     path: '/areas/central-london',
     title: 'Best Clubs in Central London',
     description:
-      "Complete guide to central London nightclubs. Mayfair, Soho, St James's, and Piccadilly — every club worth knowing about in the West End with table bookings and guestlist.",
+      "Complete guide to central London nightclubs. Mayfair, Soho, St James's, and Piccadilly: every club worth knowing about in the West End with table bookings and guestlist.",
     priority: 0.75,
     changeFrequency: 'monthly',
     section: 'areas',
@@ -133,7 +133,7 @@ export const staticRoutes: SiteRoute[] = [
     path: '/areas',
     title: 'London Clubs by Area',
     description:
-      'Explore London nightclubs by area. Mayfair, Soho, central London, and beyond — find the best clubs near you with table bookings and guestlist access.',
+      'Explore London nightclubs by area. Mayfair, Soho, central London, and beyond: find the best clubs near you with table bookings and guestlist access.',
     priority: 0.6,
     changeFrequency: 'monthly',
     section: 'areas',
@@ -149,7 +149,7 @@ export const staticRoutes: SiteRoute[] = [
   },
   {
     path: '/about-the-editor',
-    title: 'About the Editor — Daniel Whitaker',
+    title: 'About the Editor: Daniel Whitaker',
     description:
       'Meet Daniel Whitaker, Nightlife Scout and editor of London Clubs Tonight. He tracks 50+ venues weekly, covering what is open, what is good, and what you can get into tonight.',
     priority: 0.5,
@@ -214,7 +214,7 @@ export const staticRoutes: SiteRoute[] = [
     path: '/last-minute-table-booking-london',
     title: 'Last Minute Table Booking in London',
     description:
-      "Need a VIP table tonight? Same-day availability at London's top clubs. Message us on WhatsApp — we confirm in minutes. No deposit, no fees.",
+      "Need a VIP table tonight? Same-day availability at London's top clubs. Message us on WhatsApp: we confirm in minutes. No deposit, no fees.",
     priority: 0.9,
     changeFrequency: 'daily',
     section: 'tonight',
@@ -261,7 +261,7 @@ export const staticRoutes: SiteRoute[] = [
     path: '/clubs-open-sunday-night-london',
     title: 'Clubs Open Sunday Night in London',
     description:
-      'Which London clubs are open on Sunday nights? An honest guide — most clubs are closed, but here are your real options and how to plan a better weekend instead.',
+      'Which London clubs are open on Sunday nights? An honest guide: most clubs are closed, but here are your real options and how to plan a better weekend instead.',
     priority: 0.8,
     changeFrequency: 'weekly',
     section: 'tonight',

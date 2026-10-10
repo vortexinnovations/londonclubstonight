@@ -29,7 +29,7 @@ import SchemaMarkup, { getLocalBusinessSchema, getWebSiteSchema } from '@/compon
 export const metadata: Metadata = {
   metadataBase: new URL('https://londonclubstonight.com'),
   title: {
-    default: 'London Clubs Tonight — Where to Go Out in London Tonight',
+    default: 'London Clubs Tonight | Where to Go Out in London Tonight',
     template: '%s | London Clubs Tonight',
   },
   description: 'The definitive guide to London\'s best nightclubs. Find out what\'s open tonight, book VIP tables, and get on the guestlist at London\'s top clubs. Insider knowledge from promoters who know the scene.',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     locale: 'en_GB',
     url: 'https://londonclubstonight.com',
     siteName: 'London Clubs Tonight',
-    title: 'London Clubs Tonight — Where to Go Out in London Tonight',
+    title: 'London Clubs Tonight | Where to Go Out in London Tonight',
     description: 'The definitive guide to London\'s best nightclubs. Find out what\'s open tonight, book VIP tables, and get on the guestlist.',
   },
   twitter: {

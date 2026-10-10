@@ -7,7 +7,7 @@ import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'Best Clubs in Mayfair 2026 — The Heart of London\'s Luxury Nightlife',
+  title: 'Best Clubs in Mayfair 2026: The Heart of London\'s Luxury Nightlife',
   description:
     'The definitive guide to Mayfair nightclubs. Tape, Cirque, Maddox, Rumour, 99 Regent Street, Dear Darling, Scotch, and more: table bookings, guestlist, and insider tips for every Mayfair club.',
   keywords: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     'W1 nightclubs',
   ],
   openGraph: {
-    title: 'Best Clubs in Mayfair 2026 — The Heart of London\'s Luxury Nightlife',
+    title: 'Best Clubs in Mayfair 2026: The Heart of London\'s Luxury Nightlife',
     description:
       'The definitive guide to Mayfair nightclubs. Table bookings, guestlist access, and insider tips for every club in W1.',
     url: 'https://londonclubstonight.com/areas/mayfair',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Best Clubs in Mayfair 2026 — Luxury Nightlife Guide',
+    title: 'Best Clubs in Mayfair 2026: Luxury Nightlife Guide',
     description:
       'The definitive guide to Mayfair nightclubs. Table bookings, guestlist access, and insider tips.',
   },
@@ -46,7 +46,7 @@ export default function MayfairPage() {
     <>
       <SchemaMarkup
         schema={getArticleSchema(
-          'Best Clubs in Mayfair 2026 — The Heart of London\'s Luxury Nightlife',
+          'Best Clubs in Mayfair 2026: The Heart of London\'s Luxury Nightlife',
           'The definitive guide to Mayfair nightclubs including Tape, Cirque, Maddox, Rumour, 99 Regent Street, Dear Darling, Scotch, and more.',
           '/areas/mayfair',
           '2025-01-01'
@@ -114,7 +114,7 @@ export default function MayfairPage() {
               Mayfair <span className="serif-accent text-gradient">Clubs</span>
             </h2>
             <p className="text-frost-300 max-w-2xl mb-12">
-              {mayfairClubs.length} clubs in Mayfair — from exclusive members clubs to
+              {mayfairClubs.length} clubs in Mayfair, from exclusive members clubs to
               high-energy party venues.
             </p>
             <div className="grid gap-6">

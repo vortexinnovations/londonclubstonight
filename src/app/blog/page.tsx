@@ -6,7 +6,7 @@ import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'London Nightlife Blog — Insider Guides, Tips & Club Reviews',
+  title: 'London Nightlife Blog: Insider Guides, Tips & Club Reviews',
   description:
     'The London nightlife blog for people who actually go out. Insider guides to London clubs, honest reviews, dress code tips, and everything you need to know before a night out in London.',
   keywords: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     'London nightlife tips',
   ],
   openGraph: {
-    title: 'London Nightlife Blog — Insider Guides, Tips & Club Reviews',
+    title: 'London Nightlife Blog: Insider Guides, Tips & Club Reviews',
     description:
       'The London nightlife blog for people who actually go out. Insider guides, honest reviews, and everything you need to know before a night out.',
     url: 'https://londonclubstonight.com/blog',
@@ -179,7 +179,7 @@ export default async function BlogPage() {
                 Clubs by Area
               </h3>
               <p className="text-frost-500 text-sm">
-                Mayfair, Soho, Central London — find the best clubs near you.
+                Mayfair, Soho, Central London: find the best clubs near you.
               </p>
             </Link>
           </div>

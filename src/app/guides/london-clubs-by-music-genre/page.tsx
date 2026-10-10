@@ -6,8 +6,8 @@ import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'London Clubs by Music Genre — Hip-Hop, House, RnB & More',
-  description: 'Find the right London club for your music taste. Hip-hop, house, RnB, techno, and open format — every venue categorised by what they actually play.',
+  title: 'London Clubs by Music Genre: Hip-Hop, House, RnB & More',
+  description: 'Find the right London club for your music taste. Hip-hop, house, RnB, techno, and open format: every venue categorised by what they actually play.',
   keywords: ['hip hop clubs London', 'house music clubs London', 'RnB clubs London', 'open format clubs London', 'techno clubs London'],
   alternates: {
     canonical: 'https://londonclubstonight.com/guides/london-clubs-by-music-genre',
@@ -18,11 +18,11 @@ const genreSections = [
   {
     id: 'hip-hop-rnb',
     title: 'Hip-Hop & RnB',
-    description: 'The dominant sound across most of London\'s Mayfair clubs. If you want hip-hop, you have the most options — the question is which venue suits your style and budget.',
+    description: 'The dominant sound across most of London\'s Mayfair clubs. If you want hip-hop, you have the most options: the question is which venue suits your style and budget.',
     slugs: ['tape-london', 'cirque-le-soir', 'beat-london'],
     notes: [
       { slug: 'tape-london', note: 'The gold standard for hip-hop in an intimate, exclusive setting. The sound system was originally designed for music production and the difference is audible.' },
-      { slug: 'cirque-le-soir', note: 'Hip-hop and RnB played loud over circus entertainment. The music is the backdrop to the spectacle — expect current hits and crowd-pleasers rather than deep cuts.' },
+      { slug: 'cirque-le-soir', note: 'Hip-hop and RnB played loud over circus entertainment. The music is the backdrop to the spectacle: expect current hits and crowd-pleasers rather than deep cuts.' },
       { slug: 'beat-london', note: 'The sound system makes the hip-hop hit harder here than almost anywhere else. This is a venue for people who care about audio quality.' },
     ],
     bestFor: 'Tape London for exclusivity and sound quality, Cirque Le Soir for hip-hop with a show, BEAT for the best sound system.',
@@ -51,11 +51,11 @@ const genreSections = [
   {
     id: 'open-format',
     title: 'Open Format',
-    description: 'Open format means the DJ plays across genres — hip-hop, house, pop, RnB, dance — reading the room and adjusting. These clubs prioritise energy over genre purity.',
+    description: 'Open format means the DJ plays across genres, hip-hop, house, pop, RnB, dance, reading the room and adjusting. These clubs prioritise energy over genre purity.',
     slugs: ['the-london-reign', 'selene-london', 'beat-london'],
     notes: [
-      { slug: 'the-london-reign', note: 'The showclub format means the music shifts throughout the evening — from sophisticated dinner accompaniment to full party energy. Expect mainstream hits, pop, RnB, and crowd-pleasers.' },
-      { slug: 'selene-london', note: 'Elegant cocktail-bar-to-club concept with a sophisticated house soundtrack. The refined setting means the music enhances the atmosphere rather than dominating it — perfect for the grown-up crowd.' },
+      { slug: 'the-london-reign', note: 'The showclub format means the music shifts throughout the evening, from sophisticated dinner accompaniment to full party energy. Expect mainstream hits, pop, RnB, and crowd-pleasers.' },
+      { slug: 'selene-london', note: 'Elegant cocktail-bar-to-club concept with a sophisticated house soundtrack. The refined setting means the music enhances the atmosphere rather than dominating it: perfect for the grown-up crowd.' },
       { slug: 'beat-london', note: 'Open format delivered through one of London\'s best sound systems. The DJs vary by night but the consistent thread is energy and quality audio.' },
     ],
     bestFor: 'Reign for the theatrical dinner-to-club experience, Selene for sophisticated house-leaning nights, BEAT for pure audio quality.',
@@ -67,7 +67,7 @@ export default function MusicGenrePage() {
     <>
       <SchemaMarkup
         schema={getArticleSchema(
-          'London Clubs by Music Genre — Hip-Hop, House, RnB & More',
+          'London Clubs by Music Genre: Hip-Hop, House, RnB & More',
           'Find the right London club for your music taste. Every venue categorised by what they actually play.',
           '/guides/london-clubs-by-music-genre',
           '2025-01-01'
@@ -172,7 +172,7 @@ export default function MusicGenrePage() {
             <p className="text-frost-300 max-w-2xl mb-8">A quick summary to help you choose.</p>
             <div className="space-y-4 text-frost-300 text-sm leading-relaxed">
               <p>
-                If hip-hop is your thing, you have the most choice — nearly every club in Mayfair and the surrounding West End leans that direction. The differences come down to exclusivity (Tape), atmosphere (Cirque), and sound quality (BEAT).
+                If hip-hop is your thing, you have the most choice: nearly every club in Mayfair and the surrounding West End leans that direction. The differences come down to exclusivity (Tape), atmosphere (Cirque), and sound quality (BEAT).
               </p>
               <p>
                 If house music is what you want, Maddox is your best Mayfair option, but Ministry of Sound is where the serious house heads go. The gap in sound quality and DJ calibre between Ministry and everywhere else is significant.

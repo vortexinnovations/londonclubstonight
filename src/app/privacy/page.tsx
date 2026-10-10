@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'How London Clubs Tonight handles your data: what we collect, what we do not collect, how WhatsApp booking enquiries are used, and how to request deletion.',
   openGraph: {
-    title: 'Privacy Policy — London Clubs Tonight',
+    title: 'Privacy Policy | London Clubs Tonight',
     description:
       'What data London Clubs Tonight collects, how WhatsApp booking enquiries are handled, and how to request deletion.',
     url: 'https://londonclubstonight.com/privacy',
@@ -64,8 +64,8 @@ export default function PrivacyPage() {
           <p>
             Reading this site does not require an account, and we do not ask you to enter
             personal details anywhere on the page. There are no contact forms, no newsletter
-            signup, and no login. Our hosting provider records standard server logs — IP
-            address, browser user agent, requested URL and timestamp — which exist to keep
+            signup, and no login. Our hosting provider records standard server logs (IP
+            address, browser user agent, requested URL and timestamp), which exist to keep
             the site online and to spot abuse. We do not use those logs to build a profile
             of you, and we do not sell or share them.
           </p>
@@ -84,14 +84,14 @@ export default function PrivacyPage() {
           <p>
             Every booking on this site starts as a WhatsApp message to a real person. When
             you message us, we receive the phone number attached to your WhatsApp account,
-            your display name, and whatever you choose to tell us — typically the date, the
+            your display name, and whatever you choose to tell us: typically the date, the
             size of your group, the venue you want, and your budget. We use that information
             for one purpose: arranging your table or guestlist place and answering your
             questions about the night.
           </p>
           <p className="mt-4">
             To confirm a booking we pass the minimum necessary details to the venue or its
-            promoter team — usually a name, a group size, and an arrival time. We do not
+            promoter team: usually a name, a group size, and an arrival time. We do not
             pass on the rest of your conversation. WhatsApp itself is operated by Meta and
             your messages are subject to WhatsApp&apos;s own privacy terms; we have no
             control over how Meta processes data on its platform.
@@ -123,7 +123,7 @@ export default function PrivacyPage() {
           <p>
             If you are in the UK or EU, you have the right to ask what personal data we hold
             about you, to have it corrected, and to have it erased. Because we hold very
-            little — in most cases nothing beyond a WhatsApp thread — these requests are
+            little (in most cases nothing beyond a WhatsApp thread), these requests are
             usually resolved the same day. Message us on WhatsApp and ask us to delete your
             conversation and we will confirm once it is done.
           </p>

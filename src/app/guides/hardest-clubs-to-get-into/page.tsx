@@ -6,7 +6,7 @@ import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'London\'s Most Exclusive Clubs — The Insider\'s Guide',
+  title: 'London\'s Most Exclusive Clubs: The Insider\'s Guide',
   description: 'Discover London\'s most exclusive nightlife experiences. Insider guide to the city\'s most premium clubs, what makes each one special, and how to arrange your night.',
   keywords: ['most exclusive clubs London', 'best clubs London', 'premium London nightlife', 'London VIP clubs', 'exclusive London clubs'],
   alternates: {
@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     question: 'How much does a table cost at London clubs?',
-    answer: 'Table minimums at most London clubs start from £1,000 per night. Tape London starts from £1,500. These minimums represent your spend on drinks and are not an entry fee — you receive bottles, mixers, and table service for the amount. On peak nights or for premium positions, minimums can be higher.',
+    answer: 'Table minimums at most London clubs start from £1,000 per night. Tape London starts from £1,500. These minimums represent your spend on drinks and are not an entry fee. You receive bottles, mixers, and table service for the amount. On peak nights or for premium positions, minimums can be higher.',
   },
   {
     question: 'What should I wear to London\'s exclusive clubs?',
@@ -60,7 +60,7 @@ export default function ExclusiveClubsPage() {
       <SchemaMarkup
         schema={[
           getArticleSchema(
-            'London\'s Most Exclusive Clubs — The Insider\'s Guide',
+            'London\'s Most Exclusive Clubs: The Insider\'s Guide',
             'Discover London\'s most exclusive nightlife experiences with insider advice on what makes each venue special.',
             '/guides/hardest-clubs-to-get-into',
             '2025-01-01'

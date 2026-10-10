@@ -40,7 +40,7 @@ export default function WhatsAppCTA({ clubName, variant = 'inline', heading }: W
             {heading || 'Need a Table Tonight?'}
           </h2>
           <p className="text-frost-300 mb-8 max-w-md mx-auto">
-            Message us on WhatsApp — we respond in minutes.
+            Message us on WhatsApp. We respond in minutes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
             <a

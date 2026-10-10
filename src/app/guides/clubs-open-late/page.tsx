@@ -6,7 +6,7 @@ import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'Clubs Open Late in London — Your Guide to Late Night London',
+  title: 'Clubs Open Late in London: Your Guide to Late Night London',
   description: 'Every London club grouped by closing time. Find venues open until 3am, 3:30am, 3:45am and 6am. Your guide to keeping the night going in London.',
   keywords: ['clubs open late London', 'late night clubs London', 'clubs open until 6am London', 'after hours London', 'late night London'],
   alternates: {
@@ -52,7 +52,7 @@ export default function ClubsOpenLatePage() {
     <>
       <SchemaMarkup
         schema={getArticleSchema(
-          'Clubs Open Late in London — Your Guide to Late Night London',
+          'Clubs Open Late in London: Your Guide to Late Night London',
           'Every London club grouped by closing time. Find venues open until 3am, 3:30am, 3:45am and 6am.',
           '/guides/clubs-open-late',
           '2025-01-01'

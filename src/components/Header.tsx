@@ -33,7 +33,7 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-[72px]">
-          <Link href="/" className="group flex min-w-0 items-baseline gap-1.5" aria-label="London Clubs Tonight — home">
+          <Link href="/" className="group flex min-w-0 items-baseline gap-1.5" aria-label="London Clubs Tonight, home">
             <span className="font-display text-[length:clamp(0.75rem,4.2vw,1.35rem)] font-extrabold tracking-tight text-white leading-none">
               LONDON&nbsp;CLUBS
             </span>

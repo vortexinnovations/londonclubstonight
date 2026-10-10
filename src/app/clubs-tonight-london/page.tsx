@@ -14,7 +14,7 @@ import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getI
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: `Clubs Open Tonight in London — Live Updates [${new Date().toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}]`,
+  title: `Clubs Open Tonight in London: Live Updates [${new Date().toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}]`,
   description:
     'Which London clubs are open RIGHT NOW? Live guestlist availability, same-night table bookings, and what\'s happening tonight. Updated every hour.',
   keywords: [
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     'best clubs tonight London',
   ],
   openGraph: {
-    title: 'Clubs Open Tonight in London — What\'s Open & How to Get In',
+    title: 'Clubs Open Tonight in London: What\'s Open & How to Get In',
     description:
       'Live guide to London clubs open tonight. Guestlist availability, last-minute tables, and insider tips from promoters who work the doors.',
     url: 'https://londonclubstonight.com/clubs-tonight-london',
@@ -66,12 +66,12 @@ const faqs = [
   {
     question: 'Do I need to book in advance?',
     answer:
-      'It depends on the night and the venue. For Saturdays at top Mayfair clubs, advance booking is strongly recommended — both for tables and guestlist. Thursdays and Fridays tend to have more same-night availability. If you are relying on guestlist only, booking earlier in the day gives you the best chance. We can arrange same-night bookings via WhatsApp in most cases.',
+      'It depends on the night and the venue. For Saturdays at top Mayfair clubs, advance booking is strongly recommended: both for tables and guestlist. Thursdays and Fridays tend to have more same-night availability. If you are relying on guestlist only, booking earlier in the day gives you the best chance. We can arrange same-night bookings via WhatsApp in most cases.',
   },
   {
     question: 'What should I wear tonight?',
     answer:
-      'London clubs enforce dress codes seriously, particularly in Mayfair. For men: smart shoes (no trainers at most venues), tailored trousers or dark jeans, and a collared shirt or well-fitted top. Avoid sportswear, shorts, and open-toed shoes. For women: heels and a going-out outfit are standard. Some Soho venues like Cirque Le Soir are slightly more relaxed but still expect smart-glamorous. When in doubt, overdress — bouncers turn people away for being underdressed, never for being overdressed.',
+      'London clubs enforce dress codes seriously, particularly in Mayfair. For men: smart shoes (no trainers at most venues), tailored trousers or dark jeans, and a collared shirt or well-fitted top. Avoid sportswear, shorts, and open-toed shoes. For women: heels and a going-out outfit are standard. Some Soho venues like Cirque Le Soir are slightly more relaxed but still expect smart-glamorous. When in doubt, overdress: bouncers turn people away for being underdressed, never for being overdressed.',
   },
 ];
 
@@ -85,7 +85,7 @@ export default function ClubsTonightLondonPage() {
   const now = new Date().toISOString();
 
   const articleSchema = getArticleSchema(
-    'Clubs Open Tonight in London — What\'s Open & How to Get In',
+    'Clubs Open Tonight in London: What\'s Open & How to Get In',
     'Live guide to London clubs open tonight with guestlist availability, last-minute tables, and insider tips.',
     '/clubs-tonight-london',
     '2025-01-15'
@@ -198,7 +198,7 @@ export default function ClubsTonightLondonPage() {
               </h2>
               <p className="text-frost-300 text-base">
                 These clubs are accepting guestlist requests for tonight. Guestlist
-                does not guarantee entry — it gets you to the front of the queue
+                does not guarantee entry. It gets you to the front of the queue
                 and usually means free or reduced entry for girls and mixed groups.
               </p>
             </div>
@@ -234,7 +234,7 @@ export default function ClubsTonightLondonPage() {
               </h2>
               <p className="text-frost-300 text-base">
                 These venues are known for accommodating same-day table bookings.
-                Availability changes by the hour on busy nights — message us on
+                Availability changes by the hour on busy nights. Message us on
                 WhatsApp for a live check.
               </p>
             </div>
@@ -281,7 +281,7 @@ export default function ClubsTonightLondonPage() {
               The majority of London&apos;s premium nightclubs are concentrated
               in Mayfair, with a cluster of excellent options in Soho and a few
               standout venues in Fitzrovia and St James&apos;s. Mayfair clubs
-              tend to be the most exclusive — stricter door policies, higher table
+              tend to be the most exclusive: stricter door policies, higher table
               minimums, and a crowd that skews older and wealthier. If you are
               looking for a night where the music matters more than the postcode,
               Soho and Fitzrovia deliver that with venues like Cirque Le Soir and
@@ -306,27 +306,27 @@ export default function ClubsTonightLondonPage() {
               minimum for men. Trainers are almost universally rejected unless
               they are genuinely high-end designer. Women have more flexibility,
               but heels and a going-out outfit are the standard expectation.
-              Cirque Le Soir is slightly more creative in its approach — they
-              encourage individual style — but even there, turning up in casual
+              Cirque Le Soir is slightly more creative in its approach: they
+              encourage individual style, but even there, turning up in casual
               clothes will get you turned away.
             </p>
             <p>
               The single most common reason people fail to get into London clubs
-              is not their outfit — it is their group composition. All-male
+              is not their outfit. It is their group composition. All-male
               groups face the hardest entry in virtually every Mayfair venue.
               A group of six men with no women will struggle even with a
               guestlist booking. Mixed groups and predominantly female groups
-              sail through. This is not a rule we invented — it is the reality
+              sail through. This is not a rule we invented. It is the reality
               of how London nightlife operates, and ignoring it leads to
               disappointed nights standing outside.
             </p>
             <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
-              Guestlist vs Table — The Honest Breakdown
+              Guestlist vs Table: The Honest Breakdown
             </h3>
             <p>
               A guestlist booking gets your name at the door and typically
               grants free entry for women and reduced entry for men in mixed
-              groups. It does not guarantee admission — you still face the
+              groups. It does not guarantee admission. You still face the
               door team&apos;s assessment of your group, your outfit, and
               the venue&apos;s capacity. On a quiet Thursday, a guestlist
               spot is as good as a golden ticket. On a packed Saturday at
@@ -334,8 +334,8 @@ export default function ClubsTonightLondonPage() {
             </p>
             <p>
               A table booking is the only way to guarantee entry at London&apos;s
-              top clubs. You are committing to a minimum spend — typically
-              &#163;1,000 to &#163;2,000 for most venues — and in return you
+              top clubs. You are committing to a minimum spend (typically
+              &#163;1,000 to &#163;2,000 for most venues) and in return you
               get a reserved area, bottle service, a dedicated server, and the
               certainty that you will not be turned away at the door. For groups
               of four or more, the per-person cost often works out comparable to
@@ -356,11 +356,11 @@ export default function ClubsTonightLondonPage() {
             <p>
               The best nights in London are not always the weekends. Thursday
               nights at certain Mayfair clubs are genuinely more fun than
-              Saturdays — the crowd is more relaxed, the door policy slightly
+              Saturdays: the crowd is more relaxed, the door policy slightly
               softer, and the tables easier to get. Friday nights offer the
               energy of the weekend without Saturday&apos;s intensity. If you
-              are reading this because you want to go out tonight — whatever
-              night it is — you are already thinking about it the right way.
+              are reading this because you want to go out tonight, whatever
+              night it is. You are already thinking about it the right way.
               The best nights happen when you stop overthinking and commit to
               a venue that matches your group.
             </p>
@@ -428,7 +428,7 @@ export default function ClubsTonightLondonPage() {
               <ul className="space-y-2">
                 <li>
                   <Link href="/best-clubs-in-london" className="text-frost-300 hover:text-white transition-colors text-sm">
-                    Best clubs in London — ranked &rarr;
+                    Best clubs in London: ranked &rarr;
                   </Link>
                 </li>
                 <li>

@@ -81,7 +81,7 @@ export function proxy(request: NextRequest) {
 
   if (notAcceptable) {
     const body = [
-      '# 406 — Not Acceptable',
+      '# 406: Not Acceptable',
       '',
       'This URL can be served as `text/html` or `text/markdown`.',
       'Send `Accept: text/markdown` for the Markdown representation.',

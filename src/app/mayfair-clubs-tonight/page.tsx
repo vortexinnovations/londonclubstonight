@@ -9,7 +9,7 @@ import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema } fro
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: 'Mayfair Clubs Open Tonight — Guestlist & Tables Available Now',
+  title: 'Mayfair Clubs Open Tonight: Guestlist & Tables Available Now',
   description:
     'What\'s open in Mayfair tonight? Live guestlist spots, same-night VIP tables, and insider tips. Message us on WhatsApp for instant confirmation.',
   keywords: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     'VIP tables Mayfair tonight',
   ],
   openGraph: {
-    title: 'Mayfair Clubs Tonight — What\'s Open in Mayfair Right Now',
+    title: 'Mayfair Clubs Tonight: What\'s Open in Mayfair Right Now',
     description:
       'Live guide to Mayfair clubs open tonight. Real-time guestlist and table availability from promoters on the ground.',
     url: 'https://londonclubstonight.com/mayfair-clubs-tonight',
@@ -51,7 +51,7 @@ const faqs = [
   {
     question: 'Can I get on a guestlist in Mayfair tonight?',
     answer:
-      'Same-night guestlist in Mayfair is possible but depends on the venue and the night. Dear Darling and Maddox are generally receptive to same-day guestlist requests for mixed groups. Tape London is much harder — table booking is the most reliable route there. The key factor is group composition: mixed groups with a good gender ratio have the best chance. Submit your guestlist request as early in the day as possible for the best odds.',
+      'Same-night guestlist in Mayfair is possible but depends on the venue and the night. Dear Darling and Maddox are generally receptive to same-day guestlist requests for mixed groups. Tape London is much harder: table booking is the most reliable route there. The key factor is group composition: mixed groups with a good gender ratio have the best chance. Submit your guestlist request as early in the day as possible for the best odds.',
   },
   {
     question: 'What\'s the dress code for Mayfair clubs?',
@@ -61,7 +61,7 @@ const faqs = [
   {
     question: 'How much is a table in Mayfair tonight?',
     answer:
-      'Table minimums in Mayfair start from around £1,000 at venues like Maddox and Dear Darling. Tape London starts from £1,500 and can go significantly higher for premium positions on peak nights. These minimums cover your spend on bottles and drinks — you are not paying £1,000 on top of your drinks, it is the minimum amount you commit to spending. For a group of five, that works out to £200 per person, which is competitive when you factor in guaranteed entry and bottle service. For full pricing breakdowns visit londonbottleservice.com.',
+      'Table minimums in Mayfair start from around £1,000 at venues like Maddox and Dear Darling. Tape London starts from £1,500 and can go significantly higher for premium positions on peak nights. These minimums cover your spend on bottles and drinks. You are not paying £1,000 on top of your drinks, it is the minimum amount you commit to spending. For a group of five, that works out to £200 per person, which is competitive when you factor in guaranteed entry and bottle service. For full pricing breakdowns visit londonbottleservice.com.',
   },
 ];
 
@@ -75,7 +75,7 @@ export default function MayfairClubsTonightPage() {
   const now = new Date().toISOString();
 
   const articleSchema = getArticleSchema(
-    'Mayfair Clubs Tonight — What\'s Open in Mayfair Right Now',
+    'Mayfair Clubs Tonight: What\'s Open in Mayfair Right Now',
     'Live guide to Mayfair clubs open tonight with guestlist availability, table bookings, and insider tips.',
     '/mayfair-clubs-tonight',
     '2025-01-15'
@@ -211,18 +211,18 @@ export default function MayfairClubsTonightPage() {
             <p>
               Mayfair is the epicentre of London&apos;s high-end nightlife, and
               it has been for decades. The concentration of premium clubs within
-              a few streets — Tape London on Hanover Square, Maddox on its
-              namesake street, Scotch of St James in Mason&apos;s Yard — creates a density of options that no other London
+              a few streets (Tape London on Hanover Square, Maddox on its
+              namesake street, Scotch of St James in Mason&apos;s Yard) creates a density of options that no other London
               neighbourhood can match. But choosing the wrong one on the wrong
               night can mean an expensive, underwhelming evening.
             </p>
             <p>
               The character of each Mayfair club shifts dramatically by night.
-              Thursday is when the industry crowd comes out — promoters, models,
+              Thursday is when the industry crowd comes out: promoters, models,
               music industry people. The vibe is more relaxed, the door slightly
               softer, and tables easier to secure. Friday attracts the after-work
               crowd transitioning into a full night out, with a younger energy
-              that builds as the night progresses. Saturday is the main event —
+              that builds as the night progresses. Saturday is the main event:
               the biggest crowds, the strictest doors, the highest minimum
               spends, and the most electric atmosphere.
             </p>
@@ -233,17 +233,17 @@ export default function MayfairClubsTonightPage() {
               with more women than men will find most doors open to them. An
               all-male group of five, regardless of how well-dressed they are,
               will face rejection at the majority of venues without a table
-              reservation. This is not speculation — it is the consistent
+              reservation. This is not speculation. It is the consistent
               reality we observe every single night.
             </p>
             <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               Which Mayfair Club Is Right for You Tonight
             </h3>
             <p>
-              <strong className="text-white">Tape London</strong>{" "}is the pinnacle of exclusivity. A members club on Hanover Square where the crowd genuinely includes celebrities and the sound system is among the best in the world. If you want the most exclusive experience Mayfair offers, this is it — but you will need a table booking or a very good reason to be at the door.
+              <strong className="text-white">Tape London</strong>{" "}is the pinnacle of exclusivity. A members club on Hanover Square where the crowd genuinely includes celebrities and the sound system is among the best in the world. If you want the most exclusive experience Mayfair offers, this is it, but you will need a table booking or a very good reason to be at the door.
             </p>
             <p>
-              <strong className="text-white">Dear Darling</strong>{" "}takes yet another approach — starting your evening with genuinely excellent cocktails in a gilded, opulent setting before transitioning into a late-night venue. It is the best option for groups that want the evening to build gradually rather than arriving at a club cold at midnight.
+              <strong className="text-white">Dear Darling</strong>{" "}takes yet another approach: starting your evening with genuinely excellent cocktails in a gilded, opulent setting before transitioning into a late-night venue. It is the best option for groups that want the evening to build gradually rather than arriving at a club cold at midnight.
             </p>
             <p>
               <strong className="text-white">Maddox</strong>{" "}is the house music stronghold of Mayfair. While most Mayfair clubs lean heavily into hip-hop and RnB, Maddox has committed to a sound that attracts a crowd who actually want to dance. The restaurant-to-club format is polished, and the transition between the two feels natural.
@@ -275,17 +275,17 @@ export default function MayfairClubsTonightPage() {
               What to Expect From a Night Out in Mayfair
             </h3>
             <p>
-              A typical Mayfair night follows a rhythm. Doors open between 10pm and 11pm, but the venues do not truly fill until midnight. Arriving between 11pm and midnight is the sweet spot — you avoid the empty-room awkwardness of arriving too early while securing a good position before the peak.
+              A typical Mayfair night follows a rhythm. Doors open between 10pm and 11pm, but the venues do not truly fill until midnight. Arriving between 11pm and midnight is the sweet spot. You avoid the empty-room awkwardness of arriving too early while securing a good position before the peak.
             </p>
             <p>
-              Most Mayfair clubs close between 2:30am and 3:30am. This is significantly earlier than the clubs in South London or East London, so pace your night accordingly. The peak energy window is typically midnight to 2am — arrive too late and you have missed the best of it.
+              Most Mayfair clubs close between 2:30am and 3:30am. This is significantly earlier than the clubs in South London or East London, so pace your night accordingly. The peak energy window is typically midnight to 2am. Arrive too late and you have missed the best of it.
             </p>
             <p>
-              Drinks are expensive by any standard. Cocktails start around &#163;16 and premium options run significantly higher. If you have a table, your minimum spend covers bottles and mixers — Grey Goose, Belvedere, or Ciroc are the standard vodka options, with champagne and premium spirits available at higher price points.
+              Drinks are expensive by any standard. Cocktails start around &#163;16 and premium options run significantly higher. If you have a table, your minimum spend covers bottles and mixers: Grey Goose, Belvedere, or Ciroc are the standard vodka options, with champagne and premium spirits available at higher price points.
             </p>
             <p>
-              For the full Mayfair experience — the scene, the venues, the
-              events calendar — visit{' '}
+              For the full Mayfair experience (the scene, the venues, the
+              events calendar), visit{' '}
               <a
                 href="https://mayfairtonight.com"
                 target="_blank"
@@ -316,7 +316,7 @@ export default function MayfairClubsTonightPage() {
               return journey. Black cabs are plentiful in Mayfair at closing
               time, but Uber surge pricing after 2am can be significant. If
               you are booking a table, many venues can arrange car service as
-              part of the package — ask us when you book and we will sort it.
+              part of the package. Ask us when you book and we will sort it.
             </p>
             <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               The Table Question
@@ -329,13 +329,13 @@ export default function MayfairClubsTonightPage() {
               private area, bottle service, and a dedicated host looking
               after your group. The minimum spends start from &#163;1,000
               at most venues, which for a group of five works out to
-              &#163;200 each — genuinely competitive when you consider
+              &#163;200 each, genuinely competitive when you consider
               that buying rounds at a Mayfair bar can easily cost &#163;100
               per person over a full evening.
             </p>
             <p>
-              If tonight is a special occasion — a birthday, a celebration,
-              or simply a night where you want everything taken care of —
+              If tonight is a special occasion (a birthday, a celebration,
+              or simply a night where you want everything taken care of),
               a table in Mayfair is the move. Message us on WhatsApp and
               we will handle everything from reservation to arrival.
             </p>
@@ -348,7 +348,7 @@ export default function MayfairClubsTonightPage() {
         <div className="max-w-3xl mx-auto px-6 sm:px-8">
           <span className="eyebrow">Questions</span>
           <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mt-4 mb-12">
-            Mayfair Tonight — <span className="serif-accent text-gradient">FAQ</span>
+            Mayfair Tonight: <span className="serif-accent text-gradient">FAQ</span>
           </h2>
           <div className="space-y-8">
             {faqs.map((faq) => (
@@ -408,17 +408,17 @@ export default function MayfairClubsTonightPage() {
                 </li>
                 <li>
                   <Link href="/best-clubs-in-london" className="text-frost-300 hover:text-white transition-colors text-sm">
-                    Best clubs in London — ranked &rarr;
+                    Best clubs in London: ranked &rarr;
                   </Link>
                 </li>
                 <li>
                   <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-frost-300 hover:text-white transition-colors text-sm">
-                    Mayfair Tonight — full Mayfair guide &rarr;
+                    Mayfair Tonight: full Mayfair guide &rarr;
                   </a>
                 </li>
                 <li>
                   <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-frost-300 hover:text-white transition-colors text-sm">
-                    London Bottle Service — table pricing &rarr;
+                    London Bottle Service: table pricing &rarr;
                   </a>
                 </li>
               </ul>

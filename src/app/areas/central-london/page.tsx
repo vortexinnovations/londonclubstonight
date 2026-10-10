@@ -7,9 +7,9 @@ import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'Best Clubs in Central London 2026 — Mayfair, Soho, St James\'s & More',
+  title: 'Best Clubs in Central London 2026: Mayfair, Soho, St James\'s & More',
   description:
-    'Complete guide to central London nightclubs. Mayfair, Soho, St James\'s, and Piccadilly — every club worth knowing about in the West End with table bookings and guestlist.',
+    'Complete guide to central London nightclubs. Mayfair, Soho, St James\'s, and Piccadilly: every club worth knowing about in the West End with table bookings and guestlist.',
   keywords: [
     'clubs central London',
     'central London nightclubs',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     'Mayfair Soho nightlife',
   ],
   openGraph: {
-    title: 'Best Clubs in Central London 2026 — Mayfair, Soho, St James\'s & More',
+    title: 'Best Clubs in Central London 2026: Mayfair, Soho, St James\'s & More',
     description:
       'Complete guide to central London nightclubs across Mayfair, Soho, St James\'s, and Piccadilly.',
     url: 'https://londonclubstonight.com/areas/central-london',
@@ -58,7 +58,7 @@ export default function CentralLondonPage() {
     <>
       <SchemaMarkup
         schema={getArticleSchema(
-          'Best Clubs in Central London 2026 — Mayfair, Soho, St James\'s & More',
+          'Best Clubs in Central London 2026: Mayfair, Soho, St James\'s & More',
           'Complete guide to central London nightclubs across Mayfair, Soho, St James\'s, and Piccadilly.',
           '/areas/central-london',
           '2025-01-01'

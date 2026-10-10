@@ -9,9 +9,9 @@ import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema } fro
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: 'Last Minute Table Booking London — VIP Tables Available Tonight',
+  title: 'Last Minute Table Booking London: VIP Tables Available Tonight',
   description:
-    'Need a VIP table tonight? Same-day availability at London\'s top clubs. Message us on WhatsApp — we confirm in minutes. No deposit, no fees.',
+    'Need a VIP table tonight? Same-day availability at London\'s top clubs. Message us on WhatsApp. We confirm in minutes. No deposit, no fees.',
   keywords: [
     'last minute table booking London',
     'book a table tonight London',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     'book nightclub table London',
   ],
   openGraph: {
-    title: 'Last Minute Table Booking London — Book a VIP Table Tonight',
+    title: 'Last Minute Table Booking London: Book a VIP Table Tonight',
     description:
       'Same-day VIP table bookings at London clubs. Live availability, pricing from £1,000, and instant WhatsApp confirmation.',
     url: 'https://londonclubstonight.com/last-minute-table-booking-london',
@@ -46,27 +46,27 @@ const faqs = [
   {
     question: 'Can I book a VIP table at a London club tonight?',
     answer:
-      'Yes, same-day table bookings are possible at many London clubs. Venues like Cirque Le Soir, Dear Darling, The London Reign, and Maddox regularly accommodate last-minute table requests, especially on Thursdays and Fridays. Saturday availability is tighter but not impossible — we often have access to promoter-held tables even when the venue shows fully booked on their own system. Message us on WhatsApp for a real-time availability check across all venues.',
+      'Yes, same-day table bookings are possible at many London clubs. Venues like Cirque Le Soir, Dear Darling, The London Reign, and Maddox regularly accommodate last-minute table requests, especially on Thursdays and Fridays. Saturday availability is tighter but not impossible. We often have access to promoter-held tables even when the venue shows fully booked on their own system. Message us on WhatsApp for a real-time availability check across all venues.',
   },
   {
     question: 'How much does a table cost at London clubs?',
     answer:
-      'Table minimums at London clubs typically start from £1,000 and go up from there. This is a minimum spend on bottles and drinks, not an entry fee on top of your drinks. At venues like Maddox and Dear Darling, £1,000 is the standard starting point. Tape London starts from £1,500. Premium positions and peak Saturdays can push minimums to £2,000 or above. For a group of five, £1,000 works out to £200 per person — competitive with buying individual drinks at the bar over a full night, with vastly better service and guaranteed entry.',
+      'Table minimums at London clubs typically start from £1,000 and go up from there. This is a minimum spend on bottles and drinks, not an entry fee on top of your drinks. At venues like Maddox and Dear Darling, £1,000 is the standard starting point. Tape London starts from £1,500. Premium positions and peak Saturdays can push minimums to £2,000 or above. For a group of five, £1,000 works out to £200 per person: competitive with buying individual drinks at the bar over a full night, with vastly better service and guaranteed entry.',
   },
   {
     question: 'What is included in a table booking?',
     answer:
-      'A table booking includes a reserved private area for your group, guaranteed entry to the club (bypassing all queues and door assessment), a dedicated server for the evening, and your minimum spend worth of bottles, mixers, and drinks. Most venues also include security for your area, ice, garnishes, and standard mixers at no extra cost. The specific bottles available depend on the venue and your budget — we can advise on the best value options at each club when you book.',
+      'A table booking includes a reserved private area for your group, guaranteed entry to the club (bypassing all queues and door assessment), a dedicated server for the evening, and your minimum spend worth of bottles, mixers, and drinks. Most venues also include security for your area, ice, garnishes, and standard mixers at no extra cost. The specific bottles available depend on the venue and your budget. We can advise on the best value options at each club when you book.',
   },
   {
     question: 'How does last-minute booking work via WhatsApp?',
     answer:
-      'The process is straightforward: message us on WhatsApp with your preferred club (or ask us to recommend one), your date, group size, and any preferences. We check real-time availability directly with the venue reservations team and confirm your booking, usually within 15 to 30 minutes. You receive confirmation with all details — arrival time, dress code reminders, and your host contact at the venue. On the night, give your name at the door and you are taken straight to your table. No deposit is required for most bookings arranged through us.',
+      'The process is straightforward: message us on WhatsApp with your preferred club (or ask us to recommend one), your date, group size, and any preferences. We check real-time availability directly with the venue reservations team and confirm your booking, usually within 15 to 30 minutes. You receive confirmation with all details: arrival time, dress code reminders, and your host contact at the venue. On the night, give your name at the door and you are taken straight to your table. No deposit is required for most bookings arranged through us.',
   },
   {
     question: 'What happens if my first-choice club is fully booked?',
     answer:
-      'We always have alternatives. If your preferred venue is sold out, we will suggest comparable options based on what made you want that club in the first place — the music, the vibe, the location, or the price point. We work with every major club in London, so we can almost always find a table somewhere excellent on the same night. The advantage of booking through a promoter rather than directly is exactly this: we see availability across the entire market, not just one venue.',
+      'We always have alternatives. If your preferred venue is sold out, we will suggest comparable options based on what made you want that club in the first place: the music, the vibe, the location, or the price point. We work with every major club in London, so we can almost always find a table somewhere excellent on the same night. The advantage of booking through a promoter rather than directly is exactly this: we see availability across the entire market, not just one venue.',
   },
 ];
 
@@ -80,7 +80,7 @@ export default function LastMinuteTableBookingPage() {
   const now = new Date().toISOString();
 
   const articleSchema = getArticleSchema(
-    'Last Minute Table Booking London — Book a VIP Table Tonight',
+    'Last Minute Table Booking London: Book a VIP Table Tonight',
     'Same-day VIP table bookings at London clubs. Live availability, pricing, and instant confirmation.',
     '/last-minute-table-booking-london',
     '2025-01-15'
@@ -140,11 +140,11 @@ export default function LastMinuteTableBookingPage() {
           <div className="max-w-xl mb-12 md:mb-16">
             <span className="eyebrow">Pricing</span>
             <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
-              Table Minimums — <span className="serif-accent text-gradient">Quick Reference</span>
+              Table Minimums: <span className="serif-accent text-gradient">Quick Reference</span>
             </h2>
             <p className="text-frost-300 text-base">
               Minimum spends at London&apos;s top clubs. These are starting
-              prices — premium positions and peak nights may be higher. All
+              prices: premium positions and peak nights may be higher. All
               minimums are spend on bottles and drinks, not an additional fee.
             </p>
           </div>
@@ -195,7 +195,7 @@ export default function LastMinuteTableBookingPage() {
               </h2>
               <p className="text-frost-300 text-base">
                 These clubs are open tonight and known for accommodating
-                same-day table bookings. Availability is live — message
+                same-day table bookings. Availability is live. Message
                 us on WhatsApp for an instant check.
               </p>
             </div>
@@ -223,7 +223,7 @@ export default function LastMinuteTableBookingPage() {
             <p className="text-frost-300 text-base">
               Every London club we work with that regularly accommodates
               same-day table bookings. Whether it is for tonight, tomorrow,
-              or this weekend — these are the venues where last-minute
+              or this weekend. These are the venues where last-minute
               tables are most likely to be available.
             </p>
           </div>
@@ -251,8 +251,8 @@ export default function LastMinuteTableBookingPage() {
               The image most people have of VIP table booking involves weeks
               of planning, large deposits, and inflexible cancellation policies.
               That is not how it works when you book through a promoter. The
-              entire process — from your initial WhatsApp message to a
-              confirmed reservation — typically takes less than thirty
+              entire process, from your initial WhatsApp message to a
+              confirmed reservation, typically takes less than thirty
               minutes. We have booked tables for clients who messaged us at
               7pm and were sat in their booth by 11pm the same night. That
               is the advantage of having direct relationships with every
@@ -277,7 +277,7 @@ export default function LastMinuteTableBookingPage() {
               No deposit is required for most bookings arranged through us.
               The venue bills your minimum spend on the night in the form
               of bottles and drinks. You pay at the table, not in advance.
-              This means there is zero financial risk to enquiring — if
+              This means there is zero financial risk to enquiring: if
               the availability or pricing does not work for you, there is
               no obligation.
             </p>
@@ -286,13 +286,13 @@ export default function LastMinuteTableBookingPage() {
             </h3>
             <p>
               A &#163;1,000 minimum spend at a London club is not a
-              &#163;1,000 fee — it is &#163;1,000 worth of drinks. A
+              &#163;1,000 fee. It is &#163;1,000 worth of drinks. A
               standard bottle of Grey Goose vodka at a Mayfair club costs
               around &#163;400 to &#163;500. So a &#163;1,000 minimum
               typically gets you two bottles of premium spirit with
               mixers, or one premium bottle plus a bottle of champagne.
-              For a group of five, that is roughly &#163;200 per person
-              — less than many people spend buying rounds at the bar
+              For a group of five, that is roughly &#163;200 per person:
+              less than many people spend buying rounds at the bar
               over a full night out, but with guaranteed entry, a private
               area, a dedicated server, and the VIP experience.
             </p>
@@ -312,10 +312,10 @@ export default function LastMinuteTableBookingPage() {
               Thursday nights offer the widest same-day table availability
               across all venues. Only the most in-demand clubs sell out
               their Thursday tables in advance. Friday is the second-best
-              option — most venues have some availability until the
+              option: most venues have some availability until the
               afternoon of the same day. Saturday is where last-minute
-              bookings become genuinely challenging. The top clubs — Tape
-              London in particular — can sell out their Saturday tables
+              bookings become genuinely challenging. The top clubs, Tape
+              London in particular, can sell out their Saturday tables
               a week or more in advance. However, mid-tier venues often
               have Saturday availability until Friday evening, and even
               popular clubs sometimes have cancellation tables that open
@@ -334,19 +334,19 @@ export default function LastMinuteTableBookingPage() {
               <strong className="text-white">4pm to 8pm:</strong>{" "}Good options still available but popular venues on Saturdays may already be limited. Second and third choices become relevant. Flexibility on venue helps significantly.
             </p>
             <p>
-              <strong className="text-white">After 8pm:</strong>{" "}Workable but limited. Some venues will have released un-confirmed reservations, which creates late openings. This is where promoter relationships become critical — we know which tables have fallen through and can move quickly.
+              <strong className="text-white">After 8pm:</strong>{" "}Workable but limited. Some venues will have released un-confirmed reservations, which creates late openings. This is where promoter relationships become critical. We know which tables have fallen through and can move quickly.
             </p>
             <p>
-              <strong className="text-white">After 10pm:</strong>{" "}You are relying on cancellations and no-shows. Still possible — we have arranged tables at 11pm on Saturdays — but your choice of venue narrows considerably.
+              <strong className="text-white">After 10pm:</strong>{" "}You are relying on cancellations and no-shows. Still possible: we have arranged tables at 11pm on Saturdays, but your choice of venue narrows considerably.
             </p>
             <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               Why Some Clubs Are More Accommodating
             </h3>
             <p>
-              Venue capacity is the most obvious factor — a club with twelve tables does not have the same flexibility as a venue with thirty positions. But business model matters too. Some venues operate on a scarcity model where exclusivity is the brand. Others are more commercially driven and would rather fill a table at short notice than leave it empty.
+              Venue capacity is the most obvious factor: a club with twelve tables does not have the same flexibility as a venue with thirty positions. But business model matters too. Some venues operate on a scarcity model where exclusivity is the brand. Others are more commercially driven and would rather fill a table at short notice than leave it empty.
             </p>
             <p>
-              The cocktail-bar-to-club venues like Dear Darling tend to be the most flexible. Their format naturally accommodates walk-ins and last-minute guests because the evening starts as a bar experience before transitioning into a club. Music-focused venues like BEAT London also tend to be more welcoming of spontaneous bookings — they would rather have a full, energetic room than hold empty tables.
+              The cocktail-bar-to-club venues like Dear Darling tend to be the most flexible. Their format naturally accommodates walk-ins and last-minute guests because the evening starts as a bar experience before transitioning into a club. Music-focused venues like BEAT London also tend to be more welcoming of spontaneous bookings. They would rather have a full, energetic room than hold empty tables.
             </p>
             <p>
               Our promoter network gives us access to tables that are not
@@ -366,7 +366,7 @@ export default function LastMinuteTableBookingPage() {
               to a club and being told they are full leaves you starting
               from scratch. Second, we often have access to promoter-held
               tables that are not available through the venue&apos;s own
-              booking channels. Third, our service is free — we are
+              booking channels. Third, our service is free. We are
               paid by the clubs for bringing them quality guests, so
               you pay exactly the same minimum spend as you would booking
               directly. There is genuinely no downside. For the most
@@ -453,7 +453,7 @@ export default function LastMinuteTableBookingPage() {
               <ul className="space-y-2">
                 <li>
                   <Link href="/best-clubs-in-london" className="text-frost-300 hover:text-white transition-colors text-sm">
-                    Best clubs in London — ranked &rarr;
+                    Best clubs in London: ranked &rarr;
                   </Link>
                 </li>
                 <li>
@@ -463,7 +463,7 @@ export default function LastMinuteTableBookingPage() {
                 </li>
                 <li>
                   <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-frost-300 hover:text-white transition-colors text-sm">
-                    London Bottle Service — full pricing guide &rarr;
+                    London Bottle Service: full pricing guide &rarr;
                   </a>
                 </li>
                 <li>

@@ -5,7 +5,7 @@ import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'Guestlists & Table Bookings — The Complete Guide to London Clubs',
+  title: 'Guestlists & Table Bookings: The Complete Guide to London Clubs',
   description: 'The complete guide to guestlists, table bookings, dress codes, group composition, and age requirements at London nightclubs. Honest advice from promoters.',
   keywords: ['London club guestlist', 'London club table booking', 'London club dress code', 'London club entry tips', 'London nightclub guide'],
   alternates: {
@@ -16,11 +16,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'What is a guestlist at a London club?',
-    answer: 'A guestlist is a pre-approved list of names submitted to the door team before the night. Being on the guestlist means you are expected — you get priority consideration and usually free entry or a reduced queue. Contact a promoter to get your names added.',
+    answer: 'A guestlist is a pre-approved list of names submitted to the door team before the night. Being on the guestlist means you are expected. You get priority consideration and usually free entry or a reduced queue. Contact a promoter to get your names added.',
   },
   {
     question: 'How do I get on a club guestlist in London?',
-    answer: 'Contact a promoter — that is what we do. Message us on WhatsApp with the club you want, the date, and your group details (how many guys, how many girls). We submit your names to the venue. You arrive, give your name at the door, and you are on the list. There is no charge for guestlist.',
+    answer: 'Contact a promoter. That is what we do. Message us on WhatsApp with the club you want, the date, and your group details (how many guys, how many girls). We submit your names to the venue. You arrive, give your name at the door, and you are on the list. There is no charge for guestlist.',
   },
   {
     question: 'Do I need to book a table to get into a London club?',
@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     question: 'What is the dress code for London clubs?',
-    answer: 'The minimum standard at Mayfair clubs is smart: no trainers (some venues allow clean designer trainers), no sportswear, no shorts, no casual t-shirts. For men, smart shoes, fitted trousers or dark jeans, and a collared shirt or smart top. For women, heels and a dress, jumpsuit, or stylish going-out outfit. At Ministry of Sound, the code is much more relaxed — clean, comfortable clubbing wear is fine.',
+    answer: 'The minimum standard at Mayfair clubs is smart: no trainers (some venues allow clean designer trainers), no sportswear, no shorts, no casual t-shirts. For men, smart shoes, fitted trousers or dark jeans, and a collared shirt or smart top. For women, heels and a dress, jumpsuit, or stylish going-out outfit. At Ministry of Sound, the code is much more relaxed: clean, comfortable clubbing wear is fine.',
   },
   {
     question: 'Can a group of guys get into London clubs?',
@@ -36,19 +36,19 @@ const faqs = [
   },
   {
     question: 'What time should I arrive at London clubs?',
-    answer: 'Most clubs open between 10pm and 11pm. For guestlist entry, arriving between 11pm and midnight gives you the best experience — you beat the main rush. After 1am, some venues reach capacity. For table bookings, arrive whenever suits you.',
+    answer: 'Most clubs open between 10pm and 11pm. For guestlist entry, arriving between 11pm and midnight gives you the best experience. You beat the main rush. After 1am, some venues reach capacity. For table bookings, arrive whenever suits you.',
   },
   {
     question: 'How old do you have to be to get into London clubs?',
-    answer: 'The legal minimum is 18, and all clubs will ID you if you look under 25. Most Mayfair clubs have a practical minimum of 21 for men and 19-20 for women, though this is not officially stated. Bring photo ID — passport or driving licence. Student IDs are not accepted.',
+    answer: 'The legal minimum is 18, and all clubs will ID you if you look under 25. Most Mayfair clubs have a practical minimum of 21 for men and 19-20 for women, though this is not officially stated. Bring photo ID: passport or driving licence. Student IDs are not accepted.',
   },
   {
     question: 'Is it worth paying for a table at a London club?',
-    answer: 'If guaranteed entry matters to you, yes. A table also gives you a dedicated space, table service, and a guaranteed good time without worrying about capacity or queues. For groups of 4-6 people, splitting a £1,000 minimum works out at around £170-250 per person for bottles of premium alcohol — comparable to buying drinks at the bar all night.',
+    answer: 'If guaranteed entry matters to you, yes. A table also gives you a dedicated space, table service, and a guaranteed good time without worrying about capacity or queues. For groups of 4-6 people, splitting a £1,000 minimum works out at around £170-250 per person for bottles of premium alcohol: comparable to buying drinks at the bar all night.',
   },
   {
     question: 'Can I get into clubs without spending money?',
-    answer: 'Yes — through guestlist. Guestlist is free and available at most venues. You will still need to buy your own drinks once inside, but there is no entry fee or minimum spend.',
+    answer: 'Yes: through guestlist. Guestlist is free and available at most venues. You will still need to buy your own drinks once inside, but there is no entry fee or minimum spend.',
   },
 ];
 
@@ -58,7 +58,7 @@ export default function HowToGetInPage() {
       <SchemaMarkup
         schema={[
           getArticleSchema(
-            'Guestlists & Table Bookings — The Complete Guide to London Clubs',
+            'Guestlists & Table Bookings: The Complete Guide to London Clubs',
             'The complete guide to guestlists, table bookings, dress codes, and everything you need to plan your night at London clubs.',
             '/guides/how-to-get-into-london-clubs',
             '2025-01-01'
@@ -95,7 +95,7 @@ export default function HowToGetInPage() {
               Guestlists &amp; <span className="serif-accent text-gradient">Table Bookings</span>
             </h1>
             <p className="animate-fade-up anim-delay-2 text-frost-100/85 max-w-2xl">
-              The practical guide to planning your night at London clubs. We are promoters — this is what we do every night.
+              The practical guide to planning your night at London clubs. We are promoters. This is what we do every night.
             </p>
           </div>
         </section>
@@ -124,7 +124,7 @@ export default function HowToGetInPage() {
               <div>
                 <h3 className="font-display font-bold tracking-tight text-white mb-2">What guestlist gets you</h3>
                 <ul className="list-disc pl-5 space-y-1">
-                  <li>Your name is expected at the door — the team knows you are coming</li>
+                  <li>Your name is expected at the door: the team knows you are coming</li>
                   <li>Priority over guests who are not on any list</li>
                   <li>Usually free entry or reduced queue</li>
                   <li>At most venues, guestlist is a straightforward way to arrange your night</li>
@@ -134,7 +134,7 @@ export default function HowToGetInPage() {
                 <h3 className="font-display font-bold tracking-tight text-white mb-2">What guestlist does not get you</h3>
                 <ul className="list-disc pl-5 space-y-1">
                   <li>A reserved table or seating area</li>
-                  <li>A pass on dress code — you still need to look the part</li>
+                  <li>A pass on dress code. You still need to look the part</li>
                   <li>Entry if the venue is at capacity</li>
                 </ul>
               </div>
@@ -168,7 +168,7 @@ export default function HowToGetInPage() {
               <div>
                 <h3 className="font-display font-bold tracking-tight text-white mb-2">Typical costs</h3>
                 <p>
-                  Most London clubs have a minimum spend starting at £1,000. Tape London starts at £1,500. These minimums apply to drinks — you are not paying £1,000 to sit at a table, you are spending £1,000 on bottles of spirits, champagne, or whatever you choose. For a group of 5, that works out at £200 per person for premium drinks and guaranteed entry.
+                  Most London clubs have a minimum spend starting at £1,000. Tape London starts at £1,500. These minimums apply to drinks. You are not paying £1,000 to sit at a table, you are spending £1,000 on bottles of spirits, champagne, or whatever you choose. For a group of 5, that works out at £200 per person for premium drinks and guaranteed entry.
                 </p>
               </div>
             </div>
@@ -187,11 +187,11 @@ export default function HowToGetInPage() {
             <p className="text-frost-300 max-w-2xl mb-12">What to wear for a night out at London&apos;s clubs.</p>
             <div className="glass-card p-7 space-y-4 text-frost-300 text-sm leading-relaxed">
               <p>
-                Every club says &ldquo;smart&rdquo; — here is what that actually means in practice.
+                Every club says &ldquo;smart&rdquo;: here is what that actually means in practice.
               </p>
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>
-                  <h3 className="font-display font-bold tracking-tight text-white mb-2">Men — what works</h3>
+                  <h3 className="font-display font-bold tracking-tight text-white mb-2">Men: what works</h3>
                   <ul className="list-disc pl-5 space-y-1">
                     <li>Smart shoes (leather or suede, not trainers)</li>
                     <li>Well-fitted trousers or dark jeans (no ripped denim)</li>
@@ -201,20 +201,20 @@ export default function HowToGetInPage() {
                   </ul>
                 </div>
                 <div>
-                  <h3 className="font-display font-bold tracking-tight text-white mb-2">Women — what works</h3>
+                  <h3 className="font-display font-bold tracking-tight text-white mb-2">Women: what works</h3>
                   <ul className="list-disc pl-5 space-y-1">
                     <li>Heels (flats rarely cause issues but heels are safer)</li>
                     <li>Dress, jumpsuit, or smart separates</li>
                     <li>Stylish going-out outfit that looks intentional</li>
                     <li>Statement accessories or bold styling choices</li>
-                    <li>Confidence — dress like you belong</li>
+                    <li>Confidence: dress like you belong</li>
                   </ul>
                 </div>
               </div>
               <div>
                 <h3 className="font-display font-bold tracking-tight text-white mb-2">What to avoid</h3>
                 <ul className="list-disc pl-5 space-y-1">
-                  <li>Trainers at strict venues (some allow clean designer pairs — ask us)</li>
+                  <li>Trainers at strict venues (some allow clean designer pairs. Ask us)</li>
                   <li>Sportswear, tracksuits, football shirts</li>
                   <li>Shorts (any kind, even smart ones)</li>
                   <li>Overly casual t-shirts, hoodies</li>
@@ -259,10 +259,10 @@ export default function HowToGetInPage() {
               <div>
                 <h3 className="font-display font-bold tracking-tight text-white mb-2">Options for all-male groups</h3>
                 <ul className="list-disc pl-5 space-y-1">
-                  <li>Book a table — group composition does not matter with a booking</li>
-                  <li>Go to Ministry of Sound — entry is ticket-based</li>
+                  <li>Book a table: group composition does not matter with a booking</li>
+                  <li>Go to Ministry of Sound: entry is ticket-based</li>
                   <li>Try midweek nights where policies are more relaxed</li>
-                  <li>Message us — we can advise on the best venues for your group</li>
+                  <li>Message us. We can advise on the best venues for your group</li>
                 </ul>
               </div>
             </div>
@@ -279,12 +279,12 @@ export default function HowToGetInPage() {
               <div>
                 <h3 className="font-display font-bold tracking-tight text-white mb-2">What you need to know</h3>
                 <ul className="list-disc pl-5 space-y-1">
-                  <li>Bring photo ID — passport or UK driving licence</li>
+                  <li>Bring photo ID: passport or UK driving licence</li>
                   <li>Student IDs and provisional licences are not always accepted at Mayfair venues</li>
                   <li>If you look under 25, you will be asked for ID at every venue</li>
                   <li>Many Mayfair clubs have an unofficial preference for guests aged 21+ (especially for men)</li>
                   <li>Ministry of Sound accepts anyone 18+ with valid photo ID</li>
-                  <li>International visitors should bring their passport — it is the most universally accepted ID</li>
+                  <li>International visitors should bring their passport. It is the most universally accepted ID</li>
                 </ul>
               </div>
             </div>

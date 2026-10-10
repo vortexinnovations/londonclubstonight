@@ -6,9 +6,9 @@ import ClubCard from '@/components/ClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 
 export const metadata: Metadata = {
-  title: 'London Clubs Tonight — Find the Best Clubs Open Tonight in London',
+  title: 'London Clubs Tonight | Find the Best Clubs Open Tonight in London',
   description:
-    'Find out which London clubs are open tonight. Expert recommendations for Mayfair, Soho, and beyond — VIP tables, guestlist spots, and insider tips from promoters who know every door.',
+    'Find out which London clubs are open tonight. Expert recommendations for Mayfair, Soho, and beyond: VIP tables, guestlist spots, and insider tips from promoters who know every door.',
   keywords: [
     'London clubs tonight',
     'clubs open tonight London',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     'what clubs are open tonight London',
   ],
   openGraph: {
-    title: 'London Clubs Tonight — Find the Best Clubs Open Tonight in London',
+    title: 'London Clubs Tonight | Find the Best Clubs Open Tonight in London',
     description:
       'Expert-curated guide to London clubs open tonight. VIP tables, guestlist access, and genuine insider knowledge from promoters on the ground.',
     url: 'https://londonclubstonight.com',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'London Clubs Tonight — Best Clubs Open Tonight',
+    title: 'London Clubs Tonight | Best Clubs Open Tonight',
     description:
       'Expert-curated guide to London clubs open tonight. VIP tables, guestlist access, and insider knowledge.',
   },
@@ -100,7 +100,7 @@ const guides = [
     title: 'London Clubs by Music Genre',
     href: '/guides/london-clubs-by-music-genre',
     description:
-      'Hip-hop, house, techno, RnB, or open format — which clubs play what, and which nights to target.',
+      'Hip-hop, house, techno, RnB, or open format: which clubs play what, and which nights to target.',
   },
   {
     title: 'Book a Table or Guestlist',
@@ -212,7 +212,7 @@ export default function HomePage() {
               </h2>
               <p className="text-frost-300 text-base">
                 These are the clubs we&apos;d actually send our friends to tonight.
-                Every recommendation is based on what&apos;s genuinely good — the
+                Every recommendation is based on what&apos;s genuinely good: the
                 music, the crowd, and whether the night is worth the entry price.
               </p>
             </div>
@@ -266,7 +266,7 @@ export default function HomePage() {
               { href: '/best-clubs-this-weekend-london', title: 'This Weekend', desc: 'Friday & Saturday picks' },
               { href: '/guestlist-tonight-london', title: 'Guestlist Tonight', desc: 'Free same-night entry', live: true },
               { href: '/last-minute-table-booking-london', title: 'Last Minute Tables', desc: 'Book a VIP table now' },
-              { href: '/contact', title: 'Talk to a Promoter', desc: 'WhatsApp us — replies in minutes' },
+              { href: '/contact', title: 'Talk to a Promoter', desc: 'WhatsApp us: replies in minutes' },
             ].map((item) => (
               <Link
                 key={item.href + item.title}
@@ -450,7 +450,7 @@ export default function HomePage() {
               London&apos;s club scene moves fast. What&apos;s packed on a
               Saturday might be dead on a Thursday, and the club everyone was
               talking about six months ago may have already lost its edge. That
-              reality is exactly why this guide exists — we track
+              reality is exactly why this guide exists. We track
               what&apos;s actually good right now, not what used to be.
             </p>
             <p>
@@ -458,8 +458,8 @@ export default function HomePage() {
               or 4am, with peak hours between midnight and 2am. Mayfair clubs
               tend to be the most exclusive and expensive, with table minimums
               starting from around &#163;1,000. Soho offers more variety in
-              terms of music and price points. South London — particularly
-              around Ministry of Sound — caters to the serious club
+              terms of music and price points. South London, particularly
+              around Ministry of Sound, caters to the serious club
               crowd who care more about the DJ than the dress code.
             </p>
             <p>

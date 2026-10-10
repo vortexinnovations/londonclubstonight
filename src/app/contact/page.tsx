@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Book a Table or Join Guestlist',
   description: 'Book a VIP table or get on the guestlist at London\'s best nightclubs. Direct WhatsApp booking with London\'s top club promoters. Instant response, no forms.',
   openGraph: {
-    title: 'Book a Table or Join Guestlist — London Clubs Tonight',
+    title: 'Book a Table or Join Guestlist | London Clubs Tonight',
     description: 'Book a VIP table or get on the guestlist at London\'s best nightclubs. Direct WhatsApp booking.',
     url: 'https://londonclubstonight.com/contact',
   },
@@ -40,7 +40,7 @@ export default function ContactPage() {
         </h1>
         <p className="animate-fade-up anim-delay-2 text-lg text-frost-100/85 max-w-2xl">
           Skip the forms. We use WhatsApp because it&apos;s faster, more personal, and means you get a real reply
-          from a real promoter — not an automated confirmation email. Tell us what you&apos;re looking for
+          from a real promoter, not an automated confirmation email. Tell us what you&apos;re looking for
           and we&apos;ll sort the rest.
         </p>
       </div>
@@ -64,7 +64,7 @@ export default function ContactPage() {
           <ul className="text-frost-300 text-sm space-y-2 mb-8">
             <li className="flex items-start gap-2">
               <span className="text-wa-500 mt-0.5">✓</span>
-              Guaranteed entry — no queue, no rejection
+              Guaranteed entry: no queue, no rejection
             </li>
             <li className="flex items-start gap-2">
               <span className="text-wa-500 mt-0.5">✓</span>
@@ -72,7 +72,7 @@ export default function ContactPage() {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-wa-500 mt-0.5">✓</span>
-              We handle the booking — you just show up
+              We handle the booking. You just show up
             </li>
             <li className="flex items-start gap-2">
               <span className="text-wa-500 mt-0.5">✓</span>
@@ -100,7 +100,7 @@ export default function ContactPage() {
           </div>
           <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mb-3">Join the Guestlist</h2>
           <p className="text-frost-300 mb-6 leading-relaxed">
-            Guestlist gets you priority consideration at the door — and at many clubs, free or
+            Guestlist gets you priority consideration at the door, and at many clubs, free or
             reduced entry for women. We&apos;ll put you on the list and give you all the details
             you need for the night.
           </p>
@@ -119,7 +119,7 @@ export default function ContactPage() {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-neon-300 mt-0.5">✓</span>
-              No commitment — just turn up
+              No commitment. Just turn up
             </li>
           </ul>
           <a
@@ -156,7 +156,7 @@ export default function ContactPage() {
           <div className="glass-card p-6">
             <h3 className="font-display font-bold tracking-tight text-white mb-2">Can I book for tonight?</h3>
             <p className="text-frost-300 text-sm leading-relaxed">
-              Yes — same-night bookings are our speciality. The sooner you message, the better the table
+              Yes: same-night bookings are our speciality. The sooner you message, the better the table
               options, but we regularly arrange bookings with just a few hours&apos; notice.
             </p>
           </div>
@@ -164,7 +164,7 @@ export default function ContactPage() {
             <h3 className="font-display font-bold tracking-tight text-white mb-2">Not sure which club to choose?</h3>
             <p className="text-frost-300 text-sm leading-relaxed">
               Tell us about your group, what music you like, and what kind of night you&apos;re after.
-              We&apos;ll recommend the right club — it&apos;s literally what we do every day. Check out our{' '}
+              We&apos;ll recommend the right club. It&apos;s literally what we do every day. Check out our{' '}
               <Link href="/best-clubs-in-london" className="text-neon-300 hover:text-white transition-colors">
                 best clubs guide
               </Link>{' '}
