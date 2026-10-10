@@ -3252,7 +3252,7 @@ export default async function BlogPostPage({
       <SchemaMarkup schema={articleSchema} />
       {post.faqs && <SchemaMarkup schema={getFAQSchema(post.faqs)} />}
 
-      <article className="relative pt-24 pb-16 px-4 sm:px-6">
+      <article className="relative overflow-x-clip pt-24 pb-16 px-4 sm:px-6">
         <div className="glow-orb w-[480px] h-[380px] bg-neon-500/25 -top-32 -right-24" aria-hidden />
         <div className="relative max-w-3xl mx-auto">
           {/* Breadcrumbs */}

@@ -33,11 +33,11 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-[72px]">
-          <Link href="/" className="group flex items-baseline gap-1.5" aria-label="London Clubs Tonight — home">
-            <span className="font-display text-[1.35rem] font-extrabold tracking-tight text-white leading-none">
+          <Link href="/" className="group flex min-w-0 items-baseline gap-1.5" aria-label="London Clubs Tonight — home">
+            <span className="font-display text-[length:clamp(0.75rem,4.2vw,1.35rem)] font-extrabold tracking-tight text-white leading-none">
               LONDON&nbsp;CLUBS
             </span>
-            <span className="font-serif italic text-[1.45rem] leading-none text-gradient">
+            <span className="font-serif italic text-[length:clamp(0.8rem,4.5vw,1.45rem)] leading-none text-gradient">
               Tonight
             </span>
             <span className="live-dot ml-1.5 self-center" aria-hidden />
@@ -62,7 +62,7 @@ export default function Header() {
           {/* Mobile toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden text-white p-2 rounded-lg hover:bg-white/5 transition-colors"
+            className="lg:hidden shrink-0 text-white p-2 rounded-lg hover:bg-white/5 transition-colors"
             aria-label="Toggle menu"
             aria-expanded={mobileOpen}
           >

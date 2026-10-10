@@ -21,6 +21,7 @@ const LAST_UPDATED = '23 August 2026';
 
 export default function PrivacyPage() {
   return (
+    <div className="overflow-x-clip">
     <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div
         className="glow-orb w-[480px] h-[380px] bg-neon-500/25 -top-32 -right-24"
@@ -187,6 +188,7 @@ export default function PrivacyPage() {
           </p>
         </section>
       </div>
+    </div>
     </div>
   );
 }

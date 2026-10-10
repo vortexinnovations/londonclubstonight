@@ -47,6 +47,7 @@ export default function AboutTheEditorPage() {
         }}
       />
 
+      <div className="overflow-x-clip">
       <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="glow-orb w-[480px] h-[380px] bg-neon-500/25 -top-32 -right-24" aria-hidden />
         <p className="eyebrow mb-3">About the Editor</p>
@@ -164,6 +165,7 @@ export default function AboutTheEditorPage() {
             Book a table or join a guestlist
           </Link>
         </div>
+      </div>
       </div>
     </>
   );
