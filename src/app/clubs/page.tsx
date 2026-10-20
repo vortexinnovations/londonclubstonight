@@ -24,6 +24,9 @@ export const metadata: Metadata = {
     url: 'https://londonclubstonight.com/clubs',
     type: 'website',
   },
+  alternates: {
+    canonical: 'https://londonclubstonight.com/clubs',
+  },
 };
 
 export default function ClubsPage() {

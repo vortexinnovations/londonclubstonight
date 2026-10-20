@@ -1,18 +1,22 @@
-import type { Metadata } from 'next';
+import type { Metadata, ResolvingMetadata } from 'next';
 import Image from 'next/image';
 import { clubs } from '@/lib/clubs';
 import Link from 'next/link';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
+import { siteOpenGraph } from '@/lib/metadata';
 
-export const metadata: Metadata = {
-  title: 'London\'s Most Exclusive Clubs: The Insider\'s Guide',
-  description: 'Discover London\'s most exclusive nightlife experiences. Insider guide to the city\'s most premium clubs, what makes each one special, and how to arrange your night.',
-  keywords: ['most exclusive clubs London', 'best clubs London', 'premium London nightlife', 'London VIP clubs', 'exclusive London clubs'],
-  alternates: {
-    canonical: 'https://londonclubstonight.com/guides/hardest-clubs-to-get-into',
-  },
-};
+export async function generateMetadata(_props: unknown, parent: ResolvingMetadata): Promise<Metadata> {
+  return {
+    title: 'London\'s Most Exclusive Clubs: The Insider\'s Guide',
+    description: 'Discover London\'s most exclusive nightlife experiences. Insider guide to the city\'s most premium clubs, what makes each one special, and how to arrange your night.',
+    keywords: ['most exclusive clubs London', 'best clubs London', 'premium London nightlife', 'London VIP clubs', 'exclusive London clubs'],
+    alternates: {
+      canonical: 'https://londonclubstonight.com/guides/hardest-clubs-to-get-into',
+    },
+    openGraph: await siteOpenGraph(parent, 'https://londonclubstonight.com/guides/hardest-clubs-to-get-into'),
+  };
+}
 
 const faqs = [
   {

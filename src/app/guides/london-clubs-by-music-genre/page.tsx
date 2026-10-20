@@ -1,18 +1,22 @@
-import type { Metadata } from 'next';
+import type { Metadata, ResolvingMetadata } from 'next';
 import Image from 'next/image';
 import { clubs } from '@/lib/clubs';
 import Link from 'next/link';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
+import { siteOpenGraph } from '@/lib/metadata';
 
-export const metadata: Metadata = {
-  title: 'London Clubs by Music Genre: Hip-Hop, House, RnB & More',
-  description: 'Find the right London club for your music taste. Hip-hop, house, RnB, techno, and open format: every venue categorised by what they actually play.',
-  keywords: ['hip hop clubs London', 'house music clubs London', 'RnB clubs London', 'open format clubs London', 'techno clubs London'],
-  alternates: {
-    canonical: 'https://londonclubstonight.com/guides/london-clubs-by-music-genre',
-  },
-};
+export async function generateMetadata(_props: unknown, parent: ResolvingMetadata): Promise<Metadata> {
+  return {
+    title: 'London Clubs by Music Genre: Hip-Hop, House, RnB & More',
+    description: 'Find the right London club for your music taste. Hip-hop, house, RnB, techno, and open format: every venue categorised by what they actually play.',
+    keywords: ['hip hop clubs London', 'house music clubs London', 'RnB clubs London', 'open format clubs London', 'techno clubs London'],
+    alternates: {
+      canonical: 'https://londonclubstonight.com/guides/london-clubs-by-music-genre',
+    },
+    openGraph: await siteOpenGraph(parent, 'https://londonclubstonight.com/guides/london-clubs-by-music-genre'),
+  };
+}
 
 const genreSections = [
   {

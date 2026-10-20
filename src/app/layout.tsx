@@ -25,6 +25,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getLocalBusinessSchema, getWebSiteSchema } from '@/components/SchemaMarkup';
+import { SITE_OPEN_GRAPH } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://londonclubstonight.com'),
@@ -34,14 +35,10 @@ export const metadata: Metadata = {
   },
   description: 'The definitive guide to London\'s best nightclubs. Find out what\'s open tonight, book VIP tables, and get on the guestlist at London\'s top clubs. Insider knowledge from promoters who know the scene.',
   keywords: ['London clubs tonight', 'clubs open tonight London', 'nightclubs London', 'best clubs in London', 'London nightlife', 'going out London tonight'],
-  openGraph: {
-    type: 'website',
-    locale: 'en_GB',
-    url: 'https://londonclubstonight.com',
-    siteName: 'London Clubs Tonight',
-    title: 'London Clubs Tonight | Where to Go Out in London Tonight',
-    description: 'The definitive guide to London\'s best nightclubs. Find out what\'s open tonight, book VIP tables, and get on the guestlist.',
-  },
+  // No og:url here, for the same reason as the canonical below: each page sets
+  // `openGraph.url` to its own URL (pages without Open Graph fields of their
+  // own use siteOpenGraph() from lib/metadata).
+  openGraph: SITE_OPEN_GRAPH,
   twitter: {
     card: 'summary_large_image',
     title: 'London Clubs Tonight',
@@ -58,9 +55,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  alternates: {
-    canonical: 'https://londonclubstonight.com',
-  },
+  // No canonical here: a layout's canonical is inherited by every page that
+  // does not set its own, which pointed /clubs at the home page. Each page sets
+  // `alternates.canonical` to its own URL (the home page in page.tsx).
 };
 
 export default function RootLayout({

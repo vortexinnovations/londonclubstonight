@@ -1,17 +1,21 @@
-import type { Metadata } from 'next';
+import type { Metadata, ResolvingMetadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
+import { siteOpenGraph } from '@/lib/metadata';
 
-export const metadata: Metadata = {
-  title: 'Guestlists & Table Bookings: The Complete Guide to London Clubs',
-  description: 'The complete guide to guestlists, table bookings, dress codes, group composition, and age requirements at London nightclubs. Honest advice from promoters.',
-  keywords: ['London club guestlist', 'London club table booking', 'London club dress code', 'London club entry tips', 'London nightclub guide'],
-  alternates: {
-    canonical: 'https://londonclubstonight.com/guides/how-to-get-into-london-clubs',
-  },
-};
+export async function generateMetadata(_props: unknown, parent: ResolvingMetadata): Promise<Metadata> {
+  return {
+    title: 'Guestlists & Table Bookings: The Complete Guide to London Clubs',
+    description: 'The complete guide to guestlists, table bookings, dress codes, group composition, and age requirements at London nightclubs. Honest advice from promoters.',
+    keywords: ['London club guestlist', 'London club table booking', 'London club dress code', 'London club entry tips', 'London nightclub guide'],
+    alternates: {
+      canonical: 'https://londonclubstonight.com/guides/how-to-get-into-london-clubs',
+    },
+    openGraph: await siteOpenGraph(parent, 'https://londonclubstonight.com/guides/how-to-get-into-london-clubs'),
+  };
+}
 
 const faqs = [
   {

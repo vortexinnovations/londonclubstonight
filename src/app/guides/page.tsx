@@ -1,17 +1,21 @@
-import type { Metadata } from 'next';
+import type { Metadata, ResolvingMetadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
+import { siteOpenGraph } from '@/lib/metadata';
 
-export const metadata: Metadata = {
-  title: 'London Nightclub Guides: Everything You Need to Know',
-  description: 'Insider guides to London nightlife. Late-night venues, music genres, dress codes, guestlists, table bookings, and honest advice from promoters who know the scene.',
-  keywords: ['London nightclub guides', 'London club tips', 'London nightlife guide', 'London club guestlist'],
-  alternates: {
-    canonical: 'https://londonclubstonight.com/guides',
-  },
-};
+export async function generateMetadata(_props: unknown, parent: ResolvingMetadata): Promise<Metadata> {
+  return {
+    title: 'London Nightclub Guides: Everything You Need to Know',
+    description: 'Insider guides to London nightlife. Late-night venues, music genres, dress codes, guestlists, table bookings, and honest advice from promoters who know the scene.',
+    keywords: ['London nightclub guides', 'London club tips', 'London nightlife guide', 'London club guestlist'],
+    alternates: {
+      canonical: 'https://londonclubstonight.com/guides',
+    },
+    openGraph: await siteOpenGraph(parent, 'https://londonclubstonight.com/guides'),
+  };
+}
 
 const guides = [
   {
