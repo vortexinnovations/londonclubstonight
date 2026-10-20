@@ -15,9 +15,9 @@ import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getI
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: fitTitle(`Clubs Open Tonight in London: Live Updates [${new Date().toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}]`),
+  title: fitTitle(`Clubs Open Tonight in London [${new Date().toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}]`),
   description:
-    'Which London clubs are open RIGHT NOW? Live guestlist availability, same-night table bookings, and what\'s happening tonight. Updated every hour.',
+    'Which London clubs are open tonight? Every venue running a night today on its regular opening nights, with same-night guestlist and tables on WhatsApp.',
   keywords: [
     'clubs open tonight London',
     'London clubs tonight',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Clubs Open Tonight in London: What\'s Open & How to Get In',
     description:
-      'Live guide to London clubs open tonight. Guestlist availability, last-minute tables, and insider tips from promoters who work the doors.',
+      'Guide to London clubs open tonight. Guestlist availability, last-minute tables, and insider tips from promoters who work the doors.',
     url: 'https://londonclubstonight.com/clubs-tonight-london',
     type: 'article',
     locale: 'en_GB',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Clubs Open Tonight in London',
     description:
-      'Live guide to London clubs open tonight. Guestlist availability, last-minute tables, and insider tips.',
+      'Guide to London clubs open tonight. Guestlist availability, last-minute tables, and insider tips.',
   },
   alternates: {
     canonical: 'https://londonclubstonight.com/clubs-tonight-london',
@@ -87,7 +87,7 @@ export default function ClubsTonightLondonPage() {
 
   const articleSchema = getArticleSchema(
     'Clubs Open Tonight in London: What\'s Open & How to Get In',
-    'Live guide to London clubs open tonight with guestlist availability, last-minute tables, and insider tips.',
+    'Guide to London clubs open tonight with guestlist availability, last-minute tables, and insider tips.',
     '/clubs-tonight-london',
     '2025-01-15'
   );
@@ -126,9 +126,9 @@ export default function ClubsTonightLondonPage() {
             Clubs Open <span className="serif-accent text-gradient">Tonight</span>{" "}in London
           </h1>
           <p className="animate-fade-up anim-delay-2 text-lg md:text-xl text-frost-100/85 max-w-2xl mx-auto leading-relaxed mb-4">
-            Every club open tonight, which ones have guestlist spots left,
-            and where you can still get a table. Updated in real time by
-            promoters who work these doors every night.
+            Every club open tonight on its regular opening nights, which ones
+            take guestlist, and where same-night tables are easiest. Message
+            our team on WhatsApp for tonight&apos;s availability.
           </p>
           <time
             dateTime={now}
@@ -148,13 +148,13 @@ export default function ClubsTonightLondonPage() {
       <section className="section-glow py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
           <div className="max-w-xl mb-12 md:mb-16">
-            <span className="eyebrow">Live now</span>
+            <span className="eyebrow">Open tonight</span>
             <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
               Tonight&apos;s Open <span className="serif-accent text-gradient">Clubs</span>
             </h2>
             <p className="text-frost-300 text-base">
               {tonightClubs.length > 0
-                ? `${tonightClubs.length} clubs are open tonight. Here is every venue running a night this ${dayName}, with real-time availability from our team.`
+                ? `${tonightClubs.length} clubs are open tonight. Here is every venue running a night this ${dayName}; message our team for tonight's availability.`
                 : `Most London clubs are closed tonight. Check back on Thursday, Friday, or Saturday for the biggest selection of open venues.`}
             </p>
           </div>

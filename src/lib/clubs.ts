@@ -180,7 +180,7 @@ What makes Cirque Le Soir special is the commitment to spectacle. Every night fe
     shortName: 'Reign',
     status: 'open',
     tagline: 'Piccadilly\'s theatrical showclub where dinner meets performance meets late-night revelry',
-    description: 'Extravagant showclub on Piccadilly in St James\'s. Aerial acts, performances, and a full dining experience. Tables from £1,000.',
+    description: 'Extravagant showclub on Piccadilly. Aerial acts, performances, and a full dining experience. Tables from £1,000.',
     longDescription: `The London Reign sits on Piccadilly and brings something genuinely different to London's nightlife. This is a showclub in the truest sense: a venue where world-class entertainment, fine dining, and late-night clubbing converge into a single spectacular evening.
 
 The experience typically starts with dinner. The restaurant serves a polished menu while performers work the room: aerial artists spinning above your table, live vocalists, dancers, and acts that blur the line between nightclub and West End show. As the evening progresses, the dining tables transition and the space transforms into a full nightclub environment with a high-energy DJ taking over.
@@ -190,9 +190,9 @@ The venue itself is grand. High ceilings that accommodate the aerial rigging, op
 Entry is managed primarily through table bookings and guestlist. Walk-ins are possible but not reliable, particularly on weekends. The door policy is smart and selective. Tables start from £1,000 and the dinner-plus-club packages offer the best overall experience.
 
 Reign appeals to a broad crowd, from couples celebrating special occasions to corporate groups entertaining clients to birthday parties that want something more memorable than a standard club night. The music shifts from sophisticated dinner accompaniment to mainstream party tracks as the night evolves.`,
-    address: '12 Piccadilly, London W1J 0DD',
-    area: 'St James\'s',
-    areas: ['St James\'s', 'Central London'],
+    address: '215-217 Piccadilly, London W1J 9HN',
+    area: 'Piccadilly',
+    areas: ['Piccadilly', 'Central London'],
     musicGenres: ['Open Format', 'Pop', 'RnB'],
     openingNights: 'Tuesday, Thursday, Friday, Saturday',
     closingTime: '3:00am',
@@ -380,8 +380,8 @@ Tables start from £1,000 for the club portion of the evening. Dinner reservatio
     name: 'Scotch of St James',
     shortName: 'Scotch',
     status: 'open',
-    tagline: 'The historic Mayfair club where Jimi Hendrix played and London\'s elite still parties',
-    description: 'Exclusive historic club in Mayfair with a legendary past dating back to the 1960s. Elegant parties in an intimate setting. Tables from £1,000.',
+    tagline: 'The historic St James\'s club where Jimi Hendrix played and London\'s elite still parties',
+    description: 'Exclusive historic club in St James\'s with a legendary past dating back to the 1960s. Elegant parties in an intimate setting. Tables from £1,000.',
     longDescription: `Scotch of St James carries more history than any other nightclub in London. This is the venue where Jimi Hendrix played impromptu sets in the 1960s, where The Beatles hung out, and where London's cultural elite have gathered for over half a century. That history isn't just a marketing angle. You feel it the moment you walk through the door.
 
 The venue has been updated over the decades but retains an atmosphere that connects to its heritage. It's intimate, darkly elegant, and has the kind of character that modern clubs struggle to manufacture. The interiors blend the venue's historic bones with contemporary luxury: leather booths, warm lighting, and a layout that creates distinct areas within a compact space.
@@ -392,8 +392,8 @@ The crowd at Scotch tends to be slightly older and more discerning than at some 
 
 Tables start from £1,000 and the intimate scale means every table feels premium. Guestlist is available but the space fills quickly. The door policy is selective: presentation and booking status matter.`,
     address: 'Mason\'s Yard, London SW1Y 6BU',
-    area: 'Mayfair',
-    areas: ['Mayfair', 'St James\'s', 'Central London'],
+    area: 'St James\'s',
+    areas: ['St James\'s', 'Central London'],
     musicGenres: ['Mixed', 'Soul', 'Funk', 'Hip-Hop'],
     openingNights: 'Thursday, Friday, Saturday',
     closingTime: '3:00am',
@@ -404,12 +404,12 @@ Tables start from £1,000 and the intimate scale means every table feels premium
     insiderTip: 'Ask about the venue\'s history when you visit: the staff know the stories and the Hendrix connection is genuine. Thursday nights tend to be more intimate and musically eclectic.',
     whyRanked: 'No other club in London has this combination of genuine history, intimate atmosphere, and musical credibility. It\'s a living piece of London\'s cultural heritage.',
     mapUrl: 'https://maps.google.com/?q=Scotch+of+St+James+London',
-    tonightSuitability: 'Historic Mayfair atmosphere with an eclectic crowd. More relaxed than the big-name venues, genuine character.',
+    tonightSuitability: 'Historic St James\'s atmosphere with an eclectic crowd. More relaxed than the big-name venues, genuine character.',
     guestlistRealistic: true,
     guestlistNote: 'Guestlist works well. The door is welcoming to well-dressed groups of all compositions.',
     bestForGroups: 'all',
     lastMinuteTableFriendly: true,
-    lastMinuteNote: 'One of the easier Mayfair venues for same-day table bookings. Good availability most nights.',
+    lastMinuteNote: 'One of the easier West End venues for same-day table bookings. Good availability most nights.',
     heroImage: '/gallery/images/fe4414_58f05bf5164c42dc994932151da108be.jpg',
     cardImage: '/gallery/images/fe4414_c5d71df402634f1bb95e48817e645371.jpg',
     galleryImages: ['/gallery/images/fe4414_de7fc0b8b7b04a1e956a7161623452b6.jpg', '/gallery/images/fe4414_5a886c260d914f009b5e498b98c5dfe4.jpg', '/gallery/images/fe4414_6f2589c074724205998ccd4113a4a94b.jpg', '/gallery/images/fe4414_4a9e8d6a5af24e05a5817d8d20c43909.jpg', '/gallery/images/fe4414_d9c7d11ba4494929b40a6173e605018a.jpg', '/gallery/images/fe4414_c1cdde8590474c1fa5509122636f79d1.jpg'],
@@ -473,9 +473,9 @@ The address has been a nightlife name since 1954, when Al Burnett's Stork Club d
     name: 'Dear Darling',
     shortName: 'Dear Darling',
     status: 'open',
-    tagline: 'Mayfair\'s most opulent cocktail bar with a late-night secret',
-    description: 'Opulent Mayfair cocktail bar with chandeliers and velvet booths. Premium cocktails with late-night clubbing. Tables from £1,000.',
-    longDescription: `Dear Darling is Mayfair at its most decadent. Walking in feels like stepping into a gilded private salon: chandeliers hang from ornate ceilings, velvet booths line the walls, and every surface seems designed to catch the warm, amber lighting. It's unapologetically opulent, and it works.
+    tagline: 'St James\'s most opulent cocktail bar with a late-night secret',
+    description: 'Opulent St James\'s cocktail bar with chandeliers and velvet booths. Premium cocktails with late-night clubbing. Tables from £1,000.',
+    longDescription: `Dear Darling is St James's at its most decadent. Walking in feels like stepping into a gilded private salon: chandeliers hang from ornate ceilings, velvet booths line the walls, and every surface seems designed to catch the warm, amber lighting. It's unapologetically opulent, and it works.
 
 This venue starts the evening as a premium cocktail bar. The drinks list is extensive and genuinely excellent: the bartenders are skilled, the ingredients are top-tier, and the presentation matches the surroundings. This isn't a bar that serves cocktails as an afterthought to the clubbing: the cocktail experience is a genuine draw in itself.
 
@@ -485,8 +485,8 @@ The crowd is well-dressed and appreciative of the venue's aesthetic. This is a p
 
 Tables start from £1,000 for the late-night experience. Earlier evening bookings for cocktails are more flexible. The door policy is smart but welcoming: this venue wants you to enjoy yourself, not intimidate you.`,
     address: '91 Jermyn Street, St James\'s, London',
-    area: 'Mayfair',
-    areas: ['Mayfair', 'Central London'],
+    area: 'St James\'s',
+    areas: ['St James\'s', 'Central London'],
     musicGenres: ['Mixed', 'Deep House', 'RnB'],
     openingNights: 'Thursday, Friday, Saturday, Sunday',
     closingTime: '2:30am',
@@ -495,8 +495,8 @@ Tables start from £1,000 for the late-night experience. Earlier evening booking
     crowd: 'Glamour-conscious, cocktail enthusiasts, couples, pre-club groups. Average age 26 to 38.',
     bestFor: 'Couples looking for a glamorous date night. Groups who want cocktails first and dancing later. Anyone who appreciates opulent interiors.',
     insiderTip: 'Arrive at 9pm for cocktails when the venue is at its most atmospheric. The transition to late-night happens gradually. Enjoy the evolution rather than arriving at midnight.',
-    whyRanked: 'The cocktail-to-club transition in these surroundings is unmatched. It\'s the most beautiful room in Mayfair\'s nightlife.',
-    mapUrl: 'https://maps.google.com/?q=Dear+Darling+Mayfair+London',
+    whyRanked: 'The cocktail-to-club transition in these surroundings is unmatched. It\'s the most beautiful room in St James\'s nightlife.',
+    mapUrl: 'https://maps.google.com/?q=Dear+Darling+91+Jermyn+Street+London',
     tonightSuitability: 'Glamorous cocktail bar that becomes a late-night venue. Best for an elegant, low-key start to the evening.',
     guestlistRealistic: true,
     guestlistNote: 'Guestlist available. The cocktail bar format means entry is generally straightforward.',

@@ -47,12 +47,12 @@ const faqs = [
   {
     question: 'What Mayfair clubs are open tonight?',
     answer:
-      'Mayfair clubs operate primarily on Thursday, Friday, and Saturday nights. Key venues include Tape London, Maddox, Rumour, 99 Regent Street, Dear Darling, and Scotch of St James. Rumour and 99 Regent Street open Wednesday to Saturday, 11pm to 4am. The exact clubs open tonight depend on the day of the week; our page updates dynamically to show you what is running right now. Message us on WhatsApp for a real-time recommendation based on your group size and preferences.',
+      'Mayfair clubs operate primarily on Thursday, Friday, and Saturday nights. Key venues include Tape London, Maddox, Rumour and 99 Regent Street, with Dear Darling and Scotch of St James nearby in St James\'s. Rumour and 99 Regent Street open Wednesday to Saturday, 11pm to 4am. The exact clubs open tonight depend on the day of the week; our page updates dynamically to show you what is running right now. Message us on WhatsApp for a real-time recommendation based on your group size and preferences.',
   },
   {
     question: 'Can I get on a guestlist in Mayfair tonight?',
     answer:
-      'Same-night guestlist in Mayfair is possible but depends on the venue and the night. Dear Darling and Maddox are generally receptive to same-day guestlist requests for mixed groups. Tape London is much harder: table booking is the most reliable route there. The key factor is group composition: mixed groups with a good gender ratio have the best chance. Submit your guestlist request as early in the day as possible for the best odds.',
+      'Same-night guestlist in Mayfair is possible but depends on the venue and the night. Maddox, and Dear Darling in nearby St James\'s, are generally receptive to same-day guestlist requests for mixed groups. Tape London is much harder: table booking is the most reliable route there. The key factor is group composition: mixed groups with a good gender ratio have the best chance. Submit your guestlist request as early in the day as possible for the best odds.',
   },
   {
     question: 'What\'s the dress code for Mayfair clubs?',
@@ -62,7 +62,7 @@ const faqs = [
   {
     question: 'How much is a table in Mayfair tonight?',
     answer:
-      'Table minimums in Mayfair start from around £1,000 at venues like Maddox and Dear Darling. Tape London starts from £1,500 and can go significantly higher for premium positions on peak nights. These minimums cover your spend on bottles and drinks. You are not paying £1,000 on top of your drinks, it is the minimum amount you commit to spending. For a group of five, that works out to £200 per person, which is competitive when you factor in guaranteed entry and bottle service. For full pricing breakdowns visit londonbottleservice.com.',
+      'Table minimums in Mayfair start from around £1,000 at venues like Maddox, and at Dear Darling in nearby St James\'s. Tape London starts from £1,500 and can go significantly higher for premium positions on peak nights. These minimums cover your spend on bottles and drinks. You are not paying £1,000 on top of your drinks, it is the minimum amount you commit to spending. For a group of five, that works out to £200 per person, which is competitive when you factor in guaranteed entry and bottle service. For full pricing breakdowns visit londonbottleservice.com.',
   },
 ];
 
@@ -213,7 +213,7 @@ export default function MayfairClubsTonightPage() {
               Mayfair is the epicentre of London&apos;s high-end nightlife, and
               it has been for decades. The concentration of premium clubs within
               a few streets (Tape London on Hanover Square, Maddox on its
-              namesake street, Scotch of St James in Mason&apos;s Yard) creates a density of options that no other London
+              namesake street, Rumour on Dover Street) creates a density of options that no other London
               neighbourhood can match. But choosing the wrong one on the wrong
               night can mean an expensive, underwhelming evening.
             </p>
@@ -244,7 +244,7 @@ export default function MayfairClubsTonightPage() {
               <strong className="text-white">Tape London</strong>{" "}is the pinnacle of exclusivity. A members club on Hanover Square where the crowd genuinely includes celebrities and the sound system is among the best in the world. If you want the most exclusive experience Mayfair offers, this is it, but you will need a table booking or a very good reason to be at the door.
             </p>
             <p>
-              <strong className="text-white">Dear Darling</strong>{" "}takes yet another approach: starting your evening with genuinely excellent cocktails in a gilded, opulent setting before transitioning into a late-night venue. It is the best option for groups that want the evening to build gradually rather than arriving at a club cold at midnight.
+              <strong className="text-white">Dear Darling</strong>, a short walk south in St James&apos;s, takes yet another approach: starting your evening with genuinely excellent cocktails in a gilded, opulent setting before transitioning into a late-night venue. It is the best option for groups that want the evening to build gradually rather than arriving at a club cold at midnight.
             </p>
             <p>
               <strong className="text-white">Maddox</strong>{" "}is the house music stronghold of Mayfair. While most Mayfair clubs lean heavily into hip-hop and RnB, Maddox has committed to a sound that attracts a crowd who actually want to dance. The restaurant-to-club format is polished, and the transition between the two feels natural.

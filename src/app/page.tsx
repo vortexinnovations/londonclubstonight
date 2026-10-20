@@ -160,7 +160,7 @@ export default function HomePage() {
             LIVE&nbsp;&middot;&nbsp;MAYFAIR&nbsp;&middot;&nbsp;SOHO&nbsp;&middot;&nbsp;WEST&nbsp;END
           </span>
           <h1 className="animate-fade-up anim-delay-1 font-display text-[14vw] sm:text-7xl md:text-8xl lg:text-[7rem] font-extrabold text-white tracking-tight leading-[0.95] mb-8">
-            London Clubs
+            London Clubs{" "}
             <span className="block font-serif italic font-normal text-gradient leading-[1.1] pb-2">
               Tonight
             </span>

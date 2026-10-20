@@ -45,13 +45,14 @@ const centralLondonClubs = getClubsByArea('Central London');
 const mayfairClubs = centralLondonClubs.filter((c) => c.areas.includes('Mayfair'));
 const sohoClubs = centralLondonClubs.filter((c) => c.areas.includes('Soho'));
 const stJamesClubs = centralLondonClubs.filter(
-  (c) => c.areas.includes('St James\'s') && !c.areas.includes('Mayfair') && !c.areas.includes('Soho')
+  (c) => (c.areas.includes('St James\'s') || c.areas.includes('Piccadilly')) && !c.areas.includes('Mayfair') && !c.areas.includes('Soho')
 );
 const otherCentralClubs = centralLondonClubs.filter(
   (c) =>
     !c.areas.includes('Mayfair') &&
     !c.areas.includes('Soho') &&
-    !c.areas.includes('St James\'s')
+    !c.areas.includes('St James\'s') &&
+    !c.areas.includes('Piccadilly')
 );
 
 export default function CentralLondonPage() {

@@ -10,7 +10,7 @@ import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 export const metadata: Metadata = {
   title: fitTitle('Best Clubs in Mayfair 2026: Nightlife and Tables from £600'),
   description:
-    'Tape, Cirque, Maddox, Rumour, 99 Regent Street, Dear Darling and Scotch: the Mayfair nightclubs, with table bookings, guestlist and tips for every W1 door.',
+    'Tape, Cirque, Maddox, Rumour and 99 Regent Street: the Mayfair nightclubs, with table bookings, guestlist and tips for every W1 door.',
   keywords: [
     'clubs in Mayfair',
     'Mayfair clubs',
@@ -48,7 +48,7 @@ export default function MayfairPage() {
       <SchemaMarkup
         schema={getArticleSchema(
           'Best Clubs in Mayfair 2026: The Heart of London\'s Luxury Nightlife',
-          'The definitive guide to Mayfair nightclubs including Tape, Cirque, Maddox, Rumour, 99 Regent Street, Dear Darling, Scotch, and more.',
+          'The definitive guide to Mayfair nightclubs including Tape, Cirque, Maddox, Rumour, 99 Regent Street and more.',
           '/areas/mayfair',
           '2025-01-01'
         )}
@@ -146,13 +146,13 @@ export default function MayfairPage() {
               </p>
               <p>
                 Almost every top-tier London club operates within a few minutes&apos; walk of
-                each other in Mayfair. Tape London on Hanover Square, Maddox on Maddox Street,
-                Scotch of St James tucked away on Mason&apos;s Yard, Dear Darling close by,{' '}
+                each other in Mayfair. Tape London on Hanover Square, Maddox on Maddox Street,{' '}
                 <Link href="/clubs/rumour-london" className="text-neon-300 underline underline-offset-4 hover:text-white transition-colors">Rumour</Link>{' '}
                 (formerly Tabu) on Dover Street and{' '}
                 <Link href="/clubs/99-regent-street" className="text-neon-300 underline underline-offset-4 hover:text-white transition-colors">99 Regent Street</Link>{' '}
                 (formerly Cuckoo Club), entered from Swallow Street, both open until 4am Wednesday
-                to Saturday. Funky Buddha has closed, and Itzel now operates at its
+                to Saturday. Scotch of St James on Mason&apos;s Yard and Dear Darling on Jermyn
+                Street are a short walk south, in St James&apos;s. Funky Buddha has closed, and Itzel now operates at its
                 Berkeley Street address. This
                 density means that if your first choice doesn&apos;t work out, you&apos;re
                 never far from an alternative.
