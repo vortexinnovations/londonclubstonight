@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     title: 'Book a Table or Join Guestlist | London Clubs Tonight',
     description: 'Book a VIP table or get on the guestlist at London\'s best nightclubs. Direct WhatsApp booking.',
     url: 'https://londonclubstonight.com/contact',
+    images: [{ url: '/gallery/images/fe4414_23971aa95d054304b70968e4b8c2aaa3.jpg', alt: 'A crowd with hands up under blue club lights' }],
   },
   alternates: {
     canonical: 'https://londonclubstonight.com/contact',

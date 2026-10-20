@@ -1,22 +1,28 @@
-import type { Metadata, ResolvingMetadata } from 'next';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import { clubs } from '@/lib/clubs';
 import Link from 'next/link';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
-import { siteOpenGraph, fitTitle } from '@/lib/metadata';
+import { fitTitle, SITE_NAME } from '@/lib/metadata';
 
-export async function generateMetadata(_props: unknown, parent: ResolvingMetadata): Promise<Metadata> {
-  return {
-    title: fitTitle('London Clubs by Music Genre: Hip-Hop, House, RnB & More'),
+export const metadata: Metadata = {
+  title: fitTitle('London Clubs by Music Genre: Hip-Hop, House, RnB & More'),
+  description: 'Find the right London club for your music taste. Hip-hop, house, RnB, techno, and open format: every venue categorised by what they actually play.',
+  keywords: ['hip hop clubs London', 'house music clubs London', 'RnB clubs London', 'open format clubs London', 'techno clubs London'],
+  alternates: {
+    canonical: 'https://londonclubstonight.com/guides/london-clubs-by-music-genre',
+  },
+  openGraph: {
+    title: 'London Clubs by Music Genre: Hip-Hop, House, RnB & More',
     description: 'Find the right London club for your music taste. Hip-hop, house, RnB, techno, and open format: every venue categorised by what they actually play.',
-    keywords: ['hip hop clubs London', 'house music clubs London', 'RnB clubs London', 'open format clubs London', 'techno clubs London'],
-    alternates: {
-      canonical: 'https://londonclubstonight.com/guides/london-clubs-by-music-genre',
-    },
-    openGraph: await siteOpenGraph(parent, 'https://londonclubstonight.com/guides/london-clubs-by-music-genre'),
-  };
-}
+    url: 'https://londonclubstonight.com/guides/london-clubs-by-music-genre',
+    type: 'article',
+    locale: 'en_GB',
+    siteName: SITE_NAME,
+    images: [{ url: '/gallery/images/fe4414_22fad6959fa54bad8139439061c16ab1.jpg', alt: 'An artist performing on the DJ booth to a crowd filming on phones' }],
+  },
+};
 
 const genreSections = [
   {

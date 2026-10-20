@@ -1,5 +1,5 @@
-import type { Metadata } from 'next';
-import { fitTitle } from '@/lib/metadata';
+import type { Metadata, ResolvingMetadata } from 'next';
+import { fitTitle, siteImage } from '@/lib/metadata';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getClubsOpenTonight, getCurrentDayName } from '@/lib/clubs';
@@ -9,39 +9,42 @@ import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema } fro
 
 export const revalidate = 3600;
 
-export const metadata: Metadata = {
-  title: fitTitle('Mayfair Clubs Open Tonight: Guestlist and Tables'),
-  description:
-    'What\'s open in Mayfair tonight? The clubs running tonight on their regular nights, with guestlist, same-night VIP tables and tips. Book on WhatsApp.',
-  keywords: [
-    'Mayfair clubs tonight',
-    'clubs open in Mayfair tonight',
-    'Mayfair nightclubs tonight',
-    'going out in Mayfair tonight',
-    'Mayfair nightlife tonight',
-    'best Mayfair clubs tonight',
-    'Mayfair club guestlist tonight',
-    'VIP tables Mayfair tonight',
-  ],
-  openGraph: {
-    title: 'Mayfair Clubs Tonight: What\'s Open in Mayfair Tonight',
+export async function generateMetadata(_props: unknown, parent: ResolvingMetadata): Promise<Metadata> {
+  return {
+    title: fitTitle('Mayfair Clubs Open Tonight: Guestlist and Tables'),
     description:
-      'Guide to Mayfair clubs open tonight. Guestlist and table bookings through promoters on the ground.',
-    url: 'https://londonclubstonight.com/mayfair-clubs-tonight',
-    type: 'article',
-    locale: 'en_GB',
-    siteName: 'London Clubs Tonight',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Mayfair Clubs Tonight',
-    description:
-      'Guide to Mayfair clubs open tonight. Guestlist and table bookings through promoters on the ground.',
-  },
-  alternates: {
-    canonical: 'https://londonclubstonight.com/mayfair-clubs-tonight',
-  },
-};
+      'What\'s open in Mayfair tonight? The clubs running tonight on their regular nights, with guestlist, same-night VIP tables and tips. Book on WhatsApp.',
+    keywords: [
+      'Mayfair clubs tonight',
+      'clubs open in Mayfair tonight',
+      'Mayfair nightclubs tonight',
+      'going out in Mayfair tonight',
+      'Mayfair nightlife tonight',
+      'best Mayfair clubs tonight',
+      'Mayfair club guestlist tonight',
+      'VIP tables Mayfair tonight',
+    ],
+    openGraph: {
+      title: 'Mayfair Clubs Tonight: What\'s Open in Mayfair Tonight',
+      description:
+        'Guide to Mayfair clubs open tonight. Guestlist and table bookings through promoters on the ground.',
+      url: 'https://londonclubstonight.com/mayfair-clubs-tonight',
+      images: await siteImage(parent),
+      type: 'article',
+      locale: 'en_GB',
+      siteName: 'London Clubs Tonight',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Mayfair Clubs Tonight',
+      description:
+        'Guide to Mayfair clubs open tonight. Guestlist and table bookings through promoters on the ground.',
+    },
+    alternates: {
+      canonical: 'https://londonclubstonight.com/mayfair-clubs-tonight',
+    },
+  };
+}
 
 const faqs = [
   {

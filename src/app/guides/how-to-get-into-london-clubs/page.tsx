@@ -1,21 +1,27 @@
-import type { Metadata, ResolvingMetadata } from 'next';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
-import { siteOpenGraph, fitTitle } from '@/lib/metadata';
+import { fitTitle, SITE_NAME } from '@/lib/metadata';
 
-export async function generateMetadata(_props: unknown, parent: ResolvingMetadata): Promise<Metadata> {
-  return {
-    title: fitTitle('London Club Guestlists and Table Bookings: How to Get In'),
+export const metadata: Metadata = {
+  title: fitTitle('London Club Guestlists and Table Bookings: How to Get In'),
+  description: 'The complete guide to guestlists, table bookings, dress codes, group composition, and age requirements at London nightclubs. Honest advice from promoters.',
+  keywords: ['London club guestlist', 'London club table booking', 'London club dress code', 'London club entry tips', 'London nightclub guide'],
+  alternates: {
+    canonical: 'https://londonclubstonight.com/guides/how-to-get-into-london-clubs',
+  },
+  openGraph: {
+    title: 'London Club Guestlists and Table Bookings: How to Get In',
     description: 'The complete guide to guestlists, table bookings, dress codes, group composition, and age requirements at London nightclubs. Honest advice from promoters.',
-    keywords: ['London club guestlist', 'London club table booking', 'London club dress code', 'London club entry tips', 'London nightclub guide'],
-    alternates: {
-      canonical: 'https://londonclubstonight.com/guides/how-to-get-into-london-clubs',
-    },
-    openGraph: await siteOpenGraph(parent, 'https://londonclubstonight.com/guides/how-to-get-into-london-clubs'),
-  };
-}
+    url: 'https://londonclubstonight.com/guides/how-to-get-into-london-clubs',
+    type: 'article',
+    locale: 'en_GB',
+    siteName: SITE_NAME,
+    images: [{ url: '/gallery/images/fe4414_22e8141bc1f24230af229704c5102b96.jpg', alt: 'Sparkler bottles arriving under a lit ceiling' }],
+  },
+};
 
 const faqs = [
   {

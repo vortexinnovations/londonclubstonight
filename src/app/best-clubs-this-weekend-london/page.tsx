@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     description:
       'Friday and Saturday night picks for London clubs. Table availability, guestlist options, and honest insider recommendations.',
     url: 'https://londonclubstonight.com/best-clubs-this-weekend-london',
+    images: [{ url: '/gallery/images/fe4414_24f7263a295a420d9b4105549832f0dc.jpg', alt: 'A packed club floor under sparklers and green lights' }],
     type: 'article',
     locale: 'en_GB',
     siteName: 'London Clubs Tonight',

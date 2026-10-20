@@ -1,22 +1,28 @@
-import type { Metadata, ResolvingMetadata } from 'next';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import { clubs } from '@/lib/clubs';
 import Link from 'next/link';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
-import { siteOpenGraph, fitTitle } from '@/lib/metadata';
+import { fitTitle, SITE_NAME } from '@/lib/metadata';
 
-export async function generateMetadata(_props: unknown, parent: ResolvingMetadata): Promise<Metadata> {
-  return {
-    title: fitTitle('Clubs Open Late in London: Your Guide to Late Night London'),
+export const metadata: Metadata = {
+  title: fitTitle('Clubs Open Late in London: Your Guide to Late Night London'),
+  description: 'Every London club grouped by closing time. Find venues open until 3am, 3:30am, 3:45am, 4am and 6am. Your guide to keeping the night going in London.',
+  keywords: ['clubs open late London', 'late night clubs London', 'clubs open until 6am London', 'after hours London', 'late night London'],
+  alternates: {
+    canonical: 'https://londonclubstonight.com/guides/clubs-open-late',
+  },
+  openGraph: {
+    title: 'Clubs Open Late in London: Your Guide to Late Night London',
     description: 'Every London club grouped by closing time. Find venues open until 3am, 3:30am, 3:45am, 4am and 6am. Your guide to keeping the night going in London.',
-    keywords: ['clubs open late London', 'late night clubs London', 'clubs open until 6am London', 'after hours London', 'late night London'],
-    alternates: {
-      canonical: 'https://londonclubstonight.com/guides/clubs-open-late',
-    },
-    openGraph: await siteOpenGraph(parent, 'https://londonclubstonight.com/guides/clubs-open-late'),
-  };
-}
+    url: 'https://londonclubstonight.com/guides/clubs-open-late',
+    type: 'article',
+    locale: 'en_GB',
+    siteName: SITE_NAME,
+    images: [{ url: '/gallery/images/fe4414_22bea265d7434a9990ce468023444910.jpg', alt: 'A woman under red club lights late in the night' }],
+  },
+};
 
 const closingGroups = [
   {

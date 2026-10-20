@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     description:
       'Explore London nightclubs by area. Mayfair, Soho, central London, and beyond.',
     url: 'https://londonclubstonight.com/areas',
+    images: [{ url: '/gallery/images/fe4414_23e37ad1543140e68e62e62587f7120c.jpg', alt: 'A woman looking over her shoulder in a dark club' }],
     type: 'website',
     locale: 'en_GB',
     siteName: 'London Clubs Tonight',

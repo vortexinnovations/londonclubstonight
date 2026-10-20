@@ -1,5 +1,5 @@
-import type { Metadata } from 'next';
-import { fitTitle } from '@/lib/metadata';
+import type { Metadata, ResolvingMetadata } from 'next';
+import { fitTitle, siteImage } from '@/lib/metadata';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
@@ -31,11 +31,21 @@ const DB_BODY_CLASSES = [
   '[&_table]:block [&_table]:w-full [&_table]:overflow-x-auto [&_table]:text-sm [&_table]:mb-6 [&_th]:text-left [&_th]:text-white [&_th]:py-2 [&_th]:pr-4 [&_th]:border-b [&_th]:border-white/20 [&_td]:text-frost-300 [&_td]:py-2 [&_td]:pr-4 [&_td]:border-b [&_td]:border-white/10',
 ].join(' ');
 
+// Posts whose hero is too racy for the card a shared link shows: these share the site card.
+const SITE_CARD_POSTS = new Set([
+  'afrobeats-clubs-london',
+  'girls-night-out-london-clubs',
+  'halloween-night-tube-getting-home-london',
+  'how-to-find-london-club-events',
+  'most-unique-clubs-in-london',
+  'what-to-expect-at-a-london-nightclub',
+]);
+
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ slug: string }>;
-}): Promise<Metadata> {
+}, parent: ResolvingMetadata): Promise<Metadata> {
   const { slug } = await params;
   const post = await getMergedPostBySlug(slug);
   if (!post) return {};
@@ -55,6 +65,9 @@ export async function generateMetadata({
       type: 'article',
       publishedTime: post.publishedDate,
       modifiedTime: post.updatedDate,
+      images: SITE_CARD_POSTS.has(post.slug)
+        ? await siteImage(parent)
+        : [{ url: post.featuredImage, alt: post.imageAlt || post.title }],
     },
     alternates: {
       canonical: `https://londonclubstonight.com/blog/${post.slug}`,

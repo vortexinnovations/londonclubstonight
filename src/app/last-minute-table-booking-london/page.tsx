@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     description:
       'Same-day VIP table bookings at London clubs. Live availability, pricing from £1,000, and instant WhatsApp confirmation.',
     url: 'https://londonclubstonight.com/last-minute-table-booking-london',
+    images: [{ url: '/gallery/images/fe4414_25212b50087449d0b99b5afa8c93287d.jpg', alt: 'A DJ in headphones smiling at the decks' }],
     type: 'article',
     locale: 'en_GB',
     siteName: 'London Clubs Tonight',

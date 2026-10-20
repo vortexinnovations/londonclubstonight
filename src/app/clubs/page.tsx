@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     description:
       'The definitive list of the best nightclubs in London. Insider reviews, entry tips, table booking info, and guestlist access for every top London club.',
     url: 'https://londonclubstonight.com/clubs',
+    images: [{ url: '/gallery/images/TapeFriday041024PartyNextDoor-333.jpg', alt: 'A rapper performing to the crowd in a London club' }],
     type: 'website',
   },
   alternates: {

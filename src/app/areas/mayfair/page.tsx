@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     description:
       'The definitive guide to Mayfair nightclubs. Table bookings, guestlist access, and insider tips for every club in W1.',
     url: 'https://londonclubstonight.com/areas/mayfair',
+    images: [{ url: '/gallery/images/fe4414_2425804d561d40a483a365a2030854b7.jpg', alt: 'Sparkler bottles and confetti over a packed dancefloor' }],
     type: 'article',
     locale: 'en_GB',
     siteName: 'London Clubs Tonight',

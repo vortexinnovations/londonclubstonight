@@ -27,6 +27,7 @@ export const metadata: Metadata = {
     description:
       'Honest insider advice on getting into Tape London tonight. Walk-in chances, table booking tips, dress code, and realistic expectations.',
     url: 'https://londonclubstonight.com/can-you-get-into-tape-london-tonight',
+    images: [{ url: '/gallery/images/Tape-4-2.jpg', alt: 'A DJ pulling a face for the camera behind the decks at Tape London' }],
     type: 'article',
     locale: 'en_GB',
     siteName: 'London Clubs Tonight',

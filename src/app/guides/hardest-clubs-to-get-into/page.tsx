@@ -1,22 +1,28 @@
-import type { Metadata, ResolvingMetadata } from 'next';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import { clubs } from '@/lib/clubs';
 import Link from 'next/link';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
-import { siteOpenGraph, fitTitle } from '@/lib/metadata';
+import { fitTitle, SITE_NAME } from '@/lib/metadata';
 
-export async function generateMetadata(_props: unknown, parent: ResolvingMetadata): Promise<Metadata> {
-  return {
-    title: fitTitle('London\'s Most Exclusive Clubs: The Insider\'s Guide'),
+export const metadata: Metadata = {
+  title: fitTitle('London\'s Most Exclusive Clubs: The Insider\'s Guide'),
+  description: 'Tape London, Cirque Le Soir, The Box and Scotch of St James: London\'s most exclusive clubs, what makes each special, tables from £1,000 and how to get in.',
+  keywords: ['most exclusive clubs London', 'best clubs London', 'premium London nightlife', 'London VIP clubs', 'exclusive London clubs'],
+  alternates: {
+    canonical: 'https://londonclubstonight.com/guides/hardest-clubs-to-get-into',
+  },
+  openGraph: {
+    title: 'London\'s Most Exclusive Clubs: The Insider\'s Guide',
     description: 'Tape London, Cirque Le Soir, The Box and Scotch of St James: London\'s most exclusive clubs, what makes each special, tables from £1,000 and how to get in.',
-    keywords: ['most exclusive clubs London', 'best clubs London', 'premium London nightlife', 'London VIP clubs', 'exclusive London clubs'],
-    alternates: {
-      canonical: 'https://londonclubstonight.com/guides/hardest-clubs-to-get-into',
-    },
-    openGraph: await siteOpenGraph(parent, 'https://londonclubstonight.com/guides/hardest-clubs-to-get-into'),
-  };
-}
+    url: 'https://londonclubstonight.com/guides/hardest-clubs-to-get-into',
+    type: 'article',
+    locale: 'en_GB',
+    siteName: SITE_NAME,
+    images: [{ url: '/gallery/images/fe4414_22a9f180029946ac94c1e31e1460ac65.jpg', alt: 'A packed club with lasers, smoke and phones held up' }],
+  },
+};
 
 const faqs = [
   {

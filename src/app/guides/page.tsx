@@ -1,21 +1,27 @@
-import type { Metadata, ResolvingMetadata } from 'next';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
-import { siteOpenGraph, fitTitle } from '@/lib/metadata';
+import { fitTitle, SITE_NAME } from '@/lib/metadata';
 
-export async function generateMetadata(_props: unknown, parent: ResolvingMetadata): Promise<Metadata> {
-  return {
-    title: fitTitle('London Nightclub Guides: Everything You Need to Know'),
+export const metadata: Metadata = {
+  title: fitTitle('London Nightclub Guides: Everything You Need to Know'),
+  description: 'Four guides to London clubs: the most exclusive venues, clubs open until 6am, guestlists and table bookings, and which clubs play hip-hop, house or RnB.',
+  keywords: ['London nightclub guides', 'London club tips', 'London nightlife guide', 'London club guestlist'],
+  alternates: {
+    canonical: 'https://londonclubstonight.com/guides',
+  },
+  openGraph: {
+    title: 'London Nightclub Guides: Everything You Need to Know',
     description: 'Four guides to London clubs: the most exclusive venues, clubs open until 6am, guestlists and table bookings, and which clubs play hip-hop, house or RnB.',
-    keywords: ['London nightclub guides', 'London club tips', 'London nightlife guide', 'London club guestlist'],
-    alternates: {
-      canonical: 'https://londonclubstonight.com/guides',
-    },
-    openGraph: await siteOpenGraph(parent, 'https://londonclubstonight.com/guides'),
-  };
-}
+    url: 'https://londonclubstonight.com/guides',
+    type: 'article',
+    locale: 'en_GB',
+    siteName: SITE_NAME,
+    images: [{ url: '/gallery/images/fe4414_22997fd2f5824b99815073940cd43fd2.jpg', alt: 'Confetti and sparklers over a crowded dancefloor' }],
+  },
+};
 
 const guides = [
   {

@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     description:
       'The best London nightclubs open on Friday nights. Which clubs have their strongest nights on Fridays and insider booking tips.',
     url: 'https://londonclubstonight.com/friday-nightclubs-london',
+    images: [{ url: '/gallery/images/fe4414_25ff700f6f0a4725aeb1d7343720970d.jpg', alt: 'A DJ at the decks under red lights' }],
     type: 'article',
     locale: 'en_GB',
     siteName: 'London Clubs Tonight',

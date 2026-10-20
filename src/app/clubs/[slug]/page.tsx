@@ -12,8 +12,8 @@ import {
 } from '@/lib/clubs';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getNightClubSchema } from '@/components/SchemaMarkup';
-import type { Metadata } from 'next';
-import { fitTitle } from '@/lib/metadata';
+import type { Metadata, ResolvingMetadata } from 'next';
+import { fitTitle, siteImage } from '@/lib/metadata';
 
 export function generateStaticParams() {
   return clubs.map((club) => ({
@@ -21,11 +21,15 @@ export function generateStaticParams() {
   }));
 }
 
+// Heroes that show another venue's signature (Tape's Ace of Spades lightboxes, an
+// artist billed at a different club): shared links to these pages show the site card.
+const SITE_CARD_CLUBS = new Set(['the-box-london', 'selene-london', 'lio-london']);
+
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ slug: string }>;
-}): Promise<Metadata> {
+}, parent: ResolvingMetadata): Promise<Metadata> {
   const { slug } = await params;
   const club = getClubBySlug(slug);
 
@@ -86,6 +90,9 @@ export async function generateMetadata({
       title,
       description,
       url: `https://londonclubstonight.com/clubs/${club.slug}`,
+      images: SITE_CARD_CLUBS.has(club.slug)
+        ? await siteImage(parent)
+        : [{ url: club.heroImage, alt: imageAltFor(club, club.heroImage, `${club.name} nightclub London`) }],
       type: 'website',
     },
     alternates: {

@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     description:
       'Every London nightclub open on Saturday night. Table prices, booking advice, and insider tips for the busiest night.',
     url: 'https://londonclubstonight.com/saturday-nightclubs-london',
+    images: [{ url: '/gallery/images/fe4414_26d48086ecb64d8e9e654bb6de0a081f.jpg', alt: 'Sparkler bottles over the crowd on a Saturday night' }],
     type: 'article',
     locale: 'en_GB',
     siteName: 'London Clubs Tonight',

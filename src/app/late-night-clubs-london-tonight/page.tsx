@@ -1,5 +1,5 @@
-import type { Metadata } from 'next';
-import { fitTitle } from '@/lib/metadata';
+import type { Metadata, ResolvingMetadata } from 'next';
+import { fitTitle, siteImage } from '@/lib/metadata';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getOpenClubs, closesLabel } from '@/lib/clubs';
@@ -9,39 +9,42 @@ import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema } fro
 
 export const revalidate = 3600;
 
-export const metadata: Metadata = {
-  title: fitTitle('Late Night Clubs London Tonight: Open Until 3am, 4am & 6am'),
-  description:
-    'Which clubs stay open latest tonight? Sorted by closing time with last-entry times, transport home, and what to expect after midnight.',
-  keywords: [
-    'late night clubs London',
-    'clubs open late London tonight',
-    'clubs open until 3am London',
-    'clubs open until 4am London',
-    'clubs open until 6am London',
-    'late night London nightlife',
-    'after hours clubs London',
-    'London clubs closing time',
-  ],
-  openGraph: {
-    title: 'Late Night Clubs in London Tonight: Open Until 3am, 4am & Beyond',
+export async function generateMetadata(_props: unknown, parent: ResolvingMetadata): Promise<Metadata> {
+  return {
+    title: fitTitle('Late Night Clubs London Tonight: Open Until 3am, 4am & 6am'),
     description:
-      'Which London clubs stay open latest tonight? Sorted by closing time with transport advice and insider tips.',
-    url: 'https://londonclubstonight.com/late-night-clubs-london-tonight',
-    type: 'article',
-    locale: 'en_GB',
-    siteName: 'London Clubs Tonight',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Late Night Clubs in London Tonight: Open Until 3am, 4am & Beyond',
-    description:
-      'Which London clubs stay open latest tonight? Sorted by closing time with transport advice.',
-  },
-  alternates: {
-    canonical: 'https://londonclubstonight.com/late-night-clubs-london-tonight',
-  },
-};
+      'Which clubs stay open latest tonight? Sorted by closing time with last-entry times, transport home, and what to expect after midnight.',
+    keywords: [
+      'late night clubs London',
+      'clubs open late London tonight',
+      'clubs open until 3am London',
+      'clubs open until 4am London',
+      'clubs open until 6am London',
+      'late night London nightlife',
+      'after hours clubs London',
+      'London clubs closing time',
+    ],
+    openGraph: {
+      title: 'Late Night Clubs in London Tonight: Open Until 3am, 4am & Beyond',
+      description:
+        'Which London clubs stay open latest tonight? Sorted by closing time with transport advice and insider tips.',
+      url: 'https://londonclubstonight.com/late-night-clubs-london-tonight',
+      images: await siteImage(parent),
+      type: 'article',
+      locale: 'en_GB',
+      siteName: 'London Clubs Tonight',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Late Night Clubs in London Tonight: Open Until 3am, 4am & Beyond',
+      description:
+        'Which London clubs stay open latest tonight? Sorted by closing time with transport advice.',
+    },
+    alternates: {
+      canonical: 'https://londonclubstonight.com/late-night-clubs-london-tonight',
+    },
+  };
+}
 
 const faqs = [
   {

@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     description:
       'The 12 best nightclubs in London for 2026, ranked by promoters who work the doors every weekend. Honest, opinionated reviews you won\'t find anywhere else.',
     url: 'https://londonclubstonight.com/best-clubs-in-london',
+    images: [{ url: '/gallery/images/fe4414_235143ea0a9946248d902020898bb8cb.jpg', alt: 'Sparkler bottles held high at a club table' }],
     type: 'article',
     locale: 'en_GB',
     siteName: 'London Clubs Tonight',

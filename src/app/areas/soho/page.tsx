@@ -40,6 +40,7 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: 'https://londonclubstonight.com/areas/soho',
+    images: [{ url: '/gallery/images/fe4414_248f34e1849a4e7688a7b3eb2ef234d2.jpg', alt: 'Sparkler bottles held up in a crowd under a video screen' }],
     type: 'article',
     locale: 'en_GB',
     siteName: 'London Clubs Tonight',

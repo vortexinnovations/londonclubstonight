@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     description:
       'Complete guide to central London nightclubs across Mayfair, Soho, St James\'s, and Piccadilly.',
     url: 'https://londonclubstonight.com/areas/central-london',
+    images: [{ url: '/gallery/images/fe4414_243e282bb43f4d2cb03320ddb0cf5549.jpg', alt: 'A woman smiling under pink and blue club lights' }],
     type: 'article',
     locale: 'en_GB',
     siteName: 'London Clubs Tonight',

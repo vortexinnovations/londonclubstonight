@@ -1,11 +1,13 @@
 import type { Metadata, ResolvingMetadata } from 'next';
 
 /**
- * The site-wide Open Graph fields, set by the root layout.
+ * The site-wide Open Graph fields, set by the root layout. Only pages with no
+ * metadata of their own (the 404 page) still show them: every page sets its
+ * own title, description, url and image.
  *
  * There is no url here: a layout's og:url is inherited by every page that sets
  * no Open Graph fields of its own, which told crawlers those pages were the
- * home page. Each page sets `openGraph.url` to its own URL.
+ * home page.
  */
 export const SITE_OPEN_GRAPH = {
   type: 'website',
@@ -16,16 +18,15 @@ export const SITE_OPEN_GRAPH = {
 } satisfies Metadata['openGraph'];
 
 /**
- * Open Graph for a page with no Open Graph fields of its own: the layout's,
- * plus the page's own og:url.
+ * The site card (app/opengraph-image.tsx) as a page's og:image, for pages with
+ * no picture of their own to share.
  *
  * Next merges metadata shallowly, so a page's `openGraph` replaces the layout's
- * whole object, including the og:image that app/opengraph-image.tsx gives it.
- * The resolved parent metadata still has that image, so it is carried over.
+ * whole object, including the image that app/opengraph-image.tsx attaches at
+ * the layout level. The resolved parent metadata still has it, with its URL.
  */
-export async function siteOpenGraph(parent: ResolvingMetadata, url: string): Promise<Metadata['openGraph']> {
-  const { openGraph } = await parent;
-  return { ...SITE_OPEN_GRAPH, images: openGraph?.images, url };
+export async function siteImage(parent: ResolvingMetadata): Promise<NonNullable<Metadata['openGraph']>['images']> {
+  return (await parent).openGraph?.images;
 }
 
 export const SITE_NAME = 'London Clubs Tonight';

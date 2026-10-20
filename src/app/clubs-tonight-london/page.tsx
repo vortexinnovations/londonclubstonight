@@ -1,5 +1,5 @@
-import type { Metadata } from 'next';
-import { fitTitle } from '@/lib/metadata';
+import type { Metadata, ResolvingMetadata } from 'next';
+import { fitTitle, siteImage } from '@/lib/metadata';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -14,39 +14,42 @@ import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getI
 
 export const revalidate = 3600;
 
-export const metadata: Metadata = {
-  title: fitTitle(`Clubs Open Tonight in London [${new Date().toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}]`),
-  description:
-    'Which London clubs are open tonight? Every venue running a night today on its regular opening nights, with same-night guestlist and tables on WhatsApp.',
-  keywords: [
-    'clubs open tonight London',
-    'London clubs tonight',
-    'what clubs are open tonight in London',
-    'nightclubs open tonight London',
-    'going out tonight London',
-    'London nightlife tonight',
-    'clubs tonight near me',
-    'best clubs tonight London',
-  ],
-  openGraph: {
-    title: 'Clubs Open Tonight in London: What\'s Open & How to Get In',
+export async function generateMetadata(_props: unknown, parent: ResolvingMetadata): Promise<Metadata> {
+  return {
+    title: fitTitle(`Clubs Open Tonight in London [${new Date().toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}]`),
     description:
-      'Guide to London clubs open tonight. Guestlist availability, last-minute tables, and insider tips from promoters who work the doors.',
-    url: 'https://londonclubstonight.com/clubs-tonight-london',
-    type: 'article',
-    locale: 'en_GB',
-    siteName: 'London Clubs Tonight',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Clubs Open Tonight in London',
-    description:
-      'Guide to London clubs open tonight. Guestlist availability, last-minute tables, and insider tips.',
-  },
-  alternates: {
-    canonical: 'https://londonclubstonight.com/clubs-tonight-london',
-  },
-};
+      'Which London clubs are open tonight? Every venue running a night today on its regular opening nights, with same-night guestlist and tables on WhatsApp.',
+    keywords: [
+      'clubs open tonight London',
+      'London clubs tonight',
+      'what clubs are open tonight in London',
+      'nightclubs open tonight London',
+      'going out tonight London',
+      'London nightlife tonight',
+      'clubs tonight near me',
+      'best clubs tonight London',
+    ],
+    openGraph: {
+      title: 'Clubs Open Tonight in London: What\'s Open & How to Get In',
+      description:
+        'Guide to London clubs open tonight. Guestlist availability, last-minute tables, and insider tips from promoters who work the doors.',
+      url: 'https://londonclubstonight.com/clubs-tonight-london',
+      images: await siteImage(parent),
+      type: 'article',
+      locale: 'en_GB',
+      siteName: 'London Clubs Tonight',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Clubs Open Tonight in London',
+      description:
+        'Guide to London clubs open tonight. Guestlist availability, last-minute tables, and insider tips.',
+    },
+    alternates: {
+      canonical: 'https://londonclubstonight.com/clubs-tonight-london',
+    },
+  };
+}
 
 const faqs = [
   {

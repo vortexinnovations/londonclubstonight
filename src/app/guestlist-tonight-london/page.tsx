@@ -32,6 +32,7 @@ export const metadata: Metadata = {
     description:
       'Which London clubs accept same-night guestlist requests? Live availability, ratio requirements, and how to get in tonight.',
     url: 'https://londonclubstonight.com/guestlist-tonight-london',
+    images: [{ url: '/gallery/images/fe4414_250ad5247e7546dcbe9f0c7b4e2fcbaf.jpg', alt: 'A woman in a pink fur coat on a club podium' }],
     type: 'article',
     locale: 'en_GB',
     siteName: 'London Clubs Tonight',

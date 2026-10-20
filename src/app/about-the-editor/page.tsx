@@ -1,21 +1,24 @@
-import type { Metadata } from 'next';
-import { fitTitle } from '@/lib/metadata';
+import type { Metadata, ResolvingMetadata } from 'next';
+import { fitTitle, siteImage } from '@/lib/metadata';
 import Link from 'next/link';
 
-export const metadata: Metadata = {
-  title: fitTitle('About the Editor: Daniel Whitaker'),
-  description:
-    'Daniel Whitaker is the Nightlife Scout and editor of London Clubs Tonight, tracking 50+ venues weekly: what is open, what is good, what you can get into.',
-  openGraph: {
-    title: 'About the Editor: Daniel Whitaker | London Clubs Tonight',
+export async function generateMetadata(_props: unknown, parent: ResolvingMetadata): Promise<Metadata> {
+  return {
+    title: fitTitle('About the Editor: Daniel Whitaker'),
     description:
-      'Daniel Whitaker covers tonight-focused London nightlife: event listings, DJ schedules, and last-minute availability across 50+ venues.',
-    url: 'https://londonclubstonight.com/about-the-editor',
-  },
-  alternates: {
-    canonical: 'https://londonclubstonight.com/about-the-editor',
-  },
-};
+      'Daniel Whitaker is the Nightlife Scout and editor of London Clubs Tonight, tracking 50+ venues weekly: what is open, what is good, what you can get into.',
+    openGraph: {
+      title: 'About the Editor: Daniel Whitaker | London Clubs Tonight',
+      description:
+        'Daniel Whitaker covers tonight-focused London nightlife: event listings, DJ schedules, and last-minute availability across 50+ venues.',
+      url: 'https://londonclubstonight.com/about-the-editor',
+      images: await siteImage(parent),
+    },
+    alternates: {
+      canonical: 'https://londonclubstonight.com/about-the-editor',
+    },
+  };
+}
 
 export default function AboutTheEditorPage() {
   return (

@@ -1,33 +1,36 @@
-import type { Metadata } from 'next';
-import { fitTitle } from '@/lib/metadata';
+import type { Metadata, ResolvingMetadata } from 'next';
+import { fitTitle, siteImage } from '@/lib/metadata';
 import Link from 'next/link';
 import { getMergedPosts } from '@/lib/blog';
 import BlogCard from '@/components/BlogCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 
-export const metadata: Metadata = {
-  title: fitTitle('London Nightlife Blog: Insider Guides, Tips & Club Reviews'),
-  description:
-    'Weekly London nightlife guides from people who work the doors: club reviews, dress codes, guestlists, table prices and how to plan a night out in London.',
-  keywords: [
-    'London nightlife blog',
-    'London clubs blog',
-    'nightclub guides London',
-    'London club reviews',
-    'London nightlife tips',
-  ],
-  openGraph: {
-    title: 'London Nightlife Blog: Insider Guides, Tips & Club Reviews',
+export async function generateMetadata(_props: unknown, parent: ResolvingMetadata): Promise<Metadata> {
+  return {
+    title: fitTitle('London Nightlife Blog: Insider Guides, Tips & Club Reviews'),
     description:
-      'The London nightlife blog for people who actually go out. Insider guides, honest reviews, and everything you need to know before a night out.',
-    url: 'https://londonclubstonight.com/blog',
-    type: 'website',
-  },
-  alternates: {
-    canonical: 'https://londonclubstonight.com/blog',
-  },
-};
+      'Weekly London nightlife guides from people who work the doors: club reviews, dress codes, guestlists, table prices and how to plan a night out in London.',
+    keywords: [
+      'London nightlife blog',
+      'London clubs blog',
+      'nightclub guides London',
+      'London club reviews',
+      'London nightlife tips',
+    ],
+    openGraph: {
+      title: 'London Nightlife Blog: Insider Guides, Tips & Club Reviews',
+      description:
+        'The London nightlife blog for people who actually go out. Insider guides, honest reviews, and everything you need to know before a night out.',
+      url: 'https://londonclubstonight.com/blog',
+      images: await siteImage(parent),
+      type: 'website',
+    },
+    alternates: {
+      canonical: 'https://londonclubstonight.com/blog',
+    },
+  };
+}
 
 // Refreshed by /api/revalidate when the content API writes; daily safety net.
 export const revalidate = 86400;

@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     description:
       'Which London clubs are open on Sunday nights? An honest guide with real options and alternatives.',
     url: 'https://londonclubstonight.com/clubs-open-sunday-night-london',
+    images: [{ url: '/gallery/images/fe4414_277db2fabaf64b3bb38e4f0b766c5841.jpg', alt: 'A rapper on stage beside a performer in a pink lit booth' }],
     type: 'article',
     locale: 'en_GB',
     siteName: 'London Clubs Tonight',
