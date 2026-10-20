@@ -40,8 +40,13 @@ export async function generateMetadata({
   const post = await getMergedPostBySlug(slug);
   if (!post) return {};
 
+  // Halloween pages are at peak traffic until 31 October, so their titles stay
+  // exactly as they were until then; the daily regeneration applies fitTitle()
+  // from 1 November. This line can go after that.
+  const frozen = slug.startsWith('halloween-') && Date.now() < Date.UTC(2026, 10, 1);
+
   return {
-    title: fitTitle(post.metaTitle),
+    title: frozen ? post.metaTitle : fitTitle(post.metaTitle),
     description: post.metaDescription,
     openGraph: {
       title: post.metaTitle,
