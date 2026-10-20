@@ -1,3 +1,15 @@
+export type Weekday = 'Monday' | 'Tuesday' | 'Wednesday' | 'Thursday' | 'Friday' | 'Saturday' | 'Sunday';
+
+/** One block of nights with the same hours, e.g. Wednesday and Thursday, 23:00 to 04:00. */
+export interface OpeningSlot {
+  days: Weekday[];
+  /** 24-hour clock. A close earlier than the open is the next morning. */
+  opens: string;
+  closes: string;
+  /** What is different on these nights, e.g. which floors run. */
+  note?: string;
+}
+
 export interface Club {
   slug: string;
   name: string;
@@ -9,6 +21,21 @@ export interface Club {
   closedMessage?: string;
   /** Closed venues: slugs of open venues on this site to suggest instead. */
   alternatives?: string[];
+  /**
+   * Open venues that changed name: the old name people still search for. Shown in the page title,
+   * as a one-line "Formerly X" note under the H1 and as alternateName in structured data.
+   * Unlike formerName it does not change the page layout: the venue is a normal open club.
+   */
+  previousName?: string;
+  /**
+   * Confirmed hours, night by night, for venues whose hours we publish precisely. Drives the
+   * opening-hours table on the club page and openingHours in structured data.
+   */
+  hours?: OpeningSlot[];
+  /** Open clubs on this site a short walk away, linked from the club page. */
+  nearby?: string[];
+  /** Alt text by image path, for photos that show a named room. Falls back to a generic line. */
+  imageAlt?: Record<string, string>;
   tagline: string;
   description: string;
   longDescription: string;
@@ -183,43 +210,52 @@ Reign appeals to a broad crowd, from couples celebrating special occasions to co
     galleryImages: ['/gallery/images/DSC_6890.jpg', '/gallery/images/DSC_6895.jpg', '/gallery/images/DSC_6903.jpg', '/gallery/images/DSC_6920.jpg', '/gallery/images/DSC_6932.jpg', '/gallery/images/DSC_6946.jpg'],
   },
   {
-    slug: 'tabu-london',
-    name: 'Rumour (formerly TABU)',
+    slug: 'rumour-london',
+    name: 'Rumour',
     shortName: 'Rumour',
     status: 'open',
-    formerName: 'TABU London',
-    closedMessage: 'TABU London is now Rumour, at 1 Dover Street in Mayfair. Rumour opens Wednesday to Saturday from 11pm, and tables at Rumour are booked on WhatsApp like every other club on this site.',
-    tagline: 'TABU is now Rumour: 1 Dover Street, Mayfair, Wednesday to Saturday from 11pm',
-    description: 'TABU London is now Rumour, at 1 Dover Street in Mayfair, open Wednesday to Saturday from 11pm. Book a table at Rumour on WhatsApp.',
-    longDescription: `TABU is now Rumour. The club at 1 Dover Street in Mayfair trades under its new name, and people still search for it as TABU, Tabu club or Tabu Mayfair, so this page covers the change and how to book a table at Rumour.
+    previousName: 'Tabu',
+    tagline: 'One intimate booth room at 1 Dover Street, Mayfair: red velvet, no cameras, Wednesday to Saturday until 4am',
+    description: 'Rumour (formerly Tabu) is an intimate booth club at 1 Dover Street in Mayfair, open Wednesday to Saturday from 11pm to 4am. Open-format hip hop, RnB and house, a ladies\' guestlist and booths from £1,000. Book on WhatsApp.',
+    longDescription: `Rumour (formerly Tabu) is the booth club at 1 Dover Street in Mayfair, open Wednesday, Thursday, Friday and Saturday from 11pm to 4am. The Tabu name has gone: same ownership, full rebrand, new design and a new concept. Dover Street sits between Piccadilly and Grafton Street, a few minutes from Green Park station, with Piccadilly Circus and Bond Street walkable.
 
-Rumour opens Wednesday to Saturday from 11pm, according to its public listings. Dover Street runs between Piccadilly and Hay Hill, close to Green Park station, in the busiest part of Mayfair for late nights.
+It is one intimate room of around 200 people, built around booths: deep red velvet, dark panelling, a chandelier and low warm lighting. The room fills early by design, so arrive in good time. The music is open format, hip hop, RnB and house, read to the room on the night rather than fixed to one genre.
 
-Music, dress code and table minimums at Rumour are the new venue's own, and none of TABU's old terms carry over. Message us on WhatsApp with your date and group size for current table prices and availability.
+Rumour runs a no-photography policy: no photos or video in the main room or on the dance floor, and the floor team enforce it. That is the single clearest difference from the rooms around it.
 
-History: under the TABU name, the room was a below-street-level Mayfair club with a Japanese underground theme. That was TABU, not Rumour.`,
-    address: '1 Dover Street, Mayfair, London W1',
+Entry works two ways. There is a ladies' guestlist, free to £20 on the door depending on the night and how busy it is; men are not added to the guestlist. For men and mixed groups the route in is a booth, from £1,000 minimum spend, which covers entry for the whole group. Across eight people that is roughly £125 each, spent on drinks. The dress code is smart and dressed up: heels for ladies, a considered look for men, no sportswear, no fancy dress, trainers at the door's discretion. Entry is 18+ with photo ID.
+
+Wednesday and Thursday are the more relaxed nights and the easiest for guestlist entry. Friday and Saturday fill out, so a booth is worth arranging in advance. The venue presents itself as a members' club; we book tables and guestlist for non-members, and the 200-capacity room suits private hire and corporate takeovers, with terms on request. 99 Regent Street, Tape London and Maddox are all a short walk if you want a second room.`,
+    address: '1 Dover Street, Mayfair, London W1S 4LD',
     area: 'Mayfair',
     areas: ['Mayfair', 'Central London'],
-    musicGenres: [],
+    musicGenres: ['Hip-Hop', 'RnB', 'House'],
     openingNights: 'Wednesday, Thursday, Friday, Saturday',
-    closingTime: 'To be confirmed',
-    dressCode: 'Not confirmed for Rumour yet: ask us when you book.',
-    tableMinimum: 'On request',
-    crowd: 'Not confirmed for Rumour yet.',
-    bestFor: 'Groups who want a table on Dover Street in Mayfair, Wednesday to Saturday from 11pm.',
-    insiderTip: 'TABU is now Rumour, at 1 Dover Street. Doors open from 11pm, Wednesday to Saturday.',
-    whyRanked: 'TABU is now Rumour: a bookable Mayfair club at 1 Dover Street, open Wednesday to Saturday from 11pm.',
-    mapUrl: 'https://maps.google.com/?q=Rumour+1+Dover+Street+Mayfair+London',
-    tonightSuitability: 'TABU is now Rumour: 1 Dover Street, Mayfair, from 11pm Wednesday to Saturday. Message us for a table.',
-    guestlistRealistic: false,
-    guestlistNote: 'Guestlist terms at Rumour are not confirmed here; a table booked through us is the reliable route.',
-    bestForGroups: 'all',
+    closingTime: '4:00am',
+    dressCode: 'Smart and dressed up. Heels for ladies and a considered look for men. No sportswear, no fancy dress; trainers at the door\'s discretion. 18+ with photo ID.',
+    tableMinimum: '£1,000',
+    crowd: '18+ with photo ID. Ladies on the guestlist, men and mixed groups on booths, and nobody filming: no photos or video in the main room or on the dance floor.',
+    bestFor: 'Groups who want a booth in an intimate Mayfair room, Wednesday to Saturday until 4am. Ladies\' groups on the guestlist, and anyone who prefers a night without cameras.',
+    insiderTip: 'Phones stay in pockets on the dance floor: the floor team enforce the no-photography rule. Wednesday and Thursday are the easiest nights for the ladies\' guestlist; for a Friday or Saturday booth, book ahead because the room fills early by design.',
+    whyRanked: 'One intimate Mayfair room built around booths, with a no-photography policy that sets it apart from the rooms around it, open until 4am four nights a week. Booths from £1,000 cover entry for the whole group.',
+    mapUrl: 'https://maps.google.com/?q=Rumour+1+Dover+Street+Mayfair+London+W1S+4LD',
+    tonightSuitability: 'Open tonight if it is Wednesday to Saturday: 11pm to 4am, 18+ with photo ID. Ladies\' guestlist on the door, booths from £1,000 for men and mixed groups. Message us for tonight.',
+    guestlistRealistic: true,
+    guestlistNote: 'Ladies\' guestlist only, free to £20 on the door depending on the night. Men are not added to the guestlist: men and mixed groups come in on a booth from £1,000.',
+    bestForGroups: 'ladies',
     lastMinuteTableFriendly: false,
-    lastMinuteNote: 'Message us on WhatsApp to check same-day tables at Rumour.',
-    heroImage: '/gallery/images/fe4414_4c672667e7a5457b9224ad73e3c5dda7.jpg',
-    cardImage: '/gallery/images/fe4414_e949276097ce47268f86b1b06b938c57.jpg',
-    galleryImages: ['/gallery/images/fe4414_48ae7b23f1e04f0a94a53da7e6a08ea9.jpg', '/gallery/images/fe4414_d03ed6fb1e754a34a815beebf6a14835.jpg', '/gallery/images/fe4414_ff953c00db3a4af5b4b7a6575ab8abae.jpg', '/gallery/images/fe4414_4cdad8e2e343466889cfb9614f83379f.jpg', '/gallery/images/fe4414_c6667a69785e4fac823c8041211beae8.jpg', '/gallery/images/fe4414_458bf79db0954e1ea5f6d28ea1917064.jpg'],
+    lastMinuteNote: 'Wednesday and Thursday are the more relaxed nights. Friday and Saturday fill out and are worth arranging in advance, so message us as early as you can for a same-day booth.',
+    heroImage: '/gallery/images/rumour-london.jpg',
+    cardImage: '/gallery/images/rumour-london.jpg',
+    galleryImages: ['/gallery/images/rumour-london.jpg'],
+    imageAlt: {
+      '/gallery/images/rumour-london.jpg': 'Rumour at 1 Dover Street, the red velvet booths in the main room',
+    },
+    hours: [
+      { days: ['Wednesday', 'Thursday'], opens: '23:00', closes: '04:00', note: 'The more relaxed nights, and the easiest for the ladies\' guestlist' },
+      { days: ['Friday', 'Saturday'], opens: '23:00', closes: '04:00', note: 'The room fills out: arrange a booth in advance' },
+    ],
+    nearby: ['99-regent-street', 'tape-london', 'maddox', 'dear-darling'],
   },
   {
     slug: 'libertine',
@@ -374,43 +410,56 @@ Tables start from £1,000 and the intimate scale means every table feels premium
     galleryImages: ['/gallery/images/fe4414_de7fc0b8b7b04a1e956a7161623452b6.jpg', '/gallery/images/fe4414_5a886c260d914f009b5e498b98c5dfe4.jpg', '/gallery/images/fe4414_6f2589c074724205998ccd4113a4a94b.jpg', '/gallery/images/fe4414_4a9e8d6a5af24e05a5817d8d20c43909.jpg', '/gallery/images/fe4414_d9c7d11ba4494929b40a6173e605018a.jpg', '/gallery/images/fe4414_c1cdde8590474c1fa5509122636f79d1.jpg'],
   },
   {
-    slug: 'cuckoo-club',
-    name: '99 Regent Street (formerly Cuckoo Club)',
+    slug: '99-regent-street',
+    name: '99 Regent Street',
     shortName: '99 Regent Street',
     status: 'open',
-    formerName: 'Cuckoo Club',
-    closedMessage: 'Cuckoo Club is now 99 Regent Street, on Swallow Street by Piccadilly Circus. 99 Regent Street opens Wednesday to Saturday for over 19s, with tables from £600, booked on WhatsApp like every other club on this site.',
-    tagline: 'Cuckoo Club is now 99 Regent Street: Swallow Street by Piccadilly Circus, tables from £600',
-    description: 'Cuckoo Club is now 99 Regent Street, on Swallow Street by Piccadilly Circus. Open Wednesday to Saturday, over 19s, tables from £600. Book a table on WhatsApp.',
-    longDescription: `Cuckoo Club is now 99 Regent Street. The venue on Swallow Street, by Piccadilly Circus, trades under its new name, and people still search for Cuckoo Club, so this page covers the change and how to book a table at 99 Regent Street.
+    previousName: 'Cuckoo Club',
+    tagline: 'Two floors behind the Swallow Street door by Piccadilly Circus: hip hop and RnB upstairs, house downstairs, Wednesday to Saturday until 4am',
+    description: '99 Regent Street (formerly Cuckoo Club) is a two-floor club by Piccadilly Circus, open Wednesday to Saturday from 11pm to 4am for over 19s. Hip hop and RnB upstairs, house downstairs, tables from £600. Book on WhatsApp.',
+    longDescription: `99 Regent Street (formerly Cuckoo Club) is the two-floor club behind the Swallow Street entrance at the Piccadilly Circus end of Regent Street, open Wednesday, Thursday, Friday and Saturday from 11pm to 4am. The Cuckoo Club name is no longer used: 99, also styled NinetyNine, is the Cuckoo founders reunited on the same floor with a new concept, opened in October 2026. Entry is for over 19s with physical photo ID.
 
-99 Regent Street opens Wednesday to Saturday. Entry is for over 19s, and tables start from £600 minimum spend.
+Upstairs is the main room, where most of the tables sit, playing open-format hip hop and RnB. A staircase leads down to the second floor, which runs house and is darker and more dance-focused. Each floor holds around 200 people, and the club is finished in dark panelling, warm low lighting and banquette seating, with a long bar. Both floors run on Friday and Saturday; on Wednesday and Thursday one floor opens.
 
-Music and dress code at 99 Regent Street are the new venue's own, and none of Cuckoo Club's old terms carry over. Message us on WhatsApp with your date and group size for availability.
+Tables start from £600 minimum spend, spent on drinks rather than charged as a fee on top, and a table covers entry for the whole group. The minimum rises with the night, the group size and the position in the room, and VIP and larger tables are arranged on request. Guestlist is by request and mixed groups are welcome: it is not a ladies-only list. Entry on the guestlist runs from free to about £50 depending on the night and arrival time, and we confirm names and the night's terms before you go.
 
-History: under the Cuckoo Club name, the venue was a long-running Swallow Street club. That was Cuckoo Club, not 99 Regent Street.`,
-    address: 'Swallow Street, London W1B 4EZ',
+The dress code is elegant and enforced. No sportswear, running trainers, shorts, caps or fancy dress; clean minimal trainers are at the door's discretion, and black is the safe choice. Membership exists at the venue, but the details are not published, and we book tables and guestlist for non-members. Private events and corporate hire are arranged through us, with capacities, minimums and terms on request.
+
+The address has been a nightlife name since 1954, when Al Burnett's Stork Club drew guests from Harold Macmillan to Frank Sinatra and Elizabeth Taylor, and then the Cuckoo Club held the floor for the best part of two decades. Piccadilly Circus station is two minutes away; Oxford Circus and Green Park are walkable. Rumour on Dover Street, Tape London, Maddox and Dear Darling are all a short walk if you want a second room later in the night.`,
+    address: '99 Regent Street, London W1B 4EZ',
     area: 'Mayfair',
     areas: ['Mayfair', 'Central London'],
-    musicGenres: [],
+    musicGenres: ['Hip-Hop', 'RnB', 'House'],
     openingNights: 'Wednesday, Thursday, Friday, Saturday',
-    closingTime: 'To be confirmed',
-    dressCode: 'Not confirmed for 99 Regent Street yet: ask us when you book. Entry is for over 19s.',
+    closingTime: '4:00am',
+    dressCode: 'Elegant and enforced. No sportswear, running trainers, shorts, caps or fancy dress. Clean minimal trainers at the door\'s discretion; black is the safe choice. Over 19s only, with physical photo ID.',
     tableMinimum: '£600',
-    crowd: 'Over 19s only.',
-    bestFor: 'Groups who want a table by Piccadilly Circus from £600, Wednesday to Saturday.',
-    insiderTip: 'Cuckoo Club is now 99 Regent Street. Entry is for over 19s, so bring photo ID.',
-    whyRanked: 'Cuckoo Club is now 99 Regent Street: a bookable club on Swallow Street, open Wednesday to Saturday, with tables from £600.',
-    mapUrl: 'https://maps.google.com/?q=99+Regent+Street+Swallow+Street+London',
-    tonightSuitability: 'Cuckoo Club is now 99 Regent Street: Swallow Street by Piccadilly Circus, over 19s, tables from £600. Message us for a table.',
-    guestlistRealistic: false,
-    guestlistNote: 'Guestlist terms at 99 Regent Street are not confirmed here; a table booked through us is the reliable route.',
-    bestForGroups: 'all',
-    lastMinuteTableFriendly: false,
-    lastMinuteNote: 'Message us on WhatsApp to check same-day tables at 99 Regent Street.',
-    heroImage: '/gallery/images/fe4414_52d6295c80bc46b3b8b13d5eb0c385f5.jpg',
-    cardImage: '/gallery/images/fe4414_dd9694e452204ef99a0b6c2dc693faf9.jpg',
-    galleryImages: ['/gallery/images/fe4414_affd1145589143f7a655ebcb34a0a7c8.jpg', '/gallery/images/fe4414_344fbd63598246e7aa317196b7721a0c.jpg', '/gallery/images/fe4414_950de24e4f2b429ba47a022f13479db5.jpg', '/gallery/images/fe4414_aa163b7210fe4225a069d699f9400858.jpg', '/gallery/images/fe4414_b4633e7c60fa491e8c26bea776d3e98c.jpg', '/gallery/images/fe4414_f1f26d54e1e14b6384eb337005445fbf.jpg'],
+    crowd: 'Over 19s with photo ID, a year older than most London doors, and mixed groups welcome on the guestlist. Hip hop and RnB in the main room upstairs, a house crowd downstairs.',
+    bestFor: 'Groups who want a table by Piccadilly Circus from £600, Wednesday to Saturday until 4am. Mixed groups on the guestlist, and anyone who wants hip hop and house under one roof.',
+    insiderTip: 'Bring physical photo ID: the door is 19+. Both floors run on Friday and Saturday; on Wednesday and Thursday one floor opens, so ask us which room is running before you arrive.',
+    whyRanked: 'Two rooms, two sounds and a 4am close by Piccadilly Circus, with tables from £600 that cover entry for the group. The founders of the Cuckoo Club back on the same floor with a new concept.',
+    mapUrl: 'https://maps.google.com/?q=99+Regent+Street+London+W1B+4EZ',
+    tonightSuitability: 'Open tonight if it is Wednesday to Saturday: doors at 11pm, close at 4am, over 19s with photo ID. Tables from £600 and a mixed-group guestlist. Message us for tonight.',
+    guestlistRealistic: true,
+    guestlistNote: 'Guestlist is by request and mixed groups are welcome. Entry runs from free to about £50 depending on the night and arrival time; we confirm names and the night\'s terms before you go.',
+    bestForGroups: 'mixed',
+    lastMinuteTableFriendly: true,
+    lastMinuteNote: 'Same-day tables are checked on WhatsApp: send your group size and arrival time and we confirm what is available that night. The earlier in the day you message, the more choice of table.',
+    heroImage: '/gallery/images/99-regent-street-main-room.jpg',
+    cardImage: '/gallery/images/99-regent-street-bar.jpg',
+    galleryImages: ['/gallery/images/99-regent-street-main-room.jpg', '/gallery/images/99-regent-street-staircase.jpg', '/gallery/images/99-regent-street-bar.jpg', '/gallery/images/99-regent-street-downstairs.jpg', '/gallery/images/99-regent-street-entrance.jpg'],
+    imageAlt: {
+      '/gallery/images/99-regent-street-main-room.jpg': '99 Regent Street, the main room upstairs',
+      '/gallery/images/99-regent-street-staircase.jpg': '99 Regent Street, the staircase between the two floors',
+      '/gallery/images/99-regent-street-bar.jpg': '99 Regent Street, the bar',
+      '/gallery/images/99-regent-street-downstairs.jpg': '99 Regent Street, the downstairs house room',
+      '/gallery/images/99-regent-street-entrance.jpg': '99 Regent Street, the entrance',
+    },
+    hours: [
+      { days: ['Wednesday', 'Thursday'], opens: '23:00', closes: '04:00', note: 'One floor open' },
+      { days: ['Friday', 'Saturday'], opens: '23:00', closes: '04:00', note: 'Both floors open: hip hop and RnB upstairs, house downstairs' },
+    ],
+    nearby: ['rumour-london', 'tape-london', 'maddox', 'dear-darling'],
   },
   {
     slug: 'dear-darling',
@@ -743,6 +792,55 @@ export function tablesFromLabel(club: Club): string {
 /** "Closes at 3:00am", or a to-be-confirmed line when no closing time is confirmed. */
 export function closesLabel(club: Club): string {
   return /\d/.test(club.closingTime) ? `Closes at ${club.closingTime}` : 'Closing time to be confirmed';
+}
+
+/** "99 Regent Street (formerly Cuckoo Club)" for an open venue that changed name, otherwise the name. */
+export function nameWithPrevious(club: Club): string {
+  return club.previousName ? `${club.name} (formerly ${club.previousName})` : club.name;
+}
+
+/** Alt text for one of a club's photos: the named room when we know it, otherwise the fallback. */
+export function imageAltFor(club: Club, src: string, fallback: string): string {
+  return club.imageAlt?.[src] ?? fallback;
+}
+
+export const WEEKDAYS: Weekday[] = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+/** "11pm", "4am" or "3:45am" from a 24-hour time such as "23:00". */
+export function clockLabel(time: string): string {
+  const [h, m] = time.split(':').map(Number);
+  const hour = h % 12 === 0 ? 12 : h % 12;
+  const suffix = h < 12 ? 'am' : 'pm';
+  return m ? `${hour}:${String(m).padStart(2, '0')}${suffix}` : `${hour}${suffix}`;
+}
+
+/** Monday to Sunday for the opening-hours table. `hours` is null on a night the venue is closed. */
+export function weeklyHours(club: Club): { day: Weekday; hours: string | null; note?: string }[] {
+  const slots = club.hours ?? [];
+  return WEEKDAYS.map((day) => {
+    const slot = slots.find((s) => s.days.includes(day));
+    return slot
+      ? { day, hours: `${clockLabel(slot.opens)} to ${clockLabel(slot.closes)}`, note: slot.note }
+      : { day, hours: null };
+  });
+}
+
+/** "11pm to 4am" when every open night keeps the same hours, otherwise null. */
+export function sharedHoursLabel(club: Club): string | null {
+  const labels = new Set((club.hours ?? []).map((s) => `${clockLabel(s.opens)} to ${clockLabel(s.closes)}`));
+  return labels.size === 1 ? [...labels][0] : null;
+}
+
+/** Nights grouped by identical hours, Monday first, for structured data. */
+export function hoursByTime(club: Club): { days: Weekday[]; opens: string; closes: string }[] {
+  const groups = new Map<string, { days: Weekday[]; opens: string; closes: string }>();
+  for (const slot of club.hours ?? []) {
+    const key = `${slot.opens}-${slot.closes}`;
+    const group = groups.get(key) ?? { days: [], opens: slot.opens, closes: slot.closes };
+    group.days.push(...slot.days);
+    groups.set(key, group);
+  }
+  return [...groups.values()].map((g) => ({ ...g, days: WEEKDAYS.filter((d) => g.days.includes(d)) }));
 }
 
 export function getOpenClubs(): Club[] {

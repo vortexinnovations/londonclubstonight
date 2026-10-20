@@ -46,12 +46,12 @@ const faqs = [
   {
     question: 'What is the latest a club stays open in London?',
     answer:
-      'Ministry of Sound regularly stays open until 6am, and sometimes later for special events. This makes it the latest-closing major club in London. Most Mayfair and Central London clubs close between 2:30am and 3:30am. If you want to dance past 3am, your options narrow significantly: Ministry of Sound is the standout choice.',
+      'Ministry of Sound regularly stays open until 6am, and sometimes later for special events. This makes it the latest-closing major club in London. Most Mayfair and Central London clubs close between 2:30am and 3:30am; in Mayfair, Rumour and 99 Regent Street run to 4am, Wednesday to Saturday. If you want to dance past 3am, your options narrow significantly: Ministry of Sound is the standout choice.',
   },
   {
     question: 'Are there clubs open after 3am in London tonight?',
     answer:
-      'Yes, but they are limited. Ministry of Sound in Elephant & Castle regularly runs until 6am on Fridays and Saturdays. Tape London and Cirque Le Soir both run until 3:45am, and on Fridays and Saturdays Little Tape, the room next door to Tape, carries on from 3am to 5:30am. BEAT London has a 3:30am licence and may keep the dancefloor moving close to that time. Beyond those, after-3am options become very specific to the night and event.',
+      'Yes, but they are limited. Ministry of Sound in Elephant & Castle regularly runs until 6am on Fridays and Saturdays. Tape London and Cirque Le Soir both run until 3:45am, and on Fridays and Saturdays Little Tape, the room next door to Tape, carries on from 3am to 5:30am. BEAT London has a 3:30am licence and may keep the dancefloor moving close to that time. In Mayfair, 99 Regent Street and Rumour both run from 11pm to 4am, Wednesday to Saturday. Beyond those, after-3am options become very specific to the night and event.',
   },
   {
     question: 'How do I get home from a late night club in London?',

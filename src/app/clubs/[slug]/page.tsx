@@ -1,7 +1,15 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import { clubs, getClubBySlug, getOpenClubs } from '@/lib/clubs';
+import {
+  clubs,
+  getClubBySlug,
+  getOpenClubs,
+  hoursByTime,
+  imageAltFor,
+  sharedHoursLabel,
+  weeklyHours,
+} from '@/lib/clubs';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getNightClubSchema } from '@/components/SchemaMarkup';
 import type { Metadata } from 'next';
@@ -27,6 +35,8 @@ export async function generateMetadata({
   const isClosed = club.status === 'permanently-closed';
   // A renamed venue is open and bookable under its new name; the old name stays in the title.
   const isRenamed = !isClosed && Boolean(club.formerName);
+  // An open venue that changed name keeps the normal layout: the old name joins the title only.
+  const previousName = !isClosed && !isRenamed ? club.previousName : undefined;
   const fullName = /london$/i.test(club.name) ? club.name : `${club.name} London`;
   const formerName = club.formerName ?? club.name;
   const formerFull = /london$/i.test(formerName) ? formerName : `${formerName} London`;
@@ -34,10 +44,12 @@ export async function generateMetadata({
     ? `${fullName} Has Closed: ${club.area} Alternatives`
     : isRenamed
       ? `${formerFull} Is Now ${club.shortName} | Table Booking`
-      : `${club.name} London | Table Booking & Guestlist`;
+      : previousName
+        ? `${club.name} (formerly ${previousName}): Opening Hours & Nights`
+        : `${club.name} London | Table Booking & Guestlist`;
   const description = isClosed
     ? `${fullName} in ${club.area} has closed. What it was, and the open London clubs with a similar crowd and music to book instead.`
-    : isRenamed
+    : isRenamed || previousName
       ? club.description
       : `Everything you need to know about ${club.name} nightclub in ${club.area}, London. Table prices from ${club.tableMinimum}, dress code, music, and guestlist access.`;
 
@@ -48,7 +60,19 @@ export async function generateMetadata({
       ? [`${club.name} London`, `${club.name} club`, `${club.name} closed`, `${club.name} ${club.area}`]
       : isRenamed
         ? [`${formerName}`, `${formerName} club`, `${club.shortName} London`, `${formerName} now ${club.shortName}`, `${club.shortName} table booking`]
-        : [
+        : previousName
+          ? [
+            `${club.name} opening hours`,
+            `${club.name} London`,
+            `${club.name} club`,
+            previousName,
+            `${previousName} London`,
+            `${previousName} opening hours`,
+            `${club.name} table booking`,
+            `${club.name} guestlist`,
+            `${club.name} dress code`,
+          ]
+          : [
           `${club.name} London`,
           `${club.name} club`,
           `${club.name} nightclub`,
@@ -85,6 +109,8 @@ export default async function ClubPage({
   // A renamed venue is open and bookable; the page leads with "Old is now New".
   const isRenamed = !isClosed && Boolean(club.formerName);
   const renamedFrom = (club.formerName ?? '').replace(/ London$/i, '');
+  // An open venue that changed name: a "Formerly X" line under the H1, nothing else changes.
+  const previousName = !isClosed && !isRenamed ? club.previousName : undefined;
   // Closed venues are not sold on this page.
   const notBookable = isClosed;
   // Only these areas have a page; any other (Fitzrovia, St James's) links to
@@ -100,12 +126,21 @@ export default async function ClubPage({
         .map((s) => openClubs.find((c) => c.slug === s))
         .filter((c): c is NonNullable<typeof c> => Boolean(c))
     : [];
+  const nearbyClubs = notBookable
+    ? []
+    : (club.nearby ?? [])
+        .map((s) => openClubs.find((c) => c.slug === s))
+        .filter((c): c is NonNullable<typeof c> => Boolean(c));
+  // Night-by-night hours, only for venues whose hours we publish precisely.
+  const week = !notBookable && club.hours?.length ? weeklyHours(club) : [];
+  const hoursLabel = notBookable ? null : sharedHoursLabel(club);
 
   const schema = getNightClubSchema(
     club.name,
     club.description,
     club.address,
-    `/clubs/${club.slug}`
+    `/clubs/${club.slug}`,
+    { alternateName: previousName, hours: notBookable ? [] : hoursByTime(club) }
   );
 
   return (
@@ -176,7 +211,7 @@ export default async function ClubPage({
       <section className="relative min-h-[50vh] flex items-end overflow-hidden">
         <Image
           src={club.heroImage}
-          alt={`${club.name} nightclub London`}
+          alt={imageAltFor(club, club.heroImage, `${club.name} nightclub London`)}
           fill
           className="object-cover animate-slow-zoom"
           priority
@@ -189,6 +224,11 @@ export default async function ClubPage({
           <h1 className="animate-fade-up anim-delay-1 font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-5 text-center">
             {club.name}
           </h1>
+          {previousName && (
+            <p className="animate-fade-up anim-delay-1 -mt-2 mb-5 text-sm uppercase tracking-widest text-frost-300 text-center">
+              Formerly {previousName}
+            </p>
+          )}
           <p className="animate-fade-up anim-delay-2 text-lg md:text-xl text-frost-100/85 leading-relaxed max-w-2xl mx-auto text-center">
             {club.tagline}
           </p>
@@ -216,11 +256,48 @@ export default async function ClubPage({
             <QuickInfoCard label="Area" value={club.area} />
             <QuickInfoCard label="Music" value={club.musicGenres.join(', ')} />
             <QuickInfoCard label="Open Nights" value={club.openingNights} />
-            <QuickInfoCard label="Closing Time" value={club.closingTime} />
+            {hoursLabel ? (
+              <QuickInfoCard label="Hours" value={hoursLabel} />
+            ) : (
+              <QuickInfoCard label="Closing Time" value={club.closingTime} />
+            )}
             <QuickInfoCard label="Table Minimum" value={club.tableMinimum} />
           </div>
         )}
       </section>
+
+      {/* Opening hours, night by night (venues whose hours we publish precisely) */}
+      {week.length > 0 && (
+        <section className="py-12 md:py-16">
+          <div className="max-w-4xl mx-auto px-6">
+            <span className="eyebrow">Nights and hours</span>
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mt-3 mb-8">
+              {club.name} Opening Hours
+            </h2>
+            <div className="glass-card p-7 md:p-8">
+              <table className="w-full text-left">
+                <caption className="sr-only">{club.name} opening hours, Monday to Sunday</caption>
+                <tbody>
+                  {week.map(({ day, hours, note }) => (
+                    <tr key={day} className="border-b border-white/[0.06] last:border-0 align-top">
+                      <th scope="row" className="py-3 pr-4 w-32 font-semibold text-white whitespace-nowrap">
+                        {day}
+                      </th>
+                      <td className="py-3">
+                        <span className={hours ? 'text-neon-200 font-semibold' : 'text-frost-500'}>
+                          {hours ?? 'Closed'}
+                        </span>
+                        {note && <span className="block text-frost-400 text-sm mt-0.5">{note}</span>}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              <p className="text-frost-300 leading-relaxed text-base mt-6">{club.tonightSuitability}</p>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* About */}
       <section className="py-12 md:py-16">
@@ -235,6 +312,23 @@ export default async function ClubPage({
                 {para}
               </p>
             ))}
+            {nearbyClubs.length > 0 && (
+              <p className="text-frost-300 leading-relaxed text-base md:text-lg">
+                A short walk away:{' '}
+                {nearbyClubs.map((c, i) => (
+                  <span key={c.slug}>
+                    {i > 0 && (i === nearbyClubs.length - 1 ? ' and ' : ', ')}
+                    <Link
+                      href={`/clubs/${c.slug}`}
+                      className="text-neon-300 underline underline-offset-4 hover:text-white transition-colors"
+                    >
+                      {c.name}
+                    </Link>
+                  </span>
+                ))}
+                .
+              </p>
+            )}
           </div>
         </div>
       </section>
@@ -355,7 +449,7 @@ export default async function ClubPage({
               <div key={i} className="relative aspect-[3/2] overflow-hidden rounded-xl">
                 <Image
                   src={img}
-                  alt={`${club.name} London nightclub photo ${i + 1}`}
+                  alt={imageAltFor(club, img, `${club.name} London nightclub photo ${i + 1}`)}
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 50vw, 33vw"

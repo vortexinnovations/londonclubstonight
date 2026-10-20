@@ -58,7 +58,7 @@ const sohoClubs = getClubsByArea('Soho');
 /** Open clubs a short walk from Soho, with where they sit relative to it. */
 const NEARBY: { slug: string; where: string }[] = [
   { slug: 'tape-london', where: 'Hanover Square, Mayfair, just west of Regent Street' },
-  { slug: 'cuckoo-club', where: 'Swallow Street, Mayfair, just off Regent Street near Piccadilly Circus' },
+  { slug: '99-regent-street', where: 'Mayfair, entrance on Swallow Street by Piccadilly Circus' },
   { slug: 'selene-london', where: '4 Winsley Street, Fitzrovia, just north of Oxford Circus' },
   { slug: 'beat-london', where: '48 Margaret Street, Fitzrovia, north of Oxford Circus' },
 ];

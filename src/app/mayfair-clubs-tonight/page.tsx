@@ -46,7 +46,7 @@ const faqs = [
   {
     question: 'What Mayfair clubs are open tonight?',
     answer:
-      'Mayfair clubs operate primarily on Thursday, Friday, and Saturday nights. Key venues include Tape London, Maddox, Rumour, 99 Regent Street, Dear Darling, and Scotch of St James. The exact clubs open tonight depend on the day of the week; our page updates dynamically to show you what is running right now. Message us on WhatsApp for a real-time recommendation based on your group size and preferences.',
+      'Mayfair clubs operate primarily on Thursday, Friday, and Saturday nights. Key venues include Tape London, Maddox, Rumour, 99 Regent Street, Dear Darling, and Scotch of St James. Rumour and 99 Regent Street open Wednesday to Saturday, 11pm to 4am. The exact clubs open tonight depend on the day of the week; our page updates dynamically to show you what is running right now. Message us on WhatsApp for a real-time recommendation based on your group size and preferences.',
   },
   {
     question: 'Can I get on a guestlist in Mayfair tonight?',
@@ -249,8 +249,12 @@ export default function MayfairClubsTonightPage() {
               <strong className="text-white">Maddox</strong>{" "}is the house music stronghold of Mayfair. While most Mayfair clubs lean heavily into hip-hop and RnB, Maddox has committed to a sound that attracts a crowd who actually want to dance. The restaurant-to-club format is polished, and the transition between the two feels natural.
             </p>
             <p>
-              <Link href="/clubs/tabu-london" className="text-neon-300 underline underline-offset-4">TABU is now Rumour</Link>, at 1 Dover Street, open Wednesday to Saturday from 11pm.{' '}
-              <Link href="/clubs/cuckoo-club" className="text-neon-300 underline underline-offset-4">Cuckoo Club is now 99 Regent Street</Link>, on Swallow Street by Piccadilly Circus, open Wednesday to Saturday for over 19s with tables from &#163;600. Both are booked through us like the clubs above.{' '}
+              <Link href="/clubs/rumour-london" className="text-neon-300 underline underline-offset-4">Rumour</Link>{' '}(formerly Tabu) is one intimate booth room at 1 Dover Street, open Wednesday to Saturday from 11pm to 4am, with a no-photography policy on the dance floor. Ladies come in on the guestlist; men and mixed groups book a booth from &#163;1,000.
+            </p>
+            <p>
+              <Link href="/clubs/99-regent-street" className="text-neon-300 underline underline-offset-4">99 Regent Street</Link>{' '}(formerly Cuckoo Club) runs two floors behind the Swallow Street entrance by Piccadilly Circus: hip hop and RnB upstairs, house downstairs. It opens Wednesday to Saturday from 11pm to 4am for over 19s, both floors run on Friday and Saturday, and tables start from &#163;600.
+            </p>
+            <p>
               <Link href="/clubs/funky-buddha" className="text-neon-300 underline underline-offset-4">Funky Buddha has closed</Link>, and Itzel now operates at its Berkeley Street address.
             </p>
             <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
@@ -278,7 +282,7 @@ export default function MayfairClubsTonightPage() {
               A typical Mayfair night follows a rhythm. Doors open between 10pm and 11pm, but the venues do not truly fill until midnight. Arriving between 11pm and midnight is the sweet spot. You avoid the empty-room awkwardness of arriving too early while securing a good position before the peak.
             </p>
             <p>
-              Most Mayfair clubs close between 2:30am and 3:30am. This is significantly earlier than the clubs in South London or East London, so pace your night accordingly. The peak energy window is typically midnight to 2am. Arrive too late and you have missed the best of it.
+              Most Mayfair clubs close between 2:30am and 3:30am. This is significantly earlier than the clubs in South London or East London, so pace your night accordingly. Rumour and 99 Regent Street are the late exceptions, running to 4am Wednesday to Saturday. The peak energy window is typically midnight to 2am. Arrive too late and you have missed the best of it.
             </p>
             <p>
               Drinks are expensive by any standard. Cocktails start around &#163;16 and premium options run significantly higher. If you have a table, your minimum spend covers bottles and mixers: Grey Goose, Belvedere, or Ciroc are the standard vodka options, with champagne and premium spirits available at higher price points.

@@ -50,8 +50,8 @@ const rankedSlugs = [
   'selene-london',
   'dear-darling',
   'beat-london',
-  'tabu-london',
-  'cuckoo-club',
+  'rumour-london',
+  '99-regent-street',
 ];
 
 const clubOpinions: Record<string, string> = {
@@ -71,10 +71,10 @@ const clubOpinions: Record<string, string> = {
     'Dear Darling occupies the most beautiful room in Mayfair nightlife. The interiors are opulent without being gaudy: think art-deco glamour with a modern edge. It functions best as a cocktail-bar-to-club transition, where you arrive early, drink well, and ease into the late-night atmosphere as the music builds. The crowd is well-dressed and the vibe is more sophisticated than rowdy. It is not the place for an all-out party, but for a glamorous evening that ends with dancing, it is hard to beat.',
   'beat-london':
     'BEAT earns its place on this list through pure musical credibility. The sound system is built for people who actually care about audio quality, and the programming spans hip-hop, house, and open format depending on the night. Located in Fitzrovia rather than Mayfair, it attracts a crowd that prioritises the music over the postcode. When the right DJ is behind the decks and the room is full, BEAT delivers one of the best pure clubbing experiences in central London. It sits at ten not because it is bad (every club on this list is excellent) but because the VIP experience is less polished than the venues above it.',
-  'tabu-london':
-    'TABU is now Rumour, and the room at 1 Dover Street is back on this list under its new name. Rumour opens Wednesday to Saturday from 11pm on Dover Street, a short walk from Green Park station. It sits at eleven because it is new under this name: Rumour sets its own music, door and table terms, and none of the old TABU terms carry over. Message us for current table prices.',
-  'cuckoo-club':
-    'Cuckoo Club is now 99 Regent Street, on Swallow Street by Piccadilly Circus. It opens Wednesday to Saturday for over 19s, and tables start from £600 minimum spend. It sits at twelve because it is new under this name, and none of the old Cuckoo Club terms carry over.',
+  'rumour-london':
+    'Rumour (formerly Tabu) is one intimate room at 1 Dover Street, built around booths: deep red velvet, dark panelling, a chandelier and low warm lighting. The music is open format, hip hop, RnB and house, read to the room, and the no-photography policy, enforced by the floor team, is the clearest difference from the rooms around it. It opens Wednesday to Saturday from 11pm to 4am. Ladies come in on the guestlist; men and mixed groups book a booth from £1,000, which covers entry for the whole group. It sits at eleven because the new concept only opened in October 2026, and the room has to earn its place under the new name.',
+  '99-regent-street':
+    '99 Regent Street (formerly Cuckoo Club) puts two floors behind the Swallow Street entrance by Piccadilly Circus: open-format hip hop and RnB in the main room upstairs, where most of the tables sit, and darker, dance-focused house downstairs. It opens Wednesday to Saturday from 11pm to 4am, with both floors running on Friday and Saturday, and the door is 19+ with physical photo ID. Tables start from £600 minimum spend and cover entry for the whole group, and the guestlist welcomes mixed groups. It sits at twelve because the Cuckoo founders only reopened the floor under the new name in October 2026.',
 };
 
 export default function BestClubsInLondonPage() {

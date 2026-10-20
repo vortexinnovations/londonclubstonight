@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { tablesFromLabel, type Club } from '@/lib/clubs';
+import { imageAltFor, tablesFromLabel, type Club } from '@/lib/clubs';
 
 interface ClubCardProps {
   club: Club;
@@ -18,7 +18,7 @@ export default function ClubCard({ club, featured = false, showArea = true }: Cl
       <div className={`relative w-full overflow-hidden ${featured ? 'aspect-[16/9]' : 'aspect-[3/2]'}`}>
         <Image
           src={club.cardImage}
-          alt={`${club.name} nightclub London`}
+          alt={imageAltFor(club, club.cardImage, `${club.name} nightclub London`)}
           fill
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

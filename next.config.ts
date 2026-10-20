@@ -4,6 +4,15 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizeCss: true,
   },
+  async redirects() {
+    return [
+      // Renamed venues (October 2026): Cuckoo Club is now 99 Regent Street, Tabu is now Rumour.
+      { source: "/clubs/cuckoo-club", destination: "/clubs/99-regent-street", permanent: true },
+      { source: "/clubs/tabu-london", destination: "/clubs/rumour-london", permanent: true },
+      { source: "/md/clubs/cuckoo-club", destination: "/md/clubs/99-regent-street", permanent: true },
+      { source: "/md/clubs/tabu-london", destination: "/md/clubs/rumour-london", permanent: true },
+    ];
+  },
   async rewrites() {
     return [
       {

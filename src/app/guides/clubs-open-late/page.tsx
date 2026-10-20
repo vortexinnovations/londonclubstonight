@@ -7,7 +7,7 @@ import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
   title: 'Clubs Open Late in London: Your Guide to Late Night London',
-  description: 'Every London club grouped by closing time. Find venues open until 3am, 3:30am, 3:45am and 6am. Your guide to keeping the night going in London.',
+  description: 'Every London club grouped by closing time. Find venues open until 3am, 3:30am, 3:45am, 4am and 6am. Your guide to keeping the night going in London.',
   keywords: ['clubs open late London', 'late night clubs London', 'clubs open until 6am London', 'after hours London', 'late night London'],
   alternates: {
     canonical: 'https://londonclubstonight.com/guides/clubs-open-late',
@@ -20,6 +20,12 @@ const closingGroups = [
     label: 'Open Until 6am',
     description: 'The only venue in London where you can dance until sunrise.',
     slugs: ['ministry-of-sound'],
+  },
+  {
+    time: '4:00am',
+    label: 'Open Until 4am',
+    description: '99 Regent Street and Rumour both run from 11pm to 4am, Wednesday to Saturday, a short walk apart in Mayfair.',
+    slugs: ['99-regent-street', 'rumour-london'],
   },
   {
     time: '3:45am',
@@ -53,7 +59,7 @@ export default function ClubsOpenLatePage() {
       <SchemaMarkup
         schema={getArticleSchema(
           'Clubs Open Late in London: Your Guide to Late Night London',
-          'Every London club grouped by closing time. Find venues open until 3am, 3:30am, 3:45am and 6am.',
+          'Every London club grouped by closing time. Find venues open until 3am, 3:30am, 3:45am, 4am and 6am.',
           '/guides/clubs-open-late',
           '2025-01-01'
         )}
@@ -102,7 +108,7 @@ export default function ClubsOpenLatePage() {
           {/* Quick Reference */}
           <div className="glass-card p-7 mb-12">
             <h2 className="font-display text-lg font-extrabold tracking-tight text-white mb-4 text-center">Quick Reference</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-5 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
               {closingGroups.map((group) => (
                 <div key={group.time} className="text-center">
                   <div className="font-display text-2xl font-extrabold tracking-tight text-gradient">{group.time.replace(':00', '')}</div>

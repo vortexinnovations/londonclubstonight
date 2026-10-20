@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import type { Club } from '@/lib/clubs';
-import { getWhatsAppTonightUrl, closesLabel, tablesFromLabel } from '@/lib/clubs';
+import { getWhatsAppTonightUrl, closesLabel, imageAltFor, tablesFromLabel } from '@/lib/clubs';
 
 interface TonightClubCardProps {
   club: Club;
@@ -29,7 +29,7 @@ export default function TonightClubCard({
       <div className="relative aspect-[3/2] w-full overflow-hidden">
         <Image
           src={club.cardImage}
-          alt={`${club.name} nightclub tonight`}
+          alt={imageAltFor(club, club.cardImage, `${club.name} nightclub tonight`)}
           fill
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

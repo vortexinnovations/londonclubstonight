@@ -146,9 +146,12 @@ export default function MayfairPage() {
               <p>
                 Almost every top-tier London club operates within a few minutes&apos; walk of
                 each other in Mayfair. Tape London on Hanover Square, Maddox on Maddox Street,
-                Scotch of St James tucked away on Mason&apos;s Yard, Dear Darling close by,
-                Rumour on Dover Street (formerly TABU) and 99 Regent Street on Swallow Street
-                (formerly Cuckoo Club). Funky Buddha has closed, and Itzel now operates at its
+                Scotch of St James tucked away on Mason&apos;s Yard, Dear Darling close by,{' '}
+                <Link href="/clubs/rumour-london" className="text-neon-300 underline underline-offset-4 hover:text-white transition-colors">Rumour</Link>{' '}
+                (formerly Tabu) on Dover Street and{' '}
+                <Link href="/clubs/99-regent-street" className="text-neon-300 underline underline-offset-4 hover:text-white transition-colors">99 Regent Street</Link>{' '}
+                (formerly Cuckoo Club), entered from Swallow Street, both open until 4am Wednesday
+                to Saturday. Funky Buddha has closed, and Itzel now operates at its
                 Berkeley Street address. This
                 density means that if your first choice doesn&apos;t work out, you&apos;re
                 never far from an alternative.

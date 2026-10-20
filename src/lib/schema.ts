@@ -170,11 +170,36 @@ export function getItemListSchema(name: string, items: { name: string; url: stri
   };
 }
 
-export function getNightClubSchema(name: string, description: string, address: string, url: string) {
+export interface NightClubDetails {
+  /** A former name the venue is still searched under. */
+  alternateName?: string;
+  /** Nights grouped by identical hours, 24-hour clock (a close before the open is the next morning). */
+  hours?: { days: string[]; opens: string; closes: string }[];
+}
+
+const SCHEMA_DAY_CODES: Record<string, string> = {
+  Monday: 'Mo',
+  Tuesday: 'Tu',
+  Wednesday: 'We',
+  Thursday: 'Th',
+  Friday: 'Fr',
+  Saturday: 'Sa',
+  Sunday: 'Su',
+};
+
+export function getNightClubSchema(
+  name: string,
+  description: string,
+  address: string,
+  url: string,
+  details: NightClubDetails = {}
+) {
+  const hours = details.hours ?? [];
   return {
     '@context': 'https://schema.org',
     '@type': 'NightClub',
     name: name,
+    ...(details.alternateName ? { alternateName: details.alternateName } : {}),
     description: description,
     address: {
       '@type': 'PostalAddress',
@@ -184,5 +209,18 @@ export function getNightClubSchema(name: string, description: string, address: s
     },
     url: `${SITE}${url}`,
     priceRange: '£££',
+    ...(hours.length > 0
+      ? {
+          openingHours: hours.map(
+            (h) => `${h.days.map((d) => SCHEMA_DAY_CODES[d] ?? d).join(',')} ${h.opens}-${h.closes}`
+          ),
+          openingHoursSpecification: hours.map((h) => ({
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: h.days,
+            opens: h.opens,
+            closes: h.closes,
+          })),
+        }
+      : {}),
   };
 }

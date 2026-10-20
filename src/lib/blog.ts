@@ -39,7 +39,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['dress code', 'what to wear', 'entry tips'],
     publishedDate: '2026-03-01',
     updatedDate: '2026-03-25',
-    relatedClubs: ['tape-london', 'cirque-le-soir', 'funky-buddha', 'maddox'],
+    relatedClubs: ['tape-london', 'cirque-le-soir', 'funky-buddha', 'maddox', '99-regent-street'],
     faqs: [
       { question: 'Can you wear trainers to London clubs?', answer: 'At most upscale London clubs, particularly in Mayfair, trainers will get you turned away. The exception is some venues where clean, designer trainers can work if the rest of your outfit is sharp. For guaranteed entry, wear smart shoes.' },
       { question: 'What should women wear to London nightclubs?', answer: 'Dresses, jumpsuits, or smart separates with heels are the safest bet. The dress code at most London clubs expects women to dress up: think cocktail bar, not casual bar. Avoid flip-flops, sportswear, and overly casual outfits.' },
@@ -58,7 +58,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['age limit', 'ID', 'age guide'],
     publishedDate: '2026-03-03',
     updatedDate: '2026-03-25',
-    relatedClubs: ['tape-london', 'ministry-of-sound', 'scotch-of-st-james', 'cuckoo-club'],
+    relatedClubs: ['tape-london', 'ministry-of-sound', 'scotch-of-st-james', '99-regent-street'],
     faqs: [
       { question: 'How old do you have to be to get into London clubs?', answer: 'All London nightclubs are strictly 18+. You will need valid photo ID — a passport, driving licence, or PASS card. Some clubs operate a 21+ policy on certain nights, particularly in Mayfair.' },
       { question: 'What ID do London clubs accept?', answer: 'Passport, UK driving licence, and PASS-accredited ID cards are universally accepted. Some clubs accept EU/EEA national ID cards. Student cards, bank cards, and expired documents are never accepted.' },
@@ -77,7 +77,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['birthday', 'celebrations', 'special occasions'],
     publishedDate: '2026-03-05',
     updatedDate: '2026-03-25',
-    relatedClubs: ['cirque-le-soir', 'the-london-reign', 'the-box-london', 'cuckoo-club', 'luna-club-london'],
+    relatedClubs: ['cirque-le-soir', 'the-london-reign', 'the-box-london', '99-regent-street', 'luna-club-london'],
   },
   {
     slug: 'how-much-does-a-night-out-in-london-cost',
@@ -90,7 +90,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['costs', 'prices', 'budget', 'table prices'],
     publishedDate: '2026-03-07',
     updatedDate: '2026-03-25',
-    relatedClubs: ['tape-london', 'ministry-of-sound', 'cuckoo-club', 'beat-london'],
+    relatedClubs: ['tape-london', 'ministry-of-sound', '99-regent-street', 'beat-london'],
     faqs: [
       { question: 'How much is a table at a London club?', answer: 'Table minimum spends at London\'s top clubs start from £1,000 and can go significantly higher on peak nights and at the most exclusive venues like Tape London (from £1,500). This typically covers bottles and mixers for your group.' },
       { question: 'How much do drinks cost in London clubs?', answer: 'Expect to pay £14-20 for cocktails at Mayfair clubs and £8-14 at venues outside Mayfair. Beers and basic spirits are £8-12 in most central London clubs. Ministry of Sound is generally more affordable at £8-12 for most drinks.' },
@@ -109,7 +109,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['Friday', 'weekend', 'night out'],
     publishedDate: '2026-03-10',
     updatedDate: '2026-03-25',
-    relatedClubs: ['tape-london', 'cirque-le-soir', 'funky-buddha', 'tabu-london', 'the-box-london', 'maddox', 'ministry-of-sound'],
+    relatedClubs: ['tape-london', 'cirque-le-soir', 'funky-buddha', 'rumour-london', 'the-box-london', 'maddox', 'ministry-of-sound'],
   },
   {
     slug: 'best-saturday-night-clubs-in-london',
@@ -122,7 +122,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['Saturday', 'weekend', 'night out'],
     publishedDate: '2026-03-12',
     updatedDate: '2026-03-25',
-    relatedClubs: ['tape-london', 'cirque-le-soir', 'tabu-london', 'the-london-reign', 'luna-club-london', 'ministry-of-sound'],
+    relatedClubs: ['tape-london', 'cirque-le-soir', 'rumour-london', 'the-london-reign', 'luna-club-london', 'ministry-of-sound'],
   },
   {
     slug: 'london-clubs-for-couples',
@@ -148,7 +148,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['VIP', 'table service', 'luxury'],
     publishedDate: '2026-03-16',
     updatedDate: '2026-03-25',
-    relatedClubs: ['tape-london', 'cirque-le-soir', 'the-london-reign', 'the-box-london', 'funky-buddha'],
+    relatedClubs: ['tape-london', 'cirque-le-soir', 'the-london-reign', 'the-box-london', 'funky-buddha', '99-regent-street'],
   },
   {
     slug: 'london-nightlife-guide-for-tourists',
@@ -161,7 +161,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['tourists', 'visitors', 'first time', 'guide'],
     publishedDate: '2026-03-18',
     updatedDate: '2026-03-25',
-    relatedClubs: ['cirque-le-soir', 'ministry-of-sound', 'the-london-reign', 'cuckoo-club'],
+    relatedClubs: ['cirque-le-soir', 'ministry-of-sound', 'the-london-reign', '99-regent-street', 'rumour-london'],
   },
   {
     slug: 'pre-drinks-bars-near-london-clubs',
@@ -174,7 +174,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['bars', 'pre-drinks', 'cocktails'],
     publishedDate: '2026-03-20',
     updatedDate: '2026-03-25',
-    relatedClubs: ['dear-darling', 'maddox', 'cuckoo-club', 'scotch-of-st-james'],
+    relatedClubs: ['dear-darling', 'maddox', '99-regent-street', 'scotch-of-st-james', 'rumour-london'],
   },
   {
     slug: 'new-clubs-in-london',
@@ -187,7 +187,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['new clubs', '2026', 'openings'],
     publishedDate: '2026-03-22',
     updatedDate: '2026-03-25',
-    relatedClubs: ['selene-london', 'tabu-london', 'cuckoo-club', 'the-box-london'],
+    relatedClubs: ['selene-london', 'rumour-london', '99-regent-street', 'the-box-london'],
   },
   {
     slug: 'most-unique-clubs-in-london',
@@ -213,7 +213,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['groups', 'large parties', 'table booking'],
     publishedDate: '2026-03-24',
     updatedDate: '2026-03-25',
-    relatedClubs: ['cuckoo-club', 'funky-buddha', 'luna-club-london', 'beat-london', 'the-london-reign'],
+    relatedClubs: ['99-regent-street', 'funky-buddha', 'luna-club-london', 'beat-london', 'the-london-reign'],
   },
   {
     slug: 'london-club-promoter-guide',
@@ -226,7 +226,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['promoters', 'guestlist', 'booking tips'],
     publishedDate: '2026-03-25',
     updatedDate: '2026-03-25',
-    relatedClubs: ['tape-london', 'cirque-le-soir', 'tabu-london', 'selene-london', 'dear-darling'],
+    relatedClubs: ['tape-london', 'cirque-le-soir', 'rumour-london', 'selene-london', 'dear-darling', '99-regent-street'],
   },
   {
     slug: 'girls-night-out-london-clubs',
@@ -239,7 +239,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['girls night', 'ladies night', 'groups'],
     publishedDate: '2026-03-25',
     updatedDate: '2026-03-25',
-    relatedClubs: ['cirque-le-soir', 'dear-darling', 'selene-london', 'cuckoo-club', 'the-london-reign'],
+    relatedClubs: ['cirque-le-soir', 'dear-darling', 'selene-london', '99-regent-street', 'the-london-reign'],
     faqs: [
       { question: 'Do girls get free entry to London clubs?', answer: 'At most London clubs, women on the guestlist get free entry before a certain time (usually midnight or 12:30am). Some clubs offer free entry for all-female groups throughout the night. Table bookings always include entry. Message us on WhatsApp for tonight\'s guestlist.' },
       { question: 'Are London clubs safe for all-female groups?', answer: 'London\'s reputable clubs take safety seriously. Venues like Cirque Le Soir, Dear Darling, Selene, and 99 Regent Street (formerly Cuckoo Club) have trained security, well-managed door policies, and staff who intervene if anyone is making guests uncomfortable. Stick to established venues and you will be well looked after.' },
@@ -258,7 +258,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['Afrobeats', 'amapiano', 'music'],
     publishedDate: '2026-03-25',
     updatedDate: '2026-03-25',
-    relatedClubs: ['luna-club-london', 'tabu-london', 'cirque-le-soir', 'beat-london', 'funky-buddha'],
+    relatedClubs: ['luna-club-london', 'rumour-london', 'cirque-le-soir', 'beat-london', 'funky-buddha'],
     faqs: [
       { question: 'Which London clubs play Afrobeats every weekend?', answer: 'Cirque Le Soir mixes Afrobeats into its hip-hop sets regularly, and BEAT London features Afrobeats alongside hip-hop and RnB. For dedicated Afrobeats-only nights, check specific event listings as they rotate across venues.' },
       { question: 'Is there amapiano in London clubs?', answer: 'Yes — amapiano has become a staple at London clubs, particularly at BEAT London. DJs increasingly blend amapiano into their Afrobeats and hip-hop sets. Dedicated amapiano nights also run at various venues — message us for the latest schedule.' },
@@ -276,7 +276,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['first time', 'what to expect', 'beginner guide'],
     publishedDate: '2026-03-25',
     updatedDate: '2026-03-25',
-    relatedClubs: ['cuckoo-club', 'ministry-of-sound', 'cirque-le-soir', 'maddox'],
+    relatedClubs: ['99-regent-street', 'ministry-of-sound', 'cirque-le-soir', 'maddox', 'rumour-london'],
     faqs: [
       { question: 'What time should I arrive at a London nightclub?', answer: 'Most London clubs open between 10pm and 11pm. If you are on the guestlist, arrive between 10:30pm and midnight for the smoothest entry. Table bookings usually have an arrival window: stick to it or risk losing your reservation. The peak of the night is typically 12:30am to 2:30am.' },
       { question: 'Can I go to a London club alone?', answer: 'You can, but it is harder. Door staff prefer groups and couples. Solo men face the toughest door policies. Solo women are generally welcomed but should choose reputable venues with strong security. If you are going alone, a guestlist or table booking significantly improves your chances of getting in.' },
@@ -295,7 +295,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['queue', 'fast entry', 'guestlist', 'table booking'],
     publishedDate: '2026-03-25',
     updatedDate: '2026-03-25',
-    relatedClubs: ['tape-london', 'cuckoo-club', 'funky-buddha', 'tabu-london', 'maddox'],
+    relatedClubs: ['tape-london', '99-regent-street', 'funky-buddha', 'rumour-london', 'maddox'],
     faqs: [
       { question: 'How long are queues at London clubs?', answer: 'It varies hugely. On a peak Saturday at Tape London or Cirque Le Soir, the general queue can be 30-60 minutes. Mid-tier clubs average 15-30 minutes on busy nights. Midweek is much quieter, rarely more than 10 minutes. Guestlist and table bookings bypass the general queue entirely.' },
       { question: 'Is guestlist the same as skipping the queue?', answer: 'Not exactly. Guestlist gives you priority: a separate, faster queue. Table bookings give you genuine skip-the-queue access where you walk past everyone. Both are significantly faster than the general admission queue, but table bookings are the only guaranteed instant entry.' },
@@ -313,7 +313,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['after work', 'midweek', 'Thursday'],
     publishedDate: '2026-03-25',
     updatedDate: '2026-03-25',
-    relatedClubs: ['maddox', 'dear-darling', 'selene-london', 'cuckoo-club', 'scotch-of-st-james'],
+    relatedClubs: ['maddox', 'dear-darling', 'selene-london', '99-regent-street', 'scotch-of-st-james'],
     faqs: [
       { question: 'Which London clubs are open on weeknights?', answer: 'Most central London clubs operate Thursday to Saturday. Thursday is the most popular weeknight, with Maddox, 99 Regent Street (formerly Cuckoo Club), Scotch of St James, Dear Darling, and Selene all open and busy. Several clubs also open on Wednesdays, including Cirque Le Soir, Rumour, 99 Regent Street and The Box. Message us to check what is on.' },
       { question: 'Can I get into a London club wearing office clothes?', answer: 'Yes, office clothes are often the perfect dress code for London clubs. A suit or smart office outfit comfortably meets the dress code at every Mayfair and Soho venue. Women in office wear are similarly well-dressed enough for any club. Just avoid trainers and very casual pieces.' },
@@ -331,7 +331,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['costs', 'value', 'table service', 'budget'],
     publishedDate: '2026-03-25',
     updatedDate: '2026-03-25',
-    relatedClubs: ['tape-london', 'ministry-of-sound', 'cuckoo-club', 'beat-london', 'funky-buddha'],
+    relatedClubs: ['tape-london', 'ministry-of-sound', '99-regent-street', 'beat-london', 'funky-buddha'],
     faqs: [
       { question: 'Are London clubs overpriced?', answer: 'It depends on the venue and how you approach the night. Guestlist entry at many clubs is free, making the only costs drinks and transport. Table service at Mayfair clubs starts from £1,000 but split between a group of 8-10, it can work out comparable to a decent restaurant dinner. The value is in choosing the right venue for your budget.' },
       { question: 'Is table service worth it at London clubs?', answer: 'For groups of 6 or more, table service often delivers better value per person than buying drinks individually at the bar. You also get guaranteed entry, a reserved space, and dedicated service. For couples or small groups, guestlist entry and bar drinks are usually the smarter move.' },
@@ -350,7 +350,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['Mayfair', 'Soho', 'comparison', 'areas'],
     publishedDate: '2026-03-25',
     updatedDate: '2026-03-25',
-    relatedClubs: ['tape-london', 'tabu-london', 'maddox', 'cirque-le-soir', 'the-box-london', 'cuckoo-club'],
+    relatedClubs: ['tape-london', 'rumour-london', 'maddox', 'cirque-le-soir', 'the-box-london', '99-regent-street'],
     faqs: [
       { question: 'Is Mayfair or Soho better for a night out?', answer: 'It depends on what you want. Mayfair is polished, exclusive, and expensive: ideal for VIP experiences, table service, and a glamorous crowd. Soho is grittier, more diverse, and more accessible: better for spontaneous nights, eclectic music, and a mixed crowd. Neither is objectively better; they serve different moods.' },
       { question: 'Is Soho cheaper than Mayfair for clubbing?', answer: 'Generally yes. Soho clubs tend to have lower entry fees, more affordable drinks, and lower table minimums. However, premium Soho venues like The Box can be just as expensive as Mayfair. The gap narrows when you use guestlists, which are free at both areas.' },
@@ -387,7 +387,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['walk in', 'no booking', 'spontaneous', 'easy entry'],
     publishedDate: '2026-03-25',
     updatedDate: '2026-03-25',
-    relatedClubs: ['ministry-of-sound', 'beat-london', 'cuckoo-club', 'funky-buddha', 'scotch-of-st-james'],
+    relatedClubs: ['ministry-of-sound', 'beat-london', '99-regent-street', 'funky-buddha', 'scotch-of-st-james'],
     faqs: [
       { question: 'Can you walk into London clubs without a booking?', answer: 'Yes, at many venues. Ministry of Sound and Beat London both accept walk-ins regularly. The key factors are timing (arrive before midnight), dress code (look the part), and group composition (mixed groups fare better). Mayfair clubs are harder for walk-ins but not impossible on quieter nights.' },
       { question: 'What time should you arrive to walk into a London club?', answer: 'Between 10:30pm and 11:30pm is the sweet spot. Arrive too early and the venue is empty. Arrive after midnight and the queue is long, capacity is filling up, and the door becomes more selective. For popular Saturday nights, earlier is always better.' },
@@ -443,7 +443,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['guestlist', 'entry', 'door policy', 'tips'],
     publishedDate: '2026-04-03',
     updatedDate: '2026-04-03',
-    relatedClubs: ['tape-london', 'maddox', 'cuckoo-club', 'cirque-le-soir', 'the-box-london'],
+    relatedClubs: ['tape-london', 'maddox', '99-regent-street', 'cirque-le-soir', 'the-box-london'],
     faqs: [
       { question: 'How do I get on a London club guestlist?', answer: 'The easiest way is to message a promoter directly via WhatsApp. You give your full name, the number of people in your group, and which night you want. The promoter adds you to the venue\'s list and you simply give your name at the door. Most guestlists are free and take under two minutes to arrange.' },
       { question: 'What is the difference between guestlist and walk-in?', answer: 'A guestlist gives you priority entry, often reduced or free entry before a certain time, and your name on the door team\'s list. Walking in means joining the general queue with no guarantee of entry. On busy nights, guestlist guests get in while walk-ins may be turned away once capacity fills.' },
@@ -462,7 +462,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['bank holiday', 'events', 'tonight', 'planning'],
     publishedDate: '2026-04-03',
     updatedDate: '2026-04-03',
-    relatedClubs: ['selene-london', 'tabu-london', 'the-box-london', 'scotch-of-st-james', 'cirque-le-soir'],
+    relatedClubs: ['selene-london', 'rumour-london', 'the-box-london', 'scotch-of-st-james', 'cirque-le-soir'],
     faqs: [
       { question: 'Are London clubs open on bank holidays?', answer: 'Yes. Most London clubs run bank holiday specials, often with extended hours. Many venues stay open an hour or two later than usual, and some run special themed events. Sunday bank holidays are particularly big because everyone has Monday off.' },
       { question: 'Do London clubs charge more on bank holidays?', answer: 'Usually, yes. Door prices increase at most venues, and minimum spends on tables tend to rise by 20 to 50 per cent. Guestlist entry can still save you money, but you need to arrange it earlier than usual: lists fill up fast on bank holiday weekends.' },
@@ -481,7 +481,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['events', 'tonight', 'planning', 'promoters'],
     publishedDate: '2026-04-06',
     updatedDate: '2026-04-06',
-    relatedClubs: ['selene-london', 'tabu-london', 'the-london-reign', 'cirque-le-soir', 'tape-london'],
+    relatedClubs: ['selene-london', 'rumour-london', 'the-london-reign', 'cirque-le-soir', 'tape-london'],
     faqs: [
       { question: 'How do I find out what\'s on at London clubs tonight?', answer: 'The fastest way is to message a promoter on WhatsApp. They know which venues are running events, which nights are busy, and where the energy will be. Social media is useful for browsing, but a promoter gives you real-time, filtered information rather than a wall of listings.' },
       { question: 'Are London club event listings accurate?', answer: 'Not always. Some listing sites show events that were cancelled or rescheduled. Venue Instagram stories are more reliable because they are posted in real time. The safest approach is to confirm through a promoter or the venue\'s own social media on the day.' },
@@ -500,7 +500,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['summer', 'seasonal', 'tonight', 'planning'],
     publishedDate: '2026-04-21',
     updatedDate: '2026-04-21',
-    relatedClubs: ['tape-london', 'the-london-reign', 'cuckoo-club', 'funky-buddha', 'selene-london'],
+    relatedClubs: ['tape-london', 'the-london-reign', '99-regent-street', 'funky-buddha', 'selene-london'],
     faqs: [
       { question: 'Do London clubs get busier in summer?', answer: 'Yes. Tourist season, longer evenings, and bank holidays all push numbers up from May through September. Fridays and Saturdays fill faster and guestlists close earlier. If you plan to go out on a summer weekend, arrange your guestlist or table by Wednesday at the latest.' },
       { question: 'What time do people go out in London in summer?', answer: 'Later than winter. In summer, most people arrive at clubs between 11pm and midnight rather than 10:30pm. The longer daylight means pre-drinks start later and people linger outdoors before heading to venues. Peak energy on the dancefloor shifts to around 1am.' },
@@ -557,7 +557,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['solo', 'going out alone', 'tonight'],
     publishedDate: '2026-05-02',
     updatedDate: '2026-05-02',
-    relatedClubs: ['scotch-of-st-james', 'maddox', 'cuckoo-club', 'funky-buddha', 'tape-london'],
+    relatedClubs: ['scotch-of-st-james', 'maddox', '99-regent-street', 'funky-buddha', 'tape-london'],
     faqs: [
       { question: 'Is it weird to go to a London club alone?', answer: 'No. More people go out solo than you would expect, especially on weeknights. Bartenders, promoters, and regulars all notice that solo clubbers tend to have a good time because they are not managing group logistics or waiting for someone else to make a decision. Most clubs welcome solo guests who look the part and are there for the right reasons.' },
       { question: 'Which London clubs are best for going out alone?', answer: 'Smaller, more intimate venues work best. Scotch of St James has a bar-forward layout that makes solo visits feel natural. Maddox Club is compact enough that the dancefloor pulls everyone in. 99 Regent Street (formerly Cuckoo Club) mixes bar energy with club energy across its different areas. Avoid the largest rooms on the busiest nights if it is your first time going out alone.' },
@@ -595,7 +595,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['last minute', 'tonight', 'planning', 'spontaneous'],
     publishedDate: '2026-05-09',
     updatedDate: '2026-05-09',
-    relatedClubs: ['tape-london', 'dear-darling', 'cuckoo-club', 'maddox', 'cirque-le-soir'],
+    relatedClubs: ['tape-london', 'dear-darling', '99-regent-street', 'maddox', 'cirque-le-soir'],
     faqs: [
       { question: 'Can you plan a last-minute night out in London?', answer: 'Yes. Most London clubs have availability on any given night, especially midweek. The key is messaging a promoter as early as possible, even a few hours before you plan to arrive. They can arrange guestlist entry, recommend venues with space, and tell you what is running tonight.' },
       { question: 'How late can you arrange a London club guestlist?', answer: 'Most clubs close their guestlists between 6pm and 9pm on the night. Some venues are more flexible midweek. The earlier you confirm, the better your chances. On Fridays and Saturdays, aim to message by early afternoon for the best options.' },
@@ -614,7 +614,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['late night food', 'after clubs', 'soho', 'tonight'],
     publishedDate: '2026-05-16',
     updatedDate: '2026-05-16',
-    relatedClubs: ['tape-london', 'cirque-le-soir', 'cuckoo-club', 'maddox', 'funky-buddha'],
+    relatedClubs: ['tape-london', 'cirque-le-soir', '99-regent-street', 'maddox', 'funky-buddha'],
     faqs: [
       { question: 'What time does Bar Italia in Soho stay open?', answer: 'Bar Italia, the Frith Street institution open since 1949, is known for serving late into the night, and it is the closest late-night standby to most Soho nightclubs, with coffee, focaccia, tramezzini and pastries. Opening hours can change, so check its current hours before you rely on it.' },
       { question: 'Where do people eat after a night at Mayfair clubs?', answer: 'Mayfair itself has limited options after 3am because the area is largely residential and most hotel restaurants close by midnight. Most regulars walk east into Soho, where Bar Italia and other late-night spots serve late into the night. The McDonald\'s at Hyde Park Corner and Five Guys on Lower Regent Street are also reliable closer options if you are heading south or west.' },
@@ -747,7 +747,7 @@ export const blogPosts: BlogPost[] = [
     tags: ['freshers', 'students', 'september'],
     publishedDate: '2026-09-04',
     updatedDate: '2026-09-04',
-    relatedClubs: ['ministry-of-sound', 'beat-london', 'tabu-london'],
+    relatedClubs: ['ministry-of-sound', 'beat-london', 'rumour-london'],
     faqs: [
       { question: 'What ID do you need for London clubs as a fresher?', answer: 'A passport, a UK photocard driving licence, or a PASS-accredited card. A student card is not accepted as proof of age, and photos of documents are usually refused. London clubs are 18 and over and the door will check, as of September 2026.' },
       { question: 'Are union freshers events better than going to a London club?', answer: 'They are better for meeting people, because everyone there is new and the format is built for it. City clubs are better nights out on their own terms but assume you already have a group. Most first-years get the best of the week by doing both for different reasons.' },

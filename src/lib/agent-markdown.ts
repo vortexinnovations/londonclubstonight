@@ -15,7 +15,9 @@ import {
   getOpenClubs,
   clubStatusLabel,
   musicLabel,
+  nameWithPrevious,
   tablesFromLabel,
+  weeklyHours,
   type Club,
   WHATSAPP_GUESTLIST_NUMBER,
   WHATSAPP_TABLE_NUMBER,
@@ -76,14 +78,27 @@ function frontMatter(title: string, description: string, canonicalPath: string, 
 
 function clubSummaryLine(club: Club): string {
   const status = club.status === 'open' ? '' : ` *(${clubStatusLabel(club).toLowerCase()})*`;
-  return `- [${club.name}](${SITE_URL}/clubs/${club.slug})${status}: ${club.area}. ${musicLabel(club)}. ${tablesFromLabel(club)}. ${club.tagline}`;
+  return `- [${nameWithPrevious(club)}](${SITE_URL}/clubs/${club.slug})${status}: ${club.area}. ${musicLabel(club)}. ${tablesFromLabel(club)}. ${club.tagline}`;
+}
+
+/** Night-by-night hours table, for venues whose hours we publish precisely. */
+function openingHoursSection(club: Club): string[] {
+  if (!club.hours?.length) return [];
+  return [
+    '## Opening hours',
+    '',
+    '| Night | Hours | Notes |',
+    '| --- | --- | --- |',
+    ...weeklyHours(club).map(({ day, hours, note }) => `| ${day} | ${hours ?? 'Closed'} | ${note ?? ''} |`),
+    '',
+  ];
 }
 
 /** Full markdown profile for a single club page. */
 export function clubMarkdown(club: Club): string {
   const sections: string[] = [
     frontMatter(
-      `${club.name}: ${club.area}, London`,
+      `${nameWithPrevious(club)}: ${club.area}, London`,
       club.description,
       `/clubs/${club.slug}`
     ),
@@ -93,6 +108,7 @@ export function clubMarkdown(club: Club): string {
     `| Field | Value |`,
     `| --- | --- |`,
     `| Status | ${clubStatusLabel(club)} |`,
+    ...(club.previousName ? [`| Formerly | ${club.previousName} |`] : []),
     `| Area | ${club.area} |`,
     `| Address | ${club.address} |`,
     `| Music | ${musicLabel(club)} |`,
@@ -105,6 +121,7 @@ export function clubMarkdown(club: Club): string {
     `| Guestlist realistic | ${club.guestlistRealistic ? 'Yes' : 'No (table recommended)'} |`,
     `| Last-minute tables | ${club.lastMinuteTableFriendly ? 'Often possible' : 'Rarely possible'} |`,
     '',
+    ...openingHoursSection(club),
     '## About',
     '',
     club.longDescription.trim(),
@@ -397,7 +414,7 @@ export function llmsTxt(posts: BlogPost[] = blogPosts): string {
     '',
     ...clubs.map((club) => {
       const status = club.status === 'open' ? '' : ` (${clubStatusLabel(club).toLowerCase()})`;
-      return `- [${club.name}](${SITE_URL}/clubs/${club.slug})${status}: ${club.area}. ${musicLabel(club)}. ${tablesFromLabel(club)}. ${club.tagline}`;
+      return `- [${nameWithPrevious(club)}](${SITE_URL}/clubs/${club.slug})${status}: ${club.area}. ${musicLabel(club)}. ${tablesFromLabel(club)}. ${club.tagline}`;
     }),
     '',
     `## Articles (${posts.length})`,
