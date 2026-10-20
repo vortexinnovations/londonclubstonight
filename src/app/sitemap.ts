@@ -29,8 +29,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const entries: MetadataRoute.Sitemap = [];
 
   for (const route of staticRoutes) {
-    // A redirect is not a page: list only its target.
+    // A redirecting route is not a page of its own: list its target only.
     if (route.redirectsTo) continue;
+
     entries.push({
       url: route.path === '/' ? baseUrl : `${baseUrl}${route.path}`,
       lastModified: new Date(),

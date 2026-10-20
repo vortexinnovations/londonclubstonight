@@ -25,7 +25,7 @@ export interface SiteRoute {
   priority: number;
   changeFrequency: 'daily' | 'weekly' | 'monthly';
   section: RouteSection;
-  /** Redirects to another route; excluded from llms.txt to avoid dead ends. */
+  /** Redirects (308) to another route; excluded from the sitemap and from llms.txt to avoid dead ends. */
   redirectsTo?: string;
 }
 

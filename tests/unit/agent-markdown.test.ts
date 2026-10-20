@@ -53,8 +53,8 @@ describe('sitemap', () => {
   const urls = entries.map((entry) => entry.url);
 
   // The static ordering that shipped before the route registry was extracted,
-  // with /privacy added and the two redirect routes left out. Guards the refactor
-  // against reordering the sitemap.
+  // with /privacy added and the two redirecting routes removed. Guards the
+  // refactor against reordering the sitemap.
   const expectedStaticOrder = [
     '',
     '/best-clubs-in-london',
@@ -91,12 +91,6 @@ describe('sitemap', () => {
     assert.deepEqual(staticUrls, expectedStaticOrder);
   });
 
-  test('leaves out routes that only redirect', () => {
-    for (const route of staticRoutes.filter((r) => r.redirectsTo)) {
-      assert.ok(!urls.includes(`${SITE_URL}${route.path}`), `${route.path} is a redirect`);
-    }
-  });
-
   test('includes every club page', () => {
     for (const club of clubs) {
       assert.ok(
@@ -121,6 +115,12 @@ describe('sitemap', () => {
 
   test('has no duplicate URLs', () => {
     assert.equal(new Set(urls).size, urls.length);
+  });
+
+  test('leaves out routes that redirect', () => {
+    for (const route of staticRoutes.filter((r) => r.redirectsTo)) {
+      assert.ok(!urls.includes(`${SITE_URL}${route.path}`), `lists ${route.path}`);
+    }
   });
 
   test('club detail pages follow the /clubs index', () => {
