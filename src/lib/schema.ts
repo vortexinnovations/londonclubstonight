@@ -14,13 +14,6 @@ export const ORGANIZATION_ID = `${SITE}/#organization`;
 export const WEBSITE_ID = `${SITE}/#website`;
 export const EDITOR_ID = `${SITE}/about-the-editor/#author-daniel`;
 
-const BRAND_SAME_AS = [
-  'https://mayfairtonight.com',
-  'https://londonbottleservice.com',
-  'https://londonbirthdayclub.com',
-  'https://londonluxurynightlife.com',
-];
-
 export function getLocalBusinessSchema() {
   return {
     '@context': 'https://schema.org',
@@ -57,7 +50,6 @@ export function getLocalBusinessSchema() {
       telephone: `+${WHATSAPP_TABLE_NUMBER}`,
       availableLanguage: 'English',
     },
-    sameAs: BRAND_SAME_AS,
   };
 }
 
@@ -124,7 +116,6 @@ export function getOrganizationSchema() {
       telephone: `+${WHATSAPP_TABLE_NUMBER}`,
       availableLanguage: 'English',
     },
-    sameAs: BRAND_SAME_AS,
   };
 }
 

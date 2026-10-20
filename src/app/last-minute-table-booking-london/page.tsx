@@ -171,15 +171,8 @@ export default function LastMinuteTableBookingPage() {
           </div>
           <div className="mt-10">
             <p className="text-frost-500 text-sm">
-              For detailed pricing breakdowns, bottle menus, and package options, visit{' '}
-              <a
-                href="https://londonbottleservice.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-neon-300 hover:text-white transition-colors"
-              >
-                London Bottle Service
-              </a>
+              For a breakdown of table and drinks prices, see{' '}
+              <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="text-neon-300 hover:text-white transition-colors">our guide to what a night out costs</Link>.
             </p>
           </div>
         </div>
@@ -370,25 +363,10 @@ export default function LastMinuteTableBookingPage() {
               booking channels. Third, our service is free. We are
               paid by the clubs for bringing them quality guests, so
               you pay exactly the same minimum spend as you would booking
-              directly. There is genuinely no downside. For the most
-              comprehensive table pricing guide, visit our partner site{' '}
-              <a
-                href="https://londonbottleservice.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-neon-300 hover:text-white transition-colors"
-              >
-                London Bottle Service
-              </a>
+              directly. There is genuinely no downside. For a full breakdown of table prices, see{' '}
+              <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="text-neon-300 hover:text-white transition-colors">our night-out cost guide</Link>
               , and for Mayfair-specific recommendations, see{' '}
-              <a
-                href="https://mayfairtonight.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-neon-300 hover:text-white transition-colors"
-              >
-                Mayfair Tonight
-              </a>.
+              <Link href="/mayfair-clubs-tonight" className="text-neon-300 hover:text-white transition-colors">our Mayfair clubs tonight page</Link>.
             </p>
           </div>
         </div>
@@ -463,14 +441,10 @@ export default function LastMinuteTableBookingPage() {
                   </Link>
                 </li>
                 <li>
-                  <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-frost-300 hover:text-white transition-colors text-sm">
-                    London Bottle Service: full pricing guide &rarr;
-                  </a>
+                  <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="text-frost-300 hover:text-white transition-colors text-sm">Night out costs: full pricing guide &rarr;</Link>
                 </li>
                 <li>
-                  <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-frost-300 hover:text-white transition-colors text-sm">
-                    Mayfair Tonight &rarr;
-                  </a>
+                  <Link href="/mayfair-clubs-tonight" className="text-frost-300 hover:text-white transition-colors text-sm">Mayfair clubs tonight &rarr;</Link>
                 </li>
               </ul>
             </div>

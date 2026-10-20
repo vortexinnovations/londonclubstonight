@@ -112,29 +112,6 @@ const guides = [
   },
 ];
 
-const networkSites = [
-  {
-    name: 'Mayfair Tonight',
-    url: 'https://mayfairtonight.com',
-    description: 'Deep-dive into Mayfair\'s club scene',
-  },
-  {
-    name: 'London Bottle Service',
-    url: 'https://londonbottleservice.com',
-    description: 'VIP table booking specialists',
-  },
-  {
-    name: 'London Birthday Club',
-    url: 'https://londonbirthdayclub.com',
-    description: 'Birthday party planning and packages',
-  },
-  {
-    name: 'London Luxury Nightlife',
-    url: 'https://londonluxurynightlife.com',
-    description: 'Premium nightlife experiences',
-  },
-];
-
 export default function HomePage() {
   return (
     <>
@@ -408,37 +385,6 @@ export default function HomePage() {
           &ldquo;Tables from &pound;1,000.<br className="hidden sm:block" /> Memories, considerably more.&rdquo;
         </p>
       </div>
-
-      {/* Network Cross-Links */}
-      <section className="py-20 md:py-24">
-        <div className="max-w-6xl mx-auto px-6 sm:px-8">
-          <div className="text-center mb-12">
-            <span className="eyebrow justify-center">Specialist guides</span>
-            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mt-4 mb-3">
-              Our Network
-            </h2>
-            <p className="text-frost-300 text-sm max-w-xl mx-auto">
-              Specialist guides from our London nightlife network
-            </p>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {networkSites.map((site) => (
-              <a
-                key={site.url}
-                href={site.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="glass-card glass-card-hover group block p-6 text-center"
-              >
-                <h3 className="font-display font-bold text-white text-sm mb-2 group-hover:text-neon-200 transition-colors">
-                  {site.name}
-                </h3>
-                <p className="text-frost-500 text-xs">{site.description}</p>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Bottom SEO Content */}
       <section className="border-t border-white/[0.05] py-20 md:py-28">

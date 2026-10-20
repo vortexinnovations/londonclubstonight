@@ -10,7 +10,7 @@ import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 export const metadata: Metadata = {
   title: fitTitle('Best Clubs in Mayfair 2026: Nightlife and Tables from £600'),
   description:
-    'Tape, Cirque, Maddox, Rumour and 99 Regent Street: the Mayfair nightclubs, with table bookings, guestlist and tips for every W1 door.',
+    'Tape, Maddox, Rumour and 99 Regent Street: the Mayfair nightclubs, with table bookings, guestlist and tips for every W1 door.',
   keywords: [
     'clubs in Mayfair',
     'Mayfair clubs',
@@ -48,7 +48,7 @@ export default function MayfairPage() {
       <SchemaMarkup
         schema={getArticleSchema(
           'Best Clubs in Mayfair 2026: The Heart of London\'s Luxury Nightlife',
-          'The definitive guide to Mayfair nightclubs including Tape, Cirque, Maddox, Rumour, 99 Regent Street and more.',
+          'The definitive guide to Mayfair nightclubs including Tape, Maddox, Rumour, 99 Regent Street and more.',
           '/areas/mayfair',
           '2025-01-01'
         )}
@@ -178,40 +178,26 @@ export default function MayfairPage() {
               Essential resources for your Mayfair night out.
             </p>
             <div className="grid sm:grid-cols-2 gap-6">
-              <a
-                href="https://mayfairtonight.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="glass-card glass-card-hover block p-7 text-center"
-              >
+              <Link href="/mayfair-clubs-tonight" className="glass-card glass-card-hover block p-7 text-center">
                 <h3 className="font-display text-lg font-bold tracking-tight text-white mb-2">
-                  Mayfair Tonight
-                </h3>
+                  Mayfair Clubs Tonight </h3>
                 <p className="text-frost-300 text-sm">
-                  For tonight&apos;s specific Mayfair events and guestlist, head to
-                  mayfairtonight.com for up-to-the-minute listings.
+                  Which Mayfair clubs open tonight, with guestlist and same-night tables.
                 </p>
                 <span className="text-neon-300 text-sm mt-3 inline-block">
-                  Visit mayfairtonight.com &rarr;
+                  See tonight&apos;s Mayfair clubs &rarr;
                 </span>
-              </a>
-              <a
-                href="https://londonbottleservice.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="glass-card glass-card-hover block p-7 text-center"
-              >
+              </Link>
+              <Link href="/last-minute-table-booking-london" className="glass-card glass-card-hover block p-7 text-center">
                 <h3 className="font-display text-lg font-bold tracking-tight text-white mb-2">
-                  Table &amp; Bottle Pricing
-                </h3>
+                  Last-Minute Tables </h3>
                 <p className="text-frost-300 text-sm">
-                  Compare table minimums and bottle prices across all Mayfair clubs on
-                  londonbottleservice.com.
+                  Which clubs can still seat your group tonight, and their table minimums.
                 </p>
                 <span className="text-neon-300 text-sm mt-3 inline-block">
-                  Visit londonbottleservice.com &rarr;
+                  See last-minute tables &rarr;
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </section>

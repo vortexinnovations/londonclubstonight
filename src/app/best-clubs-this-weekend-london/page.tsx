@@ -263,14 +263,7 @@ export default function BestClubsThisWeekendPage() {
               Friday stretches your budget further without sacrificing the
               quality of venue. For full table pricing across both nights,
               see{' '}
-              <a
-                href="https://londonbottleservice.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-neon-300 hover:text-white transition-colors"
-              >
-                London Bottle Service
-              </a>.
+              <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="text-neon-300 hover:text-white transition-colors">our guide to what a night out costs</Link>.
             </p>
             <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               How to Choose Your Night
@@ -298,14 +291,7 @@ export default function BestClubsThisWeekendPage() {
             <p>
               For Mayfair-specific weekend planning across both nights,
               visit{' '}
-              <a
-                href="https://mayfairtonight.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-neon-300 hover:text-white transition-colors"
-              >
-                Mayfair Tonight
-              </a>. Message us on WhatsApp and we will tell you exactly
+              <Link href="/areas/mayfair" className="text-neon-300 hover:text-white transition-colors">our Mayfair guide</Link>. Message us on WhatsApp and we will tell you exactly
               what is available this weekend and help you pick the right
               night for your group.
             </p>
@@ -382,14 +368,10 @@ export default function BestClubsThisWeekendPage() {
                   </Link>
                 </li>
                 <li>
-                  <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-frost-300 hover:text-white transition-colors text-sm">
-                    London Bottle Service: table pricing &rarr;
-                  </a>
+                  <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="text-frost-300 hover:text-white transition-colors text-sm">Night out costs: table prices &rarr;</Link>
                 </li>
                 <li>
-                  <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-frost-300 hover:text-white transition-colors text-sm">
-                    Mayfair Tonight: Mayfair weekend guide &rarr;
-                  </a>
+                  <Link href="/areas/mayfair" className="text-frost-300 hover:text-white transition-colors text-sm">Mayfair clubs: area guide &rarr;</Link>
                 </li>
               </ul>
             </div>

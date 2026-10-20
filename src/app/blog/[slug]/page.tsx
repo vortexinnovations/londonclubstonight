@@ -186,7 +186,7 @@ function getPostContent(slug: string): React.ReactNode {
             <Link href="/clubs/tape-london" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Tape London</Link>{" "}skews slightly older, 27 to 40, but if you are in your late 20s and can get in, you will fit right in. The exclusivity factor means the crowd is generally successful professionals and industry types who take their nights out seriously.
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
-            For VIP and table service options that suit this age group, check <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">London Bottle Service</a>{" "}for pricing at every major venue.
+            For VIP and table service options that suit this age group, check <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">our night-out cost guide</Link>{" "}for pricing at every major venue.
           </p>
 
           <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mt-10 mb-4">Best Clubs if You Are 30+</h2>
@@ -224,7 +224,7 @@ function getPostContent(slug: string): React.ReactNode {
             A birthday in London is a logistical challenge disguised as a celebration. You are coordinating a group of people with different budgets, tastes, and arrival times, trying to get everyone into the same place at the same time, and hoping the venue delivers an experience worth the effort. Get the venue wrong and the whole night falls apart. Get it right and it is the best night of the year.
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
-            The clubs that do birthdays well understand that you need more than a table and some sparklers. You need a dedicated host, a section that feels like your own space, and a venue that actually acknowledges the occasion rather than treating you as just another booking. For specialist birthday planning, <a href="https://londonbirthdayclub.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">London Birthday Club</a>{" "}handles everything from venue selection to cake and decorations.
+            The clubs that do birthdays well understand that you need more than a table and some sparklers. You need a dedicated host, a section that feels like your own space, and a venue that actually acknowledges the occasion rather than treating you as just another booking. 
           </p>
 
           <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mt-10 mb-4">The Best Birthday Club: Cirque Le Soir</h2>
@@ -252,7 +252,7 @@ function getPostContent(slug: string): React.ReactNode {
             <strong className="text-white"><Link href="/clubs/99-regent-street" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">99 Regent Street (formerly Cuckoo Club)</Link>:</strong>{" "}Intimate enough that your birthday group feels like they own the room, but lively enough that the atmosphere carries through the night. It opens Wednesday to Saturday from 11pm to 4am for over 19s, with tables from &pound;600.
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
-            <strong className="text-white"><Link href="/clubs/the-london-reign" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">The London Reign</Link>:</strong>{" "}The premium option. Aerial performances, a full production show, and then a proper club night. If budget is not the primary concern and you want the most impressive birthday experience in London, Reign delivers on every level. Check <a href="https://londonluxurynightlife.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">London Luxury Nightlife</a>{" "}for details on their premium packages.
+            <strong className="text-white"><Link href="/clubs/the-london-reign" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">The London Reign</Link>:</strong>{" "}The premium option. Aerial performances, a full production show, and then a proper club night. If budget is not the primary concern and you want the most impressive birthday experience in London, Reign delivers on every level. 
           </p>
 
           <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mt-10 mb-4">How to Book a Birthday at a London Club</h2>
@@ -263,7 +263,7 @@ function getPostContent(slug: string): React.ReactNode {
             When you book, tell the venue it is a birthday. Clubs want to make birthdays special because happy birthday groups spend more, tip better, and come back. Most venues will arrange a cake, sparklers, and sometimes a dedicated host for your group at no extra cost.
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
-            For table pricing at every major London club, check <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">London Bottle Service</a>. And for a completely hands-free birthday planning experience, <a href="https://londonbirthdayclub.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">London Birthday Club</a>{" "}will handle everything from venue selection and booking to cake, decorations, and guestlist coordination.
+            For table pricing at every major London club, check <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">our night-out cost guide</Link>. 
           </p>
 
           <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mt-10 mb-4">Birthday Night Logistics</h2>
@@ -370,7 +370,7 @@ function getPostContent(slug: string): React.ReactNode {
 
           <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mt-10 mb-4">The Best Mayfair Clubs on a Friday</h2>
           <p className="text-frost-300 leading-relaxed mb-4">
-            <strong className="text-white"><Link href="/clubs/tape-london" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Tape London</Link>:</strong>{" "}Open Tuesday, Friday, Saturday and Sunday, and Friday is arguably their best night. The crowd is the after-work Mayfair set mixing with industry regulars, and the atmosphere is more approachable than Saturday when it becomes more exclusive. If you have been wanting to try Tape, Friday is your best shot. Book a table through <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">London Bottle Service</a>{" "}to guarantee entry.
+            <strong className="text-white"><Link href="/clubs/tape-london" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Tape London</Link>:</strong>{" "}Open Tuesday, Friday, Saturday and Sunday, and Friday is arguably their best night. The crowd is the after-work Mayfair set mixing with industry regulars, and the atmosphere is more approachable than Saturday when it becomes more exclusive. If you have been wanting to try Tape, Friday is your best shot. Book a table through us to guarantee entry.
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
             <strong className="text-white"><Link href="/clubs/cirque-le-soir" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Cirque Le Soir</Link>:</strong>{" "}The performances are just as spectacular on Fridays, but the room often has a slightly different mix of people. More international visitors, more birthday groups, and a bit more spontaneity. The guestlist is more accessible on Fridays, making this the best night to experience Cirque without a table booking.
@@ -399,7 +399,7 @@ function getPostContent(slug: string): React.ReactNode {
             Pre-drinks are essential for budget and momentum. Check our <Link href="/blog/pre-drinks-bars-near-london-clubs" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">guide to the best pre-drinks bars near London clubs</Link>. Starting at a bar within walking distance of your club means you can time your arrival perfectly without relying on taxis.
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
-            For Mayfair clubs, check out <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Mayfair Tonight</a>{" "}for the latest event listings and what is happening this Friday specifically. Events change weekly at many venues, so always check what is on before you commit.
+            Events change weekly at many venues, so always check what is on before you commit.
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
             Check our guide on <Link href="/guides/clubs-open-late" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">which London clubs stay open latest</Link>{" "}if you are planning to make it a long one. Most Mayfair clubs close at 3:30am, but some venues and after-parties run later.
@@ -423,7 +423,7 @@ function getPostContent(slug: string): React.ReactNode {
 
           <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mt-10 mb-4">The Best Saturday Night Clubs in Mayfair</h2>
           <p className="text-frost-300 leading-relaxed mb-4">
-            <strong className="text-white"><Link href="/clubs/tape-london" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Tape London</Link>:</strong>{" "}Saturday at Tape is as exclusive as London nightlife gets. The crowd is elite: celebrities, athletes, and music industry heavyweights. The energy inside is matched by the difficulty of getting through the door. A table booking is essentially mandatory. The hip-hop and RnB soundtrack hits harder on Saturdays because the room is full and the sound system is pushed to its best. For pricing, check <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">London Bottle Service</a>.
+            <strong className="text-white"><Link href="/clubs/tape-london" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Tape London</Link>:</strong>{" "}Saturday at Tape is as exclusive as London nightlife gets. The crowd is elite: celebrities, athletes, and music industry heavyweights. The energy inside is matched by the difficulty of getting through the door. A table booking is essentially mandatory. The hip-hop and RnB soundtrack hits harder on Saturdays because the room is full and the sound system is pushed to its best. For pricing, check <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">our night-out cost guide</Link>.
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
             <strong className="text-white"><Link href="/clubs/cirque-le-soir" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Cirque Le Soir</Link>:</strong>{" "}Saturday at Cirque is the night you go for the full spectacle. The performers bring their A-game, the room is packed, and the energy is electric. It is the most theatrical nightclub experience in London and Saturday is when they deliver their best production. Guestlist is harder to secure on Saturdays, so a table booking is the safest route in.
@@ -455,7 +455,7 @@ function getPostContent(slug: string): React.ReactNode {
             <strong className="text-white">Transport home is going to cost you.</strong>{" "}Budget &pound;30 to &pound;60 for an Uber between 2am and 4am. The Night Tube on Central and Victoria lines is the cheaper option if it serves your route. Plan this before you go out. Figuring out transport at 3am when every app is surging is the worst way to end a good night.
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
-            For the latest Saturday events across London, check <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Mayfair Tonight</a>{" "}for <Link href="/areas/mayfair" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Mayfair</Link>{" "}listings and our <Link href="/guides/clubs-open-late" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">late-night clubs guide</Link>{" "}if you want to keep going past standard closing time.
+            For Saturday in Mayfair, see our <Link href="/areas/mayfair" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Mayfair</Link>{" "}guide and our <Link href="/guides/clubs-open-late" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">late-night clubs guide</Link>{" "}if you want to keep going past standard closing time.
           </p>
         </>
       );
@@ -862,7 +862,7 @@ function getPostContent(slug: string): React.ReactNode {
             For birthdays and celebrations, <Link href="/clubs/the-london-reign" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">The London Reign</Link>{" "}and <Link href="/clubs/cirque-le-soir" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Cirque Le Soir</Link>{" "}both handle groups well, and the performance element gives the night a natural focal point.
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
-            For dedicated birthday packages, check <a href="https://londonbirthdayclub.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">London Birthday Club</a>. They can organise cakes, sparklers, and preferential table positioning that makes the birthday person feel genuinely special.
+            For birthday groups, see <Link href="/blog/best-clubs-for-a-birthday-in-london" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">our birthday clubs guide</Link>.
           </p>
 
           <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mt-10 mb-4">BEAT London: Best for Music-Focused Groups</h2>
@@ -886,7 +886,7 @@ function getPostContent(slug: string): React.ReactNode {
             <strong className="text-white">Use a promoter.</strong>{" "}This is genuinely the easiest move. Tell us the group size, the date, and the vibe you want. We will match you to the right venue and handle the booking. Read our <Link href="/blog/london-club-promoter-guide" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">promoter guide</Link>{" "}to understand how it works.
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
-            For table service pricing and bottle packages, visit <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">London Bottle Service</a>.
+            For table service pricing and bottle packages, visit <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">our guide to what a night out costs</Link>.
           </p>
         </>
       );

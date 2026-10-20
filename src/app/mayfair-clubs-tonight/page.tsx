@@ -10,9 +10,9 @@ import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema } fro
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: fitTitle('Mayfair Clubs Open Tonight: Guestlist & Tables Available Now'),
+  title: fitTitle('Mayfair Clubs Open Tonight: Guestlist and Tables'),
   description:
-    'What\'s open in Mayfair tonight? Live guestlist spots, same-night VIP tables, and insider tips. Message us on WhatsApp for instant confirmation.',
+    'What\'s open in Mayfair tonight? The clubs running tonight on their regular nights, with guestlist, same-night VIP tables and tips. Book on WhatsApp.',
   keywords: [
     'Mayfair clubs tonight',
     'clubs open in Mayfair tonight',
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     'VIP tables Mayfair tonight',
   ],
   openGraph: {
-    title: 'Mayfair Clubs Tonight: What\'s Open in Mayfair Right Now',
+    title: 'Mayfair Clubs Tonight: What\'s Open in Mayfair Tonight',
     description:
-      'Live guide to Mayfair clubs open tonight. Real-time guestlist and table availability from promoters on the ground.',
+      'Guide to Mayfair clubs open tonight. Guestlist and table bookings through promoters on the ground.',
     url: 'https://londonclubstonight.com/mayfair-clubs-tonight',
     type: 'article',
     locale: 'en_GB',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Mayfair Clubs Tonight',
     description:
-      'Live guide to Mayfair clubs open tonight. Guestlist and table availability from promoters on the ground.',
+      'Guide to Mayfair clubs open tonight. Guestlist and table bookings through promoters on the ground.',
   },
   alternates: {
     canonical: 'https://londonclubstonight.com/mayfair-clubs-tonight',
@@ -47,7 +47,7 @@ const faqs = [
   {
     question: 'What Mayfair clubs are open tonight?',
     answer:
-      'Mayfair clubs operate primarily on Thursday, Friday, and Saturday nights. Key venues include Tape London, Maddox, Rumour and 99 Regent Street, with Dear Darling and Scotch of St James nearby in St James\'s. Rumour and 99 Regent Street open Wednesday to Saturday, 11pm to 4am. The exact clubs open tonight depend on the day of the week; our page updates dynamically to show you what is running right now. Message us on WhatsApp for a real-time recommendation based on your group size and preferences.',
+      'Mayfair clubs operate primarily on Thursday, Friday, and Saturday nights. Key venues include Tape London, Maddox, Rumour and 99 Regent Street, with Dear Darling and Scotch of St James nearby in St James\'s. Rumour and 99 Regent Street open Wednesday to Saturday, 11pm to 4am. The exact clubs open tonight depend on the day of the week; our page updates by day of the week to show you what normally runs tonight. Message us on WhatsApp for a real-time recommendation based on your group size and preferences.',
   },
   {
     question: 'Can I get on a guestlist in Mayfair tonight?',
@@ -62,7 +62,7 @@ const faqs = [
   {
     question: 'How much is a table in Mayfair tonight?',
     answer:
-      'Table minimums in Mayfair start from around £1,000 at venues like Maddox, and at Dear Darling in nearby St James\'s. Tape London starts from £1,500 and can go significantly higher for premium positions on peak nights. These minimums cover your spend on bottles and drinks. You are not paying £1,000 on top of your drinks, it is the minimum amount you commit to spending. For a group of five, that works out to £200 per person, which is competitive when you factor in guaranteed entry and bottle service. For full pricing breakdowns visit londonbottleservice.com.',
+      'Table minimums in Mayfair start from around £1,000 at venues like Maddox, and at Dear Darling in nearby St James\'s. Tape London starts from £1,500 and can go significantly higher for premium positions on peak nights. These minimums cover your spend on bottles and drinks. You are not paying £1,000 on top of your drinks, it is the minimum amount you commit to spending. For a group of five, that works out to £200 per person, which is competitive when you factor in guaranteed entry and bottle service. ',
   },
 ];
 
@@ -76,8 +76,8 @@ export default function MayfairClubsTonightPage() {
   const now = new Date().toISOString();
 
   const articleSchema = getArticleSchema(
-    'Mayfair Clubs Tonight: What\'s Open in Mayfair Right Now',
-    'Live guide to Mayfair clubs open tonight with guestlist availability, table bookings, and insider tips.',
+    'Mayfair Clubs Tonight: What\'s Open in Mayfair Tonight',
+    'Guide to Mayfair clubs open tonight with guestlist availability, table bookings, and insider tips.',
     '/mayfair-clubs-tonight',
     '2025-01-15'
   );
@@ -113,9 +113,7 @@ export default function MayfairClubsTonightPage() {
             Mayfair Clubs <span className="serif-accent text-gradient">Tonight</span>
           </h1>
           <p className="animate-fade-up anim-delay-2 text-lg md:text-xl text-frost-100/85 max-w-2xl mx-auto leading-relaxed mb-4">
-            The definitive guide to what is open in Mayfair right now.
-            Which clubs are running, which guestlists are still accepting
-            names, and where you can still get a table tonight.
+            The guide to which Mayfair clubs open tonight on their regular nights, which ones take guestlist, and where same-night tables are easiest. Message our team on WhatsApp for tonight&apos;s availability.
           </p>
           <time
             dateTime={now}
@@ -135,13 +133,13 @@ export default function MayfairClubsTonightPage() {
       <section className="section-glow py-20 md:py-28 border-t border-white/[0.06]">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
           <div className="mb-12 md:mb-16 max-w-xl">
-            <span className="eyebrow">Live now</span>
+            <span className="eyebrow">Open tonight</span>
             <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mt-4 mb-4">
               Open in Mayfair <span className="serif-accent text-gradient">Tonight</span>
             </h2>
             <p className="text-frost-300 text-base">
               {mayfairClubs.length > 0
-                ? `${mayfairClubs.length} Mayfair ${mayfairClubs.length === 1 ? 'club is' : 'clubs are'} open tonight. Every venue listed below is confirmed running this ${dayName}.`
+                ? `${mayfairClubs.length} Mayfair ${mayfairClubs.length === 1 ? 'club is' : 'clubs are'} open tonight. Every venue listed below normally runs on a ${dayName}.`
                 : `No Mayfair clubs are open tonight. Most Mayfair venues operate Thursday through Saturday.`}
             </p>
           </div>
@@ -283,33 +281,15 @@ export default function MayfairClubsTonightPage() {
               A typical Mayfair night follows a rhythm. Doors open between 10pm and 11pm, but the venues do not truly fill until midnight. Arriving between 11pm and midnight is the sweet spot. You avoid the empty-room awkwardness of arriving too early while securing a good position before the peak.
             </p>
             <p>
-              Most Mayfair clubs close between 2:30am and 3:30am. This is significantly earlier than the clubs in South London or East London, so pace your night accordingly. Rumour and 99 Regent Street are the late exceptions, running to 4am Wednesday to Saturday. The peak energy window is typically midnight to 2am. Arrive too late and you have missed the best of it.
+              Mayfair clubs close earlier than the clubs in South London or East London, so pace your night accordingly. The main room at Tape London closes at 3:45am, and Rumour and 99 Regent Street run to 4am Wednesday to Saturday. The peak energy window is typically midnight to 2am. Arrive too late and you have missed the best of it.
             </p>
             <p>
               Drinks are expensive by any standard. Cocktails start around &#163;16 and premium options run significantly higher. If you have a table, your minimum spend covers bottles and mixers: Grey Goose, Belvedere, or Ciroc are the standard vodka options, with champagne and premium spirits available at higher price points.
             </p>
             <p>
-              For the full Mayfair experience (the scene, the venues, the
-              events calendar), visit{' '}
-              <a
-                href="https://mayfairtonight.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-neon-300 hover:text-white transition-colors"
-              >
-                Mayfair Tonight
-              </a>
-              , our dedicated guide to Mayfair nightlife. And if you are
-              considering a table, detailed pricing for every Mayfair venue is
-              available at{' '}
-              <a
-                href="https://londonbottleservice.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-neon-300 hover:text-white transition-colors"
-              >
-                London Bottle Service
-              </a>.
+              For the full Mayfair picture, venue by venue, see{' '}
+              <Link href="/areas/mayfair" className="text-neon-300 hover:text-white transition-colors">our Mayfair area guide</Link>. If you are considering a table, read our guide to{' '}
+              <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="text-neon-300 hover:text-white transition-colors">what a night out costs</Link>.
             </p>
             <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               Getting There and Getting Home
@@ -417,14 +397,10 @@ export default function MayfairClubsTonightPage() {
                   </Link>
                 </li>
                 <li>
-                  <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-frost-300 hover:text-white transition-colors text-sm">
-                    Mayfair Tonight: full Mayfair guide &rarr;
-                  </a>
+                  <Link href="/areas/mayfair" className="text-frost-300 hover:text-white transition-colors text-sm">Mayfair clubs: area guide &rarr;</Link>
                 </li>
                 <li>
-                  <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-frost-300 hover:text-white transition-colors text-sm">
-                    London Bottle Service: table pricing &rarr;
-                  </a>
+                  <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="text-frost-300 hover:text-white transition-colors text-sm">Night out costs: table prices &rarr;</Link>
                 </li>
               </ul>
             </div>

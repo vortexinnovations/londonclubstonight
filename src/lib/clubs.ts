@@ -153,7 +153,7 @@ Entry is challenging without a booking. The club has a strict door policy and a 
 What makes Cirque Le Soir special is the commitment to spectacle. Every night feels like an event. It's not a place for a quiet drink. It's a place where you'll see things you've never seen in a nightclub before and leave with stories you'll be telling for years.`,
     address: '15-21 Ganton Street, London W1F 9BN',
     area: 'Soho',
-    areas: ['Soho', 'Central London', 'Mayfair'],
+    areas: ['Soho', 'Central London'],
     musicGenres: ['Hip-Hop', 'RnB'],
     openingNights: 'Monday, Wednesday, Friday, Saturday',
     closingTime: '3:45am',

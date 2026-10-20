@@ -124,32 +124,20 @@ export default function ClubsPage() {
                 How to get past the door at London&apos;s best clubs
               </p>
             </Link>
-            <a
-              href="https://londonbottleservice.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="glass-card glass-card-hover block p-6"
-            >
+            <Link href="/last-minute-table-booking-london" className="glass-card glass-card-hover block p-6">
               <span className="text-neon-300 font-semibold">
-                Table &amp; Bottle Pricing
-              </span>
+                Last-Minute Tables </span>
               <p className="text-frost-500 text-sm mt-2">
-                Full menus at londonbottleservice.com
+                Which clubs can seat your group tonight
               </p>
-            </a>
-            <a
-              href="https://mayfairtonight.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="glass-card glass-card-hover block p-6"
-            >
+            </Link>
+            <Link href="/clubs-tonight-london" className="glass-card glass-card-hover block p-6">
               <span className="text-neon-300 font-semibold">
-                Tonight&apos;s Events
-              </span>
+                Tonight&apos;s Clubs </span>
               <p className="text-frost-500 text-sm mt-2">
-                What&apos;s on tonight at mayfairtonight.com
+                Which London clubs are open tonight
               </p>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

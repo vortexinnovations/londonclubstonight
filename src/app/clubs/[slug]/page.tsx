@@ -502,45 +502,28 @@ export default async function ClubPage({
                 How to get past the door at London&apos;s best clubs
               </p>
             </Link>
-            <a
-              href="https://londonbottleservice.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="glass-card glass-card-hover block p-7 text-center"
-            >
+            <Link href="/last-minute-table-booking-london" className="glass-card glass-card-hover block p-7 text-center">
               <span className="text-neon-300 font-semibold text-lg">
-                Table &amp; Bottle Pricing
-              </span>
+                Last-Minute Tables </span>
               <p className="text-frost-500 text-sm mt-2">
-                See full table and bottle menus at londonbottleservice.com
+                Which clubs can still seat your group tonight
               </p>
-            </a>
-            <a
-              href="https://londonbirthdayclub.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="glass-card glass-card-hover block p-7 text-center"
-            >
+            </Link>
+            <Link href="/blog/best-clubs-for-a-birthday-in-london" className="glass-card glass-card-hover block p-7 text-center">
               <span className="text-neon-300 font-semibold text-lg">
                 Birthday Bookings
               </span>
               <p className="text-frost-500 text-sm mt-2">
-                Plan your birthday at London&apos;s best clubs via londonbirthdayclub.com
+                Plan your birthday at London&apos;s best clubs
               </p>
-            </a>
-            <a
-              href="https://mayfairtonight.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="glass-card glass-card-hover block p-7 text-center"
-            >
+            </Link>
+            <Link href="/clubs-tonight-london" className="glass-card glass-card-hover block p-7 text-center">
               <span className="text-neon-300 font-semibold text-lg">
-                Tonight&apos;s Events
-              </span>
+                Tonight&apos;s Clubs </span>
               <p className="text-frost-500 text-sm mt-2">
-                See what&apos;s on tonight at mayfairtonight.com
+                See which London clubs are open tonight
               </p>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

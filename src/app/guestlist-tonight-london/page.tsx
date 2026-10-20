@@ -292,14 +292,7 @@ export default function GuestlistTonightLondonPage() {
               group of five, &#163;200 per person gets you guaranteed entry,
               a private area, bottle service, and the peace of mind that your
               night is sorted. For pricing details visit{' '}
-              <a
-                href="https://londonbottleservice.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-neon-300 hover:text-white transition-colors"
-              >
-                London Bottle Service
-              </a>.
+              <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="text-neon-300 hover:text-white transition-colors">our guide to what a night out costs</Link>.
             </p>
             <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               How to Submit a Same-Night Guestlist Request
@@ -320,14 +313,7 @@ export default function GuestlistTonightLondonPage() {
               direct venue relationships is the difference between a
               confirmed spot and a hopeful message that goes unanswered until
               tomorrow morning. For Mayfair-specific guestlist and events,{' '}
-              <a
-                href="https://mayfairtonight.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-neon-300 hover:text-white transition-colors"
-              >
-                Mayfair Tonight
-              </a>{' '}
+              <Link href="/areas/mayfair" className="text-neon-300 hover:text-white transition-colors">our Mayfair guide</Link>{' '}
               has detailed venue-by-venue breakdowns.
             </p>
           </div>
@@ -403,14 +389,10 @@ export default function GuestlistTonightLondonPage() {
                   </Link>
                 </li>
                 <li>
-                  <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-frost-300 hover:text-white transition-colors text-sm">
-                    London Bottle Service: table pricing &rarr;
-                  </a>
+                  <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="text-frost-300 hover:text-white transition-colors text-sm">Night out costs: table prices &rarr;</Link>
                 </li>
                 <li>
-                  <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-frost-300 hover:text-white transition-colors text-sm">
-                    Mayfair Tonight &rarr;
-                  </a>
+                  <Link href="/mayfair-clubs-tonight" className="text-frost-300 hover:text-white transition-colors text-sm">Mayfair clubs tonight &rarr;</Link>
                 </li>
               </ul>
             </div>

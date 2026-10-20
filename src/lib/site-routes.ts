@@ -106,7 +106,7 @@ export const staticRoutes: SiteRoute[] = [
     path: '/areas/mayfair',
     title: 'Best Clubs in Mayfair',
     description:
-      "The definitive guide to Mayfair nightclubs. Tape, Cirque, Maddox, Rumour, 99 Regent Street and more: table bookings, guestlist, and insider tips for every Mayfair club.",
+      "The definitive guide to Mayfair nightclubs. Tape, Maddox, Rumour, 99 Regent Street and more: table bookings, guestlist, and insider tips for every Mayfair club.",
     priority: 0.8,
     changeFrequency: 'monthly',
     section: 'areas',
@@ -178,7 +178,7 @@ export const staticRoutes: SiteRoute[] = [
     path: '/clubs-tonight-london',
     title: "Clubs Open Tonight in London",
     description:
-      "Which London clubs are open right now? Guestlist availability, same-night table bookings, and what's happening tonight.",
+      "Which London clubs are open tonight on their regular nights? Guestlist, same-night table bookings, and what's happening tonight.",
     priority: 0.9,
     changeFrequency: 'daily',
     section: 'tonight',

@@ -394,48 +394,30 @@ export default function BestClubsInLondonPage() {
         {/* Cross-links to Network */}
         <div className="mt-16 pt-10 border-t border-white/[0.06]">
           <h3 className="font-display font-bold tracking-tight text-white mb-6">
-            From Our Network
+            More Guides
           </h3>
           <div className="grid sm:grid-cols-3 gap-4 max-w-3xl">
-            <a
-              href="https://mayfairtonight.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="glass-card glass-card-hover p-5 block"
-            >
+            <Link href="/mayfair-clubs-tonight" className="glass-card glass-card-hover p-5 block">
               <p className="font-semibold text-white text-sm mb-1">
-                Mayfair Tonight
-              </p>
+                Mayfair Clubs Tonight </p>
               <p className="text-frost-500 text-xs">
-                Mayfair-specific club events and bookings
+                Which Mayfair clubs are open tonight
               </p>
-            </a>
-            <a
-              href="https://londonbottleservice.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="glass-card glass-card-hover p-5 block"
-            >
+            </Link>
+            <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="glass-card glass-card-hover p-5 block">
               <p className="font-semibold text-white text-sm mb-1">
-                London Bottle Service
-              </p>
+                What a Night Out Costs </p>
               <p className="text-frost-500 text-xs">
-                Detailed VIP table pricing and packages
+                Table minimums, entry and drinks prices
               </p>
-            </a>
-            <a
-              href="https://londonbirthdayclub.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="glass-card glass-card-hover p-5 block"
-            >
+            </Link>
+            <Link href="/blog/best-clubs-for-a-birthday-in-london" className="glass-card glass-card-hover p-5 block">
               <p className="font-semibold text-white text-sm mb-1">
-                London Birthday Club
-              </p>
+                Birthday Clubs </p>
               <p className="text-frost-500 text-xs">
-                Birthday party planning and club bookings
+                Where to celebrate a birthday in London
               </p>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

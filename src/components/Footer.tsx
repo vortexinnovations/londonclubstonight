@@ -43,13 +43,6 @@ const tonightLinks = [
   { href: '/last-minute-table-booking-london', label: 'Last Minute Tables' },
 ];
 
-const networkLinks = [
-  { href: 'https://mayfairtonight.com', label: 'Mayfair Tonight' },
-  { href: 'https://londonbottleservice.com', label: 'London Bottle Service' },
-  { href: 'https://londonbirthdayclub.com', label: 'London Birthday Club' },
-  { href: 'https://londonluxurynightlife.com', label: 'London Luxury Nightlife' },
-];
-
 export default function Footer() {
   return (
     <footer className="relative bg-night-900 mt-24 overflow-hidden">
@@ -82,7 +75,7 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 mb-16">
           <div>
             <h3 className="font-display text-white font-bold text-xs mb-5 uppercase tracking-[0.22em]">Tonight</h3>
             <ul className="space-y-3">
@@ -155,24 +148,6 @@ export default function Footer() {
                   All Articles →
                 </Link>
               </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-display text-white font-bold text-xs mb-5 uppercase tracking-[0.22em]">Our Network</h3>
-            <ul className="space-y-3">
-              {networkLinks.map(link => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-frost-400 hover:text-neon-200 text-sm transition-colors"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
             </ul>
           </div>
         </div>

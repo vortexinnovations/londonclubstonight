@@ -252,8 +252,8 @@ export default function ClubsOpenSundayNightLondonPage() {
             </p>
             <p>
               If you are visiting London and your schedule only allows for a Sunday night out, we would honestly recommend adjusting your plans to include a Friday or Saturday instead. The difference in available options and overall quality of experience is substantial. To get ahead on weekend table planning and bottle service, visit{' '}
-              <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">London Bottle Service</a>, and for weekend events across the Mayfair scene, see{' '}
-              <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Mayfair Tonight</a>. Message us on WhatsApp and we can help you plan the strongest night for whenever your schedule allows.
+              <Link href="/best-clubs-this-weekend-london" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">our weekend planner</Link>, and for the Mayfair clubs, see{' '}
+              <Link href="/areas/mayfair" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">our Mayfair guide</Link>. Message us on WhatsApp and we can help you plan the strongest night for whenever your schedule allows.
             </p>
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-2">

@@ -62,7 +62,7 @@ const faqs = [
   {
     question: 'What time do London clubs open?',
     answer:
-      'Most London nightclubs open their doors between 10pm and 11pm, with the peak hours running from midnight to 2am. Mayfair clubs typically close between 3am and 3:30am. Ministry of Sound and a few late-night venues can run until 5am or beyond on certain nights. Arriving before midnight is strongly recommended for guestlist entry, and essential if you want to avoid the longest queues.',
+      'Most London nightclubs open their doors between 10pm and 11pm, with the peak hours running from midnight to 2am. In the West End, the main room at Tape London and Cirque Le Soir close at 3:45am, and Rumour and 99 Regent Street run to 4am. Ministry of Sound and a few late-night venues can run until 5am or beyond on certain nights. Arriving before midnight is strongly recommended for guestlist entry, and essential if you want to avoid the longest queues.',
   },
   {
     question: 'Do I need to book in advance?',
@@ -342,14 +342,7 @@ export default function ClubsTonightLondonPage() {
               of four or more, the per-person cost often works out comparable to
               buying drinks individually at the bar, with vastly better service
               and atmosphere. For detailed table pricing and packages, check{' '}
-              <a
-                href="https://londonbottleservice.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-neon-300 hover:text-white transition-colors"
-              >
-                London Bottle Service
-              </a>.
+              <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="text-neon-300 hover:text-white transition-colors">our guide to what a night out costs</Link>.
             </p>
             <h3 className="font-display text-xl font-bold tracking-tight text-white pt-4">
               Why Tonight Specifically
@@ -449,36 +442,21 @@ export default function ClubsTonightLondonPage() {
           {/* Network Cross-Links */}
           <div className="mt-16 pt-10 border-t border-white/[0.06]">
             <h3 className="font-display font-bold tracking-tight text-white mb-6">
-              From Our Network
+              More Guides
             </h3>
             <div className="grid sm:grid-cols-3 gap-4 max-w-3xl">
-              <a
-                href="https://mayfairtonight.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="glass-card glass-card-hover p-5 block"
-              >
-                <p className="font-display font-bold text-white text-sm mb-1">Mayfair Tonight</p>
-                <p className="text-frost-500 text-xs">Mayfair clubs, events &amp; bookings</p>
-              </a>
-              <a
-                href="https://londonbottleservice.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="glass-card glass-card-hover p-5 block"
-              >
-                <p className="font-display font-bold text-white text-sm mb-1">London Bottle Service</p>
-                <p className="text-frost-500 text-xs">VIP table pricing &amp; packages</p>
-              </a>
-              <a
-                href="https://londonbirthdayclub.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="glass-card glass-card-hover p-5 block"
-              >
-                <p className="font-display font-bold text-white text-sm mb-1">London Birthday Club</p>
-                <p className="text-frost-500 text-xs">Birthday party planning</p>
-              </a>
+              <Link href="/blog/vip-nightlife-london-guide" className="glass-card glass-card-hover p-5 block">
+                <p className="font-display font-bold text-white text-sm mb-1">VIP Nightlife Guide</p>
+                <p className="text-frost-500 text-xs">What a VIP night in London involves</p>
+              </Link>
+              <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="glass-card glass-card-hover p-5 block">
+                <p className="font-display font-bold text-white text-sm mb-1">What a Night Out Costs</p>
+                <p className="text-frost-500 text-xs">Table minimums, entry &amp; drinks</p>
+              </Link>
+              <Link href="/blog/best-clubs-for-a-birthday-in-london" className="glass-card glass-card-hover p-5 block">
+                <p className="font-display font-bold text-white text-sm mb-1">Birthday Clubs</p>
+                <p className="text-frost-500 text-xs">Where to celebrate a birthday</p>
+              </Link>
             </div>
           </div>
         </div>

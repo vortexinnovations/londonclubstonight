@@ -177,45 +177,25 @@ export default function ContactPage() {
 
       {/* Cross-links */}
       <section>
-        <span className="eyebrow mb-4">Our network</span>
+        <span className="eyebrow mb-4">More guides</span>
         <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mb-6">Looking for Something <span className="serif-accent text-gradient">Specific?</span></h2>
         <div className="grid sm:grid-cols-2 gap-4">
-          <a
-            href="https://londonbottleservice.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="glass-card glass-card-hover block p-5"
-          >
-            <h3 className="font-display font-bold tracking-tight text-white mb-1">Bottle Service & Pricing</h3>
-            <p className="text-frost-300 text-sm">Detailed pricing, packages, and bottle menus at londonbottleservice.com</p>
-          </a>
-          <a
-            href="https://londonbirthdayclub.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="glass-card glass-card-hover block p-5"
-          >
+          <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="glass-card glass-card-hover block p-5">
+            <h3 className="font-display font-bold tracking-tight text-white mb-1">Table &amp; Night Out Costs</h3>
+            <p className="text-frost-300 text-sm">Table minimums, entry and drinks prices explained</p>
+          </Link>
+          <Link href="/blog/best-clubs-for-a-birthday-in-london" className="glass-card glass-card-hover block p-5">
             <h3 className="font-display font-bold tracking-tight text-white mb-1">Birthday Celebrations</h3>
-            <p className="text-frost-300 text-sm">Birthday packages and planning at londonbirthdayclub.com</p>
-          </a>
-          <a
-            href="https://mayfairtonight.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="glass-card glass-card-hover block p-5"
-          >
+            <p className="text-frost-300 text-sm">The best London clubs for a birthday</p>
+          </Link>
+          <Link href="/mayfair-clubs-tonight" className="glass-card glass-card-hover block p-5">
             <h3 className="font-display font-bold tracking-tight text-white mb-1">Tonight in Mayfair</h3>
-            <p className="text-frost-300 text-sm">Tonight&apos;s Mayfair events and guestlists at mayfairtonight.com</p>
-          </a>
-          <a
-            href="https://londonluxurynightlife.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="glass-card glass-card-hover block p-5"
-          >
-            <h3 className="font-display font-bold tracking-tight text-white mb-1">Luxury Nightlife Guide</h3>
-            <p className="text-frost-300 text-sm">Premium London nightlife experiences at londonluxurynightlife.com</p>
-          </a>
+            <p className="text-frost-300 text-sm">Which Mayfair clubs are open tonight</p>
+          </Link>
+          <Link href="/blog/vip-nightlife-london-guide" className="glass-card glass-card-hover block p-5">
+            <h3 className="font-display font-bold tracking-tight text-white mb-1">VIP Nightlife Guide</h3>
+            <p className="text-frost-300 text-sm">What VIP nightlife in London really involves</p>
+          </Link>
         </div>
       </section>
     </div>

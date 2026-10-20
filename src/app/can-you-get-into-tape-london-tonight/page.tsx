@@ -207,7 +207,7 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
             </p>
             <p>
               Our recommendation is always the same: book a table. If the minimum spend works for your group, it removes all uncertainty. For a full breakdown of table pricing, bottle packages, and what your minimum spend includes, see{' '}
-              <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">London Bottle Service</a>. If you are a group of four or more, splitting a {tape?.tableMinimum || '£1,500'} minimum works out to less than you would spend on a night out anyway, except you are guaranteed entry to one of the most exclusive rooms in London.
+              <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">our guide to what a night out costs</Link>. If you are a group of four or more, splitting a {tape?.tableMinimum || '£1,500'} minimum works out to less than you would spend on a night out anyway, except you are guaranteed entry to one of the most exclusive rooms in London.
             </p>
           </div>
         </div>
@@ -235,7 +235,7 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
             </p>
             <p>
               Located on Hanover Square in Mayfair, the venue itself reflects its neighbourhood: understated luxury without unnecessary flashiness. The interior is dark and moody with plush seating and warm lighting that creates pockets of privacy even when the room is full. For a wider look at what is happening across the Mayfair scene tonight, check{' '}
-              <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Mayfair Tonight</a>.
+              <Link href="/mayfair-clubs-tonight" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">our Mayfair clubs tonight page</Link>.
             </p>
           </div>
         </div>

@@ -110,9 +110,7 @@ export default function PrivacyPage() {
             Links to other sites
           </h2>
           <p>
-            This site links to venue websites and to our sister guides, including Mayfair
-            Tonight, London Bottle Service, London Birthday Club, and London Luxury
-            Nightlife. Once you follow an outbound link you are on someone else&apos;s site
+            This site links to venue websites and other outside sources. Once you follow an outbound link you are on someone else&apos;s site
             and their privacy policy applies, not ours.
           </p>
         </section>

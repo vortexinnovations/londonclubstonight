@@ -47,10 +47,9 @@ describe('entity graph', () => {
     assert.match(String(logo.url), /^https:\/\/londonclubstonight\.com\//);
   });
 
-  test('sameAs lists the sister properties', () => {
-    const sameAs = organization.sameAs as string[];
-    assert.ok(sameAs.length >= 4);
-    for (const url of sameAs) assert.match(url, /^https:\/\//);
+  test('sameAs does not point at other sites of the owner', () => {
+    const sameAs = (organization.sameAs ?? []) as string[];
+    for (const url of sameAs) assert.doesNotMatch(url, /mayfairtonight|londonbottleservice|londonbirthdayclub|londonluxurynightlife/);
   });
 
   test('NAP phone is consistent with the configured booking number', () => {

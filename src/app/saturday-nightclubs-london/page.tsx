@@ -171,15 +171,8 @@ export default function SaturdayNightclubsLondonPage() {
               For Ministry of Sound, the Saturday dynamic is ticket-based. Headline events sell out online, sometimes days in advance. The door price, if tickets remain, will be higher than the advance price. Buying early is not just cheaper. It is the only way to guarantee you get in.
             </p>
             <p>
-              The advantage of booking through a promoter on Saturday is significant. We hold allocations at multiple venues, which means we can often secure a table when the venue&apos;s own booking system shows full. We also know which venues have last-minute cancellations and can move quickly. For Saturday table pricing and bottle service packages, visit{' '}
-              <a
-                href="https://londonbottleservice.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors"
-              >
-                londonbottleservice.com
-              </a>
+              The advantage of booking through a promoter on Saturday is significant. We hold allocations at multiple venues, which means we can often secure a table when the venue&apos;s own booking system shows full. We also know which venues have last-minute cancellations and can move quickly. For Saturday table pricing, see{' '}
+              <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">our guide to what a night out costs</Link>
               .
             </p>
           </div>
@@ -232,7 +225,7 @@ export default function SaturdayNightclubsLondonPage() {
               <strong className="text-white">12:30am to 1:30am:</strong>{" "}Still workable but risks are higher. Popular venues may have reached capacity and stopped admitting from guestlist. Tables that were available earlier may have been released to walk-ins. If you are arriving this late without a confirmed booking, check with us first to confirm the venue is still accepting entry.
             </p>
             <p>
-              <strong className="text-white">After 1:30am:</strong>{" "}For Mayfair clubs closing at 3am to 3:30am, arriving after 1:30am gives you less than two hours. You are paying full price for a partial experience. At Ministry of Sound, however, 1:30am is perfectly reasonable: the night runs until 6am and the best hours are often 2am to 4am.
+              <strong className="text-white">After 1:30am:</strong>{" "}For Mayfair clubs closing between 3am and 4am, arriving after 1:30am leaves you two and a half hours at most. You are paying full price for a partial experience. At Ministry of Sound, however, 1:30am is perfectly reasonable: the night runs until 6am and the best hours are often 2am to 4am.
             </p>
           </div>
         </div>
@@ -261,15 +254,8 @@ export default function SaturdayNightclubsLondonPage() {
               The trade-off for Saturday&apos;s intensity is density. If you are someone who values space, ease of movement, and a quieter conversation, Saturday at a Mayfair club may feel overwhelming. The dancefloor will be shoulder to shoulder. The journey from your table to the bar will take longer than you expect. This is not a drawback for Saturday regulars: the density is the atmosphere. But it is worth knowing in advance so you arrive with the right expectations.
             </p>
             <p>
-              For dedicated Mayfair Saturday coverage and venue-by-venue guides, visit{' '}
-              <a
-                href="https://mayfairtonight.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors"
-              >
-                mayfairtonight.com
-              </a>.
+              For venue-by-venue Mayfair coverage, see{' '}
+              <Link href="/areas/mayfair" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">our Mayfair guide</Link>.
             </p>
           </div>
         </div>
@@ -346,14 +332,7 @@ export default function SaturdayNightclubsLondonPage() {
             >
               Last Minute Tables
             </Link>
-            <a
-              href="https://londonbottleservice.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white transition-colors text-sm"
-            >
-              London Bottle Service Guide
-            </a>
+            <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white transition-colors text-sm">Night Out Costs</Link>
           </div>
         </div>
       </section>

@@ -195,15 +195,15 @@ export default function FridayNightclubsLondonPage() {
           </h2>
           <div className="space-y-6 text-frost-300 text-base md:text-lg leading-relaxed max-w-3xl">
             <p>
-              <strong className="text-white">Same-day tables are realistic.</strong>{" "}Unlike Saturdays, where most venues fill their table sheet by Thursday, Friday tables remain available longer. Messaging us by early afternoon gives you an excellent chance of securing a table at your first-choice venue. Even evening enquiries have a reasonable success rate. For a full guide to Friday table pricing and bottle packages, see{' '}
-              <a href="https://londonbottleservice.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">London Bottle Service</a>.
+              <strong className="text-white">Same-day tables are realistic.</strong>{" "}Unlike Saturdays, where most venues fill their table sheet by Thursday, Friday tables remain available longer. Messaging us by early afternoon gives you an excellent chance of securing a table at your first-choice venue. Even evening enquiries have a reasonable success rate. For what Friday tables and drinks really cost, see{' '}
+              <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">our night-out cost guide</Link>.
             </p>
             <p>
               <strong className="text-white">Guestlist works well on Fridays.</strong>{" "}Venues like Dear Darling, Maddox, and Cirque Le Soir are all accessible via guestlist on Fridays. Mixed groups fare best, but the overall standard is slightly more inclusive than Saturday. Get on our guestlist by messaging WhatsApp with your group details.
             </p>
             <p>
-              <strong className="text-white">After-work transitions are common.</strong>{" "}Many successful Friday nights begin as after-work drinks that evolve organically. If your group is coming from drinks in Soho or dinner in Mayfair, let us know your timing and we can advise on which clubs will be at the right level of energy when you arrive. For Friday events across the Mayfair clubs specifically, check{' '}
-              <a href="https://mayfairtonight.com" target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Mayfair Tonight</a>.
+              <strong className="text-white">After-work transitions are common.</strong>{" "}Many successful Friday nights begin as after-work drinks that evolve organically. If your group is coming from drinks in Soho or dinner in Mayfair, let us know your timing and we can advise on which clubs will be at the right level of energy when you arrive. For the Mayfair clubs open tonight, check{' '}
+              <Link href="/mayfair-clubs-tonight" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">our Mayfair clubs tonight page</Link>.
             </p>
             <p>
               <strong className="text-white">Dress code still applies.</strong>{" "}The Friday dress code is the same as Saturday at every venue. Do not assume that a more relaxed atmosphere means a relaxed door. If you are coming straight from work, a smart office look is fine for most venues. You may need to lose the backpack and adjust your outfit, but the smart-work-to-club transition works on Fridays.
