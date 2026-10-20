@@ -3,11 +3,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
-import { siteOpenGraph } from '@/lib/metadata';
+import { siteOpenGraph, fitTitle } from '@/lib/metadata';
 
 export async function generateMetadata(_props: unknown, parent: ResolvingMetadata): Promise<Metadata> {
   return {
-    title: 'Guestlists & Table Bookings: The Complete Guide to London Clubs',
+    title: fitTitle('Guestlists & Table Bookings: The Complete Guide to London Clubs'),
     description: 'The complete guide to guestlists, table bookings, dress codes, group composition, and age requirements at London nightclubs. Honest advice from promoters.',
     keywords: ['London club guestlist', 'London club table booking', 'London club dress code', 'London club entry tips', 'London nightclub guide'],
     alternates: {

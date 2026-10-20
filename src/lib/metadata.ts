@@ -27,3 +27,20 @@ export async function siteOpenGraph(parent: ResolvingMetadata, url: string): Pro
   const { openGraph } = await parent;
   return { ...SITE_OPEN_GRAPH, images: openGraph?.images, url };
 }
+
+export const SITE_NAME = 'London Clubs Tonight';
+
+/** What the root layout's title.template appends to every page title. */
+const TITLE_SUFFIX = ` | ${SITE_NAME}`;
+
+/** Longest full title Google shows without cutting it off. */
+const MAX_TITLE = 60;
+
+/**
+ * A page's title: "body | London Clubs Tonight" when that fits in 60
+ * characters, otherwise the body alone, so search results show the words that
+ * matter instead of cutting them off. Use it for every page's `title`.
+ */
+export function fitTitle(body: string): string | { absolute: string } {
+  return body.length + TITLE_SUFFIX.length <= MAX_TITLE ? body : { absolute: body };
+}

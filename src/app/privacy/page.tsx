@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
+import { fitTitle } from '@/lib/metadata';
 import Link from 'next/link';
 import { WHATSAPP_GUESTLIST_NUMBER, WHATSAPP_TABLE_NUMBER } from '@/lib/clubs';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy',
+  title: fitTitle('Privacy Policy'),
   description:
     'How London Clubs Tonight handles your data: what we collect, what we do not collect, how WhatsApp booking enquiries are used, and how to request deletion.',
   openGraph: {

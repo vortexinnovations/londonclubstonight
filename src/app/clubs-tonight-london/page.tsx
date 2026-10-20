@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { fitTitle } from '@/lib/metadata';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -14,7 +15,7 @@ import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getI
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: `Clubs Open Tonight in London: Live Updates [${new Date().toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}]`,
+  title: fitTitle(`Clubs Open Tonight in London: Live Updates [${new Date().toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}]`),
   description:
     'Which London clubs are open RIGHT NOW? Live guestlist availability, same-night table bookings, and what\'s happening tonight. Updated every hour.',
   keywords: [

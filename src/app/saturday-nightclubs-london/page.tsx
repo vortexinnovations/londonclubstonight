@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { fitTitle } from '@/lib/metadata';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getSaturdayClubs } from '@/lib/clubs';
@@ -9,7 +10,7 @@ import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getI
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: 'Saturday Night Clubs London: Where to Go This Saturday',
+  title: fitTitle('Saturday Night Clubs London: Where to Go This Saturday'),
   description:
     'Saturday is London\'s biggest night. Every club open, table availability, booking deadlines, and how to make the most of the busiest night of the week.',
   keywords: [

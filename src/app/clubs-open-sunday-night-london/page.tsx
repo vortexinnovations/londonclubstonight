@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { fitTitle } from '@/lib/metadata';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getSundayClubs, getFridayClubs, getSaturdayClubs } from '@/lib/clubs';
@@ -9,7 +10,7 @@ import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema } fro
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: 'Clubs Open Sunday Night in London: Your Sunday Night Options',
+  title: fitTitle('Clubs Open Sunday Night in London: Your Sunday Night Options'),
   description:
     'Which London clubs are open on Sunday nights? An honest guide: most clubs are closed, but here are your real options, alternatives, and how to plan a better weekend instead.',
   keywords: [

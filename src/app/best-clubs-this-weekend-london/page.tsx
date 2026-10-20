@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { fitTitle } from '@/lib/metadata';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getFridayClubs, getSaturdayClubs } from '@/lib/clubs';
@@ -9,7 +10,7 @@ import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getI
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: `Best Clubs This Weekend London: Friday & Saturday Picks [${new Date().toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}]`,
+  title: fitTitle(`Best Clubs This Weekend London: Friday & Saturday Picks [${new Date().toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}]`),
   description:
     'Planning this weekend? The best London clubs open Friday and Saturday with table availability, guestlist options, and honest insider picks.',
   keywords: [

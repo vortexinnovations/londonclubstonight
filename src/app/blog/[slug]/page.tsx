@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { fitTitle } from '@/lib/metadata';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
@@ -40,7 +41,7 @@ export async function generateMetadata({
   if (!post) return {};
 
   return {
-    title: post.metaTitle,
+    title: fitTitle(post.metaTitle),
     description: post.metaDescription,
     openGraph: {
       title: post.metaTitle,

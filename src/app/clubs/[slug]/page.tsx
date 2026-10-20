@@ -13,6 +13,7 @@ import {
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getNightClubSchema } from '@/components/SchemaMarkup';
 import type { Metadata } from 'next';
+import { fitTitle } from '@/lib/metadata';
 
 export function generateStaticParams() {
   return clubs.map((club) => ({
@@ -54,7 +55,7 @@ export async function generateMetadata({
       : `Everything you need to know about ${club.name} nightclub in ${club.area}, London. Table prices from ${club.tableMinimum}, dress code, music, and guestlist access.`;
 
   return {
-    title,
+    title: fitTitle(title),
     description,
     keywords: isClosed
       ? [`${club.name} London`, `${club.name} club`, `${club.name} closed`, `${club.name} ${club.area}`]

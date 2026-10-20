@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { fitTitle } from '@/lib/metadata';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -13,7 +14,7 @@ import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getI
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: 'Get on a Guestlist Tonight London: Free Same-Night Entry',
+  title: fitTitle('Get on a Guestlist Tonight London: Free Same-Night Entry'),
   description:
     'Free guestlist at London\'s best clubs tonight. Which venues still have spots, what ratio you need, and how to get your name on the door in minutes.',
   keywords: [

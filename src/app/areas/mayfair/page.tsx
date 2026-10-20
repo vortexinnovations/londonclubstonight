@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { fitTitle } from '@/lib/metadata';
 import Image from 'next/image';
 import Link from 'next/link';
 import { clubs, getClubsByArea } from '@/lib/clubs';
@@ -7,7 +8,7 @@ import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'Best Clubs in Mayfair 2026: The Heart of London\'s Luxury Nightlife',
+  title: fitTitle('Best Clubs in Mayfair 2026: The Heart of London\'s Luxury Nightlife'),
   description:
     'The definitive guide to Mayfair nightclubs. Tape, Cirque, Maddox, Rumour, 99 Regent Street, Dear Darling, Scotch, and more: table bookings, guestlist, and insider tips for every Mayfair club.',
   keywords: [

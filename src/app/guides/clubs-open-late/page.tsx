@@ -4,11 +4,11 @@ import { clubs } from '@/lib/clubs';
 import Link from 'next/link';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
-import { siteOpenGraph } from '@/lib/metadata';
+import { siteOpenGraph, fitTitle } from '@/lib/metadata';
 
 export async function generateMetadata(_props: unknown, parent: ResolvingMetadata): Promise<Metadata> {
   return {
-    title: 'Clubs Open Late in London: Your Guide to Late Night London',
+    title: fitTitle('Clubs Open Late in London: Your Guide to Late Night London'),
     description: 'Every London club grouped by closing time. Find venues open until 3am, 3:30am, 3:45am, 4am and 6am. Your guide to keeping the night going in London.',
     keywords: ['clubs open late London', 'late night clubs London', 'clubs open until 6am London', 'after hours London', 'late night London'],
     alternates: {

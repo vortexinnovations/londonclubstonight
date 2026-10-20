@@ -4,9 +4,10 @@ import { getOpenClubs } from '@/lib/clubs';
 import ClubCard from '@/components/ClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import type { Metadata } from 'next';
+import { fitTitle } from '@/lib/metadata';
 
 export const metadata: Metadata = {
-  title: 'Best Nightclubs in London 2025 | Complete London Nightclub List',
+  title: fitTitle('Best Nightclubs in London 2025 | Complete London Nightclub List'),
   description:
     'The definitive list of the best nightclubs in London. Insider reviews, entry tips, table booking info, and guestlist access for every top London club.',
   keywords: [

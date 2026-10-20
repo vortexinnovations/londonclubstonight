@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { fitTitle } from '@/lib/metadata';
 import Link from 'next/link';
 import { getMergedPosts } from '@/lib/blog';
 import BlogCard from '@/components/BlogCard';
@@ -6,7 +7,7 @@ import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'London Nightlife Blog: Insider Guides, Tips & Club Reviews',
+  title: fitTitle('London Nightlife Blog: Insider Guides, Tips & Club Reviews'),
   description:
     'The London nightlife blog for people who actually go out. Insider guides to London clubs, honest reviews, dress code tips, and everything you need to know before a night out in London.',
   keywords: [

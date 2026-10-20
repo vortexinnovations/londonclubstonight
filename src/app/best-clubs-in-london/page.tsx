@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { fitTitle } from '@/lib/metadata';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getOpenClubs, musicLabel, tablesFromLabel } from '@/lib/clubs';
@@ -6,7 +7,7 @@ import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'Best Clubs in London 2026: The Definitive Ranked Guide',
+  title: fitTitle('Best Clubs in London 2026: The Definitive Ranked Guide'),
   description:
     'The 12 best nightclubs in London for 2026, ranked by promoters who actually work the doors. From Tape London to Ministry of Sound: honest reviews, table prices, and how to get in.',
   keywords: [

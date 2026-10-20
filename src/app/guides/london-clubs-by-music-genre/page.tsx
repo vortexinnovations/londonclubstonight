@@ -4,11 +4,11 @@ import { clubs } from '@/lib/clubs';
 import Link from 'next/link';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
-import { siteOpenGraph } from '@/lib/metadata';
+import { siteOpenGraph, fitTitle } from '@/lib/metadata';
 
 export async function generateMetadata(_props: unknown, parent: ResolvingMetadata): Promise<Metadata> {
   return {
-    title: 'London Clubs by Music Genre: Hip-Hop, House, RnB & More',
+    title: fitTitle('London Clubs by Music Genre: Hip-Hop, House, RnB & More'),
     description: 'Find the right London club for your music taste. Hip-hop, house, RnB, techno, and open format: every venue categorised by what they actually play.',
     keywords: ['hip hop clubs London', 'house music clubs London', 'RnB clubs London', 'open format clubs London', 'techno clubs London'],
     alternates: {

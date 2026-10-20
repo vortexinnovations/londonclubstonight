@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { fitTitle } from '@/lib/metadata';
 import Image from 'next/image';
 import Link from 'next/link';
 import { clubs, getClubsByArea } from '@/lib/clubs';
@@ -6,7 +7,7 @@ import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'London Clubs by Area: Find the Best Nightlife Near You',
+  title: fitTitle('London Clubs by Area: Find the Best Nightlife Near You'),
   description:
     'Explore London nightclubs by area. Mayfair, Soho, central London, and beyond: find the best clubs near you with table bookings and guestlist access.',
   keywords: [

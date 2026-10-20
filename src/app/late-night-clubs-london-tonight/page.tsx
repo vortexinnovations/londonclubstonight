@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { fitTitle } from '@/lib/metadata';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getOpenClubs, closesLabel } from '@/lib/clubs';
@@ -9,7 +10,7 @@ import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema } fro
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: 'Late Night Clubs London Tonight: Open Until 3am, 4am & 6am',
+  title: fitTitle('Late Night Clubs London Tonight: Open Until 3am, 4am & 6am'),
   description:
     'Which clubs stay open latest tonight? Sorted by closing time with last-entry times, transport home, and what to expect after midnight.',
   keywords: [

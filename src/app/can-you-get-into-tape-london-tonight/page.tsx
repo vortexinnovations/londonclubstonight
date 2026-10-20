@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { fitTitle } from '@/lib/metadata';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getClubBySlug } from '@/lib/clubs';
@@ -8,7 +9,7 @@ import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema } fro
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: 'Can You Get Into Tape London Tonight? Insider Guide',
+  title: fitTitle('Can You Get Into Tape London Tonight? Insider Guide'),
   description:
     'Honest insider advice on getting into Tape London tonight. Walk-in chances, table booking tips, dress code, and what to realistically expect at Mayfair\'s most exclusive club.',
   keywords: [

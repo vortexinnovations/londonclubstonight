@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { fitTitle } from '@/lib/metadata';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getClubsOpenTonight, getCurrentDayName } from '@/lib/clubs';
@@ -9,7 +10,7 @@ import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema } fro
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: 'Mayfair Clubs Open Tonight: Guestlist & Tables Available Now',
+  title: fitTitle('Mayfair Clubs Open Tonight: Guestlist & Tables Available Now'),
   description:
     'What\'s open in Mayfair tonight? Live guestlist spots, same-night VIP tables, and insider tips. Message us on WhatsApp for instant confirmation.',
   keywords: [
