@@ -845,7 +845,7 @@ function getPostContent(slug: string): React.ReactNode {
 
           <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mt-10 mb-4">99 Regent Street (formerly Cuckoo Club): Best for Mid-Size Groups</h2>
           <p className="text-frost-300 leading-relaxed mb-4">
-            <Link href="/clubs/99-regent-street" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">99 Regent Street</Link>, the former Cuckoo Club, entered from Swallow Street, is one of the best Mayfair venues for groups of 8-15, open Wednesday to Saturday from 11pm to 4am for over 19s. The two-floor layout means your group can spread out, and the table positioning lets you have your own space without feeling isolated from the main room.
+            <Link href="/clubs/99-regent-street" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">99 Regent Street</Link>, the former Cuckoo Club, entered from Swallow Street, is one of the best Mayfair venues for groups of 8 to 15, open Wednesday to Saturday from 11pm to 4am for over 19s. The two-floor layout means your group can spread out, and the table positioning lets you have your own space without feeling isolated from the main room.
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
             Tables start from &pound;600. Split ten ways, that is &pound;60 per person for guaranteed entry, a dedicated area, and a couple of bottles to start the night. The door team are experienced at handling group arrivals and will not make your friends queue separately. Arrive together, show the booking, and you are in.
@@ -1777,7 +1777,7 @@ function getPostContent(slug: string): React.ReactNode {
             Pricing changes too. Expect door charges to increase by a few pounds and minimum spends on tables to rise by 20 to 50 per cent depending on the venue. Guestlist entry is still the smartest way to manage costs, but the lists close earlier, often by late afternoon rather than the usual 6pm to 9pm window.
           </p>
           <ul className="list-disc list-inside text-frost-300 space-y-2 mb-6 ml-4">
-            <li><strong className="text-white">Extended hours</strong>: most clubs stay open 1-2 hours later than normal</li>
+            <li><strong className="text-white">Extended hours</strong>: most clubs stay open 1 to 2 hours later than normal</li>
             <li><strong className="text-white">Higher door prices</strong>: walk-in rates increase across the board</li>
             <li><strong className="text-white">Earlier guestlist deadlines</strong>: lists fill up and close by mid-afternoon</li>
             <li><strong className="text-white">Special events</strong>: headline DJs, themed nights, and one-off parties</li>

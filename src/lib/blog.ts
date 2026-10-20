@@ -63,7 +63,7 @@ export const blogPosts: BlogPost[] = [
       { question: 'How old do you have to be to get into London clubs?', answer: 'All London nightclubs are strictly 18+. You will need valid photo ID: a passport, driving licence, or PASS card. Some clubs operate a 21+ policy on certain nights, particularly in Mayfair.' },
       { question: 'What ID do London clubs accept?', answer: 'Passport, UK driving licence, and PASS-accredited ID cards are universally accepted. Some clubs accept EU/EEA national ID cards. Student cards, bank cards, and expired documents are never accepted.' },
       { question: 'Are there over-30s clubs in London?', answer: 'Scotch of St James, Maddox, and The London Reign naturally attract an older crowd (late 20s to 40s) without formally being "over 30s" venues. Ministry of Sound also draws a wide age range thanks to its music-first approach.' },
-      { question: 'Will I feel too old at London clubs?', answer: 'It depends entirely on the venue. Clubs like BEAT London and Cirque Le Soir skew younger (22-35), while Scotch of St James, Maddox, and The London Reign comfortably cater to guests in their 30s and 40s. Choose the right club and age is never an issue.' },
+      { question: 'Will I feel too old at London clubs?', answer: 'It depends entirely on the venue. Clubs like BEAT London and Cirque Le Soir skew younger (22 to 35), while Scotch of St James, Maddox, and The London Reign comfortably cater to guests in their 30s and 40s. Choose the right club and age is never an issue.' },
     ],
   },
   {
@@ -93,9 +93,9 @@ export const blogPosts: BlogPost[] = [
     relatedClubs: ['tape-london', 'ministry-of-sound', '99-regent-street', 'beat-london'],
     faqs: [
       { question: 'How much is a table at a London club?', answer: 'Table minimum spends at London\'s top clubs start from £1,000 and can go significantly higher on peak nights and at the most exclusive venues like Tape London (from £1,500). This typically covers bottles and mixers for your group.' },
-      { question: 'How much do drinks cost in London clubs?', answer: 'Expect to pay £14-20 for cocktails at Mayfair clubs and £8-14 at venues outside Mayfair. Beers and basic spirits are £8-12 in most central London clubs. Ministry of Sound is generally more affordable at £8-12 for most drinks.' },
-      { question: 'Is London club entry free?', answer: 'Guestlist entry is free or reduced at many clubs, particularly for women and mixed groups. Without guestlist, walk-in entry ranges from £10-30 depending on the venue and night. Table bookings include entry as standard.' },
-      { question: 'How much should I budget for a night out in London?', answer: 'For a night at a Mayfair club without a table: budget £80-150 per person (entry, drinks, transport). With a table split between a group: £150-300 per person. At Ministry of Sound or less exclusive venues: £50-100 per person.' },
+      { question: 'How much do drinks cost in London clubs?', answer: 'Expect to pay £14 to £20 for cocktails at Mayfair clubs and £8 to £14 at venues outside Mayfair. Beers and basic spirits are £8 to £12 in most central London clubs. Ministry of Sound is generally more affordable at £8 to £12 for most drinks.' },
+      { question: 'Is London club entry free?', answer: 'Guestlist entry is free or reduced at many clubs, particularly for women and mixed groups. Without guestlist, walk-in entry ranges from £10 to £30 depending on the venue and night. Table bookings include entry as standard.' },
+      { question: 'How much should I budget for a night out in London?', answer: 'For a night at a Mayfair club without a table: budget £80 to £150 per person (entry, drinks, transport). With a table split between a group: £150 to £300 per person. At Ministry of Sound or less exclusive venues: £50 to £100 per person.' },
     ],
   },
   {
@@ -280,7 +280,7 @@ export const blogPosts: BlogPost[] = [
     faqs: [
       { question: 'What time should I arrive at a London nightclub?', answer: 'Most London clubs open between 10pm and 11pm. If you are on the guestlist, arrive between 10:30pm and midnight for the smoothest entry. Table bookings usually have an arrival window: stick to it or risk losing your reservation. The peak of the night is typically 12:30am to 2:30am.' },
       { question: 'Can I go to a London club alone?', answer: 'You can, but it is harder. Door staff prefer groups and couples. Solo men face the toughest door policies. Solo women are generally welcomed but should choose reputable venues with strong security. If you are going alone, a guestlist or table booking significantly improves your chances of getting in.' },
-      { question: 'How long do people stay at London clubs?', answer: 'Most people arrive between 11pm and midnight and stay until 2am-3am. Clubs with late licences like Ministry of Sound can run until 5am or later. Table bookings typically last the whole night: once you are in, you are in. The sweet spot for most people is three to four hours.' },
+      { question: 'How long do people stay at London clubs?', answer: 'Most people arrive between 11pm and midnight and stay until 2am to 3am. Clubs with late licences like Ministry of Sound can run until 5am or later. Table bookings typically last the whole night: once you are in, you are in. The sweet spot for most people is three to four hours.' },
       { question: 'Do I need to book in advance for London clubs?', answer: 'You do not need to book a table, but you should get on the guestlist. Walk-ups without guestlist face longer queues, higher entry fees, and a real chance of being turned away at popular venues. Guestlist is free: there is no reason not to use it. Message us on WhatsApp to get added.' },
     ],
   },
@@ -297,7 +297,7 @@ export const blogPosts: BlogPost[] = [
     updatedDate: '2026-03-25',
     relatedClubs: ['tape-london', '99-regent-street', 'funky-buddha', 'rumour-london', 'maddox'],
     faqs: [
-      { question: 'How long are queues at London clubs?', answer: 'It varies hugely. On a peak Saturday at Tape London or Cirque Le Soir, the general queue can be 30-60 minutes. Mid-tier clubs average 15-30 minutes on busy nights. Midweek is much quieter, rarely more than 10 minutes. Guestlist and table bookings bypass the general queue entirely.' },
+      { question: 'How long are queues at London clubs?', answer: 'It varies hugely. On a peak Saturday at Tape London or Cirque Le Soir, the general queue can be 30 to 60 minutes. Mid-tier clubs average 15 to 30 minutes on busy nights. Midweek is much quieter, rarely more than 10 minutes. Guestlist and table bookings bypass the general queue entirely.' },
       { question: 'Is guestlist the same as skipping the queue?', answer: 'Not exactly. Guestlist gives you priority: a separate, faster queue. Table bookings give you genuine skip-the-queue access where you walk past everyone. Both are significantly faster than the general admission queue, but table bookings are the only guaranteed instant entry.' },
       { question: 'What time should I arrive to avoid queues?', answer: 'Arrive between 10:30pm and 11:30pm for the shortest waits. After midnight, queues peak at most clubs. If you are on the guestlist, arriving before midnight means near-instant entry at most venues. After 1am, even guestlist queues can build up at the most popular clubs.' },
     ],
@@ -333,7 +333,7 @@ export const blogPosts: BlogPost[] = [
     updatedDate: '2026-03-25',
     relatedClubs: ['tape-london', 'ministry-of-sound', '99-regent-street', 'beat-london', 'funky-buddha'],
     faqs: [
-      { question: 'Are London clubs overpriced?', answer: 'It depends on the venue and how you approach the night. Guestlist entry at many clubs is free, making the only costs drinks and transport. Table service at Mayfair clubs starts from £1,000 but split between a group of 8-10, it can work out comparable to a decent restaurant dinner. The value is in choosing the right venue for your budget.' },
+      { question: 'Are London clubs overpriced?', answer: 'It depends on the venue and how you approach the night. Guestlist entry at many clubs is free, making the only costs drinks and transport. Table service at Mayfair clubs starts from £1,000 but split between a group of 8 to 10, it can work out comparable to a decent restaurant dinner. The value is in choosing the right venue for your budget.' },
       { question: 'Is table service worth it at London clubs?', answer: 'For groups of 6 or more, table service often delivers better value per person than buying drinks individually at the bar. You also get guaranteed entry, a reserved space, and dedicated service. For couples or small groups, guestlist entry and bar drinks are usually the smarter move.' },
       { question: 'Which London clubs offer the best value?', answer: 'Ministry of Sound offers outstanding value: affordable entry, reasonable drink prices, and world-class sound and DJs. In the West End, 99 Regent Street (formerly Cuckoo Club) and Beat London have more accessible table minimums than venues like Tape London. Guestlist entry is the best free option across the board.' },
       { question: 'How can I save money on a London club night?', answer: 'Get on the guestlist for free or reduced entry, pre-drink before arriving, go on a Thursday or quieter weeknight for lower prices, and consider sharing a table between a larger group to reduce per-head costs. Avoid buying rounds of shots at the bar: that is where the bill spirals.' },

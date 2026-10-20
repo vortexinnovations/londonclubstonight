@@ -40,11 +40,11 @@ const faqs = [
   },
   {
     question: 'How old do you have to be to get into London clubs?',
-    answer: 'The legal minimum is 18, and all clubs will ID you if you look under 25. Most Mayfair clubs have a practical minimum of 21 for men and 19-20 for women, though this is not officially stated. Bring photo ID: passport or driving licence. Student IDs are not accepted.',
+    answer: 'The legal minimum is 18, and all clubs will ID you if you look under 25. Most Mayfair clubs have a practical minimum of 21 for men and 19 to 20 for women, though this is not officially stated. Bring photo ID: passport or driving licence. Student IDs are not accepted.',
   },
   {
     question: 'Is it worth paying for a table at a London club?',
-    answer: 'If guaranteed entry matters to you, yes. A table also gives you a dedicated space, table service, and a guaranteed good time without worrying about capacity or queues. For groups of 4-6 people, splitting a £1,000 minimum works out at around £170-250 per person for bottles of premium alcohol: comparable to buying drinks at the bar all night.',
+    answer: 'If guaranteed entry matters to you, yes. A table also gives you a dedicated space, table service, and a guaranteed good time without worrying about capacity or queues. For groups of 4 to 6 people, splitting a £1,000 minimum works out at around £170 to £250 per person for bottles of premium alcohol: comparable to buying drinks at the bar all night.',
   },
   {
     question: 'Can I get into clubs without spending money?',

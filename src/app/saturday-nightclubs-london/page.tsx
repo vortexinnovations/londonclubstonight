@@ -61,7 +61,7 @@ const faqs = [
   {
     question: 'How much does a Saturday night out cost in London?',
     answer:
-      'Saturday is the most expensive night. Tables start from £1,000 minimum spend at most venues, with some venues applying higher Saturday minimums. Guestlist entry (where available) may be free or carry a cover charge of £20-30. Drinks inside are premium priced: cocktails £16-25, bottles of spirits £300-500. Budget at least £100-150 per person without a table.',
+      'Saturday is the most expensive night. Tables start from £1,000 minimum spend at most venues, with some venues applying higher Saturday minimums. Guestlist entry (where available) may be free or carry a cover charge of £20 to £30. Drinks inside are premium priced: cocktails £16 to £25, bottles of spirits £300 to £500. Budget at least £100 to £150 per person without a table.',
   },
 ];
 
@@ -231,7 +231,7 @@ export default function SaturdayNightclubsLondonPage() {
               <strong className="text-white">12:30am to 1:30am:</strong>{" "}Still workable but risks are higher. Popular venues may have reached capacity and stopped admitting from guestlist. Tables that were available earlier may have been released to walk-ins. If you are arriving this late without a confirmed booking, check with us first to confirm the venue is still accepting entry.
             </p>
             <p>
-              <strong className="text-white">After 1:30am:</strong>{" "}For Mayfair clubs closing at 3am-3:30am, arriving after 1:30am gives you less than two hours. You are paying full price for a partial experience. At Ministry of Sound, however, 1:30am is perfectly reasonable: the night runs until 6am and the best hours are often 2am to 4am.
+              <strong className="text-white">After 1:30am:</strong>{" "}For Mayfair clubs closing at 3am to 3:30am, arriving after 1:30am gives you less than two hours. You are paying full price for a partial experience. At Ministry of Sound, however, 1:30am is perfectly reasonable: the night runs until 6am and the best hours are often 2am to 4am.
             </p>
           </div>
         </div>
