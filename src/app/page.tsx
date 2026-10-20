@@ -6,9 +6,11 @@ import ClubCard from '@/components/ClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 
 export const metadata: Metadata = {
-  title: 'London Clubs Tonight | Find the Best Clubs Open Tonight in London',
+  // The home page is in the root layout's own segment, so the title template
+  // never applies here: this is the whole <title>.
+  title: { absolute: 'London Clubs Open Tonight: Free Guestlist and VIP Tables' },
   description:
-    'Find out which London clubs are open tonight. Expert recommendations for Mayfair, Soho, and beyond: VIP tables, guestlist spots, and insider tips from promoters who know every door.',
+    'London clubs open tonight, from Tape to Cirque Le Soir: free same-night guestlist, VIP tables and promoter tips for Mayfair and Soho, with no booking fees.',
   keywords: [
     'London clubs tonight',
     'clubs open tonight London',

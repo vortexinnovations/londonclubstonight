@@ -10,7 +10,7 @@ import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema } fro
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: fitTitle('Last Minute Table Booking London: VIP Tables Available Tonight'),
+  title: fitTitle('Last Minute Table Booking London: VIP Tables Tonight'),
   description:
     'Need a VIP table tonight? Same-day availability at London\'s top clubs. Message us on WhatsApp. We confirm in minutes. No deposit, no fees.',
   keywords: [

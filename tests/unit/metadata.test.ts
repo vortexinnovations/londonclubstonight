@@ -2,6 +2,7 @@ import { test, describe } from 'node:test';
 import assert from 'node:assert/strict';
 
 import { fitTitle } from '../../src/lib/metadata.ts';
+import { clubs } from '../../src/lib/clubs.ts';
 
 describe('fitTitle', () => {
   test('keeps the site name when the full title fits in 60 characters', () => {
@@ -16,3 +17,14 @@ describe('fitTitle', () => {
   });
 });
 
+describe('club search snippets', () => {
+  test('override titles fit in 60 characters and descriptions in 120 to 155', () => {
+    for (const club of clubs) {
+      if (club.metaTitle) assert.ok(club.metaTitle.length <= 60, `${club.slug} metaTitle`);
+      if (club.metaDescription) {
+        const n = club.metaDescription.length;
+        assert.ok(n >= 120 && n <= 155, `${club.slug} metaDescription is ${n}`);
+      }
+    }
+  });
+});

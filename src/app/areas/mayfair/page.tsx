@@ -8,9 +8,9 @@ import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: fitTitle('Best Clubs in Mayfair 2026: The Heart of London\'s Luxury Nightlife'),
+  title: fitTitle('Best Clubs in Mayfair 2026: Nightlife and Tables from £600'),
   description:
-    'The definitive guide to Mayfair nightclubs. Tape, Cirque, Maddox, Rumour, 99 Regent Street, Dear Darling, Scotch, and more: table bookings, guestlist, and insider tips for every Mayfair club.',
+    'Tape, Cirque, Maddox, Rumour, 99 Regent Street, Dear Darling and Scotch: the Mayfair nightclubs, with table bookings, guestlist and tips for every W1 door.',
   keywords: [
     'clubs in Mayfair',
     'Mayfair clubs',

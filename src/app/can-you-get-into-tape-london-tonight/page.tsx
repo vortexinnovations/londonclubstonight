@@ -11,7 +11,7 @@ export const revalidate = 3600;
 export const metadata: Metadata = {
   title: fitTitle('Can You Get Into Tape London Tonight? Insider Guide'),
   description:
-    'Honest insider advice on getting into Tape London tonight. Walk-in chances, table booking tips, dress code, and what to realistically expect at Mayfair\'s most exclusive club.',
+    'Walking into Tape London on a Friday or Saturday is a long shot; Tuesday is the easiest night. Tables from £1,500, the door and how to get in tonight.',
   keywords: [
     'Tape London tonight',
     'get into Tape London',

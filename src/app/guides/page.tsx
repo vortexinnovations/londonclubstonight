@@ -8,7 +8,7 @@ import { siteOpenGraph, fitTitle } from '@/lib/metadata';
 export async function generateMetadata(_props: unknown, parent: ResolvingMetadata): Promise<Metadata> {
   return {
     title: fitTitle('London Nightclub Guides: Everything You Need to Know'),
-    description: 'Insider guides to London nightlife. Late-night venues, music genres, dress codes, guestlists, table bookings, and honest advice from promoters who know the scene.',
+    description: 'Four guides to London clubs: the most exclusive venues, clubs open until 6am, guestlists and table bookings, and which clubs play hip-hop, house or RnB.',
     keywords: ['London nightclub guides', 'London club tips', 'London nightlife guide', 'London club guestlist'],
     alternates: {
       canonical: 'https://londonclubstonight.com/guides',

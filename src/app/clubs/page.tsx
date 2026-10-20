@@ -7,7 +7,7 @@ import type { Metadata } from 'next';
 import { fitTitle } from '@/lib/metadata';
 
 export const metadata: Metadata = {
-  title: fitTitle('Best Nightclubs in London 2025 | Complete London Nightclub List'),
+  title: fitTitle('Clubs in London 2026: Nightclubs, Table Prices and Guestlist'),
   description:
     'The definitive list of the best nightclubs in London. Insider reviews, entry tips, table booking info, and guestlist access for every top London club.',
   keywords: [

@@ -8,9 +8,9 @@ import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: fitTitle('Best Clubs in Central London 2026: Mayfair, Soho, St James\'s & More'),
+  title: fitTitle('Best Clubs in Central London 2026: Mayfair, Soho, St James\'s'),
   description:
-    'Complete guide to central London nightclubs. Mayfair, Soho, St James\'s, and Piccadilly: every club worth knowing about in the West End with table bookings and guestlist.',
+    'The 11 clubs that define central London nightlife, across Mayfair, Soho, St James\'s and Piccadilly, with tables from £600 and guestlist for every venue.',
   keywords: [
     'clubs central London',
     'central London nightclubs',

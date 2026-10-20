@@ -9,7 +9,7 @@ import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 export const metadata: Metadata = {
   title: fitTitle('London Nightlife Blog: Insider Guides, Tips & Club Reviews'),
   description:
-    'The London nightlife blog for people who actually go out. Insider guides to London clubs, honest reviews, dress code tips, and everything you need to know before a night out in London.',
+    'Weekly London nightlife guides from people who work the doors: club reviews, dress codes, guestlists, table prices and how to plan a night out in London.',
   keywords: [
     'London nightlife blog',
     'London clubs blog',

@@ -27,6 +27,10 @@ export interface Club {
    * Unlike formerName it does not change the page layout: the venue is a normal open club.
    */
   previousName?: string;
+  /** Search result title when the page template's would be too long or miss what people search for (60 characters at most). */
+  metaTitle?: string;
+  /** Search result description (120 to 155 characters) when `description` is longer or is not written for search results. */
+  metaDescription?: string;
   /**
    * Confirmed hours, night by night, for venues whose hours we publish precisely. Drives the
    * opening-hours table on the club page and openingHours in structured data.
@@ -215,6 +219,7 @@ Reign appeals to a broad crowd, from couples celebrating special occasions to co
     shortName: 'Rumour',
     status: 'open',
     previousName: 'Tabu',
+    metaDescription: 'Rumour (formerly Tabu), 1 Dover Street, Mayfair: Wednesday to Saturday, 11pm to 4am, 18+. A ladies\' guestlist free to £20 and booths from £1,000.',
     tagline: 'One intimate booth room at 1 Dover Street, Mayfair: red velvet, no cameras, Wednesday to Saturday until 4am',
     description: 'Rumour (formerly Tabu) is an intimate booth club at 1 Dover Street in Mayfair, open Wednesday to Saturday from 11pm to 4am. Open-format hip hop, RnB and house, a ladies\' guestlist and booths from £1,000. Book on WhatsApp.',
     longDescription: `Rumour (formerly Tabu) is the booth club at 1 Dover Street in Mayfair, open Wednesday, Thursday, Friday and Saturday from 11pm to 4am. The Tabu name has gone: same ownership, full rebrand, new design and a new concept. Dover Street sits between Piccadilly and Grafton Street, a few minutes from Green Park station, with Piccadilly Circus and Bond Street walkable.
@@ -415,6 +420,8 @@ Tables start from £1,000 and the intimate scale means every table feels premium
     shortName: '99 Regent Street',
     status: 'open',
     previousName: 'Cuckoo Club',
+    metaTitle: '99 Regent Street (formerly Cuckoo Club): Opening Hours',
+    metaDescription: '99 Regent Street (formerly Cuckoo Club) opens Wednesday to Saturday, 11pm to 4am, over 19s only. Two floors by Piccadilly Circus and tables from £600.',
     tagline: 'Two floors behind the Swallow Street door by Piccadilly Circus: hip hop and RnB upstairs, house downstairs, Wednesday to Saturday until 4am',
     description: '99 Regent Street (formerly Cuckoo Club) is a two-floor club by Piccadilly Circus, open Wednesday to Saturday from 11pm to 4am for over 19s. Hip hop and RnB upstairs, house downstairs, tables from £600. Book on WhatsApp.',
     longDescription: `99 Regent Street (formerly Cuckoo Club) is the two-floor club behind the Swallow Street entrance at the Piccadilly Circus end of Regent Street, open Wednesday, Thursday, Friday and Saturday from 11pm to 4am. The Cuckoo Club name is no longer used: 99, also styled NinetyNine, is the Cuckoo founders reunited on the same floor with a new concept, opened in October 2026. Entry is for over 19s with physical photo ID.
@@ -544,6 +551,7 @@ Tables start from £1,000 and offer good views of the dancefloor and DJ booth. T
     name: 'Ministry of Sound',
     shortName: 'Ministry',
     status: 'open',
+    metaTitle: 'Ministry of Sound London: Closing Time, Dress Code, Tables',
     tagline: 'London\'s legendary superclub: the cathedral of electronic music since 1991',
     description: 'Iconic South London superclub in Elephant & Castle. Multiple rooms, world-class sound, house and techno. Tables from £1,000.',
     longDescription: `Ministry of Sound needs no introduction, but it deserves one anyway. Since 1991, this Elephant & Castle institution has been the benchmark against which every other dance music venue in London is measured. The building might not look like much from the outside, but step through the doors and you're entering hallowed ground for anyone who cares about electronic music.

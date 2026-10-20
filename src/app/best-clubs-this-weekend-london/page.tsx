@@ -10,7 +10,7 @@ import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getI
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: fitTitle(`Best Clubs This Weekend London: Friday & Saturday Picks [${new Date().toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}]`),
+  title: fitTitle(`Best Clubs This Weekend London ${new Date().getFullYear()}: Friday & Saturday`),
   description:
     'Planning this weekend? The best London clubs open Friday and Saturday with table availability, guestlist options, and honest insider picks.',
   keywords: [

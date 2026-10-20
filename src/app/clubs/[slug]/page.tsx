@@ -38,21 +38,21 @@ export async function generateMetadata({
   const isRenamed = !isClosed && Boolean(club.formerName);
   // An open venue that changed name keeps the normal layout: the old name joins the title only.
   const previousName = !isClosed && !isRenamed ? club.previousName : undefined;
-  const fullName = /london$/i.test(club.name) ? club.name : `${club.name} London`;
+  const fullName = /london/i.test(club.name) ? club.name : `${club.name} London`;
   const formerName = club.formerName ?? club.name;
   const formerFull = /london$/i.test(formerName) ? formerName : `${formerName} London`;
-  const title = isClosed
+  const title = club.metaTitle ?? (isClosed
     ? `${fullName} Has Closed: ${club.area} Alternatives`
     : isRenamed
       ? `${formerFull} Is Now ${club.shortName} | Table Booking`
       : previousName
         ? `${club.name} (formerly ${previousName}): Opening Hours & Nights`
-        : `${club.name} London | Table Booking & Guestlist`;
-  const description = isClosed
+        : `${fullName}: Tables from ${club.tableMinimum} and Guestlist`);
+  const description = club.metaDescription ?? (isClosed
     ? `${fullName} in ${club.area} has closed. What it was, and the open London clubs with a similar crowd and music to book instead.`
     : isRenamed || previousName
       ? club.description
-      : `Everything you need to know about ${club.name} nightclub in ${club.area}, London. Table prices from ${club.tableMinimum}, dress code, music, and guestlist access.`;
+      : `Everything you need to know about ${club.name} nightclub in ${club.area}, London. Table prices from ${club.tableMinimum}, dress code, music, and guestlist access.`);
 
   return {
     title: fitTitle(title),

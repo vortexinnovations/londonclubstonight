@@ -9,7 +9,7 @@ import { siteOpenGraph, fitTitle } from '@/lib/metadata';
 export async function generateMetadata(_props: unknown, parent: ResolvingMetadata): Promise<Metadata> {
   return {
     title: fitTitle('London\'s Most Exclusive Clubs: The Insider\'s Guide'),
-    description: 'Discover London\'s most exclusive nightlife experiences. Insider guide to the city\'s most premium clubs, what makes each one special, and how to arrange your night.',
+    description: 'Tape London, Cirque Le Soir, The Box and Scotch of St James: London\'s most exclusive clubs, what makes each special, tables from £1,000 and how to get in.',
     keywords: ['most exclusive clubs London', 'best clubs London', 'premium London nightlife', 'London VIP clubs', 'exclusive London clubs'],
     alternates: {
       canonical: 'https://londonclubstonight.com/guides/hardest-clubs-to-get-into',

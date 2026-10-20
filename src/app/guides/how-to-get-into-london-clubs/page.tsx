@@ -7,7 +7,7 @@ import { siteOpenGraph, fitTitle } from '@/lib/metadata';
 
 export async function generateMetadata(_props: unknown, parent: ResolvingMetadata): Promise<Metadata> {
   return {
-    title: fitTitle('Guestlists & Table Bookings: The Complete Guide to London Clubs'),
+    title: fitTitle('London Club Guestlists and Table Bookings: How to Get In'),
     description: 'The complete guide to guestlists, table bookings, dress codes, group composition, and age requirements at London nightclubs. Honest advice from promoters.',
     keywords: ['London club guestlist', 'London club table booking', 'London club dress code', 'London club entry tips', 'London nightclub guide'],
     alternates: {

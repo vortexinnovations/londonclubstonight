@@ -12,7 +12,7 @@ export const revalidate = 3600;
 export const metadata: Metadata = {
   title: fitTitle('Clubs Open Sunday Night in London: Your Sunday Night Options'),
   description:
-    'Which London clubs are open on Sunday nights? An honest guide: most clubs are closed, but here are your real options, alternatives, and how to plan a better weekend instead.',
+    'Tape London, Dear Darling and Selene open on Sunday nights, and Ministry of Sound on some bank holidays. London\'s real Sunday options and the alternatives.',
   keywords: [
     'clubs open Sunday London',
     'Sunday night clubs London',
