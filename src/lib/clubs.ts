@@ -443,7 +443,7 @@ The address has been a nightlife name since 1954, when Al Burnett's Stork Club d
     guestlistRealistic: true,
     guestlistNote: 'Guestlist is by request and mixed groups are welcome. Entry runs from free to about £50 depending on the night and arrival time; we confirm names and the night\'s terms before you go.',
     bestForGroups: 'mixed',
-    lastMinuteTableFriendly: true,
+    lastMinuteTableFriendly: false,
     lastMinuteNote: 'Same-day tables are checked on WhatsApp: send your group size and arrival time and we confirm what is available that night. The earlier in the day you message, the more choice of table.',
     heroImage: '/gallery/images/99-regent-street-main-room.jpg',
     cardImage: '/gallery/images/99-regent-street-bar.jpg',
