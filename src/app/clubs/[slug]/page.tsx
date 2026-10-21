@@ -51,12 +51,14 @@ export async function generateMetadata({
       ? `${formerFull} Is Now ${club.shortName} | Table Booking`
       : previousName
         ? `${club.name} (formerly ${previousName}): Opening Hours & Nights`
-        : `${fullName}: Tables from ${club.tableMinimum} and Guestlist`);
+        : club.noGuestlist
+          ? `${fullName}: Table Booking from ${club.tableMinimum}`
+          : `${fullName}: Tables from ${club.tableMinimum} and Guestlist`);
   const description = club.metaDescription ?? (isClosed
     ? `${fullName} in ${club.area} has closed. What it was, and the open London clubs with a similar crowd and music to book instead.`
     : isRenamed || previousName
       ? club.description
-      : `Everything you need to know about ${club.name} nightclub in ${club.area}, London. Table prices from ${club.tableMinimum}, dress code, music, and guestlist access.`);
+      : `Everything you need to know about ${club.name} nightclub in ${club.area}, London. Table prices from ${club.tableMinimum}, dress code, music, and ${club.noGuestlist ? 'entry (no guestlist)' : 'guestlist access'}.`);
 
   return {
     title: fitTitle(title),
@@ -243,7 +245,7 @@ export default async function ClubPage({
 
           {!notBookable && (
             <div className="animate-fade-up anim-delay-3 flex justify-center mt-10">
-              <WhatsAppCTA clubName={club.name} variant="hero" />
+              <WhatsAppCTA clubName={club.name} variant="hero" tableOnly={club.noGuestlist} />
             </div>
           )}
         </div>
@@ -437,11 +439,11 @@ export default async function ClubPage({
                 Ready to Experience <span className="serif-accent text-gradient">{club.name}</span>?
               </h2>
               <p className="text-frost-300 mb-8 max-w-lg mx-auto leading-relaxed">
-                Get a table booking or guestlist spot at {club.name}. Message us on
+                {club.noGuestlist ? `Book a table at ${club.name}: there is no guestlist.` : `Get a table booking or guestlist spot at ${club.name}.`} Message us on
                 WhatsApp and we&apos;ll sort everything for you.
               </p>
               <div className="flex justify-center">
-                <WhatsAppCTA clubName={club.name} />
+                <WhatsAppCTA clubName={club.name} tableOnly={club.noGuestlist} />
               </div>
             </div>
           )}
@@ -536,7 +538,7 @@ export default async function ClubPage({
       </section>
 
       {/* Sticky mobile CTA */}
-      {!notBookable && <WhatsAppCTA clubName={club.name} variant="sticky" />}
+      {!notBookable && <WhatsAppCTA clubName={club.name} variant="sticky" tableOnly={club.noGuestlist} />}
     </main>
   );
 }

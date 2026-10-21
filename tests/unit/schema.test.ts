@@ -28,6 +28,12 @@ describe('entity graph', () => {
     assert.deepEqual(website.publisher, { '@id': ORGANIZATION_ID });
   });
 
+  test('the business has no physical address and no opening hours of its own', () => {
+    assert.equal(business.address, undefined);
+    assert.equal(organization.address, undefined);
+    assert.equal(business.openingHoursSpecification, undefined);
+  });
+
   test('the local business points at the organization node', () => {
     assert.deepEqual(business.parentOrganization, { '@id': ORGANIZATION_ID });
   });

@@ -118,7 +118,7 @@ export function clubMarkdown(club: Club): string {
     `| Table minimum | ${club.tableMinimum} |`,
     `| Typical crowd | ${club.crowd} |`,
     `| Best for | ${club.bestFor} |`,
-    `| Guestlist realistic | ${club.guestlistRealistic ? 'Yes' : 'No (table recommended)'} |`,
+    `| Guestlist realistic | ${club.noGuestlist ? 'No (the club runs no guestlist)' : club.guestlistRealistic ? 'Yes' : 'No (table recommended)'} |`,
     `| Last-minute tables | ${club.lastMinuteTableFriendly ? 'Often possible' : 'Rarely possible'} |`,
     '',
     ...openingHoursSection(club),

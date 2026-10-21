@@ -58,6 +58,8 @@ export interface Club {
   mapUrl: string;
   tonightSuitability: string;
   guestlistRealistic: boolean;
+  /** The club runs no guestlist at all (entry by table, or walk-in at the door): no guestlist buttons or offers. */
+  noGuestlist?: boolean;
   guestlistNote: string;
   bestForGroups: 'ladies' | 'mixed' | 'high-spenders' | 'all';
   lastMinuteTableFriendly: boolean;
@@ -104,12 +106,12 @@ export const clubs: Club[] = [
     shortName: 'Tape',
     status: 'open',
     tagline: 'The celebrity members club where London\'s elite party behind closed doors',
-    description: 'Exclusive members club on Hanover Square. Celebrity favourite with a hip-hop focused soundtrack and tables starting from £1,500.',
+    description: 'Exclusive members club on Hanover Square. Celebrity favourite with a hip-hop focused soundtrack and tables starting from £750.',
     longDescription: `Tape London is the club you hear about but can't easily get into, and that's exactly the point. Tucked away on Hanover Square in the heart of Mayfair, this members club has earned its reputation as one of London's most exclusive nightlife destinations. The crowd is a genuine mix of celebrities, athletes, music industry figures, and high-net-worth individuals who want to party without the usual hassle.
 
 The venue itself is intimate by design. Dark, moody interiors with plush seating and a sound system that does justice to the hip-hop and RnB playlist that dominates most nights. The intimacy is what makes Tape special. You're genuinely likely to be partying next to someone famous, and the smaller capacity means the energy stays concentrated.
 
-Getting in without a booking is extremely difficult. This isn't a club that fills from the queue: the door team are selective about who enters, and having a table reservation or being on a member's guestlist is practically essential. If you're serious about experiencing Tape, book a table. It's the only reliable way in, and with tables starting from £1,500, you're paying for the privilege of guaranteed entry to one of London's most talked-about rooms.
+Getting in without a booking is extremely difficult. This isn't a club that fills from the queue: the door team are selective about who enters, and having a table reservation or being on a member's guestlist is practically essential. If you're serious about experiencing Tape, book a table. It's the only reliable way in, and with tables starting from £750, you're paying for the privilege of guaranteed entry to one of London's most talked-about rooms.
 
 The music leans heavily into hip-hop, trap, and RnB with the occasional pop crossover when the crowd demands it. The DJs read the room well and the sound system, originally designed for music production, delivers a listening experience that most clubs can't match.`,
     address: '17 Hanover Square, London W1S 1BN',
@@ -119,7 +121,7 @@ The music leans heavily into hip-hop, trap, and RnB with the occasional pop cros
     openingNights: 'Tuesday, Friday, Saturday, Sunday',
     closingTime: '3:45am',
     dressCode: 'Smart and stylish. Think designer: no trainers, no sportswear, no exceptions. Men should wear smart shoes and a well-fitted outfit. Women dress to impress.',
-    tableMinimum: '£1,500',
+    tableMinimum: '£750',
     crowd: 'Celebrities, music industry, models, high-net-worth. Average age 25 to 40.',
     bestFor: 'A genuine VIP experience where you might party next to genuine A-listers. Hip-hop lovers who want quality sound in an intimate setting.',
     insiderTip: 'Book a table: it\'s the only reliable way in. Tuesday nights tend to have the most celebrity sightings. Arrive before midnight to settle in before the main crowd arrives around 12:30.',
@@ -141,14 +143,14 @@ The music leans heavily into hip-hop, trap, and RnB with the occasional pop cros
     shortName: 'Cirque',
     status: 'open',
     tagline: 'London\'s wildest circus-themed nightclub where entertainment meets mayhem',
-    description: 'Circus-themed celebrity hotspot on Ganton Street. Known for outrageous entertainment, fire-breathers, and performers. Hip-hop & RnB. Tables from £1,000.',
+    description: 'Circus-themed celebrity hotspot on Ganton Street. Known for outrageous entertainment, fire-breathers, and performers. Hip-hop & RnB. Tables from £800.',
     longDescription: `Cirque Le Soir is unlike anything else in London. Located on Ganton Street in the Carnaby area between Soho and Mayfair, this circus-themed nightclub has been a celebrity magnet since it opened, and one visit will tell you why. This isn't a club that happens to have entertainment on the side. The entertainment IS the experience.
 
 From the moment you walk in, you're surrounded by performers. Contortionists bending between the tables, fire-breathers illuminating the dark room, stilt-walkers moving through the crowd, and performers whose acts would be headline-worthy at any cabaret show. The venue is deliberately dark, deliberately chaotic, and deliberately over-the-top. It's sensory overload in the best possible way.
 
 The music is predominantly hip-hop and RnB, played loud and unapologetic. The DJs know their crowd: this is a party venue, not a listening room, and the energy stays high from doors to close. The celebrity sightings are frequent and genuine; Cirque has hosted everyone from Drake to Rihanna to practically every Premier League footballer.
 
-Entry is challenging without a booking. The club has a strict door policy and a capacity that fills quickly. Table bookings start from £1,000 and are the most reliable route in. Guestlist is available but competitive: expect to queue and to be assessed by the door team. Mixed groups fare better than all-male parties.
+Entry is challenging without a booking. The club has a strict door policy and a capacity that fills quickly. Table bookings start from £800 and are the most reliable route in. Guestlist is available but competitive: expect to queue and to be assessed by the door team. Mixed groups fare better than all-male parties.
 
 What makes Cirque Le Soir special is the commitment to spectacle. Every night feels like an event. It's not a place for a quiet drink. It's a place where you'll see things you've never seen in a nightclub before and leave with stories you'll be telling for years.`,
     address: '15-21 Ganton Street, London W1F 9BN',
@@ -158,7 +160,7 @@ What makes Cirque Le Soir special is the commitment to spectacle. Every night fe
     openingNights: 'Monday, Wednesday, Friday, Saturday',
     closingTime: '3:45am',
     dressCode: 'Smart glamorous. Stand out: this isn\'t a club for blending in. Heels and dresses for women, smart tailored looks for men. No casual wear.',
-    tableMinimum: '£1,000',
+    tableMinimum: '£800',
     crowd: 'Celebrities, influencers, international visitors, birthday groups. Average age 23 to 35.',
     bestFor: 'Anyone who wants a night they\'ll never forget. Birthday celebrations. Groups who want entertainment with their nightlife. Instagram-worthy experiences.',
     insiderTip: 'Saturday nights have the most performers and the biggest production. If it\'s your birthday, the performers will come to your table. Just let the team know when you book.',
@@ -180,14 +182,14 @@ What makes Cirque Le Soir special is the commitment to spectacle. Every night fe
     shortName: 'Reign',
     status: 'open',
     tagline: 'Piccadilly\'s theatrical showclub where dinner meets performance meets late-night revelry',
-    description: 'Extravagant showclub on Piccadilly. Aerial acts, performances, and a full dining experience. Tables from £1,000.',
+    description: 'Extravagant showclub on Piccadilly. Aerial acts, performances, and a full dining experience. Tables from £800.',
     longDescription: `The London Reign sits on Piccadilly and brings something genuinely different to London's nightlife. This is a showclub in the truest sense: a venue where world-class entertainment, fine dining, and late-night clubbing converge into a single spectacular evening.
 
 The experience typically starts with dinner. The restaurant serves a polished menu while performers work the room: aerial artists spinning above your table, live vocalists, dancers, and acts that blur the line between nightclub and West End show. As the evening progresses, the dining tables transition and the space transforms into a full nightclub environment with a high-energy DJ taking over.
 
 The venue itself is grand. High ceilings that accommodate the aerial rigging, opulent décor, and a scale that makes other London clubs feel small. The production values are genuinely impressive: lighting, sound, and the quality of performers are all top-tier.
 
-Entry is managed primarily through table bookings and guestlist. Walk-ins are possible but not reliable, particularly on weekends. The door policy is smart and selective. Tables start from £1,000 and the dinner-plus-club packages offer the best overall experience.
+Entry is managed primarily through table bookings and guestlist. Walk-ins are possible but not reliable, particularly on weekends. The door policy is smart and selective. Tables start from £800 and the dinner-plus-club packages offer the best overall experience.
 
 Reign appeals to a broad crowd, from couples celebrating special occasions to corporate groups entertaining clients to birthday parties that want something more memorable than a standard club night. The music shifts from sophisticated dinner accompaniment to mainstream party tracks as the night evolves.`,
     address: '215-217 Piccadilly, London W1J 9HN',
@@ -195,9 +197,9 @@ Reign appeals to a broad crowd, from couples celebrating special occasions to co
     areas: ['Piccadilly', 'Central London'],
     musicGenres: ['Open Format', 'Pop', 'RnB'],
     openingNights: 'Tuesday, Thursday, Friday, Saturday',
-    closingTime: '3:00am',
+    closingTime: '4:00am',
     dressCode: 'Smart elegant. This is a venue where people dress up. Suits, cocktail dresses, and heels are the norm. No casual or streetwear.',
-    tableMinimum: '£1,000',
+    tableMinimum: '£800',
     crowd: 'Mixed: couples, corporate groups, birthday celebrations, international visitors. Average age 25 to 45.',
     bestFor: 'Special occasions where you want dinner and clubbing in one venue. Corporate entertaining. Anyone who appreciates theatrical production in their nightlife.',
     insiderTip: 'Book the dinner-and-club package for the full experience. Arrive early enough for the show: the aerial acts during dinner are the highlight, and you\'ll miss them if you arrive at midnight.',
@@ -304,11 +306,11 @@ For a table in the same spot today, Selene is the venue that now operates there.
     name: 'Luxx Club London',
     shortName: 'Luxx',
     status: 'permanently-closed',
-    closedMessage: 'Luxx Club London has closed, and its successor is Itzel, which now operates at its Berkeley Street address. Luxx no longer takes table bookings or guestlist names. For an open-format night with a show, try Cirque Le Soir, The London Reign or Tape London.',
+    closedMessage: 'Luxx Club London has closed. Its Berkeley Street site became Funky Buddha again and now operates as Itzel. Luxx no longer takes table bookings or guestlist names. For an open-format night with a show, try Cirque Le Soir, The London Reign or Tape London.',
     alternatives: ['cirque-le-soir', 'the-london-reign', 'tape-london', 'dear-darling'],
-    tagline: 'The Mayfair light-show club, now closed: its successor is Itzel',
-    description: 'Luxx Club London in Mayfair has closed; its successor is Itzel. What Luxx was, and the open clubs to book instead: Cirque Le Soir, The London Reign and Tape London.',
-    longDescription: `Luxx Club London has closed, and its successor is Itzel, which now operates at its Berkeley Street address. People still search for Luxx by name, so this page explains what it was and where to go instead.
+    tagline: 'The Mayfair light-show club, now closed: its Berkeley Street site is now Itzel',
+    description: 'Luxx Club London in Mayfair has closed; its Berkeley Street site is now Itzel. What Luxx was, and the open clubs to book instead: Cirque Le Soir, The London Reign and Tape London.',
+    longDescription: `Luxx Club London has closed. The Berkeley Street site was Funky Buddha, then went through several rebrands including Luxx, became Funky Buddha again, and now operates as Itzel. People still search for Luxx by name, so this page explains what it was and where to go instead.
 
 History: when it was open, Luxx was known for its LED light shows, with walls and ceilings that changed through the night in time with the music. It played open format with a lean towards hip-hop, and it drew birthday groups, regulars and international visitors. Tables started from £1,000 at the time.
 
@@ -322,8 +324,8 @@ For a night where the room is part of the show today, Cirque Le Soir has perform
     dressCode: 'When it was open, Luxx followed the smart Mayfair standard: smart shoes for men and no sportswear.',
     tableMinimum: 'Closed',
     crowd: 'When it was open: locals, birthday groups and international visitors, mostly in their twenties and early thirties.',
-    bestFor: 'Luxx Club London has closed; its successor is Itzel. Cirque Le Soir, The London Reign and Tape London suit the same celebration crowd.',
-    insiderTip: 'Luxx Club London has closed. Its successor is Itzel.',
+    bestFor: 'Luxx Club London has closed; its Berkeley Street site is now Itzel. Cirque Le Soir, The London Reign and Tape London suit the same celebration crowd.',
+    insiderTip: 'Luxx Club London has closed. Its Berkeley Street site now operates as Itzel.',
     whyRanked: 'Luxx Club London has closed.',
     mapUrl: 'https://maps.google.com/?q=Luxx+Club+London+Mayfair',
     tonightSuitability: 'Permanently closed.',
@@ -357,7 +359,7 @@ Tables start from £1,000 for the club portion of the evening. Dinner reservatio
     areas: ['Mayfair', 'Central London'],
     musicGenres: ['House'],
     openingNights: 'Thursday, Friday, Saturday',
-    closingTime: '3:00am',
+    closingTime: '6:00am',
     dressCode: 'Smart elegant. The dining room sets the standard. This is a venue where people dress well for dinner and maintain that standard into the evening.',
     tableMinimum: '£1,000',
     crowd: 'Foodies, house music enthusiasts, professionals. Average age 27 to 40.',
@@ -390,13 +392,13 @@ The music varies by night but the overall programming leans towards curated, ele
 
 The crowd at Scotch tends to be slightly older and more discerning than at some of the flashier Mayfair clubs. These are people who appreciate history and atmosphere over spectacle and Instagram moments. The regulars are loyal and the venue benefits from a genuine community feel.
 
-Tables start from £1,000 and the intimate scale means every table feels premium. Guestlist is available but the space fills quickly. The door policy is selective: presentation and booking status matter.`,
+Tables start from £1,000 and the intimate scale means every table feels premium. Entry is walk-in at the door; there is no guestlist. Tables can be booked, and the space fills quickly. The door policy is selective: presentation matters.`,
     address: 'Mason\'s Yard, London SW1Y 6BU',
     area: 'St James\'s',
     areas: ['St James\'s', 'Central London'],
     musicGenres: ['Mixed', 'Soul', 'Funk', 'Hip-Hop'],
     openingNights: 'Thursday, Friday, Saturday',
-    closingTime: '3:00am',
+    closingTime: '5:00am',
     dressCode: 'Smart and refined. Think classic rather than trendy. Well-dressed without trying too hard: the Scotch crowd values understated style.',
     tableMinimum: '£1,000',
     crowd: 'Music lovers, creative professionals, older clientele who appreciate heritage. Average age 28 to 45.',
@@ -405,8 +407,9 @@ Tables start from £1,000 and the intimate scale means every table feels premium
     whyRanked: 'No other club in London has this combination of genuine history, intimate atmosphere, and musical credibility. It\'s a living piece of London\'s cultural heritage.',
     mapUrl: 'https://maps.google.com/?q=Scotch+of+St+James+London',
     tonightSuitability: 'Historic St James\'s atmosphere with an eclectic crowd. More relaxed than the big-name venues, genuine character.',
-    guestlistRealistic: true,
-    guestlistNote: 'Guestlist works well. The door is welcoming to well-dressed groups of all compositions.',
+    guestlistRealistic: false,
+    noGuestlist: true,
+    guestlistNote: 'Entry is walk-in at the door; there is no guestlist. Tables can be booked.',
     bestForGroups: 'all',
     lastMinuteTableFriendly: true,
     lastMinuteNote: 'One of the easier West End venues for same-day table bookings. Good availability most nights.',
@@ -470,9 +473,10 @@ The address has been a nightlife name since 1954, when Al Burnett's Stork Club d
   },
   {
     slug: 'dear-darling',
-    name: 'Dear Darling',
+    name: 'Dear Darling Mayfair',
     shortName: 'Dear Darling',
     status: 'open',
+    metaTitle: 'Dear Darling Mayfair: Tables from £1,000 and Guestlist',
     tagline: 'St James\'s most opulent cocktail bar with a late-night secret',
     description: 'Opulent St James\'s cocktail bar with chandeliers and velvet booths. Premium cocktails with late-night clubbing. Tables from £1,000.',
     longDescription: `Dear Darling is St James's at its most decadent. Walking in feels like stepping into a gilded private salon: chandeliers hang from ornate ceilings, velvet booths line the walls, and every surface seems designed to catch the warm, amber lighting. It's unapologetically opulent, and it works.
@@ -489,7 +493,7 @@ Tables start from £1,000 for the late-night experience. Earlier evening booking
     areas: ['St James\'s', 'Central London'],
     musicGenres: ['Mixed', 'Deep House', 'RnB'],
     openingNights: 'Thursday, Friday, Saturday, Sunday',
-    closingTime: '2:30am',
+    closingTime: '6:00am',
     dressCode: 'Smart glamorous. The venue\'s opulence sets the standard. Dress to match your surroundings.',
     tableMinimum: '£1,000',
     crowd: 'Glamour-conscious, cocktail enthusiasts, couples, pre-club groups. Average age 26 to 38.',
@@ -528,7 +532,7 @@ Tables start from £1,000 and offer good views of the dancefloor and DJ booth. T
     areas: ['Central London'],
     musicGenres: ['Hip-Hop', 'House', 'Open Format'],
     openingNights: 'Thursday (select nights), Friday, Saturday',
-    closingTime: '3:30am',
+    closingTime: '6:00am',
     dressCode: 'Smart casual. Smarter than a bar but less formal than traditional Mayfair. Clean, well-put-together outfits work.',
     tableMinimum: '£1,000',
     crowd: 'Music lovers, younger professionals, dancefloor-focused. Average age 22 to 32.',
@@ -673,7 +677,7 @@ The venue is designed like a theatre: tiered seating surrounds a central stage, 
 
 Beyond the performances, The Box functions as a genuinely good nightclub. The music shifts between hip-hop, RnB, and house depending on the night, and the DJs maintain energy between shows. The intimate theatre layout means every seat feels close to the action, and the VIP tables bordering the stage offer an experience you genuinely cannot get anywhere else.
 
-The door policy is one of London's most selective. The Box curates its crowd deliberately: the team are looking for people who will contribute to the energy rather than just observe. Attitude matters as much as appearance. Table bookings are the most reliable route in, starting from £1,000, and the competition for tables on weekends is fierce.
+The door policy is one of London's most selective. The Box curates its crowd deliberately: the team are looking for people who will contribute to the energy rather than just observe. Attitude matters as much as appearance. The Box doesn't run a guestlist: entry is by table booking, from £1,000, and the competition for tables on weekends is fierce.
 
 This is not a club for everyone, and it doesn't pretend to be. The content can be explicit, the atmosphere is intentionally intense, and the whole experience demands an open mind. But for those who embrace it, The Box delivers nights that no other venue in London can match.`,
     address: 'Walker\'s Court, London W1F 0BZ',
@@ -681,7 +685,7 @@ This is not a club for everyone, and it doesn't pretend to be. The content can b
     areas: ['Soho', 'Central London'],
     musicGenres: ['Hip-Hop', 'RnB', 'House'],
     openingNights: 'Wednesday, Thursday, Friday, Saturday',
-    closingTime: '3:30am',
+    closingTime: '4:00am',
     dressCode: 'Creative and stylish. The Box rewards individuality: dress to express rather than to conform. Smart is expected but personality is valued above formality.',
     tableMinimum: '£1,000',
     crowd: 'Creative industry, performers, fashion-forward, open-minded. Average age 25 to 40.',
@@ -691,7 +695,8 @@ This is not a club for everyone, and it doesn't pretend to be. The content can b
     mapUrl: 'https://maps.google.com/?q=The+Box+Soho+London',
     tonightSuitability: 'Provocative cabaret meets nightclub. Boundary-pushing performances in an exclusive Soho setting.',
     guestlistRealistic: false,
-    guestlistNote: 'The Box is highly selective. A table booking is strongly recommended for tonight.',
+    noGuestlist: true,
+    guestlistNote: 'The Box doesn\'t run a guestlist. Entry is by table booking, from £1,000.',
     bestForGroups: 'high-spenders',
     lastMinuteTableFriendly: false,
     lastMinuteNote: 'Same-day tables are rare. The Box requires advance planning for the best experience.',
@@ -742,7 +747,7 @@ For the same sound and crowd today, Tape London on Hanover Square is the closest
     shortName: 'Selene',
     status: 'open',
     tagline: 'Elegant newcomer just north of Oxford Circus, blending refined cocktails with late-night sophistication',
-    description: 'Sophisticated Fitzrovia venue just north of Oxford Circus, offering premium cocktails and late-night clubbing in an elegant setting. Tables from £1,000.',
+    description: 'Sophisticated Fitzrovia venue just north of Oxford Circus, offering premium cocktails and late-night clubbing in an elegant setting. Tables from £800.',
     longDescription: `Selene London brings a refined elegance to the late-night scene just north of Oxford Circus, on Winsley Street in Fitzrovia, a short walk from Mayfair. The venue positions itself at the intersection of cocktail bar sophistication and nightclub energy: a space where the evening builds gradually from intimate drinks to a full dancefloor experience.
 
 The design is understated luxury. Clean lines, warm materials, and lighting that shifts seamlessly as the venue transitions from its early-evening cocktail bar mode to its late-night club format. The aesthetic is feminine without being exclusive to women. It's a venue that appeals to anyone who appreciates design and atmosphere over volume and spectacle. Alongside the club rooms, Selene also has private bowling lanes, which can be booked together with a table.
@@ -751,15 +756,15 @@ The cocktail programme is a genuine draw. Unlike clubs where drinks are an after
 
 As the night progresses, the music builds. The genre leans into sophisticated house and RnB: tracks chosen for taste rather than chart position. The DJs programme the evening as a journey rather than an assault, and the result is a late-night atmosphere that feels grown-up without being boring.
 
-Tables start from £1,000 and the service is polished. The crowd is well-dressed, predominantly in their late twenties to late thirties, and appreciates the venue's more refined approach. Guestlist is available and the door policy is selective but welcoming to the right crowd.`,
+Tables start from £800 and the service is polished. The crowd is well-dressed, predominantly in their late twenties to late thirties, and appreciates the venue's more refined approach. Guestlist is available and the door policy is selective but welcoming to the right crowd.`,
     address: '4 Winsley Street, Fitzrovia, London W1W 8HF',
     area: 'Fitzrovia',
     areas: ['Fitzrovia', 'Central London'],
     musicGenres: ['House', 'RnB', 'Deep House'],
     openingNights: 'Thursday, Friday, Saturday, Sunday',
-    closingTime: '3:00am',
+    closingTime: '4:00am',
     dressCode: 'Smart elegant. Selene\'s refined atmosphere demands equally refined attire. Think polished and sophisticated.',
-    tableMinimum: '£1,000',
+    tableMinimum: '£800',
     crowd: 'Sophisticated, cocktail-appreciating, design-conscious. Average age 27 to 38.',
     bestFor: 'Couples seeking a sophisticated night out. Groups who appreciate cocktails as much as clubbing. Anyone who wants elegance without stuffiness.',
     insiderTip: 'Arrive early enough to experience the cocktail bar phase: the drinks are excellent and the atmosphere during the transition to club mode is Selene at its best. Thursday is the most intimate night.',

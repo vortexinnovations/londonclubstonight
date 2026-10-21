@@ -26,24 +26,11 @@ export function getLocalBusinessSchema() {
     url: SITE,
     image: `${SITE}/gallery/images/TapeFriday041024PartyNextDoor-410.jpg`,
     telephone: `+${WHATSAPP_TABLE_NUMBER}`,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Mayfair',
-      addressLocality: 'London',
-      postalCode: 'W1',
-      addressCountry: 'GB',
-    },
     areaServed: {
       '@type': 'City',
       name: 'London',
     },
     priceRange: '£££',
-    openingHoursSpecification: {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Wednesday', 'Thursday', 'Friday', 'Saturday'],
-      opens: '22:00',
-      closes: '03:30',
-    },
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'reservations',

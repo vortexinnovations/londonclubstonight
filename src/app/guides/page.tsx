@@ -31,7 +31,7 @@ const guides = [
   },
   {
     title: 'Clubs Open Late in London',
-    description: 'Every venue grouped by closing time. Whether you need somewhere open until 3am or 6am, this is your guide to keeping the night going.',
+    description: 'Every venue grouped by closing time. Whether you need somewhere open until 4am or 6am, this is your guide to keeping the night going.',
     href: '/guides/clubs-open-late',
   },
   {

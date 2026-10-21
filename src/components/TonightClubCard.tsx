@@ -46,7 +46,7 @@ export default function TonightClubCard({
               </span>
             ) : (
               <span className="chip backdrop-blur-md bg-night-950/60 text-amber-300">
-                Table recommended
+                {club.noGuestlist ? 'No guestlist' : 'Table recommended'}
               </span>
             )
           )}

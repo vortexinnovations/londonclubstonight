@@ -8,14 +8,14 @@ import { fitTitle, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: fitTitle('London\'s Most Exclusive Clubs: The Insider\'s Guide'),
-  description: 'Tape London, Cirque Le Soir, The Box and Scotch of St James: London\'s most exclusive clubs, what makes each special, tables from £1,000 and how to get in.',
+  description: 'Tape London, Cirque Le Soir, The Box and Scotch of St James: London\'s most exclusive clubs, what makes each special, tables from £750 and how to get in.',
   keywords: ['most exclusive clubs London', 'best clubs London', 'premium London nightlife', 'London VIP clubs', 'exclusive London clubs'],
   alternates: {
     canonical: 'https://londonclubstonight.com/guides/hardest-clubs-to-get-into',
   },
   openGraph: {
     title: 'London\'s Most Exclusive Clubs: The Insider\'s Guide',
-    description: 'Tape London, Cirque Le Soir, The Box and Scotch of St James: London\'s most exclusive clubs, what makes each special, tables from £1,000 and how to get in.',
+    description: 'Tape London, Cirque Le Soir, The Box and Scotch of St James: London\'s most exclusive clubs, what makes each special, tables from £750 and how to get in.',
     url: 'https://londonclubstonight.com/guides/hardest-clubs-to-get-into',
     type: 'article',
     locale: 'en_GB',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'What is the most exclusive club in London?',
-    answer: 'Tape London is widely considered the most exclusive club in London. It operates as a members club with tables starting from £1,500, attracting celebrities, music industry figures, and high-net-worth individuals. A table booking or member connection is the best way to experience it.',
+    answer: 'Tape London is widely considered the most exclusive club in London. It operates as a members club with tables starting from £750, attracting celebrities, music industry figures, and high-net-worth individuals. A table booking or member connection is the best way to experience it.',
   },
   {
     question: 'How do I get into London\'s exclusive clubs?',
@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     question: 'How much does a table cost at London clubs?',
-    answer: 'Table minimums at most London clubs start from £1,000 per night. Tape London starts from £1,500. These minimums represent your spend on drinks and are not an entry fee. You receive bottles, mixers, and table service for the amount. On peak nights or for premium positions, minimums can be higher.',
+    answer: 'Table minimums at most London clubs start from around £1,000 per night, and some start lower: Tape London from £750, Cirque Le Soir and The London Reign from £800. These minimums represent your spend on drinks and are not an entry fee. You receive bottles, mixers, and table service for the amount. On peak nights or for premium positions, minimums can be higher.',
   },
   {
     question: 'What should I wear to London\'s exclusive clubs?',
@@ -165,7 +165,7 @@ export default function ExclusiveClubsPage() {
                 The best way to experience any of these clubs is with a table booking. Every venue will welcome you with a table reservation, giving you a reserved space, dedicated service, and bottles for your group. For most clubs, tables start from £1,000.
               </p>
               <p>
-                Guestlist is an excellent free alternative. Contact us on WhatsApp and we will submit your names to any venue. Guestlist works well at most clubs and gives you priority consideration at the door.
+                Guestlist is an excellent free alternative. Contact us on WhatsApp and we will submit your names to any venue that runs one. Guestlist works well at most clubs and gives you priority consideration at the door. The Box runs no guestlist (entry is by table booking), and the Scotch of St James is walk-in at the door with no guestlist.
               </p>
               <p>
                 Group composition matters at Mayfair clubs. Mixed groups with a good ratio of women to men have the best experience. All-female groups are welcomed everywhere. If your group is all male, a table booking is the simplest route.
@@ -184,7 +184,7 @@ export default function ExclusiveClubsPage() {
                 Ready to experience London&apos;s best clubs?
               </h2>
               <p className="text-frost-300 mb-6 max-w-lg mx-auto">
-                Message us on WhatsApp. We handle table bookings and guestlists at every club on this page. Tell us where you want to go and we will make it happen.
+                Message us on WhatsApp. We handle table bookings at every club on this page, and guestlists where the club runs one. Tell us where you want to go and we will make it happen.
               </p>
               <WhatsAppCTA />
             </div>

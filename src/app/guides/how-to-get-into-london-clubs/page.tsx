@@ -178,7 +178,7 @@ export default function HowToGetInPage() {
               <div>
                 <h3 className="font-display font-bold tracking-tight text-white mb-2">Typical costs</h3>
                 <p>
-                  Most London clubs have a minimum spend starting at £1,000. Tape London starts at £1,500. These minimums apply to drinks. You are not paying £1,000 to sit at a table, you are spending £1,000 on bottles of spirits, champagne, or whatever you choose. For a group of 5, that works out at £200 per person for premium drinks and guaranteed entry.
+                  Most London clubs have a minimum spend starting at £1,000. Tape London starts at £750. These minimums apply to drinks. You are not paying £1,000 to sit at a table, you are spending £1,000 on bottles of spirits, champagne, or whatever you choose. For a group of 5, that works out at £200 per person for premium drinks and guaranteed entry.
                 </p>
               </div>
             </div>

@@ -11,7 +11,7 @@ export const revalidate = 3600;
 export const metadata: Metadata = {
   title: fitTitle('Can You Get Into Tape London Tonight? Insider Guide'),
   description:
-    'Walking into Tape London on a Friday or Saturday is a long shot; Tuesday is the easiest night. Tables from £1,500, the door and how to get in tonight.',
+    'Walking into Tape London on a Friday or Saturday is a long shot; Tuesday is the easiest night. Tables from £750, the door and how to get in tonight.',
   keywords: [
     'Tape London tonight',
     'get into Tape London',
@@ -52,7 +52,7 @@ const faqs = [
   {
     question: 'Do I need a table at Tape?',
     answer:
-      'Practically, yes. Tape operates as a members club and the door team is among the most selective in London. A table reservation is the only reliable way to guarantee entry. Tables start from £1,500 minimum spend. Guestlist is not a realistic option here: the club fills primarily through table bookings and member invitations.',
+      'Practically, yes. Tape operates as a members club and the door team is among the most selective in London. A table reservation is the only reliable way to guarantee entry. Tables start from £750 minimum spend. Guestlist is not a realistic option here: the club fills primarily through table bookings and member invitations.',
   },
   {
     question: "What's the dress code at Tape London?",
@@ -62,7 +62,7 @@ const faqs = [
   {
     question: 'How much is a table at Tape?',
     answer:
-      'Tables at Tape London start from £1,500 minimum spend. On busy nights like Saturdays, you may find higher minimums depending on table position and the event. The minimum covers bottles and mixers. Expect to spend more if your group is larger or if you want premium champagne. Message us on WhatsApp for exact pricing and current availability.',
+      'Tables at Tape London start from £750 minimum spend. On busy nights like Saturdays, you may find higher minimums depending on table position and the event. The minimum covers bottles and mixers. Expect to spend more if your group is larger or if you want premium champagne. Message us on WhatsApp for exact pricing and current availability.',
   },
 ];
 
@@ -157,7 +157,7 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="inline-block w-2 h-2 rounded-full bg-wa-500 mt-2 shrink-0" />
-                  Tables start from {tape?.tableMinimum || '£1,500'} minimum spend
+                  Tables start from {tape?.tableMinimum || '£750'} minimum spend
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="inline-block w-2 h-2 rounded-full bg-wa-500 mt-2 shrink-0" />
@@ -208,7 +208,7 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
             </p>
             <p>
               Our recommendation is always the same: book a table. If the minimum spend works for your group, it removes all uncertainty. For a full breakdown of table pricing, bottle packages, and what your minimum spend includes, see{' '}
-              <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">our guide to what a night out costs</Link>. If you are a group of four or more, splitting a {tape?.tableMinimum || '£1,500'} minimum works out to less than you would spend on a night out anyway, except you are guaranteed entry to one of the most exclusive rooms in London.
+              <Link href="/blog/how-much-does-a-night-out-in-london-cost" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">our guide to what a night out costs</Link>. If you are a group of four or more, splitting a {tape?.tableMinimum || '£750'} minimum works out to less than you would spend on a night out anyway, except you are guaranteed entry to one of the most exclusive rooms in London.
             </p>
           </div>
         </div>

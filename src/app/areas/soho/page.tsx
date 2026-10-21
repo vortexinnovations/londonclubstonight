@@ -129,7 +129,7 @@ const faqs = [
   {
     question: 'Do I need to book a table at a Soho club?',
     answer: `${sohoClubs
-      .map((c) => `${label(c)}: ${c.guestlistNote} ${tablesFromLabel(c)}.`)
+      .map((c) => `${label(c)}: ${c.guestlistNote}${c.noGuestlist ? '' : ` ${tablesFromLabel(c)}.`}`)
       .join(' ')} Message us on WhatsApp and we will tell you what is realistic for your group and your night.`,
   },
   {
@@ -182,7 +182,7 @@ export default function SohoPage() {
             <p className="animate-fade-up anim-delay-3 text-frost-100/85 text-lg md:text-xl leading-relaxed max-w-2xl">
               There are two nightclubs in Soho itself: Cirque Le Soir on Ganton Street,
               just off Carnaby Street, and The Box on Walker&apos;s Court. Both play mainly
-              hip-hop and RnB. Cirque Le Soir closes at 3:45am and The Box at 3:30am, and between them there is a Soho club
+              hip-hop and RnB. Cirque Le Soir closes at 3:45am and The Box at 4am, and between them there is a Soho club
               open on Monday and every night from Wednesday to Saturday. The Mayfair clubs start just across
               Regent Street, and Selene and BEAT London are a short walk north of Oxford Circus.
             </p>
@@ -300,7 +300,7 @@ export default function SohoPage() {
                 Looking for a Soho night out?
               </h2>
               <p className="text-frost-300 max-w-2xl mx-auto text-center mb-8">
-                Message us for a table or guestlist at Cirque Le Soir or The Box, or help picking
+                Message us for a table or guestlist at Cirque Le Soir, a table at The Box, or help picking
                 the right club nearby for your group and your night.
               </p>
               <div className="flex justify-center">

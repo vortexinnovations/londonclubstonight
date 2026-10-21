@@ -8,14 +8,14 @@ import { fitTitle, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: fitTitle('Clubs Open Late in London: Your Guide to Late Night London'),
-  description: 'Every London club grouped by closing time. Find venues open until 3am, 3:30am, 3:45am, 4am and 6am. Your guide to keeping the night going in London.',
+  description: 'Every London club grouped by closing time. Find venues open until 3:45am, 4am, 5am and 6am. Your guide to keeping the night going in London.',
   keywords: ['clubs open late London', 'late night clubs London', 'clubs open until 6am London', 'after hours London', 'late night London'],
   alternates: {
     canonical: 'https://londonclubstonight.com/guides/clubs-open-late',
   },
   openGraph: {
     title: 'Clubs Open Late in London: Your Guide to Late Night London',
-    description: 'Every London club grouped by closing time. Find venues open until 3am, 3:30am, 3:45am, 4am and 6am. Your guide to keeping the night going in London.',
+    description: 'Every London club grouped by closing time. Find venues open until 3:45am, 4am, 5am and 6am. Your guide to keeping the night going in London.',
     url: 'https://londonclubstonight.com/guides/clubs-open-late',
     type: 'article',
     locale: 'en_GB',
@@ -28,38 +28,26 @@ const closingGroups = [
   {
     time: '6:00am',
     label: 'Open Until 6am',
-    description: 'The only venue in London where you can dance until sunrise.',
-    slugs: ['ministry-of-sound'],
+    description: 'Ministry of Sound, Maddox, Dear Darling Mayfair and BEAT London all run until 6am.',
+    slugs: ['ministry-of-sound', 'maddox', 'dear-darling', 'beat-london'],
+  },
+  {
+    time: '5:00am',
+    label: 'Open Until 5am',
+    description: 'The Scotch of St James runs until 5am, Thursday to Saturday.',
+    slugs: ['scotch-of-st-james'],
   },
   {
     time: '4:00am',
     label: 'Open Until 4am',
-    description: '99 Regent Street and Rumour both run from 11pm to 4am, Wednesday to Saturday, a short walk apart in Mayfair.',
-    slugs: ['99-regent-street', 'rumour-london'],
+    description: '99 Regent Street and Rumour both run from 11pm to 4am, Wednesday to Saturday, a short walk apart in Mayfair. The London Reign, The Box and Selene also close at 4am.',
+    slugs: ['99-regent-street', 'rumour-london', 'the-london-reign', 'the-box-london', 'selene-london'],
   },
   {
     time: '3:45am',
     label: 'Open Until 3:45am',
     description: 'Tape London and Cirque Le Soir both finish at 3:45am. On Fridays and Saturdays, Little Tape, the room next door to Tape, carries on from 3am to 5:30am.',
     slugs: ['tape-london', 'cirque-le-soir'],
-  },
-  {
-    time: '3:30am',
-    label: 'Open Until 3:30am',
-    description: 'A late finish with plenty of time to have a proper night.',
-    slugs: ['beat-london'],
-  },
-  {
-    time: '3:00am',
-    label: 'Open Until 3am',
-    description: 'Closing half an hour earlier, but still late enough for a full night out.',
-    slugs: ['the-london-reign', 'maddox', 'scotch-of-st-james'],
-  },
-  {
-    time: '2:30am',
-    label: 'Open Until 2:30am',
-    description: 'Earlier close, so plan accordingly if you want a longer night.',
-    slugs: ['dear-darling'],
   },
 ];
 
@@ -69,7 +57,7 @@ export default function ClubsOpenLatePage() {
       <SchemaMarkup
         schema={getArticleSchema(
           'Clubs Open Late in London: Your Guide to Late Night London',
-          'Every London club grouped by closing time. Find venues open until 3am, 3:30am, 3:45am, 4am and 6am.',
+          'Every London club grouped by closing time. Find venues open until 3:45am, 4am, 5am and 6am.',
           '/guides/clubs-open-late',
           '2025-01-01'
         )}
@@ -118,7 +106,7 @@ export default function ClubsOpenLatePage() {
           {/* Quick Reference */}
           <div className="glass-card p-7 mb-12">
             <h2 className="font-display text-lg font-extrabold tracking-tight text-white mb-4 text-center">Quick Reference</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
               {closingGroups.map((group) => (
                 <div key={group.time} className="text-center">
                   <div className="font-display text-2xl font-extrabold tracking-tight text-gradient">{group.time.replace(':00', '')}</div>
@@ -162,7 +150,7 @@ export default function ClubsOpenLatePage() {
                         <div className="bg-neon-500/10 border border-neon-400/25 rounded-lg p-4 mb-4">
                           <p className="text-neon-200 text-sm font-semibold mb-1">London&apos;s latest club</p>
                           <p className="text-frost-300 text-sm">
-                            Ministry of Sound is the only venue on this list open until 6am. On special event nights, it can run even later. If your sole priority is staying out as late as possible, this is where you go. Buy tickets in advance online.
+                            Ministry of Sound is the biggest room open until 6am, and on special event nights it can run even later. If your sole priority is staying out as late as possible, this is where you go. Buy tickets in advance online.
                           </p>
                         </div>
                       )}

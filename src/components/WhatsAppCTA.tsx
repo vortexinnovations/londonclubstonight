@@ -9,6 +9,8 @@ interface WhatsAppCTAProps {
   clubName?: string;
   variant?: 'inline' | 'sticky' | 'hero' | 'tonight';
   heading?: string;
+  /** The club runs no guestlist: show the table button only. */
+  tableOnly?: boolean;
 }
 
 function TrustLine() {
@@ -20,7 +22,7 @@ function TrustLine() {
   );
 }
 
-export default function WhatsAppCTA({ clubName, variant = 'inline', heading }: WhatsAppCTAProps) {
+export default function WhatsAppCTA({ clubName, variant = 'inline', heading, tableOnly = false }: WhatsAppCTAProps) {
   const tableUrl = getWhatsAppTableUrl(clubName);
   const guestlistUrl = getWhatsAppGuestlistUrl(clubName);
 
@@ -52,15 +54,17 @@ export default function WhatsAppCTA({ clubName, variant = 'inline', heading }: W
               <WhatsAppIcon />
               Book Table Tonight
             </a>
-            <a
-              href={tonightGuestlistUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-ghost py-4 px-8 text-base"
-            >
-              <WhatsAppIcon />
-              Guestlist Tonight
-            </a>
+            {!tableOnly && (
+              <a
+                href={tonightGuestlistUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-ghost py-4 px-8 text-base"
+              >
+                <WhatsAppIcon />
+                Guestlist Tonight
+              </a>
+            )}
           </div>
           <TrustLine />
         </div>
@@ -81,14 +85,16 @@ export default function WhatsAppCTA({ clubName, variant = 'inline', heading }: W
             <WhatsAppIcon />
             Book a Table
           </a>
-          <a
-            href={guestlistUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-ghost flex-1 py-3 px-4 text-sm"
-          >
-            Join Guestlist
-          </a>
+          {!tableOnly && (
+            <a
+              href={guestlistUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-ghost flex-1 py-3 px-4 text-sm"
+            >
+              Join Guestlist
+            </a>
+          )}
         </div>
       </div>
     );
@@ -107,15 +113,17 @@ export default function WhatsAppCTA({ clubName, variant = 'inline', heading }: W
             <WhatsAppIcon />
             Book a Table
           </a>
-          <a
-            href={guestlistUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-ghost py-4 px-9 text-base"
-          >
-            <WhatsAppIcon />
-            Join Guestlist
-          </a>
+          {!tableOnly && (
+            <a
+              href={guestlistUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-ghost py-4 px-9 text-base"
+            >
+              <WhatsAppIcon />
+              Join Guestlist
+            </a>
+          )}
         </div>
         <TrustLine />
       </div>
@@ -133,15 +141,17 @@ export default function WhatsAppCTA({ clubName, variant = 'inline', heading }: W
         <WhatsAppIcon />
         Book a Table
       </a>
-      <a
-        href={guestlistUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="btn-ghost py-3 px-7 text-sm"
-      >
-        <WhatsAppIcon />
-        Join Guestlist
-      </a>
+      {!tableOnly && (
+        <a
+          href={guestlistUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-ghost py-3 px-7 text-sm"
+        >
+          <WhatsAppIcon />
+          Join Guestlist
+        </a>
+      )}
     </div>
   );
 }
