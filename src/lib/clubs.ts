@@ -526,7 +526,7 @@ The programming varies by night but the consistent thread is energy. Whether it'
 
 The crowd tends to be younger and more music-focused than at some of the flashier Mayfair venues. People come to BEAT because they want to dance and they want to hear music played properly. The atmosphere is enthusiastic without being aggressive, and the lack of VIP pretension is refreshing.
 
-Tables start from £1,000 and offer good views of the dancefloor and DJ booth. The guestlist is accessible and the door policy, while smart, isn't designed to exclude. It's designed to maintain the quality of the crowd.`,
+Tables start from £1,000 and offer good views of the dancefloor and DJ booth. BEAT doesn't run a guestlist. Entry is by table booking, and the door policy, while smart, isn't designed to exclude. It's designed to maintain the quality of the crowd.`,
     address: '48 Margaret Street, Fitzrovia, London W1',
     area: 'Fitzrovia',
     areas: ['Central London'],
@@ -541,8 +541,9 @@ Tables start from £1,000 and offer good views of the dancefloor and DJ booth. T
     whyRanked: 'The sound system alone justifies the inclusion. When the DJ is right and the room is full, BEAT delivers one of the best pure clubbing experiences in central London.',
     mapUrl: 'https://maps.google.com/?q=BEAT+London+Margaret+Street',
     tonightSuitability: 'Music-first venue with one of London\'s best sound systems. High energy, less pretension than Mayfair.',
-    guestlistRealistic: true,
-    guestlistNote: 'Guestlist is straightforward here. Less strict than Mayfair venues on group composition.',
+    guestlistRealistic: false,
+    noGuestlist: true,
+    guestlistNote: 'BEAT doesn\'t run a guestlist. Entry is by table booking.',
     bestForGroups: 'all',
     lastMinuteTableFriendly: true,
     lastMinuteNote: 'Good same-day availability. More accessible than Mayfair for last-minute plans.',
@@ -566,7 +567,7 @@ Multiple rooms offer different sonic experiences throughout the night. The main 
 
 The crowd is genuinely diverse: in age, background, and music taste. Ministry attracts everyone from seasoned ravers who've been coming since the 90s to new converts experiencing their first proper sound system. The common thread is respect for the music and the venue's legacy.
 
-Unlike the Mayfair clubs, Ministry operates on a larger scale. Capacity runs into the thousands, queues can be significant, and the atmosphere is different: more egalitarian, more music-focused, less concerned with VIP status. Tables are available from £1,000 for those who want them, but Ministry is fundamentally about the dancefloor experience.`,
+Unlike the Mayfair clubs, Ministry operates on a larger scale. Capacity runs into the thousands, queues can be significant, and the atmosphere is different: more egalitarian, more music-focused, less concerned with VIP status. Ministry of Sound doesn't run a guestlist. Entry is by table booking, from £1,000, and tickets are sold for its events. Ministry is fundamentally about the dancefloor experience.`,
     address: '103 Gaunt Street, London SE1 6DP',
     area: 'Elephant & Castle',
     areas: ['South London'],
@@ -582,7 +583,8 @@ Unlike the Mayfair clubs, Ministry operates on a larger scale. Capacity runs int
     mapUrl: 'https://maps.google.com/?q=Ministry+of+Sound+London',
     tonightSuitability: 'The legendary club with the best sound system in London. Ticket-based entry: no guestlist politics, just music.',
     guestlistRealistic: false,
-    guestlistNote: 'Ministry is ticket-based. Buy tickets online in advance or on the door if not sold out.',
+    noGuestlist: true,
+    guestlistNote: 'Ministry of Sound doesn\'t run a guestlist. Entry is by table booking, and tickets are sold for its events.',
     bestForGroups: 'all',
     lastMinuteTableFriendly: true,
     lastMinuteNote: 'Tables available but Ministry is primarily a ticket venue. Check the lineup and buy tickets online.',

@@ -58,7 +58,7 @@ const faqs = [
   {
     question: 'Do I need to book for Friday night clubs in London?',
     answer:
-      'It depends on the venue. For Mayfair clubs like Tape, a table booking is essential. For venues like Dear Darling, Maddox, or BEAT, guestlist is a viable option on Fridays: the door is typically a notch less selective than Saturday. Ministry of Sound operates on tickets which should be bought in advance for headline events.',
+      'It depends on the venue. For Mayfair clubs like Tape, a table booking is essential. For venues like Dear Darling or Maddox, guestlist is a viable option on Fridays: the door is typically a notch less selective than Saturday. Ministry of Sound operates on tickets which should be bought in advance for headline events.',
   },
   {
     question: 'What time should I arrive at a London club on Friday?',

@@ -62,7 +62,7 @@ const faqs = [
   {
     question: 'What group ratio do I need?',
     answer:
-      'The ideal guestlist ratio for London clubs is more women than men: a group of three women and two men is the golden ratio for most venues. Equal numbers (three and three) is generally fine at venues like Dear Darling, BEAT London, and The London Reign. All-female groups have the highest acceptance rate and the fastest entry at every venue. All-male groups face significant difficulty at Mayfair clubs regardless of guestlist status: for groups of men, a table booking is strongly recommended. These ratio rules are not written down anywhere official but they are consistently enforced.',
+      'The ideal guestlist ratio for London clubs is more women than men: a group of three women and two men is the golden ratio for most venues. Equal numbers (three and three) is generally fine at venues like Dear Darling and The London Reign. All-female groups have the highest acceptance rate and the fastest entry at every venue. All-male groups face significant difficulty at Mayfair clubs regardless of guestlist status: for groups of men, a table booking is strongly recommended. These ratio rules are not written down anywhere official but they are consistently enforced.',
   },
   {
     question: 'How do I get on a guestlist last minute?',
