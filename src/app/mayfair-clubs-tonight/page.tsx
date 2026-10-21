@@ -65,7 +65,7 @@ const faqs = [
   {
     question: 'How much is a table in Mayfair tonight?',
     answer:
-      'Table minimums in Mayfair start from around £1,000 at venues like Maddox, and at Dear Darling in nearby St James\'s. Tape London starts from £750 and can go significantly higher for premium positions on peak nights. These minimums cover your spend on bottles and drinks. You are not paying £1,000 on top of your drinks, it is the minimum amount you commit to spending. For a group of five, that works out to £200 per person, which is competitive when you factor in guaranteed entry and bottle service. ',
+      'Table minimums in Mayfair start from around £1,000 at venues like Maddox, and from £800 at Dear Darling in nearby St James\'s. Tape London starts from £750 and can go significantly higher for premium positions on peak nights. These minimums cover your spend on bottles and drinks. You are not paying £1,000 on top of your drinks, it is the minimum amount you commit to spending. For a group of five, that works out to £200 per person, which is competitive when you factor in guaranteed entry and bottle service. ',
   },
 ];
 

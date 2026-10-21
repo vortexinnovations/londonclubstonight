@@ -53,7 +53,7 @@ const faqs = [
   {
     question: 'How much does a table cost at London clubs?',
     answer:
-      'Table minimums at London clubs typically start from £1,000 and go up from there. This is a minimum spend on bottles and drinks, not an entry fee on top of your drinks. At venues like Maddox and Dear Darling, £1,000 is the standard starting point. Tape London starts from £750. Premium positions and peak Saturdays can push minimums to £2,000 or above. For a group of five, £1,000 works out to £200 per person: competitive with buying individual drinks at the bar over a full night, with vastly better service and guaranteed entry.',
+      'Table minimums at London clubs typically start from £1,000 and go up from there. This is a minimum spend on bottles and drinks, not an entry fee on top of your drinks. At Maddox, £1,000 is the standard starting point. Dear Darling Mayfair starts from £800 and Tape London from £750. Premium positions and peak Saturdays can push minimums to £2,000 or above. For a group of five, £1,000 works out to £200 per person: competitive with buying individual drinks at the bar over a full night, with vastly better service and guaranteed entry.',
   },
   {
     question: 'What is included in a table booking?',

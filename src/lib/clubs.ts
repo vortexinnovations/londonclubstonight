@@ -476,9 +476,9 @@ The address has been a nightlife name since 1954, when Al Burnett's Stork Club d
     name: 'Dear Darling Mayfair',
     shortName: 'Dear Darling',
     status: 'open',
-    metaTitle: 'Dear Darling Mayfair: Tables from £1,000 and Guestlist',
+    metaTitle: 'Dear Darling Mayfair: Tables from £800 and Guestlist',
     tagline: 'St James\'s most opulent cocktail bar with a late-night secret',
-    description: 'Opulent St James\'s cocktail bar with chandeliers and velvet booths. Premium cocktails with late-night clubbing. Tables from £1,000.',
+    description: 'Opulent St James\'s cocktail bar with chandeliers and velvet booths. Premium cocktails with late-night clubbing. Tables from £800.',
     longDescription: `Dear Darling is St James's at its most decadent. Walking in feels like stepping into a gilded private salon: chandeliers hang from ornate ceilings, velvet booths line the walls, and every surface seems designed to catch the warm, amber lighting. It's unapologetically opulent, and it works.
 
 This venue starts the evening as a premium cocktail bar. The drinks list is extensive and genuinely excellent: the bartenders are skilled, the ingredients are top-tier, and the presentation matches the surroundings. This isn't a bar that serves cocktails as an afterthought to the clubbing: the cocktail experience is a genuine draw in itself.
@@ -487,7 +487,7 @@ As the night progresses, Dear Darling transitions into a late-night venue with D
 
 The crowd is well-dressed and appreciative of the venue's aesthetic. This is a place where people come to feel glamorous, and the surroundings deliver on that promise. Couples, small groups, and pre-club gatherings are common, though many guests who arrive for "just a drink" end up staying until close.
 
-Tables start from £1,000 for the late-night experience. Earlier evening bookings for cocktails are more flexible. The door policy is smart but welcoming: this venue wants you to enjoy yourself, not intimidate you.`,
+Tables start from £800 minimum spend for the late-night experience. Earlier evening bookings for cocktails are more flexible. The door policy is smart but welcoming: this venue wants you to enjoy yourself, not intimidate you.`,
     address: '91 Jermyn Street, St James\'s, London',
     area: 'St James\'s',
     areas: ['St James\'s', 'Central London'],
@@ -495,7 +495,7 @@ Tables start from £1,000 for the late-night experience. Earlier evening booking
     openingNights: 'Thursday, Friday, Saturday, Sunday',
     closingTime: '6:00am',
     dressCode: 'Smart glamorous. The venue\'s opulence sets the standard. Dress to match your surroundings.',
-    tableMinimum: '£1,000',
+    tableMinimum: '£800',
     crowd: 'Glamour-conscious, cocktail enthusiasts, couples, pre-club groups. Average age 26 to 38.',
     bestFor: 'Couples looking for a glamorous date night. Groups who want cocktails first and dancing later. Anyone who appreciates opulent interiors.',
     insiderTip: 'Arrive at 9pm for cocktails when the venue is at its most atmospheric. The transition to late-night happens gradually. Enjoy the evolution rather than arriving at midnight.',
