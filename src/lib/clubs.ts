@@ -72,7 +72,7 @@ export interface Club {
 // WhatsApp numbers come from Vercel env vars so they can be changed without a code change.
 // Set NEXT_PUBLIC_WHATSAPP_TABLE_NUMBER and NEXT_PUBLIC_WHATSAPP_GUESTLIST_NUMBER on Vercel
 // (a redeploy is needed after changing them since pages are statically generated).
-export const WHATSAPP_TABLE_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_TABLE_NUMBER || '447880662708';
+export const WHATSAPP_TABLE_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_TABLE_NUMBER || '447348644054';
 export const WHATSAPP_GUESTLIST_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_GUESTLIST_NUMBER || '447348644054';
 
 // Simple pre-built links for inline CTAs (e.g. blog posts)
