@@ -114,7 +114,7 @@ The venue itself is intimate by design. Dark, moody interiors with plush seating
 Getting in without a booking is extremely difficult. This isn't a club that fills from the queue: the door team are selective about who enters, and having a table reservation or being on a member's guestlist is practically essential. If you're serious about experiencing Tape, book a table. It's the only reliable way in, and with tables starting from £750, you're paying for the privilege of guaranteed entry to one of London's most talked-about rooms.
 
 The music leans heavily into hip-hop, trap, and RnB with the occasional pop crossover when the crowd demands it. The DJs read the room well and the sound system, originally designed for music production, delivers a listening experience that most clubs can't match.`,
-    address: '17 Hanover Square, London W1S 1BN',
+    address: '17 Hanover Square, London W1S 1HU',
     area: 'Mayfair',
     areas: ['Mayfair', 'Central London'],
     musicGenres: ['Hip-Hop', 'RnB', 'Trap'],
