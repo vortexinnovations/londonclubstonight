@@ -9,7 +9,7 @@ const clubLinks = [
   { href: '/clubs/99-regent-street', label: '99 Regent Street' },
   { href: '/clubs/funky-buddha', label: 'Funky Buddha (closed)' },
   { href: '/clubs/the-box-london', label: 'The Box' },
-  { href: '/clubs/luna-club-london', label: 'Luna Club (closed)' },
+  { href: '/clubs/luna-club-london', label: 'Maya (formerly Luna)' },
   { href: '/clubs/selene-london', label: 'Selene' },
 ];
 
