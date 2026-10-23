@@ -226,7 +226,7 @@ Reign appeals to a broad crowd, from couples celebrating special occasions to co
     description: 'Rumour (formerly Tabu) is an intimate booth club at 1 Dover Street in Mayfair, open Wednesday to Saturday from 11pm to 4am. Open-format hip hop, RnB and house, a ladies\' guestlist and booths from £1,000. Book on WhatsApp.',
     longDescription: `Rumour (formerly Tabu) is the booth club at 1 Dover Street in Mayfair, open Wednesday, Thursday, Friday and Saturday from 11pm to 4am. The Tabu name has gone: same ownership, full rebrand, new design and a new concept. Dover Street sits between Piccadilly and Grafton Street, a few minutes from Green Park station, with Piccadilly Circus and Bond Street walkable.
 
-It is one intimate room of around 200 people, built around booths: deep red velvet, dark panelling, a chandelier and low warm lighting. The room fills early by design, so arrive in good time. The music is open format, hip hop, RnB and house, read to the room on the night rather than fixed to one genre.
+It is one intimate room of around 200 people, built around red velvet booths beneath backlit gold disc walls, with red velvet curtains, an arched doorway and low red lighting. The room fills early by design, so arrive in good time. The music is open format, hip hop, RnB and house, read to the room on the night rather than fixed to one genre.
 
 Rumour runs a no-photography policy: no photos or video in the main room or on the dance floor, and the floor team enforce it. That is the single clearest difference from the rooms around it. The photos on this page are the venue's own.
 
