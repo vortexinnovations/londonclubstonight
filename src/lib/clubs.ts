@@ -228,7 +228,7 @@ Reign appeals to a broad crowd, from couples celebrating special occasions to co
 
 It is one intimate room of around 200 people, built around booths: deep red velvet, dark panelling, a chandelier and low warm lighting. The room fills early by design, so arrive in good time. The music is open format, hip hop, RnB and house, read to the room on the night rather than fixed to one genre.
 
-Rumour runs a no-photography policy: no photos or video in the main room or on the dance floor, and the floor team enforce it. That is the single clearest difference from the rooms around it.
+Rumour runs a no-photography policy: no photos or video in the main room or on the dance floor, and the floor team enforce it. That is the single clearest difference from the rooms around it. The photos on this page are the venue's own.
 
 Entry works two ways. There is a ladies' guestlist, free to £20 on the door depending on the night and how busy it is; men are not added to the guestlist. For men and mixed groups the route in is a booth, from £1,000 minimum spend, which covers entry for the whole group. Across eight people that is roughly £125 each, spent on drinks. The dress code is smart and dressed up: heels for ladies, a considered look for men, no sportswear, no fancy dress, trainers at the door's discretion. Entry is 18+ with photo ID.
 
@@ -252,11 +252,17 @@ Wednesday and Thursday are the more relaxed nights and the easiest for guestlist
     bestForGroups: 'ladies',
     lastMinuteTableFriendly: false,
     lastMinuteNote: 'Wednesday and Thursday are the more relaxed nights. Friday and Saturday fill out and are worth arranging in advance, so message us as early as you can for a same-day booth.',
-    heroImage: '/gallery/images/rumour-london.jpg',
-    cardImage: '/gallery/images/rumour-london.jpg',
-    galleryImages: ['/gallery/images/rumour-london.jpg'],
+    heroImage: '/gallery/images/rumour-london-arched-doorway.jpg',
+    cardImage: '/gallery/images/rumour-london-room-across-bar.jpg',
+    galleryImages: ['/gallery/images/rumour-london-booth-disc-wall.jpg', '/gallery/images/rumour-london-room-across-bar.jpg', '/gallery/images/rumour-london-dj-booth.jpg', '/gallery/images/rumour-london-booths-wide.jpg', '/gallery/images/rumour-london-bar.jpg', '/gallery/images/rumour-london-tables-curtains.jpg'],
     imageAlt: {
-      '/gallery/images/rumour-london.jpg': 'Rumour at 1 Dover Street, the red velvet booths in the main room',
+      '/gallery/images/rumour-london-arched-doorway.jpg': 'The lit arched doorway and steps between two backlit disc walls at Rumour, Mayfair',
+      '/gallery/images/rumour-london-booth-disc-wall.jpg': 'A curved red velvet booth with ice buckets beneath the backlit gold disc wall at Rumour, Mayfair',
+      '/gallery/images/rumour-london-room-across-bar.jpg': 'Rumour, Mayfair: the room seen across the bar to the disc walls and the arched doorway',
+      '/gallery/images/rumour-london-dj-booth.jpg': 'The DJ booth with Pioneer decks in front of a disc wall at Rumour, Mayfair',
+      '/gallery/images/rumour-london-booths-wide.jpg': 'A row of red velvet booths beneath the backlit disc wall at Rumour, Mayfair',
+      '/gallery/images/rumour-london-bar.jpg': 'The bar and its backlit bottle display at Rumour, Mayfair',
+      '/gallery/images/rumour-london-tables-curtains.jpg': 'Tables set with glassware and ice buckets in front of red velvet curtains at Rumour, Mayfair',
     },
     hours: [
       { days: ['Wednesday', 'Thursday'], opens: '23:00', closes: '04:00', note: 'The more relaxed nights, and the easiest for the ladies\' guestlist' },
