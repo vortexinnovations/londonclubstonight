@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   // never applies here: this is the whole <title>.
   title: { absolute: 'London Clubs Open Tonight: Free Guestlist and VIP Tables' },
   description:
-    'London clubs open tonight, from Tape to Cirque Le Soir: free same-night guestlist, VIP tables and promoter tips for Mayfair and Soho, with no booking fees.',
+    'London clubs open tonight, from Tape to Cirque Le Soir: same-night guestlist, VIP tables and promoter tips for Mayfair and Soho, with no booking fees.',
   keywords: [
     'London clubs tonight',
     'clubs open tonight London',
