@@ -1,3 +1,4 @@
+import { safeJsonLd } from "@/lib/safe-output";
 import type { Metadata, ResolvingMetadata } from 'next';
 import { fitTitle, siteImage } from '@/lib/metadata';
 import Link from 'next/link';
@@ -26,7 +27,7 @@ export default function AboutTheEditorPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
+          __html: safeJsonLd({
             '@context': 'https://schema.org',
             '@type': 'ProfilePage',
             mainEntity: {

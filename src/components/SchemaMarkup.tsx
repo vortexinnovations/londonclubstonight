@@ -1,3 +1,4 @@
+import { safeJsonLd } from "@/lib/safe-output";
 interface SchemaMarkupProps {
   schema: Record<string, unknown> | Record<string, unknown>[];
 }
@@ -7,7 +8,7 @@ export default function SchemaMarkup({ schema }: SchemaMarkupProps) {
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{
-        __html: JSON.stringify(schema).replace(/</g, '\\u003c'),
+        __html: safeJsonLd(schema),
       }}
     />
   );

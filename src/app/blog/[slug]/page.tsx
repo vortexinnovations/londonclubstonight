@@ -1,3 +1,4 @@
+import { escapedHtml, safeLinks, safeJsonLd } from "@/lib/safe-output";
 import type { Metadata, ResolvingMetadata } from 'next';
 import { fitTitle, siteImage } from '@/lib/metadata';
 import Link from 'next/link';
@@ -9,6 +10,9 @@ import { clubs, WHATSAPP_TABLE_LINK, WHATSAPP_GUESTLIST_LINK } from '@/lib/clubs
 import ClubCard from '@/components/ClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
+
+// Database posts are plain Markdown; raw HTML shows as text and only safe link schemes render.
+marked.use(escapedHtml, safeLinks);
 
 // Posts are prerendered at build and refreshed by /api/revalidate when the
 // content API writes; this is a daily safety net on top.
@@ -2314,7 +2318,7 @@ function getPostContent(slug: string): React.ReactNode {
             <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Message us on WhatsApp</a>{" "}and we will sort everything for you, from the guestlist to the journey home.
           </p>
 
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd({
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Getting Home from London Clubs - Transport Options That Work After 3am",
@@ -2434,7 +2438,7 @@ function getPostContent(slug: string): React.ReactNode {
             If you&apos;re reading this and thinking about going out tonight, you&apos;re already ahead of most people. <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Message us on WhatsApp</a>{" "}and we&apos;ll tell you exactly where to go.
           </p>
 
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd({
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Last-Minute Night Out in London - How to Make It Happen Tonight",
@@ -2545,7 +2549,7 @@ function getPostContent(slug: string): React.ReactNode {
             If you are not sure which venue suits your group tonight or what is open near it, <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">message us on WhatsApp</a>{" "}and we will sort the night end to end - guestlist on the way in, food map on the way out.
           </p>
 
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd({
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Late-Night Food in London After Clubs - Where to Eat When the Music Stops",
@@ -2639,7 +2643,7 @@ function getPostContent(slug: string): React.ReactNode {
             Tell us your weekend and your group size and we will line up the right day event and the right club to roll into afterwards. <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Message us on WhatsApp</a>{" "}and we&apos;ll sort the day end to end, guestlist included.
           </p>
 
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd({
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Day Parties in London: Where to Go When the Sun Is Out",
@@ -2742,7 +2746,7 @@ function getPostContent(slug: string): React.ReactNode {
             and we&apos;ll sort it end to end.
           </p>
 
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd({
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "UK Garage Nights in London: Where the Sound Still Lives",
@@ -2840,7 +2844,7 @@ function getPostContent(slug: string): React.ReactNode {
             and we&apos;ll sort it end to end.
           </p>
 
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd({
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Latin and Reggaeton Nights in London: Where the Party Is",
@@ -2937,7 +2941,7 @@ function getPostContent(slug: string): React.ReactNode {
             and we&apos;ll handle it end to end.
           </p>
 
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd({
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "London Boat Parties: Summer Nights Out on the Thames",
@@ -3015,7 +3019,7 @@ function getPostContent(slug: string): React.ReactNode {
             and we&apos;ll sort carnival weekend end to end.
           </p>
 
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd({
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Notting Hill Carnival After Dark: How London\'s Biggest Weekend Plays Out",
@@ -3102,7 +3106,7 @@ function getPostContent(slug: string): React.ReactNode {
             and pick your own landing zone.
           </p>
 
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd({
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Festival After-Parties in London: Where the Night Goes After the Curfew",
@@ -3200,7 +3204,7 @@ function getPostContent(slug: string): React.ReactNode {
             <Link href="/clubs-tonight-london" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">what is on tonight</Link>.
           </p>
 
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd({
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Freshers Week in London: A First Year Guide to the City Nightlife",
