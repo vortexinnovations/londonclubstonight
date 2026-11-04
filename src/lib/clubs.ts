@@ -38,6 +38,10 @@ export interface Club {
    * opening-hours table on the club page and openingHours in structured data.
    */
   hours?: OpeningSlot[];
+  /** Calendar days and times for structured data, when the doors open on the morning after the night named. Defaults to hours. */
+  schemaHours?: OpeningSlot[];
+  /** One line under the opening-hours table. */
+  hoursNote?: string;
   /** Open clubs on this site a short walk away, linked from the club page. */
   nearby?: string[];
   /** How-to-get-in content for venues with a dedicated search lane: a lead answer, extra sections and FAQs. */
@@ -537,6 +541,8 @@ Tables start from £800 minimum spend for the late-night experience. Earlier eve
       { days: ['Thursday'], opens: '01:00', closes: '06:00', note: 'Select Thursdays only, so check with us first', select: true },
       { days: ['Friday', 'Saturday'], opens: '01:00', closes: '06:00' },
     ],
+    schemaHours: [{ days: ['Saturday', 'Sunday'], opens: '01:00', closes: '06:00' }],
+    hoursNote: 'Nights run into the next morning, so a Friday night at BEAT means doors at 1am on Saturday morning.',
     entryGuide: {
       heading: 'How to Get Into BEAT London',
       lead: 'Entry to BEAT London is by table booking, with tables from £1,000 minimum spend. There is no guestlist and there are no tickets, non-members can book a table, and the doors are at 1am. Message us on WhatsApp with your night and group size and we will book it for you.',
@@ -556,7 +562,7 @@ Tables start from £800 minimum spend for the late-night experience. Earlier eve
         {
           heading: 'How to Book a Table',
           paragraphs: [
-            'Tell us the night and the size of your group on WhatsApp, and we will come back with what is available. BEAT opens on Friday, Saturday and select Thursdays, so check with us before you plan around a Thursday.',
+            'Tell us the night and the size of your group on WhatsApp, and we will come back with what is available. Last-minute tables are often possible, subject to availability. BEAT opens on Friday, Saturday and select Thursdays, so check with us before you plan around a Thursday.',
             'As of November 2026, tables start from £1,000 minimum spend, spent on drinks, and VIP tables start from £2,000. Bottles start from £750, in line with other clubs.',
           ],
         },
@@ -572,7 +578,8 @@ Tables start from £800 minimum spend for the late-night experience. Earlier eve
         { question: 'Are there tickets for BEAT London?', answer: 'No. There are no tickets for BEAT London. Entry is by table booking.' },
         { question: 'Is there a guestlist at BEAT London?', answer: 'No. BEAT does not run a guestlist. Entry is by table booking.' },
         { question: 'Can non-members get into BEAT London?', answer: 'Yes. BEAT has members, and non-members can book a table.' },
-        { question: 'What time do the doors open at BEAT London?', answer: 'The doors are at 1am and the club closes at 6am, on Friday, Saturday and select Thursdays.' },
+        { question: 'What time do the doors open at BEAT London?', answer: 'The doors are at 1am and the club closes at 6am, on Friday, Saturday and select Thursdays. Nights run into the next morning, so a Friday night means doors at 1am on Saturday morning.' },
+        { question: 'Can I get a last-minute table at BEAT London?', answer: 'Often, yes, subject to availability. Message us on WhatsApp on the day and we will tell you what is available.' },
         { question: 'What do I need to bring to BEAT London?', answer: 'Photo ID, as BEAT is 18+. The dress code is smart casual with no sportswear, and trainers only if clean and smart, at the door\'s discretion.' },
       ],
     },
@@ -600,7 +607,7 @@ The capacity is about 250, and the venue's own account is that it has one of Lon
     guestlistNote: 'BEAT doesn\'t run a guestlist. Entry is by table booking.',
     bestForGroups: 'all',
     lastMinuteTableFriendly: true,
-    lastMinuteNote: 'Message us on the day and we will tell you what is available. Doors are at 1am.',
+    lastMinuteNote: 'Last-minute tables are often possible, subject to availability. Message us on the day and we will tell you what is available. Doors are at 1am.',
     heroImage: '/gallery/images/fe4414_c0f53cc6cfe84299987ece034fa64e25.jpg',
     cardImage: '/gallery/images/fe4414_d98580822591406082db347183f9192a.jpg',
     galleryImages: ['/gallery/images/fe4414_2b0b9405f5084a1bb087854db63c68ab.jpg', '/gallery/images/fe4414_9bca79c7758d42a48f33bfe38f57e6d0.jpg', '/gallery/images/fe4414_8d1b76fde5204b9d845400d8d6d40739.jpg', '/gallery/images/fe4414_f00637f3a2a740078b492ed93e5ec5e5.jpg', '/gallery/images/fe4414_938458d67f614f5cb736ac0e2e4fe1f9.jpg', '/gallery/images/fe4414_f06a962e34d74d8d88f62e3607c5dab0.jpg'],
@@ -909,7 +916,7 @@ export function sharedHoursLabel(club: Club): string | null {
 /** Nights grouped by identical hours, Monday first, for structured data. */
 export function hoursByTime(club: Club): { days: Weekday[]; opens: string; closes: string }[] {
   const groups = new Map<string, { days: Weekday[]; opens: string; closes: string }>();
-  for (const slot of club.hours ?? []) {
+  for (const slot of club.schemaHours ?? club.hours ?? []) {
     if (slot.select) continue;
     const key = `${slot.opens}-${slot.closes}`;
     const group = groups.get(key) ?? { days: [], opens: slot.opens, closes: slot.closes };

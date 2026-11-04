@@ -316,6 +316,7 @@ export default async function ClubPage({
                   ))}
                 </tbody>
               </table>
+              {club.hoursNote && <p className="text-frost-300 leading-relaxed text-base mt-6">{club.hoursNote}</p>}
               <p className="text-frost-300 leading-relaxed text-base mt-6">{club.tonightSuitability}</p>
             </div>
           </div>
