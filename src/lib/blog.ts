@@ -389,7 +389,7 @@ export const blogPosts: BlogPost[] = [
     updatedDate: '2026-03-25',
     relatedClubs: ['ministry-of-sound', 'beat-london', '99-regent-street', 'funky-buddha', 'scotch-of-st-james'],
     faqs: [
-      { question: 'Can you walk into London clubs without a booking?', answer: 'Yes, at many venues. Ministry of Sound and Beat London both accept walk-ins regularly. The key factors are timing (arrive before midnight), dress code (look the part), and group composition (mixed groups fare better). Mayfair clubs are harder for walk-ins but not impossible on quieter nights.' },
+      { question: 'Can you walk into London clubs without a booking?', answer: 'Yes, at many venues. Ministry of Sound accepts walk-ins regularly. The key factors are timing (arrive before midnight), dress code (look the part), and group composition (mixed groups fare better). Mayfair clubs are harder for walk-ins but not impossible on quieter nights.' },
       { question: 'What time should you arrive to walk into a London club?', answer: 'Between 10:30pm and 11:30pm is the sweet spot. Arrive too early and the venue is empty. Arrive after midnight and the queue is long, capacity is filling up, and the door becomes more selective. For popular Saturday nights, earlier is always better.' },
       { question: 'What is the best backup plan if a club turns you away?', answer: 'Sign up for a guestlist: it is free and takes two minutes via WhatsApp or a promoter. If you are already at the door and get turned away, walk to a nearby venue. Mayfair and Soho have multiple clubs within a five-minute walk of each other, so a rejection at one is not the end of the night.' },
     ],
