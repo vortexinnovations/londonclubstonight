@@ -11,7 +11,7 @@ import {
   weeklyHours,
 } from '@/lib/clubs';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
-import SchemaMarkup, { getNightClubSchema } from '@/components/SchemaMarkup';
+import SchemaMarkup, { getFAQSchema, getNightClubSchema } from '@/components/SchemaMarkup';
 import type { Metadata, ResolvingMetadata } from 'next';
 import { fitTitle, siteImage } from '@/lib/metadata';
 
@@ -156,6 +156,7 @@ export default async function ClubPage({
   return (
     <main className="min-h-screen">
       <SchemaMarkup schema={schema} />
+      {!notBookable && club.entryGuide && <SchemaMarkup schema={getFAQSchema(club.entryGuide.faqs)} />}
 
       {/* Breadcrumb */}
       <div className="max-w-5xl mx-auto px-6 sm:px-8 pt-6 pb-2">
@@ -251,6 +252,18 @@ export default async function ClubPage({
         </div>
       </section>
 
+      {/* The answer first, for venues with a how-to-get-in lane */}
+      {!notBookable && club.entryGuide && (
+        <section className="pt-12 md:pt-16 pb-12">
+          <div className="max-w-4xl mx-auto px-6">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mb-6">
+              {club.entryGuide.heading}
+            </h2>
+            <p className="text-frost-100/90 leading-relaxed text-lg md:text-xl">{club.entryGuide.lead}</p>
+          </div>
+        </section>
+      )}
+
       {/* Quick Info Grid */}
       <section className="max-w-5xl mx-auto px-6 sm:px-8 pb-16">
         {isRenamed ? (
@@ -342,6 +355,22 @@ export default async function ClubPage({
           </div>
         </div>
       </section>
+
+      {/* How-to-get-in sections */}
+      {!notBookable && club.entryGuide?.sections.map((section) => (
+        <section key={section.heading} className="py-12 md:py-16">
+          <div className="max-w-4xl mx-auto px-6">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mb-8">
+              {section.heading}
+            </h2>
+            <div className="space-y-5">
+              {section.paragraphs.map((text) => (
+                <p key={text} className="text-frost-300 leading-relaxed text-base md:text-lg">{text}</p>
+              ))}
+            </div>
+          </div>
+        </section>
+      ))}
 
       {/* Old-club details (dress code, crowd, tips) are not shown for a renamed venue. */}
       {!isRenamed && (<>
@@ -449,6 +478,25 @@ export default async function ClubPage({
           )}
         </div>
       </section>
+
+      {/* FAQ */}
+      {!notBookable && club.entryGuide && (
+        <section className="py-12 md:py-16">
+          <div className="max-w-4xl mx-auto px-6">
+            <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mb-8">
+              {club.name} FAQ
+            </h2>
+            <div className="space-y-6">
+              {club.entryGuide.faqs.map((faq) => (
+                <div key={faq.question}>
+                  <h3 className="font-display text-lg font-bold tracking-tight text-white mb-2">{faq.question}</h3>
+                  <p className="text-frost-300 leading-relaxed">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Gallery */}
       {club.galleryImages.length > 0 && (

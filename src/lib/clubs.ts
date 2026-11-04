@@ -8,6 +8,8 @@ export interface OpeningSlot {
   closes: string;
   /** What is different on these nights, e.g. which floors run. */
   note?: string;
+  /** The venue opens only some weeks on these nights: shown in the table, left out of structured data. */
+  select?: boolean;
 }
 
 export interface Club {
@@ -38,6 +40,13 @@ export interface Club {
   hours?: OpeningSlot[];
   /** Open clubs on this site a short walk away, linked from the club page. */
   nearby?: string[];
+  /** How-to-get-in content for venues with a dedicated search lane: a lead answer, extra sections and FAQs. */
+  entryGuide?: {
+    heading: string;
+    lead: string;
+    sections: { heading: string; paragraphs: string[] }[];
+    faqs: { question: string; answer: string }[];
+  };
   /** Alt text by image path, for photos that show a named room. Falls back to a generic line. */
   imageAlt?: Record<string, string>;
   tagline: string;
@@ -522,37 +531,76 @@ Tables start from £800 minimum spend for the late-night experience. Earlier eve
     name: 'BEAT London',
     shortName: 'BEAT',
     status: 'open',
-    tagline: 'High-energy clubbing with one of London\'s most powerful sound systems',
-    description: 'Margaret Street nightclub with a powerful sound system and high-energy atmosphere. Tables from £1,000.',
-    longDescription: `BEAT London is built around one thing above all else: the sound system. Located on Margaret Street, this club has invested in audio equipment that rivals dedicated music venues, and you hear the difference the moment you walk in. The bass is physical, the highs are crisp, and the overall sound quality makes a genuine difference to the clubbing experience.
+    metaTitle: 'How to Get Into BEAT London: Tables, Not Tickets',
+    metaDescription: 'How to get into BEAT London: entry is by table booking from £1,000. No tickets, no guestlist. Non-members can book a table, and doors are at 1am.',
+    hours: [
+      { days: ['Thursday'], opens: '01:00', closes: '06:00', note: 'Select Thursdays only, so check with us first', select: true },
+      { days: ['Friday', 'Saturday'], opens: '01:00', closes: '06:00' },
+    ],
+    entryGuide: {
+      heading: 'How to Get Into BEAT London',
+      lead: 'Entry to BEAT London is by table booking, with tables from £1,000 minimum spend. There is no guestlist and there are no tickets, non-members can book a table, and the doors are at 1am. Message us on WhatsApp with your night and group size and we will book it for you.',
+      sections: [
+        {
+          heading: 'Are There Tickets for BEAT London?',
+          paragraphs: [
+            'No. There are no tickets for BEAT London, so there is nothing to buy in advance and no ticket that will get you through the door. Entry is by table booking. If you have seen a ticket offered for BEAT, message us before you pay for anything.',
+          ],
+        },
+        {
+          heading: 'Do You Need to Be a Member?',
+          paragraphs: [
+            'No. BEAT has members, and non-members can book a table.',
+          ],
+        },
+        {
+          heading: 'How to Book a Table',
+          paragraphs: [
+            'Tell us the night and the size of your group on WhatsApp, and we will come back with what is available. BEAT opens on Friday, Saturday and select Thursdays, so check with us before you plan around a Thursday.',
+            'As of November 2026, tables start from £1,000 minimum spend, spent on drinks, and VIP tables start from £2,000. Bottles start from £750, in line with other clubs.',
+          ],
+        },
+        {
+          heading: 'What to Bring',
+          paragraphs: [
+            'Bring photo ID, as BEAT is 18+. Dress smart casual with no sportswear: trainers only work if they are clean and smart, and that is at the door\'s discretion. The doors are at 1am, so plan dinner or a bar first rather than arriving early.',
+          ],
+        },
+      ],
+      faqs: [
+        { question: 'How do you get into BEAT London?', answer: 'By booking a table. Tables start from £1,000 minimum spend, spent on drinks, and we can book one for you on WhatsApp.' },
+        { question: 'Are there tickets for BEAT London?', answer: 'No. There are no tickets for BEAT London. Entry is by table booking.' },
+        { question: 'Is there a guestlist at BEAT London?', answer: 'No. BEAT does not run a guestlist. Entry is by table booking.' },
+        { question: 'Can non-members get into BEAT London?', answer: 'Yes. BEAT has members, and non-members can book a table.' },
+        { question: 'What time do the doors open at BEAT London?', answer: 'The doors are at 1am and the club closes at 6am, on Friday, Saturday and select Thursdays.' },
+        { question: 'What do I need to bring to BEAT London?', answer: 'Photo ID, as BEAT is 18+. The dress code is smart casual with no sportswear, and trainers only if clean and smart, at the door\'s discretion.' },
+      ],
+    },
+    tagline: 'Entry by table booking from £1,000. No tickets, no guestlist.',
+    description: 'After-hours house music club at 48 Margaret Street, open 1am to 6am. Entry by table booking from £1,000: no guestlist, no tickets.',
+    longDescription: `BEAT London, also known as BEAT Club, is an after-hours house music club at 48 Margaret Street in Fitzrovia, with Oxford Circus the nearest tube and Mayfair a short walk away. It opens at 1am and closes at 6am on Friday, Saturday and select Thursdays, so people plan dinner or a bar first.
 
-The venue itself is designed to complement the audio. The room acoustics have been considered, the layout channels the sound effectively, and the dancefloor is positioned for maximum impact. This is a club for people who actually care about the music, not just as background to their table service experience, but as the main event.
-
-The programming varies by night but the consistent thread is energy. Whether it's hip-hop, house, or a guest DJ bringing their own flavour, the nights at BEAT are designed to keep the dancefloor moving. The compact size means the energy concentrates effectively, even on quieter nights, the room feels alive.
-
-The crowd tends to be younger and more music-focused than at some of the flashier Mayfair venues. People come to BEAT because they want to dance and they want to hear music played properly. The atmosphere is enthusiastic without being aggressive, and the lack of VIP pretension is refreshing.
-
-Tables start from £1,000 and offer good views of the dancefloor and DJ booth. BEAT doesn't run a guestlist. Entry is by table booking, and the door policy, while smart, isn't designed to exclude. It's designed to maintain the quality of the crowd.`,
-    address: '48 Margaret Street, Fitzrovia, London W1',
+The capacity is about 250, and the venue's own account is that it has one of London's finest sound systems. It also says that it opened in 1966 as The Speakeasy Club, known as The Speak, which hosted Jimi Hendrix, The Beatles, Bob Marley and David Bowie, as well as King Crimson's debut, and that it has since been extensively renovated.`,
+    address: '48 Margaret Street, Fitzrovia, London W1W 8SE',
     area: 'Fitzrovia',
     areas: ['Central London'],
-    musicGenres: ['Hip-Hop', 'House', 'Open Format'],
-    openingNights: 'Thursday (select nights), Friday, Saturday',
+    musicGenres: ['House'],
+    openingNights: 'Friday, Saturday and select Thursdays',
     closingTime: '6:00am',
-    dressCode: 'Smart casual. Smarter than a bar but less formal than traditional Mayfair. Clean, well-put-together outfits work.',
+    dressCode: 'Smart casual, no sportswear. Trainers only if clean and smart, at the door\'s discretion.',
     tableMinimum: '£1,000',
-    crowd: 'Music lovers, younger professionals, dancefloor-focused. Average age 22 to 32.',
-    bestFor: 'People who prioritise sound quality and music over VIP status. Groups who want to dance. Music enthusiasts who appreciate a great system.',
-    insiderTip: 'Stand near the main speakers for the full audio experience: the system is calibrated so it sounds powerful without being painful. Saturday nights have the strongest DJ lineups.',
-    whyRanked: 'The sound system alone justifies the inclusion. When the DJ is right and the room is full, BEAT delivers one of the best pure clubbing experiences in central London.',
+    crowd: 'People who want house music late and have planned their night around a 1am start. BEAT is 18+ with photo ID.',
+    bestFor: 'Groups who want a table, house music and a 6am finish.',
+    insiderTip: 'The doors are at 1am, so there is no reason to arrive early. Book the table first, plan dinner or a bar, and keep your photo ID with you.',
+    whyRanked: 'Its 1am to 6am hours set it apart from the clubs around it, and the venue\'s own account is that it has one of London\'s finest sound systems.',
     mapUrl: 'https://maps.google.com/?q=BEAT+London+Margaret+Street',
-    tonightSuitability: 'Music-first venue with one of London\'s best sound systems. High energy, less pretension than Mayfair.',
+    tonightSuitability: 'Open Friday, Saturday and select Thursdays, with doors at 1am and a 6am close. House music, entry by table booking from £1,000. No guestlist, no tickets.',
     guestlistRealistic: false,
     noGuestlist: true,
     guestlistNote: 'BEAT doesn\'t run a guestlist. Entry is by table booking.',
     bestForGroups: 'all',
     lastMinuteTableFriendly: true,
-    lastMinuteNote: 'Good same-day availability. More accessible than Mayfair for last-minute plans.',
+    lastMinuteNote: 'Message us on the day and we will tell you what is available. Doors are at 1am.',
     heroImage: '/gallery/images/fe4414_c0f53cc6cfe84299987ece034fa64e25.jpg',
     cardImage: '/gallery/images/fe4414_d98580822591406082db347183f9192a.jpg',
     galleryImages: ['/gallery/images/fe4414_2b0b9405f5084a1bb087854db63c68ab.jpg', '/gallery/images/fe4414_9bca79c7758d42a48f33bfe38f57e6d0.jpg', '/gallery/images/fe4414_8d1b76fde5204b9d845400d8d6d40739.jpg', '/gallery/images/fe4414_f00637f3a2a740078b492ed93e5ec5e5.jpg', '/gallery/images/fe4414_938458d67f614f5cb736ac0e2e4fe1f9.jpg', '/gallery/images/fe4414_f06a962e34d74d8d88f62e3607c5dab0.jpg'],
@@ -862,6 +910,7 @@ export function sharedHoursLabel(club: Club): string | null {
 export function hoursByTime(club: Club): { days: Weekday[]; opens: string; closes: string }[] {
   const groups = new Map<string, { days: Weekday[]; opens: string; closes: string }>();
   for (const slot of club.hours ?? []) {
+    if (slot.select) continue;
     const key = `${slot.opens}-${slot.closes}`;
     const group = groups.get(key) ?? { days: [], opens: slot.opens, closes: slot.closes };
     group.days.push(...slot.days);

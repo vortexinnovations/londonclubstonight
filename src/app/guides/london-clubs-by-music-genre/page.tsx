@@ -29,24 +29,24 @@ const genreSections = [
     id: 'hip-hop-rnb',
     title: 'Hip-Hop & RnB',
     description: 'The dominant sound across most of London\'s Mayfair clubs. If you want hip-hop, you have the most options: the question is which venue suits your style and budget.',
-    slugs: ['tape-london', 'cirque-le-soir', 'beat-london', '99-regent-street'],
+    slugs: ['tape-london', 'cirque-le-soir', '99-regent-street'],
     notes: [
       { slug: 'tape-london', note: 'The gold standard for hip-hop in an intimate, exclusive setting. The sound system was originally designed for music production and the difference is audible.' },
       { slug: 'cirque-le-soir', note: 'Hip-hop and RnB played loud over circus entertainment. The music is the backdrop to the spectacle: expect current hits and crowd-pleasers rather than deep cuts.' },
-      { slug: 'beat-london', note: 'The sound system makes the hip-hop hit harder here than almost anywhere else. This is a venue for people who care about audio quality.' },
       { slug: '99-regent-street', note: 'Formerly the Cuckoo Club. Open-format hip hop and RnB in the main room upstairs, where most of the tables sit, Wednesday to Saturday from 11pm to 4am. Tables from £600 cover entry for the whole group.' },
     ],
-    bestFor: 'Tape London for exclusivity and sound quality, Cirque Le Soir for hip-hop with a show, BEAT for the best sound system.',
+    bestFor: 'Tape London for exclusivity and sound quality, Cirque Le Soir for hip-hop with a show.',
   },
   {
     id: 'house',
     title: 'House Music',
     description: 'Fewer options than hip-hop in central London, but the venues that do house music tend to do it very well. If house is your thing, these are your spots.',
-    slugs: ['maddox', 'ministry-of-sound', '99-regent-street'],
+    slugs: ['maddox', 'ministry-of-sound', '99-regent-street', 'beat-london'],
     notes: [
       { slug: 'maddox', note: 'The strongest house music identity in Mayfair. The restaurant-to-club transition means the house music crowd arrives late and committed. Friday nights are particularly strong for house programming.' },
       { slug: 'ministry-of-sound', note: 'The best house music in London, full stop. The sound system is world-class, the DJ bookings are headline-calibre, and the crowd is there specifically for the music. Multiple rooms mean you can explore different subgenres in one night.' },
       { slug: '99-regent-street', note: 'The downstairs room runs house: darker and more dance-focused than the hip hop and RnB upstairs. Both floors run on Friday and Saturday, so those are the nights to count on the house room.' },
+      { slug: 'beat-london', note: 'An after-hours house music club in Fitzrovia, open from 1am to 6am by table booking. The venue\'s own account is that it has one of London\'s finest sound systems.' },
     ],
     bestFor: 'Ministry of Sound for a dedicated, world-class house music experience. Maddox for house music in a Mayfair setting with the dinner-to-club transition.',
   },
@@ -64,14 +64,13 @@ const genreSections = [
     id: 'open-format',
     title: 'Open Format',
     description: 'Open format means the DJ plays across genres, hip-hop, house, pop, RnB, dance, reading the room and adjusting. These clubs prioritise energy over genre purity.',
-    slugs: ['the-london-reign', 'selene-london', 'beat-london', 'rumour-london'],
+    slugs: ['the-london-reign', 'selene-london', 'rumour-london'],
     notes: [
       { slug: 'the-london-reign', note: 'The showclub format means the music shifts throughout the evening, from sophisticated dinner accompaniment to full party energy. Expect mainstream hits, pop, RnB, and crowd-pleasers.' },
       { slug: 'selene-london', note: 'Elegant cocktail-bar-to-club concept with a sophisticated house soundtrack. The refined setting means the music enhances the atmosphere rather than dominating it: perfect for the grown-up crowd.' },
-      { slug: 'beat-london', note: 'Open format delivered through one of London\'s best sound systems. The DJs vary by night but the consistent thread is energy and quality audio.' },
       { slug: 'rumour-london', note: 'Formerly Tabu. Hip hop, RnB and house, read to the room on the night, in one intimate booth room on Dover Street with a no-photography policy. Open Wednesday to Saturday from 11pm to 4am.' },
     ],
-    bestFor: 'Reign for the theatrical dinner-to-club experience, Selene for sophisticated house-leaning nights, BEAT for pure audio quality.',
+    bestFor: 'Reign for the theatrical dinner-to-club experience, Selene for sophisticated house-leaning nights.',
   },
 ];
 
@@ -185,13 +184,13 @@ export default function MusicGenrePage() {
             <p className="text-frost-300 max-w-2xl mb-8">A quick summary to help you choose.</p>
             <div className="space-y-4 text-frost-300 text-sm leading-relaxed">
               <p>
-                If hip-hop is your thing, you have the most choice: nearly every club in Mayfair and the surrounding West End leans that direction. The differences come down to exclusivity (Tape), atmosphere (Cirque), and sound quality (BEAT).
+                If hip-hop is your thing, you have the most choice: nearly every club in Mayfair and the surrounding West End leans that direction. The differences come down to exclusivity (Tape) and atmosphere (Cirque).
               </p>
               <p>
                 If house music is what you want, Maddox is your best Mayfair option, but Ministry of Sound is where the serious house heads go. The gap in sound quality and DJ calibre between Ministry and everywhere else is significant.
               </p>
               <p>
-                If you are a group with mixed music tastes, open format venues like Reign and BEAT will keep everyone happy.
+                If you are a group with mixed music tastes, open format venues like Reign will keep everyone happy.
               </p>
               <p>
                 If electronic and techno is your genre, Ministry of Sound is the only serious option on this list. London has other techno venues beyond our coverage, but within this selection, Ministry is unmatched.

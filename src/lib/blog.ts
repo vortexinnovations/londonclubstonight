@@ -63,7 +63,7 @@ export const blogPosts: BlogPost[] = [
       { question: 'How old do you have to be to get into London clubs?', answer: 'All London nightclubs are strictly 18+. You will need valid photo ID: a passport, driving licence, or PASS card. Some clubs operate a 21+ policy on certain nights, particularly in Mayfair.' },
       { question: 'What ID do London clubs accept?', answer: 'Passport, UK driving licence, and PASS-accredited ID cards are universally accepted. Some clubs accept EU/EEA national ID cards. Student cards, bank cards, and expired documents are never accepted.' },
       { question: 'Are there over-30s clubs in London?', answer: 'Scotch of St James, Maddox, and The London Reign naturally attract an older crowd (late 20s to 40s) without formally being "over 30s" venues. Ministry of Sound also draws a wide age range thanks to its music-first approach.' },
-      { question: 'Will I feel too old at London clubs?', answer: 'It depends entirely on the venue. Clubs like BEAT London and Cirque Le Soir skew younger (22 to 35), while Scotch of St James, Maddox, and The London Reign comfortably cater to guests in their 30s and 40s. Choose the right club and age is never an issue.' },
+      { question: 'Will I feel too old at London clubs?', answer: 'It depends entirely on the venue. Clubs like Cirque Le Soir skew younger (22 to 35), while Scotch of St James, Maddox, and The London Reign comfortably cater to guests in their 30s and 40s. Choose the right club and age is never an issue.' },
     ],
   },
   {
@@ -260,9 +260,9 @@ export const blogPosts: BlogPost[] = [
     updatedDate: '2026-03-25',
     relatedClubs: ['luna-club-london', 'rumour-london', 'cirque-le-soir', 'beat-london', 'funky-buddha'],
     faqs: [
-      { question: 'Which London clubs play Afrobeats every weekend?', answer: 'Cirque Le Soir mixes Afrobeats into its hip-hop sets regularly, and BEAT London features Afrobeats alongside hip-hop and RnB. For dedicated Afrobeats-only nights, check specific event listings as they rotate across venues.' },
-      { question: 'Is there amapiano in London clubs?', answer: 'Yes. Amapiano has become a staple at London clubs, particularly at BEAT London. DJs increasingly blend amapiano into their Afrobeats and hip-hop sets. Dedicated amapiano nights also run at various venues. Message us for the latest schedule.' },
-      { question: 'What is the dress code for Afrobeats clubs in London?', answer: 'The same smart dress code applies as at any London club. Mayfair venues expect smart shoes and well-fitted clothing. BEAT London is slightly more relaxed but still expects effort. Clean designer trainers can work at some venues but smart shoes are always the safer choice.' },
+      { question: 'Which London clubs play Afrobeats every weekend?', answer: 'Cirque Le Soir mixes Afrobeats into its hip-hop sets regularly. For dedicated Afrobeats-only nights, check specific event listings as they rotate across venues.' },
+      { question: 'Is there amapiano in London clubs?', answer: 'Yes. Amapiano has become a staple at London clubs. DJs increasingly blend amapiano into their Afrobeats and hip-hop sets. Dedicated amapiano nights also run at various venues. Message us for the latest schedule.' },
+      { question: 'What is the dress code for Afrobeats clubs in London?', answer: 'The same smart dress code applies as at any London club. Mayfair venues expect smart shoes and well-fitted clothing. Clean designer trainers can work at some venues but smart shoes are always the safer choice.' },
     ],
   },
   {
@@ -426,10 +426,10 @@ export const blogPosts: BlogPost[] = [
     updatedDate: '2026-04-02',
     relatedClubs: ['tape-london', 'cirque-le-soir', 'funky-buddha', 'beat-london', 'luna-club-london'],
     faqs: [
-      { question: 'Which London clubs play R&B every weekend?', answer: 'Tape London and Cirque Le Soir both play R&B as a core part of their weekend playlists. BEAT London leans heavily into hip-hop and RnB across multiple rooms. For a guaranteed R&B-heavy night, Tape and Cirque Le Soir are your safest choices.' },
+      { question: 'Which London clubs play R&B every weekend?', answer: 'Tape London and Cirque Le Soir both play R&B as a core part of their weekend playlists. For a guaranteed R&B-heavy night, Tape and Cirque Le Soir are your safest choices.' },
       { question: 'Are there old-school R&B nights in London?', answer: 'Yes. Several clubs run throwback sets featuring 90s and 2000s R&B and hip-hop. Dedicated old-school nights rotate across venues. Message us on WhatsApp for the current schedule. Thursday nights often lean more heavily into classic tracks.' },
-      { question: 'What is the best hip-hop club in London?', answer: 'BEAT London is the most dedicated hip-hop venue in the city, with multiple rooms playing hip-hop, trap, and RnB. Tape London plays hip-hop alongside commercial and RnB. For underground hip-hop, check Ministry of Sound event listings. For Mayfair hip-hop with a premium setting, Tape is hard to beat.' },
-      { question: 'Do London clubs play UK rap and drill?', answer: 'Some venues feature UK rap in their sets, particularly BEAT London. However, most Mayfair clubs lean towards US hip-hop and commercial RnB. Drill specifically is less common at central London nightclubs but features at dedicated event nights. Check specific venue listings for genre-focused evenings.' },
+      { question: 'What is the best hip-hop club in London?', answer: 'Tape London plays hip-hop alongside commercial and RnB. For underground hip-hop, check Ministry of Sound event listings. For Mayfair hip-hop with a premium setting, Tape is hard to beat.' },
+      { question: 'Do London clubs play UK rap and drill?', answer: 'Some venues feature UK rap in their sets. However, most Mayfair clubs lean towards US hip-hop and commercial RnB. Drill specifically is less common at central London nightclubs but features at dedicated event nights. Check specific venue listings for genre-focused evenings.' },
     ],
   },
   {

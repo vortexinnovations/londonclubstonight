@@ -163,7 +163,7 @@ export default function FridayNightclubsLondonPage() {
               <strong className="text-white">Ministry of Sound</strong>{" "}uses Fridays for its most adventurous bookings. While Saturday draws the headline names, Friday&apos;s lineup often features rising DJs, label showcases, and genre-specific events that attract a crowd who came specifically for the music. The main room on a well-booked Friday has a purity of purpose that Saturday&apos;s broader crowd dilutes.
             </p>
             <p>
-              <strong className="text-white">BEAT London</strong>{" "}was built for nights like Friday. The bass-heavy sound system and compact room reach critical energy faster with a Friday crowd that arrives already warmed up from the evening. The venue&apos;s music-first philosophy pairs naturally with an audience that chose to be there rather than defaulting to the obvious Saturday option.
+              <strong className="text-white">BEAT London</strong>{" "}opens at 1am on a Friday, which suits a night that has already started somewhere else. It plays house music until 6am, by table booking, and the venue&apos;s own account is that it has one of London&apos;s finest sound systems.
             </p>
           </div>
         </div>

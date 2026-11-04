@@ -3072,9 +3072,7 @@ function getPostContent(slug: string): React.ReactNode {
           <p className="text-frost-300 leading-relaxed mb-4">
             Each festival empties into the parts of the city that match its sound. The pop and urban weekenders flow into the West End&apos;s open-format rooms, where the music carries straight on from the day. The house and dance crowds head for the big-system venues, with{" "}
             <Link href="/clubs/ministry-of-sound" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Ministry of Sound</Link>{" "}
-            the classic example: on the right festival Saturday you can spot the wristbands in the queue from across the road by 11pm. The bass and drum &amp; bass contingent has its own map, with rooms like{" "}
-            <Link href="/clubs/beat-london" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">BEAT London</Link>{" "}
-            carrying the harder sounds on the right night. If you are matching a crowd to a room from scratch, our guide to{" "}
+            the classic example: on the right festival Saturday you can spot the wristbands in the queue from across the road by 11pm. The bass and drum &amp; bass contingent has its own map. If you are matching a crowd to a room from scratch, our guide to{" "}
             <Link href="/guides/london-clubs-by-music-genre" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">London clubs by music genre</Link>{" "}
             does the sorting for you.
           </p>

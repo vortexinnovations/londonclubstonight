@@ -341,7 +341,7 @@ export default function LastMinuteTableBookingPage() {
               Venue capacity is the most obvious factor: a club with twelve tables does not have the same flexibility as a venue with thirty positions. But business model matters too. Some venues operate on a scarcity model where exclusivity is the brand. Others are more commercially driven and would rather fill a table at short notice than leave it empty.
             </p>
             <p>
-              The cocktail-bar-to-club venues like Dear Darling tend to be the most flexible. Their format naturally accommodates walk-ins and last-minute guests because the evening starts as a bar experience before transitioning into a club. Music-focused venues like BEAT London also tend to be more welcoming of spontaneous bookings. They would rather have a full, energetic room than hold empty tables.
+              The cocktail-bar-to-club venues like Dear Darling tend to be the most flexible. Their format naturally accommodates walk-ins and last-minute guests because the evening starts as a bar experience before transitioning into a club.
             </p>
             <p>
               Our promoter network gives us access to tables that are not
