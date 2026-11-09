@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { clubs, getOpenClubs } from '@/lib/clubs';
+import { getMergedPosts } from '@/lib/blog';
 import ClubCard from '@/components/ClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 
@@ -39,6 +40,13 @@ export const metadata: Metadata = {
     canonical: 'https://londonclubstonight.com',
   },
 };
+
+// The "Latest Guides" block lists posts from the content API, so the page is
+// refreshed by /api/revalidate when the content API writes; daily safety net.
+// Same pattern as the blog index: prerendered, never read per visitor.
+export const revalidate = 86400;
+
+const LATEST_POSTS = 6;
 
 const tonightPicks = getOpenClubs().slice(0, 6);
 
@@ -112,7 +120,14 @@ const guides = [
   },
 ];
 
-export default function HomePage() {
+export default async function HomePage() {
+  // Same merged list and order as the blog index (file posts plus database
+  // posts, newest first). A failed read throws, as it does there: a failed
+  // regeneration keeps the last good page.
+  const latestPosts = [...(await getMergedPosts())]
+    .sort((a, b) => new Date(b.publishedDate).getTime() - new Date(a.publishedDate).getTime())
+    .slice(0, LATEST_POSTS);
+
   return (
     <>
       {/* Hero Section */}
@@ -420,6 +435,63 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Latest Guides: the newest blog posts, server-rendered */}
+      {latestPosts.length > 0 && (
+        <section className="section-glow border-t border-white/[0.05] py-20 md:py-28">
+          <div className="max-w-6xl mx-auto px-6 sm:px-8">
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 md:mb-16">
+              <div className="max-w-xl">
+                <span className="eyebrow">From the blog</span>
+                <h2 className="font-display text-4xl md:text-5xl font-extrabold tracking-tight text-white mt-4 mb-4">
+                  Latest <span className="serif-accent text-gradient">Guides</span>
+                </h2>
+                <p className="text-frost-300 text-base">
+                  The newest guides from the blog: fresh advice on doors,
+                  tables, guestlists and where to go out in London.
+                </p>
+              </div>
+              <Link
+                href="/blog"
+                className="btn-ghost px-6 py-3 text-sm self-start md:self-auto shrink-0"
+              >
+                View All Guides →
+              </Link>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              {latestPosts.map((post) => (
+                <article
+                  key={post.slug}
+                  className="glass-card glass-card-hover group relative flex flex-col p-7"
+                >
+                  <time
+                    dateTime={post.publishedDate}
+                    className="text-xs text-frost-500 font-medium tracking-wide uppercase"
+                  >
+                    {new Date(post.publishedDate).toLocaleDateString('en-GB', {
+                      day: 'numeric',
+                      month: 'short',
+                      year: 'numeric',
+                    })}
+                  </time>
+                  <h3 className="font-display font-bold text-white text-lg leading-snug mt-2.5 mb-2.5 group-hover:text-neon-200 transition-colors">
+                    <Link href={`/blog/${post.slug}`} className="after:absolute after:inset-0">
+                      {post.title}
+                    </Link>
+                  </h3>
+                  <p className="text-frost-300 text-sm leading-relaxed line-clamp-3">
+                    {post.excerpt}
+                  </p>
+                  <span className="inline-flex items-center gap-1.5 mt-auto pt-5 text-sm font-semibold text-neon-300 group-hover:text-white transition-colors" aria-hidden>
+                    Read guide
+                    <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
+                  </span>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
     </>
   );
 }
