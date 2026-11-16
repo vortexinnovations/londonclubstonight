@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { PreferredSourceButton } from './PreferredSourceButton';
 
 const clubLinks = [
   { href: '/clubs/tape-london', label: 'Tape London' },
@@ -65,6 +66,12 @@ export default function Footer() {
               The insider guide to London&apos;s best nightclubs: written by promoters
               who are at these doors every week.
             </p>
+            <div className="mt-6">
+              <PreferredSourceButton placement="footer" />
+              <p className="mt-2.5 text-xs text-frost-400">
+                See us first in Google Search, Discover &amp; AI Mode.
+              </p>
+            </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
             <Link href="/contact" className="btn-gradient px-7 py-3 text-sm">

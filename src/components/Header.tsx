@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { PreferredSourceButton } from './PreferredSourceButton';
 
 const navLinks = [
   { href: '/clubs-tonight-london', label: 'Tonight' },
@@ -54,6 +55,12 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
+            {/* Preferred Sources pill: the bar stops growing at max-w-7xl, and only
+                from 1300px is all of that width there whatever the scrollbar takes.
+                Below that the pill would squeeze the logo. */}
+            <div className="hidden min-[1300px]:flex">
+              <PreferredSourceButton placement="header" />
+            </div>
             <Link href="/contact" className="btn-gradient text-sm px-5 py-2.5">
               Book Now
             </Link>
@@ -101,6 +108,12 @@ export default function Header() {
             >
               Book Now
             </Link>
+          </div>
+          <div className="pt-6 flex flex-col items-center gap-2.5">
+            <PreferredSourceButton placement="menu" />
+            <p className="text-xs text-frost-400">
+              See us first in Google Search &amp; AI Mode
+            </p>
           </div>
         </nav>
       )}

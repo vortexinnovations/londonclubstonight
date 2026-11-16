@@ -56,7 +56,7 @@ const nextConfig: NextConfig = {
           {
             key: "Content-Security-Policy",
             value:
-              "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://wa.me;",
+              "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://news.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://londonnightguide.com; frame-src https://news.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://wa.me;",
           },
         ],
       },

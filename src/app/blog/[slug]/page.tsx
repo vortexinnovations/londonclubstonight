@@ -9,6 +9,7 @@ import { getMergedPostBySlug, getMergedPosts } from '@/lib/blog';
 import { clubs, WHATSAPP_TABLE_LINK, WHATSAPP_GUESTLIST_LINK } from '@/lib/clubs';
 import ClubCard from '@/components/ClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
+import { ArticlePreferredSourcePrompt } from '@/components/PreferredSourceButton';
 import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
 
 // Database posts are plain Markdown; raw HTML shows as text and only safe link schemes render.
@@ -3367,6 +3368,8 @@ export default async function BlogPostPage({
               </div>
             </section>
           )}
+
+          <ArticlePreferredSourcePrompt />
         </div>
       </article>
 

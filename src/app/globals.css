@@ -464,3 +464,64 @@ a {
     scroll-behavior: auto;
   }
 }
+
+/* ---------------------------------------------------------------------------
+   "Add to Preferred Sources" Google button (PreferredSourceButton.tsx): the
+   pill's border is a conic gradient in the four Google brand colours, slowly
+   flowing around the button. Animating the gradient angle needs @property;
+   browsers without it show the same gradient standing still.
+   --psb-bg / --psb-fg are the pill's fill and text colour: the card surface
+   and the body text colour.
+   --------------------------------------------------------------------------- */
+@property --psb-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes psb-flow {
+  to {
+    --psb-angle: 360deg;
+  }
+}
+
+.preferred-source-btn {
+  --psb-bg: var(--color-night-800);
+  --psb-fg: var(--color-frost-100);
+  color: var(--psb-fg);
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 9999px;
+  background:
+    linear-gradient(var(--psb-bg), var(--psb-bg)) padding-box,
+    conic-gradient(
+        from var(--psb-angle),
+        #4285f4,
+        #ea4335,
+        #fbbc05,
+        #34a853,
+        #4285f4
+      )
+      border-box;
+  animation: psb-flow 5s linear infinite;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.preferred-source-btn:hover {
+  color: var(--psb-fg);
+  transform: translateY(-1px);
+  box-shadow:
+    0 0 14px rgba(66, 133, 244, 0.3),
+    0 0 26px rgba(52, 168, 83, 0.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .preferred-source-btn {
+    animation: none;
+  }
+  .preferred-source-btn:hover {
+    transform: none;
+  }
+}
