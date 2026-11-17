@@ -52,7 +52,7 @@ const closingGroups = [
   {
     time: '3:00am',
     label: 'Open Until 3am',
-    description: 'The Rex Rooms on the King\'s Road in Chelsea runs from 11:30pm to 3am, Monday and Wednesday to Saturday, with last entry at 2am.',
+    description: 'The Rex Rooms on the King\'s Road in Chelsea runs from 11pm to 3am, Monday and Wednesday to Saturday, with last entry at 2am.',
     slugs: ['rex-rooms-chelsea'],
   },
 ];
