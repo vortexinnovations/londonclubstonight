@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import { clubs } from '@/lib/clubs';
+import { clubs, tablesFromLabel } from '@/lib/clubs';
 import Link from 'next/link';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
@@ -48,6 +48,12 @@ const closingGroups = [
     label: 'Open Until 3:45am',
     description: 'Tape London and Cirque Le Soir both finish at 3:45am. On Fridays and Saturdays, Little Tape, the room next door to Tape, carries on from 3am to 5:30am.',
     slugs: ['tape-london', 'cirque-le-soir'],
+  },
+  {
+    time: '3:00am',
+    label: 'Open Until 3am',
+    description: 'The Rex Rooms on the King\'s Road in Chelsea runs from 11:30pm to 3am, Monday and Wednesday to Saturday, with last entry at 2am.',
+    slugs: ['rex-rooms-chelsea'],
   },
 ];
 
@@ -106,7 +112,7 @@ export default function ClubsOpenLatePage() {
           {/* Quick Reference */}
           <div className="glass-card p-7 mb-12">
             <h2 className="font-display text-lg font-extrabold tracking-tight text-white mb-4 text-center">Quick Reference</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-5 gap-6">
               {closingGroups.map((group) => (
                 <div key={group.time} className="text-center">
                   <div className="font-display text-2xl font-extrabold tracking-tight text-gradient">{group.time.replace(':00', '')}</div>
@@ -160,7 +166,7 @@ export default function ClubsOpenLatePage() {
                       <div className="flex flex-wrap gap-4 text-xs text-frost-500">
                         <span>{club.openingNights}</span>
                         <span>&middot;</span>
-                        <span>Tables from {club.tableMinimum}</span>
+                        <span>{tablesFromLabel(club)}</span>
                       </div>
 
                       <div className="mt-4">

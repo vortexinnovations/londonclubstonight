@@ -849,6 +849,99 @@ Tables start from £800 and the service is polished. The crowd is well-dressed, 
     cardImage: '/gallery/images/fe4414_0b56407f8e7340daab04b2f48da1b04a.jpg',
     galleryImages: ['/gallery/images/fe4414_0cba03ea5abe4657beb2d4e9b87a2f35.jpg', '/gallery/images/fe4414_0da5b1d362b845eda0fd7208e737c37f.jpg', '/gallery/images/fe4414_0da8a7994beb4cf9a8cbc05f1e3b133a.jpg', '/gallery/images/fe4414_0de6edc0e91842caa94cd80d20c6a200.jpg', '/gallery/images/fe4414_0e5e4e6b5fa641e9a0b8b9fe23d7669f.jpg', '/gallery/images/fe4414_0e78eec042ae483cb581ada1fad923a5.jpg'],
   },
+  {
+    slug: 'rex-rooms-chelsea',
+    name: 'The Rex Rooms',
+    shortName: 'Rex Rooms',
+    status: 'open',
+    metaTitle: 'The Rex Rooms Chelsea: Opening Nights, Hours and Entry',
+    metaDescription: 'The Rex Rooms Chelsea opens Monday and Wednesday to Saturday, 11:30pm to 3am, last entry 2am. Mixed groups get free entry before 11:30pm.',
+    hours: [
+      { days: ['Monday'], opens: '23:30', closes: '03:00', note: 'Industry Mondays' },
+      { days: ['Wednesday'], opens: '23:30', closes: '03:00', note: 'House Wednesday' },
+      { days: ['Thursday'], opens: '23:30', closes: '03:00' },
+      { days: ['Friday'], opens: '23:30', closes: '03:00', note: 'Scandi Fridays' },
+      { days: ['Saturday'], opens: '23:30', closes: '03:00', note: 'Brazilian Saturdays' },
+    ],
+    hoursNote: 'Last entry is 2am on every open night. The Rex Rooms is closed on Tuesday and Sunday. Nights and hours as of November 2026.',
+    entryGuide: {
+      heading: 'Is The Rex Rooms Open Tonight?',
+      lead: 'The Rex Rooms in Chelsea is open on Monday, Wednesday, Thursday, Friday and Saturday from 11:30pm to 3am, with last entry at 2am, and is closed on Tuesday and Sunday. As of November 2026, mixed groups get free entry before 11:30pm; otherwise guestlist and entry are by request, and any door charge is confirmed when you book. Message us on WhatsApp with your night and your group and we will arrange it.',
+      sections: [
+        {
+          heading: 'Which Nights The Rex Rooms Opens',
+          paragraphs: [
+            'The Rex Rooms opens five nights a week: Industry Mondays, House Wednesday, Thursday, Scandi Fridays and Brazilian Saturdays. It is closed on Tuesday and Sunday, so it is not an option for a Sunday night out.',
+            'Every open night runs from 11:30pm to 3am, and last entry is 2am, so arrive well before then.',
+          ],
+        },
+        {
+          heading: 'How to Get In: Free Entry for Mixed Groups',
+          paragraphs: [
+            'As of November 2026, mixed groups get free entry before 11:30pm, so a mixed group that arrives early gets in free. After that, and for other groups, guestlist and entry are by request through us, and any door charge is confirmed when you book.',
+            'Send us the night, the number of girls and guys and your arrival time on WhatsApp, and we will come back to you before you set off.',
+          ],
+        },
+        {
+          heading: 'What to Bring and What to Wear',
+          paragraphs: [
+            'The Rex Rooms is 18+, so bring photo ID. Dress smart and stylish and avoid sportswear; the door has the final say.',
+          ],
+        },
+        {
+          heading: 'Tables in the Main Room and the King\'s Room',
+          paragraphs: [
+            'If your group would rather have a table, tables are bookable in both rooms: the Main Room, with the DJ and the bar, and the VIP King\'s Room. The minimum spend is confirmed when you book.',
+          ],
+        },
+      ],
+      faqs: [
+        { question: 'Is The Rex Rooms open tonight?', answer: 'It is if tonight is Monday, Wednesday, Thursday, Friday or Saturday. The Rex Rooms opens from 11:30pm to 3am on those nights and is closed on Tuesday and Sunday.' },
+        { question: 'What time does The Rex Rooms open and close?', answer: 'The Rex Rooms opens at 11:30pm and closes at 3am on Monday, Wednesday, Thursday, Friday and Saturday.' },
+        { question: 'What time is last entry at The Rex Rooms?', answer: 'Last entry is 2am on every open night.' },
+        { question: 'Is The Rex Rooms open on Sunday?', answer: 'No. As of November 2026, The Rex Rooms is closed on Sunday and Tuesday.' },
+        { question: 'Is entry free at The Rex Rooms?', answer: 'As of November 2026, mixed groups get free entry before 11:30pm. Otherwise guestlist and entry are by request, and any door charge is confirmed when you book.' },
+        { question: 'How old do you have to be to get into The Rex Rooms?', answer: 'The Rex Rooms is 18+, and you need photo ID.' },
+        { question: 'Where is The Rex Rooms?', answer: 'At 151 King\'s Road, Chelsea, London SW3 5TX, on the site of the former 151 Club. The nearest tubes are Sloane Square and South Kensington.' },
+      ],
+    },
+    imageAlt: {
+      '/gallery/images/rex-rooms-chelsea-bar.jpg': 'The bar at The Rex Rooms, Chelsea, with its hand-carved wooden counter and black and white wave floor',
+      '/gallery/images/rex-rooms-chelsea-velvet-booths.jpg': 'Purple velvet booths with silver ice buckets at The Rex Rooms, Chelsea',
+      '/gallery/images/rex-rooms-chelsea-entrance.jpg': 'The open doors of The Rex Rooms on the King\'s Road, Chelsea, lit in purple neon',
+    },
+    tagline: 'Chelsea nightclub on the King\'s Road, open five nights a week from 11:30pm to 3am, with last entry at 2am',
+    description: 'The Rex Rooms is a nightclub at 151 King\'s Road, Chelsea, open Monday and Wednesday to Saturday from 11:30pm to 3am, last entry 2am. House, Latin and commercial music in two rooms.',
+    longDescription: `The Rex Rooms, also called Rex Rooms Chelsea, is a nightclub at 151 King's Road, Chelsea, London SW3 5TX, on the site of the former 151 Club. It opened in March 2025, and the nearest tubes are Sloane Square and South Kensington.
+
+As of November 2026 it opens five nights a week from 11:30pm to 3am, with last entry at 2am: Industry Mondays, House Wednesday, Thursday, Scandi Fridays and Brazilian Saturdays. It is closed on Tuesday and Sunday. Entry is 18+ with photo ID.
+
+The music is house, Latin and commercial. The resident DJ Tiempo usually plays house and Latin, and DJ Dan usually plays more commercial sets.
+
+There are two rooms. The Main Room has the DJ and the bar, is open to everyone, and is where guests dance and mingle. The VIP King's Room is a more exclusive space where many VIP guests spend their time, with a private-party feel.`,
+    address: '151 King\'s Road, Chelsea, London SW3 5TX',
+    area: 'Chelsea',
+    areas: ['Chelsea'],
+    musicGenres: ['House', 'Latin', 'Commercial'],
+    openingNights: 'Monday, Wednesday, Thursday, Friday, Saturday',
+    closingTime: '3:00am',
+    dressCode: 'Smart and stylish. Avoid sportswear. The door has the final say.',
+    tableMinimum: 'Price on booking',
+    crowd: '18+ with photo ID. The Main Room is open to everyone and is where guests dance and mingle; the VIP King\'s Room has a more exclusive, private-party feel.',
+    bestFor: 'Mixed groups who want a Chelsea night out, with free entry before 11:30pm, and anyone looking for a club on a Monday or a Wednesday as well as the weekend.',
+    insiderTip: 'Arrive early: as of November 2026, mixed groups get free entry before 11:30pm, and last entry is 2am.',
+    whyRanked: 'The Chelsea club on the King\'s Road, open five nights a week including Monday and Wednesday, with two rooms: the Main Room and the VIP King\'s Room.',
+    mapUrl: 'https://maps.google.com/?q=The+Rex+Rooms+151+Kings+Road+London+SW3+5TX',
+    tonightSuitability: 'Open tonight if it is Monday, Wednesday, Thursday, Friday or Saturday: 11:30pm to 3am, last entry 2am, 18+ with photo ID. As of November 2026, mixed groups get free entry before 11:30pm.',
+    guestlistRealistic: true,
+    guestlistNote: 'Guestlist and entry are by request through us. As of November 2026, mixed groups get free entry before 11:30pm; any door charge is confirmed when you book.',
+    bestForGroups: 'mixed',
+    lastMinuteTableFriendly: false,
+    lastMinuteNote: 'Message us on the day and we will check what is available in the Main Room and the King\'s Room. The minimum spend is confirmed when you book.',
+    heroImage: '/gallery/images/rex-rooms-chelsea-bar.jpg',
+    cardImage: '/gallery/images/rex-rooms-chelsea-velvet-booths.jpg',
+    galleryImages: ['/gallery/images/rex-rooms-chelsea-bar.jpg', '/gallery/images/rex-rooms-chelsea-velvet-booths.jpg', '/gallery/images/rex-rooms-chelsea-entrance.jpg'],
+  },
 ];
 
 export function getClubBySlug(slug: string): Club | undefined {

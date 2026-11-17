@@ -127,8 +127,10 @@ export default async function ClubPage({
   // Central London, which lists every club, instead of a 404.
   const AREA_PAGES = new Set(['mayfair', 'soho', 'central-london']);
   const ownAreaSlug = club.area.toLowerCase().replace(/\s+/g, '-');
-  const areaSlug = AREA_PAGES.has(ownAreaSlug) ? ownAreaSlug : 'central-london';
-  const areaLabel = AREA_PAGES.has(ownAreaSlug) ? club.area : 'Central London';
+  // A club outside central London (The Rex Rooms in Chelsea) links to the areas overview instead.
+  const outsideCentral = !AREA_PAGES.has(ownAreaSlug) && !club.areas.includes('Central London');
+  const areaSlug = AREA_PAGES.has(ownAreaSlug) ? ownAreaSlug : outsideCentral ? '' : 'central-london';
+  const areaLabel = AREA_PAGES.has(ownAreaSlug) ? club.area : outsideCentral ? 'London' : 'Central London';
   const paragraphs = club.longDescription.split('\n\n').filter(Boolean);
   const openClubs = getOpenClubs();
   const alternatives = notBookable
@@ -528,7 +530,7 @@ export default async function ClubPage({
           </h2>
           <div className="grid sm:grid-cols-2 gap-6">
             <Link
-              href={`/areas/${areaSlug}`}
+              href={areaSlug ? `/areas/${areaSlug}` : '/areas'}
               className="glass-card glass-card-hover block p-7 text-center"
             >
               <span className="text-neon-300 font-semibold text-lg">
