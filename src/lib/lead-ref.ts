@@ -27,7 +27,9 @@ export function withLeadRef(url: string, ref: string, siteDomain: string): strin
     const text = (u.searchParams.get("text") ?? "").trimEnd();
     if (/\(ref GA-/i.test(text)) return url;
     const message = text.replace(/\s*\(ref PG-[A-Z0-9]{5}\)$/i, "") || `Hi, I found you on ${siteDomain}`;
-    u.searchParams.set("text", `${message} (ref ${ref})`);
+    // A message laid out on several lines (a form to fill in) gets the ref on a
+    // line of its own, so it does not sit inside the last field.
+    u.searchParams.set("text", `${message}${message.includes("\n") ? "\n\n" : " "}(ref ${ref})`);
     // Rebuild with %20 rather than URLSearchParams' "+" for spaces, which not
     // every WhatsApp client decodes back to a space.
     const query = Array.from(u.searchParams, ([k, v]) => `${encodeURIComponent(k)}=${encodeURIComponent(v)}`).join("&");
