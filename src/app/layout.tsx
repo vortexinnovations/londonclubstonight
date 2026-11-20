@@ -23,6 +23,7 @@ const instrumentSerif = Instrument_Serif({
 });
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LeadRefTracker from '@/components/LeadRefTracker';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, { getLocalBusinessSchema, getWebSiteSchema } from '@/components/SchemaMarkup';
 import { SITE_OPEN_GRAPH } from '@/lib/metadata';
@@ -75,6 +76,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <LeadRefTracker />
         <WhatsAppCTA variant="sticky" />
       </body>
     </html>
