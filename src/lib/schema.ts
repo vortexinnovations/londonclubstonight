@@ -152,7 +152,7 @@ export interface NightClubDetails {
   /** A former name the venue is still searched under. */
   alternateName?: string;
   /** Nights grouped by identical hours, 24-hour clock (a close before the open is the next morning). */
-  hours?: { days: string[]; opens: string; closes: string }[];
+  hours?: { days: string[]; opens: string; closes?: string }[];
 }
 
 const SCHEMA_DAY_CODES: Record<string, string> = {
@@ -189,14 +189,20 @@ export function getNightClubSchema(
     priceRange: '£££',
     ...(hours.length > 0
       ? {
-          openingHours: hours.map(
-            (h) => `${h.days.map((d) => SCHEMA_DAY_CODES[d] ?? d).join(',')} ${h.opens}-${h.closes}`
-          ),
+          // A club that publishes no closing time has no `closes`: the text form
+          // needs a range, so it is sent only for nights with one.
+          ...(hours.some((h) => h.closes)
+            ? {
+                openingHours: hours
+                  .filter((h) => h.closes)
+                  .map((h) => `${h.days.map((d) => SCHEMA_DAY_CODES[d] ?? d).join(',')} ${h.opens}-${h.closes}`),
+              }
+            : {}),
           openingHoursSpecification: hours.map((h) => ({
             '@type': 'OpeningHoursSpecification',
             dayOfWeek: h.days,
             opens: h.opens,
-            closes: h.closes,
+            ...(h.closes ? { closes: h.closes } : {}),
           })),
         }
       : {}),

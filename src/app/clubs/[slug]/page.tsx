@@ -23,7 +23,8 @@ export function generateStaticParams() {
 
 // Heroes that show another venue's signature (Tape's Ace of Spades lightboxes, an
 // artist billed at a different club): shared links to these pages show the site card.
-const SITE_CARD_CLUBS = new Set(['the-box-london', 'selene-london', 'lio-london']);
+// Bisou has no photos of its own yet, so its shared links show the site card too.
+const SITE_CARD_CLUBS = new Set(['the-box-london', 'selene-london', 'lio-london', 'bisou-mayfair']);
 
 export async function generateMetadata({
   params,
@@ -141,6 +142,11 @@ export default async function ClubPage({
   const nearbyClubs = notBookable
     ? []
     : (club.nearby ?? [])
+        .map((s) => openClubs.find((c) => c.slug === s))
+        .filter((c): c is NonNullable<typeof c> => Boolean(c));
+  const sameStreetClubs = notBookable
+    ? []
+    : (club.sameStreet ?? [])
         .map((s) => openClubs.find((c) => c.slug === s))
         .filter((c): c is NonNullable<typeof c> => Boolean(c));
   // Night-by-night hours, only for venues whose hours we publish precisely.
@@ -353,6 +359,23 @@ export default async function ClubPage({
                   </span>
                 ))}
                 .
+              </p>
+            )}
+            {sameStreetClubs.length > 0 && (
+              <p className="text-frost-300 leading-relaxed text-base md:text-lg">
+                Also on the same street:{' '}
+                {sameStreetClubs.map((c, i) => (
+                  <span key={c.slug}>
+                    {i > 0 && (i === sameStreetClubs.length - 1 ? ' and ' : ', ')}
+                    <Link
+                      href={`/clubs/${c.slug}`}
+                      className="text-neon-300 underline underline-offset-4 hover:text-white transition-colors"
+                    >
+                      {c.name}
+                    </Link>
+                  </span>
+                ))}
+                , which we also book.
               </p>
             )}
           </div>

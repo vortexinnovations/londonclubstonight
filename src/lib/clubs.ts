@@ -5,7 +5,8 @@ export interface OpeningSlot {
   days: Weekday[];
   /** 24-hour clock. A close earlier than the open is the next morning. */
   opens: string;
-  closes: string;
+  /** Left out when the club publishes no closing time: the hours then read "11pm until late" and structured data carries the opening time only. */
+  closes?: string;
   /** What is different on these nights, e.g. which floors run. */
   note?: string;
   /** The venue opens only some weeks on these nights: shown in the table, left out of structured data. */
@@ -44,6 +45,8 @@ export interface Club {
   hoursNote?: string;
   /** Open clubs on this site a short walk away, linked from the club page. */
   nearby?: string[];
+  /** Open clubs on this site with their entrance on the same street, linked from the club page with no distance stated. */
+  sameStreet?: string[];
   /** How-to-get-in content for venues with a dedicated search lane: a lead answer, extra sections and FAQs. */
   entryGuide?: {
     heading: string;
@@ -489,6 +492,7 @@ The address has been a nightlife name since 1954, when Al Burnett's Stork Club d
       { days: ['Friday', 'Saturday'], opens: '23:00', closes: '04:00', note: 'Both floors open: hip hop and RnB upstairs, house downstairs' },
     ],
     nearby: ['rumour-london', 'tape-london', 'maddox', 'dear-darling'],
+    sameStreet: ['bisou-mayfair'],
   },
   {
     slug: 'dear-darling',
@@ -942,6 +946,100 @@ There are two rooms. The Main Room has the DJ and the bar, is open to everyone, 
     cardImage: '/gallery/images/rex-rooms-chelsea-velvet-booths.jpg',
     galleryImages: ['/gallery/images/rex-rooms-chelsea-bar.jpg', '/gallery/images/rex-rooms-chelsea-velvet-booths.jpg', '/gallery/images/rex-rooms-chelsea-entrance.jpg'],
   },
+  // Bisou (the club's own site and the owner, 2026-11-22). The club publishes no
+  // closing time, age limit or dress code: the hours have no `closes`, and the
+  // dress line is our guidance, not its rule. No DJs, events, entry prices or
+  // capacity. There are no photos of it yet: the images are general club
+  // photographs, labelled as such, and never the maison-close-* files.
+  {
+    slug: 'bisou-mayfair',
+    name: 'Bisou Mayfair',
+    shortName: 'Bisou',
+    status: 'open',
+    metaTitle: 'Bisou London: How to Get In, Guestlist, Tables and ID',
+    metaDescription: 'How to get into Bisou, 9 Swallow Street: guestlist by request, tables from £1,000 minimum spend and photo ID. Open Thursday to Saturday from 11pm.',
+    hours: [
+      { days: ['Thursday', 'Friday', 'Saturday'], opens: '23:00' },
+    ],
+    hoursNote: 'Bisou is closed from Sunday to Wednesday. The club publishes no closing time, so none is shown. Nights and hours as of November 2026.',
+    entryGuide: {
+      heading: 'How to Get Into Bisou',
+      lead: 'There are two ways into Bisou, the bar and nightclub at 9 Swallow Street in Mayfair: the guestlist, which is by request through us, or a table, from £1,000 minimum spend. Bring valid photo ID, a passport or a driving licence, and dress smart. It opens on Thursday, Friday and Saturday from 11pm until late. Message us on WhatsApp with your night and your group and we will arrange it.',
+      sections: [
+        {
+          heading: 'Guestlist at Bisou: By Request',
+          paragraphs: [
+            'Guestlist at Bisou is by request. Send us the night, the number of girls and guys and your arrival time on WhatsApp, and we put the request in and come back to you before you set off.',
+            'Any entry charge is confirmed when you book. We do not publish an entry price for Bisou, because none is fixed in advance.',
+          ],
+        },
+        {
+          heading: 'Tables at Bisou: From £1,000',
+          paragraphs: [
+            'If your group would rather have a table, tables start from £1,000 minimum spend. No menu is published, so we confirm the details of the table when you book.',
+          ],
+        },
+        {
+          heading: 'ID and What to Wear',
+          paragraphs: [
+            'Bring valid photo ID: a passport or a driving licence. The club publishes no age limit, and the door has the final say.',
+            'The club publishes no dress code either. Our guidance, as the service that books it, is to dress smart, as for any Mayfair club, with no sportswear.',
+          ],
+        },
+        {
+          heading: 'Nights, Hours and Where the Door Is',
+          paragraphs: [
+            'Bisou opens three nights a week: Thursday, Friday and Saturday, from 11pm until late. It is closed from Sunday to Wednesday, and the club publishes no closing time.',
+            'The door is at 9 Swallow Street, London W1B 4DF, the short lane between Regent Street and Piccadilly. The nearest tube is Piccadilly Circus.',
+          ],
+        },
+      ],
+      faqs: [
+        { question: 'How do you get into Bisou Mayfair?', answer: 'By guestlist request or by booking a table, both through us. Tables start from £1,000 minimum spend, and any guestlist entry charge is confirmed when you book. Bring valid photo ID and dress smart.' },
+        { question: 'Is there a guestlist at Bisou?', answer: 'Yes, by request. Message us on WhatsApp with the night, your group and your arrival time, and we confirm before you set off. Any entry charge is confirmed when you book.' },
+        { question: 'How much is a table at Bisou?', answer: 'Tables start from £1,000 minimum spend. We confirm the details of the table when you book.' },
+        { question: 'How old do you have to be to get into Bisou?', answer: 'The club publishes no age limit. Bring valid photo ID, a passport or a driving licence; the door has the final say.' },
+        { question: 'What should you wear to Bisou?', answer: 'The club publishes no dress code. Our guidance is to dress smart, as for any Mayfair club, with no sportswear. The door has the final say.' },
+        { question: 'What nights is Bisou open?', answer: 'Thursday, Friday and Saturday, from 11pm until late. It is closed from Sunday to Wednesday, and the club publishes no closing time.' },
+        { question: 'Where is Bisou?', answer: 'At 9 Swallow Street, Mayfair, London W1B 4DF, on the short lane between Regent Street and Piccadilly. The nearest tube is Piccadilly Circus.' },
+      ],
+    },
+    imageAlt: {
+      '/gallery/images/fe4414_407bdf6a1f044803832c867cc694c953.jpg': 'A crowd dancing in blue haze under ceiling-hung speakers: a general club photograph',
+    },
+    sameStreet: ['99-regent-street'],
+    tagline: 'Bar and nightclub on Swallow Street: guestlist by request, tables from £1,000, Thursday to Saturday from 11pm until late',
+    description: 'Bisou is a bar and nightclub at 9 Swallow Street, Mayfair, open Thursday to Saturday from 11pm until late. House music, guestlist by request and tables from £1,000 minimum spend. Book on WhatsApp.',
+    longDescription: `Bisou, also searched for as Bisou London and Bisou Club Mayfair, is a bar and nightclub at 9 Swallow Street, Mayfair, London W1B 4DF. Swallow Street is the short lane between Regent Street and Piccadilly, and the nearest tube is Piccadilly Circus. It opened in 2026.
+
+As of November 2026 it opens three nights a week, Thursday, Friday and Saturday, from 11pm until late, and it is closed from Sunday to Wednesday. The club publishes no closing time, so none is given here.
+
+The music is house. Bisou describes itself as an audiophile space, and the room runs on a Void Acoustics sound system tuned to it. The address was Sibylla's, the 1966 club part-owned by George Harrison.
+
+There are no photographs of Bisou on this site yet. The pictures shown with it are general club photographs, not the room at 9 Swallow Street.`,
+    address: '9 Swallow Street, Mayfair, London W1B 4DF',
+    area: 'Mayfair',
+    areas: ['Mayfair', 'Central London'],
+    musicGenres: ['House'],
+    openingNights: 'Thursday, Friday, Saturday',
+    closingTime: 'Not published',
+    dressCode: 'The club publishes no dress code. Our guidance, as the service that books it: dress smart, as for any Mayfair club, with no sportswear. The door has the final say.',
+    tableMinimum: '£1,000',
+    crowd: 'Bisou opened in 2026, so we make no claims about its regulars yet. What is known: the music is house, you need valid photo ID, and the club publishes no age limit.',
+    bestFor: 'Anyone who wants house music in Mayfair on a Thursday, Friday or Saturday, on the guestlist by request or at a table from £1,000 minimum spend.',
+    insiderTip: 'Sort the way in before you travel: the guestlist is by request, so message us first. Bring a passport or a driving licence.',
+    whyRanked: 'A bar and nightclub that opened in 2026 on Swallow Street, with house music on a Void Acoustics sound system tuned to the room.',
+    mapUrl: 'https://maps.google.com/?q=9+Swallow+Street+London+W1B+4DF',
+    tonightSuitability: 'Open tonight if it is Thursday, Friday or Saturday: doors at 11pm, until late. Guestlist by request and tables from £1,000 minimum spend. Bring photo ID.',
+    guestlistRealistic: true,
+    guestlistNote: 'Guestlist is by request through us. Any entry charge is confirmed when you book.',
+    bestForGroups: 'all',
+    lastMinuteTableFriendly: false,
+    lastMinuteNote: 'Message us on the day and we will check what is available. Tables start from £1,000 minimum spend.',
+    heroImage: '/gallery/images/fe4414_407bdf6a1f044803832c867cc694c953.jpg',
+    cardImage: '/gallery/images/fe4414_407bdf6a1f044803832c867cc694c953.jpg',
+    galleryImages: [],
+  },
 ];
 
 export function getClubBySlug(slug: string): Club | undefined {
@@ -966,7 +1064,17 @@ export function tablesFromLabel(club: Club): string {
 
 /** "Closes at 3:00am", or a to-be-confirmed line when no closing time is confirmed. */
 export function closesLabel(club: Club): string {
-  return /\d/.test(club.closingTime) ? `Closes at ${club.closingTime}` : 'Closing time to be confirmed';
+  if (/\d/.test(club.closingTime)) return `Closes at ${club.closingTime}`;
+  // A club that publishes no closing time (its hours are "until late").
+  if (/not published/i.test(club.closingTime)) return 'Open until late';
+  return 'Closing time to be confirmed';
+}
+
+/** "11pm to 4am", or "11pm until late" for a slot with no published closing time. */
+export function slotHoursLabel(slot: OpeningSlot): string {
+  return slot.closes
+    ? `${clockLabel(slot.opens)} to ${clockLabel(slot.closes)}`
+    : `${clockLabel(slot.opens)} until late`;
 }
 
 /** "99 Regent Street (formerly Cuckoo Club)" for an open venue that changed name, otherwise the name. */
@@ -995,23 +1103,23 @@ export function weeklyHours(club: Club): { day: Weekday; hours: string | null; n
   return WEEKDAYS.map((day) => {
     const slot = slots.find((s) => s.days.includes(day));
     return slot
-      ? { day, hours: `${clockLabel(slot.opens)} to ${clockLabel(slot.closes)}`, note: slot.note }
+      ? { day, hours: slotHoursLabel(slot), note: slot.note }
       : { day, hours: null };
   });
 }
 
 /** "11pm to 4am" when every open night keeps the same hours, otherwise null. */
 export function sharedHoursLabel(club: Club): string | null {
-  const labels = new Set((club.hours ?? []).map((s) => `${clockLabel(s.opens)} to ${clockLabel(s.closes)}`));
+  const labels = new Set((club.hours ?? []).map(slotHoursLabel));
   return labels.size === 1 ? [...labels][0] : null;
 }
 
 /** Nights grouped by identical hours, Monday first, for structured data. */
-export function hoursByTime(club: Club): { days: Weekday[]; opens: string; closes: string }[] {
-  const groups = new Map<string, { days: Weekday[]; opens: string; closes: string }>();
+export function hoursByTime(club: Club): { days: Weekday[]; opens: string; closes?: string }[] {
+  const groups = new Map<string, { days: Weekday[]; opens: string; closes?: string }>();
   for (const slot of club.schemaHours ?? club.hours ?? []) {
     if (slot.select) continue;
-    const key = `${slot.opens}-${slot.closes}`;
+    const key = `${slot.opens}-${slot.closes ?? ''}`;
     const group = groups.get(key) ?? { days: [], opens: slot.opens, closes: slot.closes };
     group.days.push(...slot.days);
     groups.set(key, group);

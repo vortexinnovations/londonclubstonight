@@ -9,7 +9,7 @@ import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 export const metadata: Metadata = {
   title: fitTitle('Best Clubs in London 2026: The Definitive Ranked Guide'),
   description:
-    'The 13 best nightclubs in London for 2026, ranked by promoters who work the doors: Tape London first, then Cirque Le Soir. Table prices and how to get in.',
+    'The 14 best nightclubs in London for 2026, ranked by promoters who work the doors: Tape London first, then Cirque Le Soir. Table prices and how to get in.',
   keywords: [
     'best clubs in London',
     'best nightclubs London',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Best Clubs in London 2026: The Definitive Ranked Guide',
     description:
-      'The 13 best nightclubs in London for 2026, ranked by promoters who work the doors every weekend. Honest, opinionated reviews you won\'t find anywhere else.',
+      'The 14 best nightclubs in London for 2026, ranked by promoters who work the doors every weekend. Honest, opinionated reviews you won\'t find anywhere else.',
     url: 'https://londonclubstonight.com/best-clubs-in-london',
     images: [{ url: '/gallery/images/fe4414_235143ea0a9946248d902020898bb8cb.jpg', alt: 'Sparkler bottles held high at a club table' }],
     type: 'article',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Best Clubs in London 2026: The Definitive Ranked Guide',
     description:
-      'The 13 best nightclubs in London for 2026, ranked by promoters who actually work the doors.',
+      'The 14 best nightclubs in London for 2026, ranked by promoters who actually work the doors.',
   },
   alternates: {
     canonical: 'https://londonclubstonight.com/best-clubs-in-london',
@@ -55,6 +55,7 @@ const rankedSlugs = [
   'rumour-london',
   '99-regent-street',
   'rex-rooms-chelsea',
+  'bisou-mayfair',
 ];
 
 // Areas with their own page; any other area is shown as plain text.
@@ -81,6 +82,8 @@ const clubOpinions: Record<string, string> = {
     'Rumour (formerly Tabu) is one intimate room at 1 Dover Street, built around red velvet booths beneath backlit gold disc walls, with red velvet curtains, an arched doorway and low red lighting. The music is open format, hip hop, RnB and house, read to the room, and the no-photography policy, enforced by the floor team, is the clearest difference from the rooms around it. It opens Wednesday to Saturday from 11pm to 4am. Ladies come in on the guestlist; men and mixed groups book a booth from £1,000, which covers entry for the whole group. It sits at eleven because the new concept only opened in October 2026, and the room has to earn its place under the new name.',
   '99-regent-street':
     '99 Regent Street (formerly Cuckoo Club) puts two floors behind the Swallow Street entrance by Piccadilly Circus: open-format hip hop and RnB in the main room upstairs, where most of the tables sit, and darker, dance-focused house downstairs. It opens Wednesday to Saturday from 11pm to 4am, with both floors running on Friday and Saturday, and the door is 19+ with physical photo ID. Tables start from £600 minimum spend and cover entry for the whole group, and the guestlist welcomes mixed groups. It sits at twelve because the Cuckoo founders only reopened the floor under the new name in October 2026.',
+  'bisou-mayfair':
+    'Bisou is the latest addition to this list: a bar and nightclub that opened in 2026 at 9 Swallow Street in Mayfair, the lane it shares with the 99 Regent Street entrance. It describes itself as an audiophile space, with house music on a Void Acoustics sound system tuned to the room. It opens on Thursday, Friday and Saturday from 11pm until late. Guestlist is by request, tables start from £1,000 minimum spend, and you need valid photo ID. It is listed last because it is new here, not as a verdict on it.',
   'rex-rooms-chelsea':
     'The Rex Rooms is the one Chelsea club on this list, at 151 King\'s Road on the site of the former 151 Club, and it opened in March 2025. It opens five nights a week from 11pm to 3am, with last entry at 2am: Industry Mondays, House Wednesday, Thursday, Scandi Fridays and Brazilian Saturdays, closed on Tuesday and Sunday. The music is house, Latin and commercial across two rooms, the Main Room with the DJ and the bar, and the VIP King\'s Room with a private-party feel. As of November 2026, mixed groups who arrive before 11:30pm get in free. It sits at thirteen because it is a Chelsea night rather than a West End one.',
 };
@@ -93,7 +96,7 @@ export default function BestClubsInLondonPage() {
 
   const articleSchema = getArticleSchema(
     'Best Clubs in London 2026: The Definitive Ranked Guide',
-    'The 13 best nightclubs in London for 2026, ranked by promoters who actually work the doors.',
+    'The 14 best nightclubs in London for 2026, ranked by promoters who actually work the doors.',
     '/best-clubs-in-london',
     '2025-01-15'
   );

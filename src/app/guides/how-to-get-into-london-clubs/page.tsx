@@ -331,6 +331,9 @@ export default function HowToGetInPage() {
           <div className="border-t border-white/[0.06] pt-8">
             <h2 className="font-display text-lg font-extrabold tracking-tight text-white mb-4">Related Guides</h2>
             <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="/blog/how-to-get-into-bisou" className="text-neon-300 hover:text-white text-sm transition-colors">
+                How to Get Into Bisou &rarr;
+              </Link>
               <Link href="/guides/hardest-clubs-to-get-into" className="text-neon-300 hover:text-white text-sm transition-colors">
                 London&apos;s Most Exclusive Clubs &rarr;
               </Link>

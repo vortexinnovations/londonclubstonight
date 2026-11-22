@@ -41,12 +41,13 @@ const genreSections = [
     id: 'house',
     title: 'House Music',
     description: 'Fewer options than hip-hop in central London, but the venues that do house music tend to do it very well. If house is your thing, these are your spots.',
-    slugs: ['maddox', 'ministry-of-sound', '99-regent-street', 'beat-london', 'rex-rooms-chelsea'],
+    slugs: ['maddox', 'ministry-of-sound', '99-regent-street', 'beat-london', 'rex-rooms-chelsea', 'bisou-mayfair'],
     notes: [
       { slug: 'maddox', note: 'The strongest house music identity in Mayfair. The restaurant-to-club transition means the house music crowd arrives late and committed. Friday nights are particularly strong for house programming.' },
       { slug: 'ministry-of-sound', note: 'The best house music in London, full stop. The sound system is world-class, the DJ bookings are headline-calibre, and the crowd is there specifically for the music. Multiple rooms mean you can explore different subgenres in one night.' },
       { slug: '99-regent-street', note: 'The downstairs room runs house: darker and more dance-focused than the hip hop and RnB upstairs. Both floors run on Friday and Saturday, so those are the nights to count on the house room.' },
       { slug: 'beat-london', note: 'An after-hours house music club in Fitzrovia, open from 1am to 6am by table booking. The venue\'s own account is that it has one of London\'s finest sound systems.' },
+      { slug: 'bisou-mayfair', note: 'A bar and nightclub that opened in 2026 at 9 Swallow Street, Mayfair. It describes itself as an audiophile space, with house music on a Void Acoustics sound system tuned to the room. Open Thursday, Friday and Saturday from 11pm until late; guestlist by request and tables from £1,000 minimum spend.' },
       { slug: 'rex-rooms-chelsea', note: 'The house option in Chelsea, on the King\'s Road. Wednesday is House Wednesday, and the resident DJ Tiempo usually plays house and Latin. Open Monday and Wednesday to Saturday from 11pm to 3am, last entry 2am.' },
     ],
     bestFor: 'Ministry of Sound for a dedicated, world-class house music experience. Maddox for house music in a Mayfair setting with the dinner-to-club transition.',
@@ -154,7 +155,7 @@ export default function MusicGenrePage() {
                             {club.name}
                           </Link>
                           <p className="text-frost-500 text-sm mt-1">
-                            {club.area} &middot; {club.musicGenres.join(', ')} &middot; Closes {club.closingTime}
+                            {club.area} &middot; {club.musicGenres.join(', ')} &middot; {/\d/.test(club.closingTime) ? `Closes ${club.closingTime}` : 'Open until late'}
                           </p>
                         </div>
                       </div>
