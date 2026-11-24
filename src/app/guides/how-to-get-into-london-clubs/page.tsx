@@ -7,14 +7,14 @@ import { fitTitle, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
   title: fitTitle('London Club Guestlists and Table Bookings: How to Get In'),
-  description: 'The complete guide to guestlists, table bookings, dress codes, group composition, and age requirements at London nightclubs. Honest advice from promoters.',
+  description: 'The complete guide to guestlists, table bookings, dress codes, group composition, and age requirements at London nightclubs.',
   keywords: ['London club guestlist', 'London club table booking', 'London club dress code', 'London club entry tips', 'London nightclub guide'],
   alternates: {
     canonical: 'https://londonclubstonight.com/guides/how-to-get-into-london-clubs',
   },
   openGraph: {
     title: 'London Club Guestlists and Table Bookings: How to Get In',
-    description: 'The complete guide to guestlists, table bookings, dress codes, group composition, and age requirements at London nightclubs. Honest advice from promoters.',
+    description: 'The complete guide to guestlists, table bookings, dress codes, group composition, and age requirements at London nightclubs.',
     url: 'https://londonclubstonight.com/guides/how-to-get-into-london-clubs',
     type: 'article',
     locale: 'en_GB',
@@ -105,7 +105,7 @@ export default function HowToGetInPage() {
               Guestlists &amp; <span className="serif-accent text-gradient">Table Bookings</span>
             </h1>
             <p className="animate-fade-up anim-delay-2 text-frost-100/85 max-w-2xl">
-              The practical guide to planning your night at London clubs. We are promoters. This is what we do every night.
+              The practical guide to planning your night at London clubs: guestlists, tables, dress codes and the door.
             </p>
           </div>
         </section>

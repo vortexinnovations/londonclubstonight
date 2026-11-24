@@ -98,8 +98,8 @@ export default function MayfairPage() {
                 Need help choosing a Mayfair club?
               </h2>
               <p className="text-frost-300 max-w-2xl mx-auto text-center mb-8">
-                We know every door in W1. Message us for table bookings, guestlist access,
-                or personalised recommendations.
+                We arrange tables and guestlist places at Mayfair clubs. Message us for
+                table bookings, guestlist access, or personalised recommendations.
               </p>
               <div className="flex justify-center">
                 <WhatsAppCTA />

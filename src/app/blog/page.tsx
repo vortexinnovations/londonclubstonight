@@ -10,7 +10,7 @@ export async function generateMetadata(_props: unknown, parent: ResolvingMetadat
   return {
     title: fitTitle('London Nightlife Blog: Insider Guides, Tips & Club Reviews'),
     description:
-      'Weekly London nightlife guides from people who work the doors: club reviews, dress codes, guestlists, table prices and how to plan a night out in London.',
+      'Weekly London nightlife guides: club reviews, dress codes, guestlists, table prices and how to plan a night out in London.',
     keywords: [
       'London nightlife blog',
       'London clubs blog',
@@ -21,7 +21,7 @@ export async function generateMetadata(_props: unknown, parent: ResolvingMetadat
     openGraph: {
       title: 'London Nightlife Blog: Insider Guides, Tips & Club Reviews',
       description:
-        'The London nightlife blog for people who actually go out. Insider guides, honest reviews, and everything you need to know before a night out.',
+        'The London nightlife blog for people who actually go out: guides to London clubs and everything you need to know before a night out.',
       url: 'https://londonclubstonight.com/blog',
       images: await siteImage(parent),
       type: 'website',
@@ -84,9 +84,8 @@ export default async function BlogPage() {
             London Nightlife <span className="serif-accent text-gradient">Blog</span>
           </h1>
           <p className="animate-fade-up anim-delay-2 text-frost-300 text-lg md:text-xl max-w-2xl leading-relaxed">
-            Insider knowledge from people who work the scene. Weekly guides,
-            honest reviews, and everything you need to plan a proper night out
-            in London.
+            Weekly guides to London clubs, and everything you need to plan a
+            proper night out in London.
           </p>
 
           {/* Category filters */}

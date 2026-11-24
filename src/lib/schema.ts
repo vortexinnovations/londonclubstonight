@@ -93,7 +93,7 @@ export function getOrganizationSchema() {
       height: 630,
     },
     image: `${SITE}/opengraph-image`,
-    description: 'London nightclub promoters offering table bookings, guestlist access, and insider recommendations at the city\'s best clubs.',
+    description: 'A London nightlife booking team. We arrange VIP tables and guestlist places at London clubs, handle enquiries on WhatsApp, and publish guides to the clubs open tonight.',
     areaServed: {
       '@type': 'City',
       name: 'London',

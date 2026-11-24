@@ -9,7 +9,7 @@ import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 export const metadata: Metadata = {
   title: fitTitle('Best Clubs in London 2026: The Definitive Ranked Guide'),
   description:
-    'The 14 best nightclubs in London for 2026, ranked by promoters who work the doors: Tape London first, then Cirque Le Soir. Table prices and how to get in.',
+    'The 14 best nightclubs in London for 2026, ranked: Tape London first, then Cirque Le Soir. What each club is like, table prices and how to get in.',
   keywords: [
     'best clubs in London',
     'best nightclubs London',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Best Clubs in London 2026: The Definitive Ranked Guide',
     description:
-      'The 14 best nightclubs in London for 2026, ranked by promoters who work the doors every weekend. Honest, opinionated reviews you won\'t find anywhere else.',
+      'The 14 best nightclubs in London for 2026, ranked, with what each club is like, the table prices and how to get in.',
     url: 'https://londonclubstonight.com/best-clubs-in-london',
     images: [{ url: '/gallery/images/fe4414_235143ea0a9946248d902020898bb8cb.jpg', alt: 'Sparkler bottles held high at a club table' }],
     type: 'article',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Best Clubs in London 2026: The Definitive Ranked Guide',
     description:
-      'The 14 best nightclubs in London for 2026, ranked by promoters who actually work the doors.',
+      'The 14 best nightclubs in London for 2026, ranked, with table prices and how to get in.',
   },
   alternates: {
     canonical: 'https://londonclubstonight.com/best-clubs-in-london',
@@ -96,7 +96,7 @@ export default function BestClubsInLondonPage() {
 
   const articleSchema = getArticleSchema(
     'Best Clubs in London 2026: The Definitive Ranked Guide',
-    'The 14 best nightclubs in London for 2026, ranked by promoters who actually work the doors.',
+    'The 14 best nightclubs in London for 2026, ranked, with table prices and how to get in.',
     '/best-clubs-in-london',
     '2025-01-15'
   );
@@ -125,18 +125,16 @@ export default function BestClubsInLondonPage() {
             Best Clubs in <span className="serif-accent text-gradient">London</span>
           </h1>
           <p className="animate-fade-up anim-delay-2 text-lg md:text-xl text-frost-100/85 leading-relaxed max-w-3xl mx-auto">
-            This is not another recycled list from a lifestyle magazine that sends
-            a freelancer to one club once a year. We are promoters. We work these
-            doors every weekend. We know which clubs are actually worth your time
-            and money in 2026, and which ones are coasting on reputation. Every
-            club on this list has been ranked based on hundreds of nights, thousands
-            of client bookings, and honest conversations with the people who run
-            them.
+            This is our ranked guide to the London clubs worth your time and
+            money in 2026: what each room is like, who it suits, the table prices
+            and how to get in. We arrange tables and guestlist places at these
+            clubs and earn a commission when a booking goes ahead, so read the
+            ranking with that in mind.
           </p>
           <div className="animate-fade-up anim-delay-3 mt-10 flex flex-wrap justify-center gap-4 text-sm text-frost-300">
             <span>{rankedClubs.length} clubs ranked</span>
             <span className="text-frost-500">|</span>
-            <span>Honest reviews from promoters</span>
+            <span>Table prices and how to get in</span>
             <span className="text-frost-500">|</span>
             <span>Updated quarterly</span>
           </div>
@@ -248,9 +246,8 @@ export default function BestClubsInLondonPage() {
             How We <span className="serif-accent text-gradient">Ranked</span>{" "}These Clubs
           </h2>
           <p className="text-frost-300 leading-relaxed max-w-3xl">
-            Every ranking is subjective, and we are not pretending otherwise. But
-            ours is informed by years of working inside London nightlife, not a
-            single visit on a press night. Here are the criteria we used:
+            Every ranking is subjective, and we are not pretending otherwise.
+            Here are the criteria we used:
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-6">

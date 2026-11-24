@@ -32,7 +32,7 @@ export async function generateMetadata(_props: unknown, parent: ResolvingMetadat
     openGraph: {
       title: 'Clubs Open Tonight in London: What\'s Open & How to Get In',
       description:
-        'Guide to London clubs open tonight. Guestlist availability, last-minute tables, and insider tips from promoters who work the doors.',
+        'Guide to London clubs open tonight. Guestlist availability, last-minute tables, and tips for getting in.',
       url: 'https://londonclubstonight.com/clubs-tonight-london',
       images: await siteImage(parent),
       type: 'article',

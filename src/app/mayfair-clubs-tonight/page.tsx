@@ -27,7 +27,7 @@ export async function generateMetadata(_props: unknown, parent: ResolvingMetadat
     openGraph: {
       title: 'Mayfair Clubs Tonight: What\'s Open in Mayfair Tonight',
       description:
-        'Guide to Mayfair clubs open tonight. Guestlist and table bookings through promoters on the ground.',
+        'Guide to Mayfair clubs open tonight. Guestlist and table bookings arranged on WhatsApp.',
       url: 'https://londonclubstonight.com/mayfair-clubs-tonight',
       images: await siteImage(parent),
       type: 'article',
@@ -38,7 +38,7 @@ export async function generateMetadata(_props: unknown, parent: ResolvingMetadat
       card: 'summary_large_image',
       title: 'Mayfair Clubs Tonight',
       description:
-        'Guide to Mayfair clubs open tonight. Guestlist and table bookings through promoters on the ground.',
+        'Guide to Mayfair clubs open tonight. Guestlist and table bookings arranged on WhatsApp.',
     },
     alternates: {
       canonical: 'https://londonclubstonight.com/mayfair-clubs-tonight',

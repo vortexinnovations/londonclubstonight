@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'London Clubs Tonight | Find the Best Clubs Open Tonight in London',
     description:
-      'Expert-curated guide to London clubs open tonight. VIP tables, guestlist access, and genuine insider knowledge from promoters on the ground.',
+      'Guide to London clubs open tonight: which clubs are open, how to get in, and VIP tables and guestlist places booked on WhatsApp.',
     url: 'https://londonclubstonight.com',
     type: 'website',
     locale: 'en_GB',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'London Clubs Tonight | Best Clubs Open Tonight',
     description:
-      'Expert-curated guide to London clubs open tonight. VIP tables, guestlist access, and insider knowledge.',
+      'Guide to London clubs open tonight. VIP tables, guestlist access, and how to get in.',
   },
   alternates: {
     canonical: 'https://londonclubstonight.com',
@@ -86,13 +86,13 @@ const guides = [
     title: 'Best Clubs in London',
     href: '/best-clubs-in-london',
     description:
-      'Our ranked guide to every club worth visiting. Honest reviews, entry tips, and what to actually expect when you arrive.',
+      'Our ranked guide to every club worth visiting, with entry tips and what to actually expect when you arrive.',
   },
   {
     title: 'How to Get Into London Clubs',
     href: '/guides/how-to-get-into-london-clubs',
     description:
-      'Guestlists, table bookings, dress codes, and the ratio rules nobody tells you about. The honest insider guide.',
+      'Guestlists, table bookings, dress codes, and the ratio rules nobody tells you about.',
   },
   {
     title: 'Most Exclusive London Clubs',
@@ -158,13 +158,13 @@ export default async function HomePage() {
             </span>
           </h1>
           <p className="animate-fade-up anim-delay-2 text-lg md:text-xl text-frost-100/85 max-w-2xl mx-auto mb-3 leading-relaxed">
-            Not sure where to go tonight? We know every door, every DJ, and every
-            table worth booking across Mayfair, Soho, and beyond. This is the
-            insider guide that actually tells you what to expect.
+            Not sure where to go tonight? This guide covers which clubs are open
+            tonight across Mayfair, Soho, and beyond, how to get in, and which
+            tables are worth booking.
           </p>
           <p className="animate-fade-up anim-delay-3 text-frost-300 text-sm mb-10 max-w-xl mx-auto">
-            Updated daily by promoters on the ground. Real recommendations, not
-            paid placements.
+            Tables and guestlist places arranged by our booking team on WhatsApp,
+            with no booking fees.
           </p>
           <div className="animate-fade-up anim-delay-4 flex justify-center">
             <WhatsAppCTA variant="hero" />
@@ -200,14 +200,13 @@ export default async function HomePage() {
         <div className="max-w-6xl mx-auto px-6 sm:px-8">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 md:mb-16">
             <div className="max-w-xl">
-              <span className="eyebrow">Curated nightly</span>
+              <span className="eyebrow">Where to start</span>
               <h2 className="font-display text-4xl md:text-5xl font-extrabold tracking-tight text-white mt-4 mb-4">
                 Tonight&apos;s Best <span className="serif-accent text-gradient">Options</span>
               </h2>
               <p className="text-frost-300 text-base">
-                These are the clubs we&apos;d actually send our friends to tonight.
-                Every recommendation is based on what&apos;s genuinely good: the
-                music, the crowd, and whether the night is worth the entry price.
+                Six of the London clubs we cover, with the area, the music, and
+                what a table costs at each.
               </p>
             </div>
             <Link
@@ -313,8 +312,6 @@ export default async function HomePage() {
             </h2>
             <p className="text-frost-300 text-base">
               Everything you need to know before going out in London tonight.
-              Written by people who actually work in the clubs, not travel
-              bloggers who visited once.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">

@@ -252,9 +252,8 @@ export default function GuestlistTonightLondonPage() {
             </h3>
             <p>
               Every London club has ratio preferences for guestlist entry,
-              and none of them advertise them honestly. Here is what actually
-              works based on years of submitting guestlist requests: the ideal
-              group is three to five women with one to two men. A group of
+              and none of them advertise them honestly. Here is what tends to
+              work: the ideal group is three to five women with one to two men. A group of
               four women and two men will get into every club in London on
               guestlist, every night, with minimal hassle. An equal-ratio
               group, say, three women and three men, works at most venues

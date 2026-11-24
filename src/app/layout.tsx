@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     default: 'London Clubs Tonight | Where to Go Out in London Tonight',
     template: '%s | London Clubs Tonight',
   },
-  description: 'The definitive guide to London\'s best nightclubs. Find out what\'s open tonight, book VIP tables, and get on the guestlist at London\'s top clubs. Insider knowledge from promoters who know the scene.',
+  description: 'The definitive guide to London\'s best nightclubs. Find out what\'s open tonight, book VIP tables, and get on the guestlist at London\'s top clubs.',
   keywords: ['London clubs tonight', 'clubs open tonight London', 'nightclubs London', 'best clubs in London', 'London nightlife', 'going out London tonight'],
   // No og:url here, for the same reason as the canonical below: each page sets
   // its own `openGraph`, url and image included.

@@ -108,7 +108,7 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
             Can You Get Into Tape London <span className="serif-accent text-gradient">Tonight?</span>
           </h1>
           <p className="animate-fade-up anim-delay-2 text-frost-100/85 text-lg md:text-xl max-w-2xl mx-auto mb-10">
-            An honest assessment from promoters who work with Tape every week. No false promises, just straight answers about your chances tonight.
+            An honest assessment of your chances at Tape tonight. No false promises, just straight answers.
           </p>
           <div className="animate-fade-up anim-delay-3">
             <WhatsAppCTA clubName="Tape London" variant="tonight" heading="Need a Table at Tape Tonight?" />

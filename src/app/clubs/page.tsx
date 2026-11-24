@@ -9,7 +9,7 @@ import { fitTitle } from '@/lib/metadata';
 export const metadata: Metadata = {
   title: fitTitle('Clubs in London 2026: Nightclubs, Table Prices and Guestlist'),
   description:
-    'The definitive list of the best nightclubs in London. Insider reviews, entry tips, table booking info, and guestlist access for every top London club.',
+    'The definitive list of the best nightclubs in London. Club profiles, entry tips, table booking info, and guestlist access for every top London club.',
   keywords: [
     'nightclubs in London',
     'London nightclub list',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Best Nightclubs in London | Complete London Nightclub List',
     description:
-      'The definitive list of the best nightclubs in London. Insider reviews, entry tips, table booking info, and guestlist access for every top London club.',
+      'The definitive list of the best nightclubs in London. Club profiles, entry tips, table booking info, and guestlist access for every top London club.',
     url: 'https://londonclubstonight.com/clubs',
     images: [{ url: '/gallery/images/TapeFriday041024PartyNextDoor-333.jpg', alt: 'A rapper performing to the crowd in a London club' }],
     type: 'website',

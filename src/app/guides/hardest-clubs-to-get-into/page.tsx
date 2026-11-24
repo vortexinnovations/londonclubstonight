@@ -159,7 +159,7 @@ export default function ExclusiveClubsPage() {
           <div className="glass-card section-glow overflow-hidden p-7 md:p-10 mt-12">
             <span className="eyebrow mb-4">The playbook</span>
             <h2 className="font-display text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-4">Making the Most of Your <span className="serif-accent text-gradient">Night</span></h2>
-            <p className="text-frost-300 max-w-2xl mb-8">Practical advice from promoters who know the scene.</p>
+            <p className="text-frost-300 max-w-2xl mb-8">Practical advice for planning your night.</p>
             <div className="space-y-4 text-frost-300 leading-relaxed">
               <p>
                 The best way to experience any of these clubs is with a table booking. Every venue will welcome you with a table reservation, giving you a reserved space, dedicated service, and bottles for your group. For most clubs, tables start from £1,000.

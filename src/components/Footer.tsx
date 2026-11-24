@@ -63,8 +63,8 @@ export default function Footer() {
               <span className="live-dot ml-1.5 self-center" aria-hidden />
             </div>
             <p className="text-frost-300 text-sm max-w-md leading-relaxed">
-              The insider guide to London&apos;s best nightclubs: written by promoters
-              who are at these doors every week.
+              A guide to London&apos;s best nightclubs, run by a booking team that
+              arranges VIP tables and guestlist places.
             </p>
             <div className="mt-6">
               <PreferredSourceButton placement="footer" />

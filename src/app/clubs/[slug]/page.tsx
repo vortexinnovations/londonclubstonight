@@ -448,7 +448,7 @@ export default async function ClubPage({
       {/* Insider Tip */}
       <section className="py-12 md:py-16">
         <div className="max-w-4xl mx-auto px-6">
-          <span className="eyebrow">From the door</span>
+          <span className="eyebrow">Good to know</span>
           <h2 className="font-display text-2xl md:text-3xl font-extrabold tracking-tight text-white mt-3 mb-8">
             Insider Tip
           </h2>

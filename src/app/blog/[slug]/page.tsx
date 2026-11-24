@@ -932,7 +932,7 @@ function getPostContent(slug: string): React.ReactNode {
             <strong className="text-white">Table bookings:</strong>{" "}We handle the reservation process and can advise on which table positions are best, which nights are busiest, and what the realistic minimum spend is for your group size.
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
-            <strong className="text-white">Venue matching:</strong>{" "}This is where a good promoter adds real value. Tell us what you want (the music, the vibe, the budget, the group composition) and we will tell you exactly where to go. We know these venues inside out because we work with them every week. Read our <Link href="/best-clubs-in-london" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">best clubs guide</Link>{" "}for an overview.
+            <strong className="text-white">Venue matching:</strong>{" "}This is where a good promoter adds real value. Tell us what you want (the music, the vibe, the budget, the group composition) and we will tell you exactly where to go. We arrange tables and guestlist places at these venues, so we can tell you how each one works. Read our <Link href="/best-clubs-in-london" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">best clubs guide</Link>{" "}for an overview.
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
             <strong className="text-white">Event planning:</strong>{" "}For birthdays, hen and stag parties, corporate events, and special occasions, a promoter can coordinate the entire evening. For birthdays specifically, see our <Link href="/blog/best-clubs-for-a-birthday-in-london" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">birthday clubs guide</Link>.
@@ -2231,7 +2231,7 @@ function getPostContent(slug: string): React.ReactNode {
             You have had a great night. The music was right, the crowd was right, and you stayed until the lights came on. Now you are standing outside a club at 3am, phone battery at 12 per cent, and you need to get home. It happens every single weekend, and plenty of people handle it badly - standing in one spot refreshing Uber while the surge price climbs, or wandering towards a tube station that closed two hours ago.
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
-            The good news is that London has more late-night transport options than most people realise. The bad news is that none of them are obvious at 3am when your decision-making is not at its sharpest. This guide covers every realistic option, tested by a team that finishes work at the same time the clubs close.
+            The good news is that London has more late-night transport options than most people realise. The bad news is that none of them are obvious at 3am when your decision-making is not at its sharpest. This guide covers every realistic option.
           </p>
 
           <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mt-10 mb-4">Night Buses - The Option Most People Forget</h2>
@@ -2499,14 +2499,13 @@ function getPostContent(slug: string): React.ReactNode {
     case 'day-parties-in-london':
       return (
         <>
-
           <p className="text-frost-300 leading-relaxed mb-4">
             London does not get many genuinely warm weekends, so when the sun finally holds for a Saturday, the city changes gear completely. The day party scene wakes up, rooftops and warehouses fill from the early afternoon, and the people who plan ahead end up having the best summer days out in the city. This is our guide to how day parties work in London, where they happen, and how to find the good ones, based on years of running our own groups through summer after summer.
           </p>
 
           <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mt-10 mb-4">When Day Parties Take Over London</h2>
           <p className="text-frost-300 leading-relaxed mb-4">
-            The London day party calendar runs mainly from late May through September, and the difference a stretch of good weather makes is dramatic. A grey forecast empties a rooftop in hours; a sunny one sells it out days in advance. From experience, the busiest weekends of the whole year are the summer bank holidays, when promoters stack their biggest line-ups and the good events sell out well before the day itself, as of June 2026.
+            The London day party calendar runs mainly from late May through September, and the difference a stretch of good weather makes is dramatic. A grey forecast empties a rooftop in hours; a sunny one sells it out days in advance. The busiest weekends of the whole year are the summer bank holidays, when promoters stack their biggest line-ups and the good events sell out well before the day itself, as of June 2026.
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
             The format is simple. Most day parties start in the early afternoon, somewhere between 1pm and 3pm, and run through to mid or late evening. The best ones are built as a full day-to-night session rather than a quick afternoon, which is why we always tell our groups to treat a day party as a marathon and not a sprint.
@@ -2566,7 +2565,6 @@ function getPostContent(slug: string): React.ReactNode {
     case 'uk-garage-nights-london':
       return (
         <>
-
           <p className="text-frost-300 leading-relaxed mb-4">
             UK garage is London&apos;s own sound. It came up through the city&apos;s pirate radio and south London Sunday sessions in the nineties, conquered the charts, went underground again, and never actually left the dancefloors. Ask anyone who works nights in this city: the moment a DJ drops a garage classic, the room lifts in a way almost nothing else manages. This guide covers where UKG actually lives in London right now, what the nights feel like, and how to catch the right one.
           </p>
@@ -2578,7 +2576,7 @@ function getPostContent(slug: string): React.ReactNode {
             documents, UKG has spent the last few years moving from revival to simply being part of London&apos;s weekly diet again, as of June 2026.
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
-            From experience, the crowd split is what makes these nights special: original heads in their forties sharing a floor with twenty-somethings, and both halves knowing every word. Very few scenes in London manage that.
+            The crowd split is what makes these nights special: original heads in their forties sharing a floor with twenty-somethings, and both halves knowing every word. Very few scenes in London manage that.
           </p>
 
           <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mt-10 mb-4">Where the Sound Actually Lives</h2>
@@ -2639,7 +2637,6 @@ function getPostContent(slug: string): React.ReactNode {
     case 'latin-reggaeton-nights-london':
       return (
         <>
-
           <p className="text-frost-300 leading-relaxed mb-4">
             Reggaeton is one of the biggest sounds on the planet, and London caught up properly years ago. The city now runs everything from full-scale latin parties in its biggest music rooms to salsa socials that have been going for decades, plus a steady stream of reggaeton inside the West End&apos;s open-format sets. The honest headline is that the scene is thriving but scattered: there is no single home for it, which is exactly why a guide helps. Here is how London&apos;s latin nightlife is organised, where the nights actually land, and how to pick the right one for your group.
           </p>
@@ -2710,7 +2707,6 @@ function getPostContent(slug: string): React.ReactNode {
     case 'london-boat-parties':
       return (
         <>
-
           <p className="text-frost-300 leading-relaxed mb-4">
             For a few months each summer, some of the best nights out in London happen on the water. Thames boat parties are a fixture of the warm-weather calendar, and they are one of the few formats that genuinely feels different to a normal club night: a DJ, a few hundred people, and the city skyline sliding past the deck. The honest truth is that the experience swings wildly depending on which one you pick. Here is how London boat parties actually work, what to expect once you are on board, and how to find the good ones as of June 2026.
           </p>
@@ -2749,7 +2745,7 @@ function getPostContent(slug: string): React.ReactNode {
 
           <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mt-10 mb-4">What the Night Feels Like on Board</h2>
           <p className="text-frost-300 leading-relaxed mb-4">
-            Almost every party boat splits into two worlds. The top deck is open-air and built for the view: the skyline, the bridges lighting up, and the sunset if you have timed it right. The lower deck is where the soundsystem and the actual dancefloor live, usually covered, which also makes it the place everyone migrates to if the weather turns. From experience the smart move is to start on top for the sail-out and the photos, then drop downstairs once the DJ hits full stride.
+            Almost every party boat splits into two worlds. The top deck is open-air and built for the view: the skyline, the bridges lighting up, and the sunset if you have timed it right. The lower deck is where the soundsystem and the actual dancefloor live, usually covered, which also makes it the place everyone migrates to if the weather turns. The smart move is to start on top for the sail-out and the photos, then drop downstairs once the DJ hits full stride.
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
             The music leans broad and crowd-pleasing, house, afrobeats, garage and R&amp;B depending on the promoter, because a boat crowd is mixed and there to enjoy itself rather than to study the DJ. The crowd skews celebratory: birthdays, work groups and friends marking the summer. It is a friendlier, more open room than a hard-door West End club, and that is a big part of the appeal.
@@ -2780,7 +2776,6 @@ function getPostContent(slug: string): React.ReactNode {
     case 'notting-hill-carnival-after-parties':
       return (
         <>
-
           <p className="text-frost-300 leading-relaxed mb-4">
             One weekend a year, London nightlife reorganises itself around a single event. Notting Hill Carnival takes over west London on the August bank holiday weekend, Europe&apos;s biggest street festival by a distance, and what most first-timers never plan for is the night side of it. The parades and soundsystems are only half the story; when the streets wind down, the biggest after-party circuit in the country takes over. The weekend has a rhythm all of its own. Here is how carnival after dark actually works, and how to plan a weekend around it, as of 2026.</p>
 
@@ -2791,7 +2786,7 @@ function getPostContent(slug: string): React.ReactNode {
 
           <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mt-10 mb-4">The 7pm Handover</h2>
           <p className="text-frost-300 leading-relaxed mb-4">
-            The defining moment of carnival nightlife happens while it is still light. The street soundsystems power down in the early evening under the event&apos;s licensing, and a crowd of hundreds of thousands, dressed up, warmed up and nowhere near done, pours out of W10 and W11 all at once. From experience, standing on a westbound platform at dusk on carnival Sunday is one of the great sights of the London year: glitter, feathers and flags heading in every direction, all asking the same question. Where next?
+            The defining moment of carnival nightlife happens while it is still light. The street soundsystems power down in the early evening under the event&apos;s licensing, and a crowd of hundreds of thousands, dressed up, warmed up and nowhere near done, pours out of W10 and W11 all at once. Standing on a westbound platform at dusk on carnival Sunday is one of the great sights of the London year: glitter, feathers and flags heading in every direction, all asking the same question. Where next?
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
             The answer is the after-party circuit, and it is why the smart move is deciding your night <strong className="text-white">before</strong>{" "}the day. Phones die at carnival, groups scatter, and the plans made at 6:45pm on a packed corner rarely survive. Agree the venue and the meeting point in the morning, and the handover becomes the easiest part of the day.
@@ -2849,7 +2844,7 @@ function getPostContent(slug: string): React.ReactNode {
             The pipeline runs on three routes. The first is official: the bigger festivals announce partner after-parties, often with names from the bill, ticketed separately and capped. These are the safest landing and the first to sell out. The second is the DJ double-shift: artists who play a festival slot in the afternoon frequently appear in a city venue the same night, so following the artist rather than the venue is one of the sharpest moves of the season. The third route is the one nobody announces: certain rooms are simply known landing zones for certain crowds, and the flow happens on its own.
           </p>
           <p className="text-frost-300 leading-relaxed mb-4">
-            The tell is unmistakable: the busiest hour of our summer is 8pm on a festival Saturday, when half the park seems to decide at once that the day should not end. The groups that message us then still get sorted; the ones who message at midnight join the back of the story.
+            The tell is unmistakable: around 8pm on a festival Saturday, half the park seems to decide at once that the day should not end. The groups that message us then still get sorted; the ones who message at midnight join the back of the story.
           </p>
 
           <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mt-10 mb-4">Where Each Crowd Actually Goes</h2>

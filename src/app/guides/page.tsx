@@ -52,7 +52,7 @@ export default function GuidesPage() {
       <SchemaMarkup
         schema={getArticleSchema(
           'London Nightclub Guides: Everything You Need to Know',
-          'Insider guides to London nightlife. Late-night venues, music genres, dress codes, guestlists, table bookings, and honest advice from promoters who know the scene.',
+          'Guides to London nightlife. Late-night venues, music genres, dress codes, guestlists, table bookings, and straight answers on how London clubs work.',
           '/guides',
           '2025-01-01'
         )}
@@ -82,7 +82,7 @@ export default function GuidesPage() {
               London Nightclub <span className="serif-accent text-gradient">Guides</span>
             </h1>
             <p className="animate-fade-up anim-delay-2 text-frost-300 max-w-2xl">
-              Everything you need to know about London nightlife. Written by promoters who work the scene, book the tables, and know how it all works.
+              Everything you need to know about London nightlife: late-night venues, music, guestlists, table bookings and how the doors work.
             </p>
           </div>
         </section>

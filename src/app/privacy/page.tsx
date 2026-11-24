@@ -52,7 +52,7 @@ export default function PrivacyPage() {
             Who we are
           </h2>
           <p>
-            London Clubs Tonight is an independent London nightlife guide and booking
+            London Clubs Tonight is a London nightlife guide and booking
             concierge. We publish editorial guides to London nightclubs and arrange VIP
             table bookings and guestlist places on behalf of guests. This policy explains
             what happens to your information when you read the site or contact us about a

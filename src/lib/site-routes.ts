@@ -34,7 +34,7 @@ export const staticRoutes: SiteRoute[] = [
     path: '/',
     title: 'London Clubs Tonight',
     description:
-      'Find out which London clubs are open tonight. Expert recommendations for Mayfair, Soho, and beyond: VIP tables, guestlist spots, and insider tips from promoters who know every door.',
+      'Find out which London clubs are open tonight, from Mayfair to Soho and beyond: VIP tables, guestlist spots, and how to get in.',
     priority: 1,
     changeFrequency: 'daily',
     section: 'core',
@@ -43,7 +43,7 @@ export const staticRoutes: SiteRoute[] = [
     path: '/best-clubs-in-london',
     title: 'Best Clubs in London: The Definitive Ranked Guide',
     description:
-      'The best nightclubs in London, ranked by promoters who actually work the doors. From Tape London to Ministry of Sound: honest reviews, table prices, and how to get in.',
+      'The best nightclubs in London, ranked. From Tape London to Ministry of Sound: what each club is like, table prices, and how to get in.',
     priority: 0.95,
     changeFrequency: 'weekly',
     section: 'core',
@@ -52,7 +52,7 @@ export const staticRoutes: SiteRoute[] = [
     path: '/clubs',
     title: 'Complete London Nightclub List',
     description:
-      'The definitive list of the best nightclubs in London. Insider reviews, entry tips, table booking info, and guestlist access for every top London club.',
+      'The definitive list of the best nightclubs in London. Club profiles, entry tips, table booking info, and guestlist access for every top London club.',
     priority: 0.7,
     changeFrequency: 'weekly',
     section: 'core',
@@ -79,7 +79,7 @@ export const staticRoutes: SiteRoute[] = [
     path: '/guides/how-to-get-into-london-clubs',
     title: 'Guestlists & Table Bookings: The Complete Guide',
     description:
-      'The complete guide to guestlists, table bookings, dress codes, group composition, and age requirements at London nightclubs. Honest advice from promoters.',
+      'The complete guide to guestlists, table bookings, dress codes, group composition, and age requirements at London nightclubs.',
     priority: 0.85,
     changeFrequency: 'monthly',
     section: 'guides',
@@ -97,7 +97,7 @@ export const staticRoutes: SiteRoute[] = [
     path: '/guides',
     title: 'London Nightclub Guides',
     description:
-      'Insider guides to London nightlife. Late-night venues, music genres, dress codes, guestlists, table bookings, and honest advice from promoters who know the scene.',
+      'Guides to London nightlife. Late-night venues, music genres, dress codes, guestlists, table bookings, and straight answers on how London clubs work.',
     priority: 0.6,
     changeFrequency: 'monthly',
     section: 'guides',
@@ -169,7 +169,7 @@ export const staticRoutes: SiteRoute[] = [
     path: '/blog',
     title: 'London Nightlife Blog',
     description:
-      'The London nightlife blog for people who actually go out. Insider guides to London clubs, honest reviews, dress code tips, and everything you need to know before a night out in London.',
+      'The London nightlife blog for people who actually go out. Guides to London clubs, dress code tips, and everything you need to know before a night out in London.',
     priority: 0.8,
     changeFrequency: 'weekly',
     section: 'blog',
