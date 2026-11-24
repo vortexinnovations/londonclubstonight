@@ -57,6 +57,11 @@ const closingGroups = [
   },
 ];
 
+// This page's real dates for its Article markup. Change DATE_MODIFIED when the
+// page's content changes; never use the build or request time.
+const DATE_PUBLISHED = '2026-03-25';
+const DATE_MODIFIED = '2026-11-17';
+
 export default function ClubsOpenLatePage() {
   return (
     <>
@@ -65,7 +70,8 @@ export default function ClubsOpenLatePage() {
           'Clubs Open Late in London: Your Guide to Late Night London',
           'Every London club grouped by closing time. Find venues open until 3:45am, 4am, 5am and 6am.',
           '/guides/clubs-open-late',
-          '2025-01-01'
+          DATE_PUBLISHED,
+          DATE_MODIFIED
         )}
       />
 

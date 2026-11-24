@@ -3,13 +3,17 @@
  *
  * Kept separate from the <SchemaMarkup> component so they stay plain data
  * (importable and testable without a JSX runtime).
+ *
+ * The site is an online booking team with no premises of its own, so it is an
+ * Organization (never a LocalBusiness, never with an address). FAQ answers
+ * stay visible on the pages but are not marked up as FAQPage: Google stopped
+ * showing FAQ rich results on 7 May 2026.
  */
 import { WHATSAPP_TABLE_NUMBER } from '@/lib/clubs';
 
 const SITE = 'https://londonclubstonight.com';
 
-/** Stable entity anchors so the Organization, WebSite, and LocalBusiness
- *  nodes resolve to one brand rather than three unrelated things. */
+/** Stable entity anchors so the Organization and WebSite nodes resolve to one brand. */
 export const ORGANIZATION_ID = `${SITE}/#organization`;
 export const WEBSITE_ID = `${SITE}/#website`;
 
@@ -23,58 +27,31 @@ export const TEAM_AUTHOR = {
   url: `${SITE}/about`,
 } as const;
 
-export function getLocalBusinessSchema() {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    '@id': `${SITE}/#localbusiness`,
-    parentOrganization: { '@id': ORGANIZATION_ID },
-    name: 'London Clubs Tonight',
-    alternateName: 'LondonClubsTonight',
-    description: 'The definitive guide to London\'s best nightclubs. Table bookings, guestlist access, and insider knowledge for London\'s top clubs.',
-    url: SITE,
-    image: `${SITE}/gallery/images/TapeFriday041024PartyNextDoor-410.jpg`,
-    telephone: `+${WHATSAPP_TABLE_NUMBER}`,
-    areaServed: {
-      '@type': 'City',
-      name: 'London',
-    },
-    priceRange: '£££',
-    contactPoint: {
-      '@type': 'ContactPoint',
-      contactType: 'reservations',
-      telephone: `+${WHATSAPP_TABLE_NUMBER}`,
-      availableLanguage: 'English',
-    },
-  };
-}
-
-export function getArticleSchema(title: string, description: string, url: string, datePublished: string, dateModified?: string) {
+/**
+ * Article markup for a guide or post. Both dates are the page's real ones (a
+ * code page keeps them as constants next to the page; a post has its stored
+ * dates): never the build or request time.
+ */
+export function getArticleSchema(
+  title: string,
+  description: string,
+  url: string,
+  datePublished: string,
+  dateModified: string,
+  image?: string
+) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: title,
     description: description,
     url: `${SITE}${url}`,
+    mainEntityOfPage: `${SITE}${url}`,
+    ...(image ? { image: image.startsWith('/') ? `${SITE}${image}` : image } : {}),
     datePublished: datePublished,
-    dateModified: dateModified ?? new Date().toISOString().split('T')[0],
+    dateModified: dateModified,
     author: TEAM_AUTHOR,
     publisher: { '@id': ORGANIZATION_ID },
-  };
-}
-
-export function getFAQSchema(faqs: { question: string; answer: string }[]) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqs.map(faq => ({
-      '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: faq.answer,
-      },
-    })),
   };
 }
 
@@ -94,6 +71,7 @@ export function getOrganizationSchema() {
     },
     image: `${SITE}/opengraph-image`,
     description: 'A London nightlife booking team. We arrange VIP tables and guestlist places at London clubs, handle enquiries on WhatsApp, and publish guides to the clubs open tonight.',
+    telephone: `+${WHATSAPP_TABLE_NUMBER}`,
     areaServed: {
       '@type': 'City',
       name: 'London',
@@ -173,46 +151,51 @@ const SCHEMA_DAY_CODES: Record<string, string> = {
   Sunday: 'Su',
 };
 
-export function getNightClubSchema(
+/**
+ * A club page: our page, about the club. The club is the page's subject, never
+ * given our page as its url or @id (that would say our page is the club's own
+ * website). Opening hours are marked up only for nights with a published
+ * closing time; nights without one are left out, as we never state one.
+ */
+export function getClubPageSchema(
   name: string,
   description: string,
   address: string,
   url: string,
   details: NightClubDetails = {}
 ) {
-  const hours = details.hours ?? [];
+  const hours = (details.hours ?? []).filter((h) => h.closes);
   return {
     '@context': 'https://schema.org',
-    '@type': 'NightClub',
-    name: name,
-    ...(details.alternateName ? { alternateName: details.alternateName } : {}),
-    description: description,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: address,
-      addressLocality: 'London',
-      addressCountry: 'GB',
-    },
+    '@type': 'WebPage',
+    '@id': `${SITE}${url}#webpage`,
     url: `${SITE}${url}`,
-    priceRange: '£££',
-    ...(hours.length > 0
-      ? {
-          // A club that publishes no closing time has no `closes`: the text form
-          // needs a range, so it is sent only for nights with one.
-          ...(hours.some((h) => h.closes)
-            ? {
-                openingHours: hours
-                  .filter((h) => h.closes)
-                  .map((h) => `${h.days.map((d) => SCHEMA_DAY_CODES[d] ?? d).join(',')} ${h.opens}-${h.closes}`),
-              }
-            : {}),
-          openingHoursSpecification: hours.map((h) => ({
-            '@type': 'OpeningHoursSpecification',
-            dayOfWeek: h.days,
-            opens: h.opens,
-            ...(h.closes ? { closes: h.closes } : {}),
-          })),
-        }
-      : {}),
+    isPartOf: { '@id': WEBSITE_ID },
+    about: {
+      '@type': 'NightClub',
+      name: name,
+      ...(details.alternateName ? { alternateName: details.alternateName } : {}),
+      description: description,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: address,
+        addressLocality: 'London',
+        addressCountry: 'GB',
+      },
+      priceRange: '£££',
+      ...(hours.length > 0
+        ? {
+            openingHours: hours.map(
+              (h) => `${h.days.map((d) => SCHEMA_DAY_CODES[d] ?? d).join(',')} ${h.opens}-${h.closes}`
+            ),
+            openingHoursSpecification: hours.map((h) => ({
+              '@type': 'OpeningHoursSpecification',
+              dayOfWeek: h.days,
+              opens: h.opens,
+              closes: h.closes,
+            })),
+          }
+        : {}),
+    },
   };
 }

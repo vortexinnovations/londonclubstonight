@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { getClubBySlug } from '@/lib/clubs';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
-import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/components/SchemaMarkup';
+import SchemaMarkup, { getArticleSchema, getBreadcrumbSchema } from '@/components/SchemaMarkup';
 
 export const revalidate = 3600;
 
@@ -66,6 +66,11 @@ const faqs = [
   },
 ];
 
+// This page's real dates for its Article markup. Change DATE_MODIFIED when the
+// page's content changes; never use the build or request time.
+const DATE_PUBLISHED = '2026-03-25';
+const DATE_MODIFIED = '2026-10-21';
+
 export default function CanYouGetIntoTapeLondonTonightPage() {
   const tape = getClubBySlug('tape-london');
 
@@ -77,9 +82,9 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
             'Can You Get Into Tape London Tonight? Insider Guide',
             'Honest insider advice on getting into Tape London tonight. Walk-in chances, table booking tips, dress code, and realistic expectations.',
             '/can-you-get-into-tape-london-tonight',
-            '2025-06-01'
+            DATE_PUBLISHED,
+            DATE_MODIFIED
           ),
-          getFAQSchema(faqs),
           getBreadcrumbSchema([
             { name: 'Home', url: '/' },
             { name: 'Can You Get Into Tape Tonight', url: '/can-you-get-into-tape-london-tonight' },

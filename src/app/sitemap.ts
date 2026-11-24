@@ -8,20 +8,23 @@ import { SITE_URL, staticRoutes } from '@/lib/site-routes';
 // prerendered sitemap is never refreshed, so new posts would wait for a deploy.
 export const dynamic = 'force-dynamic';
 
+// lastmod is only ever a real date: a post's stored modified date. Code pages
+// and club pages carry none: a lastmod that is the request time is not a
+// modification date, and Google ignores it.
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const blogPosts = await getListingPosts();
   const baseUrl = SITE_URL;
 
   const clubPages = clubs.map(club => ({
     url: `${baseUrl}/clubs/${club.slug}`,
-    lastModified: new Date(),
     changeFrequency: club.status === 'open' ? 'weekly' as const : 'monthly' as const,
     priority: club.status === 'open' ? 0.8 : 0.4,
   }));
 
   const blogPages = blogPosts.map(post => ({
     url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: new Date(post.updatedDate),
+    lastModified: post.updatedDate,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));
@@ -34,7 +37,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     entries.push({
       url: route.path === '/' ? baseUrl : `${baseUrl}${route.path}`,
-      lastModified: new Date(),
       changeFrequency: route.changeFrequency,
       priority: route.priority,
     });

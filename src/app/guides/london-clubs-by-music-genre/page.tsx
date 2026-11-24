@@ -76,6 +76,11 @@ const genreSections = [
   },
 ];
 
+// This page's real dates for its Article markup. Change DATE_MODIFIED when the
+// page's content changes; never use the build or request time.
+const DATE_PUBLISHED = '2026-03-25';
+const DATE_MODIFIED = '2026-11-22';
+
 export default function MusicGenrePage() {
   return (
     <>
@@ -84,7 +89,8 @@ export default function MusicGenrePage() {
           'London Clubs by Music Genre: Hip-Hop, House, RnB & More',
           'Find the right London club for your music taste. Every venue categorised by what they actually play.',
           '/guides/london-clubs-by-music-genre',
-          '2025-01-01'
+          DATE_PUBLISHED,
+          DATE_MODIFIED
         )}
       />
 

@@ -46,6 +46,11 @@ const guides = [
   },
 ];
 
+// This page's real dates for its Article markup. Change DATE_MODIFIED when the
+// page's content changes; never use the build or request time.
+const DATE_PUBLISHED = '2026-03-25';
+const DATE_MODIFIED = '2026-10-21';
+
 export default function GuidesPage() {
   return (
     <>
@@ -54,7 +59,8 @@ export default function GuidesPage() {
           'London Nightclub Guides: Everything You Need to Know',
           'Guides to London nightlife. Late-night venues, music genres, dress codes, guestlists, table bookings, and straight answers on how London clubs work.',
           '/guides',
-          '2025-01-01'
+          DATE_PUBLISHED,
+          DATE_MODIFIED
         )}
       />
 

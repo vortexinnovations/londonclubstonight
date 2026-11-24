@@ -10,7 +10,7 @@ import { clubs, WHATSAPP_TABLE_LINK, WHATSAPP_GUESTLIST_LINK } from '@/lib/clubs
 import ClubCard from '@/components/ClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import { ArticlePreferredSourcePrompt } from '@/components/PreferredSourceButton';
-import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
+import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 import { HOW_WE_WRITE_HREF, TEAM_NAME } from '@/lib/about';
 
 // Database posts are plain Markdown; raw HTML shows as text and only safe link schemes render.
@@ -2989,13 +2989,13 @@ export default async function BlogPostPage({
     post.metaDescription,
     `/blog/${post.slug}`,
     post.publishedDate,
-    post.updatedDate
+    post.updatedDate,
+    post.featuredImage
   );
 
   return (
     <main className="min-h-screen">
       <SchemaMarkup schema={articleSchema} />
-      {post.faqs && <SchemaMarkup schema={getFAQSchema(post.faqs)} />}
 
       <article className="relative overflow-x-clip pt-24 pb-16 px-4 sm:px-6">
         <div className="glow-orb w-[480px] h-[380px] bg-neon-500/25 -top-32 -right-24" aria-hidden />

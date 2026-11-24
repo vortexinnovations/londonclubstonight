@@ -15,7 +15,6 @@ import WhatsAppCTA from '@/components/WhatsAppCTA';
 import SchemaMarkup, {
   getArticleSchema,
   getBreadcrumbSchema,
-  getFAQSchema,
 } from '@/components/SchemaMarkup';
 
 const TITLE = 'Clubs in Soho London: Best Soho Nightclubs 2026';
@@ -139,13 +138,17 @@ const faqs = [
   },
 ];
 
+// This page's real dates for its Article markup. Change DATE_MODIFIED when the
+// page's content changes; never use the build or request time.
+const DATE_PUBLISHED = '2026-03-25';
+const DATE_MODIFIED = '2026-10-21';
+
 export default function SohoPage() {
   return (
     <>
       <SchemaMarkup
         schema={[
-          getArticleSchema(TITLE, DESCRIPTION, '/areas/soho', '2025-01-01', '2026-10-08'),
-          getFAQSchema(faqs),
+          getArticleSchema(TITLE, DESCRIPTION, '/areas/soho', DATE_PUBLISHED, DATE_MODIFIED),
           getBreadcrumbSchema([
             { name: 'Home', url: '/' },
             { name: 'Areas', url: '/areas' },

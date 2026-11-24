@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { getFridayClubs, getSaturdayClubs } from '@/lib/clubs';
 import TonightClubCard from '@/components/TonightClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
-import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getItemListSchema } from '@/components/SchemaMarkup';
+import SchemaMarkup, { getArticleSchema, getBreadcrumbSchema, getItemListSchema } from '@/components/SchemaMarkup';
 
 export const revalidate = 3600;
 
@@ -72,19 +72,23 @@ const faqs = [
   },
 ];
 
+// This page's real dates for its Article markup. Change DATE_MODIFIED when the
+// page's content changes; never use the build or request time.
+const DATE_PUBLISHED = '2026-03-25';
+const DATE_MODIFIED = '2026-10-21';
+
 export default function BestClubsThisWeekendPage() {
   const fridayClubs = getFridayClubs();
   const saturdayClubs = getSaturdayClubs();
-  const now = new Date().toISOString();
 
   const allWeekendClubs = [...fridayClubs, ...saturdayClubs.filter((sc) => !fridayClubs.some((fc) => fc.slug === sc.slug))];
   const articleSchema = getArticleSchema(
     'Best Clubs This Weekend in London: Friday & Saturday Guide',
     'The best London clubs this weekend with Friday and Saturday night picks, table availability, and insider tips.',
     '/best-clubs-this-weekend-london',
-    '2025-01-15'
+    DATE_PUBLISHED,
+    DATE_MODIFIED
   );
-  const faqSchema = getFAQSchema(faqs);
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Home', url: '/' },
     { name: 'Best Clubs This Weekend', url: '/best-clubs-this-weekend-london' },
@@ -96,7 +100,7 @@ export default function BestClubsThisWeekendPage() {
 
   return (
     <main className="min-h-screen text-white">
-      <SchemaMarkup schema={[articleSchema, faqSchema, breadcrumbSchema, itemListSchema]} />
+      <SchemaMarkup schema={[articleSchema, breadcrumbSchema, itemListSchema]} />
 
       {/* Hero */}
       <section className="relative min-h-[40vh] flex items-end overflow-hidden">
@@ -124,12 +128,9 @@ export default function BestClubsThisWeekendPage() {
             running their strongest nights, where the tables are still available,
             and what you need to know before you arrive.
           </p>
-          <time
-            dateTime={now}
-            className="animate-fade-up anim-delay-3 inline-block text-xs text-frost-300 mb-10"
-          >
-            Updated {new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/London' })}
-          </time>
+          <p className="animate-fade-up anim-delay-3 inline-block text-xs text-frost-300 mb-10">
+            For this Friday and Saturday
+          </p>
         </div>
       </section>
 

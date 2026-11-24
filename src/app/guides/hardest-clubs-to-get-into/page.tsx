@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { clubs } from '@/lib/clubs';
 import Link from 'next/link';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
-import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
+import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 import { fitTitle, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
@@ -64,6 +64,11 @@ const exclusiveClubs = [
   'ministry-of-sound',
 ];
 
+// This page's real dates for its Article markup. Change DATE_MODIFIED when the
+// page's content changes; never use the build or request time.
+const DATE_PUBLISHED = '2026-03-25';
+const DATE_MODIFIED = '2026-10-21';
+
 export default function ExclusiveClubsPage() {
   return (
     <>
@@ -73,9 +78,9 @@ export default function ExclusiveClubsPage() {
             'London\'s Most Exclusive Clubs: The Insider\'s Guide',
             'Discover London\'s most exclusive nightlife experiences with insider advice on what makes each venue special.',
             '/guides/hardest-clubs-to-get-into',
-            '2025-01-01'
+            DATE_PUBLISHED,
+            DATE_MODIFIED
           ),
-          getFAQSchema(faqs),
         ]}
       />
 

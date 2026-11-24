@@ -25,7 +25,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LeadRefTracker from '@/components/LeadRefTracker';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
-import SchemaMarkup, { getLocalBusinessSchema, getWebSiteSchema } from '@/components/SchemaMarkup';
+import SchemaMarkup, { getOrganizationSchema, getWebSiteSchema } from '@/components/SchemaMarkup';
 import { SITE_OPEN_GRAPH } from '@/lib/metadata';
 
 export const metadata: Metadata = {
@@ -69,7 +69,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${syne.variable} ${manrope.variable} ${instrumentSerif.variable}`}>
       <body>
-        <SchemaMarkup schema={getLocalBusinessSchema()} />
+        <SchemaMarkup schema={getOrganizationSchema()} />
         <SchemaMarkup schema={getWebSiteSchema()} />
         <Header />
         <main className="pt-20 pb-24 lg:pb-0">

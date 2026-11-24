@@ -88,6 +88,11 @@ const clubOpinions: Record<string, string> = {
     'The Rex Rooms is the one Chelsea club on this list, at 151 King\'s Road on the site of the former 151 Club, and it opened in March 2025. It opens five nights a week from 11pm to 3am, with last entry at 2am: Industry Mondays, House Wednesday, Thursday, Scandi Fridays and Brazilian Saturdays, closed on Tuesday and Sunday. The music is house, Latin and commercial across two rooms, the Main Room with the DJ and the bar, and the VIP King\'s Room with a private-party feel. As of November 2026, mixed groups who arrive before 11:30pm get in free. It sits at thirteen because it is a Chelsea night rather than a West End one.',
 };
 
+// This page's real dates for its Article markup. Change DATE_MODIFIED when the
+// page's content changes; never use the build or request time.
+const DATE_PUBLISHED = '2026-03-25';
+const DATE_MODIFIED = '2026-11-22';
+
 export default function BestClubsInLondonPage() {
   const openClubs = getOpenClubs();
   const rankedClubs = rankedSlugs
@@ -98,7 +103,8 @@ export default function BestClubsInLondonPage() {
     'Best Clubs in London 2026: The Definitive Ranked Guide',
     'The 14 best nightclubs in London for 2026, ranked, with table prices and how to get in.',
     '/best-clubs-in-london',
-    '2025-01-15'
+    DATE_PUBLISHED,
+    DATE_MODIFIED
   );
 
   return (

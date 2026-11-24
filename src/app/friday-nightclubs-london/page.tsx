@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { getFridayClubs } from '@/lib/clubs';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import TonightClubCard from '@/components/TonightClubCard';
-import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getItemListSchema } from '@/components/SchemaMarkup';
+import SchemaMarkup, { getArticleSchema, getBreadcrumbSchema, getItemListSchema } from '@/components/SchemaMarkup';
 
 export const revalidate = 3600;
 
@@ -67,6 +67,11 @@ const faqs = [
   },
 ];
 
+// This page's real dates for its Article markup. Change DATE_MODIFIED when the
+// page's content changes; never use the build or request time.
+const DATE_PUBLISHED = '2026-03-25';
+const DATE_MODIFIED = '2026-11-04';
+
 export default function FridayNightclubsLondonPage() {
   const fridayClubs = getFridayClubs();
 
@@ -78,9 +83,9 @@ export default function FridayNightclubsLondonPage() {
             'Friday Nightclubs in London: Where to Go This Friday',
             'The best London nightclubs open on Friday nights with booking tips, pricing, and insider advice.',
             '/friday-nightclubs-london',
-            '2025-06-01'
+            DATE_PUBLISHED,
+            DATE_MODIFIED
           ),
-          getFAQSchema(faqs),
           getBreadcrumbSchema([
             { name: 'Home', url: '/' },
             { name: 'Friday Night Clubs', url: '/friday-nightclubs-london' },

@@ -21,10 +21,8 @@ export {
   WEBSITE_ID,
   getArticleSchema,
   getBreadcrumbSchema,
-  getFAQSchema,
+  getClubPageSchema,
   getItemListSchema,
-  getLocalBusinessSchema,
-  getNightClubSchema,
   getOrganizationSchema,
   getWebSiteSchema,
 } from '@/lib/schema';

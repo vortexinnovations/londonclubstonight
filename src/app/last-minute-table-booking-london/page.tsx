@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { getLastMinuteTableClubs, getClubsOpenTonight, getCurrentDayName } from '@/lib/clubs';
 import TonightClubCard from '@/components/TonightClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
-import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/components/SchemaMarkup';
+import SchemaMarkup, { getArticleSchema, getBreadcrumbSchema } from '@/components/SchemaMarkup';
 
 export const revalidate = 3600;
 
@@ -72,6 +72,11 @@ const faqs = [
   },
 ];
 
+// This page's real dates for its Article markup. Change DATE_MODIFIED when the
+// page's content changes; never use the build or request time.
+const DATE_PUBLISHED = '2026-03-25';
+const DATE_MODIFIED = '2026-11-04';
+
 export default function LastMinuteTableBookingPage() {
   const dayName = getCurrentDayName();
   const lastMinuteClubs = getLastMinuteTableClubs();
@@ -79,15 +84,14 @@ export default function LastMinuteTableBookingPage() {
   const lastMinuteTonight = lastMinuteClubs.filter((c) =>
     tonightClubs.some((tc) => tc.slug === c.slug)
   );
-  const now = new Date().toISOString();
 
   const articleSchema = getArticleSchema(
     'Last Minute Table Booking London: Book a VIP Table Tonight',
     'Same-day VIP table bookings at London clubs. Live availability, pricing, and instant confirmation.',
     '/last-minute-table-booking-london',
-    '2025-01-15'
+    DATE_PUBLISHED,
+    DATE_MODIFIED
   );
-  const faqSchema = getFAQSchema(faqs);
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Home', url: '/' },
     { name: 'Last Minute Table Booking', url: '/last-minute-table-booking-london' },
@@ -95,7 +99,7 @@ export default function LastMinuteTableBookingPage() {
 
   return (
     <main className="min-h-screen text-white">
-      <SchemaMarkup schema={[articleSchema, faqSchema, breadcrumbSchema]} />
+      <SchemaMarkup schema={[articleSchema, breadcrumbSchema]} />
 
       {/* Hero */}
       <section className="relative min-h-[40vh] flex items-end overflow-hidden">
@@ -122,12 +126,9 @@ export default function LastMinuteTableBookingPage() {
             major London club and confirm your booking via WhatsApp in minutes.
             No deposits, no booking fees, no hassle.
           </p>
-          <time
-            dateTime={now}
-            className="animate-fade-up anim-delay-3 inline-block text-xs text-frost-300 mb-10"
-          >
-            Updated {new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/London' })}
-          </time>
+          <p className="animate-fade-up anim-delay-3 inline-block text-xs text-frost-300 mb-10">
+            Open tonight, {dayName}
+          </p>
         </div>
       </section>
 

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
-import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
+import SchemaMarkup, { getArticleSchema } from '@/components/SchemaMarkup';
 import { fitTitle, SITE_NAME } from '@/lib/metadata';
 
 export const metadata: Metadata = {
@@ -62,6 +62,11 @@ const faqs = [
   },
 ];
 
+// This page's real dates for its Article markup. Change DATE_MODIFIED when the
+// page's content changes; never use the build or request time.
+const DATE_PUBLISHED = '2026-03-25';
+const DATE_MODIFIED = '2026-11-22';
+
 export default function HowToGetInPage() {
   return (
     <>
@@ -71,9 +76,9 @@ export default function HowToGetInPage() {
             'Guestlists & Table Bookings: The Complete Guide to London Clubs',
             'The complete guide to guestlists, table bookings, dress codes, and everything you need to plan your night at London clubs.',
             '/guides/how-to-get-into-london-clubs',
-            '2025-01-01'
+            DATE_PUBLISHED,
+            DATE_MODIFIED
           ),
-          getFAQSchema(faqs),
         ]}
       />
 

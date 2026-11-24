@@ -1,6 +1,8 @@
 import { ImageResponse } from 'next/og';
 
-export const size = { width: 32, height: 32 };
+// 48 by 48: Google Search asks for a square favicon whose side is a multiple
+// of 48 pixels (the same design as before, scaled up from 32).
+export const size = { width: 48, height: 48 };
 export const contentType = 'image/png';
 
 export default function Icon() {
@@ -8,18 +10,18 @@ export default function Icon() {
     (
       <div
         style={{
-          width: 32,
-          height: 32,
+          width: 48,
+          height: 48,
           background: 'linear-gradient(135deg, #1e1a2c 0%, #07060b 100%)',
-          borderRadius: 8,
+          borderRadius: 12,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          border: '1px solid #8b5cf6',
+          border: '1.5px solid #8b5cf6',
           fontFamily: 'Arial, sans-serif',
           fontWeight: 'bold',
-          fontSize: 13,
-          letterSpacing: -0.5,
+          fontSize: 20,
+          letterSpacing: -0.75,
           color: '#e879f9',
         }}
       >

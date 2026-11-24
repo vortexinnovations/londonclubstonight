@@ -11,7 +11,7 @@ import {
   weeklyHours,
 } from '@/lib/clubs';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
-import SchemaMarkup, { getFAQSchema, getNightClubSchema } from '@/components/SchemaMarkup';
+import SchemaMarkup, { getClubPageSchema } from '@/components/SchemaMarkup';
 import type { Metadata, ResolvingMetadata } from 'next';
 import { fitTitle, siteImage } from '@/lib/metadata';
 
@@ -153,7 +153,7 @@ export default async function ClubPage({
   const week = !notBookable && club.hours?.length ? weeklyHours(club) : [];
   const hoursLabel = notBookable ? null : sharedHoursLabel(club);
 
-  const schema = getNightClubSchema(
+  const schema = getClubPageSchema(
     club.name,
     club.description,
     club.address,
@@ -164,7 +164,6 @@ export default async function ClubPage({
   return (
     <main className="min-h-screen">
       <SchemaMarkup schema={schema} />
-      {!notBookable && club.entryGuide && <SchemaMarkup schema={getFAQSchema(club.entryGuide.faqs)} />}
 
       {/* Breadcrumb */}
       <div className="max-w-5xl mx-auto px-6 sm:px-8 pt-6 pb-2">

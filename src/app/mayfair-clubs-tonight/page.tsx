@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { getClubsOpenTonight, getCurrentDayName } from '@/lib/clubs';
 import TonightClubCard from '@/components/TonightClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
-import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/components/SchemaMarkup';
+import SchemaMarkup, { getArticleSchema, getBreadcrumbSchema } from '@/components/SchemaMarkup';
 
 export const revalidate = 3600;
 
@@ -69,6 +69,11 @@ const faqs = [
   },
 ];
 
+// This page's real dates for its Article markup. Change DATE_MODIFIED when the
+// page's content changes; never use the build or request time.
+const DATE_PUBLISHED = '2026-03-25';
+const DATE_MODIFIED = '2026-10-21';
+
 export default function MayfairClubsTonightPage() {
   const dayName = getCurrentDayName();
   const allTonightClubs = getClubsOpenTonight();
@@ -76,15 +81,14 @@ export default function MayfairClubsTonightPage() {
     c.areas.includes('Mayfair')
   );
   const guestlistClubs = mayfairClubs.filter((c) => c.guestlistRealistic);
-  const now = new Date().toISOString();
 
   const articleSchema = getArticleSchema(
     'Mayfair Clubs Tonight: What\'s Open in Mayfair Tonight',
     'Guide to Mayfair clubs open tonight with guestlist availability, table bookings, and insider tips.',
     '/mayfair-clubs-tonight',
-    '2025-01-15'
+    DATE_PUBLISHED,
+    DATE_MODIFIED
   );
-  const faqSchema = getFAQSchema(faqs);
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Home', url: '/' },
     { name: 'Tonight', url: '/clubs-tonight-london' },
@@ -93,7 +97,7 @@ export default function MayfairClubsTonightPage() {
 
   return (
     <main className="min-h-screen text-white">
-      <SchemaMarkup schema={[articleSchema, faqSchema, breadcrumbSchema]} />
+      <SchemaMarkup schema={[articleSchema, breadcrumbSchema]} />
 
       {/* Hero */}
       <section className="relative min-h-[40vh] flex items-end overflow-hidden">
@@ -118,12 +122,9 @@ export default function MayfairClubsTonightPage() {
           <p className="animate-fade-up anim-delay-2 text-lg md:text-xl text-frost-100/85 max-w-2xl mx-auto leading-relaxed mb-4">
             The guide to which Mayfair clubs open tonight on their regular nights, which ones take guestlist, and where same-night tables are easiest. Message our team on WhatsApp for tonight&apos;s availability.
           </p>
-          <time
-            dateTime={now}
-            className="animate-fade-up anim-delay-3 inline-block text-xs text-frost-300 mb-10"
-          >
-            Updated {new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/London' })}
-          </time>
+          <p className="animate-fade-up anim-delay-3 inline-block text-xs text-frost-300 mb-10">
+            Open tonight, {dayName}
+          </p>
         </div>
       </section>
 

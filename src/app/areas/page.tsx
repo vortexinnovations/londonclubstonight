@@ -64,6 +64,11 @@ const areas = [
   },
 ];
 
+// This page's real dates for its Article markup. Change DATE_MODIFIED when the
+// page's content changes; never use the build or request time.
+const DATE_PUBLISHED = '2026-03-25';
+const DATE_MODIFIED = '2026-10-21';
+
 export default function AreasPage() {
   return (
     <>
@@ -72,7 +77,8 @@ export default function AreasPage() {
           'London Clubs by Area: Find the Best Nightlife Near You',
           'Explore London nightclubs by area including Mayfair, Soho, and central London.',
           '/areas',
-          '2025-01-01'
+          DATE_PUBLISHED,
+          DATE_MODIFIED
         )}
       />
 

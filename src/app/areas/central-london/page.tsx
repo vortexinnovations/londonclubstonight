@@ -56,6 +56,11 @@ const otherCentralClubs = centralLondonClubs.filter(
     !c.areas.includes('Piccadilly')
 );
 
+// This page's real dates for its Article markup. Change DATE_MODIFIED when the
+// page's content changes; never use the build or request time.
+const DATE_PUBLISHED = '2026-03-25';
+const DATE_MODIFIED = '2026-10-21';
+
 export default function CentralLondonPage() {
   return (
     <>
@@ -64,7 +69,8 @@ export default function CentralLondonPage() {
           'Best Clubs in Central London 2026: Mayfair, Soho, St James\'s & More',
           'Complete guide to central London nightclubs across Mayfair, Soho, St James\'s, and Piccadilly.',
           '/areas/central-london',
-          '2025-01-01'
+          DATE_PUBLISHED,
+          DATE_MODIFIED
         )}
       />
 

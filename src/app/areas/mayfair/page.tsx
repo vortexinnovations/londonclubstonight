@@ -43,6 +43,11 @@ export const metadata: Metadata = {
 
 const mayfairClubs = getClubsByArea('Mayfair');
 
+// This page's real dates for its Article markup. Change DATE_MODIFIED when the
+// page's content changes; never use the build or request time.
+const DATE_PUBLISHED = '2026-03-25';
+const DATE_MODIFIED = '2026-10-21';
+
 export default function MayfairPage() {
   return (
     <>
@@ -51,7 +56,8 @@ export default function MayfairPage() {
           'Best Clubs in Mayfair 2026: The Heart of London\'s Luxury Nightlife',
           'The definitive guide to Mayfair nightclubs including Tape, Maddox, Rumour, 99 Regent Street and more.',
           '/areas/mayfair',
-          '2025-01-01'
+          DATE_PUBLISHED,
+          DATE_MODIFIED
         )}
       />
 

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { getOpenClubs, closesLabel } from '@/lib/clubs';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import TonightClubCard from '@/components/TonightClubCard';
-import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/components/SchemaMarkup';
+import SchemaMarkup, { getArticleSchema, getBreadcrumbSchema } from '@/components/SchemaMarkup';
 
 export const revalidate = 3600;
 
@@ -81,6 +81,11 @@ function parseClosingTime(closingTime: string): number {
   return hours * 60 + minutes;
 }
 
+// This page's real dates for its Article markup. Change DATE_MODIFIED when the
+// page's content changes; never use the build or request time.
+const DATE_PUBLISHED = '2026-03-25';
+const DATE_MODIFIED = '2026-10-21';
+
 export default function LateNightClubsLondonTonightPage() {
   const openClubs = getOpenClubs();
   const sortedByClosing = [...openClubs].sort(
@@ -95,9 +100,9 @@ export default function LateNightClubsLondonTonightPage() {
             'Late Night Clubs in London Tonight: Open Until 3am, 4am & Beyond',
             'Which London clubs stay open latest tonight? Sorted by closing time with transport advice and insider tips.',
             '/late-night-clubs-london-tonight',
-            '2025-06-01'
+            DATE_PUBLISHED,
+            DATE_MODIFIED
           ),
-          getFAQSchema(faqs),
           getBreadcrumbSchema([
             { name: 'Home', url: '/' },
             { name: 'Late Night Clubs Tonight', url: '/late-night-clubs-london-tonight' },

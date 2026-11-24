@@ -9,7 +9,7 @@ import {
 } from '@/lib/clubs';
 import TonightClubCard from '@/components/TonightClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
-import SchemaMarkup, { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getItemListSchema } from '@/components/SchemaMarkup';
+import SchemaMarkup, { getArticleSchema, getBreadcrumbSchema, getItemListSchema } from '@/components/SchemaMarkup';
 
 export const revalidate = 3600;
 
@@ -71,6 +71,11 @@ const faqs = [
   },
 ];
 
+// This page's real dates for its Article markup. Change DATE_MODIFIED when the
+// page's content changes; never use the build or request time.
+const DATE_PUBLISHED = '2026-03-25';
+const DATE_MODIFIED = '2026-10-21';
+
 export default function GuestlistTonightLondonPage() {
   const dayName = getCurrentDayName();
   const tonightClubs = getClubsOpenTonight();
@@ -81,15 +86,14 @@ export default function GuestlistTonightLondonPage() {
   const nonGuestlistTonight = tonightClubs.filter(
     (c) => !c.guestlistRealistic
   );
-  const now = new Date().toISOString();
 
   const articleSchema = getArticleSchema(
     'Get on a Guestlist Tonight in London: Same-Night Guestlist Access',
     'How to get on a London club guestlist tonight. Live availability and insider tips for same-night entry.',
     '/guestlist-tonight-london',
-    '2025-01-15'
+    DATE_PUBLISHED,
+    DATE_MODIFIED
   );
-  const faqSchema = getFAQSchema(faqs);
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Home', url: '/' },
     { name: 'Guestlist Tonight', url: '/guestlist-tonight-london' },
@@ -101,7 +105,7 @@ export default function GuestlistTonightLondonPage() {
 
   return (
     <main className="min-h-screen text-white">
-      <SchemaMarkup schema={[articleSchema, faqSchema, breadcrumbSchema, itemListSchema]} />
+      <SchemaMarkup schema={[articleSchema, breadcrumbSchema, itemListSchema]} />
 
       {/* Hero */}
       <section className="relative min-h-[40vh] flex items-end overflow-hidden">
@@ -128,12 +132,9 @@ export default function GuestlistTonightLondonPage() {
             what the ratio requirements actually are, and how to maximise
             your chances of getting through the door without a table booking.
           </p>
-          <time
-            dateTime={now}
-            className="animate-fade-up anim-delay-3 inline-block text-xs text-frost-300 mb-10"
-          >
-            Updated {new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/London' })}
-          </time>
+          <p className="animate-fade-up anim-delay-3 inline-block text-xs text-frost-300 mb-10">
+            Open tonight, {dayName}
+          </p>
         </div>
       </section>
 
