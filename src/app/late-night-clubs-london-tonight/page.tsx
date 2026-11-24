@@ -321,12 +321,6 @@ export default function LateNightClubsLondonTonightPage() {
             >
               Guestlist Tonight
             </Link>
-            <Link
-              href="/best-clubs-for-last-minute-tables-london"
-              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white transition-colors text-sm"
-            >
-              Best Last Minute Table Clubs
-            </Link>
           </div>
         </div>
       </section>

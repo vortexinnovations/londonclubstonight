@@ -104,7 +104,7 @@ export default function GuestlistTonightLondonPage() {
   );
 
   return (
-    <main className="min-h-screen text-white">
+    <div className="min-h-screen text-white">
       <SchemaMarkup schema={[articleSchema, breadcrumbSchema, itemListSchema]} />
 
       {/* Hero */}
@@ -412,6 +412,6 @@ export default function GuestlistTonightLondonPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

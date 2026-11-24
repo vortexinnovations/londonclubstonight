@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { getOpenClubs } from '@/lib/clubs';
+import { getClosedClubs, getOpenClubs } from '@/lib/clubs';
 import ClubCard from '@/components/ClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import type { Metadata } from 'next';
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 
 export default function ClubsPage() {
   return (
-    <main className="min-h-screen">
+    <div className="min-h-screen">
       {/* Breadcrumb */}
       <div className="max-w-6xl mx-auto px-6 sm:px-8 pt-6 pb-2">
         <nav className="flex items-center gap-2 text-sm text-frost-400">
@@ -82,6 +82,25 @@ export default function ClubsPage() {
             />
           ))}
         </div>
+      </section>
+
+      {/* Closed venues: their pages stay up for anyone still searching for them */}
+      <section className="max-w-6xl mx-auto px-6 sm:px-8 pb-20">
+        <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mb-3">
+          Closed Venues
+        </h2>
+        <p className="text-frost-300 mb-6 max-w-2xl">
+          These clubs have closed. Their pages are kept for reference, with open clubs to try instead.
+        </p>
+        <ul className="flex flex-wrap gap-3">
+          {getClosedClubs().map((club) => (
+            <li key={club.slug}>
+              <Link href={`/clubs/${club.slug}`} className="btn-ghost px-5 py-2.5 text-sm text-white">
+                {club.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </section>
 
       {/* CTA */}
@@ -142,6 +161,6 @@ export default function ClubsPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

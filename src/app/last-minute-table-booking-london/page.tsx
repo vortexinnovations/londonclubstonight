@@ -98,7 +98,7 @@ export default function LastMinuteTableBookingPage() {
   ]);
 
   return (
-    <main className="min-h-screen text-white">
+    <div className="min-h-screen text-white">
       <SchemaMarkup schema={[articleSchema, breadcrumbSchema]} />
 
       {/* Hero */}
@@ -465,6 +465,6 @@ export default function LastMinuteTableBookingPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

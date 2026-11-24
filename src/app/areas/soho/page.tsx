@@ -157,7 +157,7 @@ export default function SohoPage() {
         ]}
       />
 
-      <main className="min-h-screen">
+      <div className="min-h-screen">
         {/* Hero */}
         <section className="relative min-h-[40vh] flex items-end overflow-hidden">
           <Image
@@ -462,7 +462,7 @@ export default function SohoPage() {
             </div>
           </div>
         </section>
-      </main>
+      </div>
     </>
   );
 }

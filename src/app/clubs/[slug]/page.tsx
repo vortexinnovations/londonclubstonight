@@ -26,6 +26,11 @@ export function generateStaticParams() {
 // Bisou has no photos of its own yet, so its shared links show the site card too.
 const SITE_CARD_CLUBS = new Set(['the-box-london', 'selene-london', 'lio-london', 'bisou-mayfair']);
 
+// Guides on this site about one club, linked from that club's page.
+const CLUB_GUIDES: Record<string, { href: string; label: string }> = {
+  'tape-london': { href: '/can-you-get-into-tape-london-tonight', label: 'Can you get into Tape London tonight?' },
+};
+
 export async function generateMetadata({
   params,
 }: {
@@ -152,6 +157,7 @@ export default async function ClubPage({
   // Night-by-night hours, only for venues whose hours we publish precisely.
   const week = !notBookable && club.hours?.length ? weeklyHours(club) : [];
   const hoursLabel = notBookable ? null : sharedHoursLabel(club);
+  const clubGuide = notBookable ? undefined : CLUB_GUIDES[club.slug];
 
   const schema = getClubPageSchema(
     club.name,
@@ -162,7 +168,7 @@ export default async function ClubPage({
   );
 
   return (
-    <main className="min-h-screen">
+    <div className="min-h-screen">
       <SchemaMarkup schema={schema} />
 
       {/* Breadcrumb */}
@@ -375,6 +381,17 @@ export default async function ClubPage({
                   </span>
                 ))}
                 , which we also book.
+              </p>
+            )}
+            {clubGuide && (
+              <p className="text-frost-300 leading-relaxed text-base md:text-lg">
+                Going tonight? See our guide:{' '}
+                <Link
+                  href={clubGuide.href}
+                  className="text-neon-300 underline underline-offset-4 hover:text-white transition-colors"
+                >
+                  {clubGuide.label}
+                </Link>
               </p>
             )}
           </div>
@@ -612,7 +629,7 @@ export default async function ClubPage({
 
       {/* Sticky mobile CTA */}
       {!notBookable && <WhatsAppCTA clubName={club.name} variant="sticky" tableOnly={club.noGuestlist} />}
-    </main>
+    </div>
   );
 }
 

@@ -108,7 +108,7 @@ export default function BestClubsInLondonPage() {
   );
 
   return (
-    <main className="min-h-screen text-white">
+    <div className="min-h-screen text-white">
       <SchemaMarkup schema={articleSchema} />
 
       {/* Hero */}
@@ -369,10 +369,10 @@ export default function BestClubsInLondonPage() {
               </li>
               <li>
                 <Link
-                  href="/areas/fitzrovia"
+                  href="/areas/central-london"
                   className="text-frost-300 hover:text-white transition-colors text-sm"
                 >
-                  Best clubs in Fitzrovia &rarr;
+                  Best clubs in central London &rarr;
                 </Link>
               </li>
             </ul>
@@ -382,7 +382,7 @@ export default function BestClubsInLondonPage() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/guides/music-genres"
+                  href="/guides/london-clubs-by-music-genre"
                   className="text-frost-300 hover:text-white transition-colors text-sm"
                 >
                   London clubs by music genre &rarr;
@@ -448,6 +448,6 @@ export default function BestClubsInLondonPage() {
           <WhatsAppCTA variant="inline" />
         </div>
       </section>
-    </main>
+    </div>
   );
 }

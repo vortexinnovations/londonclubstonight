@@ -63,7 +63,7 @@ export default async function BlogPage() {
   };
 
   return (
-    <main className="min-h-screen">
+    <div className="min-h-screen">
       <SchemaMarkup schema={blogListSchema} />
 
       {/* Header */}
@@ -188,6 +188,6 @@ export default async function BlogPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

@@ -2994,7 +2994,7 @@ export default async function BlogPostPage({
   );
 
   return (
-    <main className="min-h-screen">
+    <div className="min-h-screen">
       <SchemaMarkup schema={articleSchema} />
 
       <article className="relative overflow-x-clip pt-24 pb-16 px-4 sm:px-6">
@@ -3174,6 +3174,6 @@ export default async function BlogPostPage({
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

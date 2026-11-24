@@ -109,7 +109,7 @@ export default function ClubsTonightLondonPage() {
   );
 
   return (
-    <main className="min-h-screen text-white">
+    <div className="min-h-screen text-white">
       <SchemaMarkup schema={[articleSchema, breadcrumbSchema, itemListSchema]} />
 
       {/* Hero */}
@@ -477,6 +477,6 @@ export default function ClubsTonightLondonPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

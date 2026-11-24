@@ -352,12 +352,6 @@ export default function CanYouGetIntoTapeLondonTonightPage() {
             >
               Last Minute Tables
             </Link>
-            <Link
-              href="/best-clubs-for-last-minute-tables-london"
-              className="glass-card glass-card-hover px-6 py-3 text-frost-300 hover:text-white text-sm"
-            >
-              Best Clubs for Last Minute Tables
-            </Link>
           </div>
         </div>
       </section>
