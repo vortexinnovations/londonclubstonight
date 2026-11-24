@@ -69,7 +69,7 @@ describe('sitemap', () => {
     '/areas/soho',
     '/areas',
     '/contact',
-    '/about-the-editor',
+    '/about',
     '/privacy',
     '/blog',
     '/clubs-tonight-london',

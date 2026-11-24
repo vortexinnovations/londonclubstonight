@@ -23,6 +23,7 @@ import {
   WHATSAPP_TABLE_NUMBER,
 } from '@/lib/clubs';
 import { blogPosts, getBlogPostBySlug, type BlogPost } from '@/lib/blog';
+import { ABOUT_PATH, CORRECTIONS, HOW_WE_WRITE, HOW_WE_WRITE_HREF, WHO_RUNS_US } from '@/lib/about';
 import {
   SITE_URL,
   getStaticRoute,
@@ -203,7 +204,7 @@ export function staticRouteMarkdown(route: SiteRoute, posts: BlogPost[] = blogPo
       sections.push(
         '## What this site is',
         '',
-        `${BRAND} is a London nightlife guide and booking concierge run by promoters who work the doors. It covers which clubs are open tonight, what each venue is actually like, and how to get a table or onto the guestlist.`,
+        `${BRAND} is a London nightlife guide and booking service, run by a London nightlife booking team. It covers which clubs are open tonight, what each venue is actually like, and how to get a table or onto the guestlist.`,
         '',
         ...listSection(`Clubs open tonight (${getOpenClubs().length})`, getOpenClubs()),
         '## Start here',
@@ -247,6 +248,21 @@ export function staticRouteMarkdown(route: SiteRoute, posts: BlogPost[] = blogPo
         ...routesInSection('guides')
           .filter((r) => r.path !== '/guides')
           .map((r) => `- [${r.title}](${SITE_URL}${r.path}): ${r.description}`),
+        ''
+      );
+      break;
+
+    case ABOUT_PATH:
+      sections.push(
+        `## Who runs ${BRAND}`,
+        '',
+        ...WHO_RUNS_US.flatMap((text) => [text, '']),
+        '## How we write',
+        '',
+        ...HOW_WE_WRITE.flatMap((text) => [text, '']),
+        '## Corrections',
+        '',
+        CORRECTIONS,
         ''
       );
       break;
@@ -369,9 +385,9 @@ export function llmsTxt(posts: BlogPost[] = blogPosts): string {
   return [
     `# ${BRAND}`,
     '',
-    `> An independent London nightlife guide and booking concierge. It documents ${clubs.length} London nightclubs (dress codes, table minimums, closing times, music policy, crowd, and realistic door odds) and arranges VIP tables and guestlist places over WhatsApp at no charge to the guest.`,
+    `> A guide to London nightclubs, run by a London nightlife booking team. It documents ${clubs.length} London nightclubs (dress codes, table minimums, closing times, music policy, crowd, and realistic door odds) and arranges VIP tables and guestlist places over WhatsApp at no charge to the guest; the team earns a commission when a booking it arranges goes ahead.`,
     '',
-    `Editorial is written by promoters working London doors, led by Daniel Whitaker (see ${SITE_URL}/about-the-editor). Venue facts such as table minimums and closing times change with the season; treat figures as indicative and confirm before quoting them as final.`,
+    `Pages are credited to the ${BRAND} team, which writes and updates the guides with the help of AI tools, from what venues announce, published listings and news reports, and the prices and door policies its booking desk works with (see ${SITE_URL}${HOW_WE_WRITE_HREF}). Venue facts such as table minimums and closing times change with the season; treat figures as indicative and confirm before quoting them as final.`,
     '',
     '## When to use this site',
     '',

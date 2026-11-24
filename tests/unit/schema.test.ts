@@ -2,10 +2,10 @@ import { test, describe } from 'node:test';
 import assert from 'node:assert/strict';
 
 import {
-  EDITOR_ID,
   ORGANIZATION_ID,
   WEBSITE_ID,
   getLocalBusinessSchema,
+  getArticleSchema,
   getOrganizationSchema,
   getWebSiteSchema,
 } from '../../src/lib/schema.ts';
@@ -38,8 +38,14 @@ describe('entity graph', () => {
     assert.deepEqual(business.parentOrganization, { '@id': ORGANIZATION_ID });
   });
 
-  test('the organization links the named editor', () => {
-    assert.deepEqual(organization.employee, { '@id': EDITOR_ID });
+  test('the organization names no individual editor', () => {
+    assert.equal(organization.employee, undefined);
+  });
+
+  test('articles credit the team by name, not a bare @id', () => {
+    const article = getArticleSchema('T', 'D', '/x', '2026-03-25', '2026-03-25') as Record<string, unknown>;
+    assert.deepEqual(article.author, { '@type': 'Organization', name: 'London Clubs Tonight', url: 'https://londonclubstonight.com/about' });
+    assert.deepEqual(article.publisher, { '@id': ORGANIZATION_ID });
   });
 
   test('the brand declares an alternateName for entity matching', () => {

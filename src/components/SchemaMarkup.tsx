@@ -17,7 +17,6 @@ export default function SchemaMarkup({ schema }: SchemaMarkupProps) {
 // The JSON-LD builders live in @/lib/schema (plain data, no JSX runtime).
 // Re-exported here so existing `from '@/components/SchemaMarkup'` imports keep working.
 export {
-  EDITOR_ID,
   ORGANIZATION_ID,
   WEBSITE_ID,
   getArticleSchema,

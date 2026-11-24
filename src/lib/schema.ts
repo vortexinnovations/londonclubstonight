@@ -12,7 +12,16 @@ const SITE = 'https://londonclubstonight.com';
  *  nodes resolve to one brand rather than three unrelated things. */
 export const ORGANIZATION_ID = `${SITE}/#organization`;
 export const WEBSITE_ID = `${SITE}/#website`;
-export const EDITOR_ID = `${SITE}/about-the-editor/#author-daniel`;
+
+/**
+ * Who wrote a page, as Article markup names it: the site's team, with its name
+ * inline (an author given only as an @id has no name where the node is missing).
+ */
+export const TEAM_AUTHOR = {
+  '@type': 'Organization',
+  name: 'London Clubs Tonight',
+  url: `${SITE}/about`,
+} as const;
 
 export function getLocalBusinessSchema() {
   return {
@@ -49,7 +58,7 @@ export function getArticleSchema(title: string, description: string, url: string
     url: `${SITE}${url}`,
     datePublished: datePublished,
     dateModified: dateModified ?? new Date().toISOString().split('T')[0],
-    author: { '@id': ORGANIZATION_ID },
+    author: TEAM_AUTHOR,
     publisher: { '@id': ORGANIZATION_ID },
   };
 }
@@ -96,7 +105,6 @@ export function getOrganizationSchema() {
       'Nightclub guestlists',
       'Mayfair clubs',
     ],
-    employee: { '@id': EDITOR_ID },
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'reservations',

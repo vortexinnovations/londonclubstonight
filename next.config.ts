@@ -11,6 +11,9 @@ const nextConfig: NextConfig = {
       { source: "/clubs/tabu-london", destination: "/clubs/rumour-london", permanent: true },
       { source: "/md/clubs/cuckoo-club", destination: "/md/clubs/99-regent-street", permanent: true },
       { source: "/md/clubs/tabu-london", destination: "/md/clubs/rumour-london", permanent: true },
+      // The editor persona page is retired (November 2026): pages are credited to the team.
+      { source: "/about-the-editor", destination: "/about", permanent: true },
+      { source: "/md/about-the-editor", destination: "/md/about", permanent: true },
     ];
   },
   async rewrites() {

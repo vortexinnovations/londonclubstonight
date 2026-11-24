@@ -1,4 +1,4 @@
-import { escapedHtml, safeLinks, safeJsonLd } from "@/lib/safe-output";
+import { escapedHtml, safeLinks } from "@/lib/safe-output";
 import type { Metadata, ResolvingMetadata } from 'next';
 import { fitTitle, siteImage } from '@/lib/metadata';
 import Link from 'next/link';
@@ -11,6 +11,7 @@ import ClubCard from '@/components/ClubCard';
 import WhatsAppCTA from '@/components/WhatsAppCTA';
 import { ArticlePreferredSourcePrompt } from '@/components/PreferredSourceButton';
 import SchemaMarkup, { getArticleSchema, getFAQSchema } from '@/components/SchemaMarkup';
+import { HOW_WE_WRITE_HREF, TEAM_NAME } from '@/lib/about';
 
 // Database posts are plain Markdown; raw HTML shows as text and only safe link schemes render.
 marked.use(escapedHtml, safeLinks);
@@ -2225,10 +2226,6 @@ function getPostContent(slug: string): React.ReactNode {
     case 'getting-home-from-london-clubs':
       return (
         <>
-          <p className="text-frost-300 leading-relaxed mb-4 text-sm italic">
-            By <Link href="/about-the-editor" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Daniel Whitaker</Link>, Nightlife Scout | Last updated: 5 May 2026
-          </p>
-
           <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mt-10 mb-4">The 3am Problem Every London Clubber Faces</h2>
           <p className="text-frost-300 leading-relaxed mb-4">
             You have had a great night. The music was right, the crowd was right, and you stayed until the lights came on. Now you are standing outside a club at 3am, phone battery at 12 per cent, and you need to get home. It happens every single weekend, and plenty of people handle it badly - standing in one spot refreshing Uber while the surge price climbs, or wandering towards a tube station that closed two hours ago.
@@ -2318,30 +2315,6 @@ function getPostContent(slug: string): React.ReactNode {
           <p className="text-frost-300 leading-relaxed mb-4">
             <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Message us on WhatsApp</a>{" "}and we will sort everything for you, from the guestlist to the journey home.
           </p>
-
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Getting Home from London Clubs - Transport Options That Work After 3am",
-            "datePublished": "2026-05-05",
-            "dateModified": "2026-05-05",
-            "author": {
-              "@type": "Person",
-              "name": "Daniel Whitaker",
-              "url": "https://londonclubstonight.com/about-the-editor/",
-              "jobTitle": "Nightlife Scout"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "London Clubs Tonight",
-              "url": "https://londonclubstonight.com"
-            },
-            "image": "https://londonclubstonight.com/gallery/images/fe4414_03d0d58e1fb54eb885d6b4ae0986f483.jpg",
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://londonclubstonight.com/blog/getting-home-from-london-clubs"
-            }
-          }) }} />
         </>
       );
 
@@ -2351,10 +2324,6 @@ function getPostContent(slug: string): React.ReactNode {
     case 'last-minute-night-out-london':
       return (
         <>
-          <p className="text-frost-300 leading-relaxed mb-4 italic">
-            By <Link href="/about-the-editor" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Daniel Whitaker</Link>, Nightlife Scout | Last updated: 9 May 2026
-          </p>
-
           <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mt-10 mb-4">Why Last-Minute Nights Out Often Work Better</h2>
           <p className="text-frost-300 leading-relaxed mb-4">
             Guests we book tell us some of their best nights in London started with zero planning. A message at 7pm, a quick outfit change, and a group can be at <Link href="/clubs/tape-london" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Tape London</Link>{" "}by 11pm without a hitch. The idea that you need to plan days in advance to have a good night out is a myth, at least if you know what to do in the right order.
@@ -2438,30 +2407,6 @@ function getPostContent(slug: string): React.ReactNode {
           <p className="text-frost-300 leading-relaxed mb-4">
             If you&apos;re reading this and thinking about going out tonight, you&apos;re already ahead of most people. <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Message us on WhatsApp</a>{" "}and we&apos;ll tell you exactly where to go.
           </p>
-
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Last-Minute Night Out in London - How to Make It Happen Tonight",
-            "datePublished": "2026-05-09",
-            "dateModified": "2026-05-09",
-            "author": {
-              "@type": "Person",
-              "name": "Daniel Whitaker",
-              "url": "https://londonclubstonight.com/about-the-editor/",
-              "jobTitle": "Nightlife Scout"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "London Clubs Tonight",
-              "url": "https://londonclubstonight.com"
-            },
-            "image": "https://londonclubstonight.com/gallery/images/fe4414_1d5c45241bb044c2887a5aebe1a9cb59.jpg",
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://londonclubstonight.com/blog/last-minute-night-out-london"
-            }
-          }) }} />
         </>
       );
 
@@ -2471,10 +2416,6 @@ function getPostContent(slug: string): React.ReactNode {
     case 'late-night-food-after-london-clubs':
       return (
         <>
-          <p className="text-frost-300 leading-relaxed mb-4 italic">
-            By <Link href="/about-the-editor" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Daniel Whitaker</Link>, Nightlife Scout | Last updated: 16 May 2026
-          </p>
-
           <h2 className="font-display text-2xl font-extrabold tracking-tight text-white mt-10 mb-4">Closing Music Doesn&apos;t Switch Off Your Appetite</h2>
           <p className="text-frost-300 leading-relaxed mb-4">
             After two or three hours on the dancefloor and a few drinks, the first thing most people want at 3am is food, and the second thing is a fast way to find it. London has more late-night food than most visitors realise, but the genuinely good spots are clustered in a few specific areas, and the rubbish ones can flatten the end of an otherwise excellent night. This is the post-club food map we send our own groups when they message us asking where to eat after a night at <Link href="/clubs/tape-london" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Tape London</Link>, <Link href="/clubs/cirque-le-soir" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Cirque le Soir</Link>, or <Link href="/clubs/maddox" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Maddox Club</Link>.
@@ -2549,30 +2490,6 @@ function getPostContent(slug: string): React.ReactNode {
           <p className="text-frost-300 leading-relaxed mb-4">
             If you are not sure which venue suits your group tonight or what is open near it, <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">message us on WhatsApp</a>{" "}and we will sort the night end to end - guestlist on the way in, food map on the way out.
           </p>
-
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Late-Night Food in London After Clubs - Where to Eat When the Music Stops",
-            "datePublished": "2026-05-16",
-            "dateModified": "2026-05-16",
-            "author": {
-              "@type": "Person",
-              "name": "Daniel Whitaker",
-              "url": "https://londonclubstonight.com/about-the-editor/",
-              "jobTitle": "Nightlife Scout"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "London Clubs Tonight",
-              "url": "https://londonclubstonight.com"
-            },
-            "image": "https://londonclubstonight.com/gallery/images/fe4414_2a1a2ccb69d84f499c63c22504715c1e.jpg",
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://londonclubstonight.com/blog/late-night-food-after-london-clubs"
-            }
-          }) }} />
         </>
       );
 
@@ -2582,9 +2499,6 @@ function getPostContent(slug: string): React.ReactNode {
     case 'day-parties-in-london':
       return (
         <>
-          <p className="text-frost-300 leading-relaxed mb-4 italic">
-            By <Link href="/about-the-editor" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Daniel Whitaker</Link>, Nightlife Scout | Last updated: 9 June 2026
-          </p>
 
           <p className="text-frost-300 leading-relaxed mb-4">
             London does not get many genuinely warm weekends, so when the sun finally holds for a Saturday, the city changes gear completely. The day party scene wakes up, rooftops and warehouses fill from the early afternoon, and the people who plan ahead end up having the best summer days out in the city. This is our guide to how day parties work in London, where they happen, and how to find the good ones, based on years of running our own groups through summer after summer.
@@ -2643,30 +2557,6 @@ function getPostContent(slug: string): React.ReactNode {
           <p className="text-frost-300 leading-relaxed mb-4">
             Tell us your weekend and your group size and we will line up the right day event and the right club to roll into afterwards. <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Message us on WhatsApp</a>{" "}and we&apos;ll sort the day end to end, guestlist included.
           </p>
-
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Day Parties in London: Where to Go When the Sun Is Out",
-            "datePublished": "2026-06-09",
-            "dateModified": "2026-06-09",
-            "author": {
-              "@type": "Person",
-              "name": "Daniel Whitaker",
-              "url": "https://londonclubstonight.com/about-the-editor/",
-              "jobTitle": "Nightlife Scout"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "London Clubs Tonight",
-              "url": "https://londonclubstonight.com"
-            },
-            "image": "https://londonclubstonight.com/gallery/images/fe4414_002538ddacfe4ce1a4fe89fa0e8305ae.jpg",
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://londonclubstonight.com/blog/day-parties-in-london"
-            }
-          }) }} />
         </>
       );
 
@@ -2676,9 +2566,6 @@ function getPostContent(slug: string): React.ReactNode {
     case 'uk-garage-nights-london':
       return (
         <>
-          <p className="text-frost-300 leading-relaxed mb-4 italic">
-            By <Link href="/about-the-editor" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Daniel Whitaker</Link>, Nightlife Scout | Last updated: 10 June 2026
-          </p>
 
           <p className="text-frost-300 leading-relaxed mb-4">
             UK garage is London&apos;s own sound. It came up through the city&apos;s pirate radio and south London Sunday sessions in the nineties, conquered the charts, went underground again, and never actually left the dancefloors. Ask anyone who works nights in this city: the moment a DJ drops a garage classic, the room lifts in a way almost nothing else manages. This guide covers where UKG actually lives in London right now, what the nights feel like, and how to catch the right one.
@@ -2746,39 +2633,12 @@ function getPostContent(slug: string): React.ReactNode {
             <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Message us on WhatsApp</a>{" "}
             and we&apos;ll sort it end to end.
           </p>
-
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "UK Garage Nights in London: Where the Sound Still Lives",
-            "datePublished": "2026-06-10",
-            "dateModified": "2026-06-10",
-            "author": {
-              "@type": "Person",
-              "name": "Daniel Whitaker",
-              "url": "https://londonclubstonight.com/about-the-editor/",
-              "jobTitle": "Nightlife Scout"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "London Clubs Tonight",
-              "url": "https://londonclubstonight.com"
-            },
-            "image": "https://londonclubstonight.com/gallery/images/fe4414_912daead5f6e44e091a08db6c280fff0.jpg",
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://londonclubstonight.com/blog/uk-garage-nights-london"
-            }
-          }) }} />
         </>
       );
 
     case 'latin-reggaeton-nights-london':
       return (
         <>
-          <p className="text-frost-300 leading-relaxed mb-4 italic">
-            By <Link href="/about-the-editor" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Daniel Whitaker</Link>, Nightlife Scout | Last updated: 11 June 2026
-          </p>
 
           <p className="text-frost-300 leading-relaxed mb-4">
             Reggaeton is one of the biggest sounds on the planet, and London caught up properly years ago. The city now runs everything from full-scale latin parties in its biggest music rooms to salsa socials that have been going for decades, plus a steady stream of reggaeton inside the West End&apos;s open-format sets. The honest headline is that the scene is thriving but scattered: there is no single home for it, which is exactly why a guide helps. Here is how London&apos;s latin nightlife is organised, where the nights actually land, and how to pick the right one for your group.
@@ -2844,39 +2704,12 @@ function getPostContent(slug: string): React.ReactNode {
             <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Message us on WhatsApp</a>{" "}
             and we&apos;ll sort it end to end.
           </p>
-
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Latin and Reggaeton Nights in London: Where the Party Is",
-            "datePublished": "2026-06-11",
-            "dateModified": "2026-06-11",
-            "author": {
-              "@type": "Person",
-              "name": "Daniel Whitaker",
-              "url": "https://londonclubstonight.com/about-the-editor/",
-              "jobTitle": "Nightlife Scout"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "London Clubs Tonight",
-              "url": "https://londonclubstonight.com"
-            },
-            "image": "https://londonclubstonight.com/gallery/images/fe4414_e2f0482a8a69492e892195e6e4455f86.jpg",
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://londonclubstonight.com/blog/latin-reggaeton-nights-london"
-            }
-          }) }} />
         </>
       );
 
     case 'london-boat-parties':
       return (
         <>
-          <p className="text-frost-300 leading-relaxed mb-4 italic">
-            By <Link href="/about-the-editor" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Daniel Whitaker</Link>, Nightlife Scout | Last updated: 14 June 2026
-          </p>
 
           <p className="text-frost-300 leading-relaxed mb-4">
             For a few months each summer, some of the best nights out in London happen on the water. Thames boat parties are a fixture of the warm-weather calendar, and they are one of the few formats that genuinely feels different to a normal club night: a DJ, a few hundred people, and the city skyline sliding past the deck. The honest truth is that the experience swings wildly depending on which one you pick. Here is how London boat parties actually work, what to expect once you are on board, and how to find the good ones as of June 2026.
@@ -2941,39 +2774,12 @@ function getPostContent(slug: string): React.ReactNode {
             <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Message us on WhatsApp</a>{" "}
             and we&apos;ll handle it end to end.
           </p>
-
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "London Boat Parties: Summer Nights Out on the Thames",
-            "datePublished": "2026-06-14",
-            "dateModified": "2026-06-14",
-            "author": {
-              "@type": "Person",
-              "name": "Daniel Whitaker",
-              "url": "https://londonclubstonight.com/about-the-editor/",
-              "jobTitle": "Nightlife Scout"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "London Clubs Tonight",
-              "url": "https://londonclubstonight.com"
-            },
-            "image": "https://londonclubstonight.com/gallery/images/fe4414_4b25a078578f419581101465f5cd5a1b.jpg",
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://londonclubstonight.com/blog/london-boat-parties"
-            }
-          }) }} />
         </>
       );
 
     case 'notting-hill-carnival-after-parties':
       return (
         <>
-          <p className="text-frost-300 leading-relaxed mb-4 italic">
-            By <Link href="/about-the-editor" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Daniel Whitaker</Link>, Nightlife Scout | Last updated: 7 July 2026
-          </p>
 
           <p className="text-frost-300 leading-relaxed mb-4">
             One weekend a year, London nightlife reorganises itself around a single event. Notting Hill Carnival takes over west London on the August bank holiday weekend, Europe&apos;s biggest street festival by a distance, and what most first-timers never plan for is the night side of it. The parades and soundsystems are only half the story; when the streets wind down, the biggest after-party circuit in the country takes over. The weekend has a rhythm all of its own. Here is how carnival after dark actually works, and how to plan a weekend around it, as of 2026.</p>
@@ -3019,39 +2825,12 @@ function getPostContent(slug: string): React.ReactNode {
             <a href={WHATSAPP_GUESTLIST_LINK} target="_blank" rel="noopener noreferrer" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Message us on WhatsApp</a>{" "}
             and we&apos;ll sort carnival weekend end to end.
           </p>
-
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Notting Hill Carnival After Dark: How London\'s Biggest Weekend Plays Out",
-            "datePublished": "2026-07-07",
-            "dateModified": "2026-07-07",
-            "author": {
-              "@type": "Person",
-              "name": "Daniel Whitaker",
-              "url": "https://londonclubstonight.com/about-the-editor/",
-              "jobTitle": "Nightlife Scout"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "London Clubs Tonight",
-              "url": "https://londonclubstonight.com"
-            },
-            "image": "https://londonclubstonight.com/gallery/images/fe4414_92f7d4129dfa48ec911e2595a2317aac.jpg",
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://londonclubstonight.com/blog/notting-hill-carnival-after-parties"
-            }
-          }) }} />
         </>
       );
 
     case 'london-festival-after-parties':
       return (
         <>
-          <p className="text-frost-300 leading-relaxed mb-4 italic">
-            By <Link href="/about-the-editor" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Daniel Whitaker</Link>, Nightlife Scout | Last updated: 13 July 2026
-          </p>
           <p className="text-frost-300 leading-relaxed mb-4">
             Every summer weekend the same scene plays out. Tens of thousands of people spend a whole day getting warmed up in a London park, and then, somewhere between half nine and half ten, the music stops. London runs the earliest festival curfews of any major party city, which means the festival after-party is not an afterthought here; it is the second half of the day, and the city&apos;s clubs are built to catch it.
           </p>
@@ -3106,39 +2885,12 @@ function getPostContent(slug: string): React.ReactNode {
             <Link href="/clubs-tonight-london" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">what is on tonight</Link>{" "}
             and pick your own landing zone.
           </p>
-
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Festival After-Parties in London: Where the Night Goes After the Curfew",
-            "datePublished": "2026-07-13",
-            "dateModified": "2026-07-13",
-            "author": {
-              "@type": "Person",
-              "name": "Daniel Whitaker",
-              "url": "https://londonclubstonight.com/about-the-editor/",
-              "jobTitle": "Nightlife Scout"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "London Clubs Tonight",
-              "url": "https://londonclubstonight.com"
-            },
-            "image": "https://londonclubstonight.com/gallery/images/fe4414_634b7e2a2ea143a4a6b071f42a7be061.jpg",
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://londonclubstonight.com/blog/london-festival-after-parties"
-            }
-          }) }} />
         </>
       );
 
     case 'freshers-week-london-clubs':
       return (
         <>
-          <p className="text-frost-300 leading-relaxed mb-4 italic">
-            By <Link href="/about-the-editor" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">Daniel Whitaker</Link>, Nightlife Scout | Last updated: 4 September 2026
-          </p>
           <p className="text-frost-300 leading-relaxed mb-4">
             Every September the largest student intake in the country arrives in London at once, and a good share of them go out in the first week. It is the one moment in the year when tens of thousands of people are choosing where to spend their nights from a standing start, with no idea how the city actually works. Freshers week here is not one event; it is two parallel nights out happening in the same city, and knowing which one you are on saves a lot of money and disappointment.
           </p>
@@ -3204,30 +2956,6 @@ function getPostContent(slug: string): React.ReactNode {
             or see{" "}
             <Link href="/clubs-tonight-london" className="text-neon-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors">what is on tonight</Link>.
           </p>
-
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Freshers Week in London: A First Year Guide to the City Nightlife",
-            "datePublished": "2026-09-04",
-            "dateModified": "2026-09-04",
-            "author": {
-              "@type": "Person",
-              "name": "Daniel Whitaker",
-              "url": "https://londonclubstonight.com/about-the-editor/",
-              "jobTitle": "Nightlife Scout"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "London Clubs Tonight",
-              "url": "https://londonclubstonight.com"
-            },
-            "image": "https://londonclubstonight.com/gallery/images/fe4414_0da8a7994beb4cf9a8cbc05f1e3b133a.jpg",
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://londonclubstonight.com/blog/freshers-week-london-clubs"
-            }
-          }) }} />
         </>
       );
 
@@ -3293,18 +3021,28 @@ export default async function BlogPostPage({
             <span className="text-frost-300 line-clamp-1">{post.title}</span>
           </nav>
 
-          {/* Category + Date */}
-          <div className="flex items-center gap-3 mb-5">
+          {/* Category, byline and date. Every post is credited to the team; a
+              database row's author columns are never shown. */}
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-2 mb-5">
             <span className="chip chip-accent">
               {post.category}
             </span>
             <span className="text-xs text-frost-500">
-              Updated{' '}
-              {new Date(post.updatedDate).toLocaleDateString('en-GB', {
-                day: 'numeric',
-                month: 'long',
-                year: 'numeric',
-              })}
+              By{' '}
+              <Link
+                href={HOW_WE_WRITE_HREF}
+                className="text-frost-300 underline underline-offset-4 decoration-glow-400/50 hover:text-white transition-colors"
+              >
+                {TEAM_NAME}
+              </Link>
+              {' · Updated '}
+              <time dateTime={post.updatedDate}>
+                {new Date(post.updatedDate).toLocaleDateString('en-GB', {
+                  day: 'numeric',
+                  month: 'long',
+                  year: 'numeric',
+                })}
+              </time>
             </span>
           </div>
 

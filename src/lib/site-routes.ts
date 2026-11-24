@@ -148,10 +148,10 @@ export const staticRoutes: SiteRoute[] = [
     section: 'company',
   },
   {
-    path: '/about-the-editor',
-    title: 'About the Editor: Daniel Whitaker',
+    path: '/about',
+    title: 'About London Clubs Tonight',
     description:
-      'Meet Daniel Whitaker, Nightlife Scout and editor of London Clubs Tonight. He tracks 50+ venues weekly, covering what is open, what is good, and what you can get into tonight.',
+      'Who runs London Clubs Tonight, how we earn a commission on bookings, how our guides are written and checked, and how to tell us about a mistake.',
     priority: 0.5,
     changeFrequency: 'monthly',
     section: 'company',

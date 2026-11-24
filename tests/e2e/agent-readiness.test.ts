@@ -293,7 +293,7 @@ describe('agent readiness', () => {
   });
 
   describe('7. trust anchor pages', () => {
-    for (const path of ['/about-the-editor', '/contact', '/privacy']) {
+    for (const path of ['/about', '/contact', '/privacy']) {
       test(`${path} exists with substantive content`, async () => {
         const response = await get(path);
         assert.equal(response.status, 200);

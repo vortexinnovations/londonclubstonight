@@ -170,7 +170,7 @@ export default function Footer() {
             <Link href="/best-clubs-in-london" className="text-frost-400 hover:text-neon-200 text-sm transition-colors">
               Best Clubs
             </Link>
-            <Link href="/about-the-editor" className="text-frost-400 hover:text-neon-200 text-sm transition-colors">
+            <Link href="/about" className="text-frost-400 hover:text-neon-200 text-sm transition-colors">
               About
             </Link>
             <Link href="/privacy" className="text-frost-400 hover:text-neon-200 text-sm transition-colors">
